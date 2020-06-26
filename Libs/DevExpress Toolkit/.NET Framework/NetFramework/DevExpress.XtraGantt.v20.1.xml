@@ -127,6 +127,82 @@
         <para>The dependency is removed.</para>
       </summary>
     </member>
+    <member name="T:DevExpress.XtraGantt.CustomCalcTaskDependencyEventArgs">
+      <summary>
+        <para>Provides data for the <see cref="E:DevExpress.XtraGantt.GanttControl.CustomCalcTaskDependency"/> event.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.XtraGantt.CustomCalcTaskDependencyEventArgs.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.XtraGantt.CustomCalcTaskDependencyEventArgs"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.XtraGantt.CustomCalcTaskDependencyEventArgs.ArrowBounds">
+      <summary>
+        <para>Gets or sets the dependency arrow&#39;s bounds.</para>
+      </summary>
+      <value>A structure that specifies a rectangle.</value>
+    </member>
+    <member name="P:DevExpress.XtraGantt.CustomCalcTaskDependencyEventArgs.DependencyType">
+      <summary>
+        <para>Gets the dependency type (finish-to-start, finish-to-finish, etc.).</para>
+      </summary>
+      <value>A value that specifies a dependency type.</value>
+    </member>
+    <member name="P:DevExpress.XtraGantt.CustomCalcTaskDependencyEventArgs.Handled">
+      <summary>
+        <para>Gets or sets whether the event is handled. Suppresses the default calculation.</para>
+      </summary>
+      <value>true to suppress the default calculation; otherwise, false.</value>
+    </member>
+    <member name="P:DevExpress.XtraGantt.CustomCalcTaskDependencyEventArgs.Lines">
+      <summary>
+        <para>Gets the list of lines that specify the dependency line.</para>
+      </summary>
+      <value>A collection of rectangles that specify a dependency line.</value>
+    </member>
+    <member name="P:DevExpress.XtraGantt.CustomCalcTaskDependencyEventArgs.PredecessorDuration">
+      <summary>
+        <para>Gets the predecessor task&#39;s duration.</para>
+      </summary>
+      <value>A structure that specifies a time interval.</value>
+    </member>
+    <member name="P:DevExpress.XtraGantt.CustomCalcTaskDependencyEventArgs.PredecessorFinishDate">
+      <summary>
+        <para>Gets the predecessor task&#39;s finish date.</para>
+      </summary>
+      <value>A structure that specifies a date.</value>
+    </member>
+    <member name="P:DevExpress.XtraGantt.CustomCalcTaskDependencyEventArgs.PredecessorStartDate">
+      <summary>
+        <para>Gets the predecessor task&#39;s start date.</para>
+      </summary>
+      <value>A structure that specifies a date.</value>
+    </member>
+    <member name="P:DevExpress.XtraGantt.CustomCalcTaskDependencyEventArgs.RotateArrow">
+      <summary>
+        <para>Gets or sets how much the arrow is rotated and the axis used to flip the arrow.</para>
+      </summary>
+      <value>A value that specifies how much an image is rotated and the axis used to flip the image.</value>
+    </member>
+    <member name="P:DevExpress.XtraGantt.CustomCalcTaskDependencyEventArgs.SuccessorDuration">
+      <summary>
+        <para>Gets the successor task&#39;s duration.</para>
+      </summary>
+      <value>A structure that specifies a time interval.</value>
+    </member>
+    <member name="P:DevExpress.XtraGantt.CustomCalcTaskDependencyEventArgs.SuccessorFinishDate">
+      <summary>
+        <para>Gets the successor task&#39;s finish date.</para>
+      </summary>
+      <value>A structure that specifies a date.</value>
+    </member>
+    <member name="P:DevExpress.XtraGantt.CustomCalcTaskDependencyEventArgs.SuccessorStartDate">
+      <summary>
+        <para>Gets the successor task&#39;s start date.</para>
+      </summary>
+      <value>A structure that specifies a date.</value>
+    </member>
     <member name="T:DevExpress.XtraGantt.CustomDrawTaskDependencyEventArgs">
       <summary>
         <para>Provides data for the <see cref="E:DevExpress.XtraGantt.GanttControl.CustomDrawTaskDependency"/> event.</para>
@@ -142,12 +218,6 @@
       <summary>
         <para>Draws the task dependency line.</para>
       </summary>
-    </member>
-    <member name="M:DevExpress.XtraGantt.CustomDrawTaskDependencyEventArgs.DefaultDraw(System.Collections.Generic.IList{System.Drawing.PointF})">
-      <summary>
-        <para>Draws the task dependency line.</para>
-      </summary>
-      <param name="points">A list of points that specify the dependency line.</param>
     </member>
     <member name="P:DevExpress.XtraGantt.CustomDrawTaskDependencyEventArgs.Lines">
       <summary>
@@ -370,6 +440,88 @@
     <member name="T:DevExpress.XtraGantt.CustomTaskDisplayTextEventHandler">
       <summary>
         <para>Represents a reference to a method that handles the <see cref="E:DevExpress.XtraGantt.GanttControl.CustomTaskDisplayText"/> event.</para>
+      </summary>
+      <param name="sender">The object that raised the event.</param>
+      <param name="e">An object that contains event arguments.</param>
+    </member>
+    <member name="T:DevExpress.XtraGantt.CustomTaskProgressEventArgs">
+      <summary>
+        <para>Provides data for the <see cref="E:DevExpress.XtraGantt.GanttControl.CustomTaskProgress"/> event.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.XtraGantt.CustomTaskProgressEventArgs.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.XtraGantt.CustomTaskProgressEventArgs"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.XtraGantt.CustomTaskProgressEventArgs.Node">
+      <summary>
+        <para>Gets or sets the processed node.</para>
+      </summary>
+      <value>An object that specifies the processed node.</value>
+    </member>
+    <member name="P:DevExpress.XtraGantt.CustomTaskProgressEventArgs.Progress">
+      <summary>
+        <para>Gets or sets the task&#39;s progress.</para>
+      </summary>
+      <value>A value the specifies the task&#39;s progress.</value>
+    </member>
+    <member name="T:DevExpress.XtraGantt.CustomTaskProgressEventHandler">
+      <summary>
+        <para>Represents a reference to a method that handles the <see cref="E:DevExpress.XtraGantt.GanttControl.CustomTaskProgress"/> event.</para>
+      </summary>
+      <param name="sender">The object that raised the event.</param>
+      <param name="e">An object that contains event arguments.</param>
+    </member>
+    <member name="T:DevExpress.XtraGantt.CustomTaskSchedulingEventArgs">
+      <summary>
+        <para>Provides data for the <see cref="E:DevExpress.XtraGantt.GanttControl.CustomTaskScheduling"/> event.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.XtraGantt.CustomTaskSchedulingEventArgs.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.XtraGantt.CustomTaskSchedulingEventArgs"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.XtraGantt.CustomTaskSchedulingEventArgs.Cancel">
+      <summary>
+        <para>Gets or sets whether to cancel rescheduling the processed task and all dependent tasks.</para>
+      </summary>
+      <value>true, to cancel rescheduling the processed task and all dependent tasks; otherwise, false.</value>
+    </member>
+    <member name="P:DevExpress.XtraGantt.CustomTaskSchedulingEventArgs.Duration">
+      <summary>
+        <para>Gets or sets the task&#39;s duration.</para>
+      </summary>
+      <value>A structure that specifies the task&#39;s duration.</value>
+    </member>
+    <member name="P:DevExpress.XtraGantt.CustomTaskSchedulingEventArgs.FinishDate">
+      <summary>
+        <para>Gets or sets the task&#39;s finish date.</para>
+      </summary>
+      <value>A structure that specifies the finish date.</value>
+    </member>
+    <member name="P:DevExpress.XtraGantt.CustomTaskSchedulingEventArgs.Node">
+      <summary>
+        <para>Gets the processed node.</para>
+      </summary>
+      <value>An object that specifies the processed node.</value>
+    </member>
+    <member name="P:DevExpress.XtraGantt.CustomTaskSchedulingEventArgs.Row">
+      <summary>
+        <para>Gets an object that specifies the processed data row.</para>
+      </summary>
+      <value>An object that specifies the processed data row.</value>
+    </member>
+    <member name="P:DevExpress.XtraGantt.CustomTaskSchedulingEventArgs.StartDate">
+      <summary>
+        <para>Gets or sets the task&#39;s start date.</para>
+      </summary>
+      <value>A structure that specifies the start date.</value>
+    </member>
+    <member name="T:DevExpress.XtraGantt.CustomTaskSchedulingEventHandler">
+      <summary>
+        <para>Represents a reference to a method that handles the <see cref="E:DevExpress.XtraGantt.GanttControl.CustomTaskScheduling"/> event.</para>
       </summary>
       <param name="sender">The object that raised the event.</param>
       <param name="e">An object that contains event arguments.</param>
@@ -625,37 +777,37 @@
     </member>
     <member name="P:DevExpress.XtraGantt.GanttChartMappings.BaselineDurationFieldName">
       <summary>
-        <para>Gets or sets the data source field that specifies a task&#39;s baseline duration.</para>
+        <para>Gets or sets the data source field (of the <see cref="T:System.TimeSpan"/> type) that specifies a task&#39;s baseline duration.</para>
       </summary>
       <value>The data source field that specifies a task&#39;s baseline duration.</value>
     </member>
     <member name="P:DevExpress.XtraGantt.GanttChartMappings.BaselineFinishDateFieldName">
       <summary>
-        <para>Gets or sets the data source field that specifies a task&#39;s baseline finish date.</para>
+        <para>Gets or sets the data source field (of the <see cref="T:System.DateTime"/> type) that specifies a task&#39;s baseline finish date.</para>
       </summary>
       <value>The data source field that specifies a task&#39;s baseline finish date.</value>
     </member>
     <member name="P:DevExpress.XtraGantt.GanttChartMappings.BaselineStartDateFieldName">
       <summary>
-        <para>Gets or sets the data source field that specifies a task&#39;s baseline start date.</para>
+        <para>Gets or sets the data source field (of the <see cref="T:System.DateTime"/> type) that specifies a task&#39;s baseline start date.</para>
       </summary>
       <value>The data source field that specifies a task&#39;s baseline start date.</value>
     </member>
     <member name="P:DevExpress.XtraGantt.GanttChartMappings.DurationFieldName">
       <summary>
-        <para>Gets or sets the data source field that specifies a task&#39;s duration.</para>
+        <para>Gets or sets the data source field (of the <see cref="T:System.TimeSpan"/> type) that specifies a task&#39;s duration.</para>
       </summary>
       <value>The data source field that specifies a task&#39;s duration.</value>
     </member>
     <member name="P:DevExpress.XtraGantt.GanttChartMappings.FinishDateFieldName">
       <summary>
-        <para>Gets or sets the data source field that specifies a task&#39;s finish date.</para>
+        <para>Gets or sets the data source field (of the <see cref="T:System.DateTime"/> type) that specifies a task&#39;s finish date.</para>
       </summary>
       <value>The data source field that specifies a task&#39;s finish date.</value>
     </member>
     <member name="P:DevExpress.XtraGantt.GanttChartMappings.InteractionTooltipTextFieldName">
       <summary>
-        <para>Gets or sets the data source field that specifies a task&#39;s text in interaction tooltips.</para>
+        <para>Gets or sets the data source field (of the <see cref="T:System.String"/> type) that specifies a task&#39;s text in interaction tooltips.</para>
       </summary>
       <value>The data source field that specifies a task&#39;s text in interaction tooltips.</value>
     </member>
@@ -667,19 +819,19 @@
     </member>
     <member name="P:DevExpress.XtraGantt.GanttChartMappings.ProgressFieldName">
       <summary>
-        <para>Gets or sets the data source field that specifies a task&#39;s progress.</para>
+        <para>Gets or sets the data source field (of the <see cref="T:System.Single"/> type) that specifies a task&#39;s progress (from 0 to 100 percent).</para>
       </summary>
       <value>The data source field that specifies a task&#39;s progress.</value>
     </member>
     <member name="P:DevExpress.XtraGantt.GanttChartMappings.StartDateFieldName">
       <summary>
-        <para>Gets or sets the data source field that specifies a task&#39;s start date.</para>
+        <para>Gets or sets the data source field (of the <see cref="T:System.DateTime"/> type) that specifies a task&#39;s start date.</para>
       </summary>
       <value>The data source field that specifies a task&#39;s start date.</value>
     </member>
     <member name="P:DevExpress.XtraGantt.GanttChartMappings.TextFieldName">
       <summary>
-        <para>Gets or sets the data source field that specifies a task&#39;s text.</para>
+        <para>Gets or sets the data source field (of the <see cref="T:System.String"/> type) that specifies the text displayed next to a task in the chart.</para>
       </summary>
       <value>The data source field that specifies a task&#39;s text.</value>
     </member>
@@ -705,12 +857,22 @@
       </summary>
       <value>An object that specifies an appearance settings collection.</value>
     </member>
+    <member name="M:DevExpress.XtraGantt.GanttControl.BeginUpdate">
+      <summary>
+        <para>Does not allow the framework to redraw the control until the CancelUpdate or EndUpdate method is called.</para>
+      </summary>
+    </member>
     <member name="M:DevExpress.XtraGantt.GanttControl.CalcHitInfo(System.Drawing.Point)">
       <summary>
         <para>Returns information about the visual element under the specified hit point.</para>
       </summary>
       <param name="pt">A Point structure that specifies the hit point relative to the control&#39;s upper-left corner.</param>
       <returns>A GanttControlHitInfo object that contains information about the visual element under the specified hit point.</returns>
+    </member>
+    <member name="M:DevExpress.XtraGantt.GanttControl.CancelUpdate">
+      <summary>
+        <para>Allows the framework to redraw the control after the BeginUpdate method is called. Does not redraw the control immediately.</para>
+      </summary>
     </member>
     <member name="P:DevExpress.XtraGantt.GanttControl.ChartFinishDate">
       <summary>
@@ -729,6 +891,11 @@
         <para>Gets or sets the timescale ruler start date.</para>
       </summary>
       <value>A <see cref="T:System.DateTime"/> structure that specifies the timescale ruler start date.</value>
+    </member>
+    <member name="E:DevExpress.XtraGantt.GanttControl.CustomCalcTaskDependency">
+      <summary>
+        <para>Fires before the control calculates a dependency line. Allows you to specify the dependency line.</para>
+      </summary>
     </member>
     <member name="E:DevExpress.XtraGantt.GanttControl.CustomDrawTask">
       <summary>
@@ -750,6 +917,16 @@
         <para>Allows you to specify the text displayed inside, to the left, and to the right of the task.</para>
       </summary>
     </member>
+    <member name="E:DevExpress.XtraGantt.GanttControl.CustomTaskProgress">
+      <summary>
+        <para>Allows you to specify custom task progress.</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.XtraGantt.GanttControl.CustomTaskScheduling">
+      <summary>
+        <para>Fires during the automatic rescheduling process when the control calculates new start and finish dates for a task. Allows you to cancel rescheduling the current task and stop the rescheduling process for its successors.</para>
+      </summary>
+    </member>
     <member name="P:DevExpress.XtraGantt.GanttControl.DependencyMappings">
       <summary>
         <para>Provides access to data source field names that specify dependencies between tasks (dependency type, time lag, predecessor, and successor).</para>
@@ -761,6 +938,11 @@
         <para>Gets or sets the data source that contains values that specify dependencies between tasks.</para>
       </summary>
       <value>An object that specifies a data source.</value>
+    </member>
+    <member name="M:DevExpress.XtraGantt.GanttControl.EndUpdate">
+      <summary>
+        <para>Allows the framework to redraw the control after the BeginUpdate method is called. Redraws the control immediately.</para>
+      </summary>
     </member>
     <member name="P:DevExpress.XtraGantt.GanttControl.Exceptions">
       <summary>
@@ -809,6 +991,18 @@
       </summary>
       <param name="id">An integer value that specifies the Id of the task for which to return the baseline start date.</param>
       <returns>A <see cref="T:System.DateTime"/> structure that specifies the task&#39;s baseline start date.</returns>
+    </member>
+    <member name="M:DevExpress.XtraGantt.GanttControl.GetChartVisibleFinishDate">
+      <summary>
+        <para></para>
+      </summary>
+      <returns></returns>
+    </member>
+    <member name="M:DevExpress.XtraGantt.GanttControl.GetChartVisibleStartDate">
+      <summary>
+        <para></para>
+      </summary>
+      <returns></returns>
     </member>
     <member name="M:DevExpress.XtraGantt.GanttControl.GetDuration(DevExpress.XtraGantt.GanttControlNode)">
       <summary>
@@ -1029,24 +1223,44 @@
         <para>Fires before the splitter changes its position. Allows you to cancel the action.</para>
       </summary>
     </member>
+    <member name="E:DevExpress.XtraGantt.GanttControl.TaskDependencyModification">
+      <summary>
+        <para>Repeatedly fires when a user modifies a task&#39;s dependency. This event only fires when a user modifies a task in the chart. When the user modifies a task in the task list, the event does not fire.</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.XtraGantt.GanttControl.TaskDependencyModificationCanceled">
+      <summary>
+        <para>Fires when a user presses Esc to cancel modifying a task&#39;s dependency. This event only fires when a user modifies a task in the chart. When the user modifies a task in the task list, the event does not fire.</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.XtraGantt.GanttControl.TaskDependencyModificationCompleted">
+      <summary>
+        <para>Fires when a user finishes modifying a dependency. Allows you to cancel the operation.</para>
+      </summary>
+    </member>
     <member name="E:DevExpress.XtraGantt.GanttControl.TaskDependencyModified">
       <summary>
         <para>Fires when a task&#39;s dependency is successfully modified. This event only fires when a user modifies a task in the chart. When the user modifies a task in the task list, the event does not fire.</para>
       </summary>
     </member>
-    <member name="E:DevExpress.XtraGantt.GanttControl.TaskDependencyModifying">
+    <member name="E:DevExpress.XtraGantt.GanttControl.TaskFinishDateModification">
       <summary>
-        <para>Repeatedly fires when the user modifies a task&#39;s dependency. This event only fires when a user modifies a task in the chart. When the user modifies a task in the task list, the event does not fire.</para>
+        <para>Repeatedly fires when a user modifies a task&#39;s finish date. This event only fires when a user modifies a task in the chart. When the user modifies a task in the task list, the event does not fire.</para>
       </summary>
     </member>
-    <member name="E:DevExpress.XtraGantt.GanttControl.TaskDependencyModifyingCanceled">
+    <member name="E:DevExpress.XtraGantt.GanttControl.TaskFinishDateModificationCanceled">
       <summary>
-        <para>Fires when the user presses Esc to cancel modifying a task&#39;s dependency, or the control loses the input focus. This event only fires when a user modifies a task in the chart. When the user modifies a task in the task list, the event does not fire.</para>
+        <para>Fires when a user presses Esc to cancel modifying a task&#39;s finish date. This event only fires when a user modifies a task in the chart. When the user modifies a task in the task list, the event does not fire.</para>
       </summary>
     </member>
-    <member name="E:DevExpress.XtraGantt.GanttControl.TaskDependencyModifyingCompleted">
+    <member name="E:DevExpress.XtraGantt.GanttControl.TaskFinishDateModificationCompleted">
       <summary>
-        <para>Fires when a user finishes modifying a dependency. Allows you to cancel the operation.</para>
+        <para>Fires when a user finishes modifying a finish date. Allows you to cancel the operation.</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.XtraGantt.GanttControl.TaskFinishDateModificationStarted">
+      <summary>
+        <para>Fires when a user starts to modify a task&#39;s finish date. This event only fires when a user modifies a task in the chart. When the user modifies a task in the task list, the event does not fire.</para>
       </summary>
     </member>
     <member name="E:DevExpress.XtraGantt.GanttControl.TaskFinishDateModified">
@@ -1054,24 +1268,14 @@
         <para>Fires when a task&#39;s finish date is successfully modified. This event only fires when a user modifies a task in the chart. When the user modifies a task in the task list, the event does not fire.</para>
       </summary>
     </member>
-    <member name="E:DevExpress.XtraGantt.GanttControl.TaskFinishDateModifying">
+    <member name="E:DevExpress.XtraGantt.GanttControl.TaskMoveCanceled">
       <summary>
-        <para>Repeatedly fires when a user modifies a task&#39;s finish date. This event only fires when a user modifies a task in the chart. When the user modifies a task in the task list, the event does not fire.</para>
+        <para>Fires when a user presses Esc to cancel moving a task. This event only fires when a user modifies a task in the chart. When the user modifies a task in the task list, the event does not fire.</para>
       </summary>
     </member>
-    <member name="E:DevExpress.XtraGantt.GanttControl.TaskFinishDateModifyingCanceled">
+    <member name="E:DevExpress.XtraGantt.GanttControl.TaskMoveCompleted">
       <summary>
-        <para>Fires when a user presses Esc to cancel modifying a task&#39;s finish date, or the control loses the input focus. This event only fires when a user modifies a task in the chart. When the user modifies a task in the task list, the event does not fire.</para>
-      </summary>
-    </member>
-    <member name="E:DevExpress.XtraGantt.GanttControl.TaskFinishDateModifyingCompleted">
-      <summary>
-        <para>Fires when a user finishes modifying a finish date. Allows you to cancel the operation.</para>
-      </summary>
-    </member>
-    <member name="E:DevExpress.XtraGantt.GanttControl.TaskFinishDateModifyingStarted">
-      <summary>
-        <para>Fires when a user starts to modify a task&#39;s finish date. This event only fires when a user modifies a task in the chart. When the user modifies a task in the task list, the event does not fire.</para>
+        <para>Fires when a user finishes moving a task. Allows you to cancel the operation.</para>
       </summary>
     </member>
     <member name="E:DevExpress.XtraGantt.GanttControl.TaskMoved">
@@ -1079,24 +1283,14 @@
         <para>Fires when a task is successfully moved. This event only fires when a user modifies a task in the chart. When the user modifies a task in the task list, the event does not fire.</para>
       </summary>
     </member>
+    <member name="E:DevExpress.XtraGantt.GanttControl.TaskMoveStarted">
+      <summary>
+        <para>Fires when a user starts to move a task. This event only fires when a user modifies a task in the chart. When the user modifies a task in the task list, the event does not fire.</para>
+      </summary>
+    </member>
     <member name="E:DevExpress.XtraGantt.GanttControl.TaskMoving">
       <summary>
         <para>Repeatedly fires when a user moves a task. This event only fires when a user modifies a task in the chart. When the user modifies a task in the task list, the event does not fire.</para>
-      </summary>
-    </member>
-    <member name="E:DevExpress.XtraGantt.GanttControl.TaskMovingCanceled">
-      <summary>
-        <para>Fires when a user presses Esc to cancel moving a task. This event only fires when a user modifies a task in the chart. When the user modifies a task in the task list, the event does not fire.</para>
-      </summary>
-    </member>
-    <member name="E:DevExpress.XtraGantt.GanttControl.TaskMovingCompleted">
-      <summary>
-        <para>Fires when a user finishes moving a task. Allows you to cancel the operation.</para>
-      </summary>
-    </member>
-    <member name="E:DevExpress.XtraGantt.GanttControl.TaskMovingStarted">
-      <summary>
-        <para>Fires when a user starts to move a task. This event only fires when a user modifies a task in the chart. When the user modifies a task in the task list, the event does not fire.</para>
       </summary>
     </member>
     <member name="E:DevExpress.XtraGantt.GanttControl.TaskPopupMenuShowing">
@@ -1104,29 +1298,29 @@
         <para>Fires when a context menu for a task is about to be shown.</para>
       </summary>
     </member>
-    <member name="E:DevExpress.XtraGantt.GanttControl.TaskProgressModified">
-      <summary>
-        <para>Fires when a task&#39;s progress is successfully modified. This event only fires when a user modifies a task in the chart. When the user modifies a task in the task list, the event does not fire.</para>
-      </summary>
-    </member>
-    <member name="E:DevExpress.XtraGantt.GanttControl.TaskProgressModifying">
+    <member name="E:DevExpress.XtraGantt.GanttControl.TaskProgressModification">
       <summary>
         <para>Repeatedly fires when a user modifies a task&#39;s progress. This event only fires when a user modifies a task in the chart. When the user modifies a task in the task list, the event does not fire.</para>
       </summary>
     </member>
-    <member name="E:DevExpress.XtraGantt.GanttControl.TaskProgressModifyingCanceled">
+    <member name="E:DevExpress.XtraGantt.GanttControl.TaskProgressModificationCanceled">
       <summary>
         <para>Fires when a user presses Esc to cancel modifying a task&#39;s progress. This event only fires when a user modifies a task in the chart. When the user modifies a task in the task list, the event does not fire.</para>
       </summary>
     </member>
-    <member name="E:DevExpress.XtraGantt.GanttControl.TaskProgressModifyingCompleted">
+    <member name="E:DevExpress.XtraGantt.GanttControl.TaskProgressModificationCompleted">
       <summary>
         <para>Fires when a user finishes modifying progress. Allows you to cancel the operation.</para>
       </summary>
     </member>
-    <member name="E:DevExpress.XtraGantt.GanttControl.TaskProgressModifyingStarted">
+    <member name="E:DevExpress.XtraGantt.GanttControl.TaskProgressModificationStarted">
       <summary>
         <para>Fires when a user starts to modify a task&#39;s progress. This event only fires when a user modifies a task in the chart. When the user modifies a task in the task list, the event does not fire.</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.XtraGantt.GanttControl.TaskProgressModified">
+      <summary>
+        <para>Fires when a task&#39;s progress is successfully modified. This event only fires when a user modifies a task in the chart. When the user modifies a task in the task list, the event does not fire.</para>
       </summary>
     </member>
     <member name="E:DevExpress.XtraGantt.GanttControl.TaskToolTipShowing">
@@ -1746,9 +1940,9 @@
     </member>
     <member name="P:DevExpress.XtraGantt.GanttDependencyMappings.LagFieldName">
       <summary>
-        <para>Gets or sets the data source field that specifies a task&#39;s time lag relative to its predecessor.</para>
+        <para>Gets or sets the data source field (of the <see cref="T:System.TimeSpan"/> type) that specifies a task&#39;s time delay relative to its predecessor.</para>
       </summary>
-      <value>The data source field that specifies a task&#39;s time lag relative to its predecessor.</value>
+      <value>The data source field that specifies a task&#39;s time delay relative to its predecessor.</value>
     </member>
     <member name="P:DevExpress.XtraGantt.GanttDependencyMappings.PredecessorFieldName">
       <summary>
@@ -1764,7 +1958,7 @@
     </member>
     <member name="P:DevExpress.XtraGantt.GanttDependencyMappings.TypeFieldName">
       <summary>
-        <para>Gets or sets the data source field that specifies a task&#39;s dependency type.</para>
+        <para>Gets or sets the data source field (of the <see cref="T:DevExpress.XtraGantt.DependencyType"/> type) that specifies a task&#39;s dependency type.</para>
       </summary>
       <value>The data source field that specifies a task&#39;s dependency type.</value>
     </member>
@@ -2409,7 +2603,7 @@
     </member>
     <member name="T:DevExpress.XtraGantt.Options.ScheduleMode">
       <summary>
-        <para>Enumerates values that specify whether the control automatically updates tasks when the user changes the project&#39;s or a particular task&#39;s start or finish date.</para>
+        <para>Enumerates values that specify whether the control automatically reschedules all successor tasks when a user moves a particular task to a new time slot.</para>
       </summary>
     </member>
     <member name="F:DevExpress.XtraGantt.Options.ScheduleMode.Auto">
@@ -2754,82 +2948,97 @@
       <param name="sender">The object that raised the event.</param>
       <param name="e">An object that contains event arguments.</param>
     </member>
-    <member name="T:DevExpress.XtraGantt.TaskDependencyModifiedEventHandler">
+    <member name="T:DevExpress.XtraGantt.TaskDependencyModificationCancelEventArgs">
       <summary>
-        <para>Represents a reference to a method that handles the <see cref="E:DevExpress.XtraGantt.GanttControl.TaskDependencyModified"/> event.</para>
-      </summary>
-      <param name="sender">The object that raised the event.</param>
-      <param name="e">An object that contains event arguments.</param>
-    </member>
-    <member name="T:DevExpress.XtraGantt.TaskDependencyModifyingCancelEventArgs">
-      <summary>
-        <para>Provides data for the <see cref="E:DevExpress.XtraGantt.GanttControl.TaskDependencyModifying"/> and <see cref="E:DevExpress.XtraGantt.GanttControl.TaskDependencyModifyingCompleted"/> events.</para>
+        <para>Provides data for the <see cref="E:DevExpress.XtraGantt.GanttControl.TaskDependencyModification"/> and <see cref="E:DevExpress.XtraGantt.GanttControl.TaskDependencyModificationCompleted"/> events.</para>
       </summary>
     </member>
-    <member name="P:DevExpress.XtraGantt.TaskDependencyModifyingCancelEventArgs.Cancel">
+    <member name="P:DevExpress.XtraGantt.TaskDependencyModificationCancelEventArgs.Allow">
+      <summary>
+        <para>Gets or sets whether users are allowed to modify the dependency.</para>
+      </summary>
+      <value>true, users are allowed to modify the dependency; otherwise, false.</value>
+    </member>
+    <member name="P:DevExpress.XtraGantt.TaskDependencyModificationCancelEventArgs.Cancel">
       <summary>
         <para>Allows you to cancel the operation.</para>
       </summary>
       <value>true, to cancel the operation; otherwise, false.</value>
     </member>
-    <member name="T:DevExpress.XtraGantt.TaskDependencyModifyingEventArgs">
+    <member name="T:DevExpress.XtraGantt.TaskDependencyModificationEventArgs">
       <summary>
-        <para>Provides data for <see cref="E:DevExpress.XtraGantt.GanttControl.TaskDependencyModified"/> and <see cref="E:DevExpress.XtraGantt.GanttControl.TaskDependencyModifyingCanceled"/> events.</para>
+        <para>Provides data for <see cref="E:DevExpress.XtraGantt.GanttControl.TaskDependencyModificationCanceled"/> and <see cref="E:DevExpress.XtraGantt.GanttControl.TaskDependencyModified"/> events.</para>
       </summary>
     </member>
-    <member name="P:DevExpress.XtraGantt.TaskDependencyModifyingEventArgs.AllowCreate">
+    <member name="P:DevExpress.XtraGantt.TaskDependencyModificationEventArgs.ChangeType">
       <summary>
-        <para>Gets whether the dependency can be created.</para>
-      </summary>
-      <value>true, if the dependency can be created; otherwise, false.</value>
-    </member>
-    <member name="P:DevExpress.XtraGantt.TaskDependencyModifyingEventArgs.ChangeType">
-      <summary>
-        <para>Gets or sets the type of the operation.</para>
+        <para>Gets the type of the operation.</para>
       </summary>
       <value>A value that specifies the type of the operation.</value>
     </member>
-    <member name="P:DevExpress.XtraGantt.TaskDependencyModifyingEventArgs.OriginalSuccessorNode">
+    <member name="P:DevExpress.XtraGantt.TaskDependencyModificationEventArgs.OriginalSuccessorNode">
       <summary>
         <para>Gets the processed dependency&#39;s original (before the operation) successor node.</para>
       </summary>
       <value>An object that specifies a node.</value>
     </member>
-    <member name="P:DevExpress.XtraGantt.TaskDependencyModifyingEventArgs.OriginalSuccessorTask">
+    <member name="P:DevExpress.XtraGantt.TaskDependencyModificationEventArgs.OriginalSuccessorTask">
       <summary>
         <para>Gets the processed dependency&#39;s original (before the operation) successor task.</para>
       </summary>
       <value>An object that specifies a task.</value>
     </member>
-    <member name="P:DevExpress.XtraGantt.TaskDependencyModifyingEventArgs.PredecessorNode">
+    <member name="P:DevExpress.XtraGantt.TaskDependencyModificationEventArgs.PredecessorNode">
       <summary>
         <para>Gets the processed dependency&#39;s current (during the operation) predecessor node.</para>
       </summary>
       <value>An object that specifies a node.</value>
     </member>
-    <member name="P:DevExpress.XtraGantt.TaskDependencyModifyingEventArgs.PredecessorTask">
+    <member name="P:DevExpress.XtraGantt.TaskDependencyModificationEventArgs.PredecessorTask">
       <summary>
         <para>Gets the processed dependency&#39;s current (during the operation) predecessor task.</para>
       </summary>
       <value>An object that specifies a task.</value>
     </member>
-    <member name="P:DevExpress.XtraGantt.TaskDependencyModifyingEventArgs.SuccessorNode">
+    <member name="P:DevExpress.XtraGantt.TaskDependencyModificationEventArgs.SuccessorNode">
       <summary>
-        <para>Gets the processed dependency&#39;s current (during the operation) succesor node.</para>
+        <para>Gets the processed dependency&#39;s current (during the operation) successor node.</para>
       </summary>
       <value>An object that specifies a node.</value>
     </member>
-    <member name="P:DevExpress.XtraGantt.TaskDependencyModifyingEventArgs.SuccessorTask">
+    <member name="P:DevExpress.XtraGantt.TaskDependencyModificationEventArgs.SuccessorTask">
       <summary>
-        <para>Gets the processed dependency&#39;s current (during the operation) succesor task.</para>
+        <para>Gets the processed dependency&#39;s current (during the operation) successor task.</para>
       </summary>
       <value>An object that specifies a task.</value>
     </member>
-    <member name="P:DevExpress.XtraGantt.TaskDependencyModifyingEventArgs.Type">
+    <member name="P:DevExpress.XtraGantt.TaskDependencyModificationEventArgs.Type">
       <summary>
         <para>Gets the type of the processed dependency.</para>
       </summary>
       <value>A value that specifies the dependency type.</value>
+    </member>
+    <member name="T:DevExpress.XtraGantt.TaskFinishModificationCanceledEventArgs">
+      <summary>
+        <para>Provides data for the <see cref="E:DevExpress.XtraGantt.GanttControl.TaskFinishDateModificationCanceled"/> event.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.XtraGantt.TaskFinishModificationEventArgs">
+      <summary>
+        <para>Provides data for the <see cref="E:DevExpress.XtraGantt.GanttControl.TaskFinishDateModificationStarted"/>, <see cref="E:DevExpress.XtraGantt.GanttControl.TaskFinishDateModification"/>, and <see cref="E:DevExpress.XtraGantt.GanttControl.TaskFinishDateModificationCompleted"/> events.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.XtraGantt.TaskFinishModificationEventArgs.CurrentTaskFinish">
+      <summary>
+        <para>Gets or sets the processed task&#39;s current (during the operation) finish date.</para>
+      </summary>
+      <value>A structure that specifies a date.</value>
+    </member>
+    <member name="P:DevExpress.XtraGantt.TaskFinishModificationEventArgs.OriginalTaskFinish">
+      <summary>
+        <para>Gets the processed task&#39;s original (before the operation) finish date.</para>
+      </summary>
+      <value>A structure that specifies a date.</value>
     </member>
     <member name="T:DevExpress.XtraGantt.TaskFinishModifiedEventArgs">
       <summary>
@@ -2842,69 +3051,27 @@
       </summary>
       <value>A structure that specifies a date.</value>
     </member>
-    <member name="T:DevExpress.XtraGantt.TaskFinishModifiedEventHandler">
-      <summary>
-        <para>Represents a reference to a method that handles the <see cref="E:DevExpress.XtraGantt.GanttControl.TaskFinishDateModified"/> event.</para>
-      </summary>
-      <param name="sender">The object that raised the event.</param>
-      <param name="e">An object that contains event arguments.</param>
-    </member>
-    <member name="T:DevExpress.XtraGantt.TaskFinishModifyingCanceledEventArgs">
-      <summary>
-        <para>Provides data for the <see cref="E:DevExpress.XtraGantt.GanttControl.TaskFinishDateModifyingCanceled"/> event.</para>
-      </summary>
-    </member>
-    <member name="T:DevExpress.XtraGantt.TaskFinishModifyingEventArgs">
-      <summary>
-        <para>Provides data for the <see cref="E:DevExpress.XtraGantt.GanttControl.TaskFinishDateModifyingStarted"/>, <see cref="E:DevExpress.XtraGantt.GanttControl.TaskFinishDateModifying"/>, <see cref="E:DevExpress.XtraGantt.GanttControl.TaskFinishDateModifyingCanceled"/>, and <see cref="E:DevExpress.XtraGantt.GanttControl.TaskFinishDateModified"/> events.</para>
-      </summary>
-    </member>
-    <member name="P:DevExpress.XtraGantt.TaskFinishModifyingEventArgs.CurrentTaskFinish">
-      <summary>
-        <para>Gets or sets the processed task&#39;s current (during the operation) finish date.</para>
-      </summary>
-      <value>A structure that specifies a date.</value>
-    </member>
-    <member name="P:DevExpress.XtraGantt.TaskFinishModifyingEventArgs.OriginalTaskFinish">
-      <summary>
-        <para>Gets the processed task&#39;s original (before the operation) finish date.</para>
-      </summary>
-      <value>A structure that specifies a date.</value>
-    </member>
-    <member name="T:DevExpress.XtraGantt.TaskFinishModifyingEventHandler">
-      <summary>
-        <para>Represents a reference to a method that handles the <see cref="E:DevExpress.XtraGantt.GanttControl.TaskFinishDateModifying"/> event.</para>
-      </summary>
-      <param name="sender">The object that raised the event.</param>
-      <param name="e">An object that contains event arguments.</param>
-    </member>
-    <member name="T:DevExpress.XtraGantt.TaskModifyingCancelEventArgs">
-      <summary>
-        <para>Provides data for events raised before a task is modified.</para>
-      </summary>
-    </member>
-    <member name="P:DevExpress.XtraGantt.TaskModifyingCancelEventArgs.Cancel">
-      <summary>
-        <para>Allows you to cancel the operation.</para>
-      </summary>
-      <value>true, to cancel the operation; otherwise, false.</value>
-    </member>
-    <member name="T:DevExpress.XtraGantt.TaskModifyingEventArgs">
+    <member name="T:DevExpress.XtraGantt.TaskModificationEventArgs">
       <summary>
         <para>Provides data for events raised when a user modifies a task.</para>
       </summary>
     </member>
-    <member name="P:DevExpress.XtraGantt.TaskModifyingEventArgs.ProcessedNode">
+    <member name="P:DevExpress.XtraGantt.TaskModificationEventArgs.ProcessedNode">
       <summary>
         <para>Gets the modified node.</para>
       </summary>
       <value>An object that specifies a node.</value>
     </member>
-    <member name="P:DevExpress.XtraGantt.TaskModifyingEventArgs.ProcessedTask">
+    <member name="P:DevExpress.XtraGantt.TaskModificationEventArgs.ProcessedTask">
       <summary>
         <para>Gets the modified task.</para>
       </summary>
       <value>An object that specifies a task.</value>
+    </member>
+    <member name="T:DevExpress.XtraGantt.TaskMoveCanceledEventArgs">
+      <summary>
+        <para>Provides data for the <see cref="E:DevExpress.XtraGantt.GanttControl.TaskMoveCanceled"/> event.</para>
+      </summary>
     </member>
     <member name="T:DevExpress.XtraGantt.TaskMovedEventArgs">
       <summary>
@@ -2923,14 +3090,9 @@
       </summary>
       <value>A structure that specifies a date.</value>
     </member>
-    <member name="T:DevExpress.XtraGantt.TaskMovingCanceledEventArgs">
-      <summary>
-        <para>Provides data for the <see cref="E:DevExpress.XtraGantt.GanttControl.TaskMovingCanceled"/> event.</para>
-      </summary>
-    </member>
     <member name="T:DevExpress.XtraGantt.TaskMovingEventArgs">
       <summary>
-        <para>Provides data for the <see cref="E:DevExpress.XtraGantt.GanttControl.TaskMovingStarted"/>, <see cref="E:DevExpress.XtraGantt.GanttControl.TaskMoving"/>, <see cref="E:DevExpress.XtraGantt.GanttControl.TaskMovingCanceled"/>, and <see cref="E:DevExpress.XtraGantt.GanttControl.TaskMoved"/> events.</para>
+        <para>Provides data for the <see cref="E:DevExpress.XtraGantt.GanttControl.TaskMoveStarted"/>, <see cref="E:DevExpress.XtraGantt.GanttControl.TaskMoving"/>, <see cref="E:DevExpress.XtraGantt.GanttControl.TaskMoveCanceled"/>, and <see cref="E:DevExpress.XtraGantt.GanttControl.TaskMoved"/> events.</para>
       </summary>
     </member>
     <member name="P:DevExpress.XtraGantt.TaskMovingEventArgs.CurrentTaskFinish">
@@ -2957,12 +3119,27 @@
       </summary>
       <value>A structure that specifies a date.</value>
     </member>
-    <member name="T:DevExpress.XtraGantt.TaskMovingEventHandler">
+    <member name="T:DevExpress.XtraGantt.TaskProgressModificationCanceledEventArgs">
       <summary>
-        <para>Represents a reference to a method that handles the <see cref="E:DevExpress.XtraGantt.GanttControl.TaskMoving"/> event.</para>
+        <para>Provides data for the <see cref="E:DevExpress.XtraGantt.GanttControl.TaskProgressModificationCanceled"/> event.</para>
       </summary>
-      <param name="sender">The object that raised the event.</param>
-      <param name="e">An object that contains event arguments.</param>
+    </member>
+    <member name="T:DevExpress.XtraGantt.TaskProgressModificationEventArgs">
+      <summary>
+        <para>Provides data for the <see cref="E:DevExpress.XtraGantt.GanttControl.TaskProgressModificationStarted"/>, <see cref="E:DevExpress.XtraGantt.GanttControl.TaskProgressModification"/>, and <see cref="E:DevExpress.XtraGantt.GanttControl.TaskProgressModificationCompleted"/> events.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.XtraGantt.TaskProgressModificationEventArgs.CurrentProgress">
+      <summary>
+        <para>Gets or sets the processed task&#39;s current (during the operation) progress.</para>
+      </summary>
+      <value>A value that specifies progress.</value>
+    </member>
+    <member name="P:DevExpress.XtraGantt.TaskProgressModificationEventArgs.OriginalProgress">
+      <summary>
+        <para>Gets the processed task&#39;s original (before the operation) progress.</para>
+      </summary>
+      <value>A value that specifies progress.</value>
     </member>
     <member name="T:DevExpress.XtraGantt.TaskProgressModifiedEventArgs">
       <summary>
@@ -2980,49 +3157,6 @@
         <para>Gets the processed task&#39;s original (before the operation) progress.</para>
       </summary>
       <value>A value that specifies progress.</value>
-    </member>
-    <member name="T:DevExpress.XtraGantt.TaskProgressModifiedEventHandler">
-      <summary>
-        <para>Represents a reference to a method that handles the <see cref="E:DevExpress.XtraGantt.GanttControl.TaskProgressModified"/> event.</para>
-      </summary>
-      <param name="sender">The object that raised the event.</param>
-      <param name="e">An object that contains event arguments.</param>
-    </member>
-    <member name="T:DevExpress.XtraGantt.TaskProgressModifyingCanceledEventArgs">
-      <summary>
-        <para>Provides data for the <see cref="E:DevExpress.XtraGantt.GanttControl.TaskProgressModifyingCanceled"/> event.</para>
-      </summary>
-    </member>
-    <member name="T:DevExpress.XtraGantt.TaskProgressModifyingCanceledEventHandler">
-      <summary>
-        <para>Represents a reference to a method that handles the <see cref="E:DevExpress.XtraGantt.GanttControl.TaskProgressModifyingCanceled"/> event.</para>
-      </summary>
-      <param name="sender">The object that raised the event.</param>
-      <param name="e">An object that contains event arguments.</param>
-    </member>
-    <member name="T:DevExpress.XtraGantt.TaskProgressModifyingEventArgs">
-      <summary>
-        <para>Provides data for the <see cref="E:DevExpress.XtraGantt.GanttControl.TaskProgressModifyingStarted"/>, <see cref="E:DevExpress.XtraGantt.GanttControl.TaskProgressModifying"/>, <see cref="E:DevExpress.XtraGantt.GanttControl.TaskProgressModifyingCanceled"/>, and <see cref="E:DevExpress.XtraGantt.GanttControl.TaskProgressModified"/> events.</para>
-      </summary>
-    </member>
-    <member name="P:DevExpress.XtraGantt.TaskProgressModifyingEventArgs.CurrentProgress">
-      <summary>
-        <para>Gets or sets the processed task&#39;s current (during the operation) progress.</para>
-      </summary>
-      <value>A value that specifies progress.</value>
-    </member>
-    <member name="P:DevExpress.XtraGantt.TaskProgressModifyingEventArgs.OriginalProgress">
-      <summary>
-        <para>Gets the processed task&#39;s original (before the operation) progress.</para>
-      </summary>
-      <value>A value that specifies progress.</value>
-    </member>
-    <member name="T:DevExpress.XtraGantt.TaskProgressModifyingEventHandler">
-      <summary>
-        <para>Represents a reference to a method that handles the <see cref="E:DevExpress.XtraGantt.GanttControl.TaskProgressModifying"/> event.</para>
-      </summary>
-      <param name="sender">The object that raised the event.</param>
-      <param name="e">An object that contains event arguments.</param>
     </member>
     <member name="T:DevExpress.XtraGantt.TreeListMappings">
       <summary>

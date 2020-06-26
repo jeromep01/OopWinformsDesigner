@@ -3228,17 +3228,17 @@ This function works only in the Optimized mode.</para>
       </summary>
       <value>A <see cref="T:DevExpress.XtraPivotGrid.Data.FieldValueCellBase"/> class descendant that specifies the parent cell.</value>
     </member>
-    <member name="T:DevExpress.XtraPivotGrid.FixedColumnStyleEnum">
+    <member name="T:DevExpress.XtraPivotGrid.FixedColumnStyle">
       <summary>
         <para>Lists values that specify whether to pin columns to the left or the right edge.</para>
       </summary>
     </member>
-    <member name="F:DevExpress.XtraPivotGrid.FixedColumnStyleEnum.Left">
+    <member name="F:DevExpress.XtraPivotGrid.FixedColumnStyle.FixedLeft">
       <summary>
         <para>Determines that columns are pinned to the left edge.</para>
       </summary>
     </member>
-    <member name="F:DevExpress.XtraPivotGrid.FixedColumnStyleEnum.Right">
+    <member name="F:DevExpress.XtraPivotGrid.FixedColumnStyle.FixedRight">
       <summary>
         <para>Determines that columns are pinned to the right edge.</para>
       </summary>
@@ -9015,6 +9015,12 @@ This function works only in the Optimized mode.</para>
       </summary>
       <value>An integer which specifies the position of the data field headers within the hierarchy of field values.</value>
     </member>
+    <member name="M:DevExpress.XtraPivotGrid.PivotGridOptionsDataField.Assign(DevExpress.Utils.Controls.BaseOptions)">
+      <summary>
+        <para>Copies all settings from the options object passed as a parameter.</para>
+      </summary>
+      <param name="options">An object whose settings are copied to the current object.</param>
+    </member>
     <member name="P:DevExpress.XtraPivotGrid.PivotGridOptionsDataField.Caption">
       <summary>
         <para>Gets or sets the text displayed within the data header.</para>
@@ -9062,6 +9068,11 @@ This function works only in the Optimized mode.</para>
         <para>Gets or sets the rule for naming columns, that correspond to data fields, when creating a data source via the CreateSummaryDataSource methods.</para>
       </summary>
       <value>A DevExpress.XtraPivotGrid.DataFieldNaming value that specifies the column naming convention.</value>
+    </member>
+    <member name="M:DevExpress.XtraPivotGrid.PivotGridOptionsDataField.Reset">
+      <summary>
+        <para>Resets all options to their default values.</para>
+      </summary>
     </member>
     <member name="P:DevExpress.XtraPivotGrid.PivotGridOptionsDataField.RowHeaderWidth">
       <summary>
@@ -9462,17 +9473,15 @@ This function works only in the Optimized mode.</para>
     </member>
     <member name="M:DevExpress.XtraPivotGrid.PivotGridOptionsViewBase.#ctor(System.EventHandler)">
       <summary>
-        <para>Initializes a new instance of the <see cref="T:DevExpress.XtraPivotGrid.PivotGridOptionsViewBase"/> class.</para>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.XtraPivotGrid.PivotGridOptionsViewBase"/> class with specified settings.</para>
       </summary>
       <param name="optionsChanged">A delegate that will receive change notifications.</param>
     </member>
-    <member name="M:DevExpress.XtraPivotGrid.PivotGridOptionsViewBase.#ctor(System.EventHandler,DevExpress.WebUtils.IViewBagOwner,System.String)">
+    <member name="M:DevExpress.XtraPivotGrid.PivotGridOptionsViewBase.Assign(DevExpress.Utils.Controls.BaseOptions)">
       <summary>
-        <para>Initializes a new instance of the <see cref="T:DevExpress.XtraPivotGrid.PivotGridOptionsViewBase"/> class.</para>
+        <para>Copies all settings from the options object passed as a parameter.</para>
       </summary>
-      <param name="optionsChanged">A delegate that will receive change notifications.</param>
-      <param name="viewBagOwner">An object which implements the IViewBagOwner interface.</param>
-      <param name="objectPath">The string value.</param>
+      <param name="options">An object whose settings are copied to the current object.</param>
     </member>
     <member name="P:DevExpress.XtraPivotGrid.PivotGridOptionsViewBase.ColumnTotalsLocation">
       <summary>

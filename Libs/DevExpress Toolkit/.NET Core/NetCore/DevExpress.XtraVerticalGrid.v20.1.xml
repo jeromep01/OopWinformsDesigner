@@ -5278,7 +5278,7 @@ This property is only in effect for the <see cref="T:DevExpress.XtraVerticalGrid
     </member>
     <member name="P:DevExpress.XtraVerticalGrid.VGridControlBase.RecordWidth">
       <summary>
-        <para>Gets or sets the record&#39;s width, in either absolute or relative values, according to the currently applied layout.</para>
+        <para>Gets or sets a record&#39;s width (as an absolute or relative value) based on the current layout. This setting affects all Vertical Grid or Property Grid records. Note that you cannot change the width of an individual record.</para>
       </summary>
       <value>An integer value that specifies the record&#39;s width.</value>
     </member>
@@ -5458,6 +5458,11 @@ This property is only in effect for the <see cref="T:DevExpress.XtraVerticalGrid
       </summary>
       <value>A <see cref="T:DevExpress.XtraVerticalGrid.ScrollVisibility"/> enumeration value that specifies when horizontal and vertical scroll bars should be displayed.</value>
     </member>
+    <member name="M:DevExpress.XtraVerticalGrid.VGridControlBase.SelectAll">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
     <member name="M:DevExpress.XtraVerticalGrid.VGridControlBase.SelectCell(System.Int32,DevExpress.XtraVerticalGrid.Rows.BaseRow,System.Int32)">
       <summary>
         <para>Adds a cell to the current selection in multiple cell selection mode (<see cref="F:DevExpress.XtraVerticalGrid.MultiSelectMode.CellSelect"/>). This overload allows you to address a certain cell within a <see cref="T:DevExpress.XtraVerticalGrid.Rows.MultiEditorRow"/>.</para>
@@ -5480,6 +5485,28 @@ This property is only in effect for the <see cref="T:DevExpress.XtraVerticalGrid
       <param name="dataSourceRecordIndex">A record&#39;s index in the bound data source.</param>
       <param name="fieldName">A string that identifies a row&#39;s field name.</param>
     </member>
+    <member name="M:DevExpress.XtraVerticalGrid.VGridControlBase.SelectCells(System.Int32,DevExpress.XtraVerticalGrid.Rows.BaseRow,System.Int32,System.Int32,DevExpress.XtraVerticalGrid.Rows.BaseRow,System.Int32)">
+      <summary>
+        <para></para>
+      </summary>
+      <param name="startRecord"></param>
+      <param name="startRow"></param>
+      <param name="startCell"></param>
+      <param name="endRecord"></param>
+      <param name="endRow"></param>
+      <param name="endCell"></param>
+    </member>
+    <member name="M:DevExpress.XtraVerticalGrid.VGridControlBase.SelectCells(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
+      <summary>
+        <para></para>
+      </summary>
+      <param name="startRecord"></param>
+      <param name="startRowIndex"></param>
+      <param name="startCell"></param>
+      <param name="endRecord"></param>
+      <param name="endRowIndex"></param>
+      <param name="endCell"></param>
+    </member>
     <member name="E:DevExpress.XtraVerticalGrid.VGridControlBase.SelectedChanged">
       <summary>
         <para>Allows you to respond to changes in the current selection.</para>
@@ -5497,6 +5524,13 @@ This property is only in effect for the <see cref="T:DevExpress.XtraVerticalGrid
       </summary>
       <param name="dataSourceRecordIndex">A record&#39;s index in the bound data source.</param>
     </member>
+    <member name="M:DevExpress.XtraVerticalGrid.VGridControlBase.SelectRecords(System.Int32,System.Int32)">
+      <summary>
+        <para></para>
+      </summary>
+      <param name="startRecord"></param>
+      <param name="endRecord"></param>
+    </member>
     <member name="M:DevExpress.XtraVerticalGrid.VGridControlBase.SelectRow(DevExpress.XtraVerticalGrid.Rows.BaseRow)">
       <summary>
         <para>Adds a row to the current selection in multiple row selection mode (<see cref="F:DevExpress.XtraVerticalGrid.MultiSelectMode.RowSelect"/>).</para>
@@ -5508,6 +5542,20 @@ This property is only in effect for the <see cref="T:DevExpress.XtraVerticalGrid
         <para>Adds a row to the current selection in multiple row selection mode (<see cref="F:DevExpress.XtraVerticalGrid.MultiSelectMode.RowSelect"/>).</para>
       </summary>
       <param name="fieldName">A string that identifies a row&#39;s field name.</param>
+    </member>
+    <member name="M:DevExpress.XtraVerticalGrid.VGridControlBase.SelectRows(DevExpress.XtraVerticalGrid.Rows.BaseRow,DevExpress.XtraVerticalGrid.Rows.BaseRow)">
+      <summary>
+        <para></para>
+      </summary>
+      <param name="startRow"></param>
+      <param name="endRow"></param>
+    </member>
+    <member name="M:DevExpress.XtraVerticalGrid.VGridControlBase.SelectRows(System.Int32,System.Int32)">
+      <summary>
+        <para></para>
+      </summary>
+      <param name="startRowIndex"></param>
+      <param name="endRowIndex"></param>
     </member>
     <member name="M:DevExpress.XtraVerticalGrid.VGridControlBase.SetCellValue(DevExpress.XtraVerticalGrid.Rows.BaseRow,System.Int32,System.Object)">
       <summary>

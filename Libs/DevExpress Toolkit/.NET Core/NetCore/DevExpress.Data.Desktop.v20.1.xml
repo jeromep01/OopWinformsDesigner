@@ -691,9 +691,9 @@
     </member>
     <member name="P:DevExpress.Xpf.Core.CompatibilitySettings.LegacyDefaultTheme">
       <summary>
-        <para>Gets or sets whether the application should use a legacy default theme.</para>
+        <para>Specifies a legacy default theme which the application should use.</para>
       </summary>
-      <value>A <see cref="T:System.Nullable"/> <see cref="T:DevExpress.Xpf.Core.LegacyDefaultTheme"/> that is the legacy default theme which the application should use.</value>
+      <value>A legacy default theme.</value>
     </member>
     <member name="P:DevExpress.Xpf.Core.CompatibilitySettings.MakeGetWindowReturnActualFloatPanelWindow">
       <summary>

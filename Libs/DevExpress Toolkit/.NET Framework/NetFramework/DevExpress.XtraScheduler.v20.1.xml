@@ -9015,7 +9015,7 @@ The DefaultBoolean.Default value is equivalent to DefaultBoolean.True if the sta
     </member>
     <member name="T:DevExpress.XtraScheduler.UI.AppointmentResourceEdit">
       <summary>
-        <para>The image combo box control used to select a single resource in appointment editing dialogs.</para>
+        <para>The image combo box control that displays a list of available resources. Users can select a resource in appointment editing dialogs.</para>
       </summary>
     </member>
     <member name="M:DevExpress.XtraScheduler.UI.AppointmentResourceEdit.#ctor">

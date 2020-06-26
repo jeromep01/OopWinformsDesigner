@@ -2255,7 +2255,7 @@
     </member>
     <member name="M:DevExpress.DashboardWin.DashboardDesigner.PerformDrillDownAsync(System.String,DevExpress.DashboardCommon.DashboardDataRow)">
       <summary>
-        <para>Performs a drill-down for the required element, asynchronously.</para>
+        <para>Performs a drill-down for the required element asynchronously.</para>
       </summary>
       <param name="dashboardItemName">A <see cref="T:System.String"/> that specifies the component name of the dashboard item.</param>
       <param name="value">A <see cref="T:DevExpress.DashboardCommon.DashboardDataRow"/> object that identifies the required element.</param>
@@ -2263,7 +2263,7 @@
     </member>
     <member name="M:DevExpress.DashboardWin.DashboardDesigner.PerformDrillDownAsync(System.String,DevExpress.DashboardCommon.DashboardDataRow,System.Threading.CancellationToken)">
       <summary>
-        <para>Performs a drill-down for the required element, asynchronously.</para>
+        <para>Performs a drill-down for the required element asynchronously.</para>
       </summary>
       <param name="dashboardItemName">A <see cref="T:System.String"/> that specifies the component name of the dashboard item.</param>
       <param name="value">A <see cref="T:DevExpress.DashboardCommon.DashboardDataRow"/> object that identifies the required element.</param>
@@ -2272,7 +2272,7 @@
     </member>
     <member name="M:DevExpress.DashboardWin.DashboardDesigner.PerformDrillDownAsync(System.String,DevExpress.DashboardCommon.ViewerData.AxisPointTuple)">
       <summary>
-        <para>Performs a drill-down for the required element, asynchronously.</para>
+        <para>Performs a drill-down for the required element asynchronously.</para>
       </summary>
       <param name="dashboardItemName">A <see cref="T:System.String"/> that specifies the component name of the dashboard item.</param>
       <param name="tuple">An <see cref="T:DevExpress.DashboardCommon.ViewerData.AxisPointTuple"/> object that can be used to perform drill-down.</param>
@@ -2280,7 +2280,7 @@
     </member>
     <member name="M:DevExpress.DashboardWin.DashboardDesigner.PerformDrillDownAsync(System.String,DevExpress.DashboardCommon.ViewerData.AxisPointTuple,System.Threading.CancellationToken)">
       <summary>
-        <para>Performs a drill-down for the required element, asynchronously.</para>
+        <para>Performs a drill-down for the required element asynchronously.</para>
       </summary>
       <param name="dashboardItemName">A <see cref="T:System.String"/> that specifies the component name of the dashboard item.</param>
       <param name="tuple">An <see cref="T:DevExpress.DashboardCommon.ViewerData.AxisPointTuple"/> object that can be used to perform drill-down.</param>
@@ -2312,14 +2312,14 @@
     </member>
     <member name="M:DevExpress.DashboardWin.DashboardDesigner.PerformDrillUpAsync(System.String)">
       <summary>
-        <para>Performs a drill-up in the specified dashboard item, asynchronously.</para>
+        <para>Performs a drill-up in the specified dashboard item asynchronously.</para>
       </summary>
       <param name="dashboardItemName">A <see cref="T:System.String"/> that specifies the component name of the dashboard item.</param>
       <returns>The task object that is the asynchronous operation to complete.</returns>
     </member>
     <member name="M:DevExpress.DashboardWin.DashboardDesigner.PerformDrillUpAsync(System.String,System.Threading.CancellationToken)">
       <summary>
-        <para>Performs a drill-up in the specified dashboard item, asynchronously.</para>
+        <para>Performs a drill-up in the specified dashboard item asynchronously.</para>
       </summary>
       <param name="dashboardItemName">A <see cref="T:System.String"/> that specifies the component name of the dashboard item.</param>
       <param name="token">Propagates notification that operations should be canceled.</param>
@@ -2388,33 +2388,33 @@
     </member>
     <member name="M:DevExpress.DashboardWin.DashboardDesigner.ReloadData(System.String)">
       <summary>
-        <para></para>
+        <para>Reloads data from the data source for the specified dashboard item.</para>
       </summary>
-      <param name="dashboardItemName"></param>
+      <param name="dashboardItemName">A string that specifies a component name of the dashboard item for which you reload data.</param>
     </member>
     <member name="M:DevExpress.DashboardWin.DashboardDesigner.ReloadDataAsync">
       <summary>
-        <para>Reloads data in the data sources, asynchronously.</para>
+        <para>Reloads data in the data sources asynchronously.</para>
       </summary>
       <returns>The task object that is the asynchronous operation to complete.</returns>
     </member>
     <member name="M:DevExpress.DashboardWin.DashboardDesigner.ReloadDataAsync(System.String)">
       <summary>
-        <para></para>
+        <para>Reloads data from the data source for the specified dashboard item asynchronously.</para>
       </summary>
-      <param name="dashboardItemName"></param>
-      <returns></returns>
+      <param name="dashboardItemName">A string that specifies a component name of the dashboard item for which you reload data.</param>
+      <returns>The task object that is the asynchronous operation to complete.</returns>
     </member>
     <member name="M:DevExpress.DashboardWin.DashboardDesigner.ReloadDataAsync(System.Threading.CancellationToken)">
       <summary>
-        <para>Reloads data in the data sources, asynchronously.</para>
+        <para>Reloads data in the data sources asynchronously.</para>
       </summary>
       <param name="token">Propagates notification that operations should be canceled.</param>
       <returns>The task object that is the asynchronous operation to complete.</returns>
     </member>
     <member name="M:DevExpress.DashboardWin.DashboardDesigner.RestoreDashboardItem">
       <summary>
-        <para>Restores the item size if an item is expanded to the entire dashboard size (maximized).&#39;</para>
+        <para>Restores the item size if an item is expanded to the entire dashboard size (maximized).</para>
       </summary>
     </member>
     <member name="M:DevExpress.DashboardWin.DashboardDesigner.RestoreDashboardItemAsync">
@@ -2551,7 +2551,7 @@
         <para>Selects the elements by their values in the specified master filter item.</para>
       </summary>
       <param name="dashboardItemName">A <see cref="T:System.String"/> that specifies the component name of the master filter item.</param>
-      <param name="values">list of <see cref="T:DevExpress.DashboardCommon.DashboardDataRow"/> objects used to identify master filter elements.</param>
+      <param name="values">A list of <see cref="T:DevExpress.DashboardCommon.DashboardDataRow"/> objects used to identify master filter elements.</param>
       <returns>The task object that is the asynchronous operation to complete.</returns>
     </member>
     <member name="M:DevExpress.DashboardWin.DashboardDesigner.SetMasterFilterAsync(System.String,System.Collections.Generic.IEnumerable{DevExpress.DashboardCommon.DashboardDataRow},System.Threading.CancellationToken)">
@@ -2613,7 +2613,7 @@
     </member>
     <member name="M:DevExpress.DashboardWin.DashboardDesigner.SetRangeAsync(System.String,DevExpress.DashboardCommon.RangeFilterSelection)">
       <summary>
-        <para>Selects the required range in the specified Range Filter or Date Filter dashboard item, asynchronously.</para>
+        <para>Selects the required range in the specified Range Filter or Date Filter dashboard item asynchronously.</para>
       </summary>
       <param name="dashboardItemName">A <see cref="T:System.String"/> that specifies the component name of the Range Filter or Date Filter dashboard item.</param>
       <param name="range">A <see cref="T:DevExpress.DashboardCommon.RangeFilterSelection"/> object that specifies a range in the Range Filter or Date Filter dashboard item.</param>
@@ -2621,7 +2621,7 @@
     </member>
     <member name="M:DevExpress.DashboardWin.DashboardDesigner.SetRangeAsync(System.String,DevExpress.DashboardCommon.RangeFilterSelection,System.Threading.CancellationToken)">
       <summary>
-        <para>Selects the specified range in the specified Range Filter or Date Filter dashboard item, asynchronously.</para>
+        <para>Selects the specified range in the specified Range Filter or Date Filter dashboard item asynchronously.</para>
       </summary>
       <param name="dashboardItemName">A <see cref="T:System.String"/> that specifies the component name of the Range Filter or Date Filter dashboard item.</param>
       <param name="range">A <see cref="T:DevExpress.DashboardCommon.RangeFilterSelection"/> object that specifies a range in the Range Filter or Date Filter dashboard item.</param>
@@ -2630,7 +2630,7 @@
     </member>
     <member name="M:DevExpress.DashboardWin.DashboardDesigner.SetRangeAsync(System.String,System.String)">
       <summary>
-        <para>Selects the specified range in the specified Range Filter or Date Filter dashboard item, asynchronously.</para>
+        <para>Selects the specified range in the specified Range Filter or Date Filter dashboard item asynchronously.</para>
       </summary>
       <param name="dashboardItemName">A <see cref="T:System.String"/> that specifies the component name of the Range Filter or Date Filter dashboard item.</param>
       <param name="dateTimePeriodName">A <see cref="T:System.String"/> that specifies the name of the predefined range used to perform a selection.</param>
@@ -2638,7 +2638,7 @@
     </member>
     <member name="M:DevExpress.DashboardWin.DashboardDesigner.SetRangeAsync(System.String,System.String,System.Threading.CancellationToken)">
       <summary>
-        <para>Selects the specified range in the specified Range Filter or Date Filter dashboard item, asynchronously.</para>
+        <para>Selects the specified range in the specified Range Filter or Date Filter dashboard item asynchronously.</para>
       </summary>
       <param name="dashboardItemName">A <see cref="T:System.String"/> that specifies the component name of the Range Filter or Date Filter dashboard item.</param>
       <param name="dateTimePeriodName">A <see cref="T:System.String"/> that specifies the name of the predefined range used to perform a selection.</param>
@@ -4329,9 +4329,9 @@
     </member>
     <member name="P:DevExpress.DashboardWin.DashboardViewer.AsyncMode">
       <summary>
-        <para>Switches to asynchronous mode.</para>
+        <para>Gets or sets whether DashboardViewer operates in asynchronous mode.</para>
       </summary>
-      <value>True, to use asynchronous mode; otherwise, false.</value>
+      <value>true, to use asynchronous mode; otherwise, false.</value>
     </member>
     <member name="E:DevExpress.DashboardWin.DashboardViewer.AsyncValidateCustomSqlQuery">
       <summary>
@@ -4468,7 +4468,7 @@
     </member>
     <member name="E:DevExpress.DashboardWin.DashboardViewer.CustomPalette">
       <summary>
-        <para>Provides the capability to substitute the default palette containing colors used to paint dashboard item elements.</para>
+        <para>Allows you to substitute the default palette containing colors used to paint dashboard item elements.</para>
       </summary>
     </member>
     <member name="E:DevExpress.DashboardWin.DashboardViewer.CustomParameters">
@@ -4499,7 +4499,7 @@
     </member>
     <member name="E:DevExpress.DashboardWin.DashboardViewer.DashboardItemClick">
       <summary>
-        <para>Occurs when an end-user clicks a dashboard item.</para>
+        <para>Occurs when an end user clicks a dashboard item.</para>
       </summary>
     </member>
     <member name="E:DevExpress.DashboardWin.DashboardViewer.DashboardItemControlCreated">
@@ -4514,7 +4514,7 @@
     </member>
     <member name="E:DevExpress.DashboardWin.DashboardViewer.DashboardItemDoubleClick">
       <summary>
-        <para>Occurs when an end-user double-clicks a dashboard item.</para>
+        <para>Occurs when an end user double-clicks a dashboard item.</para>
       </summary>
     </member>
     <member name="E:DevExpress.DashboardWin.DashboardViewer.DashboardItemElementCustomColor">
@@ -5017,7 +5017,7 @@
         <para>Gets the selected page in the specified tab container.</para>
       </summary>
       <param name="tabContainerName">A <see cref="T:System.String"/> that is the <see cref="P:DevExpress.DashboardCommon.DashboardItem.ComponentName"/> property value and identifies the tab container.</param>
-      <returns>A <see cref="T:System.String"/> that is the <see cref="P:DevExpress.DashboardCommon.DashboardItem.ComponentName"/> property value and identifies the tab page.&#39;</returns>
+      <returns>A <see cref="T:System.String"/> that is the <see cref="P:DevExpress.DashboardCommon.DashboardItem.ComponentName"/> property value and identifies the tab page.</returns>
     </member>
     <member name="M:DevExpress.DashboardWin.DashboardViewer.GetSelectedTabPageIndex(System.String)">
       <summary>
@@ -5136,13 +5136,13 @@
     </member>
     <member name="P:DevExpress.DashboardWin.DashboardViewer.LoadInactiveTabs">
       <summary>
-        <para>Gets or sets whether to load data for items that are placed on unselected tab pages.</para>
+        <para>Gets or sets whether the control loads data for dashboard items on the initially inactive tab pages.</para>
       </summary>
       <value>true, to load data in the inactive tab pages; otherwise, false.</value>
     </member>
     <member name="E:DevExpress.DashboardWin.DashboardViewer.MasterFilterCleared">
       <summary>
-        <para>Occurs when an end-user clears the selection in the master filter item.</para>
+        <para>Occurs when an end user clears the selection in the master filter item.</para>
       </summary>
     </member>
     <member name="E:DevExpress.DashboardWin.DashboardViewer.MasterFilterDefaultValues">
@@ -5152,7 +5152,7 @@
     </member>
     <member name="E:DevExpress.DashboardWin.DashboardViewer.MasterFilterSet">
       <summary>
-        <para>Occurs when an end-user changes the state of the master filter.</para>
+        <para>Occurs when an end user changes the state of the master filter.</para>
       </summary>
     </member>
     <member name="M:DevExpress.DashboardWin.DashboardViewer.MaximizeDashboardItem(System.String)">
@@ -5165,7 +5165,7 @@
       <summary>
         <para>Expands the specified dashboard item to the entire dashboard size in an asynchronous task.</para>
       </summary>
-      <param name="itemName">A <see cref="T:System.String"/> that is the dashboard item component name (the <see cref="P:DevExpress.DashboardCommon.DashboardItem.ComponentName"/> property)</param>
+      <param name="itemName">A <see cref="T:System.String"/> that is the dashboard item component name (the <see cref="P:DevExpress.DashboardCommon.DashboardItem.ComponentName"/> property).</param>
       <returns>The task object that is the asynchronous operation to complete.</returns>
     </member>
     <member name="P:DevExpress.DashboardWin.DashboardViewer.MaximizedDashboardItemName">
@@ -5209,7 +5209,7 @@
     </member>
     <member name="M:DevExpress.DashboardWin.DashboardViewer.PerformDrillDownAsync(System.String,DevExpress.DashboardCommon.DashboardDataRow)">
       <summary>
-        <para>Performs a drill-down for the required element, asynchronously.</para>
+        <para>Performs a drill-down for the required element asynchronously.</para>
       </summary>
       <param name="dashboardItemName">A <see cref="T:System.String"/> that specifies the component name of the dashboard item.</param>
       <param name="value">A <see cref="T:DevExpress.DashboardCommon.DashboardDataRow"/> object that identifies the required element.</param>
@@ -5217,7 +5217,7 @@
     </member>
     <member name="M:DevExpress.DashboardWin.DashboardViewer.PerformDrillDownAsync(System.String,DevExpress.DashboardCommon.DashboardDataRow,System.Threading.CancellationToken)">
       <summary>
-        <para>Performs a drill-down for the required element, asynchronously.</para>
+        <para>Performs a drill-down for the required element asynchronously.</para>
       </summary>
       <param name="dashboardItemName">A <see cref="T:System.String"/> that specifies the component name of the dashboard item.</param>
       <param name="value">A <see cref="T:DevExpress.DashboardCommon.DashboardDataRow"/> object that identifies the required element.</param>
@@ -5226,15 +5226,15 @@
     </member>
     <member name="M:DevExpress.DashboardWin.DashboardViewer.PerformDrillDownAsync(System.String,DevExpress.DashboardCommon.ViewerData.AxisPointTuple)">
       <summary>
-        <para>Performs a drill-down for the required element, asynchronously.</para>
+        <para>Performs a drill-down for the required element asynchronously.</para>
       </summary>
       <param name="dashboardItemName">A <see cref="T:System.String"/> that specifies the component name of the dashboard item.</param>
-      <param name="tuple">A value that will be used to perform a drill-down for the required element.</param>
+      <param name="tuple">A <see cref="T:DevExpress.DashboardCommon.ViewerData.AxisPointTuple"/> object specifying the axis point tuple used to perform a drill-down for the required element.</param>
       <returns>The task object that is the asynchronous operation to complete.</returns>
     </member>
     <member name="M:DevExpress.DashboardWin.DashboardViewer.PerformDrillDownAsync(System.String,DevExpress.DashboardCommon.ViewerData.AxisPointTuple,System.Threading.CancellationToken)">
       <summary>
-        <para>Performs a drill-down for the required element, asynchronously.</para>
+        <para>Performs a drill-down for the required element asynchronously.</para>
       </summary>
       <param name="dashboardItemName">A <see cref="T:System.String"/> that specifies the component name of the dashboard item.</param>
       <param name="tuple">An <see cref="T:DevExpress.DashboardCommon.ViewerData.AxisPointTuple"/> object representing a set of axis points.</param>
@@ -5243,7 +5243,7 @@
     </member>
     <member name="M:DevExpress.DashboardWin.DashboardViewer.PerformDrillDownAsync(System.String,System.Object)">
       <summary>
-        <para>Performs a drill-down for the required element, asynchronously.</para>
+        <para>Performs a drill-down for the required element asynchronously.</para>
       </summary>
       <param name="dashboardItemName">A <see cref="T:System.String"/> that specifies the component name of the dashboard item.</param>
       <param name="value">A value that is used to perform a drill-down for the required element.</param>
@@ -5266,14 +5266,14 @@
     </member>
     <member name="M:DevExpress.DashboardWin.DashboardViewer.PerformDrillUpAsync(System.String)">
       <summary>
-        <para>Performs a drill-down for the required element, asynchronously.</para>
+        <para>Performs a drill-down for the required element asynchronously.</para>
       </summary>
       <param name="dashboardItemName">A <see cref="T:System.String"/> that specifies the component name of the dashboard item.</param>
       <returns>The task object that is the asynchronous operation to complete.</returns>
     </member>
     <member name="M:DevExpress.DashboardWin.DashboardViewer.PerformDrillUpAsync(System.String,System.Threading.CancellationToken)">
       <summary>
-        <para>Performs a drill-up in the specified dashboard item, asynchronously.</para>
+        <para>Performs a drill-up in the specified dashboard item asynchronously.</para>
       </summary>
       <param name="dashboardItemName">A <see cref="T:System.String"/> that specifies the component name of the dashboard item.</param>
       <param name="token">Propagates notification that operations should be canceled.</param>
@@ -5343,26 +5343,26 @@
     </member>
     <member name="M:DevExpress.DashboardWin.DashboardViewer.ReloadData(System.String)">
       <summary>
-        <para></para>
+        <para>Reloads data from the data source for the specified dashboard item.</para>
       </summary>
-      <param name="dashboardItemName"></param>
+      <param name="dashboardItemName">A string that specifies a component name of the dashboard item for which you reload data.</param>
     </member>
     <member name="M:DevExpress.DashboardWin.DashboardViewer.ReloadDataAsync">
       <summary>
-        <para>Reloads data in the data sources, asynchronously.</para>
+        <para>Reloads data in the data sources asynchronously.</para>
       </summary>
       <returns>The task object that is the asynchronous operation to complete.</returns>
     </member>
     <member name="M:DevExpress.DashboardWin.DashboardViewer.ReloadDataAsync(System.String)">
       <summary>
-        <para></para>
+        <para>Reloads data from the data source for the specified dashboard item asynchronously.</para>
       </summary>
-      <param name="dashboardItemName"></param>
-      <returns></returns>
+      <param name="dashboardItemName">A string that specifies a component name of the dashboard item for which you reload data.</param>
+      <returns>The task object that is the asynchronous operation to complete.</returns>
     </member>
     <member name="M:DevExpress.DashboardWin.DashboardViewer.ReloadDataAsync(System.Threading.CancellationToken)">
       <summary>
-        <para>Reloads data in the data sources, asynchronously.</para>
+        <para>Reloads data in the data sources asynchronously.</para>
       </summary>
       <param name="token">Propagates notification that operations should be canceled.</param>
       <returns>The task object that is the asynchronous operation to complete.</returns>
@@ -5539,7 +5539,7 @@
     </member>
     <member name="M:DevExpress.DashboardWin.DashboardViewer.SetRangeAsync(System.String,DevExpress.DashboardCommon.RangeFilterSelection)">
       <summary>
-        <para>Selects the specified range in the specified Range Filter or Date Filter dashboard item, asynchronously.</para>
+        <para>Selects the specified range in the specified Range Filter or Date Filter dashboard item asynchronously.</para>
       </summary>
       <param name="dashboardItemName">A <see cref="T:System.String"/> that specifies the component name of the Range Filter or Date Filter dashboard item.</param>
       <param name="range">A <see cref="T:DevExpress.DashboardCommon.RangeFilterSelection"/> object that specifies a range in the Range Filter or Date Filter dashboard item.</param>
@@ -5547,7 +5547,7 @@
     </member>
     <member name="M:DevExpress.DashboardWin.DashboardViewer.SetRangeAsync(System.String,DevExpress.DashboardCommon.RangeFilterSelection,System.Threading.CancellationToken)">
       <summary>
-        <para>Selects the specified range in the specified Range Filter or Date Filter dashboard item, asynchronously.</para>
+        <para>Selects the specified range in the specified Range Filter or Date Filter dashboard item asynchronously.</para>
       </summary>
       <param name="dashboardItemName">A <see cref="T:System.String"/> that specifies the component name of the Range Filter or Date Filter dashboard item.</param>
       <param name="range">A <see cref="T:DevExpress.DashboardCommon.RangeFilterSelection"/> object that specifies a range in the Range Filter or Date Filter dashboard item.</param>
@@ -5556,7 +5556,7 @@
     </member>
     <member name="M:DevExpress.DashboardWin.DashboardViewer.SetRangeAsync(System.String,System.String)">
       <summary>
-        <para>Selects the required range in the specified Range Filter or Date Filter dashboard item, asynchronously.</para>
+        <para>Selects the required range in the specified Range Filter or Date Filter dashboard item asynchronously.</para>
       </summary>
       <param name="dashboardItemName">A <see cref="T:System.String"/> that specifies the component name of the Range Filter or Date Filter dashboard item.</param>
       <param name="dateTimePeriodName">A <see cref="T:System.String"/> that specifies the name of the predefined range used to perform a selection.</param>
@@ -5564,7 +5564,7 @@
     </member>
     <member name="M:DevExpress.DashboardWin.DashboardViewer.SetRangeAsync(System.String,System.String,System.Threading.CancellationToken)">
       <summary>
-        <para>Selects the required range in the specified Range Filter or Date Filter dashboard item, asynchronously.</para>
+        <para>Selects the required range in the specified Range Filter or Date Filter dashboard item asynchronously.</para>
       </summary>
       <param name="dashboardItemName">A <see cref="T:System.String"/> that specifies the component name of the Range Filter or Date Filter dashboard item.</param>
       <param name="dateTimePeriodName">A <see cref="T:System.String"/> that specifies the name of the predefined range used to perform a selection.</param>
@@ -5604,14 +5604,14 @@
     </member>
     <member name="M:DevExpress.DashboardWin.DashboardViewer.ShowDataInspectorAsync(System.String)">
       <summary>
-        <para>Invokes the Data Inspector dialog for the specified dashboard item.</para>
+        <para>Invokes the Data Inspector dialog for the specified dashboard item asynchronously.</para>
       </summary>
       <param name="dashboardItemName">A <see cref="T:System.String"/> object that specifies a component name of the dashboard item for which the Data Inspector displays data.</param>
       <returns>The task object that is the asynchronous operation to perform.</returns>
     </member>
     <member name="M:DevExpress.DashboardWin.DashboardViewer.ShowDataInspectorAsync(System.String,DevExpress.DashboardCommon.InspectedType)">
       <summary>
-        <para>Invokes the Data Inspector dialog with a defined data type for the specified dashboard item.</para>
+        <para>Invokes the Data Inspector dialog with a defined data type for the specified dashboard item asynchronously.</para>
       </summary>
       <param name="dashboardItemName">A <see cref="T:System.String"/> object that specifies a component name of the dashboard item for which the Data Inspector displays data.</param>
       <param name="inspectedType">A <see cref="T:DevExpress.DashboardCommon.InspectedType"/> enumeration value that defines a displayed underlying data.</param>
@@ -6329,1256 +6329,1256 @@
     </member>
     <member name="T:DevExpress.DashboardWin.IDashboardControl">
       <summary>
-        <para></para>
+        <para>Provides API members that are common for <see cref="T:DevExpress.DashboardWin.DashboardDesigner"/> and <see cref="T:DevExpress.DashboardWin.DashboardViewer"/>.</para>
       </summary>
     </member>
     <member name="P:DevExpress.DashboardWin.IDashboardControl.AllowInspectAggregatedData">
       <summary>
-        <para></para>
+        <para>Gets or sets whether to display aggregated data in the Data Inspector.</para>
       </summary>
-      <value></value>
+      <value>true, to display aggregated data in the Data Inspector; otherwise, false.</value>
     </member>
     <member name="P:DevExpress.DashboardWin.IDashboardControl.AllowInspectRawData">
       <summary>
-        <para></para>
+        <para>Gets or sets whether to display raw data in the Data Inspector.</para>
       </summary>
-      <value></value>
+      <value>true, to display raw data in the Data Inspector; otherwise, false.</value>
     </member>
     <member name="P:DevExpress.DashboardWin.IDashboardControl.AllowMaximizeAnimation">
       <summary>
-        <para></para>
+        <para>Gets or sets whether to enable the animation when you maximize or restore dashboard items.</para>
       </summary>
-      <value></value>
+      <value>True, to enable the animation; otherwise, false.</value>
     </member>
     <member name="P:DevExpress.DashboardWin.IDashboardControl.AllowMaximizeDashboardItems">
       <summary>
-        <para></para>
+        <para>Gets or sets whether end users can maximize dashboard items.</para>
       </summary>
-      <value></value>
+      <value>true, to allow maximizing dashboard items; otherwise, false.</value>
     </member>
     <member name="P:DevExpress.DashboardWin.IDashboardControl.AllowPrintDashboard">
       <summary>
-        <para></para>
+        <para>Gets or sets whether end-users can print or export a dashboard.</para>
       </summary>
-      <value></value>
+      <value>true, if end-users can print/export a dashboard; otherwise, false.</value>
     </member>
     <member name="P:DevExpress.DashboardWin.IDashboardControl.AllowPrintDashboardItems">
       <summary>
-        <para></para>
+        <para>Gets or sets whether end-users can print or export dashboard items.</para>
       </summary>
-      <value></value>
+      <value>true, if end-users can print/export dashboard items; otherwise, false.</value>
     </member>
     <member name="E:DevExpress.DashboardWin.IDashboardControl.AsyncDataLoading">
       <summary>
-        <para></para>
+        <para>Allows you to provide data for the <see cref="T:DevExpress.DashboardCommon.DashboardObjectDataSource"/> in asynchronous mode.</para>
       </summary>
     </member>
     <member name="E:DevExpress.DashboardWin.IDashboardControl.AsyncExcelDataSourceBeforeFill">
       <summary>
-        <para></para>
+        <para>Allows you to change options used to extract data from Microsoft Excel workbooks (XLS, XLSX or XLSM files) or CSV files asynchronously.</para>
       </summary>
     </member>
     <member name="P:DevExpress.DashboardWin.IDashboardControl.AsyncMode">
       <summary>
-        <para></para>
+        <para>Gets or sets whether DashboardViewer/DashboardDesigner operates in asynchronous mode.</para>
       </summary>
-      <value></value>
+      <value>true, to use asynchronous mode; otherwise, false.</value>
     </member>
     <member name="E:DevExpress.DashboardWin.IDashboardControl.AsyncValidateCustomSqlQuery">
       <summary>
-        <para></para>
+        <para>Allows you to validate a custom SQL query of the <see cref="T:DevExpress.DashboardCommon.DashboardSqlDataSource"/> in asynchronous mode.</para>
       </summary>
     </member>
     <member name="E:DevExpress.DashboardWin.IDashboardControl.BeforeExportDocument">
       <summary>
-        <para></para>
+        <para>Allows you to hide specific dashboard items when printing or exporting the entire dashboard.</para>
       </summary>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.BeginUpdateParameters">
       <summary>
-        <para></para>
+        <para>Locks the <see cref="T:DevExpress.DashboardWin.DashboardParameters"/> object until the <see cref="M:DevExpress.DashboardWin.DashboardViewer.EndUpdateParameters"/>/<see cref="M:DevExpress.DashboardWin.DashboardDesigner.EndUpdateParameters"/> method call.</para>
       </summary>
     </member>
     <member name="P:DevExpress.DashboardWin.IDashboardControl.CalculateHiddenTotals">
       <summary>
-        <para></para>
+        <para>Gets or sets whether to calculate totals for the hidden data items.</para>
       </summary>
-      <value></value>
+      <value>true, to calculate hidden totals; otherwise, false.</value>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.CanClearMasterFilter(System.String)">
       <summary>
-        <para></para>
+        <para>Returns whether the specified master filter can be cleared in the current state.</para>
       </summary>
-      <param name="dashboardItemName"></param>
-      <returns></returns>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that specifies the component name of the dashboard item.</param>
+      <returns>true, if the specified master filter can be cleared in the current state; otherwise, false.</returns>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.CanPerformDrillDown(System.String)">
       <summary>
-        <para></para>
+        <para>Returns whether drill down is possible in the current state of the specified dashboard item.</para>
       </summary>
-      <param name="dashboardItemName"></param>
-      <returns></returns>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that specifies the component name of the dashboard item.</param>
+      <returns>true, if drill down is possible in the current state of the specified dashboard item; otherwise, false.</returns>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.CanPerformDrillUp(System.String)">
       <summary>
-        <para></para>
+        <para>Returns whether drill up is possible in the current state of the specified dashboard item.</para>
       </summary>
-      <param name="dashboardItemName"></param>
-      <returns></returns>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that specifies the component name of the dashboard item.</param>
+      <returns>true, if drill up is possible in the current state of the specified dashboard item; otherwise, false.</returns>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.CanSetMasterFilter(System.String)">
       <summary>
-        <para></para>
+        <para>Returns whether the master filter item allows selecting one or more elements.</para>
       </summary>
-      <param name="dashboardItemName"></param>
-      <returns></returns>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that specifies the component name of the dashboard item.</param>
+      <returns>true, if the master filter item allows selecting one or more elements; otherwise, false.</returns>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.CanSetMultiValueMasterFilter(System.String)">
       <summary>
-        <para></para>
+        <para>Returns whether the master filter item allows selecting multiple elements.</para>
       </summary>
-      <param name="dashboardItemName"></param>
-      <returns></returns>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that specifies the component name of the dashboard item.</param>
+      <returns>true, if the master filter item allows selecting multiple elements; otherwise, false.</returns>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.ClearMasterFilter(System.String)">
       <summary>
-        <para></para>
+        <para>Clears the specified master filter item.</para>
       </summary>
-      <param name="dashboardItemName"></param>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that specifies the component name of the dashboard item.</param>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.ClearMasterFilterAsync(System.String)">
       <summary>
-        <para></para>
+        <para>Clears the specified master filter item in asynchronous mode.</para>
       </summary>
-      <param name="dashboardItemName"></param>
-      <returns></returns>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that specifies the component name of the dashboard item.</param>
+      <returns>The task object that is the asynchronous operation to complete.</returns>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.ClearMasterFilterAsync(System.String,System.Threading.CancellationToken)">
       <summary>
-        <para></para>
+        <para>Clears the specified master filter item in asynchronous mode.</para>
       </summary>
-      <param name="dashboardItemName"></param>
-      <param name="token"></param>
-      <returns></returns>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that specifies the component name of the dashboard item.</param>
+      <param name="token">Propagates notification that operations should be canceled.</param>
+      <returns>The task object that is the asynchronous operation to complete.</returns>
     </member>
     <member name="E:DevExpress.DashboardWin.IDashboardControl.ConfigureDataConnection">
       <summary>
-        <para></para>
+        <para>Allows you to customize connection settings before the <see cref="T:DevExpress.DashboardWin.DashboardViewer"/>/<see cref="T:DevExpress.DashboardWin.DashboardDesigner"/> connects to a data store (database, OLAP cube, etc.).</para>
       </summary>
     </member>
     <member name="E:DevExpress.DashboardWin.IDashboardControl.ConnectionError">
       <summary>
-        <para></para>
+        <para>Allows overriding the default behavior when current connection parameters do not allow connecting to a data store.</para>
       </summary>
     </member>
     <member name="E:DevExpress.DashboardWin.IDashboardControl.CustomAssemblyLoading">
       <summary>
-        <para></para>
+        <para>Occurs before a custom assembly is loaded for use as <see cref="T:DevExpress.DashboardCommon.DashboardEFDataSource"/>.</para>
       </summary>
     </member>
     <member name="P:DevExpress.DashboardWin.IDashboardControl.CustomDBSchemaProviderEx">
       <summary>
-        <para></para>
+        <para>Allows you to specify a custom schema for the SQL Data Source.</para>
       </summary>
-      <value></value>
+      <value>An object that implements the <see cref="T:DevExpress.DataAccess.Sql.IDBSchemaProviderEx"/> interface that provides a custom schema.</value>
     </member>
     <member name="E:DevExpress.DashboardWin.IDashboardControl.CustomExport">
       <summary>
-        <para></para>
+        <para>Allows you to customize the exported document.</para>
       </summary>
     </member>
     <member name="E:DevExpress.DashboardWin.IDashboardControl.CustomFilterExpression">
       <summary>
-        <para></para>
+        <para>Allows you to include WHERE clauses into <see cref="T:DevExpress.DashboardCommon.DashboardSqlDataSource"/> queries.</para>
       </summary>
     </member>
     <member name="E:DevExpress.DashboardWin.IDashboardControl.CustomizeDashboardItemCaption">
       <summary>
-        <para></para>
+        <para>Allows you to customize the dashboard item caption at runtime.</para>
       </summary>
     </member>
     <member name="E:DevExpress.DashboardWin.IDashboardControl.CustomizeDashboardTitle">
       <summary>
-        <para></para>
+        <para>Allows you to customize the dashboard title at runtime.</para>
       </summary>
     </member>
     <member name="E:DevExpress.DashboardWin.IDashboardControl.CustomizeExportDocument">
       <summary>
-        <para></para>
+        <para>Allows you to customize the exported document.</para>
       </summary>
     </member>
     <member name="E:DevExpress.DashboardWin.IDashboardControl.CustomPalette">
       <summary>
-        <para></para>
+        <para>Allows you to substitute the default palette containing colors used to paint dashboard item elements.</para>
       </summary>
     </member>
     <member name="E:DevExpress.DashboardWin.IDashboardControl.CustomParameters">
       <summary>
-        <para></para>
+        <para>Occurs before data is loaded from the data store and allows you to customize dashboard parameters that are used for data processing.</para>
       </summary>
     </member>
     <member name="P:DevExpress.DashboardWin.IDashboardControl.Dashboard">
       <summary>
-        <para></para>
+        <para>Gets or sets the currently opened dashboard.</para>
       </summary>
-      <value></value>
+      <value>A <see cref="T:DevExpress.DashboardCommon.Dashboard"/> object that is the currently opened dashboard.</value>
     </member>
     <member name="E:DevExpress.DashboardWin.IDashboardControl.DashboardChanged">
       <summary>
-        <para></para>
+        <para>Occurs after a dashboard has been opened.</para>
       </summary>
     </member>
     <member name="E:DevExpress.DashboardWin.IDashboardControl.DashboardCustomPropertyChanged">
       <summary>
-        <para></para>
+        <para>Occurs when the custom property value in the Dashboard Viewer / Dashboard Designer is changed.</para>
       </summary>
     </member>
     <member name="E:DevExpress.DashboardWin.IDashboardControl.DashboardItemBeforeControlDisposed">
       <summary>
-        <para></para>
+        <para>Allows you to access underlying WinForms controls.</para>
       </summary>
     </member>
     <member name="E:DevExpress.DashboardWin.IDashboardControl.DashboardItemClick">
       <summary>
-        <para></para>
+        <para>Occurs when an end user clicks a dashboard item.</para>
       </summary>
     </member>
     <member name="E:DevExpress.DashboardWin.IDashboardControl.DashboardItemControlCreated">
       <summary>
-        <para></para>
+        <para>Allows you to access underlying WinForms controls.</para>
       </summary>
     </member>
     <member name="E:DevExpress.DashboardWin.IDashboardControl.DashboardItemControlUpdated">
       <summary>
-        <para></para>
+        <para>Allows you to access underlying WinForms controls.</para>
       </summary>
     </member>
     <member name="E:DevExpress.DashboardWin.IDashboardControl.DashboardItemDoubleClick">
       <summary>
-        <para></para>
+        <para>Occurs when an end user double-clicks a dashboard item.</para>
       </summary>
     </member>
     <member name="E:DevExpress.DashboardWin.IDashboardControl.DashboardItemElementCustomColor">
       <summary>
-        <para></para>
+        <para>Allows you to color the required dashboard item elements using the specified colors.</para>
       </summary>
     </member>
     <member name="E:DevExpress.DashboardWin.IDashboardControl.DashboardItemMaximizedStateChanged">
       <summary>
-        <para></para>
+        <para>Fires when an item becomes maximized or restores its original size.</para>
       </summary>
     </member>
     <member name="E:DevExpress.DashboardWin.IDashboardControl.DashboardItemMouseDown">
       <summary>
-        <para></para>
+        <para>Occurs when the mouse pointer is over the dashboard item and a mouse button is pressed.</para>
       </summary>
     </member>
     <member name="E:DevExpress.DashboardWin.IDashboardControl.DashboardItemMouseEnter">
       <summary>
-        <para></para>
+        <para>Occurs when the mouse pointer enters the dashboard item.</para>
       </summary>
     </member>
     <member name="E:DevExpress.DashboardWin.IDashboardControl.DashboardItemMouseHover">
       <summary>
-        <para></para>
+        <para>Occurs when the mouse pointer rests on the dashboard item.</para>
       </summary>
     </member>
     <member name="E:DevExpress.DashboardWin.IDashboardControl.DashboardItemMouseLeave">
       <summary>
-        <para></para>
+        <para>Occurs when the mouse pointer leaves the dashboard item.</para>
       </summary>
     </member>
     <member name="E:DevExpress.DashboardWin.IDashboardControl.DashboardItemMouseMove">
       <summary>
-        <para></para>
+        <para>Occurs when the mouse pointer is moved over the dashboard item.</para>
       </summary>
     </member>
     <member name="E:DevExpress.DashboardWin.IDashboardControl.DashboardItemMouseUp">
       <summary>
-        <para></para>
+        <para>Occurs when the mouse pointer is over the dashboard item and a mouse button is released.</para>
       </summary>
     </member>
     <member name="E:DevExpress.DashboardWin.IDashboardControl.DashboardItemMouseWheel">
       <summary>
-        <para></para>
+        <para>Occurs when the mouse wheel moves while the dashboard item has focus.</para>
       </summary>
     </member>
     <member name="E:DevExpress.DashboardWin.IDashboardControl.DashboardItemSelectionChanged">
       <summary>
-        <para></para>
+        <para>Occurs after the selection within the dashboard item is changed.</para>
       </summary>
     </member>
     <member name="E:DevExpress.DashboardWin.IDashboardControl.DashboardItemVisualInteractivity">
       <summary>
-        <para></para>
+        <para>Allows you to provide custom visual interactivity for data-bound dashboard items that support element selection and highlighting.</para>
       </summary>
     </member>
     <member name="E:DevExpress.DashboardWin.IDashboardControl.DashboardLoaded">
       <summary>
-        <para></para>
+        <para>Occurs after the dashboard is loaded to the <see cref="T:DevExpress.DashboardWin.DashboardViewer"/> / <see cref="T:DevExpress.DashboardWin.DashboardDesigner"/>.</para>
       </summary>
     </member>
     <member name="E:DevExpress.DashboardWin.IDashboardControl.DashboardStateChanged">
       <summary>
-        <para></para>
+        <para>Occurs after the current dashboard state in the <see cref="T:DevExpress.DashboardWin.DashboardViewer"/> / <see cref="T:DevExpress.DashboardWin.DashboardDesigner"/> is changed.</para>
       </summary>
     </member>
     <member name="E:DevExpress.DashboardWin.IDashboardControl.DataInspectorFormClosing">
       <summary>
-        <para></para>
+        <para>Occurs before the Data Inspector window closes. Allows you to access the window&#39;s grid controls.</para>
       </summary>
     </member>
     <member name="E:DevExpress.DashboardWin.IDashboardControl.DataInspectorFormLoad">
       <summary>
-        <para></para>
+        <para>Occurs before the Data Inspector window displays. Allows you to access the window&#39;s grid controls and change their settings.</para>
       </summary>
     </member>
     <member name="E:DevExpress.DashboardWin.IDashboardControl.DataLoading">
       <summary>
-        <para></para>
+        <para>Allows you to provide data for the <see cref="T:DevExpress.DashboardCommon.DashboardObjectDataSource"/>.</para>
       </summary>
     </member>
     <member name="E:DevExpress.DashboardWin.IDashboardControl.DataLoadingError">
       <summary>
-        <para></para>
+        <para>Allows you to suppress the form containing errors that occur during data loading.</para>
       </summary>
     </member>
     <member name="P:DevExpress.DashboardWin.IDashboardControl.DataSourceOptions">
       <summary>
-        <para></para>
+        <para>Provides access to options that define the data source options of a <see cref="T:DevExpress.DashboardWin.DashboardViewer"/> / <see cref="T:DevExpress.DashboardWin.DashboardDesigner"/>.</para>
       </summary>
-      <value></value>
+      <value>A <see cref="T:DevExpress.DataAccess.UI.Design.DataSourceOptionsContainer"/> object containing options that define the data source options of a <see cref="T:DevExpress.DashboardWin.DashboardViewer"/> / <see cref="T:DevExpress.DashboardWin.DashboardDesigner"/>.</value>
     </member>
     <member name="E:DevExpress.DashboardWin.IDashboardControl.DrillDownPerformed">
       <summary>
-        <para></para>
+        <para>Occurs after drill-down is performed.</para>
       </summary>
     </member>
     <member name="E:DevExpress.DashboardWin.IDashboardControl.DrillUpPerformed">
       <summary>
-        <para></para>
+        <para>Occurs after a drill-up is performed.</para>
       </summary>
     </member>
     <member name="P:DevExpress.DashboardWin.IDashboardControl.EnableWaitForm">
       <summary>
-        <para></para>
+        <para>Gets or sets whether the <see cref="T:DevExpress.DashboardWin.DashboardViewer"/> / <see cref="T:DevExpress.DashboardWin.DashboardDesigner"/> displays a Wait Form when a time-consuming operation is performed.</para>
       </summary>
-      <value></value>
+      <value>true, if the control displays a Wait Form when a time-consuming operation is performed; otherwise, false.</value>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.EndUpdateParameters">
       <summary>
-        <para></para>
+        <para>Unlocks the <see cref="T:DevExpress.DashboardWin.DashboardParameters"/> object after a call to the <see cref="M:DevExpress.DashboardWin.DashboardViewer.BeginUpdateParameters"/> method and applies changes made to the parameter settings.</para>
       </summary>
     </member>
     <member name="P:DevExpress.DashboardWin.IDashboardControl.ExcelExportOptions">
       <summary>
-        <para></para>
+        <para>Provides access to options related to exporting a dashboard item to the Excel format.</para>
       </summary>
       <value></value>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.ExportDashboardItemToExcel(System.String,System.IO.Stream,DevExpress.DashboardCommon.DashboardExcelExportOptions)">
       <summary>
-        <para></para>
+        <para>Exports the dashboard item to the specified stream in Excel format.</para>
       </summary>
-      <param name="dashboardItemName"></param>
-      <param name="stream"></param>
-      <param name="options"></param>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that is the component name of the dashboard item to be exported.</param>
+      <param name="stream">A <see cref="T:System.IO.Stream"/> object to which the created Excel file should be sent.</param>
+      <param name="options">A <see cref="T:DevExpress.DashboardCommon.DashboardExcelExportOptions"/> object which specifies the Excel export options to be applied when the dashboard item is exported.</param>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.ExportDashboardItemToExcel(System.String,System.String,DevExpress.DashboardCommon.DashboardExcelExportOptions)">
       <summary>
-        <para></para>
+        <para>Exports the dashboard item to the specified file in Excel format using the specified export options.</para>
       </summary>
-      <param name="dashboardItemName"></param>
-      <param name="filePath"></param>
-      <param name="options"></param>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that is the component name of the dashboard item to be exported.</param>
+      <param name="filePath">A <see cref="T:System.String"/> that specifies the path to the Excel file.</param>
+      <param name="options">A <see cref="T:DevExpress.DashboardCommon.ExcelExportOptions"/> object which specifies the Excel export options to be applied when the dashboard item is exported.</param>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.ExportDashboardItemToImage(System.String,System.IO.Stream)">
       <summary>
-        <para></para>
+        <para>Exports the dashboard item to the specified stream in Image format.</para>
       </summary>
-      <param name="dashboardItemName"></param>
-      <param name="stream"></param>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that is the component name of the dashboard item to be exported.</param>
+      <param name="stream">A <see cref="T:System.IO.Stream"/> object to which the created image file should be sent.</param>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.ExportDashboardItemToImage(System.String,System.IO.Stream,DevExpress.DashboardCommon.DashboardImageExportOptions)">
       <summary>
-        <para></para>
+        <para>Exports the dashboard item to the specified stream in Image format using the specified image options.</para>
       </summary>
-      <param name="dashboardItemName"></param>
-      <param name="stream"></param>
-      <param name="options"></param>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that is the component name of the dashboard item to be exported.</param>
+      <param name="stream">A <see cref="T:System.IO.Stream"/> object to which the created image file should be sent.</param>
+      <param name="options">A <see cref="T:DevExpress.DashboardCommon.DashboardImageExportOptions"/> object that specifies the image export options to be applied when the dashboard item is exported.</param>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.ExportDashboardItemToImage(System.String,System.String)">
       <summary>
-        <para></para>
+        <para>Exports the dashboard item to the specified file in Image format.</para>
       </summary>
-      <param name="dashboardItemName"></param>
-      <param name="filePath"></param>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that is the component name of the dashboard item to be exported.</param>
+      <param name="filePath">A <see cref="T:System.String"/> that specifies the path to the Image file.</param>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.ExportDashboardItemToImage(System.String,System.String,DevExpress.DashboardCommon.DashboardImageExportOptions)">
       <summary>
-        <para></para>
+        <para>Exports the dashboard item to the image file using the specified image options.</para>
       </summary>
-      <param name="dashboardItemName"></param>
-      <param name="filePath"></param>
-      <param name="options"></param>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that is the component name of the dashboard item to be exported.</param>
+      <param name="filePath">A <see cref="T:System.String"/> that specifies the path to the image file.</param>
+      <param name="options">A <see cref="T:DevExpress.DashboardCommon.DashboardImageExportOptions"/> object that specifies the image export options to be applied when the dashboard item is exported.</param>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.ExportDashboardItemToPdf(System.String,System.IO.Stream)">
       <summary>
-        <para></para>
+        <para>Exports the dashboard item to the specified stream in PDF format.</para>
       </summary>
-      <param name="dashboardItemName"></param>
-      <param name="stream"></param>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that is the component name of the dashboard item to be exported.</param>
+      <param name="stream">A <see cref="T:System.IO.Stream"/> object to which the created PDF file should be sent.</param>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.ExportDashboardItemToPdf(System.String,System.IO.Stream,DevExpress.DashboardCommon.DashboardPdfExportOptions)">
       <summary>
-        <para></para>
+        <para>Exports the dashboard item to the specified stream in PDF format using the specified PDF-specific options.</para>
       </summary>
-      <param name="dashboardItemName"></param>
-      <param name="stream"></param>
-      <param name="options"></param>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that is the component name of the dashboard item to be exported.</param>
+      <param name="stream">A <see cref="T:System.IO.Stream"/> object to which the created PDF file should be sent.</param>
+      <param name="options">A <see cref="T:DevExpress.DashboardCommon.DashboardPdfExportOptions"/> object which specifies the PDF export options to be applied when the dashboard item is exported.</param>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.ExportDashboardItemToPdf(System.String,System.String)">
       <summary>
-        <para></para>
+        <para>Exports the dashboard item to the specified file in PDF format.</para>
       </summary>
-      <param name="dashboardItemName"></param>
-      <param name="filePath"></param>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that is the component name of the dashboard item to be exported.</param>
+      <param name="filePath">A <see cref="T:System.String"/> that specifies the path to the PDF file.</param>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.ExportDashboardItemToPdf(System.String,System.String,DevExpress.DashboardCommon.DashboardPdfExportOptions)">
       <summary>
-        <para></para>
+        <para>Exports the dashboard item to the specified file in PDF format using the specified PDF-specific options.</para>
       </summary>
-      <param name="dashboardItemName"></param>
-      <param name="filePath"></param>
-      <param name="options"></param>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that is the component name of the dashboard item to be exported.</param>
+      <param name="filePath">A <see cref="T:System.String"/> that specifies the path to the PDF file.</param>
+      <param name="options">A <see cref="T:DevExpress.DashboardCommon.DashboardPdfExportOptions"/> object which specifies the PDF export options to be applied when the dashboard item is exported.</param>
     </member>
     <member name="E:DevExpress.DashboardWin.IDashboardControl.ExportFormShowing">
       <summary>
-        <para></para>
+        <para>Occurs when the Export Form is about to be displayed, and allows you to cancel the action.</para>
       </summary>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.ExportToExcel(System.IO.Stream)">
       <summary>
-        <para></para>
+        <para>Exports dashboard data to the specified stream in Excel format.</para>
       </summary>
-      <param name="stream"></param>
+      <param name="stream">A <see cref="T:System.IO.Stream"/> object to which the created Excel file should be sent.</param>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.ExportToExcel(System.IO.Stream,DevExpress.DashboardCommon.DashboardExcelExportOptions)">
       <summary>
-        <para></para>
+        <para>Exports dashboard data to the specified stream in Excel format.</para>
       </summary>
-      <param name="stream"></param>
-      <param name="options"></param>
+      <param name="stream">A <see cref="T:System.IO.Stream"/> object to which the created Excel file should be sent.</param>
+      <param name="options">A <see cref="T:DevExpress.DashboardCommon.DashboardExcelExportOptions"/> object containing Excel-specific options.</param>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.ExportToExcel(System.String)">
       <summary>
-        <para></para>
+        <para>Exports dashboard data to the specified file in Excel format.</para>
       </summary>
-      <param name="filePath"></param>
+      <param name="filePath">A <see cref="T:System.String"/> that specifies the path to the Excel file.</param>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.ExportToExcel(System.String,DevExpress.DashboardCommon.DashboardExcelExportOptions)">
       <summary>
-        <para></para>
+        <para>Exports dashboard data to the specified file in Excel format.</para>
       </summary>
-      <param name="filePath"></param>
-      <param name="options"></param>
+      <param name="filePath">A <see cref="T:System.String"/> that specifies the path to the Excel file.</param>
+      <param name="options">A <see cref="T:DevExpress.DashboardCommon.DashboardExcelExportOptions"/> object containing Excel-specific options.</param>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.ExportToImage(System.IO.Stream)">
       <summary>
-        <para></para>
+        <para>Exports a dashboard to the specified stream in Image format.</para>
       </summary>
-      <param name="stream"></param>
+      <param name="stream">A <see cref="T:System.IO.Stream"/> object to which the created image file should be sent.</param>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.ExportToImage(System.IO.Stream,DevExpress.DashboardCommon.DashboardImageExportOptions)">
       <summary>
-        <para></para>
+        <para>Exports a dashboard to the specified stream in Image format using the specified image-specific options.</para>
       </summary>
-      <param name="stream"></param>
-      <param name="options"></param>
+      <param name="stream">A <see cref="T:System.IO.Stream"/> object to which the created image file should be sent.</param>
+      <param name="options">A <see cref="T:DevExpress.DashboardCommon.DashboardImageExportOptions"/> object that specifies the image export options to be applied when a dashboard is exported.</param>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.ExportToImage(System.String)">
       <summary>
-        <para></para>
+        <para>Exports a dashboard to the specified file in Image format.</para>
       </summary>
-      <param name="filePath"></param>
+      <param name="filePath">A <see cref="T:System.String"/> that specifies the path to the Image file.</param>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.ExportToImage(System.String,DevExpress.DashboardCommon.DashboardImageExportOptions)">
       <summary>
-        <para></para>
+        <para>Exports a dashboard to the specified image file using the specified image-specific options.</para>
       </summary>
-      <param name="filePath"></param>
-      <param name="options"></param>
+      <param name="filePath">A <see cref="T:System.String"/> that specifies the path to the image file.</param>
+      <param name="options">A <see cref="T:DevExpress.DashboardCommon.DashboardImageExportOptions"/> object that specifies the image export options to be applied when a dashboard is exported.</param>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.ExportToPdf(System.IO.Stream)">
       <summary>
-        <para></para>
+        <para>Exports a dashboard to the specified stream in PDF format.</para>
       </summary>
-      <param name="stream"></param>
+      <param name="stream">A <see cref="T:System.IO.Stream"/> object to which the created PDF file should be sent.</param>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.ExportToPdf(System.IO.Stream,DevExpress.DashboardCommon.DashboardPdfExportOptions)">
       <summary>
-        <para></para>
+        <para>Exports a dashboard to the specified stream in PDF format using the specified PDF-specific options.</para>
       </summary>
-      <param name="stream"></param>
-      <param name="options"></param>
+      <param name="stream">A <see cref="T:System.IO.Stream"/> object to which the created PDF file should be sent.</param>
+      <param name="options">A <see cref="T:DevExpress.DashboardCommon.DashboardPdfExportOptions"/> object which specifies the PDF export options to be applied when a dashboard is exported.</param>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.ExportToPdf(System.String)">
       <summary>
-        <para></para>
+        <para>Exports a dashboard to the specified file in PDF format.</para>
       </summary>
-      <param name="filePath"></param>
+      <param name="filePath">A <see cref="T:System.String"/> that specifies the path to the PDF file.</param>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.ExportToPdf(System.String,DevExpress.DashboardCommon.DashboardPdfExportOptions)">
       <summary>
-        <para></para>
+        <para>Exports a dashboard to the specified file in PDF format using the specified PDF-specific options.</para>
       </summary>
-      <param name="filePath"></param>
-      <param name="options"></param>
+      <param name="filePath">A <see cref="T:System.String"/> that specifies the path to the PDF file.</param>
+      <param name="options">A <see cref="T:DevExpress.DashboardCommon.DashboardPdfExportOptions"/> object which specifies the PDF export options to be applied when a dashboard is exported.</param>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.GetAvailableDrillDownValues(System.String)">
       <summary>
-        <para></para>
+        <para>Returns data identifying the elements that can be used to perform drill-down in the specified dashboard item.</para>
       </summary>
-      <param name="dashboardItemName"></param>
-      <returns></returns>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that is the component name of the dashboard item.</param>
+      <returns>A list of <see cref="T:DevExpress.DashboardCommon.ViewerData.AxisPointTuple"/> objects identifying elements that can be used to perform drill-down in the specified dashboard item.</returns>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.GetAvailableDrillDownValuesAsync(System.String)">
       <summary>
-        <para></para>
+        <para>Returns data identifying the elements that can be used to perform drill-down in the specified dashboard item. Asynchronous method.</para>
       </summary>
-      <param name="dashboardItemName"></param>
-      <returns></returns>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that is the component name of the dashboard item.</param>
+      <returns>The task object that is the asynchronous operation to return a list of <see cref="T:DevExpress.DashboardCommon.ViewerData.AxisPointTuple"/> objects identifying elements that can be used to perform drill-down in the specified dashboard item.</returns>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.GetAvailableFilterValues(System.String)">
       <summary>
-        <para></para>
+        <para>Returns axis point tuples identifying elements that can be selected in the current state of the master filter item.</para>
       </summary>
-      <param name="dashboardItemName"></param>
-      <returns></returns>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that is the component name of the master filter item.</param>
+      <returns>A list of <see cref="T:DevExpress.DashboardCommon.ViewerData.AxisPointTuple"/> objects identifying elements that can be selected in the current state of the master filter item.</returns>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.GetAvailableFilterValuesAsync(System.String)">
       <summary>
-        <para></para>
+        <para>Gets the data (axis point tuples) that identifies selectable elements in the current state of the master filter item.</para>
       </summary>
-      <param name="dashboardItemName"></param>
-      <returns></returns>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that is the component name of the master filter item.</param>
+      <returns>The task object that is the asynchronous operation to get a list of <see cref="T:DevExpress.DashboardCommon.ViewerData.AxisPointTuple"/> objects.</returns>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.GetAvailablePredefinedRanges(System.String)">
       <summary>
-        <para></para>
+        <para>Returns names of the predefined ranges available for the specified Range Filter / Date Filter.</para>
       </summary>
-      <param name="dashboardItemName"></param>
-      <returns></returns>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> value that specifies the component name of the Range Filter / Date Filter dashboard items.</param>
+      <returns>An array of <see cref="T:System.String"/> values that are names of the available predefined ranges.</returns>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.GetCurrentDrillDownValues(System.String)">
       <summary>
-        <para></para>
+        <para>Returns an axis point tuple identifying the current drill-down state.</para>
       </summary>
-      <param name="dashboardItemName"></param>
-      <returns></returns>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that is the component name of the dashboard item.</param>
+      <returns>An <see cref="T:DevExpress.DashboardCommon.ViewerData.AxisPointTuple"/> object representing a set of axis points.</returns>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.GetCurrentFilterValues(System.String)">
       <summary>
-        <para></para>
+        <para>Returns axis point tuples identifying currently selected elements in the master filter item.</para>
       </summary>
-      <param name="dashboardItemName"></param>
-      <returns></returns>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that is the component name of the master filter item.</param>
+      <returns>A list of <see cref="T:DevExpress.DashboardCommon.ViewerData.AxisPointTuple"/> objects identifying elements that can be selected in the current state of the master filter item.</returns>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.GetCurrentPredefinedRange(System.String)">
       <summary>
-        <para></para>
+        <para>Returns the name of the currently selected predefined range.</para>
       </summary>
-      <param name="dashboardItemName"></param>
-      <returns></returns>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> value that specifies the component name of the Range Filter or Date Filter dashboard item.</param>
+      <returns>A <see cref="T:System.String"/> value that is the name of the currently selected predefined range.</returns>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.GetCurrentRange(System.String)">
       <summary>
-        <para></para>
+        <para>Returns the selected range for the specified Range Filter or Date Filter dashboard item.</para>
       </summary>
-      <param name="dashboardItemName"></param>
-      <returns></returns>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that specifies the component name of the Range Filter or Date Filter dashboard item.</param>
+      <returns>A <see cref="T:DevExpress.DashboardCommon.RangeFilterSelection"/> object that is the selected range in the specified Range Filter or Date Filter dashboard item.</returns>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.GetCurrentSelection(System.String)">
       <summary>
-        <para></para>
+        <para>Returns records identifying currently selected elements in the master filter item.</para>
       </summary>
-      <param name="dashboardItemName"></param>
-      <returns></returns>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that is the component name of the master filter item.</param>
+      <returns>A <see cref="T:DevExpress.DashboardCommon.DashboardDataSet"/> object that represents a list of records identifying currently selected elements.</returns>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.GetDashboardState">
       <summary>
-        <para></para>
+        <para>Gets the current dashboard state.</para>
       </summary>
-      <returns></returns>
+      <returns>A <see cref="T:DevExpress.DashboardCommon.DashboardState"/> object that contains modifications produced by end-user interaction.</returns>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.GetEntireRange(System.String)">
       <summary>
-        <para></para>
+        <para>Returns the visible range for the specified Range Filter or Date Filter dashboard item.</para>
       </summary>
-      <param name="dashboardItemName"></param>
-      <returns></returns>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that specifies the component name of the Range Filter or Date Filter dashboard item.</param>
+      <returns>A <see cref="T:DevExpress.DashboardCommon.RangeFilterSelection"/> object that is the visible range in the specified Range Filter or Date Filter dashboard item.</returns>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.GetEntireRangeAsync(System.String)">
       <summary>
-        <para></para>
+        <para>Returns the visible range for the specified Range Filter or Date Filter dashboard item.</para>
       </summary>
-      <param name="dashboardItemName"></param>
-      <returns></returns>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that specifies the component name of the Range Filter or Date Filter dashboard item.</param>
+      <returns>The task object that is the asynchronous operation to return a <see cref="T:DevExpress.DashboardCommon.RangeFilterSelection"/> object.</returns>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.GetItemData(System.String)">
       <summary>
-        <para></para>
+        <para>Returns the client data for the specified dashboard item.</para>
       </summary>
-      <param name="dashboardItemName"></param>
-      <returns></returns>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that specifies the component name of the dashboard item.</param>
+      <returns>A <see cref="T:DevExpress.DashboardCommon.ViewerData.MultiDimensionalData"/> object that represents multidimensional data visualized in the dashboard item.</returns>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.GetItemDataAsync(System.String)">
       <summary>
-        <para></para>
+        <para>Obtains the displayed data for the specified dashboard item asynchronously.</para>
       </summary>
-      <param name="dashboardItemName"></param>
-      <returns></returns>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that specifies the component name of the dashboard item.</param>
+      <returns>The task object that is the asynchronous operation to get the data visualized in the dashboard item.</returns>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.GetPrintableControl(System.String)">
       <summary>
-        <para></para>
+        <para>Gets a printable control corresponding to the specified dashboard item.</para>
       </summary>
-      <param name="dashboardItemName"></param>
-      <returns></returns>
+      <param name="dashboardItemName">A string that is the dashboard item&#39;s component name.</param>
+      <returns>A printable control corresponding to the specified dashboard item.</returns>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.GetSelectedTabPage(System.String)">
       <summary>
-        <para></para>
+        <para>Gets the selected page in the specified tab container.</para>
       </summary>
-      <param name="tabContainerName"></param>
-      <returns></returns>
+      <param name="tabContainerName">A <see cref="T:System.String"/> that is the <see cref="P:DevExpress.DashboardCommon.DashboardItem.ComponentName"/> property value and identifies the tab container.</param>
+      <returns>A <see cref="T:System.String"/> that is the <see cref="P:DevExpress.DashboardCommon.DashboardItem.ComponentName"/> property value and identifies the tab page.</returns>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.GetSelectedTabPageIndex(System.String)">
       <summary>
-        <para></para>
+        <para>Gets the index of the selected page in the specified tab container.</para>
       </summary>
-      <param name="tabContainerName"></param>
-      <returns></returns>
+      <param name="tabContainerName">A <see cref="T:System.String"/> that is the <see cref="P:DevExpress.DashboardCommon.DashboardItem.ComponentName"/> property value and identifies the tab container.</param>
+      <returns>An integer that is the index in the <see cref="P:DevExpress.DashboardCommon.TabContainerDashboardItem.TabPages"/> collection.</returns>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.GetUnderlyingControl(System.String)">
       <summary>
-        <para></para>
+        <para>Gets the underlying control used to visualize data within the specified dashboard item.</para>
       </summary>
-      <param name="componentName"></param>
-      <returns></returns>
+      <param name="componentName">A component name of the dashboard item for which you get the underlying control.</param>
+      <returns>A DevExpress WinForms control used to visualize data within the dashboard item.</returns>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.GetUnderlyingControls">
       <summary>
-        <para></para>
+        <para>Gets the underlying controls used to visualize data within the dashboard items.</para>
       </summary>
-      <returns></returns>
+      <returns>A list of DevExpress WinForms controls used to visualize data within the dashboard items.</returns>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.GetUnderlyingData(System.String)">
       <summary>
-        <para></para>
+        <para>Returns underlying data for the specified dashboard item.</para>
       </summary>
-      <param name="dashboardItemName"></param>
-      <returns></returns>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that specifies the component name of the dashboard item.</param>
+      <returns>A <see cref="T:DevExpress.DashboardCommon.DashboardUnderlyingDataSet"/> object that represents a list of records from the dashboard data source.</returns>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.GetUnderlyingData(System.String,System.Collections.Generic.IList{DevExpress.DashboardCommon.ViewerData.AxisPoint})">
       <summary>
-        <para></para>
+        <para>Returns underlying data for the specified dashboard item by the specified axis points.</para>
       </summary>
-      <param name="dashboardItemName"></param>
-      <param name="targetValues"></param>
-      <returns></returns>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that specifies the component name of the dashboard item.</param>
+      <param name="targetValues">A list of <see cref="T:DevExpress.DashboardCommon.ViewerData.AxisPoint"/> objects that specify data points in a multidimensional space.</param>
+      <returns>A <see cref="T:DevExpress.DashboardCommon.DashboardUnderlyingDataSet"/> object that represents a list of records from the dashboard data source.</returns>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.GetUnderlyingData(System.String,System.Collections.Generic.IList{DevExpress.DashboardCommon.ViewerData.AxisPoint},System.Collections.Generic.IList{System.String})">
       <summary>
-        <para></para>
+        <para>Returns underlying data for the specified dashboard item by the specified axis points.</para>
       </summary>
-      <param name="dashboardItemName"></param>
-      <param name="targetValues"></param>
-      <param name="dataMembers"></param>
-      <returns></returns>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that specifies the component name of the dashboard item.</param>
+      <param name="targetValues">A list of <see cref="T:DevExpress.DashboardCommon.ViewerData.AxisPoint"/> objects that specify data points in a multidimensional space.</param>
+      <param name="dataMembers">A list of <see cref="T:System.String"/> values that specify data member identifiers used to obtain underlying data.</param>
+      <returns>A <see cref="T:DevExpress.DashboardCommon.DashboardUnderlyingDataSet"/> object that represents a list of records from the dashboard data source.</returns>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.GetUnderlyingData(System.String,System.Collections.Generic.IList{DevExpress.DashboardWin.UnderlyingDataTargetValue})">
       <summary>
-        <para></para>
+        <para>Returns underlying data for the specified dashboard item by the specified dimension values.</para>
       </summary>
-      <param name="dashboardItemName"></param>
-      <param name="targetValues"></param>
-      <returns></returns>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that specifies the component name of the dashboard item.</param>
+      <param name="targetValues">A list of <see cref="T:DevExpress.DashboardWin.UnderlyingDataTargetValue"/> objects that specify the hierarchy of dimension values.</param>
+      <returns>A <see cref="T:DevExpress.DashboardCommon.DashboardUnderlyingDataSet"/> object that represents a list of records from the dashboard data source.</returns>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.GetUnderlyingData(System.String,System.Collections.Generic.IList{DevExpress.DashboardWin.UnderlyingDataTargetValue},System.Collections.Generic.IList{System.String})">
       <summary>
-        <para></para>
+        <para>Returns underlying data for the specified dashboard item by the specified dimension values.</para>
       </summary>
-      <param name="dashboardItemName"></param>
-      <param name="targetValues"></param>
-      <param name="dataMembers"></param>
-      <returns></returns>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that specifies the component name of the dashboard item.</param>
+      <param name="targetValues">A list of <see cref="T:DevExpress.DashboardWin.UnderlyingDataTargetValue"/> objects that specify the hierarchy of dimension values.</param>
+      <param name="dataMembers">A list of <see cref="T:System.String"/> values that specify data member identifiers used to obtain underlying data.</param>
+      <returns>A <see cref="T:DevExpress.DashboardCommon.DashboardUnderlyingDataSet"/> object that represents a list of records from the dashboard data source.</returns>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.GetUnderlyingData(System.String,System.Collections.Generic.IList{System.String})">
       <summary>
-        <para></para>
+        <para>Returns underlying data for the specified dashboard item by the specified data members.</para>
       </summary>
-      <param name="dashboardItemName"></param>
-      <param name="dataMembers"></param>
-      <returns></returns>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that specifies the component name of the dashboard item.</param>
+      <param name="dataMembers">A list of <see cref="T:System.String"/> values that specify data member identifiers used to obtain underlying data.</param>
+      <returns>A <see cref="T:DevExpress.DashboardCommon.DashboardUnderlyingDataSet"/> object that represents a list of records from the dashboard data source.</returns>
     </member>
     <member name="P:DevExpress.DashboardWin.IDashboardControl.GridBestFitMaxRowCount">
       <summary>
-        <para></para>
+        <para>Gets or sets the number of the Grid dashboard item&#39;s data rows whose content is processed to apply best fit to columns.</para>
       </summary>
-      <value></value>
+      <value>An integer value specifying the number of data rows that are processed to apply best fit to columns.</value>
     </member>
     <member name="P:DevExpress.DashboardWin.IDashboardControl.ImageExportOptions">
       <summary>
-        <para></para>
+        <para>Provides access to options related to exporting a dashboard/dashboard item to an image.</para>
       </summary>
-      <value></value>
+      <value>A <see cref="T:DevExpress.DashboardCommon.DashboardImageExportOptions"/> object containing options related to exporting a dashboard/dashboard item to an image.</value>
     </member>
     <member name="E:DevExpress.DashboardWin.IDashboardControl.Initialized">
       <summary>
-        <para></para>
+        <para>Handle this event to get the dashboard item data, and apply master filter and dashboard state in asynchronous mode.</para>
       </summary>
     </member>
     <member name="E:DevExpress.DashboardWin.IDashboardControl.LayoutChanged">
       <summary>
-        <para></para>
+        <para>Occurs after the dashboard layout is changed.</para>
       </summary>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.LoadDashboard(System.IO.Stream)">
       <summary>
-        <para></para>
+        <para>Loads a dashboard from a stream.</para>
       </summary>
-      <param name="stream"></param>
+      <param name="stream">A <see cref="T:System.IO.Stream"/> object that contains the dashboard.</param>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.LoadDashboard(System.String)">
       <summary>
-        <para></para>
+        <para>Loads a dashboard from an XML file.</para>
       </summary>
-      <param name="filePath"></param>
+      <param name="filePath">A <see cref="T:System.String"/> that specifies the path to an XML file that contains the dashboard.</param>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.LoadDashboardLayout(System.IO.Stream)">
       <summary>
-        <para></para>
+        <para>Loads a dashboard layout (layout items and layout containers) from a stream.</para>
       </summary>
-      <param name="stream"></param>
+      <param name="stream">A <see cref="T:System.IO.Stream"/> object that contains the dashboard layout.</param>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.LoadDashboardLayout(System.String)">
       <summary>
-        <para></para>
+        <para>Loads a dashboard layout from an XML file.</para>
       </summary>
-      <param name="filePath"></param>
+      <param name="filePath">A <see cref="T:System.String"/> that specifies the path to an XML file that contains the dashboard layout.</param>
     </member>
     <member name="E:DevExpress.DashboardWin.IDashboardControl.MasterFilterCleared">
       <summary>
-        <para></para>
+        <para>Occurs when an end user clears the selection in the master filter item.</para>
       </summary>
     </member>
     <member name="E:DevExpress.DashboardWin.IDashboardControl.MasterFilterDefaultValues">
       <summary>
-        <para></para>
+        <para>Allows you to apply default filtering to master filter items.</para>
       </summary>
     </member>
     <member name="E:DevExpress.DashboardWin.IDashboardControl.MasterFilterSet">
       <summary>
-        <para></para>
+        <para>Occurs when an end user changes the state of the master filter.</para>
       </summary>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.MaximizeDashboardItem(System.String)">
       <summary>
-        <para></para>
+        <para>Expands the specified dashboard item to the entire dashboard size to examine data in greater detail.</para>
       </summary>
-      <param name="itemName"></param>
+      <param name="itemName">A <see cref="T:System.String"/> that is the dashboard item component name (the <see cref="P:DevExpress.DashboardCommon.DashboardItem.ComponentName"/> property)</param>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.MaximizeDashboardItemAsync(System.String)">
       <summary>
-        <para></para>
+        <para>Expands the specified dashboard item to the entire dashboard size in an asynchronous task.</para>
       </summary>
-      <param name="itemName"></param>
-      <returns></returns>
+      <param name="itemName">A <see cref="T:System.String"/> that is the dashboard item component name (the <see cref="P:DevExpress.DashboardCommon.DashboardItem.ComponentName"/> property).</param>
+      <returns>The task object that is the asynchronous operation to complete.</returns>
     </member>
     <member name="P:DevExpress.DashboardWin.IDashboardControl.MaximizedDashboardItemName">
       <summary>
-        <para></para>
+        <para>Gets the name of the maximized dashboard item.</para>
       </summary>
-      <value></value>
+      <value>A <see cref="T:System.String"/> value that is a maximized dashboard item&#39;s name.</value>
     </member>
     <member name="P:DevExpress.DashboardWin.IDashboardControl.Parameters">
       <summary>
-        <para></para>
+        <para>Provides access to dashboard parameter settings and metadata.</para>
       </summary>
-      <value></value>
+      <value>A <see cref="T:DevExpress.DashboardWin.DashboardParameters"/> object representing a collection of <see cref="T:DevExpress.DashboardWin.DashboardParameterDescriptor"/> objects.</value>
     </member>
     <member name="P:DevExpress.DashboardWin.IDashboardControl.PdfExportOptions">
       <summary>
-        <para></para>
+        <para>Provides access to options related to exporting a dashboard/dashboard item to the PDF format.</para>
       </summary>
-      <value></value>
+      <value>A <see cref="T:DevExpress.DashboardCommon.DashboardPdfExportOptions"/> object containing options related to exporting a dashboard/dashboard item to the PDF format.</value>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.PerformDrillDown(System.String,DevExpress.DashboardCommon.DashboardDataRow)">
       <summary>
-        <para></para>
+        <para>Performs a drill-down for the required element.</para>
       </summary>
-      <param name="dashboardItemName"></param>
-      <param name="value"></param>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that specifies the component name of the dashboard item.</param>
+      <param name="value">A <see cref="T:DevExpress.DashboardCommon.DashboardDataRow"/> object that identifies the required element.</param>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.PerformDrillDown(System.String,DevExpress.DashboardCommon.ViewerData.AxisPointTuple)">
       <summary>
-        <para></para>
+        <para>Performs a drill-down for the required element.</para>
       </summary>
-      <param name="dashboardItemName"></param>
-      <param name="tuple"></param>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that specifies the component name of the dashboard item.</param>
+      <param name="tuple">An <see cref="T:DevExpress.DashboardCommon.ViewerData.AxisPointTuple"/> object representing a set of axis points.</param>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.PerformDrillDown(System.String,System.Object)">
       <summary>
-        <para></para>
+        <para>Performs a drill-down for the required element by its value.</para>
       </summary>
-      <param name="dashboardItemName"></param>
-      <param name="value"></param>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that specifies the component name of the dashboard item.</param>
+      <param name="value">A value that is used to perform a drill-down for the required element.</param>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.PerformDrillDownAsync(System.String,DevExpress.DashboardCommon.DashboardDataRow)">
       <summary>
-        <para></para>
+        <para>Performs a drill-down for the required element asynchronously.</para>
       </summary>
-      <param name="dashboardItemName"></param>
-      <param name="value"></param>
-      <returns></returns>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that specifies the component name of the dashboard item.</param>
+      <param name="value">A <see cref="T:DevExpress.DashboardCommon.DashboardDataRow"/> object that identifies the required element.</param>
+      <returns>The task object that is the asynchronous operation to complete.</returns>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.PerformDrillDownAsync(System.String,DevExpress.DashboardCommon.DashboardDataRow,System.Threading.CancellationToken)">
       <summary>
-        <para></para>
+        <para>Performs a drill-down for the required element asynchronously.</para>
       </summary>
-      <param name="dashboardItemName"></param>
-      <param name="value"></param>
-      <param name="token"></param>
-      <returns></returns>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that specifies the component name of the dashboard item.</param>
+      <param name="value">A <see cref="T:DevExpress.DashboardCommon.DashboardDataRow"/> object that identifies the required element.</param>
+      <param name="token">Propagates notification that operations should be canceled.</param>
+      <returns>The task object that is the asynchronous operation to complete.</returns>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.PerformDrillDownAsync(System.String,DevExpress.DashboardCommon.ViewerData.AxisPointTuple)">
       <summary>
-        <para></para>
+        <para>Performs a drill-down for the required element asynchronously.</para>
       </summary>
-      <param name="dashboardItemName"></param>
-      <param name="tuple"></param>
-      <returns></returns>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that specifies the component name of the dashboard item.</param>
+      <param name="tuple">A <see cref="T:DevExpress.DashboardCommon.ViewerData.AxisPointTuple"/> object specifying the axis point tuple used to perform a drill-down for the required element.</param>
+      <returns>The task object that is the asynchronous operation to complete.</returns>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.PerformDrillDownAsync(System.String,DevExpress.DashboardCommon.ViewerData.AxisPointTuple,System.Threading.CancellationToken)">
       <summary>
-        <para></para>
+        <para>Performs a drill-down for the required element asynchronously.</para>
       </summary>
-      <param name="dashboardItemName"></param>
-      <param name="tuple"></param>
-      <param name="token"></param>
-      <returns></returns>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that specifies the component name of the dashboard item.</param>
+      <param name="tuple">An <see cref="T:DevExpress.DashboardCommon.ViewerData.AxisPointTuple"/> object representing a set of axis points.</param>
+      <param name="token">Propagates notification that operations should be canceled.</param>
+      <returns>The task object that is the asynchronous operation to complete.</returns>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.PerformDrillDownAsync(System.String,System.Object)">
       <summary>
-        <para></para>
+        <para>Performs a drill-down for the required element asynchronously.</para>
       </summary>
-      <param name="dashboardItemName"></param>
-      <param name="value"></param>
-      <returns></returns>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that specifies the component name of the dashboard item.</param>
+      <param name="value">A value that is used to perform a drill-down for the required element.</param>
+      <returns>The task object that is the asynchronous operation to complete.</returns>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.PerformDrillDownAsync(System.String,System.Object,System.Threading.CancellationToken)">
       <summary>
-        <para></para>
+        <para>Performs a drill-down for the required element asynchronously.</para>
       </summary>
-      <param name="dashboardItemName"></param>
-      <param name="value"></param>
-      <param name="token"></param>
-      <returns></returns>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that specifies the component name of the dashboard item.</param>
+      <param name="value">A value that is used to perform a drill-down for the required element.</param>
+      <param name="token">Propagates notification that operations should be canceled.</param>
+      <returns>The task object that is the asynchronous operation to complete.</returns>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.PerformDrillUp(System.String)">
       <summary>
-        <para></para>
+        <para>Performs a drill-up in the specified dashboard item.</para>
       </summary>
-      <param name="dashboardItemName"></param>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that specifies the component name of the dashboard item.</param>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.PerformDrillUpAsync(System.String)">
       <summary>
-        <para></para>
+        <para>Performs a drill-down for the required element asynchronously.</para>
       </summary>
-      <param name="dashboardItemName"></param>
-      <returns></returns>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that specifies the component name of the dashboard item.</param>
+      <returns>The task object that is the asynchronous operation to complete.</returns>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.PerformDrillUpAsync(System.String,System.Threading.CancellationToken)">
       <summary>
-        <para></para>
+        <para>Performs a drill-up in the specified dashboard item asynchronously.</para>
       </summary>
-      <param name="dashboardItemName"></param>
-      <param name="token"></param>
-      <returns></returns>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that specifies the component name of the dashboard item.</param>
+      <param name="token">Propagates notification that operations should be canceled.</param>
+      <returns>The task object that is the asynchronous operation to complete.</returns>
     </member>
     <member name="E:DevExpress.DashboardWin.IDashboardControl.PopupMenuShowing">
       <summary>
-        <para></para>
+        <para>Allows you to customize a popup menu invoked by end-users in the <see cref="T:DevExpress.DashboardWin.DashboardViewer"/>/<see cref="T:DevExpress.DashboardWin.DashboardDesigner"/>.</para>
       </summary>
     </member>
     <member name="P:DevExpress.DashboardWin.IDashboardControl.PrintPreviewOptions">
       <summary>
-        <para></para>
+        <para>Provides access to options related to printing a dashboard/dashboard item.</para>
       </summary>
-      <value></value>
+      <value>A <see cref="T:DevExpress.DashboardCommon.DashboardPrintPreviewOptions"/> object containing options related to printing a dashboard/dashboard item.</value>
     </member>
     <member name="E:DevExpress.DashboardWin.IDashboardControl.PrintPreviewShowing">
       <summary>
-        <para></para>
+        <para>Allows you to customize the Print Preview window at runtime.</para>
       </summary>
     </member>
     <member name="P:DevExpress.DashboardWin.IDashboardControl.PrintPreviewType">
       <summary>
-        <para></para>
+        <para>Gets or sets the type of Print Preview used to preview dashboard items or the entire dashboard.</para>
       </summary>
-      <value></value>
+      <value>The <see cref="T:DevExpress.DashboardWin.DashboardPrintPreviewType"/> enumeration member that specifies the type of Print Preview used to preview dashboard items or the entire dashboard.</value>
     </member>
     <member name="E:DevExpress.DashboardWin.IDashboardControl.RangeFilterDefaultValue">
       <summary>
-        <para></para>
+        <para>Allows you to specify the default selected range in the Range Filter dashboard item.</para>
       </summary>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.ReloadData">
       <summary>
-        <para></para>
+        <para>Reloads data in the data sources.</para>
       </summary>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.ReloadData(System.Boolean)">
       <summary>
-        <para></para>
+        <para>Reloads data in the data sources.</para>
       </summary>
-      <param name="suppressWaitForm"></param>
+      <param name="suppressWaitForm">Specifies whether the Loading Panel is shown while data is loaded in the data sources.</param>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.ReloadData(System.String)">
       <summary>
-        <para></para>
+        <para>Reloads data from the data source for the specified dashboard item.</para>
       </summary>
-      <param name="dashboardItemName"></param>
+      <param name="dashboardItemName">A string that specifies a component name of the dashboard item for which you reload data.</param>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.ReloadDataAsync">
       <summary>
-        <para></para>
+        <para>Reloads data in the data sources asynchronously.</para>
       </summary>
-      <returns></returns>
+      <returns>The task object that is the asynchronous operation to complete.</returns>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.ReloadDataAsync(System.String)">
       <summary>
-        <para></para>
+        <para>Reloads data from the data source for the specified dashboard item asynchronously.</para>
       </summary>
-      <param name="dashboardItemName"></param>
-      <returns></returns>
+      <param name="dashboardItemName">A string that specifies a component name of the dashboard item for which you reload data.</param>
+      <returns>The task object that is the asynchronous operation to complete.</returns>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.ReloadDataAsync(System.Threading.CancellationToken)">
       <summary>
-        <para></para>
+        <para>Reloads data in the data sources asynchronously.</para>
       </summary>
-      <param name="token"></param>
-      <returns></returns>
+      <param name="token">Propagates notification that operations should be canceled.</param>
+      <returns>The task object that is the asynchronous operation to complete.</returns>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.RestoreDashboardItem">
       <summary>
-        <para></para>
+        <para>Restores the item size if an item is expanded to the entire dashboard size (maximized).</para>
       </summary>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.RestoreDashboardItemAsync">
       <summary>
-        <para></para>
+        <para>Restores the item size if an item is expanded to the entire dashboard size (maximized) in an asynchronous task.</para>
       </summary>
-      <returns></returns>
+      <returns>The task object that is the asynchronous operation to complete.</returns>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.SaveDashboardLayout(System.IO.Stream)">
       <summary>
-        <para></para>
+        <para>Saves a dashboard layout (layout items and layout containers) to a stream.</para>
       </summary>
-      <param name="stream"></param>
+      <param name="stream">A <see cref="T:System.IO.Stream"/> object that contains the dashboard layout.</param>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.SaveDashboardLayout(System.String)">
       <summary>
-        <para></para>
+        <para>Saves a dashboard layout to a separate XML file.</para>
       </summary>
-      <param name="filePath"></param>
+      <param name="filePath">A <see cref="T:System.String"/> that specifies the path to an XML file that contains the dashboard layout.</param>
     </member>
     <member name="E:DevExpress.DashboardWin.IDashboardControl.SelectedTabPageChanged">
       <summary>
-        <para></para>
+        <para>Occurs when the selected tab page is changed.</para>
       </summary>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.SetDashboardState(DevExpress.DashboardCommon.DashboardState)">
       <summary>
-        <para></para>
+        <para>Applies the dashboard state to the loaded dashboard.</para>
       </summary>
-      <param name="state"></param>
+      <param name="state">A <see cref="T:DevExpress.DashboardCommon.DashboardState"/> object that contains the dashboard state information.</param>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.SetDashboardStateAsync(DevExpress.DashboardCommon.DashboardState)">
       <summary>
-        <para></para>
+        <para>Applies the dashboard state to the dashboard, asynchronously.</para>
       </summary>
-      <param name="state"></param>
-      <returns></returns>
+      <param name="state">A <see cref="T:DevExpress.DashboardCommon.DashboardState"/> object that contains the dashboard state information.</param>
+      <returns>The task object that is the asynchronous operation to complete.</returns>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.SetDashboardStateAsync(DevExpress.DashboardCommon.DashboardState,System.Threading.CancellationToken)">
       <summary>
-        <para></para>
+        <para>Applies the dashboard state to the dashboard, asynchronously.</para>
       </summary>
-      <param name="state"></param>
-      <param name="token"></param>
-      <returns></returns>
+      <param name="state">A <see cref="T:DevExpress.DashboardCommon.DashboardState"/> object that contains the dashboard state information.</param>
+      <param name="token">Propagates notification that operations should be canceled.</param>
+      <returns>The task object that is the asynchronous operation to complete.</returns>
     </member>
     <member name="E:DevExpress.DashboardWin.IDashboardControl.SetInitialDashboardState">
       <summary>
-        <para></para>
+        <para>Allows you to specify the initial dashboard state when loading a dashboard.</para>
       </summary>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.SetMasterFilter(System.String,DevExpress.DashboardCommon.ViewerData.AxisPointTuple)">
       <summary>
-        <para></para>
+        <para>Selects required elements in the specified master filter item.</para>
       </summary>
-      <param name="dashboardItemName"></param>
-      <param name="tuple"></param>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that specifies the component name of the master filter item.</param>
+      <param name="tuple">An <see cref="T:DevExpress.DashboardCommon.ViewerData.AxisPointTuple"/> object that identifies a master filter element.</param>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.SetMasterFilter(System.String,System.Collections.Generic.IEnumerable{DevExpress.DashboardCommon.DashboardDataRow})">
       <summary>
-        <para></para>
+        <para>Selects required elements in the specified master filter item.</para>
       </summary>
-      <param name="dashboardItemName"></param>
-      <param name="values"></param>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that specifies the component name of the master filter item.</param>
+      <param name="values">A list of <see cref="T:DevExpress.DashboardCommon.DashboardDataRow"/> objects used to identify master filter elements.</param>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.SetMasterFilter(System.String,System.Collections.Generic.IEnumerable{DevExpress.DashboardCommon.ViewerData.AxisPointTuple})">
       <summary>
-        <para></para>
+        <para>Selects required elements in the specified master filter item.</para>
       </summary>
-      <param name="dashboardItemName"></param>
-      <param name="tuples"></param>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that specifies the component name of the master filter item.</param>
+      <param name="tuples">An <see cref="T:DevExpress.DashboardCommon.ViewerData.AxisPointTuple"/> object that identifies a master filter element.</param>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.SetMasterFilter(System.String,System.Object)">
       <summary>
-        <para></para>
+        <para>Selects the elements by their values in the specified master filter item.</para>
       </summary>
-      <param name="dashboardItemName"></param>
-      <param name="values"></param>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that specifies the component name of the master filter item.</param>
+      <param name="values">Values used to select elements in the master filter item.</param>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.SetMasterFilterAsync(System.String,DevExpress.DashboardCommon.ViewerData.AxisPointTuple)">
       <summary>
-        <para></para>
+        <para>Selects the specified elements in the specified master filter item.</para>
       </summary>
-      <param name="dashboardItemName"></param>
-      <param name="tuple"></param>
-      <returns></returns>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that specifies the component name of the master filter item.</param>
+      <param name="tuple">An <see cref="T:DevExpress.DashboardCommon.ViewerData.AxisPointTuple"/> object that identifies a master filter element.</param>
+      <returns>The task object that is the asynchronous operation to complete.</returns>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.SetMasterFilterAsync(System.String,DevExpress.DashboardCommon.ViewerData.AxisPointTuple,System.Threading.CancellationToken)">
       <summary>
-        <para></para>
+        <para>Selects the specified elements in the specified master filter item.</para>
       </summary>
-      <param name="dashboardItemName"></param>
-      <param name="tuple"></param>
-      <param name="token"></param>
-      <returns></returns>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that specifies the component name of the master filter item.</param>
+      <param name="tuple">An <see cref="T:DevExpress.DashboardCommon.ViewerData.AxisPointTuple"/> object that identifies a master filter element.</param>
+      <param name="token">Propagates notification that operations should be canceled.</param>
+      <returns>The task object that is the asynchronous operation to complete.</returns>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.SetMasterFilterAsync(System.String,System.Collections.Generic.IEnumerable{DevExpress.DashboardCommon.DashboardDataRow})">
       <summary>
-        <para></para>
+        <para>Selects the specified elements in the specified master filter item.</para>
       </summary>
-      <param name="dashboardItemName"></param>
-      <param name="values"></param>
-      <returns></returns>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that specifies the component name of the master filter item.</param>
+      <param name="values">A list of <see cref="T:DevExpress.DashboardCommon.DashboardDataRow"/> objects used to identify master filter elements.</param>
+      <returns>The task object that is the asynchronous operation to complete.</returns>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.SetMasterFilterAsync(System.String,System.Collections.Generic.IEnumerable{DevExpress.DashboardCommon.DashboardDataRow},System.Threading.CancellationToken)">
       <summary>
-        <para></para>
+        <para>Selects the specified elements in the specified master filter item.</para>
       </summary>
-      <param name="dashboardItemName"></param>
-      <param name="values"></param>
-      <param name="token"></param>
-      <returns></returns>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that specifies the component name of the master filter item.</param>
+      <param name="values">A list of <see cref="T:DevExpress.DashboardCommon.DashboardDataRow"/> objects used to identify master filter elements.</param>
+      <param name="token">Propagates notification that operations should be canceled.</param>
+      <returns>The task object that is the asynchronous operation to complete.</returns>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.SetMasterFilterAsync(System.String,System.Collections.Generic.IEnumerable{DevExpress.DashboardCommon.ViewerData.AxisPointTuple})">
       <summary>
-        <para></para>
+        <para>Selects the specified elements in the specified master filter item.</para>
       </summary>
-      <param name="dashboardItemName"></param>
-      <param name="tuples"></param>
-      <returns></returns>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that specifies the component name of the master filter item.</param>
+      <param name="tuples">A collection of <see cref="T:DevExpress.DashboardCommon.ViewerData.AxisPointTuple"/> objects that identifies master filter elements.</param>
+      <returns>The task object that is the asynchronous operation to complete.</returns>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.SetMasterFilterAsync(System.String,System.Collections.Generic.IEnumerable{DevExpress.DashboardCommon.ViewerData.AxisPointTuple},System.Threading.CancellationToken)">
       <summary>
-        <para></para>
+        <para>Selects the specified elements in the specified master filter item.</para>
       </summary>
-      <param name="dashboardItemName"></param>
-      <param name="tuples"></param>
-      <param name="token"></param>
-      <returns></returns>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that specifies the component name of the master filter item.</param>
+      <param name="tuples">A collection of <see cref="T:DevExpress.DashboardCommon.ViewerData.AxisPointTuple"/> objects that identifies master filter elements.</param>
+      <param name="token">Propagates notification that operations should be canceled.</param>
+      <returns>The task object that is the asynchronous operation to complete.</returns>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.SetMasterFilterAsync(System.String,System.Object)">
       <summary>
-        <para></para>
+        <para>Selects the specified elements in the specified master filter item.</para>
       </summary>
-      <param name="dashboardItemName"></param>
-      <param name="values"></param>
-      <returns></returns>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that specifies the component name of the master filter item.</param>
+      <param name="values">A collection of values that are used to select elements in the master filter item.</param>
+      <returns>The task object that is the asynchronous operation to complete.</returns>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.SetMasterFilterAsync(System.String,System.Object,System.Threading.CancellationToken)">
       <summary>
-        <para></para>
+        <para>Selects the specified elements in the specified master filter item.</para>
       </summary>
-      <param name="dashboardItemName"></param>
-      <param name="values"></param>
-      <param name="token"></param>
-      <returns></returns>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that specifies the component name of the master filter item.</param>
+      <param name="values">Values that are used to select elements in the master filter item.</param>
+      <param name="token">Propagates notification that operations should be canceled.</param>
+      <returns>The task object that is the asynchronous operation to complete.</returns>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.SetRange(System.String,DevExpress.DashboardCommon.RangeFilterSelection)">
       <summary>
-        <para></para>
+        <para>Selects the required range in the specified Range Filter or Date Filter dashboard item.</para>
       </summary>
-      <param name="dashboardItemName"></param>
-      <param name="range"></param>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that is the component name of the dashboard item.</param>
+      <param name="range">A <see cref="T:DevExpress.DashboardCommon.RangeFilterSelection"/> object that specifies a range in the Range Filter or Date Filter dashboard item.</param>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.SetRange(System.String,System.String)">
       <summary>
-        <para></para>
+        <para>Selects the specified range in the specified Range Filter or Date Filter dashboard item.</para>
       </summary>
-      <param name="dashboardItemName"></param>
-      <param name="dateTimePeriodName"></param>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that specifies the component name of the Range Filter or Date Filter dashboard item.</param>
+      <param name="dateTimePeriodName">A <see cref="T:System.String"/> that specifies the name of the predefined range used to perform a selection.</param>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.SetRangeAsync(System.String,DevExpress.DashboardCommon.RangeFilterSelection)">
       <summary>
-        <para></para>
+        <para>Selects the specified range in the specified Range Filter or Date Filter dashboard item asynchronously.</para>
       </summary>
-      <param name="dashboardItemName"></param>
-      <param name="range"></param>
-      <returns></returns>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that is the component name of the dashboard item.</param>
+      <param name="range">A <see cref="T:DevExpress.DashboardCommon.RangeFilterSelection"/> object that specifies a range in the Range Filter or Date Filter dashboard item.</param>
+      <returns>The task object that is the asynchronous operation to complete.</returns>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.SetRangeAsync(System.String,DevExpress.DashboardCommon.RangeFilterSelection,System.Threading.CancellationToken)">
       <summary>
-        <para></para>
+        <para>Selects the specified range in the specified Range Filter or Date Filter dashboard item asynchronously.</para>
       </summary>
-      <param name="dashboardItemName"></param>
-      <param name="range"></param>
-      <param name="token"></param>
-      <returns></returns>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that is the component name of the dashboard item.</param>
+      <param name="range">A <see cref="T:DevExpress.DashboardCommon.RangeFilterSelection"/> object that specifies a range in the Range Filter or Date Filter dashboard item.</param>
+      <param name="token">Propagates notification that operations should be canceled.</param>
+      <returns>The task object that is the asynchronous operation to complete.</returns>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.SetRangeAsync(System.String,System.String)">
       <summary>
-        <para></para>
+        <para>Selects the specified range in the specified Range Filter or Date Filter dashboard item asynchronously.</para>
       </summary>
-      <param name="dashboardItemName"></param>
-      <param name="dateTimePeriodName"></param>
-      <returns></returns>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that is the component name of the dashboard item.</param>
+      <param name="dateTimePeriodName">A <see cref="T:System.String"/> that specifies the name of the predefined range used to perform a selection.</param>
+      <returns>The task object that is the asynchronous operation to complete.</returns>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.SetRangeAsync(System.String,System.String,System.Threading.CancellationToken)">
       <summary>
-        <para></para>
+        <para>Selects the specified range in the specified Range Filter or Date Filter dashboard item asynchronously.</para>
       </summary>
-      <param name="dashboardItemName"></param>
-      <param name="dateTimePeriodName"></param>
-      <param name="token"></param>
-      <returns></returns>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that is the component name of the dashboard item.</param>
+      <param name="dateTimePeriodName">A <see cref="T:System.String"/> that specifies the name of the predefined range used to perform a selection.</param>
+      <param name="token">Propagates notification that operations should be canceled.</param>
+      <returns>The task object that is the asynchronous operation to complete.</returns>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.SetSelectedTabPage(System.String)">
       <summary>
-        <para></para>
+        <para>Selects the specified tab page.</para>
       </summary>
-      <param name="tabPageName"></param>
+      <param name="tabPageName">A <see cref="T:System.String"/> that is the <see cref="P:DevExpress.DashboardCommon.DashboardItem.ComponentName"/> property value and identifies the tab page.</param>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.SetSelectedTabPage(System.String,System.Int32)">
       <summary>
-        <para></para>
+        <para>Selects the tab page specified by its index in the specified tab container.</para>
       </summary>
-      <param name="tabContainerName"></param>
-      <param name="index"></param>
+      <param name="tabContainerName">A <see cref="T:System.String"/> that is the <see cref="P:DevExpress.DashboardCommon.DashboardItem.ComponentName"/> property value and identifies the tab container.</param>
+      <param name="index">An integer that is the index in the <see cref="P:DevExpress.DashboardCommon.TabContainerDashboardItem.TabPages"/> collection.</param>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.ShowDashboardParametersForm">
       <summary>
-        <para></para>
+        <para>Invokes the Dashboard Parameters dialog in the <see cref="T:DevExpress.DashboardWin.DashboardViewer"/>.</para>
       </summary>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.ShowDataInspector(System.String)">
       <summary>
-        <para></para>
+        <para>Invokes the Data Inspector dialog for the specified dashboard item.</para>
       </summary>
-      <param name="dashboardItemName"></param>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> object that specifies a component name of the dashboard item for which the Data Inspector displays data.</param>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.ShowDataInspector(System.String,DevExpress.DashboardCommon.InspectedType)">
       <summary>
-        <para></para>
+        <para>Invokes the Data Inspector dialog with a defined data type for the specified dashboard item.</para>
       </summary>
-      <param name="dashboardItemName"></param>
-      <param name="inspectedType"></param>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> object that specifies a component name of the dashboard item for which the Data Inspector displays data.</param>
+      <param name="inspectedType">A <see cref="T:DevExpress.DashboardCommon.InspectedType"/> object that defines a displayed underlying data.</param>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.ShowDataInspectorAsync(System.String)">
       <summary>
-        <para></para>
+        <para>Invokes the Data Inspector dialog for the specified dashboard item asynchronously.</para>
       </summary>
-      <param name="dashboardItemName"></param>
-      <returns></returns>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> object that specifies a component name of the dashboard item for which the Data Inspector displays data.</param>
+      <returns>The task object that is the asynchronous operation to complete.</returns>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.ShowDataInspectorAsync(System.String,DevExpress.DashboardCommon.InspectedType)">
       <summary>
-        <para></para>
+        <para>Invokes the Data Inspector dialog with a defined data type for the specified dashboard item asynchronously.</para>
       </summary>
-      <param name="dashboardItemName"></param>
-      <param name="inspectedType"></param>
-      <returns></returns>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> object that specifies a component name of the dashboard item for which the Data Inspector displays data.</param>
+      <param name="inspectedType">A <see cref="T:DevExpress.DashboardCommon.InspectedType"/> enumeration value that defines a displayed underlying data.</param>
+      <returns>The task object that is the asynchronous operation to complete.</returns>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.ShowExportDashboardDialog(DevExpress.DashboardCommon.DashboardExportFormat)">
       <summary>
-        <para></para>
+        <para>Invokes the dialog that allows end-users to export the entire dashboard to the specified format.</para>
       </summary>
-      <param name="format"></param>
+      <param name="format">A <see cref="T:DevExpress.DashboardCommon.DashboardExportFormat"/> value that specifies the export format.</param>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.ShowExportDashboardItemDialog(System.String,DevExpress.DashboardCommon.DashboardExportFormat)">
       <summary>
-        <para></para>
+        <para>Invokes the dialog that allows end-users to export the dashboard item to the specified format.</para>
       </summary>
-      <param name="dashboardItemName"></param>
-      <param name="format"></param>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> value that specifies the component name of the dashboard item to export.</param>
+      <param name="format">A <see cref="T:DevExpress.DashboardCommon.DashboardExportFormat"/> value that specifies the export format. Note that some items (i.e., <see cref="T:DevExpress.DashboardCommon.TextBoxDashboardItem"/> or <see cref="T:DevExpress.DashboardCommon.ImageDashboardItem"/>) do not support exporting to the <see cref="F:DevExpress.DashboardCommon.DashboardExportFormat.Excel"/> format.</param>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.ShowPrintPreview">
       <summary>
-        <para></para>
+        <para>Invokes the Print Preview, which shows the print preview of the dashboard.</para>
       </summary>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.ShowRibbonPrintPreview">
       <summary>
-        <para></para>
+        <para>Invokes the Ribbon Print Preview Form, which shows the print preview of the dashboard.</para>
       </summary>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.UpdateDashboardItemCaption(System.String)">
       <summary>
-        <para></para>
+        <para>Fires the <see cref="E:DevExpress.DashboardWin.DashboardViewer.CustomizeDashboardItemCaption"/>/<see cref="E:DevExpress.DashboardWin.DashboardDesigner.CustomizeDashboardItemCaption"/> event that allows you to customize the dashboard item caption content.</para>
       </summary>
-      <param name="dashboardItemName"></param>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that is the dashboard item&#39;s <see cref="P:DevExpress.DashboardCommon.DashboardItem.ComponentName"/> property value.</param>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.UpdateDashboardTitle">
       <summary>
-        <para></para>
+        <para>Fires the <see cref="E:DevExpress.DashboardWin.DashboardViewer.CustomizeDashboardTitle"/>/<see cref="E:DevExpress.DashboardWin.DashboardDesigner.CustomizeDashboardTitle"/> event that allows you to customize the dashboard title content.</para>
       </summary>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.UpdateExtractDataSourcesAsync(System.Action{System.String,DevExpress.DashboardCommon.ExtractUpdateResult},System.Action{System.String,DevExpress.DashboardCommon.ExtractUpdateResult})">
       <summary>
-        <para></para>
+        <para>Updates all extract data sources in the current dashboard asynchronously. Allows you to specify custom actions to perform after updating the data and file.</para>
       </summary>
-      <param name="onDataUpdated"></param>
-      <param name="onFileUpdated"></param>
+      <param name="onDataUpdated">A custom action to perform when the data is updated.</param>
+      <param name="onFileUpdated">A custom action to perform when the file is updated.</param>
     </member>
     <member name="M:DevExpress.DashboardWin.IDashboardControl.UpdateExtractDataSourcesAsync(System.Action{System.String,DevExpress.DashboardCommon.ExtractUpdateResult},System.Action{System.String,DevExpress.DashboardCommon.ExtractUpdateResult},System.String[])">
       <summary>
-        <para></para>
+        <para>Updates the specified extract data sources in the current dashboard asynchronously. Allows you to set custom actions to perform after updating the data and file.</para>
       </summary>
-      <param name="onDataUpdated"></param>
-      <param name="onFileUpdated"></param>
-      <param name="dataSourceNames"></param>
+      <param name="onDataUpdated">A custom action to perform when the data is updated.</param>
+      <param name="onFileUpdated">A custom action to perform when the file is updated.</param>
+      <param name="dataSourceNames">A list of the data source names.</param>
     </member>
     <member name="P:DevExpress.DashboardWin.IDashboardControl.UseNeutralFilterMode">
       <summary>
-        <para></para>
+        <para>Gets or sets whether to show all items in the filter elements deselected by default.</para>
       </summary>
-      <value></value>
+      <value>true, if all items in the filter elements deselected by default; otherwise, false.</value>
     </member>
     <member name="P:DevExpress.DashboardWin.IDashboardControl.UserAction">
       <summary>
-        <para></para>
+        <para>Gets the end-user action performed on the <see cref="T:DevExpress.DashboardWin.DashboardViewer"/>/<see cref="T:DevExpress.DashboardWin.DashboardDesigner"/>.</para>
       </summary>
-      <value></value>
+      <value>The <see cref="T:DevExpress.DashboardWin.UserAction"/> object that is the end-user action performed on the <see cref="T:DevExpress.DashboardWin.DashboardViewer"/>.</value>
     </member>
     <member name="E:DevExpress.DashboardWin.IDashboardControl.ValidateCustomSqlQuery">
       <summary>
-        <para></para>
+        <para>Allows you to validate a custom SQL query of the <see cref="T:DevExpress.DashboardCommon.DashboardSqlDataSource"/>.</para>
       </summary>
     </member>
     <member name="T:DevExpress.DashboardWin.IDashboardToolbarItem">

@@ -757,18 +757,6 @@
       </summary>
       <value>true, to allow users to insert dependencies; otherwise, false.</value>
     </member>
-    <member name="P:DevExpress.Web.ASPxGantt.GanttEditingSettings.AllowResourceAssignmentDelete">
-      <summary>
-        <para>Specifies whether users can delete resource assignments.</para>
-      </summary>
-      <value>true, to allow users to delete resource assignments; otherwise, false.</value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxGantt.GanttEditingSettings.AllowResourceAssignmentInsert">
-      <summary>
-        <para>Specifies whether users can insert resource assignments.</para>
-      </summary>
-      <value>true, to allow users to insert resource assignments; otherwise, false.</value>
-    </member>
     <member name="P:DevExpress.Web.ASPxGantt.GanttEditingSettings.AllowResourceDelete">
       <summary>
         <para>Specifies whether users can delete resources.</para>
@@ -1576,11 +1564,6 @@
       </summary>
     </member>
     <member name="F:DevExpress.Web.ASPxGantt.Localization.ASPxGanttStringId.CancelButton">
-      <summary>
-        <para>Contains localizable text of the corresponding UI element.</para>
-      </summary>
-    </member>
-    <member name="F:DevExpress.Web.ASPxGantt.Localization.ASPxGanttStringId.ConstraintViolation">
       <summary>
         <para>Contains localizable text of the corresponding UI element.</para>
       </summary>

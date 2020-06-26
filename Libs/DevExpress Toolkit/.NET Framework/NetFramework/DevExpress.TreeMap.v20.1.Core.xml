@@ -6,7 +6,7 @@
   <members>
     <member name="N:DevExpress.TreeMap">
       <summary>
-        <para>Contains all common classes that the WinForms TreeMap Control, WPF TreeMap Control, and WinForms Sunburst Control require to function.</para>
+        <para>Contains all common classes that WinForms TreeMap Control, WPF TreeMap Control, and WinForms Sunburst Control require to function.</para>
       </summary>
     </member>
     <member name="T:DevExpress.TreeMap.IHierarchicalItem">

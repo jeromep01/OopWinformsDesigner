@@ -6996,6 +6996,12 @@ The DefaultBoolean.Default value is equivalent to DefaultBoolean.True if the sta
       </summary>
       <value>true if end-users can right-click the field header to invoke its context menu; otherwise, false.</value>
     </member>
+    <member name="P:DevExpress.XtraPivotGrid.PivotGridOptionsMenu.EnablePinColumnMenu">
+      <summary>
+        <para>Gets or sets whether users can invoke the column header context menu.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.Utils.DefaultBoolean"/> value that specifies whether users can invoke the column header context menu.</value>
+    </member>
     <member name="P:DevExpress.XtraPivotGrid.PivotGridOptionsMenu.ShowDateTimeGroupIntervalItems">
       <summary>
         <para>Gets or sets what combination of DateTime group intervals the popup menu displays.</para>
@@ -7009,9 +7015,9 @@ The DefaultBoolean.Default value is equivalent to DefaultBoolean.True if the sta
     </member>
     <member name="M:DevExpress.XtraPivotGrid.PivotGridOptionsView.#ctor(System.EventHandler)">
       <summary>
-        <para>Initializes a new instance of the <see cref="T:DevExpress.XtraPivotGrid.PivotGridOptionsView"/> class.</para>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.XtraPivotGrid.PivotGridOptionsView"/> class with specified settings.</para>
       </summary>
-      <param name="optionsChanged">A delegate that will receive change notifications.</param>
+      <param name="optionsChanged"></param>
     </member>
     <member name="P:DevExpress.XtraPivotGrid.PivotGridOptionsView.AllowGlyphSkinning">
       <summary>

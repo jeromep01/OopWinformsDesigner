@@ -4922,15 +4922,15 @@ This is a dependency property.</para>
     </member>
     <member name="P:DevExpress.Xpf.Diagram.DiagramControl.TextTool">
       <summary>
-        <para></para>
+        <para>Specifies the tool that is used when the user selects the Text tool in the Ribbon. This is a dependency property.</para>
       </summary>
-      <value></value>
+      <value>A DevExpress.Diagram.Core.DiagramTool object that represents the text tool.</value>
     </member>
     <member name="F:DevExpress.Xpf.Diagram.DiagramControl.TextToolProperty">
       <summary>
-        <para></para>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.Diagram.DiagramControl.TextTool"/> dependency property.</para>
       </summary>
-      <value></value>
+      <value>A dependency property identifier.</value>
     </member>
     <member name="P:DevExpress.Xpf.Diagram.DiagramControl.Theme">
       <summary>

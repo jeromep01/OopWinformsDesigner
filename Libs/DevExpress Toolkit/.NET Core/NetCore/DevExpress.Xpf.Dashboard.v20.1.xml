@@ -41,9 +41,9 @@
     </member>
     <member name="P:DevExpress.DashboardWpf.ChartDashboardLayoutItem.AreaSeriesStyle">
       <summary>
-        <para></para>
+        <para>An attached property that applies style settings to the Area series in the underlying Chart control.</para>
       </summary>
-      <value></value>
+      <value>A <see cref="T:System.Windows.Style"/> object that contains settings applied to the Area series.</value>
     </member>
     <member name="F:DevExpress.DashboardWpf.ChartDashboardLayoutItem.AreaSeriesStyleProperty">
       <summary>
@@ -63,9 +63,9 @@
     </member>
     <member name="P:DevExpress.DashboardWpf.ChartDashboardLayoutItem.BarSeriesStyle">
       <summary>
-        <para></para>
+        <para>An attached property that applies style settings to the Bar series in the underlying Chart control.</para>
       </summary>
-      <value></value>
+      <value>A <see cref="T:System.Windows.Style"/> object that contains settings applied to the Bar series.</value>
     </member>
     <member name="F:DevExpress.DashboardWpf.ChartDashboardLayoutItem.BarSeriesStyleProperty">
       <summary>
@@ -74,9 +74,9 @@
     </member>
     <member name="P:DevExpress.DashboardWpf.ChartDashboardLayoutItem.BarStackedSeriesStyle">
       <summary>
-        <para></para>
+        <para>An attached property that applies style settings to the Stacked and Full-Stacked Bar series in the underlying Chart control.</para>
       </summary>
-      <value></value>
+      <value>A <see cref="T:System.Windows.Style"/> object that contains settings applied to the Stacked and Full-Stacked Bar series.</value>
     </member>
     <member name="F:DevExpress.DashboardWpf.ChartDashboardLayoutItem.BarStackedSeriesStyleProperty">
       <summary>
@@ -85,9 +85,9 @@
     </member>
     <member name="P:DevExpress.DashboardWpf.ChartDashboardLayoutItem.BubbleSeriesStyle">
       <summary>
-        <para></para>
+        <para>An attached property that applies style settings to the Bubble weighted series in the underlying Chart control.</para>
       </summary>
-      <value></value>
+      <value>A <see cref="T:System.Windows.Style"/> object that contains settings applied to the Bubble weighted series.</value>
     </member>
     <member name="F:DevExpress.DashboardWpf.ChartDashboardLayoutItem.BubbleSeriesStyleProperty">
       <summary>
@@ -96,9 +96,9 @@
     </member>
     <member name="P:DevExpress.DashboardWpf.ChartDashboardLayoutItem.CandleStickSeriesStyle">
       <summary>
-        <para></para>
+        <para>An attached property that applies style settings to the Open-High-Low-Close (Candle Stick) series in the underlying Chart control.</para>
       </summary>
-      <value></value>
+      <value>A <see cref="T:System.Windows.Style"/> object that contains settings applied to the Open-High-Low-Close (Candle Stick) series.</value>
     </member>
     <member name="F:DevExpress.DashboardWpf.ChartDashboardLayoutItem.CandleStickSeriesStyleProperty">
       <summary>
@@ -118,10 +118,10 @@
     </member>
     <member name="M:DevExpress.DashboardWpf.ChartDashboardLayoutItem.GetAreaSeriesStyle(System.Windows.DependencyObject)">
       <summary>
-        <para></para>
+        <para>Implements the <see cref="P:DevExpress.DashboardWpf.ChartDashboardLayoutItem.AreaSeriesStyle"/> attached property.</para>
       </summary>
-      <param name="dObj"></param>
-      <returns></returns>
+      <param name="dObj">A dependency object whose property is set.</param>
+      <returns>A <see cref="T:System.Windows.Style"/> object that contains settings applied to the target object.</returns>
     </member>
     <member name="M:DevExpress.DashboardWpf.ChartDashboardLayoutItem.GetAxisXStyle(System.Windows.DependencyObject)">
       <summary>
@@ -132,31 +132,31 @@
     </member>
     <member name="M:DevExpress.DashboardWpf.ChartDashboardLayoutItem.GetBarSeriesStyle(System.Windows.DependencyObject)">
       <summary>
-        <para></para>
+        <para>Implements the <see cref="P:DevExpress.DashboardWpf.ChartDashboardLayoutItem.BarSeriesStyle"/> attached property.</para>
       </summary>
-      <param name="dObj"></param>
-      <returns></returns>
+      <param name="dObj">A dependency object whose property is set.</param>
+      <returns>A <see cref="T:System.Windows.Style"/> object that contains settings applied to the target object.</returns>
     </member>
     <member name="M:DevExpress.DashboardWpf.ChartDashboardLayoutItem.GetBarStackedSeriesStyle(System.Windows.DependencyObject)">
       <summary>
-        <para></para>
+        <para>Implements the <see cref="P:DevExpress.DashboardWpf.ChartDashboardLayoutItem.BarStackedSeriesStyle"/> attached property.</para>
       </summary>
-      <param name="dObj"></param>
-      <returns></returns>
+      <param name="dObj">A dependency object whose property is set.</param>
+      <returns>A <see cref="T:System.Windows.Style"/> object that contains settings applied to the target object.</returns>
     </member>
     <member name="M:DevExpress.DashboardWpf.ChartDashboardLayoutItem.GetBubbleSeriesStyle(System.Windows.DependencyObject)">
       <summary>
-        <para></para>
+        <para>Implements the <see cref="P:DevExpress.DashboardWpf.ChartDashboardLayoutItem.BubbleSeriesStyle"/> attached property.</para>
       </summary>
-      <param name="dObj"></param>
-      <returns></returns>
+      <param name="dObj">A dependency object whose property is set.</param>
+      <returns>A <see cref="T:System.Windows.Style"/> object that contains settings applied to the target object.</returns>
     </member>
     <member name="M:DevExpress.DashboardWpf.ChartDashboardLayoutItem.GetCandleStickSeriesStyle(System.Windows.DependencyObject)">
       <summary>
-        <para></para>
+        <para>Implements the <see cref="P:DevExpress.DashboardWpf.ChartDashboardLayoutItem.CandleStickSeriesStyle"/> attached property.</para>
       </summary>
-      <param name="dObj"></param>
-      <returns></returns>
+      <param name="dObj">A dependency object whose property is set.</param>
+      <returns>A <see cref="T:System.Windows.Style"/> object that contains settings applied to the target object.</returns>
     </member>
     <member name="M:DevExpress.DashboardWpf.ChartDashboardLayoutItem.GetDiagramStyle(System.Windows.DependencyObject)">
       <summary>
@@ -174,31 +174,31 @@
     </member>
     <member name="M:DevExpress.DashboardWpf.ChartDashboardLayoutItem.GetLineSeriesStyle(System.Windows.DependencyObject)">
       <summary>
-        <para></para>
+        <para>Implements the <see cref="P:DevExpress.DashboardWpf.ChartDashboardLayoutItem.LineSeriesStyle"/> attached property.</para>
       </summary>
-      <param name="dObj"></param>
-      <returns></returns>
+      <param name="dObj">A dependency object whose property is set.</param>
+      <returns>A <see cref="T:System.Windows.Style"/> object that contains settings applied to the target object.</returns>
     </member>
     <member name="M:DevExpress.DashboardWpf.ChartDashboardLayoutItem.GetPointSeriesStyle(System.Windows.DependencyObject)">
       <summary>
-        <para></para>
+        <para>Implements the <see cref="P:DevExpress.DashboardWpf.ChartDashboardLayoutItem.PointSeriesStyle"/> attached property.</para>
       </summary>
-      <param name="dObj"></param>
-      <returns></returns>
+      <param name="dObj">A dependency object whose property is set.</param>
+      <returns>A <see cref="T:System.Windows.Style"/> object that contains settings applied to the target object.</returns>
     </member>
     <member name="M:DevExpress.DashboardWpf.ChartDashboardLayoutItem.GetRangeAreaSeriesStyle(System.Windows.DependencyObject)">
       <summary>
-        <para></para>
+        <para>Implements the <see cref="P:DevExpress.DashboardWpf.ChartDashboardLayoutItem.RangeAreaSeriesStyle"/> attached property.</para>
       </summary>
-      <param name="dObj"></param>
-      <returns></returns>
+      <param name="dObj">A dependency object whose property is set.</param>
+      <returns>A <see cref="T:System.Windows.Style"/> object that contains settings applied to the target object.</returns>
     </member>
     <member name="M:DevExpress.DashboardWpf.ChartDashboardLayoutItem.GetRangeBarSeriesStyle(System.Windows.DependencyObject)">
       <summary>
-        <para></para>
+        <para>Implements the <see cref="P:DevExpress.DashboardWpf.ChartDashboardLayoutItem.RangeBarSeriesStyle"/> attached property.</para>
       </summary>
-      <param name="dObj"></param>
-      <returns></returns>
+      <param name="dObj">A dependency object whose property is set.</param>
+      <returns>A <see cref="T:System.Windows.Style"/> object that contains settings applied to the target object.</returns>
     </member>
     <member name="M:DevExpress.DashboardWpf.ChartDashboardLayoutItem.GetSecondaryAxisYStyle(System.Windows.DependencyObject)">
       <summary>
@@ -209,17 +209,17 @@
     </member>
     <member name="M:DevExpress.DashboardWpf.ChartDashboardLayoutItem.GetStackedAreaSeriesStyle(System.Windows.DependencyObject)">
       <summary>
-        <para></para>
+        <para>Implements the <see cref="P:DevExpress.DashboardWpf.ChartDashboardLayoutItem.StackedAreaSeriesStyle"/> attached property.</para>
       </summary>
-      <param name="dObj"></param>
-      <returns></returns>
+      <param name="dObj">A dependency object whose property is set.</param>
+      <returns>A <see cref="T:System.Windows.Style"/> object that contains settings applied to the target object.</returns>
     </member>
     <member name="M:DevExpress.DashboardWpf.ChartDashboardLayoutItem.GetStockSeriesStyle(System.Windows.DependencyObject)">
       <summary>
-        <para></para>
+        <para>Implements the <see cref="P:DevExpress.DashboardWpf.ChartDashboardLayoutItem.StockSeriesStyle"/> attached property.</para>
       </summary>
-      <param name="dObj"></param>
-      <returns></returns>
+      <param name="dObj">A dependency object whose property is set.</param>
+      <returns>A <see cref="T:System.Windows.Style"/> object that contains settings applied to the target object.</returns>
     </member>
     <member name="P:DevExpress.DashboardWpf.ChartDashboardLayoutItem.LegendStyle">
       <summary>
@@ -234,9 +234,9 @@
     </member>
     <member name="P:DevExpress.DashboardWpf.ChartDashboardLayoutItem.LineSeriesStyle">
       <summary>
-        <para></para>
+        <para>An attached property that applies style settings to the Line series in the underlying Chart control.</para>
       </summary>
-      <value></value>
+      <value>A <see cref="T:System.Windows.Style"/> object that contains settings applied to the Line series.</value>
     </member>
     <member name="F:DevExpress.DashboardWpf.ChartDashboardLayoutItem.LineSeriesStyleProperty">
       <summary>
@@ -245,9 +245,9 @@
     </member>
     <member name="P:DevExpress.DashboardWpf.ChartDashboardLayoutItem.PointSeriesStyle">
       <summary>
-        <para></para>
+        <para>An attached property that applies style settings to the Point series in the underlying Chart control.</para>
       </summary>
-      <value></value>
+      <value>A <see cref="T:System.Windows.Style"/> object that contains settings applied to the Point series.</value>
     </member>
     <member name="F:DevExpress.DashboardWpf.ChartDashboardLayoutItem.PointSeriesStyleProperty">
       <summary>
@@ -256,9 +256,9 @@
     </member>
     <member name="P:DevExpress.DashboardWpf.ChartDashboardLayoutItem.RangeAreaSeriesStyle">
       <summary>
-        <para></para>
+        <para>An attached property that applies style settings to the Range Area series in the underlying Chart control.</para>
       </summary>
-      <value></value>
+      <value>A <see cref="T:System.Windows.Style"/> object that contains settings applied to the Range Area series.</value>
     </member>
     <member name="F:DevExpress.DashboardWpf.ChartDashboardLayoutItem.RangeAreaSeriesStyleProperty">
       <summary>
@@ -267,9 +267,9 @@
     </member>
     <member name="P:DevExpress.DashboardWpf.ChartDashboardLayoutItem.RangeBarSeriesStyle">
       <summary>
-        <para></para>
+        <para>An attached property that applies style settings to the Range Bar series in the underlying Chart control.</para>
       </summary>
-      <value></value>
+      <value>A <see cref="T:System.Windows.Style"/> object that contains settings applied to the Range Bar series.</value>
     </member>
     <member name="F:DevExpress.DashboardWpf.ChartDashboardLayoutItem.RangeBarSeriesStyleProperty">
       <summary>
@@ -289,10 +289,10 @@
     </member>
     <member name="M:DevExpress.DashboardWpf.ChartDashboardLayoutItem.SetAreaSeriesStyle(System.Windows.DependencyObject,System.Windows.Style)">
       <summary>
-        <para></para>
+        <para>Implements the <see cref="P:DevExpress.DashboardWpf.ChartDashboardLayoutItem.AreaSeriesStyle"/> attached property.</para>
       </summary>
-      <param name="dObj"></param>
-      <param name="value"></param>
+      <param name="dObj">A dependency object whose property is set.</param>
+      <param name="value">A <see cref="T:System.Windows.Style"/> object that contains settings applied to the target object.</param>
     </member>
     <member name="M:DevExpress.DashboardWpf.ChartDashboardLayoutItem.SetAxisXStyle(System.Windows.DependencyObject,System.Windows.Style)">
       <summary>
@@ -303,31 +303,31 @@
     </member>
     <member name="M:DevExpress.DashboardWpf.ChartDashboardLayoutItem.SetBarSeriesStyle(System.Windows.DependencyObject,System.Windows.Style)">
       <summary>
-        <para></para>
+        <para>Implements the <see cref="P:DevExpress.DashboardWpf.ChartDashboardLayoutItem.BarSeriesStyle"/> attached property.</para>
       </summary>
-      <param name="dObj"></param>
-      <param name="value"></param>
+      <param name="dObj">A dependency object whose property is set.</param>
+      <param name="value">A <see cref="T:System.Windows.Style"/> object that contains settings applied to the target object.</param>
     </member>
     <member name="M:DevExpress.DashboardWpf.ChartDashboardLayoutItem.SetBarStackedSeriesStyle(System.Windows.DependencyObject,System.Windows.Style)">
       <summary>
-        <para></para>
+        <para>Implements the <see cref="P:DevExpress.DashboardWpf.ChartDashboardLayoutItem.BarStackedSeriesStyle"/> attached property.</para>
       </summary>
-      <param name="dObj"></param>
-      <param name="value"></param>
+      <param name="dObj">A dependency object whose property is set.</param>
+      <param name="value">A <see cref="T:System.Windows.Style"/> object that contains settings applied to the target object.</param>
     </member>
     <member name="M:DevExpress.DashboardWpf.ChartDashboardLayoutItem.SetBubbleSeriesStyle(System.Windows.DependencyObject,System.Windows.Style)">
       <summary>
-        <para></para>
+        <para>Implements the <see cref="P:DevExpress.DashboardWpf.ChartDashboardLayoutItem.BubbleSeriesStyle"/> attached property.</para>
       </summary>
-      <param name="dObj"></param>
-      <param name="value"></param>
+      <param name="dObj">A dependency object whose property is set.</param>
+      <param name="value">A <see cref="T:System.Windows.Style"/> object that contains settings applied to the target object.</param>
     </member>
     <member name="M:DevExpress.DashboardWpf.ChartDashboardLayoutItem.SetCandleStickSeriesStyle(System.Windows.DependencyObject,System.Windows.Style)">
       <summary>
-        <para></para>
+        <para>Implements the <see cref="P:DevExpress.DashboardWpf.ChartDashboardLayoutItem.CandleStickSeriesStyle"/> attached property.</para>
       </summary>
-      <param name="dObj"></param>
-      <param name="value"></param>
+      <param name="dObj">A dependency object whose property is set.</param>
+      <param name="value">A <see cref="T:System.Windows.Style"/> object that contains settings applied to the target object.</param>
     </member>
     <member name="M:DevExpress.DashboardWpf.ChartDashboardLayoutItem.SetDiagramStyle(System.Windows.DependencyObject,System.Windows.Style)">
       <summary>
@@ -345,31 +345,31 @@
     </member>
     <member name="M:DevExpress.DashboardWpf.ChartDashboardLayoutItem.SetLineSeriesStyle(System.Windows.DependencyObject,System.Windows.Style)">
       <summary>
-        <para></para>
+        <para>Implements the <see cref="P:DevExpress.DashboardWpf.ChartDashboardLayoutItem.LineSeriesStyle"/> attached property.</para>
       </summary>
-      <param name="dObj"></param>
-      <param name="value"></param>
+      <param name="dObj">A dependency object whose property is set.</param>
+      <param name="value">A <see cref="T:System.Windows.Style"/> object that contains settings applied to the target object.</param>
     </member>
     <member name="M:DevExpress.DashboardWpf.ChartDashboardLayoutItem.SetPointSeriesStyle(System.Windows.DependencyObject,System.Windows.Style)">
       <summary>
-        <para></para>
+        <para>Implements the <see cref="P:DevExpress.DashboardWpf.ChartDashboardLayoutItem.PointSeriesStyle"/> attached property.</para>
       </summary>
-      <param name="dObj"></param>
-      <param name="value"></param>
+      <param name="dObj">A dependency object whose property is set.</param>
+      <param name="value">A <see cref="T:System.Windows.Style"/> object that contains settings applied to the target object.</param>
     </member>
     <member name="M:DevExpress.DashboardWpf.ChartDashboardLayoutItem.SetRangeAreaSeriesStyle(System.Windows.DependencyObject,System.Windows.Style)">
       <summary>
-        <para></para>
+        <para>Implements the <see cref="P:DevExpress.DashboardWpf.ChartDashboardLayoutItem.RangeAreaSeriesStyle"/> attached property.</para>
       </summary>
-      <param name="dObj"></param>
-      <param name="value"></param>
+      <param name="dObj">A dependency object whose property is set.</param>
+      <param name="value">A <see cref="T:System.Windows.Style"/> object that contains settings applied to the target object.</param>
     </member>
     <member name="M:DevExpress.DashboardWpf.ChartDashboardLayoutItem.SetRangeBarSeriesStyle(System.Windows.DependencyObject,System.Windows.Style)">
       <summary>
-        <para></para>
+        <para>Implements the <see cref="P:DevExpress.DashboardWpf.ChartDashboardLayoutItem.RangeBarSeriesStyle"/> attached property.</para>
       </summary>
-      <param name="dObj"></param>
-      <param name="value"></param>
+      <param name="dObj">A dependency object whose property is set.</param>
+      <param name="value">A <see cref="T:System.Windows.Style"/> object that contains settings applied to the target object.</param>
     </member>
     <member name="M:DevExpress.DashboardWpf.ChartDashboardLayoutItem.SetSecondaryAxisYStyle(System.Windows.DependencyObject,System.Windows.Style)">
       <summary>
@@ -380,23 +380,23 @@
     </member>
     <member name="M:DevExpress.DashboardWpf.ChartDashboardLayoutItem.SetStackedAreaSeriesStyle(System.Windows.DependencyObject,System.Windows.Style)">
       <summary>
-        <para></para>
+        <para>Implements the <see cref="P:DevExpress.DashboardWpf.ChartDashboardLayoutItem.StackedAreaSeriesStyle"/> attached property.</para>
       </summary>
-      <param name="dObj"></param>
-      <param name="value"></param>
+      <param name="dObj">A dependency object whose property is set.</param>
+      <param name="value">A <see cref="T:System.Windows.Style"/> object that contains settings applied to the target object.</param>
     </member>
     <member name="M:DevExpress.DashboardWpf.ChartDashboardLayoutItem.SetStockSeriesStyle(System.Windows.DependencyObject,System.Windows.Style)">
       <summary>
-        <para></para>
+        <para>Implements the <see cref="P:DevExpress.DashboardWpf.ChartDashboardLayoutItem.StockSeriesStyle"/> attached property.</para>
       </summary>
-      <param name="dObj"></param>
-      <param name="value"></param>
+      <param name="dObj">A dependency object whose property is set.</param>
+      <param name="value">A <see cref="T:System.Windows.Style"/> object that contains settings applied to the target object.</param>
     </member>
     <member name="P:DevExpress.DashboardWpf.ChartDashboardLayoutItem.StackedAreaSeriesStyle">
       <summary>
-        <para></para>
+        <para>An attached property that applies style settings to the Range Bar series.</para>
       </summary>
-      <value></value>
+      <value>A <see cref="T:System.Windows.Style"/> object that contains settings applied to the target object.</value>
     </member>
     <member name="F:DevExpress.DashboardWpf.ChartDashboardLayoutItem.StackedAreaSeriesStyleProperty">
       <summary>
@@ -405,9 +405,9 @@
     </member>
     <member name="P:DevExpress.DashboardWpf.ChartDashboardLayoutItem.StockSeriesStyle">
       <summary>
-        <para></para>
+        <para>An attached property that applies style settings to the High-Low-Close and Stock series.</para>
       </summary>
-      <value></value>
+      <value>A <see cref="T:System.Windows.Style"/> object that contains settings applied to the High-Low-Close and Stock series.</value>
     </member>
     <member name="F:DevExpress.DashboardWpf.ChartDashboardLayoutItem.StockSeriesStyleProperty">
       <summary>
@@ -1214,7 +1214,7 @@
       <summary>
         <para>An attached property that applies style settings to the underlying control.</para>
       </summary>
-      <value></value>
+      <value>A <see cref="T:System.Windows.Style"/> object that contains settings applied to the target object.</value>
     </member>
     <member name="F:DevExpress.DashboardWpf.DashboardLayoutItem.ViewStyleProperty">
       <summary>

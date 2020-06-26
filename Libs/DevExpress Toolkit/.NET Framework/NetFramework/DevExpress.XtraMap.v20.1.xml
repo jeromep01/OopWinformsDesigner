@@ -1876,29 +1876,36 @@
       </summary>
       <returns>A <see cref="T:System.String"/> value, which is the textual representation of <see cref="T:DevExpress.XtraMap.CacheOptions"/>.</returns>
     </member>
-    <member name="T:DevExpress.XtraMap.CapabilitiesResponsedEventArgs">
+    <member name="T:DevExpress.XtraMap.CapabilitiesRespondedEventArgs">
       <summary>
         <para>Provides data for the <see cref="E:DevExpress.XtraMap.WmsDataProvider.ResponseCapabilities"/> event.</para>
       </summary>
     </member>
-    <member name="M:DevExpress.XtraMap.CapabilitiesResponsedEventArgs.#ctor(DevExpress.XtraMap.WmsLayerCollection)">
+    <member name="M:DevExpress.XtraMap.CapabilitiesRespondedEventArgs.#ctor(DevExpress.XtraMap.WmsLayerCollection,System.Exception)">
       <summary>
-        <para>Initializes a new instance of the <see cref="T:DevExpress.XtraMap.CapabilitiesResponsedEventArgs"/> class with the specified values of the event arguments.</para>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.XtraMap.CapabilitiesRespondedEventArgs"/> class with specified settings.</para>
       </summary>
       <param name="layers">The <see cref="T:DevExpress.XtraMap.WmsLayerCollection"/> value provides available layers from a Web Map Service.</param>
+      <param name="exception">An <see cref="T:System.Exception"/> that has been thrown.</param>
     </member>
-    <member name="P:DevExpress.XtraMap.CapabilitiesResponsedEventArgs.Layers">
+    <member name="P:DevExpress.XtraMap.CapabilitiesRespondedEventArgs.Exception">
+      <summary>
+        <para>Gets a thrown exception.</para>
+      </summary>
+      <value>A <see cref="T:System.Exception"/> that has been thrown.</value>
+    </member>
+    <member name="P:DevExpress.XtraMap.CapabilitiesRespondedEventArgs.Layers">
       <summary>
         <para>Returns a collection of available layers supported by a Web Map Service.</para>
       </summary>
       <value>A collection of <see cref="T:DevExpress.XtraMap.WmsLayer"/> objects.</value>
     </member>
-    <member name="T:DevExpress.XtraMap.CapabilitiesResponsedEventHandler">
+    <member name="T:DevExpress.XtraMap.CapabilitiesRespondedEventHandler">
       <summary>
-        <para>A method that will handle the <see cref="E:DevExpress.XtraMap.WmsDataProvider.ResponseCapabilities"/> event.</para>
+        <para>A method that handles the <see cref="E:DevExpress.XtraMap.WmsDataProvider.ResponseCapabilities"/> event.</para>
       </summary>
-      <param name="sender">The event source. This parameter identifies the <see cref="T:DevExpress.XtraMap.WmsDataProvider"/> which raised the event.</param>
-      <param name="e">A <see cref="T:DevExpress.XtraMap.CapabilitiesResponsedEventArgs"/> object that contains event data.</param>
+      <param name="sender">Event source.</param>
+      <param name="e">Event data.</param>
     </member>
     <member name="T:DevExpress.XtraMap.CartesianMapCoordinateSystem">
       <summary>
@@ -4450,7 +4457,7 @@
     </member>
     <member name="P:DevExpress.XtraMap.ImageLayer.Transparency">
       <summary>
-        <para>Gets or sets the transparency value to draw the <see cref="T:DevExpress.XtraMap.ImageLayer"/>.</para>
+        <para>Specifies the layer&#39;s transparency.</para>
       </summary>
       <value>A <see cref="T:System.Byte"/> value.</value>
     </member>

@@ -4,11 +4,6 @@
     <name>DevExpress.ExpressApp.Web.v20.1</name>
   </assembly>
   <members>
-    <member name="N:DevExpress.ExpressApp.Actions">
-      <summary>
-        <para>Contains classes that provide the Actions component of the eXpressApp Framemework infrastructure.</para>
-      </summary>
-    </member>
     <member name="T:DevExpress.ExpressApp.Actions.SupportClientScriptsExtensions">
       <summary>
         <para>Provides extension methods providing client script support for the Actions in ASP.NET applications.</para>

@@ -3707,51 +3707,51 @@ The DefaultBoolean.Default value is equivalent to DefaultBoolean.True if the sta
     </member>
     <member name="T:DevExpress.Utils.ContextItemClickEventArgs">
       <summary>
-        <para></para>
+        <para>Provides data for the <see cref="E:DevExpress.Utils.ContextItem.Click"/> event.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Utils.ContextItemClickEventArgs.#ctor(DevExpress.Utils.ContextItem,DevExpress.Utils.ContextItemViewInfo)">
       <summary>
         <para>Initializes a new instance of the <see cref="T:DevExpress.Utils.ContextItemClickEventArgs"/> class with specified settings.</para>
       </summary>
-      <param name="item"></param>
-      <param name="itemInfo"></param>
+      <param name="item">A related <see cref="T:DevExpress.Utils.ContextItem"/> object.</param>
+      <param name="itemInfo">A <see cref="T:DevExpress.Utils.ContextItem"/>&#39;s view info.</param>
     </member>
     <member name="M:DevExpress.Utils.ContextItemClickEventArgs.#ctor(DevExpress.Utils.ContextItem,DevExpress.Utils.ContextItemViewInfo,System.Object)">
       <summary>
         <para>Initializes a new instance of the <see cref="T:DevExpress.Utils.ContextItemClickEventArgs"/> class with specified settings.</para>
       </summary>
-      <param name="item"></param>
-      <param name="itemInfo"></param>
-      <param name="dataItem"></param>
+      <param name="item">A related <see cref="T:DevExpress.Utils.ContextItem"/> object.</param>
+      <param name="itemInfo">A <see cref="T:DevExpress.Utils.ContextItem"/>&#39;s view info.</param>
+      <param name="dataItem">A control that contains a <see cref="T:DevExpress.Utils.ContextItem"/>.</param>
     </member>
     <member name="P:DevExpress.Utils.ContextItemClickEventArgs.DataItem">
       <summary>
-        <para></para>
+        <para>Gets or sets an <see cref="T:System.Object"/> that contains a clicked <see cref="T:DevExpress.Utils.ContextItem"/>. This object is a control or a control&#39;s item.</para>
       </summary>
-      <value></value>
+      <value>A control or a control&#39;s item that contains a clicked <see cref="T:DevExpress.Utils.ContextItem"/></value>
     </member>
     <member name="P:DevExpress.Utils.ContextItemClickEventArgs.Item">
       <summary>
-        <para></para>
+        <para>Gets a clicked <see cref="T:DevExpress.Utils.ContextItem"/>.</para>
       </summary>
-      <value></value>
+      <value>A clicked DevExpress.Utils.ContextItem.</value>
     </member>
     <member name="P:DevExpress.Utils.ContextItemClickEventArgs.ItemInfo">
       <summary>
-        <para></para>
+        <para>Gets or sets a clicked <see cref="T:DevExpress.Utils.ContextItem"/>&#39;s ContextItemViewInfo.</para>
       </summary>
-      <value></value>
+      <value>A  <see cref="T:DevExpress.Utils.ContextItem"/>&#39;s ContextItemViewInfo</value>
     </member>
     <member name="P:DevExpress.Utils.ContextItemClickEventArgs.ScreenBounds">
       <summary>
-        <para></para>
+        <para>Returns a <see cref="T:System.Drawing.Rectangle"/> that contains a <see cref="T:DevExpress.Utils.ContextItem"/>.</para>
       </summary>
-      <value></value>
+      <value>A <see cref="T:System.Drawing.Rectangle"/> that contains a <see cref="T:DevExpress.Utils.ContextItem"/>.</value>
     </member>
     <member name="T:DevExpress.Utils.ContextItemCollection">
       <summary>
-        <para></para>
+        <para>Represents a collection of <see cref="T:DevExpress.Utils.ContextItem"/> objects displayed in a control.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Utils.ContextItemCollection.#ctor">
@@ -3763,87 +3763,87 @@ The DefaultBoolean.Default value is equivalent to DefaultBoolean.True if the sta
       <summary>
         <para>Initializes a new instance of the <see cref="T:DevExpress.Utils.ContextItemCollection"/> class with specified settings.</para>
       </summary>
-      <param name="owner"></param>
+      <param name="owner">An object that implements the IContextItemCollectionOwner interface and that owns a new <see cref="T:DevExpress.Utils.ContextItemCollection"/></param>
     </member>
     <member name="M:DevExpress.Utils.ContextItemCollection.Add(DevExpress.Utils.ContextItem)">
       <summary>
-        <para></para>
+        <para>Adds a <see cref="T:DevExpress.Utils.ContextItem"/> to a <see cref="T:DevExpress.Utils.ContextItemCollection"/>.</para>
       </summary>
-      <param name="item"></param>
-      <returns></returns>
+      <param name="item">A <see cref="T:DevExpress.Utils.ContextItem"/> to be added to a <see cref="T:DevExpress.Utils.ContextItemCollection"/>.</param>
+      <returns>A <see cref="T:DevExpress.Utils.ContextItem"/>&#39;s index in the collection.</returns>
     </member>
     <member name="M:DevExpress.Utils.ContextItemCollection.Clone">
       <summary>
-        <para></para>
+        <para>Clones a <see cref="T:DevExpress.Utils.ContextItemCollection"/> and all <see cref="T:DevExpress.Utils.ContextItem"/> objects inside it.</para>
       </summary>
-      <returns></returns>
+      <returns>An object that is a replica of a <see cref="T:DevExpress.Utils.ContextItemCollection"/>.</returns>
     </member>
     <member name="M:DevExpress.Utils.ContextItemCollection.Contains(DevExpress.Utils.ContextItem)">
       <summary>
-        <para></para>
+        <para>Checks whether a <see cref="T:DevExpress.Utils.ContextItemCollection"/> contans a specific <see cref="T:DevExpress.Utils.ContextItem"/>.</para>
       </summary>
-      <param name="item"></param>
-      <returns></returns>
+      <param name="item">The item to check.</param>
+      <returns>true, if a <see cref="T:DevExpress.Utils.ContextItemCollection"/> contains a specific <see cref="T:DevExpress.Utils.ContextItem"/>, otherwise, false.</returns>
     </member>
     <member name="M:DevExpress.Utils.ContextItemCollection.IndexOf(DevExpress.Utils.ContextItem)">
       <summary>
-        <para></para>
+        <para>Returns a <see cref="T:DevExpress.Utils.ContextItem"/>&#39;s index within a collection.</para>
       </summary>
-      <param name="item"></param>
-      <returns></returns>
+      <param name="item">A <see cref="T:DevExpress.Utils.ContextItem"/> whose index needs to be determined.</param>
+      <returns>A <see cref="T:DevExpress.Utils.ContextItem"/>&#39;s index.</returns>
     </member>
     <member name="M:DevExpress.Utils.ContextItemCollection.Insert(System.Int32,DevExpress.Utils.ContextItem)">
       <summary>
-        <para></para>
+        <para>Adds a <see cref="T:DevExpress.Utils.ContextItem"/> to a specified position within a <see cref="T:DevExpress.Utils.ContextItemCollection"/>.</para>
       </summary>
-      <param name="index"></param>
-      <param name="item"></param>
+      <param name="index">An index that specifies a <see cref="T:DevExpress.Utils.ContextItem"/>&#39;s location.</param>
+      <param name="item">A <see cref="T:DevExpress.Utils.ContextItem"/> to add to a <see cref="T:DevExpress.Utils.ContextItemCollection"/></param>
     </member>
     <member name="P:DevExpress.Utils.ContextItemCollection.Item(System.Int32)">
       <summary>
-        <para></para>
+        <para>Gets or sets a <see cref="T:DevExpress.Utils.ContextItem"/> by its index in a <see cref="T:DevExpress.Utils.ContextItemCollection"/>.</para>
       </summary>
-      <param name="index"></param>
-      <value></value>
+      <param name="index">A <see cref="T:DevExpress.Utils.ContextItem"/>&#39;s index in a <see cref="T:DevExpress.Utils.ContextItemCollection"/>.</param>
+      <value>A <see cref="T:DevExpress.Utils.ContextItem"/> that has the specified index.</value>
     </member>
     <member name="P:DevExpress.Utils.ContextItemCollection.Item(System.String)">
       <summary>
-        <para></para>
+        <para>Gets or sets a <see cref="T:DevExpress.Utils.ContextItem"/> by its name in a <see cref="T:DevExpress.Utils.ContextItemCollection"/>.</para>
       </summary>
-      <param name="name"></param>
-      <value></value>
+      <param name="name">A <see cref="T:DevExpress.Utils.ContextItem"/>&#39;s name in a <see cref="T:DevExpress.Utils.ContextItemCollection"/>.</param>
+      <value>A <see cref="T:DevExpress.Utils.ContextItem"/> that has the specified name.</value>
     </member>
     <member name="E:DevExpress.Utils.ContextItemCollection.ItemCollectionChanged">
       <summary>
-        <para></para>
+        <para>Occurs when a <see cref="T:DevExpress.Utils.ContextItemCollection"/> changes.</para>
       </summary>
     </member>
     <member name="P:DevExpress.Utils.ContextItemCollection.Options">
       <summary>
-        <para></para>
+        <para>Provides access to the <see cref="T:DevExpress.Utils.ContextItemCollectionOptions"/> object that stores the collection&#39;s settings.</para>
       </summary>
-      <value></value>
+      <value>A <see cref="T:DevExpress.Utils.ContextItemCollectionOptions"/> object that represents a <see cref="T:DevExpress.Utils.ContextItemCollection"/>&#39;s options.</value>
     </member>
     <member name="P:DevExpress.Utils.ContextItemCollection.Owner">
       <summary>
-        <para></para>
+        <para>Gets or sets a <see cref="T:DevExpress.Utils.ContextItemCollection"/>&#39;s owner. This owner implements IContextItemCollectionOwner.</para>
       </summary>
-      <value></value>
+      <value>An object that implements the IContextItemCollectionOwner interface.</value>
     </member>
     <member name="M:DevExpress.Utils.ContextItemCollection.Remove(DevExpress.Utils.ContextItem)">
       <summary>
-        <para></para>
+        <para>Removes a specified <see cref="T:DevExpress.Utils.ContextItem"/> from a <see cref="T:DevExpress.Utils.ContextItemCollection"/>.</para>
       </summary>
-      <param name="item"></param>
+      <param name="item">A <see cref="T:DevExpress.Utils.ContextItem"/> to be removed from a <see cref="T:DevExpress.Utils.ContextItemCollection"/>.</param>
     </member>
     <member name="M:DevExpress.Utils.ContextItemCollection.UpdateCollection">
       <summary>
-        <para></para>
+        <para>Call this method to raise a control&#39;s CustomizeContextItems event. Handle the event to make changes to the <see cref="T:DevExpress.Utils.ContextItemCollection"/>.</para>
       </summary>
     </member>
     <member name="T:DevExpress.Utils.ContextItemCollectionOptions">
       <summary>
-        <para></para>
+        <para>Stores a <see cref="T:DevExpress.Utils.ContextItemCollection"/>&#39;s settings. Use the <see cref="T:DevExpress.Utils.ContextItemCollection"/> property or the control&#39;s repository item to access them.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Utils.ContextItemCollectionOptions.#ctor">
@@ -3855,157 +3855,157 @@ The DefaultBoolean.Default value is equivalent to DefaultBoolean.True if the sta
       <summary>
         <para>Initializes a new instance of the <see cref="T:DevExpress.Utils.ContextItemCollectionOptions"/> class with specified settings.</para>
       </summary>
-      <param name="owner"></param>
+      <param name="owner">An object that implements the IContextItemCollectionOptionsOwner interface and that owns a new <see cref="T:DevExpress.Utils.ContextItemCollectionOptions"/>.</param>
     </member>
     <member name="P:DevExpress.Utils.ContextItemCollectionOptions.AllowGlyphSkinning">
       <summary>
-        <para></para>
+        <para>Enables or disables glyph skinning for context items that display images.</para>
       </summary>
-      <value></value>
+      <value>true, to match a context items&#39;s raster image color to the item&#39;s text color; false to retain the original raster image color.</value>
     </member>
     <member name="P:DevExpress.Utils.ContextItemCollectionOptions.AllowHtmlText">
       <summary>
-        <para></para>
+        <para>Gets or sets whether context items support HTML tags.</para>
       </summary>
-      <value></value>
+      <value>true, if context items support HTML tags; otherwise, false.</value>
     </member>
     <member name="P:DevExpress.Utils.ContextItemCollectionOptions.AllowHtmlTextInToolTip">
       <summary>
-        <para></para>
+        <para>Gets or sets whether context items&#39; tooltips support HTML tags.</para>
       </summary>
-      <value></value>
+      <value><see cref="F:DevExpress.Utils.DefaultBoolean.True"/>, to enable HTML formatting in DevExpress.Utils.ContextItem tooltips; <see cref="F:DevExpress.Utils.DefaultBoolean.False"/>, to disable; <see cref="F:DevExpress.Utils.DefaultBoolean.Default"/>, to use the <see cref="P:DevExpress.Utils.ToolTipController.AllowHtmlText"/> setting.</value>
     </member>
     <member name="P:DevExpress.Utils.ContextItemCollectionOptions.AnimationTime">
       <summary>
-        <para></para>
+        <para>Gets or sets the time required to show or hide context items.</para>
       </summary>
-      <value></value>
+      <value>A value that determines the time required to show or hide context items, in milliseconds.</value>
     </member>
     <member name="P:DevExpress.Utils.ContextItemCollectionOptions.AnimationType">
       <summary>
-        <para></para>
+        <para>Gets or sets the <see cref="T:DevExpress.Utils.ContextItem"/> animation type. The animation is displayed to show or hide context items.</para>
       </summary>
-      <value></value>
+      <value>A ContextAnimationType value that determines which animation is displayed to show or hide context items.</value>
     </member>
     <member name="M:DevExpress.Utils.ContextItemCollectionOptions.Assign(DevExpress.Utils.ContextItemCollectionOptions)">
       <summary>
-        <para></para>
+        <para>Assigns a <see cref="T:DevExpress.Utils.ContextItemCollection"/>&#39;s settings to a different ContextItemCollection&#39;s options.</para>
       </summary>
-      <param name="options"></param>
+      <param name="options">Options to assign.</param>
     </member>
     <member name="P:DevExpress.Utils.ContextItemCollectionOptions.BottomPanelColor">
       <summary>
-        <para></para>
+        <para>Gets or sets a <see cref="T:System.Drawing.Color"/> for a control&#39;s bottom panel that contains context items.</para>
       </summary>
-      <value></value>
+      <value>A bottom panel&#39;s color.</value>
     </member>
     <member name="P:DevExpress.Utils.ContextItemCollectionOptions.BottomPanelPadding">
       <summary>
-        <para></para>
+        <para>Gets or sets <see cref="T:System.Windows.Forms.Padding"/> for context items inside the bottom panel.</para>
       </summary>
-      <value></value>
+      <value>Bottom panel padding.</value>
     </member>
     <member name="P:DevExpress.Utils.ContextItemCollectionOptions.CenterPanelColor">
       <summary>
-        <para></para>
+        <para>Gets or sets a <see cref="T:System.Drawing.Color"/> for a control&#39;s center panel that contains context items.</para>
       </summary>
-      <value></value>
+      <value>A center panel&#39;s color.</value>
     </member>
     <member name="P:DevExpress.Utils.ContextItemCollectionOptions.CenterPanelPadding">
       <summary>
-        <para></para>
+        <para>Gets or sets <see cref="T:System.Windows.Forms.Padding"/> for context items inside the center panel.</para>
       </summary>
-      <value></value>
+      <value>Center panel padding.</value>
     </member>
     <member name="M:DevExpress.Utils.ContextItemCollectionOptions.Clone">
       <summary>
-        <para></para>
+        <para>Returns a copy of a <see cref="T:DevExpress.Utils.ContextItemCollectionOptions"/> object.</para>
       </summary>
-      <returns></returns>
+      <returns>A copy of a <see cref="T:DevExpress.Utils.ContextItemCollectionOptions"/> object.</returns>
     </member>
     <member name="P:DevExpress.Utils.ContextItemCollectionOptions.DisabledStateOpacity">
       <summary>
-        <para></para>
+        <para>Gets or sets opacity for all disabled context items.</para>
       </summary>
-      <value></value>
+      <value>A value between 0 and 1 that determines opacity; 1 is for &quot;opaque&quot;, 0 is for &quot;transparent&quot;.</value>
     </member>
     <member name="P:DevExpress.Utils.ContextItemCollectionOptions.FarPanelColor">
       <summary>
-        <para></para>
+        <para>Gets or sets a <see cref="T:System.Drawing.Color"/> for a control&#39;s far panel that contains context items.</para>
       </summary>
-      <value></value>
+      <value>A far panel&#39;s color.</value>
     </member>
     <member name="P:DevExpress.Utils.ContextItemCollectionOptions.FarPanelPadding">
       <summary>
-        <para></para>
+        <para>Gets or sets <see cref="T:System.Windows.Forms.Padding"/> for context items inside the far panel.</para>
       </summary>
-      <value></value>
+      <value>Far panel padding.</value>
     </member>
     <member name="P:DevExpress.Utils.ContextItemCollectionOptions.HoverStateOpacity">
       <summary>
-        <para></para>
+        <para>Gets or sets opacity for hovered conteext items.</para>
       </summary>
-      <value></value>
+      <value>A value between 0 and 1 that determines opacity; 1 is for &quot;opaque&quot;, 0 is for &quot;transparent&quot;.</value>
     </member>
     <member name="P:DevExpress.Utils.ContextItemCollectionOptions.Indent">
       <summary>
-        <para></para>
+        <para>Gets or sets the distance between context items.</para>
       </summary>
-      <value></value>
+      <value>A value that determines the distance between context items.</value>
     </member>
     <member name="P:DevExpress.Utils.ContextItemCollectionOptions.ItemCursor">
       <summary>
-        <para></para>
+        <para>Gets or sets a cursor type for <see cref="T:DevExpress.Utils.ContextItem"/> interaction.</para>
       </summary>
-      <value></value>
+      <value>A cursor type for <see cref="T:DevExpress.Utils.ContextItem"/> interaction.</value>
     </member>
     <member name="P:DevExpress.Utils.ContextItemCollectionOptions.NearPanelColor">
       <summary>
-        <para></para>
+        <para>Gets or sets a <see cref="T:System.Drawing.Color"/> for a control&#39;s near panel that contains context items.</para>
       </summary>
-      <value></value>
+      <value>A near panel&#39;s color.</value>
     </member>
     <member name="P:DevExpress.Utils.ContextItemCollectionOptions.NearPanelPadding">
       <summary>
-        <para></para>
+        <para>Gets or sets <see cref="T:System.Windows.Forms.Padding"/> for context items inside the near panel.</para>
       </summary>
-      <value></value>
+      <value>Near panel padding.</value>
     </member>
     <member name="P:DevExpress.Utils.ContextItemCollectionOptions.NormalStateOpacity">
       <summary>
-        <para></para>
+        <para>Gets or sets <see cref="T:DevExpress.Utils.ContextItem"/> opacity.</para>
       </summary>
-      <value></value>
+      <value>A value between 0 and 1 that determines opacity; 1 is for &quot;opaque&quot;, 0 is for &quot;transparent&quot;.</value>
     </member>
     <member name="P:DevExpress.Utils.ContextItemCollectionOptions.Owner">
       <summary>
-        <para></para>
+        <para>An IContextItemCollectionOptionsOwner object that owns <see cref="T:DevExpress.Utils.ContextItemCollectionOptions"/>.</para>
       </summary>
-      <value></value>
+      <value>An object that owns <see cref="T:DevExpress.Utils.ContextItemCollectionOptions"/>.</value>
     </member>
     <member name="P:DevExpress.Utils.ContextItemCollectionOptions.PanelCursor">
       <summary>
-        <para></para>
+        <para>Gets or sets a <see cref="T:System.Windows.Forms.Cursor"/> displayed when the mouse pointer hovers over a panel that contains context items</para>
       </summary>
-      <value></value>
+      <value>A cursor shown when the mouse pointer hovers over a panel that contains context items.</value>
     </member>
     <member name="P:DevExpress.Utils.ContextItemCollectionOptions.ShowToolTips">
       <summary>
-        <para></para>
+        <para>Gets or sets whether tooltips are shown for context items.</para>
       </summary>
-      <value></value>
+      <value>true, to show tooltips for context items; otherwise, false.</value>
     </member>
     <member name="P:DevExpress.Utils.ContextItemCollectionOptions.TopPanelColor">
       <summary>
-        <para></para>
+        <para>Gets or sets a <see cref="T:System.Drawing.Color"/> for a control&#39;s top panel that contains context items.</para>
       </summary>
-      <value></value>
+      <value>A top panel&#39;s color.</value>
     </member>
     <member name="P:DevExpress.Utils.ContextItemCollectionOptions.TopPanelPadding">
       <summary>
-        <para></para>
+        <para>Gets or sets <see cref="T:System.Windows.Forms.Padding"/> for context items inside the top panel.</para>
       </summary>
-      <value></value>
+      <value>Top panel padding.</value>
     </member>
     <member name="N:DevExpress.Utils.Controls">
       <summary>
@@ -6876,12 +6876,6 @@ Use the <see cref="P:DevExpress.Utils.FlyoutPanelOptions.AnchorType"/> property 
       </summary>
       <value></value>
     </member>
-    <member name="P:DevExpress.Utils.FlyoutPanel.ForceCreateHandle">
-      <summary>
-        <para></para>
-      </summary>
-      <value></value>
-    </member>
     <member name="M:DevExpress.Utils.FlyoutPanel.GetCurrentObjectInfo">
       <summary>
         <para>This member supports the internal infrastructure, and is not intended to be used directly from your code.</para>
@@ -9667,7 +9661,7 @@ For the <see cref="T:DevExpress.Utils.SharedImageCollection"/>, this property sp
     </member>
     <member name="T:DevExpress.Utils.SimpleContextItemCollectionOptions">
       <summary>
-        <para></para>
+        <para>The base class for simple context items&#39; options.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Utils.SimpleContextItemCollectionOptions.#ctor">
@@ -9679,65 +9673,65 @@ For the <see cref="T:DevExpress.Utils.SharedImageCollection"/>, this property sp
       <summary>
         <para>Initializes a new instance of the <see cref="T:DevExpress.Utils.SimpleContextItemCollectionOptions"/> class with specified settings.</para>
       </summary>
-      <param name="owner"></param>
+      <param name="owner">An object that implements the IContextItemCollectionOptionsOwner interface and that owns a new <see cref="T:DevExpress.Utils.ContextItemCollectionOptions"/>.</param>
     </member>
     <member name="P:DevExpress.Utils.SimpleContextItemCollectionOptions.BottomPanelColor">
       <summary>
-        <para></para>
+        <para>Simple context items do not support this setting.</para>
       </summary>
       <value></value>
     </member>
     <member name="P:DevExpress.Utils.SimpleContextItemCollectionOptions.BottomPanelPadding">
       <summary>
-        <para></para>
+        <para>Simple context items do not support this setting.</para>
       </summary>
       <value></value>
     </member>
     <member name="P:DevExpress.Utils.SimpleContextItemCollectionOptions.CenterPanelColor">
       <summary>
-        <para></para>
+        <para>Simple context items do not support this setting.</para>
       </summary>
       <value></value>
     </member>
     <member name="P:DevExpress.Utils.SimpleContextItemCollectionOptions.CenterPanelPadding">
       <summary>
-        <para></para>
+        <para>Simple context items do not support this setting.</para>
       </summary>
       <value></value>
     </member>
     <member name="P:DevExpress.Utils.SimpleContextItemCollectionOptions.FarPanelColor">
       <summary>
-        <para></para>
+        <para>Simple context items do not support this setting.</para>
       </summary>
       <value></value>
     </member>
     <member name="P:DevExpress.Utils.SimpleContextItemCollectionOptions.FarPanelPadding">
       <summary>
-        <para></para>
+        <para>Simple context items do not support this setting.</para>
       </summary>
       <value></value>
     </member>
     <member name="P:DevExpress.Utils.SimpleContextItemCollectionOptions.NearPanelColor">
       <summary>
-        <para></para>
+        <para>Simple context items do not support this setting.</para>
       </summary>
       <value></value>
     </member>
     <member name="P:DevExpress.Utils.SimpleContextItemCollectionOptions.NearPanelPadding">
       <summary>
-        <para></para>
+        <para>Simple context items do not support this setting.</para>
       </summary>
       <value></value>
     </member>
     <member name="P:DevExpress.Utils.SimpleContextItemCollectionOptions.TopPanelColor">
       <summary>
-        <para></para>
+        <para>Simple context items do not support this setting.</para>
       </summary>
       <value></value>
     </member>
     <member name="P:DevExpress.Utils.SimpleContextItemCollectionOptions.TopPanelPadding">
       <summary>
-        <para></para>
+        <para>Simple context items do not support this setting.</para>
       </summary>
       <value></value>
     </member>
@@ -9766,9 +9760,9 @@ For the <see cref="T:DevExpress.Utils.SharedImageCollection"/>, this property sp
     </member>
     <member name="P:DevExpress.Utils.SuperToolTip.Appearance">
       <summary>
-        <para>This property is not supported by the <see cref="T:DevExpress.Utils.SuperToolTip"/> class.</para>
+        <para>This class does not support this proprty. Use a tooltip region&#39;s Appearance property to specify appearance settings for the region.</para>
       </summary>
-      <value></value>
+      <value>An object that specifies appearance settings.</value>
     </member>
     <member name="M:DevExpress.Utils.SuperToolTip.Assign(DevExpress.Utils.SuperToolTip)">
       <summary>
@@ -9786,55 +9780,55 @@ For the <see cref="T:DevExpress.Utils.SharedImageCollection"/>, this property sp
       <summary>
         <para>The default distance between items. This constant specifies the default value for the <see cref="P:DevExpress.Utils.SuperToolTip.DistanceBetweenItems"/> property.</para>
       </summary>
-      <value></value>
+      <value>An integer value that specifies the default distance between items.</value>
     </member>
     <member name="P:DevExpress.Utils.SuperToolTip.DistanceBetweenItems">
       <summary>
-        <para>Specifies the distance between tooltip items.</para>
+        <para>Specifies the distance between tooltip regions (title, content, footer, etc.).</para>
       </summary>
-      <value>An integer which specifies the distance between tooltip items.</value>
+      <value>An integer which specifies the distance between tooltip regions (title, content, footer, etc.).</value>
     </member>
     <member name="P:DevExpress.Utils.SuperToolTip.FixedTooltipWidth">
       <summary>
-        <para>Gets or sets whether the tooltip&#39;s width is fixed or automatically adjusted to fit the tooltip&#39;s contents entirely.</para>
+        <para>Gets or sets whether the tooltip width is fixed or corresponds to the content.</para>
       </summary>
-      <value>true if the tooltip&#39;s width is fixed; false if the tooltip is automatically resized to fit its contents entirely.</value>
+      <value>true, if the tooltip width is fixed; false, if the tooltip is automatically resized to fit its content.</value>
     </member>
     <member name="P:DevExpress.Utils.SuperToolTip.IsEmpty">
       <summary>
-        <para>Gets whether the <see cref="T:DevExpress.Utils.SuperToolTip"/> is empty.</para>
+        <para>Gets whether this tooltip contains regions.</para>
       </summary>
-      <value>true if the <see cref="T:DevExpress.Utils.SuperToolTip"/> doesn&#39;t contain any information to display; otherwise, false.</value>
+      <value>true, if the <see cref="P:DevExpress.Utils.SuperToolTip.Items"/> collection is empty; otherwise, false.</value>
     </member>
     <member name="P:DevExpress.Utils.SuperToolTip.Items">
       <summary>
-        <para>Gets the collection of items which constitute the <see cref="T:DevExpress.Utils.SuperToolTip"/> object.</para>
+        <para>Gets the collection of objects that represent regions (title, content, etc.) in a super tooltip.</para>
       </summary>
-      <value>A DevExpress.Utils.ToolTipItemCollection which contains items displayed by the <see cref="T:DevExpress.Utils.SuperToolTip"/> object.</value>
+      <value>The collection of objects that represent regions (title, content, etc.) in a super tooltip.</value>
     </member>
     <member name="P:DevExpress.Utils.SuperToolTip.LookAndFeel">
       <summary>
-        <para>This property is not supported by this class.</para>
+        <para>This class does not support this property.</para>
       </summary>
       <value>A <see cref="T:DevExpress.LookAndFeel.UserLookAndFeel"/> object.</value>
     </member>
     <member name="P:DevExpress.Utils.SuperToolTip.MaxWidth">
       <summary>
-        <para>Specifies the tooltip window&#39;s maximum width, in pixels.</para>
+        <para>Specifies the tooltip maximum width in pixels.</para>
       </summary>
-      <value>An integer value that specifies the tooltip window&#39;s maximum width.</value>
+      <value>An integer value that specifies the tooltip&#39;s maximum width.</value>
     </member>
     <member name="P:DevExpress.Utils.SuperToolTip.OwnerAllowHtmlText">
       <summary>
-        <para>Gets whether HTML formatting in a SuperToolTip is allowed by the ToolTipController object that displays the current <see cref="T:DevExpress.Utils.SuperToolTip"/> object.</para>
+        <para>Gets whether the tooltip controller allows you to use the HTML tags to format the text in this tooltip.</para>
       </summary>
-      <value>true if HTML formatting is allowed by the ToolTipController object that displays the current <see cref="T:DevExpress.Utils.SuperToolTip"/> object; otherwise, false.</value>
+      <value>true, if the tooltip controller allows you to use the HTML tags to format the text in this tooltip; otherwise, false.</value>
     </member>
     <member name="P:DevExpress.Utils.SuperToolTip.Padding">
       <summary>
-        <para>Gets or sets padding within the <see cref="T:DevExpress.Utils.SuperToolTip"/>.</para>
+        <para>Gets or sets the padding (space between the content of the tooltip and its edge).</para>
       </summary>
-      <value>A <see cref="T:System.Windows.Forms.Padding"/> object that specifies the tooltip&#39;s internal spacing characteristics.</value>
+      <value>A <see cref="T:System.Windows.Forms.Padding"/> structure that specifies the space between the content of the tooltip and its edge.</value>
     </member>
     <member name="P:DevExpress.Utils.SuperToolTip.RightToLeft">
       <summary>
@@ -11816,9 +11810,9 @@ For the <see cref="T:DevExpress.Utils.SharedImageCollection"/>, this property sp
     </member>
     <member name="P:DevExpress.Utils.ToolTipItem.Image">
       <summary>
-        <para>Gets or sets the image displayed in the ToolTipItem object.</para>
+        <para>Gets or sets the image displayed in this tooltip region.</para>
       </summary>
-      <value>A System.Drawing.Image that is displayed in the tool tip.</value>
+      <value>An <see cref="T:System.Drawing.Image"/> object that specifies an image displayed in this tooltip region.</value>
     </member>
     <member name="P:DevExpress.Utils.ToolTipItem.ImageAlign">
       <summary>
@@ -11828,9 +11822,9 @@ For the <see cref="T:DevExpress.Utils.SharedImageCollection"/>, this property sp
     </member>
     <member name="P:DevExpress.Utils.ToolTipItem.ImageIndex">
       <summary>
-        <para>Gets or sets the zero-based index of an image in a <see cref="P:DevExpress.Utils.ToolTipItem.Images"/> collection to be displayed in a <see cref="T:DevExpress.Utils.ToolTipItem"/> object.</para>
+        <para>Gets or sets the index of the image in the <see cref="P:DevExpress.Utils.ToolTipItem.Images"/> collection.</para>
       </summary>
-      <value>The zero-based index of an image in an <see cref="P:DevExpress.Utils.ToolTipItem.Images"/> collection to be displayed in a <see cref="T:DevExpress.Utils.ToolTipItem"/> object.</value>
+      <value>An integer value that specifies the index of the image in the <see cref="P:DevExpress.Utils.ToolTipItem.Images"/> collection.</value>
     </member>
     <member name="P:DevExpress.Utils.ToolTipItem.ImageOptions">
       <summary>
@@ -11840,15 +11834,15 @@ For the <see cref="T:DevExpress.Utils.SharedImageCollection"/>, this property sp
     </member>
     <member name="P:DevExpress.Utils.ToolTipItem.Images">
       <summary>
-        <para>Gets or sets the source of images that can be displayed in a <see cref="T:DevExpress.Utils.ToolTipItem"/> object.</para>
+        <para>Gets or sets the collection of images that can be displayed in this tooltip region.</para>
       </summary>
-      <value>The source of images that can be displayed in a <see cref="T:DevExpress.Utils.ToolTipItem"/> object.</value>
+      <value>An object that specifies the collection of images that can be displayed in this tooltip region.</value>
     </member>
     <member name="P:DevExpress.Utils.ToolTipItem.ImageToTextDistance">
       <summary>
-        <para>Gets or sets a space that visually detaches an image and text displayed in a <see cref="T:DevExpress.Utils.ToolTipItem"/>.</para>
+        <para>Gets or sets the distance between the image and text in this tooltip region.</para>
       </summary>
-      <value>The distance between an image and text displayed in a <see cref="T:DevExpress.Utils.ToolTipItem"/>, in pixels</value>
+      <value>The distance, in pixels, between the image and text in this tooltip region.</value>
     </member>
     <member name="P:DevExpress.Utils.ToolTipItem.IsEmpty">
       <summary>
@@ -11911,13 +11905,13 @@ For the <see cref="T:DevExpress.Utils.SharedImageCollection"/>, this property sp
     </member>
     <member name="P:DevExpress.Utils.ToolTipItemImageOptions.ImageIndex">
       <summary>
-        <para>Gets or sets the index of the image in the image collection.</para>
+        <para>Gets or sets the index of the image in the <see cref="P:DevExpress.Utils.ToolTipItemImageOptions.Images"/> collection.</para>
       </summary>
-      <value>An integer value that specifies the index of the image in the image collection.</value>
+      <value>An integer value that specifies the index of the image in the <see cref="P:DevExpress.Utils.ToolTipItemImageOptions.Images"/> collection.</value>
     </member>
     <member name="P:DevExpress.Utils.ToolTipItemImageOptions.Images">
       <summary>
-        <para>Provides access to the collection of images that can be displayed in the tooltip.</para>
+        <para>Gets or sets the collection of images that can be displayed in the tooltip.</para>
       </summary>
       <value>An object that specifies the collection of images that can be displayed in the tooltip.</value>
     </member>
@@ -15456,6 +15450,12 @@ A specific version of the addressed image is automatically chosen based on the a
         <para>Returns whether the <see cref="P:DevExpress.XtraEditors.SeparatorControl.Padding"/> property should be serialized.</para>
       </summary>
       <returns>true, if the <see cref="P:DevExpress.XtraEditors.SeparatorControl.Padding"/> property should be serialized; otherwise, false.</returns>
+    </member>
+    <member name="P:DevExpress.XtraEditors.SeparatorControl.TabStop">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
     </member>
     <member name="P:DevExpress.XtraEditors.SeparatorControl.Text">
       <summary>

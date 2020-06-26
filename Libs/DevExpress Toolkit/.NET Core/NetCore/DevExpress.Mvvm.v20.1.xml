@@ -1849,9 +1849,9 @@
     </member>
     <member name="P:DevExpress.Mvvm.DXSplashScreenViewModel.Subtitle">
       <summary>
-        <para></para>
+        <para>Specifies the subtitle text.</para>
       </summary>
-      <value></value>
+      <value>A string value that is the subtitle.</value>
     </member>
     <member name="P:DevExpress.Mvvm.DXSplashScreenViewModel.Tag">
       <summary>
@@ -1926,7 +1926,7 @@
     </member>
     <member name="T:DevExpress.Mvvm.Gantt.GanttResource">
       <summary>
-        <para></para>
+        <para>A Gantt resource data object.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Mvvm.Gantt.GanttResource.#ctor">
@@ -1936,21 +1936,21 @@
     </member>
     <member name="P:DevExpress.Mvvm.Gantt.GanttResource.Color">
       <summary>
-        <para></para>
+        <para>Gets or sets the resource&#39;s color.</para>
       </summary>
-      <value></value>
+      <value>The resource&#39;s color.</value>
     </member>
     <member name="P:DevExpress.Mvvm.Gantt.GanttResource.Id">
       <summary>
-        <para></para>
+        <para>Gets or sets the resource&#39;s ID.</para>
       </summary>
-      <value></value>
+      <value>The resource&#39;s ID.</value>
     </member>
     <member name="P:DevExpress.Mvvm.Gantt.GanttResource.Name">
       <summary>
-        <para></para>
+        <para>Gets or sets the resource&#39;s name.</para>
       </summary>
-      <value></value>
+      <value>The resource&#39;s name.</value>
     </member>
     <member name="T:DevExpress.Mvvm.Gantt.GanttTask">
       <summary>
@@ -2012,9 +2012,9 @@
     </member>
     <member name="P:DevExpress.Mvvm.Gantt.GanttTask.ResourceLinks">
       <summary>
-        <para></para>
+        <para>Provides access to a collection of links to resources.</para>
       </summary>
-      <value></value>
+      <value>A collection of links to resources.</value>
     </member>
     <member name="P:DevExpress.Mvvm.Gantt.GanttTask.StartDate">
       <summary>

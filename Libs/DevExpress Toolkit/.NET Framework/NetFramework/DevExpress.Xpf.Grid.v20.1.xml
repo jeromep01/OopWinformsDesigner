@@ -1798,9 +1798,9 @@
     </member>
     <member name="P:DevExpress.Xpf.Grid.CardView.PrintAutoCardWidth">
       <summary>
-        <para>Gets or sets whether cards in the print/export output are automatically resized horizontally to fit the report page&#39;s width. This is a dependency property.</para>
+        <para>Gets or sets whether to change card width in the printed/exported document to fit the page. This is a dependency property.</para>
       </summary>
-      <value>true if cards are automatically resized horizontally to fit the report page&#39;s width; otherwise, false.</value>
+      <value>true, to change card width in the printed/exported document to fit the page; otherwise, false.</value>
     </member>
     <member name="F:DevExpress.Xpf.Grid.CardView.PrintAutoCardWidthProperty">
       <summary>
@@ -1836,7 +1836,7 @@
       <summary>
         <para>Specifies the thickness of a frame around a card. This is a dependency property.</para>
       </summary>
-      <value>A <see cref="T:System.Windows.Thickness"/> object that represents the thickness of a frame around a card.</value>
+      <value>A thickness of a frame around a card.</value>
     </member>
     <member name="F:DevExpress.Xpf.Grid.CardView.PrintCardMarginProperty">
       <summary>
@@ -1894,9 +1894,9 @@
     </member>
     <member name="P:DevExpress.Xpf.Grid.CardView.PrintMaximumCardColumns">
       <summary>
-        <para>Specifies the maximum number of card columns for printing/exporting. This is a dependency property.</para>
+        <para>Specifies the maximum number of card columns in the printed/exported document. This is a dependency property.</para>
       </summary>
-      <value>The maximum number of printed/exported card columns. The default is &#0045;1.</value>
+      <value>The maximum number of card columns in the printed/exported document.</value>
     </member>
     <member name="F:DevExpress.Xpf.Grid.CardView.PrintMaximumCardColumnsProperty">
       <summary>
@@ -2354,25 +2354,25 @@
     </member>
     <member name="P:DevExpress.Xpf.Grid.ClipboardRowCopyingEventArgs.Headers">
       <summary>
-        <para>Gets a collection of headers.</para>
+        <para>Gets a collection of column headers or band headers.</para>
       </summary>
-      <value>A collection of grid headers.</value>
+      <value>A collection of headers.</value>
     </member>
     <member name="P:DevExpress.Xpf.Grid.ClipboardRowCopyingEventArgs.Type">
       <summary>
-        <para>Gets the processed object&#39;s type.</para>
+        <para>Gets the processed object&#39;s type (row, column header, band header, group, group summary).</para>
       </summary>
       <value>The processed object&#39;s type.</value>
     </member>
     <member name="P:DevExpress.Xpf.Grid.ClipboardRowCopyingEventArgs.Values">
       <summary>
-        <para>Gets a collection of the row&#39;s values.</para>
+        <para>Gets a collection of row or group row values.</para>
       </summary>
-      <value>A collection of the row&#39;s values.</value>
+      <value>A collection of values.</value>
     </member>
     <member name="T:DevExpress.Xpf.Grid.ColumnChooserControl">
       <summary>
-        <para>The Column Chooser control.</para>
+        <para>The legacy Column Chooser control allows users to show and hide the <see cref="T:DevExpress.Xpf.Grid.GridControl"/>&#39;s columns at runtime.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpf.Grid.ColumnChooserControl.#ctor">
@@ -3082,7 +3082,7 @@
     </member>
     <member name="T:DevExpress.Xpf.Grid.ExtendedColumnChooserControl">
       <summary>
-        <para></para>
+        <para>The Column Chooser control allows users to show and hide the <see cref="T:DevExpress.Xpf.Grid.GridControl"/>&#39;s columns at runtime.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpf.Grid.ExtendedColumnChooserControl.#ctor">
@@ -3092,14 +3092,14 @@
     </member>
     <member name="M:DevExpress.Xpf.Grid.ExtendedColumnChooserControl.GetViewModel(System.Windows.DependencyObject)">
       <summary>
-        <para></para>
+        <para>For internal use.</para>
       </summary>
       <param name="obj"></param>
       <returns></returns>
     </member>
     <member name="M:DevExpress.Xpf.Grid.ExtendedColumnChooserControl.SetViewModel(System.Windows.DependencyObject,DevExpress.Xpf.Grid.ExtendedColumnChooserViewModel)">
       <summary>
-        <para></para>
+        <para>For internal use.</para>
       </summary>
       <param name="obj"></param>
       <param name="value"></param>
@@ -3280,7 +3280,7 @@
       <summary>
         <para>Gets or sets the column&#39;s position among grouping columns.</para>
       </summary>
-      <value>An integer value that specifies the column&#39;s position among grouping columns. &#0045;1 if a View isn&#39;t grouped by the values of this column.</value>
+      <value>The column&#39;s position among grouping columns. -1 if a View is not grouped by this column.</value>
     </member>
     <member name="F:DevExpress.Xpf.Grid.GridColumn.GroupIndexProperty">
       <summary>
@@ -3734,9 +3734,9 @@
     </member>
     <member name="P:DevExpress.Xpf.Grid.GridControl.Bands">
       <summary>
-        <para>Provides access to the grid&#39;s band collection.</para>
+        <para>Gets a collection of the <see cref="T:DevExpress.Xpf.Grid.GridControl"/>&#39;s bands.</para>
       </summary>
-      <value>An observable collection of bands within the grid.</value>
+      <value>A collection of the <see cref="T:DevExpress.Xpf.Grid.GridControl"/>&#39;s bands.</value>
     </member>
     <member name="P:DevExpress.Xpf.Grid.GridControl.BandsLayout">
       <summary>
@@ -3796,9 +3796,9 @@
     </member>
     <member name="P:DevExpress.Xpf.Grid.GridControl.Columns">
       <summary>
-        <para>Provides access to the grid&#39;s column collection.</para>
+        <para>Gets a collection of the <see cref="T:DevExpress.Xpf.Grid.GridControl"/>&#39;s columns.</para>
       </summary>
-      <value>A <see cref="T:DevExpress.Xpf.Grid.GridColumnCollection"/> object that represents a collection of columns within the grid.</value>
+      <value>A collection of the <see cref="T:DevExpress.Xpf.Grid.GridControl"/>&#39;s columns.</value>
     </member>
     <member name="E:DevExpress.Xpf.Grid.GridControl.CopyingToClipboard">
       <summary>
@@ -3818,7 +3818,7 @@
     </member>
     <member name="E:DevExpress.Xpf.Grid.GridControl.CustomColumnGroup">
       <summary>
-        <para>Provides the ability to group data using custom rules.</para>
+        <para>Allows you to create custom rules to group data.</para>
       </summary>
     </member>
     <member name="E:DevExpress.Xpf.Grid.GridControl.CustomColumnSort">
@@ -3844,7 +3844,7 @@
     </member>
     <member name="E:DevExpress.Xpf.Grid.GridControl.CustomSummary">
       <summary>
-        <para>Enables you to calculate summary values manually.</para>
+        <para>Allows you to calculate a custom summary.</para>
       </summary>
     </member>
     <member name="E:DevExpress.Xpf.Grid.GridControl.CustomSummaryExists">
@@ -4313,9 +4313,9 @@
     </member>
     <member name="P:DevExpress.Xpf.Grid.GridControl.GroupSummary">
       <summary>
-        <para>Provides access to group summary items.</para>
+        <para>Gets a collection of group summary items.</para>
       </summary>
-      <value>A <see cref="T:DevExpress.Xpf.Grid.GridSummaryItemCollection"/> object that represents the collection of group summary items.</value>
+      <value>A collection of group summary items.</value>
     </member>
     <member name="P:DevExpress.Xpf.Grid.GridControl.GroupSummaryGeneratorTemplate">
       <summary>
@@ -4331,9 +4331,9 @@
     </member>
     <member name="P:DevExpress.Xpf.Grid.GridControl.GroupSummarySortInfo">
       <summary>
-        <para>Enables sorting group rows by their summary values.</para>
+        <para>Gets the information required to sort group rows by summary values.</para>
       </summary>
-      <value>A <see cref="T:DevExpress.Xpf.Grid.GridGroupSummarySortInfoCollection"/> object that contains the information required to sort group rows by summary values.</value>
+      <value>The information required to sort group rows by summary values.</value>
     </member>
     <member name="P:DevExpress.Xpf.Grid.GridControl.GroupSummarySource">
       <summary>
@@ -5632,9 +5632,9 @@ If the value is null, the rows number is 20.</value>
     </member>
     <member name="P:DevExpress.Xpf.Grid.GridViewBase.PrintAllGroups">
       <summary>
-        <para>Gets or sets whether the grid is printed with all group rows expanded.</para>
+        <para>Gets or sets whether to expand all group rows in the printed document.</para>
       </summary>
-      <value>true to print the grid with all group rows expanded; otherwise, false. The default is true.</value>
+      <value>true, to expand all group rows in the printed document; otherwise, false.</value>
     </member>
     <member name="F:DevExpress.Xpf.Grid.GridViewBase.PrintAllGroupsProperty">
       <summary>
@@ -6558,6 +6558,12 @@ If the value is null, the rows number is 20.</value>
       </summary>
       <value>A dependency property identifier.</value>
     </member>
+    <member name="M:DevExpress.Xpf.Grid.LookUp.LookUpEditStyleSettings.ApplyToEdit(DevExpress.Xpf.Editors.BaseEdit)">
+      <summary>
+        <para>Assigns the editor settings to the specified editor.</para>
+      </summary>
+      <param name="editor">A <see cref="T:DevExpress.Xpf.Editors.BaseEdit"/> class descendant that is the target editor.</param>
+    </member>
     <member name="M:DevExpress.Xpf.Grid.LookUp.LookUpEditStyleSettings.GetPopupFooterButtons(DevExpress.Xpf.Editors.PopupBaseEdit)">
       <summary>
         <para>Indicates which buttons are displayed within an editor&#39;s popup.</para>
@@ -6629,6 +6635,13 @@ If the value is null, the rows number is 20.</value>
       </summary>
       <param name="editor">A <see cref="T:DevExpress.Xpf.Editors.BaseEdit"/> class descendant that is the target editor.</param>
     </member>
+    <member name="M:DevExpress.Xpf.Grid.LookUp.MultiSelectLookUpEditStyleSettings.GetIsTextEditable(DevExpress.Xpf.Editors.ButtonEdit)">
+      <summary>
+        <para>For internal use.</para>
+      </summary>
+      <param name="editor"></param>
+      <returns></returns>
+    </member>
     <member name="T:DevExpress.Xpf.Grid.LookUp.SearchLookUpEditStyleSettings">
       <summary>
         <para>Defines the appearance and behavior of the SearchLookUpEdit.</para>
@@ -6638,12 +6651,6 @@ If the value is null, the rows number is 20.</value>
       <summary>
         <para>Initializes a new instance of the <see cref="T:DevExpress.Xpf.Grid.LookUp.SearchLookUpEditStyleSettings"/> class.</para>
       </summary>
-    </member>
-    <member name="M:DevExpress.Xpf.Grid.LookUp.SearchLookUpEditStyleSettings.ApplyToEdit(DevExpress.Xpf.Editors.BaseEdit)">
-      <summary>
-        <para>Assigns the editor settings to the specified editor.</para>
-      </summary>
-      <param name="editor">A <see cref="T:DevExpress.Xpf.Editors.BaseEdit"/> class descendant that is the target editor.</param>
     </member>
     <member name="M:DevExpress.Xpf.Grid.LookUp.SearchLookUpEditStyleSettings.GetIsTextEditable(DevExpress.Xpf.Editors.ButtonEdit)">
       <summary>
@@ -6955,6 +6962,79 @@ If the value is null, the rows number is 20.</value>
       <summary>
         <para>The new item row is displayed at the top of the view.</para>
       </summary>
+    </member>
+    <member name="N:DevExpress.Xpf.Grid.Printing">
+      <summary>
+        <para>Contains classes that provide data for events related to printing the grid control.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.Xpf.Grid.Printing.GridClipboardDataProvider">
+      <summary>
+        <para>Allows you to return data for the clipboard in a variety of formats (plain text, rich text, plain unicode text, CSV, Biff8, HTML).</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.Grid.Printing.GridClipboardDataProvider.#ctor(DevExpress.XtraExport.Helpers.ClipboardExportManagerBase{DevExpress.Xpf.Grid.Printing.ColumnWrapper,DevExpress.Xpf.Grid.Printing.RowBaseWrapper})">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Xpf.Grid.Printing.GridClipboardDataProvider"/> class with specified settings.</para>
+      </summary>
+      <param name="manager">The clipboard manager. For internal use.</param>
+    </member>
+    <member name="M:DevExpress.Xpf.Grid.Printing.GridClipboardDataProvider.GetCsvData(DevExpress.Xpf.Grid.Printing.GridClipboardDataProviderOptions)">
+      <summary>
+        <para>Returns data for the clipboard in the CSV format.</para>
+      </summary>
+      <param name="options">An object that contains a set of options that specify whether to copy column headers, collapsed groups, and other elements to the clipboard.</param>
+      <returns>A string value that specifies data in the CSV format that should be passed to the clipboard.</returns>
+    </member>
+    <member name="M:DevExpress.Xpf.Grid.Printing.GridClipboardDataProvider.GetData(DevExpress.Xpf.Grid.Printing.GridClipboardDataProviderOptions)">
+      <summary>
+        <para>Returns data for the clipboard in the specified format(s).</para>
+      </summary>
+      <param name="options">An object that contains a set of options that specify whether to copy column headers, collapsed groups, and other elements to the clipboard.</param>
+      <returns>An object that specifies data that should be passed to the clipboard.</returns>
+    </member>
+    <member name="M:DevExpress.Xpf.Grid.Printing.GridClipboardDataProvider.GetData(DevExpress.XtraExport.Helpers.ClipboardDataFormat,DevExpress.Xpf.Grid.Printing.GridClipboardDataProviderOptions)">
+      <summary>
+        <para>Returns data for the clipboard in the specified format(s).</para>
+      </summary>
+      <param name="format">A combination of values that specify data formats.</param>
+      <param name="options">An object that contains a set of options that specify whether to copy column headers, collapsed groups, and other elements to the clipboard.</param>
+      <returns>An object that specifies data that should be passed to the clipboard.</returns>
+    </member>
+    <member name="M:DevExpress.Xpf.Grid.Printing.GridClipboardDataProvider.GetExcelData(DevExpress.Xpf.Grid.Printing.GridClipboardDataProviderOptions)">
+      <summary>
+        <para>Returns data for the clipboard in Microsoft Excel&#39;s binary file format (BIFF).</para>
+      </summary>
+      <param name="options">An object that contains a set of options that specify whether to copy column headers, collapsed groups, and other elements to the clipboard.</param>
+      <returns>An object that provides a stream for data that should be passed to the clipboard.</returns>
+    </member>
+    <member name="M:DevExpress.Xpf.Grid.Printing.GridClipboardDataProvider.GetHtmlData(DevExpress.Xpf.Grid.Printing.GridClipboardDataProviderOptions)">
+      <summary>
+        <para>Returns data for the clipboard in the HTML format.</para>
+      </summary>
+      <param name="options">An object that contains a set of options that specify whether to copy column headers, collapsed groups, and other elements to the clipboard.</param>
+      <returns>A string value that specifies data in the HTML format that should be passed to the clipboard.</returns>
+    </member>
+    <member name="M:DevExpress.Xpf.Grid.Printing.GridClipboardDataProvider.GetRichTextData(DevExpress.Xpf.Grid.Printing.GridClipboardDataProviderOptions)">
+      <summary>
+        <para>Returns data for the clipboard in the rich text format.</para>
+      </summary>
+      <param name="options">An object that contains a set of options that specify whether to copy column headers, collapsed groups, and other elements to the clipboard.</param>
+      <returns>A string value that specifies data in the rich text format that should be passed to the clipboard.</returns>
+    </member>
+    <member name="M:DevExpress.Xpf.Grid.Printing.GridClipboardDataProvider.GetTextData(DevExpress.Xpf.Grid.Printing.GridClipboardDataProviderOptions)">
+      <summary>
+        <para>Returns data for the clipboard in the plain text format.</para>
+      </summary>
+      <param name="options">An object that contains a set of options that specify whether to copy column headers, collapsed groups, and other elements to the clipboard.</param>
+      <returns>A string value that specifies data in the plain text format that should be passed to the clipboard.</returns>
+    </member>
+    <member name="M:DevExpress.Xpf.Grid.Printing.GridClipboardDataProvider.GetUnicodeTextData(DevExpress.Xpf.Grid.Printing.GridClipboardDataProviderOptions)">
+      <summary>
+        <para>Returns data for the clipboard in the plain unicode text format.</para>
+      </summary>
+      <param name="options">An object that contains a set of options that specify whether to copy column headers, collapsed groups, and other elements to the clipboard.</param>
+      <returns>A string value that specifies data in the plain unicode text format that should be passed to the clipboard.</returns>
     </member>
     <member name="T:DevExpress.Xpf.Grid.RowAllowEventArgs">
       <summary>
@@ -7763,9 +7843,9 @@ If the value is null, the rows number is 20.</value>
     </member>
     <member name="P:DevExpress.Xpf.Grid.TableView.AllowPrintDetails">
       <summary>
-        <para>Gets or sets whether View&#39;s details can be printed. This is a dependency property.</para>
+        <para>Gets or sets whether to print View&#39;s details. This is a dependency property.</para>
       </summary>
-      <value>A <see cref="T:DevExpress.Utils.DefaultBoolean"/> enumeration value that specifies whether View&#39;s details can be printed.</value>
+      <value>A value that specifies whether to print View&#39;s details.</value>
     </member>
     <member name="F:DevExpress.Xpf.Grid.TableView.AllowPrintDetailsProperty">
       <summary>
@@ -7777,7 +7857,7 @@ If the value is null, the rows number is 20.</value>
       <summary>
         <para>Gets or sets whether to print/export empty details. This is a dependency property.</para>
       </summary>
-      <value>A <see cref="T:DevExpress.Utils.DefaultBoolean"/> enumeration value that specifies whether to print/export empty details.</value>
+      <value>A value that specifies whether to print/export empty details.</value>
     </member>
     <member name="F:DevExpress.Xpf.Grid.TableView.AllowPrintEmptyDetailsProperty">
       <summary>
@@ -8032,9 +8112,9 @@ If the value is null, the rows number is 20.</value>
     </member>
     <member name="P:DevExpress.Xpf.Grid.TableView.BestFitModeOnSourceChange">
       <summary>
-        <para>Gets or sets how to calculate the optimal width required for a column to completely display its contents when the grid&#39;s ItemsSource is changed. This is a dependency property.</para>
+        <para>Gets or sets how to calculate the optimal width required for all columns to completely display their contents when the grid&#39;s ItemsSource is changed. This is a dependency property.</para>
       </summary>
-      <value>A mode that specifies how to calculate the optimal width required for a column to completely display its contents when the grid&#39;s ItemsSource is changed.</value>
+      <value>A mode that specifies how to calculate the optimal width.</value>
     </member>
     <member name="F:DevExpress.Xpf.Grid.TableView.BestFitModeOnSourceChangeProperty">
       <summary>
@@ -8144,9 +8224,9 @@ If the value is null, the rows number is 20.</value>
     </member>
     <member name="P:DevExpress.Xpf.Grid.TableView.ClipboardDataProvider">
       <summary>
-        <para>Gets an object that provides data for the clipboard in a variety of formats (plain text, plain unicode text, rich text, CSV, Biff8, HTML).</para>
+        <para>Gets an object that returns data for the clipboard in a variety of formats (plain text, plain unicode text, rich text, CSV, Biff8, HTML).</para>
       </summary>
-      <value>An object that provides data for the clipboard in a variety of formats (plain text, plain unicode text, rich text, CSV, Biff8, HTML).</value>
+      <value>An object that returns data for the clipboard in a variety of formats.</value>
     </member>
     <member name="E:DevExpress.Xpf.Grid.TableView.ClipboardRowCellValuePasting">
       <summary>
@@ -9364,9 +9444,9 @@ If the value is null, the rows number is 20.</value>
     </member>
     <member name="P:DevExpress.Xpf.Grid.TableView.PrintAutoWidth">
       <summary>
-        <para>Gets or sets whether printed columns&#39; widths are automatically changed, so that the grid fits the width of the report page.</para>
+        <para>Gets or sets whether to change column width in the printed document to fit the page.</para>
       </summary>
-      <value>true to automatically change the grid&#39;s width so that it fits the width of the report page; otherwise, false. The default is true.</value>
+      <value>true, to change column width in the printed document to fit the page; otherwise, false.</value>
     </member>
     <member name="F:DevExpress.Xpf.Grid.TableView.PrintAutoWidthProperty">
       <summary>
@@ -9400,9 +9480,9 @@ If the value is null, the rows number is 20.</value>
     </member>
     <member name="P:DevExpress.Xpf.Grid.TableView.PrintColumnHeaders">
       <summary>
-        <para>Gets or sets whether column headers are printed.</para>
+        <para>Gets or sets whether to print column headers.</para>
       </summary>
-      <value>true to print column headers; otherwise, false. The default is true.</value>
+      <value>true, to print column headers; otherwise, false.</value>
     </member>
     <member name="F:DevExpress.Xpf.Grid.TableView.PrintColumnHeadersProperty">
       <summary>
@@ -9426,7 +9506,7 @@ If the value is null, the rows number is 20.</value>
       <summary>
         <para>Gets or sets the bottom print detail indent. This is a dependency property.</para>
       </summary>
-      <value>A <see cref="T:System.Double"/> value that specifies the bottom indent, in pixels.</value>
+      <value>The bottom indent, in pixels.</value>
     </member>
     <member name="F:DevExpress.Xpf.Grid.TableView.PrintDetailBottomIndentProperty">
       <summary>
@@ -9438,7 +9518,7 @@ If the value is null, the rows number is 20.</value>
       <summary>
         <para>Gets or sets the top print detail indent. This is a dependency property.</para>
       </summary>
-      <value>A <see cref="T:System.Double"/> value that specifies the top indent, in pixels.</value>
+      <value>The top indent, in pixels.</value>
     </member>
     <member name="F:DevExpress.Xpf.Grid.TableView.PrintDetailTopIndentProperty">
       <summary>
@@ -9448,7 +9528,7 @@ If the value is null, the rows number is 20.</value>
     </member>
     <member name="P:DevExpress.Xpf.Grid.TableView.PrintGroupFooters">
       <summary>
-        <para>Gets or sets whether to print the Group Footer&#39;s content. This is a dependency property.</para>
+        <para>Gets or sets whether to print Group Footers. This is a dependency property.</para>
       </summary>
       <value>true, to print group footers; otherwise, false.</value>
     </member>
@@ -9777,9 +9857,9 @@ If the value is null, the rows number is 20.</value>
     </member>
     <member name="P:DevExpress.Xpf.Grid.TableView.ShowAutoFilterRow">
       <summary>
-        <para>Gets or sets whether the Automatic Filter Row is displayed.</para>
+        <para>Gets or sets whether to display the Automatic Filter Row.</para>
       </summary>
-      <value>true to show the automatic filter row; otherwise, false. The default is false.</value>
+      <value>true, to display the Automatic Filter Row; otherwise, false.</value>
     </member>
     <member name="F:DevExpress.Xpf.Grid.TableView.ShowAutoFilterRowProperty">
       <summary>
@@ -9843,9 +9923,9 @@ If the value is null, the rows number is 20.</value>
     </member>
     <member name="P:DevExpress.Xpf.Grid.TableView.ShowCriteriaInAutoFilterRow">
       <summary>
-        <para>Gets or sets whether to display the criteria selector buttons in the automatic filter row for all columns in the current table view.</para>
+        <para>Gets or sets whether to display the criteria selector buttons in the Automatic Filter Row.</para>
       </summary>
-      <value>true, to display the criteria selector buttons in the automatic filter row; otherwise, false.</value>
+      <value>true, to display the criteria selector buttons in the Automatic Filter Row; otherwise, false.</value>
     </member>
     <member name="F:DevExpress.Xpf.Grid.TableView.ShowCriteriaInAutoFilterRowProperty">
       <summary>
@@ -10679,6 +10759,74 @@ If the value is null, the rows number is 20.</value>
         <para>Gets or sets the processed cell&#39;s value.</para>
       </summary>
       <value>An object that is the cell&#39;s value.</value>
+    </member>
+    <member name="T:DevExpress.Xpf.Grid.TreeList.TreeListClipboardDataProvider">
+      <summary>
+        <para>Allows you to return data for the clipboard in a variety of formats (plain text, plain unicode text, rich text, CSV, BIFF8, HTML).</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.Grid.TreeList.TreeListClipboardDataProvider.#ctor(DevExpress.XtraExport.Helpers.ClipboardExportManagerBase{DevExpress.Xpf.Grid.Printing.ColumnWrapper,DevExpress.Xpf.Grid.TreeList.TreeListNodeWrapper})">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Xpf.Grid.TreeList.TreeListClipboardDataProvider"/> class with specified settings.</para>
+      </summary>
+      <param name="manager">The clipboard manager. For internal use.</param>
+    </member>
+    <member name="M:DevExpress.Xpf.Grid.TreeList.TreeListClipboardDataProvider.GetCsvData(DevExpress.Xpf.Grid.Printing.GridClipboardDataProviderOptions)">
+      <summary>
+        <para>Returns data for the clipboard in the CSV format.</para>
+      </summary>
+      <param name="options">An object that contains a set of options that specify whether to copy column headers, collapsed groups, and other elements to the clipboard.</param>
+      <returns>A string value that specifies data in the CSV format that should be passed to the clipboard.</returns>
+    </member>
+    <member name="M:DevExpress.Xpf.Grid.TreeList.TreeListClipboardDataProvider.GetData(DevExpress.Xpf.Grid.Printing.GridClipboardDataProviderOptions)">
+      <summary>
+        <para>Returns data for the clipboard in all supported formats.</para>
+      </summary>
+      <param name="options">An object that contains a set of options that specify whether to copy column headers, collapsed groups, and other elements to the clipboard.</param>
+      <returns>An object that specifies data that should be passed to the clipboard.</returns>
+    </member>
+    <member name="M:DevExpress.Xpf.Grid.TreeList.TreeListClipboardDataProvider.GetData(DevExpress.XtraExport.Helpers.ClipboardDataFormat,DevExpress.Xpf.Grid.Printing.GridClipboardDataProviderOptions)">
+      <summary>
+        <para>Returns data for the clipboard in the specified format(s).</para>
+      </summary>
+      <param name="format">A combination of values that specify data formats.</param>
+      <param name="options">An object that contains a set of options that specify whether to copy column headers, collapsed groups, and other elements to the clipboard.</param>
+      <returns>An object that specifies data that should be passed to the clipboard.</returns>
+    </member>
+    <member name="M:DevExpress.Xpf.Grid.TreeList.TreeListClipboardDataProvider.GetExcelData(DevExpress.Xpf.Grid.Printing.GridClipboardDataProviderOptions)">
+      <summary>
+        <para>Returns data for the clipboard in Microsoft Excel&#39;s binary file format (BIFF).</para>
+      </summary>
+      <param name="options">An object that contains a set of options that specify whether to copy column headers, collapsed groups, and other elements to the clipboard.</param>
+      <returns>An object that provides a stream for data that should be passed to the clipboard.</returns>
+    </member>
+    <member name="M:DevExpress.Xpf.Grid.TreeList.TreeListClipboardDataProvider.GetHtmlData(DevExpress.Xpf.Grid.Printing.GridClipboardDataProviderOptions)">
+      <summary>
+        <para>Returns data for the clipboard in the HTML format.</para>
+      </summary>
+      <param name="options">An object that contains a set of options that specify whether to copy column headers, collapsed groups, and other elements to the clipboard.</param>
+      <returns>A string value that specifies data in the HTML format that should be passed to the clipboard.</returns>
+    </member>
+    <member name="M:DevExpress.Xpf.Grid.TreeList.TreeListClipboardDataProvider.GetRichTextData(DevExpress.Xpf.Grid.Printing.GridClipboardDataProviderOptions)">
+      <summary>
+        <para>Returns data for the clipboard in the rich text format.</para>
+      </summary>
+      <param name="options">An object that contains a set of options that specify whether to copy column headers, collapsed groups, and other elements to the clipboard.</param>
+      <returns>A string value that specifies data in the rich text format that should be passed to the clipboard.</returns>
+    </member>
+    <member name="M:DevExpress.Xpf.Grid.TreeList.TreeListClipboardDataProvider.GetTextData(DevExpress.Xpf.Grid.Printing.GridClipboardDataProviderOptions)">
+      <summary>
+        <para>Returns data for the clipboard in the plain text format.</para>
+      </summary>
+      <param name="options">An object that contains a set of options that specify whether to copy column headers, collapsed groups, and other elements to the clipboard.</param>
+      <returns>A string value that specifies data in the plain text format that should be passed to the clipboard.</returns>
+    </member>
+    <member name="M:DevExpress.Xpf.Grid.TreeList.TreeListClipboardDataProvider.GetUnicodeTextData(DevExpress.Xpf.Grid.Printing.GridClipboardDataProviderOptions)">
+      <summary>
+        <para>Returns data for the clipboard in the plain unicode text format.</para>
+      </summary>
+      <param name="options">An object that contains a set of options that specify whether to copy column headers, collapsed groups, and other elements to the clipboard.</param>
+      <returns>A string value that specifies data in the plain unicode text format that should be passed to the clipboard.</returns>
     </member>
     <member name="T:DevExpress.Xpf.Grid.TreeList.TreeListCopyingToClipboardEventArgs">
       <summary>
@@ -12905,9 +13053,9 @@ If the value is null, the rows number is 20.</value>
     </member>
     <member name="P:DevExpress.Xpf.Grid.TreeListView.BestFitModeOnSourceChange">
       <summary>
-        <para>Gets or sets how to calculate the optimal width required for a column to completely display its contents when the grid&#39;s ItemsSource is changed. This is a dependency property.</para>
+        <para>Gets or sets how to calculate the optimal width required for all columns to completely display their contents when the grid&#39;s ItemsSource is changed. This is a dependency property.</para>
       </summary>
-      <value>A mode that specifies how to calculate the optimal width required for a column to completely display its contents when the grid&#39;s ItemsSource is changed.</value>
+      <value>A mode that specifies how to calculate the optimal width.</value>
     </member>
     <member name="F:DevExpress.Xpf.Grid.TreeListView.BestFitModeOnSourceChangeProperty">
       <summary>
@@ -13069,9 +13217,9 @@ If the value is null, the rows number is 20.</value>
     </member>
     <member name="P:DevExpress.Xpf.Grid.TreeListView.ClipboardDataProvider">
       <summary>
-        <para>Gets an object that provides data for the clipboard in a variety of formats (plain text, plain unicode text, rich text, CSV, Biff8, HTML).</para>
+        <para>Gets an object that returns data for the clipboard in a variety of formats (plain text, plain unicode text, rich text, CSV, Biff8, HTML).</para>
       </summary>
-      <value>An object that provides data for the clipboard in a variety of formats (plain text, plain unicode text, rich text, CSV, Biff8, HTML).</value>
+      <value>An object that provides data for the clipboard in a variety of formats.</value>
     </member>
     <member name="E:DevExpress.Xpf.Grid.TreeListView.ClipboardNodeCopying">
       <summary>
@@ -14726,9 +14874,9 @@ If the value is null, the rows number is 20.</value>
     </member>
     <member name="P:DevExpress.Xpf.Grid.TreeListView.PrintAllNodes">
       <summary>
-        <para>Gets or sets whether the grid is printed with all nodes expanded.</para>
+        <para>Gets or sets whether to expand all nodes in the printed document.</para>
       </summary>
-      <value>true to print the grid with all nodes expanded; otherwise, false. The default is true.</value>
+      <value>true, to expand all nodes in the printed document; otherwise, false.</value>
     </member>
     <member name="F:DevExpress.Xpf.Grid.TreeListView.PrintAllNodesProperty">
       <summary>
@@ -14738,9 +14886,9 @@ If the value is null, the rows number is 20.</value>
     </member>
     <member name="P:DevExpress.Xpf.Grid.TreeListView.PrintAutoWidth">
       <summary>
-        <para>Gets or sets whether printed columns&#39; widths are automatically changed, so that the grid fits the width of the report page.</para>
+        <para>Gets or sets whether to change column width in the printed document to fit the page.</para>
       </summary>
-      <value>true to automatically change the grid&#39;s width so that it fits the width of the report page; otherwise, false. The default is true.</value>
+      <value>true, to change column width in the printed document to fit the page; otherwise, false.</value>
     </member>
     <member name="F:DevExpress.Xpf.Grid.TreeListView.PrintAutoWidthProperty">
       <summary>
@@ -14774,9 +14922,9 @@ If the value is null, the rows number is 20.</value>
     </member>
     <member name="P:DevExpress.Xpf.Grid.TreeListView.PrintColumnHeaders">
       <summary>
-        <para>Gets or sets whether column headers are printed.</para>
+        <para>Gets or sets whether to print column headers.</para>
       </summary>
-      <value>true to print column headers; otherwise, false. The default is true.</value>
+      <value>true, to print column headers; otherwise, false.</value>
     </member>
     <member name="F:DevExpress.Xpf.Grid.TreeListView.PrintColumnHeadersProperty">
       <summary>
@@ -15291,9 +15439,9 @@ If the value is null, the rows number is 20.</value>
     </member>
     <member name="P:DevExpress.Xpf.Grid.TreeListView.ShowAutoFilterRow">
       <summary>
-        <para>Gets or sets whether the Automatic Filter Row is displayed. This is a dependency property.</para>
+        <para>Gets or sets whether to display the Automatic Filter Row. This is a dependency property.</para>
       </summary>
-      <value>true to show the automatic filter row; otherwise, false. The default is false.</value>
+      <value>true, to display the automatic filter row; otherwise, false.</value>
     </member>
     <member name="F:DevExpress.Xpf.Grid.TreeListView.ShowAutoFilterRowProperty">
       <summary>
@@ -15345,9 +15493,9 @@ If the value is null, the rows number is 20.</value>
     </member>
     <member name="P:DevExpress.Xpf.Grid.TreeListView.ShowCriteriaInAutoFilterRow">
       <summary>
-        <para>Gets or sets whether to display the criteria selector buttons in the automatic filter row for all columns in the current view.</para>
+        <para>Gets or sets whether to display the criteria selector buttons in the Automatic Filter Row.</para>
       </summary>
-      <value>true, to display the criteria selector buttons in the automatic filter row; otherwise, false.</value>
+      <value>true, to display the criteria selector buttons in the Automatic Filter Row; otherwise, false.</value>
     </member>
     <member name="F:DevExpress.Xpf.Grid.TreeListView.ShowCriteriaInAutoFilterRowProperty">
       <summary>

@@ -2757,6 +2757,12 @@ The default value is <see cref="F:System.String.Empty"/>.</value>
       </summary>
       <value>An <see cref="T:DevExpress.Xpf.Charts.AxisLabel"/> object.</value>
     </member>
+    <member name="P:DevExpress.Xpf.Charts.AxisLabelItem.SourceObject">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
     <member name="P:DevExpress.Xpf.Charts.AxisLabelItem.Value">
       <summary>
         <para>For internal use. Returns the axis value for which the label is shown.</para>
@@ -6080,6 +6086,11 @@ This value should be greater than 0.</value>
         <para>Ends the <see cref="T:DevExpress.Xpf.Charts.Chart3DControl"/>&#39;s initialization.</para>
       </summary>
     </member>
+    <member name="M:DevExpress.Xpf.Charts.Chart3DControl.HideCrosshair">
+      <summary>
+        <para>Hides the Crosshair Cursor.</para>
+      </summary>
+    </member>
     <member name="P:DevExpress.Xpf.Charts.Chart3DControl.HorizontalScrollPercent">
       <summary>
         <para>Gets or sets the amount by which to scroll horizontally.</para>
@@ -6142,9 +6153,16 @@ This value should be greater than 0.</value>
     </member>
     <member name="M:DevExpress.Xpf.Charts.Chart3DControl.ShowCrosshair(System.Windows.Point)">
       <summary>
-        <para>Shows the Crosshair Cursor at the point with the specified coordinates related to the top-left corner of the 3D chart.</para>
+        <para>Shows the Crosshair Cursor at the point with the specified coordinates relative to the 3D chart&#39;s top-left corner.</para>
       </summary>
-      <param name="screenPoint">The coordinates at which the cursor should be shown.</param>
+      <param name="screenPoint">The Crosshair Cursor coordinates relative to the 3D chart&#39;s top-left corner.</param>
+    </member>
+    <member name="M:DevExpress.Xpf.Charts.Chart3DControl.ShowCrosshair(System.Windows.Point,System.Boolean)">
+      <summary>
+        <para>Shows the Crosshair Cursor at the point with the specified coordinates. The autoHide parameter specifies whether the Crosshair Cursor is automatically hidden.</para>
+      </summary>
+      <param name="screenPoint">The Crosshair Cursor coordinates relative to the 3D chart&#39;s top-left corner.</param>
+      <param name="autoHide">true, if the Crosshair Cursor is hidden for a point that was removed and added again; otherwise, false</param>
     </member>
     <member name="P:DevExpress.Xpf.Charts.Chart3DControl.ShowXOYPlane">
       <summary>
@@ -6251,6 +6269,12 @@ This value should be greater than 0.</value>
       <summary>
         <para>Contains information about a specific point within a chart.</para>
       </summary>
+    </member>
+    <member name="P:DevExpress.Xpf.Charts.Chart3DHitInfo.AdditionalItem">
+      <summary>
+        <para>Stores additional information about a test point.</para>
+      </summary>
+      <value>An object that contains additional information about a test point.</value>
     </member>
     <member name="P:DevExpress.Xpf.Charts.Chart3DHitInfo.InSeries">
       <summary>
@@ -6644,15 +6668,15 @@ This value should be greater than 0.</value>
     </member>
     <member name="P:DevExpress.Xpf.Charts.ChartCommands.ActualToolbarMode">
       <summary>
-        <para></para>
+        <para>For internal use. Returns an active toolbar mode.</para>
       </summary>
       <value></value>
     </member>
     <member name="P:DevExpress.Xpf.Charts.ChartCommands.AddHorizontalConstantLineCommand">
       <summary>
-        <para></para>
+        <para>Activates the Add Horizontal Constant Line mode.</para>
       </summary>
-      <value></value>
+      <value>An object that implements <see cref="T:System.Windows.Input.ICommand"/>.</value>
     </member>
     <member name="F:DevExpress.Xpf.Charts.ChartCommands.AddHorizontalConstantLineCommandProperty">
       <summary>
@@ -6662,9 +6686,9 @@ This value should be greater than 0.</value>
     </member>
     <member name="P:DevExpress.Xpf.Charts.ChartCommands.AddImageAnnotationCommand">
       <summary>
-        <para></para>
+        <para>Activates the **Add Image Annotation* mode.</para>
       </summary>
-      <value></value>
+      <value>An object that implements <see cref="T:System.Windows.Input.ICommand"/>.</value>
     </member>
     <member name="F:DevExpress.Xpf.Charts.ChartCommands.AddImageAnnotationCommandProperty">
       <summary>
@@ -6686,9 +6710,9 @@ This value should be greater than 0.</value>
     </member>
     <member name="P:DevExpress.Xpf.Charts.ChartCommands.AddTextAnnotationCommand">
       <summary>
-        <para></para>
+        <para>Activates the **Add Text Annotation* mode.</para>
       </summary>
-      <value></value>
+      <value>An object that implements <see cref="T:System.Windows.Input.ICommand"/>.</value>
     </member>
     <member name="F:DevExpress.Xpf.Charts.ChartCommands.AddTextAnnotationCommandProperty">
       <summary>
@@ -6698,9 +6722,9 @@ This value should be greater than 0.</value>
     </member>
     <member name="P:DevExpress.Xpf.Charts.ChartCommands.AddVerticalConstantLineCommand">
       <summary>
-        <para></para>
+        <para>Activates the Add Vertical Constant Line mode.</para>
       </summary>
-      <value></value>
+      <value>An object that implements <see cref="T:System.Windows.Input.ICommand"/>.</value>
     </member>
     <member name="F:DevExpress.Xpf.Charts.ChartCommands.AddVerticalConstantLineCommandProperty">
       <summary>
@@ -6812,7 +6836,7 @@ This value should be greater than 0.</value>
     </member>
     <member name="P:DevExpress.Xpf.Charts.ChartCommands.SetDateTimeAxisPeriodCommand">
       <summary>
-        <para>Specifies a command that specifies the on-screen data range.</para>
+        <para>A command that specifies the on-screen data range.</para>
       </summary>
       <value>A chart date-time interval.</value>
     </member>
@@ -6857,16 +6881,16 @@ This value should be greater than 0.</value>
     </member>
     <member name="M:DevExpress.Xpf.Charts.ChartCommands.ShouldSerializeShowElementPropertiesCommand(System.Windows.Markup.XamlDesignerSerializationManager)">
       <summary>
-        <para></para>
+        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.</para>
       </summary>
       <param name="manager"></param>
       <returns></returns>
     </member>
     <member name="P:DevExpress.Xpf.Charts.ChartCommands.ShowElementPropertiesCommand">
       <summary>
-        <para></para>
+        <para>Invokes a property window for the element passed as a command parameter.</para>
       </summary>
-      <value></value>
+      <value>A chart element whose properties are shown.</value>
     </member>
     <member name="F:DevExpress.Xpf.Charts.ChartCommands.ShowElementPropertiesCommandProperty">
       <summary>
@@ -24757,7 +24781,7 @@ This value should be greater than 0.</value>
     </member>
     <member name="T:DevExpress.Xpf.Charts.RadarRangeAreaSeries2D">
       <summary>
-        <para>The Range Radar Area series.</para>
+        <para>The Radar Range Area series.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpf.Charts.RadarRangeAreaSeries2D.#ctor">
@@ -28699,9 +28723,9 @@ This is a dependency property.</para>
     </member>
     <member name="P:DevExpress.Xpf.Charts.Series3DViewBase.Colorizer">
       <summary>
-        <para>Gets or sets the colorizer used to provide colors to point markers.</para>
+        <para>Gets or sets the colorizer used to paint point markers.</para>
       </summary>
-      <value>The colorizer providing colors to point markers.</value>
+      <value>The colorizer that provides point markers with colors.</value>
     </member>
     <member name="F:DevExpress.Xpf.Charts.Series3DViewBase.ColorizerProperty">
       <summary>
@@ -31578,6 +31602,44 @@ This is a dependency property.</para>
         <para>Returns the summary function&#39;s name.</para>
       </summary>
       <value>Always &quot;SUM&quot;.</value>
+    </member>
+    <member name="T:DevExpress.Xpf.Charts.SurfacePoint">
+      <summary>
+        <para>A surface point.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.Charts.SurfacePoint.#ctor(System.Object,System.Object,System.Object,System.Windows.Media.Brush)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Xpf.Charts.SurfacePoint"/> class with specified settings.</para>
+      </summary>
+      <param name="x"></param>
+      <param name="y"></param>
+      <param name="z"></param>
+      <param name="brush"></param>
+    </member>
+    <member name="P:DevExpress.Xpf.Charts.SurfacePoint.Brush">
+      <summary>
+        <para>Returns a brush applied to the point.</para>
+      </summary>
+      <value>A brush that is used to draw the point.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.Charts.SurfacePoint.X">
+      <summary>
+        <para>Returns an x-coordinate of the surface point.</para>
+      </summary>
+      <value>A value that represents an x-coordinate in axis units.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.Charts.SurfacePoint.Y">
+      <summary>
+        <para>Returns a y-coordinate of the surface point.</para>
+      </summary>
+      <value>A value that represents a y-coordinate in axis units.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.Charts.SurfacePoint.Z">
+      <summary>
+        <para>Returns a z-coordinate of the surface point.</para>
+      </summary>
+      <value>A value that represents a z-coordinate in axis units.</value>
     </member>
     <member name="T:DevExpress.Xpf.Charts.SurfaceSeriesView">
       <summary>
@@ -35403,9 +35465,9 @@ This is a dependency property.</para>
     </member>
     <member name="P:DevExpress.Xpf.Charts.XYSeries2D.AllowResample">
       <summary>
-        <para></para>
+        <para>Indicates whether the chart resampling mechanism applies to the series.</para>
       </summary>
-      <value></value>
+      <value>true if the series is resampled; otherwise, false.</value>
     </member>
     <member name="P:DevExpress.Xpf.Charts.XYSeries2D.AxisX">
       <summary>

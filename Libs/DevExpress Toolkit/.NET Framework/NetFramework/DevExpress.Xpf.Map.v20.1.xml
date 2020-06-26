@@ -1932,29 +1932,36 @@
       </summary>
       <value>A dependency property identifier.</value>
     </member>
-    <member name="T:DevExpress.Xpf.Map.CapabilitiesResponsedEventArgs">
+    <member name="T:DevExpress.Xpf.Map.CapabilitiesRespondedEventArgs">
       <summary>
         <para>Provides data for the <see cref="E:DevExpress.Xpf.Map.WmsDataProvider.ResponseCapabilities"/> event.</para>
       </summary>
     </member>
-    <member name="M:DevExpress.Xpf.Map.CapabilitiesResponsedEventArgs.#ctor(DevExpress.Xpf.Map.WmsLayerCollection)">
+    <member name="M:DevExpress.Xpf.Map.CapabilitiesRespondedEventArgs.#ctor(DevExpress.Xpf.Map.WmsLayerCollection,System.Exception)">
       <summary>
-        <para>Initializes a new instance of the <see cref="T:DevExpress.Xpf.Map.CapabilitiesResponsedEventArgs"/> class with the specified values of the event arguments.</para>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Xpf.Map.CapabilitiesRespondedEventArgs"/> class with specified settings.</para>
       </summary>
       <param name="layers">The <see cref="T:DevExpress.Xpf.Map.WmsLayerCollection"/> value provides available layers from a Web Map Service.</param>
+      <param name="exception">A <see cref="T:System.Exception"/> that has been thrown.</param>
     </member>
-    <member name="P:DevExpress.Xpf.Map.CapabilitiesResponsedEventArgs.Layers">
+    <member name="P:DevExpress.Xpf.Map.CapabilitiesRespondedEventArgs.Exception">
+      <summary>
+        <para>Gets a thrown exception.</para>
+      </summary>
+      <value>An <see cref="T:System.Exception"/> that has been thrown.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.Map.CapabilitiesRespondedEventArgs.Layers">
       <summary>
         <para>Returns a collection of available layers supported by a Web Map Service.</para>
       </summary>
       <value>A collection of <see cref="T:DevExpress.Xpf.Map.WmsLayer"/> objects.</value>
     </member>
-    <member name="T:DevExpress.Xpf.Map.CapabilitiesResponsedEventHandler">
+    <member name="T:DevExpress.Xpf.Map.CapabilitiesRespondedEventHandler">
       <summary>
-        <para>Represents a method that will handle the <see cref="E:DevExpress.Xpf.Map.WmsDataProvider.ResponseCapabilities"/> event.</para>
+        <para>A method that handles the <see cref="E:DevExpress.Xpf.Map.WmsDataProvider.ResponseCapabilities"/> event.</para>
       </summary>
-      <param name="sender">The event source. This parameter identifies the <see cref="T:DevExpress.Xpf.Map.WmsDataProvider"/> which raised the event.</param>
-      <param name="e">A <see cref="T:DevExpress.Xpf.Map.CapabilitiesResponsedEventArgs"/> object that contains event data.</param>
+      <param name="sender">Event source.</param>
+      <param name="e">Event data.</param>
     </member>
     <member name="T:DevExpress.Xpf.Map.CartesianMapCoordinateSystem">
       <summary>

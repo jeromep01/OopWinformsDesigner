@@ -77,27 +77,27 @@
     </member>
     <member name="T:DevExpress.Office.Drawing.TileFlipType">
       <summary>
-        <para>Lists values used to specify how to flip the tile contents.</para>
+        <para>Lists values that specify how to flip tiles when a texture fill is applied to a shape.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Office.Drawing.TileFlipType.Both">
       <summary>
-        <para>Specifies that the tiles should be flipped both horizontally and vertically.</para>
+        <para>Flips tiles both horizontally and vertically.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Office.Drawing.TileFlipType.Horizontal">
       <summary>
-        <para>Specifies that the tiles should be flipped horizontally.</para>
+        <para>Flips tiles horizontally.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Office.Drawing.TileFlipType.None">
       <summary>
-        <para>Specifies that the tiles should not be flipped.</para>
+        <para>Tiles are not flipped.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Office.Drawing.TileFlipType.Vertical">
       <summary>
-        <para>Specifies that the tiles should be flipped vertically.</para>
+        <para>Flips tiles vertically.</para>
       </summary>
     </member>
     <member name="N:DevExpress.Office.Export">

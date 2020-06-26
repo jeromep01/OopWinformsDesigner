@@ -38,6 +38,35 @@
       </summary>
       <value>The successor task.</value>
     </member>
+    <member name="T:DevExpress.Xpf.Gantt.AddingNewResourceLinkEventArgs">
+      <summary>
+        <para>Provides data for the <see cref="E:DevExpress.Xpf.Gantt.GanttView.AddingNewResourceLink"/> event.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Xpf.Gantt.AddingNewResourceLinkEventArgs.AllocationPercentage">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="P:DevExpress.Xpf.Gantt.AddingNewResourceLinkEventArgs.NewResourceLink">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="P:DevExpress.Xpf.Gantt.AddingNewResourceLinkEventArgs.Resource">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="P:DevExpress.Xpf.Gantt.AddingNewResourceLinkEventArgs.Task">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
     <member name="T:DevExpress.Xpf.Gantt.BeginNewTaskDrawEventArgs">
       <summary>
         <para>Provides data for the <see cref="E:DevExpress.Xpf.Gantt.GanttView.BeginNewTaskDraw"/> event.</para>
@@ -737,6 +766,100 @@
     <member name="F:DevExpress.Xpf.Gantt.GanttPredecessorLinkMappings.TaskProperty">
       <summary>
         <para>Identifies the <see cref="P:DevExpress.Xpf.Gantt.GanttPredecessorLinkMappings.Task"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="T:DevExpress.Xpf.Gantt.GanttResourceControl">
+      <summary>
+        <para>A gantt resource.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.Gantt.GanttResourceControl.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Xpf.Gantt.GanttResourceControl"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Xpf.Gantt.GanttResourceControl.CornerRadius">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="F:DevExpress.Xpf.Gantt.GanttResourceControl.CornerRadiusProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.Gantt.GanttResourceControl.CornerRadius"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.Gantt.GanttResourceControl.Resource">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="P:DevExpress.Xpf.Gantt.GanttResourceControl.ResourceBackground">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="F:DevExpress.Xpf.Gantt.GanttResourceControl.ResourceBackgroundProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.Gantt.GanttResourceControl.ResourceBackground"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.Gantt.GanttResourceControl.ResourceBorderBrush">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="F:DevExpress.Xpf.Gantt.GanttResourceControl.ResourceBorderBrushProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.Gantt.GanttResourceControl.ResourceBorderBrush"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.Gantt.GanttResourceControl.ResourceColor">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="F:DevExpress.Xpf.Gantt.GanttResourceControl.ResourceColorProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.Gantt.GanttResourceControl.ResourceColor"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.Gantt.GanttResourceControl.ResourceForeground">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="F:DevExpress.Xpf.Gantt.GanttResourceControl.ResourceForegroundProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.Gantt.GanttResourceControl.ResourceForeground"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.Gantt.GanttResourceControl.ResourceLink">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="P:DevExpress.Xpf.Gantt.GanttResourceControl.RowBackground">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="F:DevExpress.Xpf.Gantt.GanttResourceControl.RowBackgroundProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.Gantt.GanttResourceControl.RowBackground"/> dependency property.</para>
       </summary>
       <value>A dependency property identifier.</value>
     </member>
@@ -1505,16 +1628,16 @@
     </member>
     <member name="M:DevExpress.Xpf.Gantt.GanttView.FitDataToWidth(System.Double)">
       <summary>
-        <para>Zooms the Gantt tasks an Gantt area so they fit to Gantt area width with a specified margin.</para>
+        <para>Zooms Gantt tasks to fit them into the Gantt area with a specified margin.</para>
       </summary>
-      <param name="margin">A distance, in pixels, between a left-most task and the left border of Gantt area (or a right-most task and the right border).</param>
+      <param name="margin">A distance (in pixels) between a left-most task and the left border of Gantt area (or a right-most task and the right border). The left and right margin are equal.</param>
     </member>
     <member name="M:DevExpress.Xpf.Gantt.GanttView.FitRangeToWidth(System.DateTime,System.DateTime)">
       <summary>
-        <para>Zooms the specified date range so it fits the Gantt area width.</para>
+        <para>Zooms the specified date range to fit it into the Gantt area.</para>
       </summary>
-      <param name="rangeStart">Range start date.</param>
-      <param name="rangeEnd">Range end date.</param>
+      <param name="rangeStart">A range start date.</param>
+      <param name="rangeEnd">A range end date.</param>
     </member>
     <member name="P:DevExpress.Xpf.Gantt.GanttView.GanttAreaHorizontalScrollBarVisibility">
       <summary>
@@ -1865,7 +1988,7 @@
     </member>
     <member name="P:DevExpress.Xpf.Gantt.GanttView.ResourceLinksPath">
       <summary>
-        <para>Gets or sets a path to a collection of links to resources relative to a task object.. This is a dependency property.</para>
+        <para>Gets or sets a path to a collection of links to resources relative to a task object. This is a dependency property.</para>
       </summary>
       <value>A path to a collection of links to resources.</value>
     </member>
@@ -1879,7 +2002,7 @@
       <summary>
         <para>Gets or sets an object that chooses resource links relative to a task object based on custom logic. This is a dependency property.</para>
       </summary>
-      <value>An object that chooses resource links based on custom logic. This is a dependency property.</value>
+      <value>An object that chooses resource links based on custom logic.</value>
     </member>
     <member name="F:DevExpress.Xpf.Gantt.GanttView.ResourceLinksSelectorProperty">
       <summary>
@@ -2579,6 +2702,18 @@
         <para>Gets a <see cref="T:DevExpress.Xpf.Gantt.StripLineControl"/> located under the test object.</para>
       </summary>
       <value>A control located under the test object.</value>
+    </member>
+    <member name="T:DevExpress.Xpf.Gantt.IResourceLinksSelector">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.Gantt.IResourceLinksSelector.SelectResourceLinks(System.Object)">
+      <summary>
+        <para></para>
+      </summary>
+      <param name="item"></param>
+      <returns></returns>
     </member>
     <member name="T:DevExpress.Xpf.Gantt.Mapping">
       <summary>

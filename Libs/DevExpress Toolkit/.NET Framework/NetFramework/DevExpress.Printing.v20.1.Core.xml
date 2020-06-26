@@ -2167,6 +2167,12 @@ When exporting to XLS and XLSX formats, the layout of control elements is retain
       </summary>
       <value>An <see cref="T:DevExpress.Export.Xl.XlDocumentTheme"/> enumeration member specifying the document theme.</value>
     </member>
+    <member name="P:DevExpress.Export.Xl.IXlDocument.View">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
     <member name="T:DevExpress.Export.Xl.IXlDocumentOptions">
       <summary>
         <para>Contains options related to culture-specific settings of a workbook and document format specifications and limits.</para>
@@ -2908,7 +2914,7 @@ When exporting to XLS and XLSX formats, the layout of control elements is retain
     </member>
     <member name="P:DevExpress.Export.Xl.IXlSheetSelection.SelectedRanges">
       <summary>
-        <para>Gets or sets cell ranges selected in a worksheet.</para>
+        <para>Returns cell ranges selected in a worksheet.</para>
       </summary>
       <value>A list of selected ranges.</value>
     </member>
@@ -4512,13 +4518,13 @@ When exporting to XLS and XLSX formats, the layout of control elements is retain
     </member>
     <member name="P:DevExpress.Export.Xl.XlCondFmtCustomIcon.IconSetType">
       <summary>
-        <para>Gets or sets the icon set to which the specified icon belongs.</para>
+        <para>Returns the icon set to which the specified icon belongs.</para>
       </summary>
       <value>A <see cref="T:DevExpress.Export.Xl.XlCondFmtIconSetType"/> object that defines the built-in icon sets.</value>
     </member>
     <member name="P:DevExpress.Export.Xl.XlCondFmtCustomIcon.Id">
       <summary>
-        <para>Gets or sets the index of the particular icon in the icon set.</para>
+        <para>Returns the index of the particular icon in the icon set.</para>
       </summary>
       <value>An integer that is the desired icon&#39;s position within the icon set.</value>
     </member>
@@ -4984,7 +4990,7 @@ When exporting to XLS and XLSX formats, the layout of control elements is retain
     </member>
     <member name="P:DevExpress.Export.Xl.XlCondFmtRuleIconSet.IsCustom">
       <summary>
-        <para>Gets or sets whether the custom icon set is specified.</para>
+        <para>Indicates whether the custom icon set is specified.</para>
       </summary>
       <value>true to use the custom icon style; otherwise, false. The default value is false.</value>
     </member>
@@ -5802,7 +5808,7 @@ When exporting to XLS and XLSX formats, the layout of control elements is retain
     </member>
     <member name="P:DevExpress.Export.Xl.XlDateGroupItem.Value">
       <summary>
-        <para>Gets or sets the base date or time value used to construct the filter criteria.</para>
+        <para>Returns the base date or time value used to construct the filter criteria.</para>
       </summary>
       <value>A <see cref="T:System.DateTime"/> object.</value>
     </member>
@@ -20913,9 +20919,9 @@ When exporting to XLS and XLSX formats, the layout of control elements is retain
     </member>
     <member name="P:DevExpress.XtraPrinting.PdfExportOptions.ExportEditingFieldsToAcroForms">
       <summary>
-        <para>Specifies whether to convert a report&#39;s editing fields to AcroForms on PDF export.</para>
+        <para>Specifies whether to convert editable fields to AcroForms fields on PDF export.</para>
       </summary>
-      <value>true, to export report editing fields to PDF AcroForms; otherwise, false.</value>
+      <value>true, to export editable fields to PDF AcroForms fields; otherwise, false.</value>
     </member>
     <member name="P:DevExpress.XtraPrinting.PdfExportOptions.ImageQuality">
       <summary>
@@ -21497,7 +21503,7 @@ When exporting to XLS and XLSX formats, the layout of control elements is retain
     </member>
     <member name="P:DevExpress.XtraPrinting.PrintingSystemBase.Culture">
       <summary>
-        <para>Specifies the culture that is used to display date-time values by the <see cref="T:DevExpress.XtraReports.UI.XRPageInfo"/> control.</para>
+        <para>Specifies the culture used for date and time values in the <see cref="T:DevExpress.XtraReports.UI.XRPageInfo"/> control.</para>
       </summary>
       <value>A <see cref="T:System.Globalization.CultureInfo"/> object.</value>
     </member>

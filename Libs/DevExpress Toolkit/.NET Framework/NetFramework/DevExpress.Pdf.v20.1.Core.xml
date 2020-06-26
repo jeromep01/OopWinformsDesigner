@@ -1241,7 +1241,7 @@
       <summary>
         <para>Gets or sets the JavaScript to be performed when the field’s value is changed. This action may check the new value for validity.</para>
       </summary>
-      <value>The calculation script.</value>
+      <value>The calculation JavaScript. For JS API reference, use JavaScript for Acrobat API Reference</value>
     </member>
     <member name="M:DevExpress.Pdf.PdfAcroFormValueFormat.CreateDateTimeFormat(System.String)">
       <summary>
@@ -1302,19 +1302,19 @@
       <summary>
         <para>Gets or sets the JavaScript to be performed before the field is formatted. This action may modify the field’s value before formatting.</para>
       </summary>
-      <value>The format script.</value>
+      <value>The format JavaScript. For JS API reference, use JavaScript for Acrobat API Reference</value>
     </member>
     <member name="P:DevExpress.Pdf.PdfAcroFormValueFormat.KeystrokeScript">
       <summary>
         <para>Gets or sets the JavaScript to be performed when the user modifies a character in a This action may check the added text for validity and reject or modify it.</para>
       </summary>
-      <value>The keystroke script.</value>
+      <value>The keystroke JavaScript. For JS API reference, use JavaScript for Acrobat API Reference</value>
     </member>
     <member name="P:DevExpress.Pdf.PdfAcroFormValueFormat.ValidateScript">
       <summary>
         <para>Gets os sets the JavaScript to be performed to recalculate the value of this field when that of another field changes.</para>
       </summary>
-      <value>The validation script.</value>
+      <value>The validation JavaScript. For JS API reference, use JavaScript for Acrobat API Reference</value>
     </member>
     <member name="T:DevExpress.Pdf.PdfAcroFormVisualField">
       <summary>

@@ -6,7 +6,7 @@
   <members>
     <member name="N:DevExpress.XtraCharts">
       <summary>
-        <para>Contains classes which implement the main functionality of the XtraCharts suite.</para>
+        <para>Contains a public API for WinForms ChartControl, ASP.NET WebChartControl, ASP.NET MVC Chart extension, and Chart for Reports. Chart for Spreadsheet and WinForms Dashboard Chart require this library to function.</para>
       </summary>
     </member>
     <member name="T:DevExpress.XtraCharts.AggregateFunction">
@@ -198,15 +198,15 @@
     </member>
     <member name="P:DevExpress.XtraCharts.Annotation.AutoHeight">
       <summary>
-        <para></para>
+        <para>Indicates whether the annotation&#39;s height is calculated based on the annotation&#39;s contents.</para>
       </summary>
-      <value></value>
+      <value>true if the height is determined based on the contents; otherwise, false.</value>
     </member>
     <member name="P:DevExpress.XtraCharts.Annotation.AutoWidth">
       <summary>
-        <para></para>
+        <para>Indicates whether the annotation&#39;s width is calculated based on the annotation&#39;s contents.</para>
       </summary>
-      <value></value>
+      <value>true if the width is determined based on contents; otherwise, false.</value>
     </member>
     <member name="P:DevExpress.XtraCharts.Annotation.BackColor">
       <summary>
@@ -252,9 +252,9 @@
     </member>
     <member name="P:DevExpress.XtraCharts.Annotation.RuntimeAnchoring">
       <summary>
-        <para>Specifies whether it&#39;s allowed to re-locate the annotation&#39;s anchor point at runtime.</para>
+        <para>Specifies whether a user can re-locate the annotation&#39;s anchor point at runtime.</para>
       </summary>
-      <value>true to allow runtime anchoring of the annotation; otherwise, false.</value>
+      <value>true if a user is allowed to re-locate the annotation anchor point; otherwise, false.</value>
     </member>
     <member name="P:DevExpress.XtraCharts.Annotation.RuntimeEditing">
       <summary>
@@ -4199,6 +4199,89 @@ If null (Nothing in Visual Basic), then a <see cref="T:System.ArgumentNullExcept
       <summary>
         <para>Represents the size mode, in which an image is zoomed to fit its container&#39;s bounds.</para>
       </summary>
+    </member>
+    <member name="T:DevExpress.XtraCharts.ChartImageUtils">
+      <summary>
+        <para>Contains APIs for chart images.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.XtraCharts.ChartImageUtils.GetViewImage(DevExpress.XtraCharts.SeriesViewBase)">
+      <summary>
+        <para>Returns an image that depicts the series view.</para>
+      </summary>
+      <param name="view">The series view to display.</param>
+      <returns>The resulting image.</returns>
+    </member>
+    <member name="M:DevExpress.XtraCharts.ChartImageUtils.GetViewImage(DevExpress.XtraCharts.SeriesViewBase,DevExpress.Utils.Design.ISvgPaletteProvider)">
+      <summary>
+        <para>Returns an image that depicts the series view with the specified palette.</para>
+      </summary>
+      <param name="view">The series view to display.</param>
+      <param name="provider">An ISvgPaletteProvider object that specifies colors used to paint vector images.</param>
+      <returns>The resulting image.</returns>
+    </member>
+    <member name="M:DevExpress.XtraCharts.ChartImageUtils.GetViewImage(DevExpress.XtraCharts.SeriesViewBase,DevExpress.Utils.Design.ISvgPaletteProvider,System.Drawing.Size)">
+      <summary>
+        <para>Returns an image of the given size that depicts the series view with the specified palette.</para>
+      </summary>
+      <param name="view">The series view to display.</param>
+      <param name="provider">An ISvgPaletteProvider object that specifies colors used to paint vector images.</param>
+      <param name="imageSize">The image size.</param>
+      <returns>The resulting image.</returns>
+    </member>
+    <member name="M:DevExpress.XtraCharts.ChartImageUtils.GetViewImage(DevExpress.XtraCharts.SeriesViewBase,System.Drawing.Size)">
+      <summary>
+        <para>Returns an image of the given size that depicts the series view.</para>
+      </summary>
+      <param name="view">The series view to display.</param>
+      <param name="imageSize">The image size.</param>
+      <returns>The resulting image.</returns>
+    </member>
+    <member name="M:DevExpress.XtraCharts.ChartImageUtils.GetViewImage(DevExpress.XtraCharts.ViewType)">
+      <summary>
+        <para>Returns an image that depicts the series view.</para>
+      </summary>
+      <param name="viewType">The series view type shown in the resulting image.</param>
+      <returns>The resulting image.</returns>
+    </member>
+    <member name="M:DevExpress.XtraCharts.ChartImageUtils.GetViewImage(DevExpress.XtraCharts.ViewType,DevExpress.Utils.Design.ISvgPaletteProvider)">
+      <summary>
+        <para>Returns an image that depicts the series view with the specified palette.</para>
+      </summary>
+      <param name="viewType">The series view type shown in the resulting image.</param>
+      <param name="provider">An ISvgPaletteProvider object that specifies colors used to paint vector images.</param>
+      <returns>The resulting image.</returns>
+    </member>
+    <member name="M:DevExpress.XtraCharts.ChartImageUtils.GetViewImage(DevExpress.XtraCharts.ViewType,DevExpress.Utils.Design.ISvgPaletteProvider,System.Drawing.Size)">
+      <summary>
+        <para>Returns an image of the given size that depicts the series view with the specified palette.</para>
+      </summary>
+      <param name="viewType">The series view type shown in the resulting image.</param>
+      <param name="provider">An ISvgPaletteProvider object that specifies colors used to paint vector images.</param>
+      <param name="imageSize">The image size.</param>
+      <returns>The resulting image.</returns>
+    </member>
+    <member name="M:DevExpress.XtraCharts.ChartImageUtils.GetViewImage(DevExpress.XtraCharts.ViewType,System.Drawing.Size)">
+      <summary>
+        <para>Returns an image of the given size that depicts the specified series view.</para>
+      </summary>
+      <param name="viewType">The series view type shown in the resulting image.</param>
+      <param name="imageSize">The image size.</param>
+      <returns>The resulting image.</returns>
+    </member>
+    <member name="M:DevExpress.XtraCharts.ChartImageUtils.GetViewSvgImage(DevExpress.XtraCharts.SeriesViewBase)">
+      <summary>
+        <para>Returns a vector image that depicts the series view based on the given <see cref="T:DevExpress.XtraCharts.SeriesViewBase"/> object.</para>
+      </summary>
+      <param name="view">The series view to display.</param>
+      <returns>The resulting image.</returns>
+    </member>
+    <member name="M:DevExpress.XtraCharts.ChartImageUtils.GetViewSvgImage(DevExpress.XtraCharts.ViewType)">
+      <summary>
+        <para>Returns a vector image that depicts the series view.</para>
+      </summary>
+      <param name="viewType">The series view to display.</param>
+      <returns>The resulting image.</returns>
     </member>
     <member name="T:DevExpress.XtraCharts.ChartModifierKeys">
       <summary>
@@ -19388,9 +19471,9 @@ If null (Nothing in Visual Basic), then a <see cref="T:System.ArgumentNullExcept
     </member>
     <member name="P:DevExpress.XtraCharts.Series.AllowResample">
       <summary>
-        <para></para>
+        <para>Indicates whether the chart resampling mechanism applies to the series.</para>
       </summary>
-      <value></value>
+      <value>true if the series is resampled; otherwise, false.</value>
     </member>
     <member name="M:DevExpress.XtraCharts.Series.Assign(DevExpress.XtraCharts.ChartElement)">
       <summary>
@@ -21723,12 +21806,12 @@ If null (Nothing in Visual Basic), then a <see cref="T:System.ArgumentNullExcept
     </member>
     <member name="F:DevExpress.XtraCharts.SeriesPointKey.Value_5">
       <summary>
-        <para></para>
+        <para>Specifies that series points are sorted based on the fifth data value within the <see cref="P:DevExpress.XtraCharts.SeriesPoint.Values"/> array of a series&#39;s data points. For BoxPlot series, it indicates the Max value.</para>
       </summary>
     </member>
     <member name="F:DevExpress.XtraCharts.SeriesPointKey.Value_6">
       <summary>
-        <para></para>
+        <para>Specifies that series points are sorted based on the sixth data value within the <see cref="P:DevExpress.XtraCharts.SeriesPoint.Values"/> array of a series&#39;s data points. For BoxPlot series, it indicates the Mean value.</para>
       </summary>
     </member>
     <member name="T:DevExpress.XtraCharts.SeriesPointRelationCollection">

@@ -962,32 +962,32 @@
       <summary>
         <para>Initializes a new instance of the <see cref="T:DevExpress.Web.ASPxRichEdit.ASPxRichEditFont"/> class with specified settings.</para>
       </summary>
-      <param name="name"></param>
-      <param name="fontFamily"></param>
-      <param name="useGoogleFonts"></param>
+      <param name="name">The font name.</param>
+      <param name="fontFamily">The font family.</param>
+      <param name="useGoogleFonts">true, to download the source files from Google Fonts; otherwise, false.</param>
     </member>
     <member name="M:DevExpress.Web.ASPxRichEdit.ASPxRichEditFont.#ctor(System.String,System.String,System.Boolean,System.String,System.String,System.String,System.String)">
       <summary>
         <para>Initializes a new instance of the <see cref="T:DevExpress.Web.ASPxRichEdit.ASPxRichEditFont"/> class with specified settings.</para>
       </summary>
-      <param name="name"></param>
-      <param name="fontFamily"></param>
-      <param name="useGoogleFonts"></param>
-      <param name="regularFontUri"></param>
-      <param name="boldFontUri"></param>
-      <param name="italicFontUri"></param>
-      <param name="boldItalicFontUri"></param>
+      <param name="name">The font name.</param>
+      <param name="fontFamily">The font family.</param>
+      <param name="useGoogleFonts">true, to download the source files from Google Fonts; otherwise, false.</param>
+      <param name="regularFontUri">The URI of a file that contains the font in the regular style.</param>
+      <param name="boldFontUri">The URI of a file that contains the font in bold.</param>
+      <param name="italicFontUri">The URI of a file that contains the font in the italic style.</param>
+      <param name="boldItalicFontUri">The URI of a file that contains the font in the bold and italic style.</param>
     </member>
     <member name="M:DevExpress.Web.ASPxRichEdit.ASPxRichEditFont.#ctor(System.String,System.String,System.String,System.String,System.String,System.String)">
       <summary>
         <para>Initializes a new instance of the <see cref="T:DevExpress.Web.ASPxRichEdit.ASPxRichEditFont"/> class with specified settings.</para>
       </summary>
-      <param name="name"></param>
-      <param name="fontFamily"></param>
-      <param name="regularFontUri"></param>
-      <param name="boldFontUri"></param>
-      <param name="italicFontUri"></param>
-      <param name="boldItalicFontUri"></param>
+      <param name="name">The font name.</param>
+      <param name="fontFamily">The font family.</param>
+      <param name="regularFontUri">The URI of a file that contains the font in the regular style.</param>
+      <param name="boldFontUri">The URI of a file that contains the font in bold.</param>
+      <param name="italicFontUri">The URI of a file that contains the font in the italic style.</param>
+      <param name="boldItalicFontUri">The URI of a file that contains the font in the bold and italic style.</param>
     </member>
     <member name="P:DevExpress.Web.ASPxRichEdit.ASPxRichEditFont.BoldFontUri">
       <summary>
@@ -1129,11 +1129,6 @@
         <para>Provides access to font mapping settings.</para>
       </summary>
       <value>An object that contains font mapping settings.</value>
-    </member>
-    <member name="M:DevExpress.Web.ASPxRichEdit.ASPxRichEditFontSettings.Validate">
-      <summary>
-        <para></para>
-      </summary>
     </member>
     <member name="T:DevExpress.Web.ASPxRichEdit.ASPxRichEditHorizontalRulerSettings">
       <summary>
@@ -1352,13 +1347,13 @@
     </member>
     <member name="P:DevExpress.Web.ASPxRichEdit.ASPxRichEditSettings.Authentication">
       <summary>
-        <para>Provides access to an object used to specify a user&#39;s credentials used to identify editable ranges in a protected document.</para>
+        <para>Provides access to a user&#39;s credentials used to identify editable ranges in a protected document.</para>
       </summary>
       <value>An <see cref="T:DevExpress.Web.ASPxRichEdit.ASPxRichEditAuthenticationSettings"/> class instance that provides access to the user&#39;s credentials.</value>
     </member>
     <member name="P:DevExpress.Web.ASPxRichEdit.ASPxRichEditSettings.AutoCorrect">
       <summary>
-        <para>Provides access to an object used to specify what autocorrect features are enabled.</para>
+        <para>Provides access to autocorrect settings.</para>
       </summary>
       <value>An <see cref="T:DevExpress.Web.ASPxRichEdit.ASPxRichEditAutoCorrectSettings"/> object specifying autocorrect settings.</value>
     </member>
@@ -1370,13 +1365,13 @@
     </member>
     <member name="P:DevExpress.Web.ASPxRichEdit.ASPxRichEditSettings.Bookmarks">
       <summary>
-        <para>Provides access to an object used to specify bookmark settings.</para>
+        <para>Provides access to bookmark settings.</para>
       </summary>
       <value>A <see cref="T:DevExpress.Web.ASPxRichEdit.ASPxRichEditBookmarkSettings"/> object specifying bookmark settings.</value>
     </member>
     <member name="P:DevExpress.Web.ASPxRichEdit.ASPxRichEditSettings.DocumentCapabilities">
       <summary>
-        <para>Provides access to an object used to specify document restrictions.</para>
+        <para>Provides access to document restriction settings.</para>
       </summary>
       <value>A <see cref="T:DevExpress.Web.ASPxRichEdit.ASPxRichEditDocumentCapabilitiesSettings"/> class instance that provides access to various document restrictions.</value>
     </member>
@@ -1388,7 +1383,7 @@
     </member>
     <member name="P:DevExpress.Web.ASPxRichEdit.ASPxRichEditSettings.Fields">
       <summary>
-        <para>Provides access to an object used to specify Fields settings.</para>
+        <para>Provides access to field settings.</para>
       </summary>
       <value>An <see cref="T:DevExpress.Web.ASPxRichEdit.ASPxRichEditFieldsSettings"/> class instance that provides access to a document&#39;s field settings.</value>
     </member>
@@ -1412,7 +1407,7 @@
     </member>
     <member name="P:DevExpress.Web.ASPxRichEdit.ASPxRichEditSettings.RangePermissions">
       <summary>
-        <para>Provides access to an object used to specify highlighting of permitted ranges while document protection is enabled.</para>
+        <para>Provides access to range permission settings.</para>
       </summary>
       <value>An <see cref="T:DevExpress.Web.ASPxRichEdit.ASPxRichEditRangePermissionSettings"/> class instance that provides access.</value>
     </member>
@@ -1430,7 +1425,7 @@
     </member>
     <member name="P:DevExpress.Web.ASPxRichEdit.ASPxRichEditSettings.Views">
       <summary>
-        <para>Provides access to an object used to specify the control&#39;s document view type.</para>
+        <para>Provides access to document view settings.</para>
       </summary>
       <value>An <see cref="T:DevExpress.Web.ASPxRichEdit.ASPxRichEditViewsSettings"/> class instance that provides access to the document view types&#39; settings.</value>
     </member>
@@ -1514,7 +1509,7 @@
     </member>
     <member name="P:DevExpress.Web.ASPxRichEdit.ASPxRichEditSimpleViewSettings.Paddings">
       <summary>
-        <para>Provides access to an object used to specify the simple view mode&#39;s paddings.</para>
+        <para>Provides access to the simple view mode&#39;s paddings.</para>
       </summary>
       <value>A <see cref="T:DevExpress.Web.ASPxRichEdit.ASPxRichEditSimpleViewPaddings"/> object specifying the Simple View mode&#39;s paddings.</value>
     </member>
@@ -1588,7 +1583,7 @@
     </member>
     <member name="P:DevExpress.Web.ASPxRichEdit.ASPxRichEditViewsSettings.SimpleView">
       <summary>
-        <para>Provides access to an object used to specify the simple view mode&#39;s settings.</para>
+        <para>Provides access to the simple view mode&#39;s settings.</para>
       </summary>
       <value>An <see cref="T:DevExpress.Web.ASPxRichEdit.ASPxRichEditSimpleViewSettings"/> class instance that provides access to the simple view mode&#39;s settings.</value>
     </member>
@@ -4436,7 +4431,7 @@
     </member>
     <member name="P:DevExpress.Web.ASPxRichEdit.RichEditFileManagerEditingSettings.AllowDownload">
       <summary>
-        <para>Gets or sets a value specifying whether file downloading is enabled in the FileManager used within certain built-in dialogs.</para>
+        <para>Indicates whether file downloading is enabled in the FileManager used within certain built-in dialogs.</para>
       </summary>
       <value>true, if file downloading is enabled; otherwise, false.</value>
     </member>

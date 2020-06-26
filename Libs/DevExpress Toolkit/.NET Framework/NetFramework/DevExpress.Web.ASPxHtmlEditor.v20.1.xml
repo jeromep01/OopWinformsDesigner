@@ -11497,22 +11497,22 @@
       <summary>
         <para>Initializes a new instance of the <see cref="T:DevExpress.Web.ASPxHtmlEditor.ToolbarComboBoxBase"/> class with the specified setting.</para>
       </summary>
-      <param name="text">A <see cref="T:System.String"/> value that specifies the created toolbar item&#39;s display text. This value is assigned to the <see cref="P:DevExpress.Web.ASPxHtmlEditor.ToolbarComboBoxBase.Text"/> property.</param>
+      <param name="text">A <see cref="T:System.String"/> value that specifies the created toolbar item&#39;s display text.</param>
     </member>
     <member name="M:DevExpress.Web.ASPxHtmlEditor.ToolbarComboBoxBase.#ctor(System.String,System.String)">
       <summary>
         <para>Initializes a new instance of the <see cref="T:DevExpress.Web.ASPxHtmlEditor.ToolbarComboBoxBase"/> class with the specified settings.</para>
       </summary>
-      <param name="text">A <see cref="T:System.String"/> value that specifies the created toolbar item&#39;s display text. This value is assigned to the <see cref="P:DevExpress.Web.ASPxHtmlEditor.ToolbarComboBoxBase.Text"/> property.</param>
-      <param name="commandName">A <see cref="T:System.String"/> value that identifies the executed command. Initializes the <see cref="P:DevExpress.Web.ASPxHtmlEditor.HtmlEditorToolbarItem.CommandName"/> property.</param>
+      <param name="text">A <see cref="T:System.String"/> value that specifies the created toolbar item&#39;s display text.</param>
+      <param name="commandName">A <see cref="T:System.String"/> value that identifies the executed command.</param>
     </member>
     <member name="M:DevExpress.Web.ASPxHtmlEditor.ToolbarComboBoxBase.#ctor(System.String,System.String,System.String)">
       <summary>
         <para>Initializes a new instance of the <see cref="T:DevExpress.Web.ASPxHtmlEditor.ToolbarComboBoxBase"/> class with the specified settings.</para>
       </summary>
-      <param name="text">A <see cref="T:System.String"/> value that specifies the created toolbar item&#39;s display text. This value is assigned to the <see cref="P:DevExpress.Web.ASPxHtmlEditor.ToolbarComboBoxBase.Text"/> property.</param>
-      <param name="commandName">A <see cref="T:System.String"/> value that identifies the executed command. Initializes the <see cref="P:DevExpress.Web.ASPxHtmlEditor.HtmlEditorToolbarItem.CommandName"/> property.</param>
-      <param name="toolTip">A <see cref="T:System.String"/> value that specifies the created toolbar item&#39;s tooltip text. This value is assigned to the <see cref="P:DevExpress.Web.ASPxHtmlEditor.ToolbarItemBase.ToolTip"/> property.</param>
+      <param name="text">A <see cref="T:System.String"/> value that specifies the created toolbar item&#39;s display text.</param>
+      <param name="commandName">A <see cref="T:System.String"/> value that identifies the executed command.</param>
+      <param name="toolTip">A <see cref="T:System.String"/> value that specifies the created toolbar item&#39;s tooltip text.</param>
     </member>
     <member name="M:DevExpress.Web.ASPxHtmlEditor.ToolbarComboBoxBase.Assign(DevExpress.Web.CollectionItem)">
       <summary>
@@ -11806,14 +11806,14 @@
         <para>Initializes a new instance of the <see cref="T:DevExpress.Web.ASPxHtmlEditor.ToolbarCustomCssListEditItem"/> class with the specified settings.</para>
       </summary>
       <param name="text">A string value that specifies the object&#39;s text.</param>
-      <param name="value">An object that represents the item&#39;s value. This value is assigned to the <see cref="P:DevExpress.Web.ASPxHtmlEditor.ToolbarCustomCssListEditItem.Value"/> property.</param>
+      <param name="value">An object that represents the item&#39;s value.</param>
     </member>
     <member name="M:DevExpress.Web.ASPxHtmlEditor.ToolbarCustomCssListEditItem.#ctor(System.String,System.Object,System.String)">
       <summary>
         <para>Initializes a new instance of the <see cref="T:DevExpress.Web.ASPxHtmlEditor.ToolbarCustomCssListEditItem"/> class with the specified settings.</para>
       </summary>
       <param name="text">A string value that specifies the object&#39;s text.</param>
-      <param name="value">An object that represents the item&#39;s value. This value is assigned to the <see cref="P:DevExpress.Web.ASPxHtmlEditor.ToolbarCustomCssListEditItem.Value"/> property.</param>
+      <param name="value">An object that represents the item&#39;s value.</param>
       <param name="imageUrl">A string value that specifies the url of the item&#39;s image.</param>
     </member>
     <member name="M:DevExpress.Web.ASPxHtmlEditor.ToolbarCustomCssListEditItem.#ctor(System.String,System.String,System.String)">
@@ -11903,7 +11903,7 @@
         <para>Creates a new item with the specified settings and adds it to the collection.</para>
       </summary>
       <param name="text">A <see cref="T:System.String"/> value that specifies the item&#39;s text. Initializes the <see cref="P:DevExpress.Web.ListEditItem.Text"/> property.</param>
-      <param name="value">An object that represents the item&#39;s value. This value is assigned to the <see cref="P:DevExpress.Web.ASPxHtmlEditor.ToolbarCustomCssListEditItem.Value"/> property.</param>
+      <param name="value">An object that represents the item&#39;s value.</param>
       <returns>A <see cref="T:DevExpress.Web.ASPxHtmlEditor.ToolbarCustomCssListEditItem"/> object representing the newly created item.</returns>
     </member>
     <member name="M:DevExpress.Web.ASPxHtmlEditor.ToolbarCustomCssListEditItemCollection.Add(System.String,System.Object,System.String)">
@@ -11911,7 +11911,7 @@
         <para>Creates a new item with the specified settings and adds it to the collection.</para>
       </summary>
       <param name="text">A <see cref="T:System.String"/> value that specifies the item&#39;s text. Initializes the <see cref="P:DevExpress.Web.ListEditItem.Text"/> property.</param>
-      <param name="value">An object that represents the item&#39;s value. This value is assigned to the <see cref="P:DevExpress.Web.ASPxHtmlEditor.ToolbarCustomCssListEditItem.Value"/> property.</param>
+      <param name="value">An object that represents the item&#39;s value.</param>
       <param name="imageUrl">A string value that specifies the url of the item&#39;s image. Initializes the <see cref="P:DevExpress.Web.ListEditItem.ImageUrl"/> property.</param>
       <returns>A <see cref="T:DevExpress.Web.ASPxHtmlEditor.ToolbarCustomCssListEditItem"/> object representing the newly created item.</returns>
     </member>
@@ -12381,14 +12381,14 @@
         <para>Initializes a new instance of the <see cref="T:DevExpress.Web.ASPxHtmlEditor.ToolbarDropDownBase"/> class with the specified settings.</para>
       </summary>
       <param name="text">A <see cref="T:System.String"/> value that specifies the created toolbar item&#39;s display text. This value is assigned to the <see cref="P:DevExpress.Web.ASPxHtmlEditor.ToolbarItemBase.Text"/> property.</param>
-      <param name="commandName">A <see cref="T:System.String"/> value that identifies the executed command. Initializes the <see cref="P:DevExpress.Web.ASPxHtmlEditor.HtmlEditorToolbarItem.CommandName"/> property.</param>
+      <param name="commandName">A <see cref="T:System.String"/> value that identifies the executed command.</param>
     </member>
     <member name="M:DevExpress.Web.ASPxHtmlEditor.ToolbarDropDownBase.#ctor(System.String,System.String,System.String)">
       <summary>
         <para>Initializes a new instance of the <see cref="T:DevExpress.Web.ASPxHtmlEditor.ToolbarDropDownBase"/> class with the specified settings.</para>
       </summary>
       <param name="text">A <see cref="T:System.String"/> value that specifies the created toolbar item&#39;s display text. This value is assigned to the <see cref="P:DevExpress.Web.ASPxHtmlEditor.ToolbarItemBase.Text"/> property.</param>
-      <param name="commandName">A <see cref="T:System.String"/> value that identifies the executed command. Initializes the <see cref="P:DevExpress.Web.ASPxHtmlEditor.HtmlEditorToolbarItem.CommandName"/> property.</param>
+      <param name="commandName">A <see cref="T:System.String"/> value that identifies the executed command.</param>
       <param name="toolTip">A <see cref="T:System.String"/> value that specifies the created toolbar item&#39;s tooltip text. This value is assigned to the <see cref="P:DevExpress.Web.ASPxHtmlEditor.ToolbarItemBase.ToolTip"/> property.</param>
     </member>
     <member name="M:DevExpress.Web.ASPxHtmlEditor.ToolbarDropDownBase.Assign(DevExpress.Web.CollectionItem)">

@@ -1688,6 +1688,23 @@
       </summary>
       <value>A string representing a View shortcut used when generating the My Details navigation item.</value>
     </member>
+    <member name="T:DevExpress.ExpressApp.Security.NonSecureActionsInitializingEventArgs">
+      <summary>
+        <para>Provides data for the <see cref="E:DevExpress.ExpressApp.Security.SecurityModule.NonSecureActionsInitializing"/> event.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Security.NonSecureActionsInitializingEventArgs.#ctor(System.Collections.Generic.HashSet{System.String})">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.ExpressApp.Security.NonSecureActionsInitializingEventArgs"/> class with specified settings.</para>
+      </summary>
+      <param name="nonSecureActions">A collection of Actions that the Security System ignores. You cannot manage them in the Denied Actions tab.</param>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Security.NonSecureActionsInitializingEventArgs.NonSecureActions">
+      <summary>
+        <para>Contains Actions that the Security System ignores. You cannot manage them in the Denied Actions tab in the UI.</para>
+      </summary>
+      <value>A collection of Actions that the Security System ignores.</value>
+    </member>
     <member name="T:DevExpress.ExpressApp.Security.ObjectOperationPermission">
       <summary>
         <para>An Operation Permission for objects that satisfy a specified criteria.</para>
@@ -2072,7 +2089,7 @@
     </member>
     <member name="E:DevExpress.ExpressApp.Security.SecurityModule.NonSecureActionsInitializing">
       <summary>
-        <para></para>
+        <para>Occurs before the Security System initializes the collection of non-secure Actions. The Security System ignores these Actions and you cannot manage them in the Denied Actions tab in the UI.</para>
       </summary>
     </member>
     <member name="M:DevExpress.ExpressApp.Security.SecurityModule.Setup(DevExpress.ExpressApp.XafApplication)">
@@ -2180,9 +2197,9 @@
     </member>
     <member name="P:DevExpress.ExpressApp.Security.SecurityStrategy.EnableSecurityForActions">
       <summary>
-        <para></para>
+        <para>Specifies whether the Security System checks Action Permissions. Note that this feature is currently available as a community technology preview (CTP).</para>
       </summary>
-      <value></value>
+      <value>true, if the Security System checks Action Permissions; otherwise, false.</value>
     </member>
     <member name="M:DevExpress.ExpressApp.Security.SecurityStrategy.GetBusinessClasses">
       <summary>

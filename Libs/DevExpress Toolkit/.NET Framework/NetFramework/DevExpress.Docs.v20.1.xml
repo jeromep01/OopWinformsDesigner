@@ -2281,7 +2281,7 @@
     </member>
     <member name="P:DevExpress.Compression.ZipFileItem.FileName">
       <summary>
-        <para>Gets or sets the name of the file from which a zip item is created.</para>
+        <para>Gets the name of the file from which a zip item is created.</para>
       </summary>
       <value>A string that is the file name.</value>
     </member>

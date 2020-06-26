@@ -1354,7 +1354,7 @@
     </member>
     <member name="F:DevExpress.Xpf.PivotGrid.FieldGroupInterval.DateWeekYear">
       <summary>
-        <para></para>
+        <para>This option is in effect only for fields that store date/time values.Field values are grouped by the date of the first day of the week (uses culture settings). Examples of such groups: 7/1/2018, 7/8/2018, 7/15/2018.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Xpf.PivotGrid.FieldGroupInterval.DateYear">
@@ -6489,7 +6489,7 @@ This is a dependency property.</para>
     </member>
     <member name="E:DevExpress.Xpf.PivotGrid.PivotGridControl.CustomFilterPopupItems">
       <summary>
-        <para>Allows you to customize the filter drop-down list items.</para>
+        <para>Allows you to customize the Legacy filter drop-down list items.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Xpf.PivotGrid.PivotGridControl.CustomFilterPopupItemsEvent">

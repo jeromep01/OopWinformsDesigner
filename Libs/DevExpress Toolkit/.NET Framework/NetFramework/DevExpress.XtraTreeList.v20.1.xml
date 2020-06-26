@@ -38,9 +38,9 @@
     </member>
     <member name="P:DevExpress.XtraEditors.Repository.RepositoryItemTreeListLookUpEdit.AutoComplete">
       <summary>
-        <para>Gets or sets whether the automatic completion feature is enabled.</para>
+        <para>Gets or sets whether the editor predicts the value that the user is typing and automatically applies that value. The property is in effect when text editing is enabled in the edit box (TextEditStyle is set to Standard).</para>
       </summary>
-      <value>true, if the automatic completion feature is enabled; otherwise, false.</value>
+      <value>true, if the editor predicts the value that the user is typing and automatically applies that value; otherwise, false.</value>
     </member>
     <member name="P:DevExpress.XtraEditors.Repository.RepositoryItemTreeListLookUpEdit.AutoExpandAllNodes">
       <summary>
@@ -5572,9 +5572,9 @@ This property is obsolete. Use the <see cref="P:DevExpress.XtraTreeList.TreeList
     </member>
     <member name="P:DevExpress.XtraTreeList.TreeList.ClipboardDataProvider">
       <summary>
-        <para>Gets an object that provides data for the clipboard in a variety of formats (plain text, plain unicode text, rich text, CSV, BIFF8, HTML).</para>
+        <para>Gets an object that provides data for the clipboard in various formats (plain text, plain unicode text, rich text, CSV, BIFF8, HTML).</para>
       </summary>
-      <value>An object that provides data for the clipboard in a variety of formats (plain text, plain unicode text, rich text, CSV, BIFF8, HTML).</value>
+      <value>An object that provides data for the clipboard in various formats (plain text, plain unicode text, rich text, CSV, BIFF8, HTML).</value>
     </member>
     <member name="E:DevExpress.XtraTreeList.TreeList.ClipboardNodeCopying">
       <summary>
@@ -6889,7 +6889,7 @@ This property is obsolete. Use the <see cref="P:DevExpress.XtraTreeList.TreeList
     </member>
     <member name="E:DevExpress.XtraTreeList.TreeList.InitNewRow">
       <summary>
-        <para>Fires when a new node is about to be created in the New-Item Row and allows you to initialize column values.</para>
+        <para>Fires when a new node is about to be created in the New Item Row and allows you to initialize column values.</para>
       </summary>
     </member>
     <member name="M:DevExpress.XtraTreeList.TreeList.InternalGetService(System.Type)">
@@ -8860,22 +8860,22 @@ The DefaultBoolean.Default value is equivalent to DefaultBoolean.True if the sta
     </member>
     <member name="T:DevExpress.XtraTreeList.TreeListNewItemRowPosition">
       <summary>
-        <para>Enumerates values that specify whether the New-Item Row is displayed at the top or bottom of the list.</para>
+        <para>Enumerates values that specify whether the New Item Row is displayed at the top or bottom of the list.</para>
       </summary>
     </member>
     <member name="F:DevExpress.XtraTreeList.TreeListNewItemRowPosition.Bottom">
       <summary>
-        <para>The New-Item Row is displayed at the bottom of the list.</para>
+        <para>The New Item Row is displayed at the bottom of the list.</para>
       </summary>
     </member>
     <member name="F:DevExpress.XtraTreeList.TreeListNewItemRowPosition.None">
       <summary>
-        <para>The New-Item Row is not displayed.</para>
+        <para>The New Item Row is not displayed.</para>
       </summary>
     </member>
     <member name="F:DevExpress.XtraTreeList.TreeListNewItemRowPosition.Top">
       <summary>
-        <para>The New-Item Row is displayed at the top of the list.</para>
+        <para>The New Item Row is displayed at the top of the list.</para>
       </summary>
     </member>
     <member name="T:DevExpress.XtraTreeList.TreeListOptionsBehavior">

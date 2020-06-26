@@ -2332,7 +2332,7 @@
     </member>
     <member name="P:DevExpress.ExpressApp.Win.WinApplication.IsDelayedDetailViewDataLoadingEnabled">
       <summary>
-        <para>Specifies if the delayed data loading for detail forms is enabled in WinForms applications. Derives its value from <see cref="P:DevExpress.ExpressApp.XafApplication.IsDelayedDetailViewDataLoadingEnabled"/>.</para>
+        <para>For internal use. Use the <see cref="F:DevExpress.ExpressApp.DetailView.UseAsyncLoading"/> field instead of this property.</para>
       </summary>
       <value>true, when the delayed loading is enabled; otherwise, false. The default is false.</value>
     </member>

@@ -12017,6 +12017,12 @@ Also <see cref="P:DevExpress.Utils.FormatInfo.FormatString"/> is set to &quot;d&
       </summary>
       <value></value>
     </member>
+    <member name="F:DevExpress.Xpo.DB.ConnectionProviderSql.GlobalQueryParameterMode">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
     <member name="F:DevExpress.Xpo.DB.ConnectionProviderSql.GlobalUseLegacyUntypedParameters">
       <summary>
         <para></para>
@@ -12063,6 +12069,12 @@ Also <see cref="P:DevExpress.Utils.FormatInfo.FormatString"/> is set to &quot;d&
       <value></value>
     </member>
     <member name="P:DevExpress.Xpo.DB.ConnectionProviderSql.NativeSkipTakeSupported">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="F:DevExpress.Xpo.DB.ConnectionProviderSql.QueryParameterMode">
       <summary>
         <para></para>
       </summary>
@@ -14076,6 +14088,31 @@ Also <see cref="P:DevExpress.Utils.FormatInfo.FormatString"/> is set to &quot;d&
         <para>Returns a string representation of the <see cref="T:DevExpress.Xpo.DB.QueryParameterCollection"/>.</para>
       </summary>
       <returns>A string representing the QueryParameterCollection.</returns>
+    </member>
+    <member name="T:DevExpress.Xpo.DB.QueryParameterMode">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Xpo.DB.QueryParameterMode.Default">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Xpo.DB.QueryParameterMode.Legacy">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Xpo.DB.QueryParameterMode.SetType">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Xpo.DB.QueryParameterMode.SetTypeAndSize">
+      <summary>
+        <para></para>
+      </summary>
     </member>
     <member name="T:DevExpress.Xpo.DB.QuerySortingCollection">
       <summary>
@@ -16249,6 +16286,13 @@ Also <see cref="P:DevExpress.Utils.FormatInfo.FormatString"/> is set to &quot;d&
       <param name="val">A <see cref="T:System.Drawing.RectangleF"/> structure.</param>
       <returns>A <see cref="T:System.Drawing.RectangleF"/> structure.</returns>
     </member>
+    <member name="M:DevExpress.XtraPrinting.GraphicsUnitConverter.DocToDip(System.Drawing.SizeF)">
+      <summary>
+        <para></para>
+      </summary>
+      <param name="val"></param>
+      <returns></returns>
+    </member>
     <member name="M:DevExpress.XtraPrinting.GraphicsUnitConverter.DocToDip(System.Single)">
       <summary>
         <para>Converts the floating-point value calculated in document units (measured in 1/300 of an inch) to a value calculated in device-independent pixels (DIP).</para>
@@ -16765,7 +16809,22 @@ Otherwise, the closest matching image side (height or width) will be sized to th
         <para></para>
       </summary>
     </member>
+    <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.DateRangeParameterEditor_PreviousMonth">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
     <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.DateRangeParameterEditor_PreviousQuarter">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.DateRangeParameterEditor_PreviousWeek">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.XtraPrinting.Localization.PreviewStringId.DateRangeParameterEditor_PreviousYear">
       <summary>
         <para></para>
       </summary>

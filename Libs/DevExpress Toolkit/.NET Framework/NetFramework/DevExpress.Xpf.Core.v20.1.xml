@@ -2479,6 +2479,21 @@
       </summary>
       <value>A dependency property identifier.</value>
     </member>
+    <member name="T:DevExpress.Mvvm.UI.WindowShowMode">
+      <summary>
+        <para>Lists the values that specify how the WindowService&#39;s windows are opened.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Mvvm.UI.WindowShowMode.Default">
+      <summary>
+        <para>A window is opened as a regular window.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Mvvm.UI.WindowShowMode.Dialog">
+      <summary>
+        <para>A window is opened as a dialog (modal window).</para>
+      </summary>
+    </member>
     <member name="N:DevExpress.Xpf.Bars">
       <summary>
         <para>Contains classes which implement the main functionality of the DXBars for WPF suite. To use these classes in XAML code, add the xmlns:dxb=&quot;&quot; namespace reference.</para>
@@ -13770,9 +13785,9 @@ This is a dependency property.</para>
     </member>
     <member name="P:DevExpress.Xpf.Core.BaseSvgImageSourceExtension.Size">
       <summary>
-        <para>Gets or sets the SVG image&#39;s sizes.</para>
+        <para>Gets or sets the SVG image&#39;s output width and height.</para>
       </summary>
-      <value>A <see cref="T:System.Windows.Size"/> structure defining the SVG image&#39;s sizes.</value>
+      <value>The SVG image size.</value>
     </member>
     <member name="P:DevExpress.Xpf.Core.BaseSvgImageSourceExtension.UsePalette">
       <summary>
@@ -21552,7 +21567,7 @@ This is a dependency property.</para>
     </member>
     <member name="P:DevExpress.Xpf.Core.SplashScreenWindow.ActualBackground">
       <summary>
-        <para></para>
+        <para>For internal use.</para>
       </summary>
       <value></value>
     </member>
@@ -26135,9 +26150,9 @@ This is a dependency property.</para>
     </member>
     <member name="P:DevExpress.Xpf.Data.FetchPageEventArgsBase.Take">
       <summary>
-        <para>Gets the number of rows that should be reloaded. Null if rows are not reloaded.</para>
+        <para>Gets the number of rows to take in a returned result set.</para>
       </summary>
-      <value>The number of rows that should be reloaded.</value>
+      <value>The number of rows to take in a returned result set.</value>
     </member>
     <member name="T:DevExpress.Xpf.Data.FetchRowsAsyncEventArgs">
       <summary>
@@ -26198,9 +26213,9 @@ This is a dependency property.</para>
     </member>
     <member name="P:DevExpress.Xpf.Data.FetchRowsEventArgsBase.Take">
       <summary>
-        <para>Gets the number of rows that should be reloaded. Null if rows are not reloaded (for example, a user scrolls rows).</para>
+        <para>Gets one of the following values:</para>
       </summary>
-      <value>The number of rows that should be reloaded.</value>
+      <value>The number of rows to be reloaded.</value>
     </member>
     <member name="T:DevExpress.Xpf.Data.FetchRowsResult">
       <summary>
@@ -26376,7 +26391,7 @@ This is a dependency property.</para>
       <summary>
         <para>Reloads rows with specified keys.</para>
       </summary>
-      <param name="keys">Unique keys that correspond to rows you want to reload.</param>
+      <param name="keys">Key field values that identify the rows you want to reload.</param>
     </member>
     <member name="T:DevExpress.Xpf.Data.InfiniteSource">
       <summary>
@@ -26481,7 +26496,7 @@ This is a dependency property.</para>
       <summary>
         <para>Reloads rows with specified keys.</para>
       </summary>
-      <param name="keys">Unique keys that correspond to rows you want to reload.</param>
+      <param name="keys">Key field values that identify the rows you want to reload.</param>
     </member>
     <member name="T:DevExpress.Xpf.Data.PagedSource">
       <summary>
@@ -30934,6 +30949,18 @@ This is a dependency property.</para>
     <member name="F:DevExpress.Xpf.Editors.DateNavigator.DateNavigator.CurrentDateTextProperty">
       <summary>
         <para>Identifies the <see cref="P:DevExpress.Xpf.Editors.DateNavigator.DateNavigator.CurrentDateText"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.Editors.DateNavigator.DateNavigator.DefaultAppearance">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="F:DevExpress.Xpf.Editors.DateNavigator.DateNavigator.DefaultAppearanceProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.Editors.DateNavigator.DateNavigator.DefaultAppearance"/> dependency property.</para>
       </summary>
       <value>A dependency property identifier.</value>
     </member>
@@ -37708,7 +37735,7 @@ This is a dependency property.</para>
     </member>
     <member name="P:DevExpress.Xpf.Editors.LookUpEditBase.IsTokenMode">
       <summary>
-        <para>Gets whether the editor is in token mode. This is a dependency property.</para>
+        <para>Gets whether the editor&#39;s selected values are represented by tokens. This is a dependency property.</para>
       </summary>
       <value>true if the editor is in token mode; otherwise, false.</value>
     </member>
@@ -39553,7 +39580,7 @@ This is a dependency property.</para>
     </member>
     <member name="T:DevExpress.Xpf.Editors.PopupImageEdit">
       <summary>
-        <para>Represents an editor that displays an image within a dropdown window.</para>
+        <para>An editor that displays an image within a dropdown window.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpf.Editors.PopupImageEdit.#ctor">
@@ -40216,7 +40243,7 @@ This is a dependency property.</para>
     </member>
     <member name="P:DevExpress.Xpf.Editors.RadioComboBoxStyleSettings.ShowEmptyItem">
       <summary>
-        <para>Gets or sets whether the combo box displays the empty item. This is a dependency property.</para>
+        <para>Gets or sets whether the radio combo box displays the empty item. This is a dependency property.</para>
       </summary>
       <value>true, to show the empty item; otherwise, false.</value>
     </member>
@@ -40250,7 +40277,7 @@ This is a dependency property.</para>
     </member>
     <member name="P:DevExpress.Xpf.Editors.RadioListBoxEditStyleSettings.ShowEmptyItem">
       <summary>
-        <para>Gets or sets whether the list box displays the empty item. This is a dependency property.</para>
+        <para>Gets or sets whether the radio list box displays the empty item. This is a dependency property.</para>
       </summary>
       <value>true, to show the empty item; otherwise, false.</value>
     </member>
@@ -43024,7 +43051,7 @@ This is a dependency property.</para>
     </member>
     <member name="T:DevExpress.Xpf.Editors.Settings.FontEditSettings">
       <summary>
-        <para>Contains settings specific to the FontEdit editor.</para>
+        <para>Contains settings specific to the <see cref="T:DevExpress.Xpf.Editors.FontEdit"/> editor.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpf.Editors.Settings.FontEditSettings.#ctor">
@@ -43133,7 +43160,7 @@ This is a dependency property.</para>
     </member>
     <member name="T:DevExpress.Xpf.Editors.Settings.ImageEditSettings">
       <summary>
-        <para>Contains settings specific to the ImageEdit editor.</para>
+        <para>Contains settings specific to the <see cref="T:DevExpress.Xpf.Editors.ImageEdit"/> editor.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpf.Editors.Settings.ImageEditSettings.#ctor">

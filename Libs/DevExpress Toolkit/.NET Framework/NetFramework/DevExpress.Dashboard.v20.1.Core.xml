@@ -7402,7 +7402,7 @@
     </member>
     <member name="F:DevExpress.DashboardCommon.DateTimeGroupInterval.WeekYear">
       <summary>
-        <para>Values are grouped by the year and week.</para>
+        <para>Values are grouped by the date of the first day of the week (uses culture settings)Example: 7/1/2018, 7/8/2018, 7/15/2018</para>
       </summary>
     </member>
     <member name="F:DevExpress.DashboardCommon.DateTimeGroupInterval.Year">
@@ -13453,7 +13453,7 @@
     </member>
     <member name="F:DevExpress.DashboardCommon.Localization.DashboardStringId.ErrorHandlingJoinRuleFunctionServerMode">
       <summary>
-        <para></para>
+        <para>Default value: The joinRule function cannot be used for server-mode data sources.</para>
       </summary>
     </member>
     <member name="F:DevExpress.DashboardCommon.Localization.DashboardStringId.ErrorHandlingNoSuchDataMembers">
@@ -13483,7 +13483,7 @@
     </member>
     <member name="F:DevExpress.DashboardCommon.Localization.DashboardStringId.ErrorHandlingWindowDefinitionServerMode">
       <summary>
-        <para>Default value: Window Definition function is not supported for server-mode data sources.</para>
+        <para>Default value: The w function cannot be used for server-mode data sources.</para>
       </summary>
     </member>
     <member name="F:DevExpress.DashboardCommon.Localization.DashboardStringId.ErrorIncorrectIntervalCount">
@@ -13869,6 +13869,11 @@
     <member name="F:DevExpress.DashboardCommon.Localization.DashboardStringId.FormatRuleAllowNegativeAxis">
       <summary>
         <para>Default value: Allow negative axis</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.DashboardCommon.Localization.DashboardStringId.FormatRuleAppliesToCardBackground">
+      <summary>
+        <para></para>
       </summary>
     </member>
     <member name="F:DevExpress.DashboardCommon.Localization.DashboardStringId.FormatRuleApplyTo">
@@ -19624,7 +19629,7 @@ Returns the biased variance of the expression within the window.</para>
     </member>
     <member name="T:DevExpress.DashboardCommon.XRDashboardGauge">
       <summary>
-        <para>A panel that represents a printable gauge in the exported document.</para>
+        <para>A printable gauge in the exported Gauge dashboard item.</para>
       </summary>
     </member>
     <member name="P:DevExpress.DashboardCommon.XRDashboardGauge.DeltaIcon">

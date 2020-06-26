@@ -1392,7 +1392,7 @@
     </member>
     <member name="P:DevExpress.Xpf.RichEdit.DXRichEditDocumentCapabilitiesOptions.BookmarksAllowed">
       <summary>
-        <para>Gets or sets whether an end-user is allowed to operate with bookmarks. This is a dependency property.</para>
+        <para>Gets whether an end user is allowed to operate with bookmarks. This is a dependency property.</para>
       </summary>
       <value>true if operating with bookmarks is allowed; otherwise, false.</value>
     </member>

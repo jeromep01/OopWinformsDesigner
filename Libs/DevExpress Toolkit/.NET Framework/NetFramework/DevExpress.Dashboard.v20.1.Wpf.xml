@@ -132,7 +132,7 @@
       <summary>
         <para>Returns whether drill up is possible in the current state of the specified dashboard item.</para>
       </summary>
-      <param name="dashboardItemName"></param>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that is the component name of the dashboard item.</param>
       <returns>true, if drill up is possible in the current state of the specified dashboard item; otherwise, false.</returns>
     </member>
     <member name="M:DevExpress.DashboardWpf.DashboardControl.CanSetMasterFilter(System.String)">
@@ -699,7 +699,7 @@
     </member>
     <member name="P:DevExpress.DashboardWpf.DashboardControl.LoadInactiveTabs">
       <summary>
-        <para>Gets or sets whether to load data for items that are placed on hidden tabs and are not used for filtering. This is a dependency property.</para>
+        <para>Gets or sets whether the control loads data for dashboard items on the initially inactive tab pages. This is a dependency property.</para>
       </summary>
       <value>true, to load data in the inactive tab pages; otherwise, false.</value>
     </member>
@@ -1270,7 +1270,7 @@
       <summary>
         <para></para>
       </summary>
-      <param name="dashboardItemName"></param>
+      <param name="dashboardItemName">A <see cref="T:System.String"/> that is the component name of the dashboard item.</param>
       <returns></returns>
     </member>
     <member name="T:DevExpress.DashboardWpf.IMouseApiProvider">

@@ -908,9 +908,9 @@ cell.</value>
     </member>
     <member name="P:DevExpress.Web.ASPxScheduler.AppointmentFormTemplateContainer.RecurrenceType">
       <summary>
-        <para>Gets or sets the time base for the frequency of the appointment&#39;s recurrences.</para>
+        <para>Gets the time base for the frequency of the appointment&#39;s recurrences.</para>
       </summary>
-      <value>A <see cref="T:DevExpress.XtraScheduler.RecurrenceType"/> enumeration value that specifies the recurrence&#39;s frequency type.</value>
+      <value>The recurrence&#39;s frequency type.</value>
     </member>
     <member name="P:DevExpress.Web.ASPxScheduler.AppointmentFormTemplateContainer.RecurrenceWeekDays">
       <summary>
@@ -974,9 +974,9 @@ cell.</value>
     </member>
     <member name="P:DevExpress.Web.ASPxScheduler.AppointmentFormTemplateContainer.TimeZoneId">
       <summary>
-        <para>Gets or sets the string identifier of the time zone.</para>
+        <para>Gets the string identifier of the time zone.</para>
       </summary>
-      <value>A string that is the key string identifier allowed for the System.TimeZoneInfo.Id property.</value>
+      <value>The key string identifier allowed for the System.TimeZoneInfo.Id property.</value>
     </member>
     <member name="P:DevExpress.Web.ASPxScheduler.AppointmentFormTemplateContainer.TimeZonesEnabled">
       <summary>
@@ -1576,7 +1576,7 @@ cell.</value>
     </member>
     <member name="P:DevExpress.Web.ASPxScheduler.AppointmentViewInfoCustomizingEventArgs.ViewInfo">
       <summary>
-        <para>Gets or sets the object which contains the information used to render the appointment.</para>
+        <para>Contains information used to render the appointment.</para>
       </summary>
       <value>A <see cref="T:DevExpress.Web.ASPxScheduler.Drawing.AppointmentViewInfo"/> object.</value>
     </member>
@@ -2612,7 +2612,7 @@ cell.</value>
     </member>
     <member name="P:DevExpress.Web.ASPxScheduler.ASPxScheduler.OptionsCookies">
       <summary>
-        <para>Provides access to an object used to maintain view state information.</para>
+        <para>Provides access to view state information.</para>
       </summary>
       <value>An <see cref="T:DevExpress.Web.ASPxScheduler.ASPxSchedulerOptionsCookies"/> object, that holds the state information.</value>
     </member>
@@ -7943,9 +7943,9 @@ Default Value: &quot;Open Item&quot;</para>
     </member>
     <member name="P:DevExpress.Web.ASPxScheduler.PopupMenuShowingEventArgs.Menu">
       <summary>
-        <para>Gets or sets the popup menu for which this event was raised.</para>
+        <para>Gets the popup menu for which this event was raised.</para>
       </summary>
-      <value>An <see cref="T:DevExpress.Web.ASPxScheduler.ASPxSchedulerPopupMenu"/> object, which is the popup menu.</value>
+      <value>The popup menu object.</value>
     </member>
     <member name="T:DevExpress.Web.ASPxScheduler.PopupMenuShowingEventHandler">
       <summary>
@@ -8266,59 +8266,76 @@ Default Value: &quot;Open Item&quot;</para>
       </summary>
       <param name="owner">An object that implements the <see cref="T:DevExpress.Web.IPropertiesOwner"/> interface.</param>
     </member>
-    <member name="M:DevExpress.Web.ASPxScheduler.ResourceNavigatorProperties.Assign(DevExpress.Web.PropertiesBase)">
-      <summary>
-        <para>Copies the settings from the specified <see cref="T:DevExpress.Web.PropertiesBase"/> object to the current object.</para>
-      </summary>
-      <param name="source">A <see cref="T:DevExpress.Web.PropertiesBase"/> object whose settings are assigned to the current object.</param>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.ResourceNavigatorProperties.EnableFirstLast">
-      <summary>
-        <para>This member is not in effect for this class. It is overridden only for the purpose of preventing it from appearing in Microsoft Visual Studio designer tools.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.ResourceNavigatorProperties.EnableIncreaseDecrease">
-      <summary>
-        <para>This member is not in effect for this class. It is overridden only for the purpose of preventing it from appearing in Microsoft Visual Studio designer tools.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.ResourceNavigatorProperties.EnablePrevNext">
-      <summary>
-        <para>This member is not in effect for this class. It is overridden only for the purpose of preventing it from appearing in Microsoft Visual Studio designer tools.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.ResourceNavigatorProperties.EnablePrevNextPage">
-      <summary>
-        <para>This member is not in effect for this class. It is overridden only for the purpose of preventing it from appearing in Microsoft Visual Studio designer tools.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.ResourceNavigatorProperties.EnableResourceComboBox">
-      <summary>
-        <para>This member is not in effect for this class. It is overridden only for the purpose of preventing it from appearing in Microsoft Visual Studio designer tools.</para>
-      </summary>
-      <value></value>
-    </member>
     <member name="P:DevExpress.Web.ASPxScheduler.ResourceNavigatorProperties.Mode">
       <summary>
         <para>Specifies the resource navigation mode.</para>
       </summary>
       <value>One of the <see cref="T:DevExpress.Web.ASPxScheduler.ResourceNavigatorMode"/> values.</value>
     </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.ResourceNavigatorProperties.SettingsPager">
+    <member name="T:DevExpress.Web.ASPxScheduler.ResourceNavigatorPropertiesBase">
       <summary>
-        <para>Provides access to the Pager&#39;s settings.</para>
+        <para></para>
       </summary>
-      <value>A <see cref="T:DevExpress.Web.ASPxScheduler.ResourceNavigatorPagerProperties"/> object that contains the pager&#39;s settings.</value>
     </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.ResourceNavigatorProperties.SettingsTokens">
+    <member name="M:DevExpress.Web.ASPxScheduler.ResourceNavigatorPropertiesBase.#ctor(DevExpress.Web.IPropertiesOwner)">
       <summary>
-        <para>Provides access to the Token&#39;s settings.</para>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Web.ASPxScheduler.ResourceNavigatorPropertiesBase"/> class with specified settings.</para>
       </summary>
-      <value>A <see cref="T:DevExpress.Web.ASPxScheduler.ResourceNavigatorTokensProperties"/> object that contains the tokens&#39; settings.</value>
+      <param name="owner"></param>
+    </member>
+    <member name="M:DevExpress.Web.ASPxScheduler.ResourceNavigatorPropertiesBase.Assign(DevExpress.Web.PropertiesBase)">
+      <summary>
+        <para></para>
+      </summary>
+      <param name="source"></param>
+    </member>
+    <member name="P:DevExpress.Web.ASPxScheduler.ResourceNavigatorPropertiesBase.EnableFirstLast">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxScheduler.ResourceNavigatorPropertiesBase.EnableIncreaseDecrease">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxScheduler.ResourceNavigatorPropertiesBase.EnablePrevNext">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxScheduler.ResourceNavigatorPropertiesBase.EnablePrevNextPage">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxScheduler.ResourceNavigatorPropertiesBase.EnableResourceComboBox">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxScheduler.ResourceNavigatorPropertiesBase.Mode">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxScheduler.ResourceNavigatorPropertiesBase.SettingsPager">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxScheduler.ResourceNavigatorPropertiesBase.SettingsTokens">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
     </member>
     <member name="T:DevExpress.Web.ASPxScheduler.ResourceNavigatorTokensProperties">
       <summary>
@@ -9047,9 +9064,9 @@ Default Value: &quot;Open Item&quot;</para>
     </member>
     <member name="P:DevExpress.Web.ASPxScheduler.SchedulerFormTemplateContainer.PopupFormCloseAction">
       <summary>
-        <para>Gets or sets a value that specifies which action forces a popup form to close.</para>
+        <para>Gets an action that forces a popup form to close.</para>
       </summary>
-      <value>One of the <see cref="T:DevExpress.Web.CloseAction"/> enumeration values.</value>
+      <value>The close action.</value>
     </member>
     <member name="P:DevExpress.Web.ASPxScheduler.SchedulerFormTemplateContainer.TimeZoneHelper">
       <summary>

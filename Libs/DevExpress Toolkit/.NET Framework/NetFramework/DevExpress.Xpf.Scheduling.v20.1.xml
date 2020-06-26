@@ -2393,9 +2393,9 @@
     </member>
     <member name="P:DevExpress.Xpf.Scheduling.CreateSourceObjectEventArgs.ItemType">
       <summary>
-        <para></para>
+        <para>Returns the type of the created source object.</para>
       </summary>
-      <value></value>
+      <value>A DevExpress.Xpf.Scheduling.ItemType enumeration value.</value>
     </member>
     <member name="T:DevExpress.Xpf.Scheduling.CustomAppointmentBackgroundEventArgs">
       <summary>
@@ -8125,13 +8125,13 @@
     </member>
     <member name="P:DevExpress.Xpf.Scheduling.SchedulerControl.ActiveViewType">
       <summary>
-        <para></para>
+        <para>Returns the active view. This is a dependency property.</para>
       </summary>
-      <value></value>
+      <value>A DevExpress.Xpf.Scheduling.ViewType enumeration value.</value>
     </member>
     <member name="F:DevExpress.Xpf.Scheduling.SchedulerControl.ActiveViewTypeProperty">
       <summary>
-        <para></para>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.Scheduling.SchedulerControl.ActiveViewType"/> dependency property.</para>
       </summary>
       <value>A dependency property identifier.</value>
     </member>
@@ -9751,10 +9751,17 @@
     </member>
     <member name="M:DevExpress.Xpf.Scheduling.SchedulerControl.SnoozeReminder(DevExpress.Xpf.Scheduling.ReminderItem,System.TimeSpan)">
       <summary>
-        <para></para>
+        <para>Postpones the specified reminder.</para>
       </summary>
-      <param name="reminder"></param>
-      <param name="value"></param>
+      <param name="reminder">A DevExpress.Xpf.Scheduling.ReminderItem object that is the reminder to postpone.</param>
+      <param name="value">A System.TimeSpan value that is the time interval for which to postpone the reminder.</param>
+    </member>
+    <member name="M:DevExpress.Xpf.Scheduling.SchedulerControl.SnoozeReminders(System.Collections.Generic.IEnumerable{DevExpress.Xpf.Scheduling.ReminderItem},System.TimeSpan)">
+      <summary>
+        <para>Postpones the specified reminders.</para>
+      </summary>
+      <param name="reminders">A collection of DevExpress.Xpf.Scheduling.ReminderItem objects that are the reminders to postpone.</param>
+      <param name="value">A System.TimeSpan value that is the time interval for which to postpone the reminders.</param>
     </member>
     <member name="P:DevExpress.Xpf.Scheduling.SchedulerControl.Start">
       <summary>
@@ -10940,9 +10947,9 @@
     </member>
     <member name="F:DevExpress.Xpf.Scheduling.TimelineView.IsVerticalPerPixelScrollingEnabledProperty">
       <summary>
-        <para></para>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.Scheduling.TimelineView.IsVerticalPerPixelScrollingEnabled"/> dependency property.</para>
       </summary>
-      <value></value>
+      <value>A dependency property identifier.</value>
     </member>
     <member name="P:DevExpress.Xpf.Scheduling.TimelineView.IsVerticalScrollSnappingEnabled">
       <summary>
@@ -11557,7 +11564,7 @@
     </member>
     <member name="P:DevExpress.Xpf.Scheduling.ViewBase.AgendaView">
       <summary>
-        <para></para>
+        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.</para>
       </summary>
       <value></value>
     </member>
@@ -13572,23 +13579,23 @@
     </member>
     <member name="M:DevExpress.Xpf.Scheduling.WeekView.NavigateBackward">
       <summary>
-        <para></para>
+        <para>Moves one visible time frame backward.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpf.Scheduling.WeekView.NavigateForward">
       <summary>
-        <para></para>
+        <para>Advances one visible time frame forward.</para>
       </summary>
     </member>
     <member name="P:DevExpress.Xpf.Scheduling.WeekView.SyncSettingsWithDayView">
       <summary>
-        <para></para>
+        <para>Specifies whether to copy the relevant view settings from the <see cref="T:DevExpress.Xpf.Scheduling.DayView"/>. This is a dependency property.</para>
       </summary>
-      <value></value>
+      <value>true, to copy the view settings from the DayView; otherwise, false.</value>
     </member>
     <member name="F:DevExpress.Xpf.Scheduling.WeekView.SyncSettingsWithDayViewProperty">
       <summary>
-        <para></para>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.Scheduling.WeekView.SyncSettingsWithDayView"/> dependency property.</para>
       </summary>
       <value>A dependency property identifier.</value>
     </member>
@@ -13637,13 +13644,13 @@
     </member>
     <member name="P:DevExpress.Xpf.Scheduling.WorkWeekView.SyncSettingsWithDayView">
       <summary>
-        <para></para>
+        <para>Specifies whether to copy the relevant view settings from the <see cref="T:DevExpress.Xpf.Scheduling.DayView"/>. This is a dependency property.</para>
       </summary>
-      <value></value>
+      <value>true, to copy the view settings from the DayView; otherwise, false.</value>
     </member>
     <member name="F:DevExpress.Xpf.Scheduling.WorkWeekView.SyncSettingsWithDayViewProperty">
       <summary>
-        <para></para>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.Scheduling.WorkWeekView.SyncSettingsWithDayView"/> dependency property.</para>
       </summary>
       <value>A dependency property identifier.</value>
     </member>

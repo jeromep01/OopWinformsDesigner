@@ -56,9 +56,9 @@
     </member>
     <member name="P:DevExpress.Web.ASPxDiagram.ASPxDiagram.DefaultItemProperties">
       <summary>
-        <para></para>
+        <para>Provide access to default item properties.</para>
       </summary>
-      <value></value>
+      <value>An object that contains item properties.</value>
     </member>
     <member name="E:DevExpress.Web.ASPxDiagram.ASPxDiagram.EdgeDataBound">
       <summary>
@@ -192,7 +192,7 @@
     </member>
     <member name="P:DevExpress.Web.ASPxDiagram.ASPxDiagram.SettingsPage">
       <summary>
-        <para>Provides access to page settings.</para>
+        <para>Contains page settings.</para>
       </summary>
       <value>An object that contains the page settings.</value>
     </member>
@@ -575,9 +575,9 @@
     </member>
     <member name="P:DevExpress.Web.ASPxDiagram.DiagramCustomShape.CategoryName">
       <summary>
-        <para></para>
+        <para>Specifies a category to which the custom shape belongs.</para>
       </summary>
-      <value></value>
+      <value>The category name.</value>
     </member>
     <member name="P:DevExpress.Web.ASPxDiagram.DiagramCustomShape.ConnectionPoints">
       <summary>
@@ -725,50 +725,50 @@
     </member>
     <member name="T:DevExpress.Web.ASPxDiagram.DiagramDefaultItemProperties">
       <summary>
-        <para></para>
+        <para>Contains default item properties</para>
       </summary>
     </member>
     <member name="M:DevExpress.Web.ASPxDiagram.DiagramDefaultItemProperties.#ctor(DevExpress.Web.IPropertiesOwner)">
       <summary>
         <para>Initializes a new instance of the <see cref="T:DevExpress.Web.ASPxDiagram.DiagramDefaultItemProperties"/> class with specified settings.</para>
       </summary>
-      <param name="owner"></param>
+      <param name="owner">An object that implements the <see cref="T:DevExpress.Web.IPropertiesOwner"/> interface.</param>
     </member>
     <member name="M:DevExpress.Web.ASPxDiagram.DiagramDefaultItemProperties.Assign(DevExpress.Web.PropertiesBase)">
       <summary>
-        <para></para>
+        <para>Copies the public properties from the specified object to the current one.</para>
       </summary>
-      <param name="source"></param>
+      <param name="source">A <see cref="T:DevExpress.Web.PropertiesBase"/> class descendant object whose public properties are copied to the current object.</param>
     </member>
     <member name="P:DevExpress.Web.ASPxDiagram.DiagramDefaultItemProperties.ConnectorLineEnd">
       <summary>
-        <para></para>
+        <para>Specifies the default tip of a connector&#39;s end point.</para>
       </summary>
-      <value></value>
+      <value>The type of the tip.</value>
     </member>
     <member name="P:DevExpress.Web.ASPxDiagram.DiagramDefaultItemProperties.ConnectorLineStart">
       <summary>
-        <para></para>
+        <para>Specifies the default tip of a connector&#39;s start point.</para>
       </summary>
-      <value></value>
+      <value>The type of the tip.</value>
     </member>
     <member name="P:DevExpress.Web.ASPxDiagram.DiagramDefaultItemProperties.ConnectorLineType">
       <summary>
-        <para></para>
+        <para>Specifies the default type of a connector.</para>
       </summary>
-      <value></value>
+      <value>The line type.</value>
     </member>
     <member name="P:DevExpress.Web.ASPxDiagram.DiagramDefaultItemProperties.Style">
       <summary>
-        <para></para>
+        <para>Specifies a default item style.</para>
       </summary>
-      <value></value>
+      <value>The style settings.</value>
     </member>
     <member name="P:DevExpress.Web.ASPxDiagram.DiagramDefaultItemProperties.TextStyle">
       <summary>
-        <para></para>
+        <para>Specifies a default item text style.</para>
       </summary>
-      <value></value>
+      <value>The style settings.</value>
     </member>
     <member name="T:DevExpress.Web.ASPxDiagram.DiagramEdge">
       <summary>
@@ -804,6 +804,12 @@
         <para>Specifies whether the edge is locked.</para>
       </summary>
       <value>true, if the edge is locked; otherwise, false.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.DiagramEdge.Points">
+      <summary>
+        <para>Specifies the edge&#39;s key points.</para>
+      </summary>
+      <value>A string that contains coordinates of points. Coordinates are measured in <see cref="P:DevExpress.Web.ASPxDiagram.ASPxDiagram.Units"/>.</value>
     </member>
     <member name="P:DevExpress.Web.ASPxDiagram.DiagramEdge.Style">
       <summary>
@@ -917,6 +923,12 @@
         <para>Specifies the name of a data source field whose values indicate whether an edge is locked.</para>
       </summary>
       <value>The field name.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.DiagramEdgeMappingInfo.Points">
+      <summary>
+        <para>Specifies the name of a data source field that provides an edge&#39;s key points.</para>
+      </summary>
+      <value>A string that contains coordinates of points. Coordinates are measured in <see cref="P:DevExpress.Web.ASPxDiagram.ASPxDiagram.Units"/>.</value>
     </member>
     <member name="P:DevExpress.Web.ASPxDiagram.DiagramEdgeMappingInfo.Style">
       <summary>
@@ -1389,7 +1401,7 @@
     </member>
     <member name="P:DevExpress.Web.ASPxDiagram.DiagramPageSettings.Color">
       <summary>
-        <para>Specifies the color of a diagram page.</para>
+        <para>Specifies the diagram page color.</para>
       </summary>
       <value>A structure that specifies the page color.</value>
     </member>

@@ -140,9 +140,9 @@
     </member>
     <member name="P:DevExpress.XtraSpellChecker.PopupMenuShowingEventArgs.Menu">
       <summary>
-        <para>Gets or sets the control&#39;s context menu.</para>
+        <para>Gets the control&#39;s context menu.</para>
       </summary>
-      <value>A <see cref="T:DevExpress.Utils.Menu.DXPopupMenu"/> object which represents the Pivot Grid Control&#39;s context menu.</value>
+      <value>An object that represents the context menu.</value>
     </member>
     <member name="T:DevExpress.XtraSpellChecker.PopupMenuShowingEventHandler">
       <summary>

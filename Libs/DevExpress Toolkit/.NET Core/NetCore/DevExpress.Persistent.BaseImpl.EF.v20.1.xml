@@ -218,9 +218,9 @@
     </member>
     <member name="P:DevExpress.Persistent.BaseImpl.EF.PermissionPolicy.PermissionPolicyRoleBase.ActionPermissions">
       <summary>
-        <para></para>
+        <para>Specifies the collection of objects that contain Action permissions associated with the current <see cref="T:DevExpress.Persistent.BaseImpl.EF.PermissionPolicy.PermissionPolicyRoleBase"/>.</para>
       </summary>
-      <value></value>
+      <value>A collection of objects that contain Action permissions associated with the current <see cref="T:DevExpress.Persistent.BaseImpl.EF.PermissionPolicy.PermissionPolicyRoleBase"/>.</value>
     </member>
     <member name="P:DevExpress.Persistent.BaseImpl.EF.PermissionPolicy.PermissionPolicyRoleBase.CanEditModel">
       <summary>

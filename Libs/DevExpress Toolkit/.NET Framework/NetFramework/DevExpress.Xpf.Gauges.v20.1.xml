@@ -381,7 +381,7 @@
     </member>
     <member name="F:DevExpress.Xpf.Gauges.ArcScaleLayoutMode.Auto">
       <summary>
-        <para>An arc scale appears as an ellipse whose length depends on the start and end scale angles.</para>
+        <para>An arc scale layout depends on the start and end scale angles.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Xpf.Gauges.ArcScaleLayoutMode.Circle">

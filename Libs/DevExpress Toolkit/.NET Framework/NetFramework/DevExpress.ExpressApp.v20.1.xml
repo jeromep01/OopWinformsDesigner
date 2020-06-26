@@ -1702,6 +1702,14 @@
       <param name="sortingString">A string which contains the names of the columns against which data source contents are sorted.</param>
       <returns>An IList&lt;<see cref="T:DevExpress.Xpo.SortProperty"/>&gt; object that specifies sorting.</returns>
     </member>
+    <member name="M:DevExpress.ExpressApp.BaseObjectSpace.CreateByKeyCriteria(DevExpress.ExpressApp.DC.ITypeInfo,System.Object)">
+      <summary>
+        <para>For internal use.</para>
+      </summary>
+      <param name="typeInfo"></param>
+      <param name="key"></param>
+      <returns></returns>
+    </member>
     <member name="M:DevExpress.ExpressApp.BaseObjectSpace.CreateCollection(System.Type)">
       <summary>
         <para>Creates and initializes a collection of objects of the specified type.</para>
@@ -2474,9 +2482,9 @@
     </member>
     <member name="F:DevExpress.ExpressApp.BaseObjectSpace.ThrowExceptionForNotRegisteredEntityType">
       <summary>
-        <para>For internal use.</para>
+        <para>Certain Object Space methods have the <see cref="T:System.Type"/> parameters. This static field indicates whether these methods throw the ArgumentException when a passed type is not registered in the Object Space Provider&#39;s entity store. Set this field to true to diagnose issues related to the incorrect use of the Object Space type (for example, when a persistent Object Space is used to manipulate non-persistent objects).</para>
       </summary>
-      <value></value>
+      <value>true, if Object Space methods that have the <see cref="T:System.Type"/> parameters throw the ArgumentException when a passed type is not registered in the Object Space Provider&#39;s entity store; otherwise, false.</value>
     </member>
     <member name="P:DevExpress.ExpressApp.BaseObjectSpace.TypesInfo">
       <summary>
@@ -2927,6 +2935,12 @@
       </summary>
       <param name="info">An <see cref="T:DevExpress.ExpressApp.Model.IModelViewItem"/> object representing the Application Model node with the information on the new View Item.</param>
       <returns>A <see cref="T:DevExpress.ExpressApp.Editors.ViewItem"/> descendant representing the View Item added to the <see cref="P:DevExpress.ExpressApp.CompositeView.Items"/> collection.</returns>
+    </member>
+    <member name="M:DevExpress.ExpressApp.CompositeView.AnalyzeModelForInfiniteRecursion(DevExpress.ExpressApp.Model.IModelCompositeView)">
+      <summary>
+        <para>For internal use.</para>
+      </summary>
+      <param name="model"></param>
     </member>
     <member name="M:DevExpress.ExpressApp.CompositeView.BreakLinksToControls">
       <summary>
@@ -4922,7 +4936,7 @@
     </member>
     <member name="P:DevExpress.ExpressApp.DetailViewCreatingEventArgs.EnableDelayedObjectLoading">
       <summary>
-        <para>Specifies whether or not delayed object loading is enabled for the particular Detail View created using the <see cref="T:DevExpress.ExpressApp.SystemModule.ListViewProcessCurrentObjectController"/>.</para>
+        <para>For internal use. Use the <see cref="F:DevExpress.ExpressApp.DetailView.UseAsyncLoading"/> field instead of this property.</para>
       </summary>
       <value>true, if the delayed object loading is enabled for the particular Detail View; otherwise, false.</value>
     </member>
@@ -5305,7 +5319,7 @@
     </member>
     <member name="F:DevExpress.ExpressApp.Editors.EditorAliases.CriteriaPropertyEditor">
       <summary>
-        <para>Specifies the built-in alias for the CriteriaPropertyEditor and ASPxCriteriaPropertyEditor editors.</para>
+        <para>Specifies the built-in alias for the CriteriaPropertyEditor, AdvancedCriteriaPropertyEditor, and ASPxCriteriaPropertyEditor editors. The static <see cref="P:DevExpress.XtraEditors.WindowsFormsSettings.UseAdvancedFilterEditorControl"/> property determines which editor a WinForms application uses (<see cref="F:DevExpress.Utils.DefaultBoolean.False"/> - for CriteriaPropertyEditor).</para>
       </summary>
       <value></value>
     </member>
@@ -12349,6 +12363,18 @@
       <param name="obj2"></param>
       <returns></returns>
     </member>
+    <member name="P:DevExpress.ExpressApp.NonPersistentObjectSpace.AutoCommitAdditionalObjectSpaces">
+      <summary>
+        <para>Specifies whether the current non-persistent Object Space&#39;s <see cref="M:DevExpress.ExpressApp.IObjectSpace.CommitChanges"/> method forces additional Object Spaces to commit their changed persistent objects. When this property is set to true, changes to persistent objects that belong to additional Object Spaces mark the NonPersistentObjectSpace as modified.</para>
+      </summary>
+      <value>true if the current Object Space&#39;s <see cref="M:DevExpress.ExpressApp.IObjectSpace.CommitChanges"/> method forces additional Object Spaces to commit their changed persistent objects; otherwise, false.</value>
+    </member>
+    <member name="F:DevExpress.ExpressApp.NonPersistentObjectSpace.AutoCommitAdditionalObjectSpacesByDefault">
+      <summary>
+        <para>Specifies whether a non-persistent Object Space&#39;s <see cref="M:DevExpress.ExpressApp.IObjectSpace.CommitChanges"/> method forces additional Object Spaces to commit their changed persistent objects. When this property is set to true, changes to persistent objects that belong to additional Object Spaces mark the NonPersistentObjectSpace as modified. This field affects all non-persistent Object Spaces in your application if you do not specify the <see cref="P:DevExpress.ExpressApp.NonPersistentObjectSpace.AutoCommitAdditionalObjectSpaces"/> property for a particular Object Space.</para>
+      </summary>
+      <value>true, if an Object Space&#39;s <see cref="M:DevExpress.ExpressApp.IObjectSpace.CommitChanges"/> method forces additional Object Spaces to commit their changed persistent objects; otherwise, false.</value>
+    </member>
     <member name="P:DevExpress.ExpressApp.NonPersistentObjectSpace.AutoDisposeAdditionalObjectSpaces">
       <summary>
         <para>Specifies whether the current non-persistent Object Space disposes of its inner Object Spaces from the <see cref="P:DevExpress.ExpressApp.NonPersistentObjectSpace.AdditionalObjectSpaces"/> collection when it disposes itself.</para>
@@ -12551,7 +12577,7 @@
     </member>
     <member name="E:DevExpress.ExpressApp.NonPersistentObjectSpace.ObjectReloading">
       <summary>
-        <para></para>
+        <para>Occurs before an object is reloaded. Handle this event to reload the object state from storage and cancel changes.</para>
       </summary>
     </member>
     <member name="E:DevExpress.ExpressApp.NonPersistentObjectSpace.ObjectsCountGetting">
@@ -13618,7 +13644,7 @@
     </member>
     <member name="M:DevExpress.ExpressApp.ShowViewStrategyBase.ShowView(DevExpress.ExpressApp.ShowViewParameters,DevExpress.ExpressApp.ShowViewSource)">
       <summary>
-        <para>Displays the View that is specified via the parameters argument.</para>
+        <para>For internal use. If you need to display a View in a UI, use one of the solutions described in the Ways to Show a View topic.</para>
       </summary>
       <param name="parameters">A <see cref="T:DevExpress.ExpressApp.ShowViewParameters"/> object that represents a set of parameters used to display a new View.</param>
       <param name="showViewSource">A <see cref="T:DevExpress.ExpressApp.ShowViewSource"/> object that specifies the context from which the <see cref="M:DevExpress.ExpressApp.ShowViewStrategyBase.ShowView(DevExpress.ExpressApp.ShowViewParameters,DevExpress.ExpressApp.ShowViewSource)"/> method was invoked.</param>
@@ -15726,12 +15752,19 @@ For the List Views used by the Lookup Property Editors, the default value is Vis
       </summary>
       <value></value>
     </member>
-    <member name="M:DevExpress.ExpressApp.TemplateContext.Equals(System.Object)">
+    <member name="M:DevExpress.ExpressApp.TemplateContext.Equals(DevExpress.ExpressApp.TemplateContext)">
       <summary>
-        <para>Determines whether the specified object is equal to the current <see cref="T:DevExpress.ExpressApp.TemplateContext"/>.</para>
+        <para>Checks whether the current <see cref="T:DevExpress.ExpressApp.TemplateContext"/> is equal to the specified object of the same type.</para>
       </summary>
       <param name="obj">An object to compare to the current TemplateContext.</param>
-      <returns>true, if the specified object equals the current TemplateContext; otherwise, false.</returns>
+      <returns>true if the specified object equals the current TemplateContext; otherwise, false.</returns>
+    </member>
+    <member name="M:DevExpress.ExpressApp.TemplateContext.Equals(System.Object)">
+      <summary>
+        <para>Checks whether the specified object is equal to the current <see cref="T:DevExpress.ExpressApp.TemplateContext"/>.</para>
+      </summary>
+      <param name="obj">An object to compare to the current TemplateContext.</param>
+      <returns>true if the specified object equals the current TemplateContext; otherwise, false.</returns>
     </member>
     <member name="P:DevExpress.ExpressApp.TemplateContext.FindPopupWindow">
       <summary>
@@ -16992,12 +17025,19 @@ For the List Views used by the Lookup Property Editors, the default value is Vis
       </summary>
       <value></value>
     </member>
+    <member name="M:DevExpress.ExpressApp.Utils.ImageInfo.Equals(DevExpress.ExpressApp.Utils.ImageInfo)">
+      <summary>
+        <para>Checks whether the current <see cref="T:DevExpress.ExpressApp.Utils.ImageInfo"/> is equal to the specified object of the same type.</para>
+      </summary>
+      <param name="obj">An object to compare to the current ImageInfo.</param>
+      <returns>true if the specified object equals the current ImageInfo; otherwise, false.</returns>
+    </member>
     <member name="M:DevExpress.ExpressApp.Utils.ImageInfo.Equals(System.Object)">
       <summary>
-        <para>Determines whether the specified object is equal to the current <see cref="T:DevExpress.ExpressApp.Utils.ImageInfo"/>.</para>
+        <para>Checks whether the specified object is equal to the current <see cref="T:DevExpress.ExpressApp.Utils.ImageInfo"/>.</para>
       </summary>
       <param name="obj">An object that can be cast to the ImageInfo type, to compare to the current ImageInfo.</param>
-      <returns>true, if the specified ImageInfo object&#39;s image equals the current ImageInfo&#39;s <see cref="P:DevExpress.ExpressApp.Utils.ImageInfo.Image"/>; otherwise, false.</returns>
+      <returns>true if the specified ImageInfo object&#39;s image equals the current ImageInfo&#39;s <see cref="P:DevExpress.ExpressApp.Utils.ImageInfo.Image"/>; otherwise, false.</returns>
     </member>
     <member name="M:DevExpress.ExpressApp.Utils.ImageInfo.GetHashCode">
       <summary>
@@ -17105,6 +17145,12 @@ For the List Views used by the Lookup Property Editors, the default value is Vis
     <member name="F:DevExpress.ExpressApp.Utils.ImageLoader.DialogImageSuffix">
       <summary>
         <para>Specifies the image suffix for images used in dialog windows (see Add and Override Images).</para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="F:DevExpress.ExpressApp.Utils.ImageLoader.DisabledSuffix">
+      <summary>
+        <para></para>
       </summary>
       <value></value>
     </member>
@@ -19240,7 +19286,7 @@ to key/value pairs of the current View Shortcut; otherwise, false.</returns>
     </member>
     <member name="P:DevExpress.ExpressApp.XafApplication.IsDelayedDetailViewDataLoadingEnabled">
       <summary>
-        <para>Specifies if delayed loading is enabled for Detail Views in WinForms applications. See <see cref="P:DevExpress.ExpressApp.Win.WinApplication.IsDelayedDetailViewDataLoadingEnabled"/>.</para>
+        <para>For internal use. Use the <see cref="F:DevExpress.ExpressApp.DetailView.UseAsyncLoading"/> field instead of this property.</para>
       </summary>
       <value>true, if delayed loading is enabled for Detail Views in WinForms applications; otherwise, false. The default is false.</value>
     </member>

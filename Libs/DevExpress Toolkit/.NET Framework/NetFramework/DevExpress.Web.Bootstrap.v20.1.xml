@@ -24753,6 +24753,24 @@
       </summary>
       <value></value>
     </member>
+    <member name="P:DevExpress.Web.Bootstrap.BootstrapGridViewCssClasses.BatchEditDeletedRow">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="P:DevExpress.Web.Bootstrap.BootstrapGridViewCssClasses.BatchEditModifiedCell">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="P:DevExpress.Web.Bootstrap.BootstrapGridViewCssClasses.BatchEditNewRow">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
     <member name="P:DevExpress.Web.Bootstrap.BootstrapGridViewCssClasses.CommandColumn">
       <summary>
         <para>Gets or sets the name of a CSS class applied to a Command Column element.</para>
@@ -25857,13 +25875,6 @@
         <para>Gets the form layout.</para>
       </summary>
       <value>The form layout.</value>
-    </member>
-    <member name="M:DevExpress.Web.Bootstrap.BootstrapGridViewEditFormLayoutEventArgs.FindLayoutItemByColumn(System.String)">
-      <summary>
-        <para></para>
-      </summary>
-      <param name="name_fieldName_caption"></param>
-      <returns></returns>
     </member>
     <member name="T:DevExpress.Web.Bootstrap.BootstrapGridViewEditFormPopupSettings">
       <summary>
@@ -30230,7 +30241,7 @@
     </member>
     <member name="P:DevExpress.Web.Bootstrap.BootstrapListBoxField.SettingsMultiColumn">
       <summary>
-        <para>Specifies corresponding column settings when the List Box is in multi-column mode.</para>
+        <para>Specifies corresponding column settings when the control is in multi-column mode.</para>
       </summary>
       <value>An instance of the <see cref="T:DevExpress.Web.Bootstrap.BootstrapListBoxFieldMultiColumnSettings"/> class that defines column settings.</value>
     </member>
@@ -30328,7 +30339,7 @@
     </member>
     <member name="T:DevExpress.Web.Bootstrap.BootstrapListBoxFieldMultiColumnSettings">
       <summary>
-        <para>Defines column settings for a List Box in multi-column mode.</para>
+        <para>Defines column settings for a List Box and Combo Box in multi-column mode.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Web.Bootstrap.BootstrapListBoxFieldMultiColumnSettings.#ctor(DevExpress.Web.Bootstrap.BootstrapListBoxField)">
@@ -30345,19 +30356,19 @@
     </member>
     <member name="P:DevExpress.Web.Bootstrap.BootstrapListBoxFieldMultiColumnSettings.Caption">
       <summary>
-        <para>Specifies a List Box column&#39;s caption.</para>
+        <para>Specifies a column&#39;s caption.</para>
       </summary>
       <value>A column&#39;s caption.</value>
     </member>
     <member name="P:DevExpress.Web.Bootstrap.BootstrapListBoxFieldMultiColumnSettings.ToolTip">
       <summary>
-        <para>Specifies a List Box column header&#39;s tooltip.</para>
+        <para>Specifies a column header&#39;s tooltip.</para>
       </summary>
       <value>Tooltip text.</value>
     </member>
     <member name="P:DevExpress.Web.Bootstrap.BootstrapListBoxFieldMultiColumnSettings.Width">
       <summary>
-        <para>Specifies a List Box column&#39;s width.</para>
+        <para>Specifies a column&#39;s width.</para>
       </summary>
       <value>An <see cref="T:System.Web.UI.WebControls.Unit"/> structure&#39;s value that specifies the width.</value>
     </member>

@@ -2193,7 +2193,7 @@
       <summary>
         <para>Gets or sets the union type.</para>
       </summary>
-      <value>A DevExpress.DataAccess.DataFederation.UnionType value that specifies the result set in the query.</value>
+      <value>A <see cref="T:DevExpress.DataAccess.DataFederation.UnionType"/> value that specifies the result set in the query.</value>
     </member>
     <member name="T:DevExpress.DataAccess.DataFederation.UnionNodeBuilder">
       <summary>

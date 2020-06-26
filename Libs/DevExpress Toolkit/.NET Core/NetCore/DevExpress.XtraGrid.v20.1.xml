@@ -1133,7 +1133,7 @@ If this parameter has a value (it&#39;s not null or an empty string) the val par
     </member>
     <member name="P:DevExpress.XtraGrid.Columns.GridColumn.FieldName">
       <summary>
-        <para>To bind a column to a data source field, set this property to the required data field name. To create unbound columns, assign a unique identifier to this property. If you have obtained a column as a method return value or as an event argument, read the FieldName property value to identify the column.</para>
+        <para>To bind a column to a data source field, set this property to the required data field name. To create unbound columns, assign a unique identifier to this property. If you obtained a column as a method return value or as an event argument, read the FieldName property value to identify this column.</para>
       </summary>
       <value>A <see cref="T:System.String"/> value that specifies the unique column field name.</value>
     </member>
@@ -2263,7 +2263,7 @@ If this parameter has a value (it&#39;s not null or an empty string) the val par
       <summary>
         <para>Gets or sets whether the filter button in Grid Views (field filter button in Layout Views) is displayed within the column header.</para>
       </summary>
-      <value>true if the column&#39;s  filter button is enabled; otherwise, false.</value>
+      <value>true if the column&#39;s filter button is enabled; otherwise, false.</value>
     </member>
     <member name="P:DevExpress.XtraGrid.Columns.OptionsColumnFilter.AllowFilterModeChanging">
       <summary>
@@ -4140,7 +4140,7 @@ The DefaultBoolean.Default value is equivalent to DefaultBoolean.True if the sta
     </member>
     <member name="P:DevExpress.XtraGrid.GridSummaryItem.Mode">
       <summary>
-        <para>Gets or sets whether the current summary is calculated against all rows or the selection. This property makes sense when you enable multiple row selection (see <see cref="P:DevExpress.XtraGrid.Views.Base.ColumnViewOptionsSelection.MultiSelect"/>).</para>
+        <para>Gets or sets whether to calculate the current summary against all rows or the selection. Use this property when you enable multiple row selection (see <see cref="P:DevExpress.XtraGrid.Views.Base.ColumnViewOptionsSelection.MultiSelect"/>).</para>
       </summary>
       <value>A value that specifies whether the current summary is calculated against all rows or the selection.</value>
     </member>
@@ -13307,9 +13307,9 @@ In server mode, this option is not in effect.</para>
     </member>
     <member name="P:DevExpress.XtraGrid.Views.Grid.GridOptionsMenu.ShowSummaryItemMode">
       <summary>
-        <para></para>
+        <para>Gets or sets whether to show a &#39;Mode&#39; summary sub-menu that allows a user to calculate summaries against all rows or the selection.</para>
       </summary>
-      <value></value>
+      <value>A value that specifies whether to display the &#39;Mode&#39; summary sub-menu.</value>
     </member>
     <member name="T:DevExpress.XtraGrid.Views.Grid.GridOptionsNavigation">
       <summary>
@@ -13476,6 +13476,12 @@ This option is in effect when the <see cref="P:DevExpress.XtraGrid.Views.Grid.Gr
         <para>Gets or sets whether to display the preview sections in the print/export output.</para>
       </summary>
       <value>true to print preview/export sections; otherwise, false.</value>
+    </member>
+    <member name="P:DevExpress.XtraGrid.Views.Grid.GridOptionsPrint.PrintSelectedGroupChildren">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
     </member>
     <member name="P:DevExpress.XtraGrid.Views.Grid.GridOptionsPrint.PrintSelectedRowsOnly">
       <summary>
@@ -14168,9 +14174,9 @@ This option is in effect when the <see cref="P:DevExpress.XtraGrid.Views.Grid.Gr
     </member>
     <member name="P:DevExpress.XtraGrid.Views.Grid.GridView.ClipboardDataProvider">
       <summary>
-        <para>Gets an object that provides data for the clipboard in a variety of formats (plain text, plain unicode text, rich text, CSV, BIFF8, HTML).</para>
+        <para>Gets an object that provides data for the clipboard in various formats (plain text, plain unicode text, rich text, CSV, BIFF8, HTML).</para>
       </summary>
-      <value>An object that provides data for the clipboard in a variety of formats (plain text, plain unicode text, rich text, CSV, BIFF8, HTML).</value>
+      <value>An object that provides data for the clipboard in various formats (plain text, plain unicode text, rich text, CSV, BIFF8, HTML).</value>
     </member>
     <member name="E:DevExpress.XtraGrid.Views.Grid.GridView.ClipboardRowCopying">
       <summary>
@@ -20184,7 +20190,7 @@ This value is used to initialize the <see cref="P:DevExpress.XtraGrid.Views.Prin
     </member>
     <member name="T:DevExpress.XtraGrid.Views.Tile.TileView">
       <summary>
-        <para>Displays records as read-only tiles, using one of the following layout modes: default (one or multiple columns/rows), list (without spaces between records) and Kanban. This View provides the advanced field positioning feature, which helps you arrange fields relative to other fields, specify absolute or relative field display bounds, etc.</para>
+        <para>Displays records as read-only tiles, using one of the following layout modes: default (standard table layout), list (tiles have no space between them) and Kanban. This View provides the Tile Template feature, which helps you arrange fields relative to other fields, specify absolute or relative field display bounds, etc.</para>
       </summary>
     </member>
     <member name="M:DevExpress.XtraGrid.Views.Tile.TileView.#ctor">

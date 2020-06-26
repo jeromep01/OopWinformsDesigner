@@ -205,37 +205,37 @@
     </member>
     <member name="T:DevExpress.Spreadsheet.ArrowheadType">
       <summary>
-        <para>Lists values used to specify the type of a connector&#39;s arrowhead.</para>
+        <para>Lists values that specify the type of a connector&#39;s arrowhead.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ArrowheadType.Diamond">
       <summary>
-        <para>Specifies a diamond-shaped arrowhead.</para>
+        <para>A diamond-shaped arrowhead.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ArrowheadType.None">
       <summary>
-        <para>Specifies that a connector has no arrowhead at the specified end.</para>
+        <para>A connector has no arrowhead at the specified end.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ArrowheadType.Open">
       <summary>
-        <para>Specifies an open arrowhead.</para>
+        <para>An open arrowhead.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ArrowheadType.Oval">
       <summary>
-        <para>Specifies an oval-shaped arrowhead.</para>
+        <para>An oval-shaped arrowhead.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ArrowheadType.Stealth">
       <summary>
-        <para>Specifies a stealth-shaped arrowhead.</para>
+        <para>A stealth-shaped arrowhead.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ArrowheadType.Triangle">
       <summary>
-        <para>Specifies a triangular arrowhead.</para>
+        <para>A triangular arrowhead.</para>
       </summary>
     </member>
     <member name="T:DevExpress.Spreadsheet.ArrowSettings">
@@ -517,77 +517,77 @@
     </member>
     <member name="T:DevExpress.Spreadsheet.BorderLineStyle">
       <summary>
-        <para>Lists line styles used for cell borders.</para>
+        <para>Lists line styles for cell borders.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.BorderLineStyle.DashDot">
       <summary>
-        <para>Specifies the thin dash-dotted border line.</para>
+        <para>The thin dash-dotted border line.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.BorderLineStyle.DashDotDot">
       <summary>
-        <para>Specifies the thin dash-dot-dotted border line.</para>
+        <para>The thin dash-dot-dotted border line.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.BorderLineStyle.Dashed">
       <summary>
-        <para>Specifies the thin dashed border line.</para>
+        <para>The thin dashed border line.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.BorderLineStyle.Dotted">
       <summary>
-        <para>Specifies the thin dotted border line.</para>
+        <para>The thin dotted border line.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.BorderLineStyle.Double">
       <summary>
-        <para>Specifies the double border line.</para>
+        <para>The double border line.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.BorderLineStyle.Hair">
       <summary>
-        <para>Specifies the hair border line.</para>
+        <para>The hair border line.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.BorderLineStyle.Medium">
       <summary>
-        <para>Specifies the medium solid border line.</para>
+        <para>The medium solid border line.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.BorderLineStyle.MediumDashDot">
       <summary>
-        <para>Specifies the medium dash-dotted border line.</para>
+        <para>The medium dash-dotted border line.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.BorderLineStyle.MediumDashDotDot">
       <summary>
-        <para>Specifies the medium dash-dot-dotted border line.</para>
+        <para>The medium dash-dot-dotted border line.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.BorderLineStyle.MediumDashed">
       <summary>
-        <para>Specifies the medium dashed border line.</para>
+        <para>The medium dashed border line.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.BorderLineStyle.None">
       <summary>
-        <para>Specifies that a border is not painted.</para>
+        <para>A border is not painted.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.BorderLineStyle.SlantDashDot">
       <summary>
-        <para>Specifies the medium slanted dash-dotted border line.</para>
+        <para>The medium slanted dash-dotted border line.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.BorderLineStyle.Thick">
       <summary>
-        <para>Specifies the thick solid border line.</para>
+        <para>The thick solid border line.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.BorderLineStyle.Thin">
       <summary>
-        <para>Specifies the thin solid border line.</para>
+        <para>The thin solid border line.</para>
       </summary>
     </member>
     <member name="T:DevExpress.Spreadsheet.Borders">
@@ -683,157 +683,157 @@
     </member>
     <member name="F:DevExpress.Spreadsheet.BuiltInStyleId.Accent1">
       <summary>
-        <para>Specifies the &quot;Accent1&quot; themed style.</para>
+        <para>The &quot;Accent1&quot; themed style.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.BuiltInStyleId.Accent1_20percent">
       <summary>
-        <para>Specifies the &quot;20% - Accent1&quot; themed style.</para>
+        <para>The &quot;20% - Accent1&quot; themed style.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.BuiltInStyleId.Accent1_40percent">
       <summary>
-        <para>Specifies the &quot;40% - Accent1&quot; themed style.</para>
+        <para>The &quot;40% - Accent1&quot; themed style.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.BuiltInStyleId.Accent1_60percent">
       <summary>
-        <para>Specifies the &quot;60% - Accent1&quot; themed style.</para>
+        <para>The &quot;60% - Accent1&quot; themed style.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.BuiltInStyleId.Accent2">
       <summary>
-        <para>Specifies the &quot;Accent2&quot; themed style.</para>
+        <para>The &quot;Accent2&quot; themed style.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.BuiltInStyleId.Accent2_20percent">
       <summary>
-        <para>Specifies the &quot;20% - Accent2&quot; themed style.</para>
+        <para>The &quot;20% - Accent2&quot; themed style.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.BuiltInStyleId.Accent2_40percent">
       <summary>
-        <para>Specifies the &quot;40% - Accent2&quot; themed style.</para>
+        <para>The &quot;40% - Accent2&quot; themed style.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.BuiltInStyleId.Accent2_60percent">
       <summary>
-        <para>Specifies the &quot;60% - Accent2&quot; themed style.</para>
+        <para>The &quot;60% - Accent2&quot; themed style.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.BuiltInStyleId.Accent3">
       <summary>
-        <para>Specifies the &quot;Accent3&quot; themed style.</para>
+        <para>The &quot;Accent3&quot; themed style.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.BuiltInStyleId.Accent3_20percent">
       <summary>
-        <para>Specifies the &quot;20% - Accent3&quot; themed style.</para>
+        <para>The &quot;20% - Accent3&quot; themed style.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.BuiltInStyleId.Accent3_40percent">
       <summary>
-        <para>Specifies the &quot;40% - Accent3&quot; themed style.</para>
+        <para>The &quot;40% - Accent3&quot; themed style.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.BuiltInStyleId.Accent3_60percent">
       <summary>
-        <para>Specifies the &quot;60% - Accent3&quot; themed style.</para>
+        <para>The &quot;60% - Accent3&quot; themed style.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.BuiltInStyleId.Accent4">
       <summary>
-        <para>Specifies the &quot;Accent4&quot; themed style.</para>
+        <para>The &quot;Accent4&quot; themed style.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.BuiltInStyleId.Accent4_20percent">
       <summary>
-        <para>Specifies the &quot;20% - Accent4&quot; themed style.</para>
+        <para>The &quot;20% - Accent4&quot; themed style.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.BuiltInStyleId.Accent4_40percent">
       <summary>
-        <para>Specifies the &quot;40% - Accent4&quot; themed style.</para>
+        <para>The &quot;40% - Accent4&quot; themed style.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.BuiltInStyleId.Accent4_60percent">
       <summary>
-        <para>Specifies the &quot;60% - Accent4&quot; themed style.</para>
+        <para>The &quot;60% - Accent4&quot; themed style.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.BuiltInStyleId.Accent5">
       <summary>
-        <para>Specifies the &quot;Accent5&quot; themed style.</para>
+        <para>The &quot;Accent5&quot; themed style.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.BuiltInStyleId.Accent5_20percent">
       <summary>
-        <para>Specifies the &quot;20% - Accent5&quot; themed style.</para>
+        <para>The &quot;20% - Accent5&quot; themed style.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.BuiltInStyleId.Accent5_40percent">
       <summary>
-        <para>Specifies the &quot;40% - Accent5&quot; themed style.</para>
+        <para>The &quot;40% - Accent5&quot; themed style.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.BuiltInStyleId.Accent5_60percent">
       <summary>
-        <para>Specifies the &quot;60% - Accent5&quot; themed style.</para>
+        <para>The &quot;60% - Accent5&quot; themed style.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.BuiltInStyleId.Accent6">
       <summary>
-        <para>Specifies the &quot;Accent6&quot; themed style.</para>
+        <para>The &quot;Accent6&quot; themed style.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.BuiltInStyleId.Accent6_20percent">
       <summary>
-        <para>Specifies the &quot;20% - Accent6&quot; themed style.</para>
+        <para>The &quot;20% - Accent6&quot; themed style.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.BuiltInStyleId.Accent6_40percent">
       <summary>
-        <para>Specifies the &quot;40% - Accent6&quot; themed style.</para>
+        <para>The &quot;40% - Accent6&quot; themed style.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.BuiltInStyleId.Accent6_60percent">
       <summary>
-        <para>Specifies the &quot;60% - Accent6&quot; themed style.</para>
+        <para>The &quot;60% - Accent6&quot; themed style.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.BuiltInStyleId.Bad">
       <summary>
-        <para>Specifies the &quot;Bad&quot; style.</para>
+        <para>The &quot;Bad&quot; style.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.BuiltInStyleId.Calculation">
       <summary>
-        <para>Specifies the &quot;Calculation&quot; style.</para>
+        <para>The &quot;Calculation&quot; style.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.BuiltInStyleId.CheckCell">
       <summary>
-        <para>Specifies the &quot;Check Cell&quot; style.</para>
+        <para>The &quot;Check Cell&quot; style.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.BuiltInStyleId.Comma">
       <summary>
-        <para>Specifies the &quot;Comma&quot; style.</para>
+        <para>The &quot;Comma&quot; style.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.BuiltInStyleId.Comma0">
       <summary>
-        <para>Specifies the &quot;Comma&quot; style with no decimal places.</para>
+        <para>The &quot;Comma&quot; style with no decimal places.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.BuiltInStyleId.Currency">
       <summary>
-        <para>Specifies the &quot;Currency&quot; style.</para>
+        <para>The &quot;Currency&quot; style.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.BuiltInStyleId.Currency0">
       <summary>
-        <para>Specifies the &quot;Currency&quot; style with no decimal places.</para>
+        <para>The &quot;Currency&quot; style with no decimal places.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.BuiltInStyleId.Emphasis1">
@@ -853,77 +853,77 @@
     </member>
     <member name="F:DevExpress.Spreadsheet.BuiltInStyleId.Explanatory">
       <summary>
-        <para>Specifies the &quot;Explanatory&quot; style.</para>
+        <para>The &quot;Explanatory&quot; style.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.BuiltInStyleId.FollowedHyperlink">
       <summary>
-        <para>Specifies the &quot;Followed Hyperlink&quot; style.</para>
+        <para>The &quot;Followed Hyperlink&quot; style.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.BuiltInStyleId.Good">
       <summary>
-        <para>Specifies the &quot;Good&quot; style.</para>
+        <para>The &quot;Good&quot; style.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.BuiltInStyleId.Heading1">
       <summary>
-        <para>Specifies the &quot;Heading 1&quot; style.</para>
+        <para>The &quot;Heading 1&quot; style.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.BuiltInStyleId.Heading2">
       <summary>
-        <para>Specifies the &quot;Heading 2&quot; style.</para>
+        <para>The &quot;Heading 2&quot; style.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.BuiltInStyleId.Heading3">
       <summary>
-        <para>Specifies the &quot;Heading 3&quot; style.</para>
+        <para>The &quot;Heading 3&quot; style.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.BuiltInStyleId.Heading4">
       <summary>
-        <para>Specifies the &quot;Heading 4&quot; style.</para>
+        <para>The &quot;Heading 4&quot; style.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.BuiltInStyleId.Hyperlink">
       <summary>
-        <para>Specifies the &quot;Hyperlink&quot; style.</para>
+        <para>The &quot;Hyperlink&quot; style.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.BuiltInStyleId.Input">
       <summary>
-        <para>Specifies the &quot;Input&quot; style.</para>
+        <para>The &quot;Input&quot; style.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.BuiltInStyleId.LinkedCell">
       <summary>
-        <para>Specifies the &quot;Linked Cell&quot; style.</para>
+        <para>The &quot;Linked Cell&quot; style.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.BuiltInStyleId.Neutral">
       <summary>
-        <para>Specifies the &quot;Neutral&quot; style.</para>
+        <para>The &quot;Neutral&quot; style.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.BuiltInStyleId.Normal">
       <summary>
-        <para>Specifies the &quot;Normal&quot; style (the default cell style).</para>
+        <para>The &quot;Normal&quot; style (the default cell style).</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.BuiltInStyleId.Note">
       <summary>
-        <para>Specifies the &quot;Note&quot; style.</para>
+        <para>The &quot;Note&quot; style.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.BuiltInStyleId.Output">
       <summary>
-        <para>Specifies the &quot;Output&quot; style.</para>
+        <para>The &quot;Output&quot; style.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.BuiltInStyleId.Percent">
       <summary>
-        <para>Specifies the &quot;Percent&quot; style.</para>
+        <para>The &quot;Percent&quot; style.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.BuiltInStyleId.TableStyleLight1">
@@ -933,17 +933,17 @@
     </member>
     <member name="F:DevExpress.Spreadsheet.BuiltInStyleId.Title">
       <summary>
-        <para>Specifies the &quot;Title&quot; style.</para>
+        <para>The &quot;Title&quot; style.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.BuiltInStyleId.Total">
       <summary>
-        <para>Specifies the &quot;Total&quot; style.</para>
+        <para>The &quot;Total&quot; style.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.BuiltInStyleId.WarningText">
       <summary>
-        <para>Specifies the &quot;Warning Text&quot; style.</para>
+        <para>The &quot;Warning Text&quot; style.</para>
       </summary>
     </member>
     <member name="T:DevExpress.Spreadsheet.BuiltInTableStyleId">
@@ -7402,22 +7402,22 @@
     </member>
     <member name="T:DevExpress.Spreadsheet.ConnectorType">
       <summary>
-        <para>Lists values used to specify a connector type.</para>
+        <para>Lists connector types.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ConnectorType.Curved">
       <summary>
-        <para>Specifies a curved connector.</para>
+        <para>A curved connector.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ConnectorType.Elbow">
       <summary>
-        <para>Specifies an elbow-shaped connector.</para>
+        <para>An elbow-shaped connector.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ConnectorType.Straight">
       <summary>
-        <para>Specifies a straight line connector.</para>
+        <para>A straight line connector.</para>
       </summary>
     </member>
     <member name="T:DevExpress.Spreadsheet.CopiedRangePastedEventArgs">
@@ -7829,7 +7829,7 @@
     </member>
     <member name="P:DevExpress.Spreadsheet.DataBindingErrorEventArgs.DataBinding">
       <summary>
-        <para>Gets or sets a binding object whose binding caused an error.</para>
+        <para>Gets a binding object whose binding caused an error.</para>
       </summary>
       <value>A <see cref="T:DevExpress.Spreadsheet.WorksheetDataBinding"/> object that contains information on a specific data binding in a worksheet.</value>
     </member>
@@ -8412,7 +8412,7 @@
     </member>
     <member name="P:DevExpress.Spreadsheet.DateGrouping.GroupingType">
       <summary>
-        <para>Gets or sets which part of the DateTime value is used in the criteria.</para>
+        <para>Gets which part of the DateTime value is used in the criteria.</para>
       </summary>
       <value>A <see cref="T:DevExpress.Spreadsheet.DateTimeGroupingType"/> enumeration member.</value>
     </member>
@@ -8767,6 +8767,13 @@
         <para>Comma Separated Values - the plain text format that uses commas as separators between cell values. File extension - .csv.</para>
       </summary>
       <value>A document format.</value>
+    </member>
+    <member name="M:DevExpress.Spreadsheet.DocumentFormat.Equals(DevExpress.Spreadsheet.DocumentFormat)">
+      <summary>
+        <para>Determines whether the specified object is equal to the current <see cref="T:DevExpress.Spreadsheet.DocumentFormat"/> instance.</para>
+      </summary>
+      <param name="other">An object to compare with the current object.</param>
+      <returns>true if objects are equal; otherwise false.</returns>
     </member>
     <member name="M:DevExpress.Spreadsheet.DocumentFormat.Equals(System.Object)">
       <summary>
@@ -9249,277 +9256,277 @@
     </member>
     <member name="T:DevExpress.Spreadsheet.Drawings.ShapeFillPatternType">
       <summary>
-        <para>Lists values used to specify the preset patterns for the pattern fill.</para>
+        <para>Lists preset patterns for a pattern fill.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.Drawings.ShapeFillPatternType.Cross">
       <summary>
-        <para>Specifies a pattern of horizontal and vertical lines that cross each other.</para>
+        <para>A pattern of horizontal and vertical lines that cross each other.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.Drawings.ShapeFillPatternType.DarkDownwardDiagonal">
       <summary>
-        <para>Specifies a pattern of thick downward diagonal lines that are spaced 50% closer together than in the <see cref="F:DevExpress.Spreadsheet.Drawings.ShapeFillPatternType.DownwardDiagonal"/> pattern and whose width is two times greater than the width of <see cref="F:DevExpress.Spreadsheet.Drawings.ShapeFillPatternType.DownwardDiagonal"/> lines.</para>
+        <para>A pattern of thick downward diagonal lines that are spaced 50% closer together than in the <see cref="F:DevExpress.Spreadsheet.Drawings.ShapeFillPatternType.DownwardDiagonal"/> pattern and whose width is two times greater than the width of <see cref="F:DevExpress.Spreadsheet.Drawings.ShapeFillPatternType.DownwardDiagonal"/> lines.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.Drawings.ShapeFillPatternType.DarkHorizontal">
       <summary>
-        <para>Specifies a pattern of thick horizontal lines that are spaced 50% closer together than in the <see cref="F:DevExpress.Spreadsheet.Drawings.ShapeFillPatternType.Horizontal"/> pattern and whose width is two times greater than the width of <see cref="F:DevExpress.Spreadsheet.Drawings.ShapeFillPatternType.Horizontal"/> lines.</para>
+        <para>A pattern of thick horizontal lines that are spaced 50% closer together than in the <see cref="F:DevExpress.Spreadsheet.Drawings.ShapeFillPatternType.Horizontal"/> pattern and whose width is two times greater than the width of <see cref="F:DevExpress.Spreadsheet.Drawings.ShapeFillPatternType.Horizontal"/> lines.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.Drawings.ShapeFillPatternType.DarkUpwardDiagonal">
       <summary>
-        <para>Specifies a pattern of thick upward diagonal lines that are spaced 50% closer together than in the <see cref="F:DevExpress.Spreadsheet.Drawings.ShapeFillPatternType.UpwardDiagonal"/> pattern and whose width is two times greater than the width of <see cref="F:DevExpress.Spreadsheet.Drawings.ShapeFillPatternType.UpwardDiagonal"/> lines.</para>
+        <para>A pattern of thick upward diagonal lines that are spaced 50% closer together than in the <see cref="F:DevExpress.Spreadsheet.Drawings.ShapeFillPatternType.UpwardDiagonal"/> pattern and whose width is two times greater than the width of <see cref="F:DevExpress.Spreadsheet.Drawings.ShapeFillPatternType.UpwardDiagonal"/> lines.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.Drawings.ShapeFillPatternType.DarkVertical">
       <summary>
-        <para>Specifies a pattern of thick vertical lines that are spaced 50% closer together than in the <see cref="F:DevExpress.Spreadsheet.Drawings.ShapeFillPatternType.Vertical"/> pattern and whose width is two times greater than the width of <see cref="F:DevExpress.Spreadsheet.Drawings.ShapeFillPatternType.Vertical"/> lines.</para>
+        <para>A pattern of thick vertical lines that are spaced 50% closer together than in the <see cref="F:DevExpress.Spreadsheet.Drawings.ShapeFillPatternType.Vertical"/> pattern and whose width is two times greater than the width of <see cref="F:DevExpress.Spreadsheet.Drawings.ShapeFillPatternType.Vertical"/> lines.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.Drawings.ShapeFillPatternType.DashedDownwardDiagonal">
       <summary>
-        <para>Specifies a pattern of dashed downward diagonal lines.</para>
+        <para>A pattern of dashed downward diagonal lines.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.Drawings.ShapeFillPatternType.DashedHorizontal">
       <summary>
-        <para>Specifies a pattern of dashed horizontal lines.</para>
+        <para>A pattern of dashed horizontal lines.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.Drawings.ShapeFillPatternType.DashedUpwardDiagonal">
       <summary>
-        <para>Specifies a pattern of dashed upward diagonal lines.</para>
+        <para>A pattern of dashed upward diagonal lines.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.Drawings.ShapeFillPatternType.DashedVertical">
       <summary>
-        <para>Specifies a pattern of dashed vertical lines.</para>
+        <para>A pattern of dashed vertical lines.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.Drawings.ShapeFillPatternType.DiagonalBrick">
       <summary>
-        <para>Specifies a pattern that has the appearance of diagonally layered bricks.</para>
+        <para>A pattern that has the appearance of diagonally layered bricks.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.Drawings.ShapeFillPatternType.DiagonalCross">
       <summary>
-        <para>Specifies a pattern of crisscross diagonal lines.</para>
+        <para>A pattern of crisscross diagonal lines.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.Drawings.ShapeFillPatternType.Divot">
       <summary>
-        <para>Specifies a pattern that has the appearance of divots.</para>
+        <para>A pattern that has the appearance of divots.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.Drawings.ShapeFillPatternType.DottedDiamond">
       <summary>
-        <para>Specifies a pattern of dotted forward and backward diagonal lines that cross each other.</para>
+        <para>A pattern of dotted forward and backward diagonal lines that cross each other.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.Drawings.ShapeFillPatternType.DottedGrid">
       <summary>
-        <para>Specifies a pattern of dotted horizontal and vertical lines that cross each other.</para>
+        <para>A pattern of dotted horizontal and vertical lines that cross each other.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.Drawings.ShapeFillPatternType.DownwardDiagonal">
       <summary>
-        <para>Specifies a pattern of downward diagonal lines.</para>
+        <para>A pattern of downward diagonal lines.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.Drawings.ShapeFillPatternType.Horizontal">
       <summary>
-        <para>Specifies a pattern of horizontal lines.</para>
+        <para>A pattern of horizontal lines.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.Drawings.ShapeFillPatternType.HorizontalBrick">
       <summary>
-        <para>Specifies a pattern that has the appearance of horizontally layered bricks.</para>
+        <para>A pattern that has the appearance of horizontally layered bricks.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.Drawings.ShapeFillPatternType.LargeCheckerBoard">
       <summary>
-        <para>Specifies a pattern that has the appearance of a checkerboard with large squares.</para>
+        <para>A pattern that has the appearance of a checkerboard with large squares.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.Drawings.ShapeFillPatternType.LargeConfetti">
       <summary>
-        <para>Specifies a pattern that has the appearance of large confetti.</para>
+        <para>A pattern that has the appearance of large confetti.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.Drawings.ShapeFillPatternType.LargeGrid">
       <summary>
-        <para>Specifies a pattern of horizontal and vertical lines that cross each other to form a series of large squares. This pattern is equal to <see cref="F:DevExpress.Spreadsheet.Drawings.ShapeFillPatternType.Cross"/>.</para>
+        <para>A pattern of horizontal and vertical lines that cross each other to form a series of large squares. This pattern is equal to <see cref="F:DevExpress.Spreadsheet.Drawings.ShapeFillPatternType.Cross"/>.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.Drawings.ShapeFillPatternType.LightDownwardDiagonal">
       <summary>
-        <para>Specifies a pattern of thin downward diagonal lines that are spaced 50% closer together than in the <see cref="F:DevExpress.Spreadsheet.Drawings.ShapeFillPatternType.DownwardDiagonal"/> pattern.</para>
+        <para>A pattern of thin downward diagonal lines that are spaced 50% closer together than in the <see cref="F:DevExpress.Spreadsheet.Drawings.ShapeFillPatternType.DownwardDiagonal"/> pattern.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.Drawings.ShapeFillPatternType.LightHorizontal">
       <summary>
-        <para>Specifies a pattern of thin horizontal lines that are spaced 50% closer together than in the <see cref="F:DevExpress.Spreadsheet.Drawings.ShapeFillPatternType.Horizontal"/> pattern.</para>
+        <para>A pattern of thin horizontal lines that are spaced 50% closer together than in the <see cref="F:DevExpress.Spreadsheet.Drawings.ShapeFillPatternType.Horizontal"/> pattern.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.Drawings.ShapeFillPatternType.LightUpwardDiagonal">
       <summary>
-        <para>Specifies a pattern of thin upward diagonal lines that are spaced 50% closer together than in the <see cref="F:DevExpress.Spreadsheet.Drawings.ShapeFillPatternType.UpwardDiagonal"/> pattern.</para>
+        <para>A pattern of thin upward diagonal lines that are spaced 50% closer together than in the <see cref="F:DevExpress.Spreadsheet.Drawings.ShapeFillPatternType.UpwardDiagonal"/> pattern.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.Drawings.ShapeFillPatternType.LightVertical">
       <summary>
-        <para>Specifies a pattern of thin vertical lines that are spaced 50% closer together than in the <see cref="F:DevExpress.Spreadsheet.Drawings.ShapeFillPatternType.Vertical"/> pattern.</para>
+        <para>A pattern of thin vertical lines that are spaced 50% closer together than in the <see cref="F:DevExpress.Spreadsheet.Drawings.ShapeFillPatternType.Vertical"/> pattern.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.Drawings.ShapeFillPatternType.NarrowHorizontal">
       <summary>
-        <para>Specifies a pattern of thin horizontal lines that are spaced 75% closer together than in the <see cref="F:DevExpress.Spreadsheet.Drawings.ShapeFillPatternType.Horizontal"/> pattern.</para>
+        <para>A pattern of thin horizontal lines that are spaced 75% closer together than in the <see cref="F:DevExpress.Spreadsheet.Drawings.ShapeFillPatternType.Horizontal"/> pattern.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.Drawings.ShapeFillPatternType.NarrowVertical">
       <summary>
-        <para>Specifies a pattern of thin vertical lines that are spaced 75% closer together than in the <see cref="F:DevExpress.Spreadsheet.Drawings.ShapeFillPatternType.Vertical"/> pattern.</para>
+        <para>A pattern of thin vertical lines that are spaced 75% closer together than in the <see cref="F:DevExpress.Spreadsheet.Drawings.ShapeFillPatternType.Vertical"/> pattern.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.Drawings.ShapeFillPatternType.OpenDiamond">
       <summary>
-        <para>Specifies a pattern of forward and backward diagonal lines that cross each other.</para>
+        <para>A pattern of forward and backward diagonal lines that cross each other.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.Drawings.ShapeFillPatternType.Percent10">
       <summary>
-        <para>Specifies the 10% pattern. The ratio of the foreground color to the background color is 10 to 90.</para>
+        <para>A 10% pattern. The ratio of the foreground color to the background color is 10 to 90.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.Drawings.ShapeFillPatternType.Percent20">
       <summary>
-        <para>Specifies the 20% pattern. The ratio of the foreground color to the background color is 20 to 80.</para>
+        <para>A 20% pattern. The ratio of the foreground color to the background color is 20 to 80.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.Drawings.ShapeFillPatternType.Percent25">
       <summary>
-        <para>Specifies the 25% pattern. The ratio of the foreground color to the background color is 25 to 75.</para>
+        <para>A 25% pattern. The ratio of the foreground color to the background color is 25 to 75.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.Drawings.ShapeFillPatternType.Percent30">
       <summary>
-        <para>Specifies the 30% pattern. The ratio of the foreground color to the background color is 30 to 70.</para>
+        <para>A 30% pattern. The ratio of the foreground color to the background color is 30 to 70.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.Drawings.ShapeFillPatternType.Percent40">
       <summary>
-        <para>Specifies the 40% pattern. The ratio of the foreground color to the background color is 40 to 60.</para>
+        <para>A 40% pattern. The ratio of the foreground color to the background color is 40 to 60.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.Drawings.ShapeFillPatternType.Percent5">
       <summary>
-        <para>Specifies the 5% pattern. The ratio of the foreground color to the background color is 5 to 95.</para>
+        <para>A 5% pattern. The ratio of the foreground color to the background color is 5 to 95.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.Drawings.ShapeFillPatternType.Percent50">
       <summary>
-        <para>Specifies the 50% pattern. The ratio of the foreground color to the background color is 50 to 50.</para>
+        <para>A 50% pattern. The ratio of the foreground color to the background color is 50 to 50.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.Drawings.ShapeFillPatternType.Percent60">
       <summary>
-        <para>Specifies the 60% pattern. The ratio of the foreground color to the background color is 60 to 40.</para>
+        <para>A 60% pattern. The ratio of the foreground color to the background color is 60 to 40.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.Drawings.ShapeFillPatternType.Percent70">
       <summary>
-        <para>Specifies the 70% pattern. The ratio of the foreground color to the background color is 70 to 30.</para>
+        <para>A 70% pattern. The ratio of the foreground color to the background color is 70 to 30.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.Drawings.ShapeFillPatternType.Percent75">
       <summary>
-        <para>Specifies the 75% pattern. The ratio of the foreground color to the background color is 75 to 25.</para>
+        <para>A 75% pattern. The ratio of the foreground color to the background color is 75 to 25.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.Drawings.ShapeFillPatternType.Percent80">
       <summary>
-        <para>Specifies the 80% pattern. The ratio of the foreground color to the background color is 80 to 20.</para>
+        <para>A 80% pattern. The ratio of the foreground color to the background color is 80 to 20.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.Drawings.ShapeFillPatternType.Percent90">
       <summary>
-        <para>Specifies the 90% pattern. The ratio of the foreground color to the background color is 90 to 10.</para>
+        <para>A 90% pattern. The ratio of the foreground color to the background color is 90 to 10.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.Drawings.ShapeFillPatternType.Plaid">
       <summary>
-        <para>Specifies a pattern that has the appearance of the plaid material.</para>
+        <para>A pattern that has the appearance of the plaid material.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.Drawings.ShapeFillPatternType.Shingle">
       <summary>
-        <para>Specifies a pattern that has the appearance of diagonally layered shingles.</para>
+        <para>A pattern that has the appearance of diagonally layered shingles.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.Drawings.ShapeFillPatternType.SmallCheckerBoard">
       <summary>
-        <para>Specifies a pattern that has the appearance of a checkerboard with small squares.</para>
+        <para>A pattern that has the appearance of a checkerboard with small squares.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.Drawings.ShapeFillPatternType.SmallConfetti">
       <summary>
-        <para>Specifies a pattern that has the appearance of small confetti.</para>
+        <para>A pattern that has the appearance of small confetti.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.Drawings.ShapeFillPatternType.SmallGrid">
       <summary>
-        <para>Specifies a pattern of closely spaced horizontal and vertical lines that cross each other to form a series of small squares.</para>
+        <para>A pattern of closely spaced horizontal and vertical lines that cross each other to form a series of small squares.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.Drawings.ShapeFillPatternType.SolidDiamond">
       <summary>
-        <para>Specifies a pattern that has the appearance of a checkerboard made up of equal-sized diamonds.</para>
+        <para>A pattern that has the appearance of a checkerboard made up of equal-sized diamonds.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.Drawings.ShapeFillPatternType.Sphere">
       <summary>
-        <para>Specifies a pattern that has the appearance of adjacent spheres.</para>
+        <para>A pattern that has the appearance of adjacent spheres.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.Drawings.ShapeFillPatternType.Trellis">
       <summary>
-        <para>Specifies a pattern that has the appearance of a trellis.</para>
+        <para>A pattern that has the appearance of a trellis.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.Drawings.ShapeFillPatternType.UpwardDiagonal">
       <summary>
-        <para>Specifies a pattern of upward diagonal lines.</para>
+        <para>A pattern of upward diagonal lines.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.Drawings.ShapeFillPatternType.Vertical">
       <summary>
-        <para>Specifies a pattern of vertical lines.</para>
+        <para>A pattern of vertical lines.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.Drawings.ShapeFillPatternType.Wave">
       <summary>
-        <para>Specifies a pattern of horizontal lines that are composed of reversed tildes.</para>
+        <para>A pattern of horizontal lines that are composed of reversed tildes.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.Drawings.ShapeFillPatternType.Weave">
       <summary>
-        <para>Specifies a pattern that has the appearance of the woven material.</para>
+        <para>A pattern that has the appearance of the woven material.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.Drawings.ShapeFillPatternType.WideDownwardDiagonal">
       <summary>
-        <para>Specifies a pattern of wide downward diagonal lines whose width is three times greater than the width of <see cref="F:DevExpress.Spreadsheet.Drawings.ShapeFillPatternType.DownwardDiagonal"/> lines.</para>
+        <para>A pattern of wide downward diagonal lines whose width is three times greater than the width of <see cref="F:DevExpress.Spreadsheet.Drawings.ShapeFillPatternType.DownwardDiagonal"/> lines.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.Drawings.ShapeFillPatternType.WideUpwardDiagonal">
       <summary>
-        <para>Specifies a pattern of wide upward diagonal lines whose width is three times greater than the width of <see cref="F:DevExpress.Spreadsheet.Drawings.ShapeFillPatternType.UpwardDiagonal"/> lines.</para>
+        <para>A pattern of wide upward diagonal lines whose width is three times greater than the width of <see cref="F:DevExpress.Spreadsheet.Drawings.ShapeFillPatternType.UpwardDiagonal"/> lines.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.Drawings.ShapeFillPatternType.ZigZag">
       <summary>
-        <para>Specifies a pattern of horizontal lines that are composed of zigzags.</para>
+        <para>A pattern of horizontal lines that are composed of zigzags.</para>
       </summary>
     </member>
     <member name="T:DevExpress.Spreadsheet.Drawings.ShapeFillType">
@@ -9624,92 +9631,92 @@
     </member>
     <member name="T:DevExpress.Spreadsheet.Drawings.ShapeLineCompoundType">
       <summary>
-        <para>Lists values used to specify the compound line type.</para>
+        <para>Lists values that specify the compound line type.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.Drawings.ShapeLineCompoundType.Double">
       <summary>
-        <para>Specifies a line style composed of double lines of equal width.</para>
+        <para>A line style composed of double lines of equal width.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.Drawings.ShapeLineCompoundType.Single">
       <summary>
-        <para>Specifies a single line of normal width.</para>
+        <para>A single line of normal width.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.Drawings.ShapeLineCompoundType.ThickThin">
       <summary>
-        <para>Specifies a line style composed of double lines, the first of which is thick and the second, thin.</para>
+        <para>A line style composed of double lines, the first of which is thick and the second, thin.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.Drawings.ShapeLineCompoundType.ThinThick">
       <summary>
-        <para>Specifies a line style composed of double lines, the first of which is thin and the second, thick.</para>
+        <para>A line style composed of double lines, the first of which is thin and the second, thick.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.Drawings.ShapeLineCompoundType.Triple">
       <summary>
-        <para>Specifies a line style composed of triple lines, the first of which is thin, the second, thick, and the last one, thin.</para>
+        <para>A line style composed of triple lines, the first of which is thin, the second, thick, and the last one, thin.</para>
       </summary>
     </member>
     <member name="T:DevExpress.Spreadsheet.Drawings.ShapeLineDashing">
       <summary>
-        <para>Lists values used to specify the line dash type.</para>
+        <para>Lists values that specify the line dash type.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.Drawings.ShapeLineDashing.Dash">
       <summary>
-        <para>Specifies a line consisting of dashes.The binary pattern is 1111000 (four filled points and three spaces).</para>
+        <para>A line consisting of dashes. The binary pattern is 1111000 (four filled points and three spaces).</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.Drawings.ShapeLineDashing.DashDot">
       <summary>
-        <para>Specifies a line consisting of a repeating dash-dot pattern.The binary pattern is 11110001000 (four filled points - three spaces - one filled point - three spaces).</para>
+        <para>A line consisting of a repeating dash-dot pattern. The binary pattern is 11110001000 (four filled points - three spaces - one filled point - three spaces).</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.Drawings.ShapeLineDashing.Dot">
       <summary>
-        <para>Specifies a line consisting of dots.The binary pattern is 1000 (one filled point and three spaces).</para>
+        <para>A line consisting of dots. The binary pattern is 1000 (one filled point and three spaces).</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.Drawings.ShapeLineDashing.LongDash">
       <summary>
-        <para>Specifies a line consisting of long dashes.The binary pattern is 11111111000 (eight filled points and three spaces).</para>
+        <para>A line consisting of long dashes. The binary pattern is 11111111000 (eight filled points and three spaces).</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.Drawings.ShapeLineDashing.LongDashDot">
       <summary>
-        <para>Specifies a line consisting of a repeating long dash-dot pattern.The binary pattern is 111111110001000 (eight filled points - three spaces - one filled point - three spaces).</para>
+        <para>A line consisting of a repeating long dash-dot pattern. The binary pattern is 111111110001000 (eight filled points - three spaces - one filled point - three spaces).</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.Drawings.ShapeLineDashing.LongDashDotDot">
       <summary>
-        <para>Specifies a line consisting of a repeating long dash-dot-dot pattern.The binary pattern is 1111111100010001000 (eight filled points - three spaces - one filled point - three spaces - one filled point - three spaces).</para>
+        <para>A line consisting of a repeating long dash-dot-dot pattern. The binary pattern is 1111111100010001000 (eight filled points - three spaces - one filled point - three spaces - one filled point - three spaces).</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.Drawings.ShapeLineDashing.Solid">
       <summary>
-        <para>Specifies a solid line.The binary pattern is 1 (a continuous line).</para>
+        <para>A solid line. The binary pattern is 1 (a continuous line).</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.Drawings.ShapeLineDashing.SystemDash">
       <summary>
-        <para>Specifies a line consisting of short dashes.The binary pattern is 1110 (three filled points and one space).</para>
+        <para>A line consisting of short dashes. The binary pattern is 1110 (three filled points and one space).</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.Drawings.ShapeLineDashing.SystemDashDot">
       <summary>
-        <para>Specifies a line consisting of a repeating short dash-dot pattern.The binary pattern is 111010 (three filled points - one space - one filled point - one space).</para>
+        <para>A line consisting of a repeating short dash-dot pattern. The binary pattern is 111010 (three filled points - one space - one filled point - one space).</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.Drawings.ShapeLineDashing.SystemDashDotDot">
       <summary>
-        <para>Specifies a line consisting of a repeating short dash-dot-dot pattern.The binary pattern is 11101010 (three filled points - one space - one filled point - one space - one filled point - one space).</para>
+        <para>A line consisting of a repeating short dash-dot-dot pattern. The binary pattern is 11101010 (three filled points - one space - one filled point - one space - one filled point - one space).</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.Drawings.ShapeLineDashing.SystemDot">
       <summary>
-        <para>Specifies a line consisting of dots with a short space between them.The binary pattern is 10 (one filled point and one space).</para>
+        <para>A line consisting of dots with a short space between them. The binary pattern is 10 (one filled point and one space).</para>
       </summary>
     </member>
     <member name="T:DevExpress.Spreadsheet.Drawings.ShapeLineEndCapStyle">
@@ -9734,7 +9741,7 @@
     </member>
     <member name="T:DevExpress.Spreadsheet.Drawings.ShapeLineJoinStyle">
       <summary>
-        <para>Lists values used to specify the join style for line ends.</para>
+        <para>Lists values that specify the line join type.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.Drawings.ShapeLineJoinStyle.Bevel">
@@ -9913,9 +9920,9 @@
     </member>
     <member name="P:DevExpress.Spreadsheet.Drawings.ShapePictureFill.SourceRect">
       <summary>
-        <para>Gets or sets the part of the picture used for the fill.</para>
+        <para>Gets the part of the picture used for the fill.</para>
       </summary>
-      <value>A <see cref="T:DevExpress.Spreadsheet.Drawings.ShapeRectangleOffset"/> object that specifies the source rectangle offset from the corresponding edge of the bounding box.</value>
+      <value>An object that specifies the source rectangle offsets from the corresponding edges of the bounding box.</value>
     </member>
     <member name="P:DevExpress.Spreadsheet.Drawings.ShapePictureFill.Stretch">
       <summary>
@@ -13852,7 +13859,7 @@ A <see cref="T:DevExpress.Spreadsheet.Formulas.ConstantExpression"/> class insta
     </member>
     <member name="T:DevExpress.Spreadsheet.Functions.ParameterInfo">
       <summary>
-        <para>Defines a parameter to pass to the custom function.</para>
+        <para>Defines a parameter to pass to a custom function.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Spreadsheet.Functions.ParameterInfo.#ctor(DevExpress.Spreadsheet.Functions.ParameterType)">
@@ -15144,37 +15151,37 @@ A <see cref="T:DevExpress.Spreadsheet.Formulas.ConstantExpression"/> class insta
     </member>
     <member name="T:DevExpress.Spreadsheet.IgnoredErrorType">
       <summary>
-        <para>Lists types of errors which occur in cell formulas and can be ignored using the <see cref="P:DevExpress.Spreadsheet.Worksheet.IgnoredErrors"/> property.</para>
+        <para>Lists types of errors that can occur in cell formulas. Use the <see cref="P:DevExpress.Spreadsheet.Worksheet.IgnoredErrors"/> property to ignore these errors.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.IgnoredErrorType.EmptyCellReferences">
       <summary>
-        <para>The formula contains a reference to an empty cell. The screenshot that illustrates this type of error is taken with Microsoft Excel.</para>
+        <para>The formula contains a reference to an empty cell.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.IgnoredErrorType.EvaluateToError">
       <summary>
-        <para>The cell contains a formula that results in an error. Error values include #DIV/0!, #N/A, #NAME?, #NULL!, #NUM!, #REF!, and #VALUE!.</para>
+        <para>A cell contains a formula that results in an error. Error values include #DIV/0!, #N/A, #NAME?, #NULL!, #NUM!, #REF!, and #VALUE!.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.IgnoredErrorType.FormulaRange">
       <summary>
-        <para>The formula omits certain cells in a region. The rule checks whether the formula in the cell which references a cell range includes a range of cells that is adjacent to the cell that contains the formula.The screenshot that illustrates this type of error is taken with Microsoft Excel.</para>
+        <para>The formula omits certain cells in a region. The rule checks whether the formula in the cell which references a cell range includes a range of cells that is adjacent to the cell that contains the formula.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.IgnoredErrorType.InconsistentColumnFormula">
       <summary>
-        <para>A calculated column includes formulas that are different from the column formula.The screenshot that illustrates this type of error is taken with Microsoft Excel.</para>
+        <para>A calculated column includes formulas that are different from the column formula.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.IgnoredErrorType.InconsistentFormula">
       <summary>
-        <para>The formula does not match the pattern of other formulas near it. The screenshot that illustrates this type of error is taken with Microsoft Excel.</para>
+        <para>The formula does not match the pattern of other formulas near it.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.IgnoredErrorType.ListDataValidation">
       <summary>
-        <para>A cell value does not comply with the Data Validation rule that restricts data to predefined items in a list.The screenshot that illustrates this type of error is taken with Microsoft Excel.</para>
+        <para>A cell value does not comply with the Data Validation rule that restricts data to predefined items in a list.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.IgnoredErrorType.None">
@@ -15184,17 +15191,17 @@ A <see cref="T:DevExpress.Spreadsheet.Formulas.ConstantExpression"/> class insta
     </member>
     <member name="F:DevExpress.Spreadsheet.IgnoredErrorType.NumberAsText">
       <summary>
-        <para>Numbers stored as text or preceded by an apostrophe.The screenshot that illustrates this type of error is taken with Microsoft Excel.</para>
+        <para>Numbers stored as text or preceded by an apostrophe.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.IgnoredErrorType.TextDate">
       <summary>
-        <para>A text date that might be misinterpreted as the wrong century.The screenshot that illustrates this type of error is taken with Microsoft Excel.</para>
+        <para>A text date that might be misinterpreted as the wrong century.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.IgnoredErrorType.UnlockedFormula">
       <summary>
-        <para>The cell containing formula is not locked for protection.The screenshot that illustrates this type of error is taken with Microsoft Excel.</para>
+        <para>A cell with a formula is not locked for protection.</para>
       </summary>
     </member>
     <member name="T:DevExpress.Spreadsheet.InsertCellsMode">
@@ -16149,12 +16156,12 @@ A <see cref="T:DevExpress.Spreadsheet.Formulas.ConstantExpression"/> class insta
     </member>
     <member name="F:DevExpress.Spreadsheet.MergeCellsMode.Default">
       <summary>
-        <para>If the cell range specified to be merged intersects other merged cells, a cell range including all these intersecting ranges is merged.</para>
+        <para>If a cell range to be merged intersects other merged cells, a cell range that includes all the intersecting ranges is merged.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.MergeCellsMode.IgnoreIntersections">
       <summary>
-        <para>If the cell range specified to be merged intersects other merged cells, these intersections are ignored.</para>
+        <para>If a cell range to be merged intersects other merged cells, these intersections are ignored.</para>
       </summary>
     </member>
     <member name="T:DevExpress.Spreadsheet.PageBreaksCollection">
@@ -16422,7 +16429,7 @@ A <see cref="T:DevExpress.Spreadsheet.Formulas.ConstantExpression"/> class insta
     </member>
     <member name="T:DevExpress.Spreadsheet.PatternType">
       <summary>
-        <para>Lists the types of patterns available for cell shading.</para>
+        <para>Lists patterns to apply to a cell.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.PatternType.DarkDown">
@@ -17525,7 +17532,7 @@ to group by in date range grouping.</param>
     </member>
     <member name="T:DevExpress.Spreadsheet.PivotFieldGroupByType">
       <summary>
-        <para>Lists values used to specify how items of a row or column field are combined into groups.</para>
+        <para>Lists values that specify how items of a row or column field are grouped.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.PivotFieldGroupByType.Days">
@@ -20742,897 +20749,897 @@ to group by in date range grouping.</param>
     </member>
     <member name="T:DevExpress.Spreadsheet.ShapeGeometryPreset">
       <summary>
-        <para>Lists values used to specify the shape geometry type.</para>
+        <para>Lists values that specify the shape geometry type.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.AccentBorderLineCallout1">
       <summary>
-        <para>Specifies a callout with a border, accent bar, and a straight callout line.</para>
+        <para>A callout with a border, accent bar, and a straight callout line.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.AccentBorderLineCallout2">
       <summary>
-        <para>Specifies a callout with a border, accent bar, and a two-segment callout line.</para>
+        <para>A callout with a border, accent bar, and a two-segment callout line.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.AccentBorderLineCallout3">
       <summary>
-        <para>Specifies a callout with a border, accent bar, and a three-segment callout line.</para>
+        <para>A callout with a border, accent bar, and a three-segment callout line.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.AccentLineCallout1">
       <summary>
-        <para>Specifies a callout with an accent bar and a straight callout line.</para>
+        <para>A callout with an accent bar and a straight callout line.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.AccentLineCallout2">
       <summary>
-        <para>Specifies a callout with an accent bar and a two-segment callout line.</para>
+        <para>A callout with an accent bar and a two-segment callout line.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.AccentLineCallout3">
       <summary>
-        <para>Specifies a callout with an accent bar and a three-segment callout line.</para>
+        <para>A callout with an accent bar and a three-segment callout line.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.ActionButtonBackPrevious">
       <summary>
-        <para>Specifies the Back or Previous button.</para>
+        <para>The Back or Previous button.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.ActionButtonBeginning">
       <summary>
-        <para>Specifies the Beginning button.</para>
+        <para>The Beginning button.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.ActionButtonBlank">
       <summary>
-        <para>Specifies an empty button.</para>
+        <para>An empty button.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.ActionButtonDocument">
       <summary>
-        <para>Specifies the Document button.</para>
+        <para>The Document button.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.ActionButtonEnd">
       <summary>
-        <para>Specifies the End button.</para>
+        <para>The End button.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.ActionButtonForwardNext">
       <summary>
-        <para>Specifies the Forward or Next button.</para>
+        <para>The Forward or Next button.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.ActionButtonHelp">
       <summary>
-        <para>Specifies the Help button.</para>
+        <para>The Help button.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.ActionButtonHome">
       <summary>
-        <para>Specifies the Home button.</para>
+        <para>The Home button.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.ActionButtonInformation">
       <summary>
-        <para>Specifies the Information button.</para>
+        <para>The Information button.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.ActionButtonMovie">
       <summary>
-        <para>Specifies the Movie button.</para>
+        <para>The Movie button.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.ActionButtonReturn">
       <summary>
-        <para>Specifies the Return button.</para>
+        <para>The Return button.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.ActionButtonSound">
       <summary>
-        <para>Specifies the Sound button.</para>
+        <para>The Sound button.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.Arc">
       <summary>
-        <para>Specifies an arc.</para>
+        <para>An arc.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.BentArrow">
       <summary>
-        <para>Specifies a block arrow that follows a curved 90-degree angle.</para>
+        <para>A block arrow that follows a curved 90-degree angle.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.BentUpArrow">
       <summary>
-        <para>Specifies a block arrow that follows a sharp 90-degree angle and points up by default.</para>
+        <para>A block arrow that follows a sharp 90-degree angle and points up by default.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.Bevel">
       <summary>
-        <para>Specifies a bevel.</para>
+        <para>A bevel.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.BlockArc">
       <summary>
-        <para>Specifies a block arc.</para>
+        <para>A block arc.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.BorderLineCallout1">
       <summary>
-        <para>Specifies a callout with a border and a straight callout line.</para>
+        <para>A callout with a border and a straight callout line.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.BorderLineCallout2">
       <summary>
-        <para>Specifies a callout with a border and a two-segment callout line.</para>
+        <para>A callout with a border and a two-segment callout line.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.BorderLineCallout3">
       <summary>
-        <para>Specifies a callout with a border and a three-segment callout line.</para>
+        <para>A callout with a border and a three-segment callout line.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.Can">
       <summary>
-        <para>Specifies a can.</para>
+        <para>A can.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.ChartPlus">
       <summary>
-        <para>Specifies a rectangle divided vertically and horizontally into four quarters.</para>
+        <para>A rectangle divided vertically and horizontally into four quarters.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.ChartStar">
       <summary>
-        <para>Specifies a rectangle divided into six parts along a vertical line and diagonal lines.</para>
+        <para>A rectangle divided into six parts along a vertical line and diagonal lines.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.ChartX">
       <summary>
-        <para>Specifies a rectangle divided into four parts along diagonal lines.</para>
+        <para>A rectangle divided into four parts along diagonal lines.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.Chevron">
       <summary>
-        <para>Specifies a chevron.</para>
+        <para>A chevron.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.Chord">
       <summary>
-        <para>Specifies a circle with a chord.</para>
+        <para>A circle with a chord.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.CircularArrow">
       <summary>
-        <para>Specifies a block arrow that follows a curved 180-degree angle.</para>
+        <para>A block arrow that follows a curved 180-degree angle.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.Cloud">
       <summary>
-        <para>Specifies a cloud shape.</para>
+        <para>A cloud shape.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.CloudCallout">
       <summary>
-        <para>Specifies a cloud callout.</para>
+        <para>A cloud callout.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.CornerTabs">
       <summary>
-        <para>Specifies four right triangles that define a rectangular shape.</para>
+        <para>Four right triangles that define a rectangular shape.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.Cross">
       <summary>
-        <para>Specifies a cross.</para>
+        <para>A cross.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.Cube">
       <summary>
-        <para>Specifies a cube.</para>
+        <para>A cube.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.CurvedDownArrow">
       <summary>
-        <para>Specifies a block arrow that curves down.</para>
+        <para>A block arrow that curves down.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.CurvedDownRibbon">
       <summary>
-        <para>Specifies a curved down ribbon banner.</para>
+        <para>A curved down ribbon banner.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.CurvedLeftArrow">
       <summary>
-        <para>Specifies a block arrow that curves left.</para>
+        <para>A block arrow that curves left.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.CurvedRightArrow">
       <summary>
-        <para>Specifies a block arrow that curves right.</para>
+        <para>A block arrow that curves right.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.CurvedUpArrow">
       <summary>
-        <para>Specifies a block arrow that curves up.</para>
+        <para>A block arrow that curves up.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.CurvedUpRibbon">
       <summary>
-        <para>Specifies a curved up ribbon banner.</para>
+        <para>A curved up ribbon banner.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.Custom">
       <summary>
-        <para>Specifies a custom geometric shape.</para>
+        <para>A custom shape.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.Decagon">
       <summary>
-        <para>Specifies a decagon.</para>
+        <para>A decagon.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.DiagonalStripe">
       <summary>
-        <para>Specifies a diagonal stripe.</para>
+        <para>A diagonal stripe.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.Diamond">
       <summary>
-        <para>Specifies a diamond.</para>
+        <para>A diamond.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.Division">
       <summary>
-        <para>Specifies a division sign.</para>
+        <para>A division sign.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.Dodecagon">
       <summary>
-        <para>Specifies a dodecagon.</para>
+        <para>A dodecagon.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.Donut">
       <summary>
-        <para>Specifies a donut.</para>
+        <para>A donut.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.DoubleBrace">
       <summary>
-        <para>Specifies a pair of braces.</para>
+        <para>A pair of braces.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.DoubleBracket">
       <summary>
-        <para>Specifies a pair of brackets.</para>
+        <para>A pair of brackets.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.DoubleWave">
       <summary>
-        <para>Specifies a double wave.</para>
+        <para>A double wave.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.DownArrow">
       <summary>
-        <para>Specifies a block arrow that points down.</para>
+        <para>A block arrow that points down.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.DownArrowCallout">
       <summary>
-        <para>Specifies a callout with an arrow that points down.</para>
+        <para>A callout with an arrow that points down.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.DownRibbon">
       <summary>
-        <para>Specifies a ribbon banner with its center area below the ribbon ends.</para>
+        <para>A ribbon banner with its center area below the ribbon ends.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.Equal">
       <summary>
-        <para>Specifies an equal sign.</para>
+        <para>An equal sign.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.Explosion1">
       <summary>
-        <para>Specifies an explosion shape.</para>
+        <para>An explosion shape.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.Explosion2">
       <summary>
-        <para>Specifies an explosion shape.</para>
+        <para>An explosion shape.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.FlowChartAlternateProcess">
       <summary>
-        <para>Specifies the Alternate Process flowchart symbol.</para>
+        <para>The Alternate Process flowchart symbol.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.FlowChartCollate">
       <summary>
-        <para>Specifies the Collate flowchart symbol.</para>
+        <para>The Collate flowchart symbol.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.FlowChartConnector">
       <summary>
-        <para>Specifies the Connector flowchart symbol.</para>
+        <para>The Connector flowchart symbol.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.FlowChartDecision">
       <summary>
-        <para>Specifies the Decision flowchart symbol.</para>
+        <para>The Decision flowchart symbol.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.FlowChartDelay">
       <summary>
-        <para>Specifies the Delay flowchart symbol.</para>
+        <para>The Delay flowchart symbol.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.FlowChartDirectAccessStorage">
       <summary>
-        <para>Specifies the Direct Access Storage flowchart symbol.</para>
+        <para>The Direct Access Storage flowchart symbol.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.FlowChartDisplay">
       <summary>
-        <para>Specifies the Display flowchart symbol.</para>
+        <para>The Display flowchart symbol.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.FlowChartDocument">
       <summary>
-        <para>Specifies the Document flowchart symbol.</para>
+        <para>The Document flowchart symbol.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.FlowChartExtract">
       <summary>
-        <para>Specifies the Extract flowchart symbol.</para>
+        <para>The Extract flowchart symbol.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.FlowChartInputOutput">
       <summary>
-        <para>Specifies the Input/Output (Data) flowchart symbol.</para>
+        <para>The Input/Output (Data) flowchart symbol.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.FlowChartInternalStorage">
       <summary>
-        <para>Specifies the Internal Storage flowchart symbol.</para>
+        <para>The Internal Storage flowchart symbol.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.FlowChartMagneticDisk">
       <summary>
-        <para>Specifies the Magnetic Disk flowchart symbol.</para>
+        <para>The Magnetic Disk flowchart symbol.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.FlowChartMagneticTape">
       <summary>
-        <para>Specifies the Magnetic Tape (Sequential Access Storage) flowchart symbol.</para>
+        <para>The Magnetic Tape (Sequential Access Storage) flowchart symbol.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.FlowChartManualInput">
       <summary>
-        <para>Specifies the Manual Input flowchart symbol.</para>
+        <para>The Manual Input flowchart symbol.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.FlowChartManualOperation">
       <summary>
-        <para>Specifies the Manual Operation flowchart symbol.</para>
+        <para>The Manual Operation flowchart symbol.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.FlowChartMerge">
       <summary>
-        <para>Specifies the Merge flowchart symbol.</para>
+        <para>The Merge flowchart symbol.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.FlowChartMultidocument">
       <summary>
-        <para>Specifies the Multi-document flowchart symbol.</para>
+        <para>The Multi-document flowchart symbol.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.FlowChartOfflineStorage">
       <summary>
-        <para>Specifies the Offline Storage flowchart symbol.</para>
+        <para>The Offline Storage flowchart symbol.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.FlowChartOffpageConnector">
       <summary>
-        <para>Specifies the Off-page Connector flowchart symbol.</para>
+        <para>The Off-page Connector flowchart symbol.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.FlowChartOr">
       <summary>
-        <para>Specifies the Or flowchart symbol.</para>
+        <para>The Or flowchart symbol.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.FlowChartPredefinedProcess">
       <summary>
-        <para>Specifies the Predefined Process flowchart symbol.</para>
+        <para>The Predefined Process flowchart symbol.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.FlowChartPreparation">
       <summary>
-        <para>Specifies the Preparation flowchart symbol.</para>
+        <para>The Preparation flowchart symbol.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.FlowChartProcess">
       <summary>
-        <para>Specifies the Process flowchart symbol.</para>
+        <para>The Process flowchart symbol.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.FlowChartPunchedCard">
       <summary>
-        <para>Specifies the Card flowchart symbol.</para>
+        <para>The Card flowchart symbol.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.FlowChartPunchedTape">
       <summary>
-        <para>Specifies the Punched Tape flowchart symbol.</para>
+        <para>The Punched Tape flowchart symbol.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.FlowChartSort">
       <summary>
-        <para>Specifies the Sort flowchart symbol.</para>
+        <para>The Sort flowchart symbol.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.FlowChartStoredData">
       <summary>
-        <para>Specifies the Stored Data flowchart symbol.</para>
+        <para>The Stored Data flowchart symbol.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.FlowChartSummingJunction">
       <summary>
-        <para>Specifies the Summing Junction flowchart symbol.</para>
+        <para>The Summing Junction flowchart symbol.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.FlowChartTerminator">
       <summary>
-        <para>Specifies the Terminator flowchart symbol.</para>
+        <para>The Terminator flowchart symbol.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.FoldedCorner">
       <summary>
-        <para>Specifies a rectangle with a folded corner.</para>
+        <para>A rectangle with a folded corner.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.Frame">
       <summary>
-        <para>Specifies a rectangular picture frame.</para>
+        <para>A rectangular picture frame.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.Funnel">
       <summary>
-        <para>Specifies a funnel.</para>
+        <para>A funnel.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.Gear6">
       <summary>
-        <para>Specifies a gear with six teeth.</para>
+        <para>A gear with six teeth.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.Gear9">
       <summary>
-        <para>Specifies a gear with nine teeth.</para>
+        <para>A gear with nine teeth.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.HalfFrame">
       <summary>
-        <para>Specifies half of a rectangular picture frame.</para>
+        <para>Half of a rectangular picture frame.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.Heart">
       <summary>
-        <para>Specifies a heart.</para>
+        <para>A heart.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.Heptagon">
       <summary>
-        <para>Specifies a heptagon.</para>
+        <para>A heptagon.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.Hexagon">
       <summary>
-        <para>Specifies a hexagon.</para>
+        <para>A hexagon.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.HorizontalScroll">
       <summary>
-        <para>Specifies a horizontal scroll.</para>
+        <para>A horizontal scroll.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.LeftArrow">
       <summary>
-        <para>Specifies a block arrow that points left.</para>
+        <para>A block arrow that points left.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.LeftArrowCallout">
       <summary>
-        <para>Specifies a callout with an arrow that points left.</para>
+        <para>A callout with an arrow that points left.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.LeftBrace">
       <summary>
-        <para>Specifies an opening brace.</para>
+        <para>An opening brace.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.LeftBracket">
       <summary>
-        <para>Specifies an opening bracket.</para>
+        <para>An opening bracket.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.LeftCircularArrow">
       <summary>
-        <para>Specifies a circular arrow pointing counter-clockwise.</para>
+        <para>A circular arrow pointing counter-clockwise.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.LeftRightArrow">
       <summary>
-        <para>Specifies a block arrow that points left and right.</para>
+        <para>A block arrow that points left and right.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.LeftRightArrowCallout">
       <summary>
-        <para>Specifies a callout with arrows that point both left and right.</para>
+        <para>A callout with arrows that point both left and right.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.LeftRightCircularArrow">
       <summary>
-        <para>Specifies a circular arrow pointing both clockwise and counter-clockwise.</para>
+        <para>A circular arrow pointing both clockwise and counter-clockwise.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.LeftRightRibbon">
       <summary>
-        <para>Specifies a ribbon with an arrow at both ends.</para>
+        <para>A ribbon with an arrow at both ends.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.LeftRightUpArrow">
       <summary>
-        <para>Specifies a block arrow that points left, right, and up.</para>
+        <para>A block arrow that points left, right, and up.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.LeftUpArrow">
       <summary>
-        <para>Specifies a block arrow that points left and up.</para>
+        <para>A block arrow that points left and up.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.LightningBolt">
       <summary>
-        <para>Specifies a lightning bolt.</para>
+        <para>A lightning bolt.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.LineCallout1">
       <summary>
-        <para>Specifies a callout with no border and a straight callout line.</para>
+        <para>A callout with no border and a straight callout line.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.LineCallout2">
       <summary>
-        <para>Specifies a callout with no border and a two-segment callout line.</para>
+        <para>A callout with no border and a two-segment callout line.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.LineCallout3">
       <summary>
-        <para>Specifies a callout with no border and a three-segment callout line.</para>
+        <para>A callout with no border and a three-segment callout line.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.LineInverse">
       <summary>
-        <para>Specifies an inverse line shape.</para>
+        <para>An inverse line shape.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.LShape">
       <summary>
-        <para>Specifies an L-shape.</para>
+        <para>An L-shape.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.Minus">
       <summary>
-        <para>Specifies a minus sign.</para>
+        <para>A minus sign.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.Moon">
       <summary>
-        <para>Specifies a moon shape.</para>
+        <para>A moon shape.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.Multiply">
       <summary>
-        <para>Specifies a multiplication sign.</para>
+        <para>A multiplication sign.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.NonIsoscelesTrapezoid">
       <summary>
-        <para>Specifies a non-isosceles trapezoid.</para>
+        <para>A non-isosceles trapezoid.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.NoSymbol">
       <summary>
-        <para>Specifies a prohibition sign.</para>
+        <para>A prohibition sign.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.NotchedRightArrow">
       <summary>
-        <para>Specifies a notched block arrow that points right.</para>
+        <para>A notched block arrow that points right.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.NotEqual">
       <summary>
-        <para>Specifies a not-equal sign.</para>
+        <para>A not-equal sign.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.Octagon">
       <summary>
-        <para>Specifies an octagon.</para>
+        <para>An octagon.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.Oval">
       <summary>
-        <para>Specifies an oval.</para>
+        <para>An oval.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.OvalCallout">
       <summary>
-        <para>Specifies an oval-shaped callout.</para>
+        <para>An oval-shaped callout.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.Parallelogram">
       <summary>
-        <para>Specifies a parallelogram.</para>
+        <para>A parallelogram.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.Pentagon">
       <summary>
-        <para>Specifies a pentagon.</para>
+        <para>A pentagon.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.Pie">
       <summary>
-        <para>Specifies a circle with a portion missing.</para>
+        <para>A circle with a portion missing.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.PieWedge">
       <summary>
-        <para>Specifies a quarter of a circular shape.</para>
+        <para>A quarter of a circular shape.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.Plaque">
       <summary>
-        <para>Specifies a plaque.</para>
+        <para>A plaque.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.PlaqueTabs">
       <summary>
-        <para>Specifies four quarter circles that define a rectangular shape.</para>
+        <para>Four quarter circles that define a rectangular shape.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.Plus">
       <summary>
-        <para>Specifies a plus sign.</para>
+        <para>A plus sign.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.QuadArrow">
       <summary>
-        <para>Specifies a block arrow that points up, down, left, and right.</para>
+        <para>A block arrow that points up, down, left, and right.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.QuadArrowCallout">
       <summary>
-        <para>Specifies a callout with arrows that point up, down, left, and right.</para>
+        <para>A callout with arrows that point up, down, left, and right.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.Rectangle">
       <summary>
-        <para>Specifies a rectangle.</para>
+        <para>A rectangle.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.RectangularCallout">
       <summary>
-        <para>Specifies a rectangular callout.</para>
+        <para>A rectangular callout.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.RegularPentagon">
       <summary>
-        <para>Specifies a regular pentagon.</para>
+        <para>A regular pentagon.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.RightArrow">
       <summary>
-        <para>Specifies a block arrow that points right.</para>
+        <para>A block arrow that points right.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.RightArrowCallout">
       <summary>
-        <para>Specifies a callout with an arrow that points right.</para>
+        <para>A callout with an arrow that points right.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.RightBrace">
       <summary>
-        <para>Specifies a closing brace.</para>
+        <para>A closing brace.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.RightBracket">
       <summary>
-        <para>Specifies a closing bracket.</para>
+        <para>A closing bracket.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.RightTriangle">
       <summary>
-        <para>Specifies a right triangle.</para>
+        <para>A right triangle.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.RoundDiagonalCornerRectangle">
       <summary>
-        <para>Specifies a rectangle with two rounded corners, diagonally-opposed.</para>
+        <para>A rectangle with two rounded corners, diagonally-opposed.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.RoundedRectangle">
       <summary>
-        <para>Specifies a rounded rectangle.</para>
+        <para>A rounded rectangle.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.RoundedRectangularCallout">
       <summary>
-        <para>Specifies a rectangular callout with rounded corners.</para>
+        <para>A rectangular callout with rounded corners.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.RoundSameSideCornerRectangle">
       <summary>
-        <para>Represents a rectangle with two-rounded corners that share a side.</para>
+        <para>A rectangle with two-rounded corners that share a side.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.RoundSingleCornerRectangle">
       <summary>
-        <para>Represents a rectangle with one rounded corner.</para>
+        <para>A rectangle with one rounded corner.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.SmileyFace">
       <summary>
-        <para>Specifies a smiley face.</para>
+        <para>A smiley face.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.SnipAndRoundSingleCornerRectangle">
       <summary>
-        <para>Specifies a rectangle with one snipped corner and one rounded corner.</para>
+        <para>A rectangle with one snipped corner and one rounded corner.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.SnipDiagonalCornerRectangle">
       <summary>
-        <para>Specifies a rectangle with two snipped corners, diagonally-opposed.</para>
+        <para>A rectangle with two snipped corners, diagonally-opposed.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.SnipSameSideCornerRectangle">
       <summary>
-        <para>Specifies a rectangle with two snipped corners that share a side.</para>
+        <para>A rectangle with two snipped corners that share a side.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.SnipSingleCornerRectangle">
       <summary>
-        <para>Specifies a rectangle with one snipped corner.</para>
+        <para>A rectangle with one snipped corner.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.SquareTabs">
       <summary>
-        <para>Specifies four small squares that define a rectangular shape.</para>
+        <para>Four small squares that define a rectangular shape.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.Star10">
       <summary>
-        <para>Specifies a 10-point star.</para>
+        <para>A 10-point star.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.Star12">
       <summary>
-        <para>Specifies a 12-point star.</para>
+        <para>A 12-point star.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.Star16">
       <summary>
-        <para>Specifies a 16-point star.</para>
+        <para>A 16-point star.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.Star24">
       <summary>
-        <para>Specifies a 24-point star.</para>
+        <para>A 24-point star.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.Star32">
       <summary>
-        <para>Specifies a 32-point star.</para>
+        <para>A 32-point star.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.Star4">
       <summary>
-        <para>Specifies a 4-point star.</para>
+        <para>A 4-point star.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.Star5">
       <summary>
-        <para>Specifies a 5-point star.</para>
+        <para>A 5-point star.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.Star6">
       <summary>
-        <para>Specifies a 6-point star.</para>
+        <para>A 6-point star.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.Star7">
       <summary>
-        <para>Specifies a 7-point star.</para>
+        <para>A 7-point star.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.Star8">
       <summary>
-        <para>Specifies an 8-point star.</para>
+        <para>An 8-point star.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.StripedRightArrow">
       <summary>
-        <para>Specifies a block arrow that points right and has stripes on the tail.</para>
+        <para>A block arrow that points right and has stripes on the tail.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.Sun">
       <summary>
-        <para>Specifies a sun shape.</para>
+        <para>A sun shape.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.SwooshArrow">
       <summary>
-        <para>Specifies a curved arrow.</para>
+        <para>A curved arrow.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.Teardrop">
       <summary>
-        <para>Specifies a water droplet.</para>
+        <para>A water droplet.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.Trapezoid">
       <summary>
-        <para>Specifies a trapezoid.</para>
+        <para>A trapezoid.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.Triangle">
       <summary>
-        <para>Specifies an isosceles triangle.</para>
+        <para>An isosceles triangle.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.UpArrow">
       <summary>
-        <para>Specifies a block arrow that points up.</para>
+        <para>A block arrow that points up.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.UpArrowCallout">
       <summary>
-        <para>Specifies a callout with an arrow that points up.</para>
+        <para>A callout with an arrow that points up.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.UpDownArrow">
       <summary>
-        <para>Specifies a block arrow that points up and down.</para>
+        <para>A block arrow that points up and down.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.UpDownArrowCallout">
       <summary>
-        <para>Specifies a callout with arrows that point up and down.</para>
+        <para>A callout with arrows that point up and down.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.UpRibbon">
       <summary>
-        <para>Specifies a ribbon banner with its center area above the ribbon ends.</para>
+        <para>A ribbon banner with its center area above the ribbon ends.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.UTurnArrow">
       <summary>
-        <para>Specifies a block arrow that forms a U-shape.</para>
+        <para>A block arrow that forms a U-shape.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.VerticalScroll">
       <summary>
-        <para>Specifies a vertical scroll.</para>
+        <para>A vertical scroll.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeGeometryPreset.Wave">
       <summary>
-        <para>Specifies a wave.</para>
+        <para>A wave.</para>
       </summary>
     </member>
     <member name="T:DevExpress.Spreadsheet.ShapeHyperlink">
@@ -22143,212 +22150,212 @@ The default is Clip.</value>
     </member>
     <member name="T:DevExpress.Spreadsheet.ShapeTextWarpFormat">
       <summary>
-        <para>Lists values used to specify the warp type for shape text.</para>
+        <para>Lists warp types for shape text.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeTextWarpFormat.ArchDown">
       <summary>
-        <para>Specifies the downward arch text shape.</para>
+        <para>The downward arch text shape.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeTextWarpFormat.ArchDownPour">
       <summary>
-        <para>Specifies the downward pour arch text shape.</para>
+        <para>The downward pour arch text shape.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeTextWarpFormat.ArchUp">
       <summary>
-        <para>Specifies the upward arch text shape.</para>
+        <para>The upward arch text shape.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeTextWarpFormat.ArchUpPour">
       <summary>
-        <para>Specifies the upward pour arch text shape.</para>
+        <para>The upward pour arch text shape.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeTextWarpFormat.ButtonCurve">
       <summary>
-        <para>Specifies the button text shape.</para>
+        <para>The button text shape.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeTextWarpFormat.ButtonPour">
       <summary>
-        <para>Specifies the button pour text shape.</para>
+        <para>The button pour text shape.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeTextWarpFormat.CanDown">
       <summary>
-        <para>Specifies the downward can text shape.</para>
+        <para>The downward can text shape.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeTextWarpFormat.CanUp">
       <summary>
-        <para>Specifies the upward can text shape.</para>
+        <para>The upward can text shape.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeTextWarpFormat.CascadeDown">
       <summary>
-        <para>Specifies the downward cascade text shape.</para>
+        <para>The downward cascade text shape.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeTextWarpFormat.CascadeUp">
       <summary>
-        <para>Specifies the upward cascade text shape.</para>
+        <para>The upward cascade text shape.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeTextWarpFormat.ChevronDown">
       <summary>
-        <para>Specifies the downward chevron text shape.</para>
+        <para>The downward chevron text shape.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeTextWarpFormat.ChevronUp">
       <summary>
-        <para>Specifies the upward chevron text shape.</para>
+        <para>The upward chevron text shape.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeTextWarpFormat.CircleCurve">
       <summary>
-        <para>Specifies the circle text shape.</para>
+        <para>The circle text shape.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeTextWarpFormat.CirclePour">
       <summary>
-        <para>Specifies the circle pour text shape.</para>
+        <para>The circle pour text shape.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeTextWarpFormat.CurveDown">
       <summary>
-        <para>Specifies the downward curve text shape.</para>
+        <para>The downward curve text shape.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeTextWarpFormat.CurveUp">
       <summary>
-        <para>Specifies the upward curve text shape.</para>
+        <para>The upward curve text shape.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeTextWarpFormat.Deflate">
       <summary>
-        <para>Specifies the deflate text shape.</para>
+        <para>The deflate text shape.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeTextWarpFormat.DeflateBottom">
       <summary>
-        <para>Specifies the bottom deflate text shape.</para>
+        <para>The bottom deflate text shape.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeTextWarpFormat.DeflateInflate">
       <summary>
-        <para>Specifies the deflate-inflate text shape.</para>
+        <para>The deflate-inflate text shape.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeTextWarpFormat.DeflateInflateDeflate">
       <summary>
-        <para>Specifies the deflate-inflate-deflate text shape.</para>
+        <para>The deflate-inflate-deflate text shape.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeTextWarpFormat.DeflateTop">
       <summary>
-        <para>Specifies the top deflate text shape.</para>
+        <para>The top deflate text shape.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeTextWarpFormat.DoubleWave1">
       <summary>
-        <para>Specifies the double wave 1 text shape.</para>
+        <para>The double wave 1 text shape.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeTextWarpFormat.DoubleWave2">
       <summary>
-        <para>Specifies the double wave 2 text shape.</para>
+        <para>The double wave 2 text shape.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeTextWarpFormat.FadeDown">
       <summary>
-        <para>Specifies the downward fade text shape.</para>
+        <para>The downward fade text shape.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeTextWarpFormat.FadeLeft">
       <summary>
-        <para>Specifies the left fade text shape.</para>
+        <para>The left fade text shape.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeTextWarpFormat.FadeRight">
       <summary>
-        <para>Specifies the right fade text shape.</para>
+        <para>The right fade text shape.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeTextWarpFormat.FadeUp">
       <summary>
-        <para>Specifies the upward fade text shape.</para>
+        <para>The upward fade text shape.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeTextWarpFormat.Inflate">
       <summary>
-        <para>Specifies the inflate text shape.</para>
+        <para>The inflate text shape.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeTextWarpFormat.InflateBottom">
       <summary>
-        <para>Specifies the bottom inflate text shape.</para>
+        <para>The bottom inflate text shape.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeTextWarpFormat.InflateTop">
       <summary>
-        <para>Specifies the top inflate text shape.</para>
+        <para>The top inflate text shape.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeTextWarpFormat.NoWarp">
       <summary>
-        <para>Specifies that text should not be warped.</para>
+        <para>Shape text is not warped.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeTextWarpFormat.PlainText">
       <summary>
-        <para>Specifies the plain text shape.</para>
+        <para>The plain text shape.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeTextWarpFormat.RingInside">
       <summary>
-        <para>Specifies the inside ring text shape.</para>
+        <para>The inside ring text shape.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeTextWarpFormat.RingOutside">
       <summary>
-        <para>Specifies the outside ring text shape.</para>
+        <para>The outside ring text shape.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeTextWarpFormat.SlantDown">
       <summary>
-        <para>Specifies the downward slant text shape.</para>
+        <para>The downward slant text shape.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeTextWarpFormat.SlantUp">
       <summary>
-        <para>Specifies the upward slant text shape.</para>
+        <para>The upward slant text shape.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeTextWarpFormat.Stop">
       <summary>
-        <para>Specifies the stop sign text shape.</para>
+        <para>The stop sign text shape.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeTextWarpFormat.TriangleDown">
       <summary>
-        <para>Specifies the downward triangle text shape.</para>
+        <para>The downward triangle text shape.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeTextWarpFormat.TriangleUp">
       <summary>
-        <para>Specifies the upward triangle text shape.</para>
+        <para>The upward triangle text shape.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeTextWarpFormat.Wave1">
       <summary>
-        <para>Specifies the wave 1 text shape.</para>
+        <para>The wave 1 text shape.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeTextWarpFormat.Wave2">
       <summary>
-        <para>Specifies the wave 2 text shape.</para>
+        <para>The wave 2 text shape.</para>
       </summary>
     </member>
     <member name="T:DevExpress.Spreadsheet.ShapeType">
@@ -22978,7 +22985,7 @@ The default is Clip.</value>
     </member>
     <member name="T:DevExpress.Spreadsheet.SparklineGroupType">
       <summary>
-        <para>Lists values used to specify the types of sparkline groups.</para>
+        <para>Lists sparkline group types.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.SparklineGroupType.Column">
@@ -23168,7 +23175,7 @@ The default is Clip.</value>
     </member>
     <member name="P:DevExpress.Spreadsheet.SpreadsheetCustomAssemblyLoadingEventArgs.Path">
       <summary>
-        <para>Gets or sets the path to the external assembly containing the Entity Framework model.</para>
+        <para>Gets the path to the external assembly containing the Entity Framework model.</para>
       </summary>
       <value>A <see cref="T:System.String"/> value that specifies the path to the external assembly containing the Entity Framework model.</value>
     </member>
@@ -24222,7 +24229,7 @@ The default is Clip.</value>
     </member>
     <member name="T:DevExpress.Spreadsheet.TableStyleElementType">
       <summary>
-        <para>Lists table style elements that specify formatting for the corresponding elements of a table and pivot table.</para>
+        <para>Lists table and pivot table style elements.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.TableStyleElementType.BlankRow">
@@ -28806,7 +28813,7 @@ The default is Clip.</value>
     </member>
     <member name="P:DevExpress.XtraSpreadsheet.SpreadsheetBehaviorOptions.Column">
       <summary>
-        <para>Gets or sets whether column operations are permitted.</para>
+        <para>Specifies whether column operations are permitted.</para>
       </summary>
       <value>A <see cref="T:DevExpress.XtraSpreadsheet.SpreadsheetColumnBehaviorOptions"/> object that provides access to options specifying the document&#39;s capability to perform different operations over columns.</value>
     </member>
@@ -29022,7 +29029,7 @@ The default is Clip.</value>
     </member>
     <member name="P:DevExpress.XtraSpreadsheet.SpreadsheetBehaviorOptions.Row">
       <summary>
-        <para>Gets or sets whether row operations are permitted.</para>
+        <para>Specifies whether row operations are permitted.</para>
       </summary>
       <value>A <see cref="T:DevExpress.XtraSpreadsheet.SpreadsheetRowBehaviorOptions"/> object that provides access to options specifying the document&#39;s capability to perform different operations over rows.</value>
     </member>
@@ -29094,7 +29101,7 @@ The default is Clip.</value>
     </member>
     <member name="P:DevExpress.XtraSpreadsheet.SpreadsheetBehaviorOptions.Worksheet">
       <summary>
-        <para>Gets or sets whether worksheet operations are permitted.</para>
+        <para>Specifies whether worksheet operations are permitted.</para>
       </summary>
       <value>A <see cref="T:DevExpress.XtraSpreadsheet.SpreadsheetWorksheetBehaviorOptions"/> object that provides access to options specifying the document&#39;s capability to perform different operations over worksheets.</value>
     </member>
@@ -30000,6 +30007,31 @@ The default is Clip.</value>
         <para>Specifies that the position of the PivotTable Field List is determined by the <see cref="P:DevExpress.XtraSpreadsheet.SpreadsheetPivotTableFieldListOptions.StartLocation"/> property value relative to the upper-left corner of the SpreadsheetControl.</para>
       </summary>
     </member>
+    <member name="T:DevExpress.XtraSpreadsheet.SpreadsheetPrintContent">
+      <summary>
+        <para>Lists values that specify spreadsheet content to print.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.XtraSpreadsheet.SpreadsheetPrintContent.ActiveSheets">
+      <summary>
+        <para>Prints the active sheet and all selected sheets (if any). To print multiple sheets, hold Ctrl while you click sheet tabs in the control.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.XtraSpreadsheet.SpreadsheetPrintContent.Default">
+      <summary>
+        <para>The default value (that is EntireWorkbook).</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.XtraSpreadsheet.SpreadsheetPrintContent.EntireWorkbook">
+      <summary>
+        <para>Prints the entire workbook.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.XtraSpreadsheet.SpreadsheetPrintContent.Selection">
+      <summary>
+        <para>Prints selected content of the active worksheet. If a chart sheet is active, it is printed completely.</para>
+      </summary>
+    </member>
     <member name="T:DevExpress.XtraSpreadsheet.SpreadsheetPrintOptions">
       <summary>
         <para>Provides access to options that control how the printed document is generated and previewed.</para>
@@ -30009,6 +30041,12 @@ The default is Clip.</value>
       <summary>
         <para>Initializes a new instance of the <see cref="T:DevExpress.XtraSpreadsheet.SpreadsheetPrintOptions"/> class with the default settings.</para>
       </summary>
+    </member>
+    <member name="P:DevExpress.XtraSpreadsheet.SpreadsheetPrintOptions.PrintContent">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
     </member>
     <member name="P:DevExpress.XtraSpreadsheet.SpreadsheetPrintOptions.RibbonPreview">
       <summary>

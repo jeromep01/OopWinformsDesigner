@@ -1092,9 +1092,9 @@
     </member>
     <member name="P:DevExpress.Web.Mvc.CaptchaSettings.LoadingPanelImage">
       <summary>
-        <para>Gets or sets the position of an image displayed within a loading panel with respect to the panel&#39;s text content.</para>
+        <para>Gets the position of an image displayed within a loading panel with respect to the panel&#39;s text content.</para>
       </summary>
-      <value>A <see cref="T:DevExpress.Web.ImageProperties"/> object that contains image settings.</value>
+      <value>An object that contains image settings.</value>
     </member>
     <member name="P:DevExpress.Web.Mvc.CaptchaSettings.LoadingPanelStyle">
       <summary>
@@ -3456,9 +3456,9 @@ An empty string, if no filtering is used.</value>
     </member>
     <member name="P:DevExpress.Web.Mvc.ChartControlSettings.LoadingPanelImage">
       <summary>
-        <para>Gets or sets the position of an image displayed within a loading panel with respect to the panel&#39;s text content.</para>
+        <para>Gets the position of an image displayed within a loading panel with respect to the panel&#39;s text content.</para>
       </summary>
-      <value>An <see cref="T:DevExpress.Web.ImageProperties"/> object that contains the image&#39;s settings.</value>
+      <value>An object that contains the image&#39;s settings.</value>
     </member>
     <member name="P:DevExpress.Web.Mvc.ChartControlSettings.LoadingPanelImagePosition">
       <summary>
@@ -38590,10 +38590,10 @@ An empty string, if no filtering is used.</value>
     </member>
     <member name="M:DevExpress.Web.Mvc.RichEditCustomDocumentProcessor.InsertContentToClient(System.Action{DevExpress.Web.ASPxRichEdit.InsertContentToClientEventArgs})">
       <summary>
-        <para></para>
+        <para>Sets a handler for an event that fires after the client <see cref="P:js-RichEditCommands.insertContentFromServer"/> command is executed.</para>
       </summary>
-      <param name="method"></param>
-      <returns></returns>
+      <param name="method">A delegate method that accepts an <see cref="T:DevExpress.Web.ASPxRichEdit.InsertContentToClientEventArgs"/> object as a parameter.</param>
+      <returns>An object that allows you to further process a document in the Controller in a custom manner.</returns>
     </member>
     <member name="M:DevExpress.Web.Mvc.RichEditCustomDocumentProcessor.Saving(System.Action{DevExpress.Web.Office.DocumentSavingEventArgs})">
       <summary>
@@ -38990,9 +38990,9 @@ An empty string, if no filtering is used.</value>
     </member>
     <member name="P:DevExpress.Web.Mvc.RichEditSettings.InsertContentToClient">
       <summary>
-        <para></para>
+        <para>Enables you to perform custom actions after the client <see cref="P:js-RichEditCommands.insertContentFromServer"/> command is executed.</para>
       </summary>
-      <value></value>
+      <value>A delegate method that allows you to implement custom processing.</value>
     </member>
     <member name="P:DevExpress.Web.Mvc.RichEditSettings.ReadOnly">
       <summary>
@@ -39258,9 +39258,9 @@ An empty string, if no filtering is used.</value>
     </member>
     <member name="P:DevExpress.Web.Mvc.RoundPanelSettings.LoadingPanelImage">
       <summary>
-        <para>Gets or sets the position of an image displayed within a loading panel with respect to the panel&#39;s text content.</para>
+        <para>Gets the position of an image displayed within a loading panel with respect to the panel&#39;s text content.</para>
       </summary>
-      <value>A <see cref="T:DevExpress.Web.ImageProperties"/> object that contains image settings.</value>
+      <value>An object that contains image settings.</value>
     </member>
     <member name="P:DevExpress.Web.Mvc.RoundPanelSettings.LoadingPanelStyle">
       <summary>
@@ -39863,6 +39863,12 @@ An empty string, if no filtering is used.</value>
       </summary>
       <value>A <see cref="T:DevExpress.Web.Mvc.MVCxSchedulerClientSideEvents"/> object which allows assigning handlers to the client-side events available to the Scheduler.</value>
     </member>
+    <member name="P:DevExpress.Web.Mvc.SchedulerSettings.ClientVisible">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
     <member name="P:DevExpress.Web.Mvc.SchedulerSettings.CustomActionRouteValues">
       <summary>
         <para>Defines the custom callback routing logic by specifying the names of a Controller and an Action which should handle custom callbacks initiated by the <see cref="M:js-MVCxClientScheduler.PerformCallback(data)"/> method.</para>
@@ -40015,7 +40021,7 @@ An empty string, if no filtering is used.</value>
     </member>
     <member name="P:DevExpress.Web.Mvc.SchedulerSettings.OptionsCookies">
       <summary>
-        <para>Provides access to an object used to maintain view state information.</para>
+        <para>Provides access to view state information.</para>
       </summary>
       <value>An <see cref="T:DevExpress.Web.ASPxScheduler.ASPxSchedulerOptionsCookies"/> object that holds the state information.</value>
     </member>

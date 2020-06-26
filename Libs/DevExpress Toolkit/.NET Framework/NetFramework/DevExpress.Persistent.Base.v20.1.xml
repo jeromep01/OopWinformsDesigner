@@ -1202,12 +1202,19 @@
       </summary>
       <value></value>
     </member>
+    <member name="M:DevExpress.Persistent.Validation.ContextIdentifier.Equals(DevExpress.Persistent.Validation.ContextIdentifier)">
+      <summary>
+        <para>Checks whether the current <see cref="T:DevExpress.Persistent.Validation.ContextIdentifier"/> is equal to the specified object of the same type.</para>
+      </summary>
+      <param name="obj">An object to compare to the current ContextIdentifier.</param>
+      <returns>true if the specified object equals the current ContextIdentifier; otherwise, false.</returns>
+    </member>
     <member name="M:DevExpress.Persistent.Validation.ContextIdentifier.Equals(System.Object)">
       <summary>
-        <para>Determines whether the specified object is equal to the current <see cref="T:DevExpress.Persistent.Validation.ContextIdentifier"/>.</para>
+        <para>Checks whether the specified object is equal to the current <see cref="T:DevExpress.Persistent.Validation.ContextIdentifier"/>.</para>
       </summary>
       <param name="obj">An object that can be cast to the <see cref="T:DevExpress.Persistent.Validation.ContextIdentifier"/> type, to compare to the current ContextIdentifier.</param>
-      <returns>true, if the specified context identifier&#39;s <see cref="P:DevExpress.Persistent.Validation.ContextIdentifier.Id"/> property value equals the current ContextIdentifier&#39;s Id property value; otherwise, false.</returns>
+      <returns>true if the specified context identifier&#39;s <see cref="P:DevExpress.Persistent.Validation.ContextIdentifier.Id"/> property value equals the current ContextIdentifier&#39;s Id property value; otherwise, false.</returns>
     </member>
     <member name="M:DevExpress.Persistent.Validation.ContextIdentifier.GetHashCode">
       <summary>
@@ -1263,12 +1270,19 @@
       </summary>
       <value>An integer value specifying the number of the validation contexts identified by the current ContextIdentifiers.</value>
     </member>
+    <member name="M:DevExpress.Persistent.Validation.ContextIdentifiers.Equals(DevExpress.Persistent.Validation.ContextIdentifiers)">
+      <summary>
+        <para>Checks whether the current <see cref="T:DevExpress.Persistent.Validation.ContextIdentifiers"/> is equal to the specified object of the same type.</para>
+      </summary>
+      <param name="obj">An object to compare to the current ContextIdentifiers.</param>
+      <returns>true if the specified object equals the current ContextIdentifiers; otherwise, false.</returns>
+    </member>
     <member name="M:DevExpress.Persistent.Validation.ContextIdentifiers.Equals(System.Object)">
       <summary>
-        <para>Determines whether the specified object is equal to the current <see cref="T:DevExpress.Persistent.Validation.ContextIdentifiers"/>.</para>
+        <para>Checks whether the specified object is equal to the current <see cref="T:DevExpress.Persistent.Validation.ContextIdentifiers"/>.</para>
       </summary>
       <param name="obj">An object that can be cast to the <see cref="T:DevExpress.Persistent.Validation.ContextIdentifiers"/> type, to compare to the current ContextIdentifiers.</param>
-      <returns>true, if the specified ContextIdentifiers identifies the same validation contexts and in the same order as the current ContextIdentifiers.</returns>
+      <returns>true if the specified ContextIdentifiers identifies the same validation contexts and in the same order as the current ContextIdentifiers.</returns>
     </member>
     <member name="M:DevExpress.Persistent.Validation.ContextIdentifiers.GetHashCode">
       <summary>

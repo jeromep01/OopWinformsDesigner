@@ -2446,9 +2446,9 @@
     </member>
     <member name="P:DevExpress.Xpf.Grid.BaseColumn.AllowPrinting">
       <summary>
-        <para>Gets or sets whether to hide the column when printing or exporting a data grid. This is a dependency property.</para>
+        <para>Gets or sets whether to display the column in the printed/exported document. This is a dependency property.</para>
       </summary>
-      <value>true, to allow printing the column; otherwise, false.</value>
+      <value>true, to display the column in the printed/exported document; otherwise, false.</value>
     </member>
     <member name="F:DevExpress.Xpf.Grid.BaseColumn.AllowPrintingProperty">
       <summary>
@@ -2835,7 +2835,7 @@
     </member>
     <member name="P:DevExpress.Xpf.Grid.BaseColumn.Visible">
       <summary>
-        <para>Gets or sets whether the column is displayed within a View. This is a dependency property.</para>
+        <para>Gets or sets whether to display the column within a View. This is a dependency property.</para>
       </summary>
       <value>true, to display the column within a View; otherwise, false.</value>
     </member>
@@ -4325,7 +4325,7 @@
       <summary>
         <para>Gets or sets how to calculate the optimal width required for this column to completely display its contents when the grid&#39;s ItemsSource is changed.</para>
       </summary>
-      <value>A mode that specifies how to calculate the optimal width required for this column to completely display its contents when the grid&#39;s ItemsSource is changed.</value>
+      <value>A mode that specifies how to calculate the optimal width.</value>
     </member>
     <member name="F:DevExpress.Xpf.Grid.ColumnBase.BestFitModeOnSourceChangeProperty">
       <summary>
@@ -5039,9 +5039,9 @@
     </member>
     <member name="P:DevExpress.Xpf.Grid.ColumnBase.ShowCriteriaInAutoFilterRow">
       <summary>
-        <para>Gets or sets whether to display the criteria selector button in the automatic filter row.</para>
+        <para>Gets or sets whether to display the criteria selector button for a column in the Automatic Filter Row.</para>
       </summary>
-      <value>true, to display the criteria selector button in the automatic filter row; otherwise, false.</value>
+      <value>true, to display the criteria selector button in the Automatic Filter Row; otherwise, false.</value>
     </member>
     <member name="F:DevExpress.Xpf.Grid.ColumnBase.ShowCriteriaInAutoFilterRowProperty">
       <summary>
@@ -5063,7 +5063,7 @@
     </member>
     <member name="P:DevExpress.Xpf.Grid.ColumnBase.ShowInColumnChooser">
       <summary>
-        <para>Gets or sets whether the column&#39;s header is displayed within the Column Chooser. This is a dependency property.</para>
+        <para>Gets or sets whether to display the column in the Column Chooser. This is a dependency property.</para>
       </summary>
       <value>true to display the column&#39;s header within the Column Chooser; otherwise, false.</value>
     </member>
@@ -5125,7 +5125,7 @@
       <summary>
         <para>Gets or sets the column&#39;s sort order. This is a dependency property.</para>
       </summary>
-      <value>A <see cref="T:DevExpress.Data.ColumnSortOrder"/> enumeration value that specifies the column&#39;s sort order.</value>
+      <value>The column&#39;s sort order.</value>
     </member>
     <member name="F:DevExpress.Xpf.Grid.ColumnBase.SortOrderProperty">
       <summary>
@@ -5951,9 +5951,9 @@
     </member>
     <member name="P:DevExpress.Xpf.Grid.DataControlBase.AllowColumnMRUFilterList">
       <summary>
-        <para>Gets or sets whether recently used filter items are displayed in the Filter Dropdowns for columns. This is a dependency property.</para>
+        <para>Gets or sets whether to display most recently used (MRU) filter items in the Drop-down Filter. This is a dependency property.</para>
       </summary>
-      <value>true if the columns&#39; filter dropdown lists can display recently used filter items; otherwise, false.</value>
+      <value>true, to display most recently used (MRU) filter items in the Drop-down Filter; otherwise, false.</value>
     </member>
     <member name="F:DevExpress.Xpf.Grid.DataControlBase.AllowColumnMRUFilterListProperty">
       <summary>
@@ -6693,9 +6693,9 @@
     </member>
     <member name="P:DevExpress.Xpf.Grid.DataControlBase.MRUColumnFilterListCount">
       <summary>
-        <para>Gets or sets the maximum number of the most recently used (MRU) filter conditions displayed within the column&#39;s Drop-down Filter. This is a dependency property.</para>
+        <para>Gets or sets the maximum number of most recently used (MRU) filter items displayed in the column&#39;s Drop-down Filter. This is a dependency property.</para>
       </summary>
-      <value>An integer value that specifies the maximum number of the most recently used (MRU) filter conditions displayed within the column&#39;s filter dropdown.</value>
+      <value>The maximum number of most recently used (MRU) filter items displayed in the column&#39;s Drop-down Filter.</value>
     </member>
     <member name="F:DevExpress.Xpf.Grid.DataControlBase.MRUColumnFilterListCountProperty">
       <summary>
@@ -6798,7 +6798,7 @@
       <summary>
         <para>Gets or sets a name of key field that is used to compare two objects when the state is restored.</para>
       </summary>
-      <value>A name of key field that is used to compare two objects when the state is restored.</value>
+      <value>A key field name.</value>
     </member>
     <member name="F:DevExpress.Xpf.Grid.DataControlBase.RestoreStateKeyFieldNameProperty">
       <summary>
@@ -6808,9 +6808,9 @@
     </member>
     <member name="P:DevExpress.Xpf.Grid.DataControlBase.RestoreStateOnSourceChange">
       <summary>
-        <para>Gets or sets whether to preserve the selection, focus, and grouping state when a new ItemsSource is assigned.</para>
+        <para>Gets or sets whether to retain the control&#39;s select, focus, check, and group states when a new ItemsSource is assigned.</para>
       </summary>
-      <value>true, to preserve the selection, focus, and grouping state when a new ItemsSource is assigned; otherwise, false.</value>
+      <value>true, to retain the control states; otherwise, false.</value>
     </member>
     <member name="F:DevExpress.Xpf.Grid.DataControlBase.RestoreStateOnSourceChangeProperty">
       <summary>
@@ -7492,9 +7492,9 @@
     </member>
     <member name="P:DevExpress.Xpf.Grid.DataViewBase.AllowMoveColumnToDropArea">
       <summary>
-        <para>Gets or sets whether an end-user can hide a column by dropping its header outside the column header panel or Group Panel. This is a dependency property.</para>
+        <para>Gets or sets whether users can drag a column&#39;s header outside of the <see cref="T:DevExpress.Xpf.Grid.GridControl"/> to hide the column. This is a dependency property.</para>
       </summary>
-      <value>true to allow an end-user to hide a column by dropping its header outside the View; otherwise, false.</value>
+      <value>true, to allow users to drag a column&#39;s header outside of the <see cref="T:DevExpress.Xpf.Grid.GridControl"/> to hide the column; otherwise, false.</value>
     </member>
     <member name="F:DevExpress.Xpf.Grid.DataViewBase.AllowMoveColumnToDropAreaProperty">
       <summary>
@@ -7836,9 +7836,9 @@ This is a dependency property.</para>
     </member>
     <member name="P:DevExpress.Xpf.Grid.DataViewBase.ColumnChooserColumns">
       <summary>
-        <para>Gets a collection of hidden columns whose headers are displayed within the Column Band Chooser. This is a dependency property.</para>
+        <para>Gets a collection of hidden columns displayed in the Column Chooser. This is a dependency property.</para>
       </summary>
-      <value>The collection of <see cref="T:DevExpress.Xpf.Grid.ColumnBase"/> descendants that represent hidden columns displayed within the Column Chooser.</value>
+      <value>A collection of hidden columns displayed in the Column Chooser.</value>
     </member>
     <member name="F:DevExpress.Xpf.Grid.DataViewBase.ColumnChooserColumnsProperty">
       <summary>
@@ -7872,9 +7872,9 @@ This is a dependency property.</para>
     </member>
     <member name="P:DevExpress.Xpf.Grid.DataViewBase.ColumnChooserState">
       <summary>
-        <para>Gets or sets the Column Band Chooser&#39;s state. This is a dependency property.</para>
+        <para>Gets or sets the Column Chooser&#39;s state. This is a dependency property.</para>
       </summary>
-      <value>An object implementing the DevExpress.Xpf.Core.IColumnChooserState interface.</value>
+      <value>The Column Chooser&#39;s state.</value>
     </member>
     <member name="F:DevExpress.Xpf.Grid.DataViewBase.ColumnChooserStateProperty">
       <summary>
@@ -8284,9 +8284,9 @@ This is a dependency property.</para>
     </member>
     <member name="P:DevExpress.Xpf.Grid.DataViewBase.EnterMoveNextColumn">
       <summary>
-        <para>Gets or sets whether the ENTER key can be used to move cell focus within a data row. This is a dependency property.</para>
+        <para>Gets or sets whether users can press the ENTER key to focus the next cell. This is a dependency property.</para>
       </summary>
-      <value>true to allow cell focus moving using the ENTER key; otherwise, false.</value>
+      <value>true, if users can press the ENTER key to focus the next cell; otherwise, false.</value>
     </member>
     <member name="F:DevExpress.Xpf.Grid.DataViewBase.EnterMoveNextColumnProperty">
       <summary>
@@ -9447,7 +9447,7 @@ This is a dependency property.</para>
     </member>
     <member name="M:DevExpress.Xpf.Grid.DataViewBase.Print">
       <summary>
-        <para>Invokes the Print dialog and prints the grid.</para>
+        <para>Invokes the Print dialog and prints the <see cref="T:DevExpress.Xpf.Grid.GridControl"/>&#39;s data.</para>
       </summary>
     </member>
     <member name="P:DevExpress.Xpf.Grid.DataViewBase.PrintCellStyle">
@@ -9464,20 +9464,20 @@ This is a dependency property.</para>
     </member>
     <member name="M:DevExpress.Xpf.Grid.DataViewBase.PrintDirect">
       <summary>
-        <para>Prints the grid using the default printer.</para>
+        <para>Uses the default printer to print the <see cref="T:DevExpress.Xpf.Grid.GridControl"/>.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpf.Grid.DataViewBase.PrintDirect(System.Printing.PrintQueue)">
       <summary>
-        <para>Prints the grid using the printer specified by the print queue.</para>
+        <para>Uses the specified printer to print the <see cref="T:DevExpress.Xpf.Grid.GridControl"/>&#39;s data.</para>
       </summary>
-      <param name="queue">A <see cref="T:System.Printing.PrintQueue"/> object specifying the print queue.</param>
+      <param name="queue">A print queue.</param>
     </member>
     <member name="M:DevExpress.Xpf.Grid.DataViewBase.PrintDirect(System.String)">
       <summary>
-        <para></para>
+        <para>Uses the specified printer to print the <see cref="T:DevExpress.Xpf.Grid.GridControl"/>&#39;s data.</para>
       </summary>
-      <param name="printerName"></param>
+      <param name="printerName">A printer&#39;s name.</param>
     </member>
     <member name="P:DevExpress.Xpf.Grid.DataViewBase.PrintFixedFooterTemplate">
       <summary>
@@ -9493,7 +9493,7 @@ This is a dependency property.</para>
     </member>
     <member name="P:DevExpress.Xpf.Grid.DataViewBase.PrintFixedTotalSummary">
       <summary>
-        <para>Gets or sets whether the Fixed Summary Panel is printed. This is a dependency property.</para>
+        <para>Gets or sets whether to print the Fixed Summary Panel. This is a dependency property.</para>
       </summary>
       <value>true to print the Fixed Summary Panel; otherwise, false.</value>
     </member>
@@ -9565,9 +9565,9 @@ This is a dependency property.</para>
     </member>
     <member name="P:DevExpress.Xpf.Grid.DataViewBase.PrintSelectedRowsOnly">
       <summary>
-        <para>Gets or sets whether only the selected rows are printed/exported. This is a dependency property.</para>
+        <para>Gets or sets whether to print/export only the selected rows. This is a dependency property.</para>
       </summary>
-      <value>true if only the selected rows are printed/exported; otherwise, false. The default is false.</value>
+      <value>true, to print/export only the selected rows; otherwise, false.</value>
     </member>
     <member name="F:DevExpress.Xpf.Grid.DataViewBase.PrintSelectedRowsOnlyProperty">
       <summary>
@@ -9577,9 +9577,9 @@ This is a dependency property.</para>
     </member>
     <member name="P:DevExpress.Xpf.Grid.DataViewBase.PrintTotalSummary">
       <summary>
-        <para>Gets or sets whether the Summary Panel is printed. This is a dependency property.</para>
+        <para>Gets or sets whether to print the Summary Panel. This is a dependency property.</para>
       </summary>
-      <value>true to print the Summary Panel; otherwise, false. The default is true.</value>
+      <value>true to print the Summary Panel; otherwise, false.</value>
     </member>
     <member name="F:DevExpress.Xpf.Grid.DataViewBase.PrintTotalSummaryProperty">
       <summary>
@@ -10154,87 +10154,87 @@ This is a dependency property.</para>
     </member>
     <member name="M:DevExpress.Xpf.Grid.DataViewBase.ShowPrintPreview(System.Windows.FrameworkElement)">
       <summary>
-        <para>Creates the print document from the <see cref="T:DevExpress.Xpf.Grid.DataViewBase"/> and displays the Print Preview of the document using the specified owner.</para>
+        <para>Creates the print document from the <see cref="T:DevExpress.Xpf.Grid.DataViewBase"/> and displays the Print Preview of the document.</para>
       </summary>
-      <param name="owner">A <see cref="T:System.Windows.FrameworkElement"/> instance specifying the owner of the Print Preview.</param>
+      <param name="owner">The owner of the Print Preview.</param>
     </member>
     <member name="M:DevExpress.Xpf.Grid.DataViewBase.ShowPrintPreview(System.Windows.FrameworkElement,System.String)">
       <summary>
-        <para>Creates the print document from the <see cref="T:DevExpress.Xpf.Grid.DataViewBase"/> and displays the Print Preview of the document using the specified owner and document name.</para>
+        <para>Creates the print document from the <see cref="T:DevExpress.Xpf.Grid.DataViewBase"/> and displays the Print Preview of the document.</para>
       </summary>
-      <param name="owner">A <see cref="T:System.Windows.FrameworkElement"/> instance specifying the owner of the Print Preview.</param>
-      <param name="documentName">A <see cref="T:System.String"/> value specifying what name should be used for the document to be displayed in the Print Preview.</param>
+      <param name="owner">An owner of the Print Preview.</param>
+      <param name="documentName">A name of the document displayed in the Print Preview.</param>
     </member>
     <member name="M:DevExpress.Xpf.Grid.DataViewBase.ShowPrintPreview(System.Windows.FrameworkElement,System.String,System.String)">
       <summary>
-        <para>Creates the print document from the <see cref="T:DevExpress.Xpf.Grid.DataViewBase"/> and displays the Print Preview of the document using the specified owner, document name and Print Preview&#39;s title.</para>
+        <para>Creates the print document from the <see cref="T:DevExpress.Xpf.Grid.DataViewBase"/> and displays the Print Preview of the document.</para>
       </summary>
-      <param name="owner">A <see cref="T:System.Windows.FrameworkElement"/> instance specifying the owner of the Print Preview.</param>
-      <param name="documentName">A <see cref="T:System.String"/> value specifying what name should be used for the document to be displayed in the Print Preview.</param>
-      <param name="title">A <see cref="T:System.String"/> value specifying the title of the Print Preview.</param>
+      <param name="owner">The owner of the Print Preview.</param>
+      <param name="documentName">The name of the document displayed in the Print Preview.</param>
+      <param name="title">The title of the Print Preview.</param>
     </member>
     <member name="M:DevExpress.Xpf.Grid.DataViewBase.ShowPrintPreviewDialog(System.Windows.Window)">
       <summary>
-        <para>Creates the print document from the <see cref="T:DevExpress.Xpf.Grid.DataViewBase"/> and displays the modal Print Preview of the document using the specified owner.</para>
+        <para>Creates the print document from the <see cref="T:DevExpress.Xpf.Grid.DataViewBase"/> and displays the Print Preview of the document as a modal window.</para>
       </summary>
-      <param name="owner">A <see cref="T:System.Windows.Window"/> instance specifying the owner of the Print Preview.</param>
+      <param name="owner">The owner of the Print Preview.</param>
     </member>
     <member name="M:DevExpress.Xpf.Grid.DataViewBase.ShowPrintPreviewDialog(System.Windows.Window,System.String)">
       <summary>
-        <para>Creates the print document from the <see cref="T:DevExpress.Xpf.Grid.DataViewBase"/> and displays the modal Print Preview of the document using the specified owner and document name.</para>
+        <para>Creates the print document from the <see cref="T:DevExpress.Xpf.Grid.DataViewBase"/> and displays the Print Preview of the document as a modal window.</para>
       </summary>
-      <param name="owner">A <see cref="T:System.Windows.Window"/> instance specifying the owner of the Print Preview.</param>
-      <param name="documentName">A <see cref="T:System.String"/> value specifying what name should be used for the document to be displayed in the Print Preview.</param>
+      <param name="owner">The owner of the Print Preview.</param>
+      <param name="documentName">The name of the document displayed in the Print Preview.</param>
     </member>
     <member name="M:DevExpress.Xpf.Grid.DataViewBase.ShowPrintPreviewDialog(System.Windows.Window,System.String,System.String)">
       <summary>
-        <para>Creates the print document from the <see cref="T:DevExpress.Xpf.Grid.DataViewBase"/> and displays the modal Print Preview of the document using the specified owner, document name and Print Preview&#39;s title.</para>
+        <para>Creates the print document from the <see cref="T:DevExpress.Xpf.Grid.DataViewBase"/> and displays the Print Preview of the document as a modal window.</para>
       </summary>
-      <param name="owner">A <see cref="T:System.Windows.Window"/> instance specifying the owner of the Print Preview.</param>
-      <param name="documentName">A <see cref="T:System.String"/> value specifying what name should be used for the document to be displayed in the Print Preview.</param>
-      <param name="title">A <see cref="T:System.String"/> value specifying the title of the Print Preview.</param>
+      <param name="owner">The owner of the Print Preview.</param>
+      <param name="documentName">The name of the document displayed in the Print Preview.</param>
+      <param name="title">The title of the Print Preview.</param>
     </member>
     <member name="M:DevExpress.Xpf.Grid.DataViewBase.ShowRibbonPrintPreview(System.Windows.FrameworkElement)">
       <summary>
-        <para>Creates the print document from the <see cref="T:DevExpress.Xpf.Grid.DataViewBase"/> and displays the document&#39;s Print Preview with the Ribbon using the specified owner.</para>
+        <para>Creates the print document from the <see cref="T:DevExpress.Xpf.Grid.DataViewBase"/> and displays the document&#39;s Print Preview with the Ribbon UI.</para>
       </summary>
-      <param name="owner">A <see cref="T:System.Windows.FrameworkElement"/> instance specifying the owner of the Print Preview.</param>
+      <param name="owner">The owner of the Print Preview.</param>
     </member>
     <member name="M:DevExpress.Xpf.Grid.DataViewBase.ShowRibbonPrintPreview(System.Windows.FrameworkElement,System.String)">
       <summary>
-        <para>Creates the print document from the <see cref="T:DevExpress.Xpf.Grid.DataViewBase"/> and displays the document&#39;s Print Preview with the Ribbon using the specified owner and document name.</para>
+        <para>Creates the print document from the <see cref="T:DevExpress.Xpf.Grid.DataViewBase"/> and displays the document&#39;s Print Preview with the Ribbon UI.</para>
       </summary>
-      <param name="owner">A <see cref="T:System.Windows.FrameworkElement"/> instance specifying the owner of the Print Preview.</param>
-      <param name="documentName">A <see cref="T:System.String"/> value specifying what name should be used for the document to be displayed in the Print Preview.</param>
+      <param name="owner">The owner of the Print Preview.</param>
+      <param name="documentName">The name of the document displayed in the Print Preview.</param>
     </member>
     <member name="M:DevExpress.Xpf.Grid.DataViewBase.ShowRibbonPrintPreview(System.Windows.FrameworkElement,System.String,System.String)">
       <summary>
-        <para>Creates the print document from the <see cref="T:DevExpress.Xpf.Grid.DataViewBase"/> and displays the document&#39;s Print Preview with the Ribbon using the specified owner, document name and Print Preview&#39;s title.</para>
+        <para>Creates the print document from the <see cref="T:DevExpress.Xpf.Grid.DataViewBase"/> and displays the document&#39;s Print Preview with the Ribbon UI.</para>
       </summary>
-      <param name="owner">A <see cref="T:System.Windows.FrameworkElement"/> instance specifying the owner of the Print Preview.</param>
-      <param name="documentName">A <see cref="T:System.String"/> value specifying what name should be used for the document to be displayed in the Print Preview.</param>
-      <param name="title">A <see cref="T:System.String"/> value specifying the title of the Print Preview.</param>
+      <param name="owner">The owner of the Print Preview.</param>
+      <param name="documentName">The name of the document displayed in the Print Preview.</param>
+      <param name="title">The title of the Print Preview.</param>
     </member>
     <member name="M:DevExpress.Xpf.Grid.DataViewBase.ShowRibbonPrintPreviewDialog(System.Windows.Window)">
       <summary>
-        <para>Creates the print document from the <see cref="T:DevExpress.Xpf.Grid.DataViewBase"/> and displays the document&#39;s modal Print Preview with the Ribbon using the specified owner.</para>
+        <para>Creates the print document from the <see cref="T:DevExpress.Xpf.Grid.DataViewBase"/> and displays the document&#39;s Print Preview as a modal window with the Ribbon UI.</para>
       </summary>
-      <param name="owner">A <see cref="T:System.Windows.Window"/> instance specifying the owner of the Print Preview.</param>
+      <param name="owner">The owner of the Print Preview.</param>
     </member>
     <member name="M:DevExpress.Xpf.Grid.DataViewBase.ShowRibbonPrintPreviewDialog(System.Windows.Window,System.String)">
       <summary>
-        <para>Creates the print document from the <see cref="T:DevExpress.Xpf.Grid.DataViewBase"/> and displays the document&#39;s modal Print Preview with the Ribbon using the specified owner and document name.</para>
+        <para>Creates the print document from the <see cref="T:DevExpress.Xpf.Grid.DataViewBase"/> and displays the document&#39;s Print Preview as a modal window with the Ribbon UI.</para>
       </summary>
-      <param name="owner">A <see cref="T:System.Windows.Window"/> instance specifying the owner of the Print Preview.</param>
-      <param name="documentName">A <see cref="T:System.String"/> value specifying what name should be used for the document to be displayed in the Print Preview.</param>
+      <param name="owner">The owner of the Print Preview.</param>
+      <param name="documentName">The name of the document displayed in the Print Preview.</param>
     </member>
     <member name="M:DevExpress.Xpf.Grid.DataViewBase.ShowRibbonPrintPreviewDialog(System.Windows.Window,System.String,System.String)">
       <summary>
-        <para>Creates the print document from the <see cref="T:DevExpress.Xpf.Grid.DataViewBase"/> and displays the document&#39;s modal Print Preview with the Ribbon using the specified owner, document name and Print Preview&#39;s title.</para>
+        <para>Creates the print document from the <see cref="T:DevExpress.Xpf.Grid.DataViewBase"/> and displays the document&#39;s Print Preview as a modal window with the Ribbon UI.</para>
       </summary>
-      <param name="owner">A <see cref="T:System.Windows.Window"/> instance specifying the owner of the Print Preview.</param>
-      <param name="documentName">A <see cref="T:System.String"/> value specifying what name should be used for the document to be displayed in the Print Preview.</param>
-      <param name="title">A <see cref="T:System.String"/> value specifying the title of the Print Preview.</param>
+      <param name="owner">The owner of the Print Preview.</param>
+      <param name="documentName">The name of the document displayed in the Print Preview.</param>
+      <param name="title">The title of the Print Preview.</param>
     </member>
     <member name="M:DevExpress.Xpf.Grid.DataViewBase.ShowSearchPanel(System.Boolean)">
       <summary>
@@ -13098,6 +13098,11 @@ If all values in the date-time column are set to null, all check boxes are visib
         <para>Return Value: Totals for &#39;{0}&#39;</para>
       </summary>
     </member>
+    <member name="F:DevExpress.Xpf.Grid.GridControlRuntimeStringId.UpdateRowButtonsAdd">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
     <member name="F:DevExpress.Xpf.Grid.GridControlRuntimeStringId.UpdateRowButtonsCancel">
       <summary>
         <para>Represents the caption of the Cancel button in the Edit Entire Row mode.</para>
@@ -15353,6 +15358,11 @@ the values in this column.</para>
         <para>Return Value: Totals for &#39;{0}&#39;</para>
       </summary>
     </member>
+    <member name="F:DevExpress.Xpf.Grid.GridControlStringId.UpdateRowButtonsAdd">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
     <member name="F:DevExpress.Xpf.Grid.GridControlStringId.UpdateRowButtonsCancel">
       <summary>
         <para>Represents the caption of the Cancel button in the Edit Entire Row mode.</para>
@@ -16350,6 +16360,12 @@ the values in this column.</para>
         <para>Gets whether the associated row is the last fixed row at the top or at the bottom of the <see cref="T:DevExpress.Xpf.Grid.TableView"/>.</para>
       </summary>
       <value>true, if the row is the last fixed row at the top or at the bottom of the control; otherwise, false.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.Grid.RowData.IsNewItemRow">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
     </member>
     <member name="P:DevExpress.Xpf.Grid.RowData.IsReady">
       <summary>

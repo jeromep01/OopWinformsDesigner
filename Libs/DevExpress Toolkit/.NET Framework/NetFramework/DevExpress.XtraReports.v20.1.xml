@@ -1322,7 +1322,7 @@
     </member>
     <member name="T:DevExpress.XtraReports.Localization.LocalizationItem">
       <summary>
-        <para>Combines the reporting component, property. locale and a property value.</para>
+        <para>A combination of a component name, property name, language name and a property value.</para>
       </summary>
     </member>
     <member name="M:DevExpress.XtraReports.Localization.LocalizationItem.#ctor">
@@ -1334,10 +1334,10 @@
       <summary>
         <para>Initializes a new instance of the <see cref="T:DevExpress.XtraReports.Localization.LocalizationItem"/> class with specified settings.</para>
       </summary>
-      <param name="component"></param>
-      <param name="culture"></param>
-      <param name="path"></param>
-      <param name="propertyValue"></param>
+      <param name="component">A report component or control.</param>
+      <param name="culture">A culture&#39;s language code.</param>
+      <param name="path">A property&#39;s name.</param>
+      <param name="propertyValue">A property&#39;s value.</param>
     </member>
     <member name="P:DevExpress.XtraReports.Localization.LocalizationItem.Component">
       <summary>
@@ -1347,15 +1347,15 @@
     </member>
     <member name="P:DevExpress.XtraReports.Localization.LocalizationItem.Culture">
       <summary>
-        <para>Gets or sets the culture (locale).</para>
+        <para>Gets or sets the item&#39;s language.</para>
       </summary>
-      <value>A string that determines the locale.</value>
+      <value>A string that is the culture&#39;s language code.</value>
     </member>
     <member name="P:DevExpress.XtraReports.Localization.LocalizationItem.Data">
       <summary>
-        <para></para>
+        <para>Gets or sets the property&#39;s serialized value.</para>
       </summary>
-      <value></value>
+      <value>A string that is the serialized value of the property.</value>
     </member>
     <member name="M:DevExpress.XtraReports.Localization.LocalizationItem.HasCulture(System.String)">
       <summary>
@@ -12391,11 +12391,12 @@
         <para>Provides display options for the <see cref="T:DevExpress.XtraReports.UI.XRPivotGrid"/> control.</para>
       </summary>
     </member>
-    <member name="M:DevExpress.XtraReports.UI.PivotGrid.XRPivotGridOptionsView.#ctor(System.EventHandler)">
+    <member name="M:DevExpress.XtraReports.UI.PivotGrid.XRPivotGridOptionsView.#ctor(DevExpress.XtraPivotGrid.Data.PivotGridData,System.EventHandler)">
       <summary>
-        <para>Initializes a new instance of the <see cref="T:DevExpress.XtraReports.UI.PivotGrid.XRPivotGridOptionsView"/> class.</para>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.XtraReports.UI.PivotGrid.XRPivotGridOptionsView"/> class with specified settings.</para>
       </summary>
-      <param name="optionsChanged">A delegate that will receive change notifications.</param>
+      <param name="data"></param>
+      <param name="optionsChanged"></param>
     </member>
     <member name="P:DevExpress.XtraReports.UI.PivotGrid.XRPivotGridOptionsView.DrawFocusedCellRect">
       <summary>
@@ -21813,13 +21814,13 @@
       <summary>
         <para>Applies values contained in the localized report for the specified culture.</para>
       </summary>
-      <param name="culture">A <see cref="T:System.Globalization.CultureInfo"/> object that specifies the .NET culture.</param>
+      <param name="culture">A <see cref="T:System.Globalization.CultureInfo"/> object that specifies the .NET culture. The ApplyLocalization method uses only the culture&#39;s language code.</param>
     </member>
     <member name="M:DevExpress.XtraReports.UI.XtraReport.ApplyLocalization(System.String)">
       <summary>
         <para>Applies values contained in the localized report for the specified locale.</para>
       </summary>
-      <param name="culture">A culture name.</param>
+      <param name="culture">A culture name. The ApplyLocalization method uses only the culture&#39;s language code, so the &#39;de&#39;, &#39;de-DE&#39;, and &#39;de-AT&#39; parameters specify the same language.</param>
     </member>
     <member name="M:DevExpress.XtraReports.UI.XtraReport.BeginInit">
       <summary>
@@ -22007,31 +22008,19 @@
       </summary>
       <value>An <see cref="T:DevExpress.XtraPrinting.ExportOptions"/> object which contains the export settings for a report.</value>
     </member>
-    <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToCsv(System.IO.Stream)">
+    <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToCsv(System.IO.Stream,DevExpress.XtraPrinting.CsvExportOptions)">
       <summary>
         <para>Exports a report to the specified stream in CSV format.</para>
       </summary>
-      <param name="stream">A <see cref="T:System.IO.Stream"/> object to which the created CSV file should be sent.</param>
-    </member>
-    <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToCsv(System.IO.Stream,DevExpress.XtraPrinting.CsvExportOptions)">
-      <summary>
-        <para>Exports a report to the specified stream in CSV format using the specified CSV-specific options.</para>
-      </summary>
-      <param name="stream">A <see cref="T:System.IO.Stream"/> object to which the created CSV file should be sent.</param>
-      <param name="options">A <see cref="T:DevExpress.XtraPrinting.CsvExportOptions"/> object which specifies the CSV export options to be applied when a report is exported.</param>
-    </member>
-    <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToCsv(System.String)">
-      <summary>
-        <para>Exports a report to the specified file path in CSV format.</para>
-      </summary>
-      <param name="path">A <see cref="T:System.String"/> which specifies the file name (including the full path) for the created CSV file.</param>
+      <param name="stream">A <see cref="T:System.IO.Stream"/> for output data.</param>
+      <param name="options">A <see cref="T:DevExpress.XtraPrinting.CsvExportOptions"/> object that specifies the CSV export options. You can omit this parameter to use the current report export options.</param>
     </member>
     <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToCsv(System.String,DevExpress.XtraPrinting.CsvExportOptions)">
       <summary>
-        <para>Exports a report to the specified file path in CSV format using the specified CSV-specific options.</para>
+        <para>Exports a report to the specified file in CSV format.</para>
       </summary>
-      <param name="path">A <see cref="T:System.String"/> which specifies the file name (including the full path) for the created CSV file.</param>
-      <param name="options">A <see cref="T:DevExpress.XtraPrinting.CsvExportOptions"/> object which specifies the CSV export options to be applied when a report is exported.</param>
+      <param name="path">A <see cref="T:System.String"/> that is the full path to a file.</param>
+      <param name="options">A <see cref="T:DevExpress.XtraPrinting.CsvExportOptions"/> object that specifies the CSV export options. You can omit this parameter to use the current report export options.</param>
     </member>
     <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToCsvAsync(System.IO.Stream,DevExpress.XtraPrinting.CsvExportOptions,System.Threading.CancellationToken)">
       <summary>
@@ -22039,14 +22028,6 @@
       </summary>
       <param name="stream"></param>
       <param name="options"></param>
-      <param name="token"></param>
-      <returns></returns>
-    </member>
-    <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToCsvAsync(System.IO.Stream,System.Threading.CancellationToken)">
-      <summary>
-        <para></para>
-      </summary>
-      <param name="stream"></param>
       <param name="token"></param>
       <returns></returns>
     </member>
@@ -22059,39 +22040,19 @@
       <param name="token"></param>
       <returns></returns>
     </member>
-    <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToCsvAsync(System.String,System.Threading.CancellationToken)">
-      <summary>
-        <para></para>
-      </summary>
-      <param name="path"></param>
-      <param name="token"></param>
-      <returns></returns>
-    </member>
-    <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToDocx(System.IO.Stream)">
+    <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToDocx(System.IO.Stream,DevExpress.XtraPrinting.DocxExportOptions)">
       <summary>
         <para>Exports a report to the specified stream in DOCX format.</para>
       </summary>
-      <param name="stream">A <see cref="T:System.IO.Stream"/> object to which the created DOCX file should be sent.</param>
-    </member>
-    <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToDocx(System.IO.Stream,DevExpress.XtraPrinting.DocxExportOptions)">
-      <summary>
-        <para>Exports a report to the specified stream in DOCX format using the defined DOCX-specific options.</para>
-      </summary>
-      <param name="stream">A <see cref="T:System.IO.Stream"/> object to which the created DOCX file should be sent.</param>
-      <param name="options">A <see cref="T:DevExpress.XtraPrinting.DocxExportOptions"/> object that specifies the DOCX export options to be applied when a report is exported.</param>
-    </member>
-    <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToDocx(System.String)">
-      <summary>
-        <para>Exports a report to the specified file path in DOCX format.</para>
-      </summary>
-      <param name="path">A <see cref="T:System.String"/> value that specifies the file name (including the full path) for the created DOCX file.</param>
+      <param name="stream">A <see cref="T:System.IO.Stream"/> for output data.</param>
+      <param name="options">A <see cref="T:DevExpress.XtraPrinting.DocxExportOptions"/> object that specifies the DOCX export options. You can omit this parameter to use the current report export options.</param>
     </member>
     <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToDocx(System.String,DevExpress.XtraPrinting.DocxExportOptions)">
       <summary>
-        <para>Exports a report to the specified file path in DOCX format using the specified DOCX-specific options.</para>
+        <para>Exports a report to the specified file DOCX format.</para>
       </summary>
-      <param name="path">A <see cref="T:System.String"/> value that specifies the file name (including the full path) for the created DOCX file.</param>
-      <param name="options">A <see cref="T:DevExpress.XtraPrinting.DocxExportOptions"/> object that specifies the DOCX export options to be applied when a report is exported.</param>
+      <param name="path">A <see cref="T:System.String"/> value that that is the full path to a file.</param>
+      <param name="options">A <see cref="T:DevExpress.XtraPrinting.DocxExportOptions"/> object that specifies the DOCX export options. You can omit this parameter to use the current report export options.</param>
     </member>
     <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToDocxAsync(System.IO.Stream,DevExpress.XtraPrinting.DocxExportOptions,System.Threading.CancellationToken)">
       <summary>
@@ -22099,14 +22060,6 @@
       </summary>
       <param name="stream"></param>
       <param name="options"></param>
-      <param name="token"></param>
-      <returns></returns>
-    </member>
-    <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToDocxAsync(System.IO.Stream,System.Threading.CancellationToken)">
-      <summary>
-        <para></para>
-      </summary>
-      <param name="stream"></param>
       <param name="token"></param>
       <returns></returns>
     </member>
@@ -22119,39 +22072,19 @@
       <param name="token"></param>
       <returns></returns>
     </member>
-    <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToDocxAsync(System.String,System.Threading.CancellationToken)">
-      <summary>
-        <para></para>
-      </summary>
-      <param name="path"></param>
-      <param name="token"></param>
-      <returns></returns>
-    </member>
-    <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToHtml(System.IO.Stream)">
+    <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToHtml(System.IO.Stream,DevExpress.XtraPrinting.HtmlExportOptions)">
       <summary>
         <para>Exports a report to the specified stream in HTML format.</para>
       </summary>
-      <param name="stream">A <see cref="T:System.IO.Stream"/> object to which the created HTML file should be sent.</param>
-    </member>
-    <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToHtml(System.IO.Stream,DevExpress.XtraPrinting.HtmlExportOptions)">
-      <summary>
-        <para>Exports a report to the specified stream in HTML format using the specified HTML-specific options.</para>
-      </summary>
-      <param name="stream">A <see cref="T:System.IO.Stream"/> object to which the created HTML file should be sent.</param>
-      <param name="options">A <see cref="T:DevExpress.XtraPrinting.HtmlExportOptions"/> object which specifies the HTML export options to be applied when a report is exported.</param>
-    </member>
-    <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToHtml(System.String)">
-      <summary>
-        <para>Exports a report to the specified file path in HTML format.</para>
-      </summary>
-      <param name="path">A <see cref="T:System.String"/> which specifies the file name (including the full path) for the created HTML file.</param>
+      <param name="stream">A <see cref="T:System.IO.Stream"/> for output data.</param>
+      <param name="options">A <see cref="T:DevExpress.XtraPrinting.HtmlExportOptions"/> object that specifies the HTML export options. You can omit this parameter to use the current report export options.</param>
     </member>
     <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToHtml(System.String,DevExpress.XtraPrinting.HtmlExportOptions)">
       <summary>
-        <para>Exports a report to the specified file path in HTML format using the specified HTML-specific options.</para>
+        <para>Exports a report to the specified file in HTML format.</para>
       </summary>
-      <param name="path">A <see cref="T:System.String"/> which specifies the file name (including the full path) for the created HTML file.</param>
-      <param name="options">A <see cref="T:DevExpress.XtraPrinting.HtmlExportOptions"/> object which specifies the HTML export options to be applied when a report is exported.</param>
+      <param name="path">A <see cref="T:System.String"/> that is the full path to a file.</param>
+      <param name="options">A <see cref="T:DevExpress.XtraPrinting.CsvExportOptions"/> object that specifies the HTML export options. You can omit this parameter to use the current report export options.</param>
     </member>
     <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToHtmlAsync(System.IO.Stream,DevExpress.XtraPrinting.HtmlExportOptions,System.Threading.CancellationToken)">
       <summary>
@@ -22159,14 +22092,6 @@
       </summary>
       <param name="stream"></param>
       <param name="options"></param>
-      <param name="token"></param>
-      <returns></returns>
-    </member>
-    <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToHtmlAsync(System.IO.Stream,System.Threading.CancellationToken)">
-      <summary>
-        <para></para>
-      </summary>
-      <param name="stream"></param>
       <param name="token"></param>
       <returns></returns>
     </member>
@@ -22179,53 +22104,33 @@
       <param name="token"></param>
       <returns></returns>
     </member>
-    <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToHtmlAsync(System.String,System.Threading.CancellationToken)">
-      <summary>
-        <para></para>
-      </summary>
-      <param name="path"></param>
-      <param name="token"></param>
-      <returns></returns>
-    </member>
-    <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToImage(System.IO.Stream)">
+    <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToImage(System.IO.Stream,DevExpress.XtraPrinting.ImageExportOptions)">
       <summary>
         <para>Exports a report to the specified stream in Image format.</para>
       </summary>
-      <param name="stream">A <see cref="T:System.IO.Stream"/> object to which the created Image file should be sent.</param>
-    </member>
-    <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToImage(System.IO.Stream,DevExpress.XtraPrinting.ImageExportOptions)">
-      <summary>
-        <para>Exports a report to the specified stream in Image format using the specified Image-specific options.</para>
-      </summary>
-      <param name="stream">A <see cref="T:System.IO.Stream"/> object to which the created Image file should be sent.</param>
-      <param name="options">A <see cref="T:DevExpress.XtraPrinting.ImageExportOptions"/> object which specifies the Image export options to be applied when a report is exported.</param>
+      <param name="stream">A <see cref="T:System.IO.Stream"/> for output data.</param>
+      <param name="options">A <see cref="T:DevExpress.XtraPrinting.ImageExportOptions"/> object that specifies the Image export options. You can omit this parameter to use the current report export options.</param>
     </member>
     <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToImage(System.IO.Stream,System.Drawing.Imaging.ImageFormat)">
       <summary>
-        <para>Exports a report to the specified stream in the specified Image format.</para>
+        <para>Exports a report to the specified stream in the specified image format.</para>
       </summary>
-      <param name="stream">A <see cref="T:System.IO.Stream"/> object to which the created Image file should be sent.</param>
-      <param name="format">A <see cref="T:System.Drawing.Imaging.ImageFormat"/> object which specifies the image format.</param>
-    </member>
-    <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToImage(System.String)">
-      <summary>
-        <para>Exports a report to the specified file path in Image format.</para>
-      </summary>
-      <param name="path">A <see cref="T:System.String"/> which specifies the file name (including the full path) for the created Image file.</param>
+      <param name="stream">A <see cref="T:System.IO.Stream"/> for output data.</param>
+      <param name="format">A <see cref="T:System.Drawing.Imaging.ImageFormat"/> object that specifies the image format.</param>
     </member>
     <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToImage(System.String,DevExpress.XtraPrinting.ImageExportOptions)">
       <summary>
-        <para>Exports a report to the specified file path in Image format using the specified Image-specific options.</para>
+        <para>Exports a report to the specified file in Image format.</para>
       </summary>
-      <param name="path">A <see cref="T:System.String"/> which specifies the file name (including the full path) for the created Image file.</param>
-      <param name="options">A <see cref="T:DevExpress.XtraPrinting.ImageExportOptions"/> object which specifies the Image export options to be applied when a report is exported.</param>
+      <param name="path">A <see cref="T:System.String"/> that is the full path to a file.</param>
+      <param name="options">A <see cref="T:DevExpress.XtraPrinting.ImageExportOptions"/> object that specifies the Image export options. You can omit this parameter to use the current report export options.</param>
     </member>
     <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToImage(System.String,System.Drawing.Imaging.ImageFormat)">
       <summary>
-        <para>Exports a report to the specified file path using the specified image format.</para>
+        <para>Exports a report to the specified file in the specified image format.</para>
       </summary>
-      <param name="path">A <see cref="T:System.String"/> which specifies the file name (including the full path) for the created Image file.</param>
-      <param name="format">A <see cref="T:System.Drawing.Imaging.ImageFormat"/> object which specifies the image format.</param>
+      <param name="path">A <see cref="T:System.String"/> that is the full path to a file.</param>
+      <param name="format">A <see cref="T:System.Drawing.Imaging.ImageFormat"/> object that specifies the image format.</param>
     </member>
     <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToImageAsync(System.IO.Stream,DevExpress.XtraPrinting.ImageExportOptions,System.Threading.CancellationToken)">
       <summary>
@@ -22233,14 +22138,6 @@
       </summary>
       <param name="stream"></param>
       <param name="options"></param>
-      <param name="token"></param>
-      <returns></returns>
-    </member>
-    <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToImageAsync(System.IO.Stream,System.Threading.CancellationToken)">
-      <summary>
-        <para></para>
-      </summary>
-      <param name="stream"></param>
       <param name="token"></param>
       <returns></returns>
     </member>
@@ -22252,20 +22149,6 @@
       <param name="options"></param>
       <param name="token"></param>
       <returns></returns>
-    </member>
-    <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToImageAsync(System.String,System.Threading.CancellationToken)">
-      <summary>
-        <para></para>
-      </summary>
-      <param name="path"></param>
-      <param name="token"></param>
-      <returns></returns>
-    </member>
-    <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToMail">
-      <summary>
-        <para>Exports a document to HTML and then inserts it into a specified e-mail.</para>
-      </summary>
-      <returns>A <see cref="T:System.Net.Mail.AlternateView"/> object.</returns>
     </member>
     <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToMail(DevExpress.XtraPrinting.MailMessageExportOptions)">
       <summary>
@@ -22322,38 +22205,19 @@
       <param name="token"></param>
       <returns></returns>
     </member>
-    <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToMailAsync(System.Threading.CancellationToken)">
-      <summary>
-        <para></para>
-      </summary>
-      <param name="token"></param>
-      <returns></returns>
-    </member>
-    <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToMht(System.IO.Stream)">
+    <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToMht(System.IO.Stream,DevExpress.XtraPrinting.MhtExportOptions)">
       <summary>
         <para>Exports a report to the specified stream in MHT format.</para>
       </summary>
-      <param name="stream">A <see cref="T:System.IO.Stream"/> object to which the created MHT file should be sent.</param>
-    </member>
-    <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToMht(System.IO.Stream,DevExpress.XtraPrinting.MhtExportOptions)">
-      <summary>
-        <para>Exports a report to the specified stream in MHT format using the specified MHT-specific options.</para>
-      </summary>
-      <param name="stream">A <see cref="T:System.IO.Stream"/> object to which the created MHT file should be sent.</param>
-      <param name="options">A <see cref="T:DevExpress.XtraPrinting.MhtExportOptions"/> object which specifies the MHT export options to be applied when a report is exported.</param>
-    </member>
-    <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToMht(System.String)">
-      <summary>
-        <para>Exports a report to the specified file path in MHT format.</para>
-      </summary>
-      <param name="path">A <see cref="T:System.String"/> which specifies the file name (including the full path) for the created MHT file.</param>
+      <param name="stream">A <see cref="T:System.IO.Stream"/> for output data.</param>
+      <param name="options">A <see cref="T:DevExpress.XtraPrinting.MhtExportOptions"/> object that specifies the MHT export options. You can omit this parameter to use the current report export options.</param>
     </member>
     <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToMht(System.String,DevExpress.XtraPrinting.MhtExportOptions)">
       <summary>
-        <para>Exports a report to the specified file path in MHT format using the specified MHT-specific options.</para>
+        <para>Exports a report to the specified file in MHT format.</para>
       </summary>
-      <param name="path">A <see cref="T:System.String"/> which specifies the file name (including the full path) for the created MHT file.</param>
-      <param name="options">A <see cref="T:DevExpress.XtraPrinting.MhtExportOptions"/> object which specifies the MHT export options to be applied when a report is exported.</param>
+      <param name="path">A <see cref="T:System.String"/> that is the full path to a file.</param>
+      <param name="options">A <see cref="T:DevExpress.XtraPrinting.MhtExportOptions"/> object that specifies the MHT export options. You can omit this parameter to use the current report export options.</param>
     </member>
     <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToMhtAsync(System.IO.Stream,DevExpress.XtraPrinting.MhtExportOptions,System.Threading.CancellationToken)">
       <summary>
@@ -22361,14 +22225,6 @@
       </summary>
       <param name="stream"></param>
       <param name="options"></param>
-      <param name="token"></param>
-      <returns></returns>
-    </member>
-    <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToMhtAsync(System.IO.Stream,System.Threading.CancellationToken)">
-      <summary>
-        <para></para>
-      </summary>
-      <param name="stream"></param>
       <param name="token"></param>
       <returns></returns>
     </member>
@@ -22381,39 +22237,19 @@
       <param name="token"></param>
       <returns></returns>
     </member>
-    <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToMhtAsync(System.String,System.Threading.CancellationToken)">
-      <summary>
-        <para></para>
-      </summary>
-      <param name="path"></param>
-      <param name="token"></param>
-      <returns></returns>
-    </member>
-    <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToPdf(System.IO.Stream)">
-      <summary>
-        <para>Exports a report to the specified stream in PDF.</para>
-      </summary>
-      <param name="stream">A <see cref="T:System.IO.Stream"/> object to which the created PDF file should be sent.</param>
-    </member>
     <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToPdf(System.IO.Stream,DevExpress.XtraPrinting.PdfExportOptions)">
       <summary>
-        <para>Exports a report to the specified stream in PDF using the specified PDF-specific options.</para>
+        <para>Exports a report to the specified stream in PDF format.</para>
       </summary>
-      <param name="stream">A <see cref="T:System.IO.Stream"/> object to which the created PDF file should be sent.</param>
-      <param name="options">A <see cref="T:DevExpress.XtraPrinting.PdfExportOptions"/> object which specifies the PDF export options to be applied when a report is exported.</param>
-    </member>
-    <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToPdf(System.String)">
-      <summary>
-        <para>Exports a report to the specified file path in PDF.</para>
-      </summary>
-      <param name="path">A <see cref="T:System.String"/> which specifies the file name (including the full path) for the created PDF file.</param>
+      <param name="stream">A <see cref="T:System.IO.Stream"/> for output data.</param>
+      <param name="options">A <see cref="T:DevExpress.XtraPrinting.PdfExportOptions"/> object that specifies the PDF export options. You can omit this parameter to use the current report export options.</param>
     </member>
     <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToPdf(System.String,DevExpress.XtraPrinting.PdfExportOptions)">
       <summary>
-        <para>Exports a report to the specified file path in PDF using the specified PDF-specific options.</para>
+        <para>EExports a report to the specified file in PDF format.</para>
       </summary>
-      <param name="path">A <see cref="T:System.String"/> which specifies the file name (including the full path) for the created PDF file.</param>
-      <param name="options">A <see cref="T:DevExpress.XtraPrinting.PdfExportOptions"/> object which specifies the PDF export options to be applied when a report is exported.</param>
+      <param name="path">A <see cref="T:System.String"/> that is the full path to a file.</param>
+      <param name="options">A <see cref="T:DevExpress.XtraPrinting.PdfExportOptions"/> object that specifies the PDF export options. You can omit this parameter to use the current report export options.</param>
     </member>
     <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToPdfAsync(System.IO.Stream,DevExpress.XtraPrinting.PdfExportOptions,System.Threading.CancellationToken)">
       <summary>
@@ -22421,14 +22257,6 @@
       </summary>
       <param name="stream"></param>
       <param name="options"></param>
-      <param name="token"></param>
-      <returns></returns>
-    </member>
-    <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToPdfAsync(System.IO.Stream,System.Threading.CancellationToken)">
-      <summary>
-        <para></para>
-      </summary>
-      <param name="stream"></param>
       <param name="token"></param>
       <returns></returns>
     </member>
@@ -22441,39 +22269,19 @@
       <param name="token"></param>
       <returns></returns>
     </member>
-    <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToPdfAsync(System.String,System.Threading.CancellationToken)">
-      <summary>
-        <para></para>
-      </summary>
-      <param name="path"></param>
-      <param name="token"></param>
-      <returns></returns>
-    </member>
-    <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToRtf(System.IO.Stream)">
+    <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToRtf(System.IO.Stream,DevExpress.XtraPrinting.RtfExportOptions)">
       <summary>
         <para>Exports a report to the specified stream in RTF format.</para>
       </summary>
-      <param name="stream">A <see cref="T:System.IO.Stream"/> object to which the created RTF file should be sent.</param>
-    </member>
-    <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToRtf(System.IO.Stream,DevExpress.XtraPrinting.RtfExportOptions)">
-      <summary>
-        <para>Exports a document to the specified file path in RTF format.</para>
-      </summary>
-      <param name="stream">A <see cref="T:System.IO.Stream"/> object to which the created RTF file should be sent.</param>
-      <param name="options">An <see cref="T:DevExpress.XtraPrinting.RtfExportOptions"/> object, containing RTF export settings.</param>
-    </member>
-    <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToRtf(System.String)">
-      <summary>
-        <para>Exports a report to the specified file path in RTF format.</para>
-      </summary>
-      <param name="path">A <see cref="T:System.String"/> which specifies the file name (including the full path) for the created RTF file.</param>
+      <param name="stream">A <see cref="T:System.IO.Stream"/> for output data.</param>
+      <param name="options">A <see cref="T:DevExpress.XtraPrinting.RtfExportOptions"/> object that specifies the RTF export options. You can omit this parameter to use the current report export options.</param>
     </member>
     <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToRtf(System.String,DevExpress.XtraPrinting.RtfExportOptions)">
       <summary>
-        <para>Exports a document to the specified file path in RTF format.</para>
+        <para>Exports a report to the specified file in RTF format.</para>
       </summary>
-      <param name="path">A <see cref="T:System.String"/> which specifies the file name (including the full path) for the created RTF file.</param>
-      <param name="options">An <see cref="T:DevExpress.XtraPrinting.RtfExportOptions"/> object, containing RTF export settings.</param>
+      <param name="path">A <see cref="T:System.String"/> that is the full path to a file.</param>
+      <param name="options">A <see cref="T:DevExpress.XtraPrinting.RtfExportOptions"/> object that specifies the RTF export options. You can omit this parameter to use the current report export options.</param>
     </member>
     <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToRtfAsync(System.IO.Stream,DevExpress.XtraPrinting.RtfExportOptions,System.Threading.CancellationToken)">
       <summary>
@@ -22481,14 +22289,6 @@
       </summary>
       <param name="stream"></param>
       <param name="options"></param>
-      <param name="token"></param>
-      <returns></returns>
-    </member>
-    <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToRtfAsync(System.IO.Stream,System.Threading.CancellationToken)">
-      <summary>
-        <para></para>
-      </summary>
-      <param name="stream"></param>
       <param name="token"></param>
       <returns></returns>
     </member>
@@ -22501,39 +22301,19 @@
       <param name="token"></param>
       <returns></returns>
     </member>
-    <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToRtfAsync(System.String,System.Threading.CancellationToken)">
-      <summary>
-        <para></para>
-      </summary>
-      <param name="path"></param>
-      <param name="token"></param>
-      <returns></returns>
-    </member>
-    <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToText(System.IO.Stream)">
-      <summary>
-        <para>Exports a report to the specified stream in Text format.</para>
-      </summary>
-      <param name="stream">A <see cref="T:System.IO.Stream"/> object to which the created Text file should be sent.</param>
-    </member>
     <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToText(System.IO.Stream,DevExpress.XtraPrinting.TextExportOptions)">
       <summary>
-        <para>Exports a report to the specified stream in Text format using the specified Text-specific options.</para>
+        <para>Exports a report to the specified stream in text format.</para>
       </summary>
-      <param name="stream">A <see cref="T:System.IO.Stream"/> object to which the created Text file should be sent.</param>
-      <param name="options">A <see cref="T:DevExpress.XtraPrinting.TextExportOptions"/> object which specifies the Text export options to be applied when a report is exported.</param>
-    </member>
-    <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToText(System.String)">
-      <summary>
-        <para>Exports a report to the specified file path in Text format.</para>
-      </summary>
-      <param name="path">A <see cref="T:System.String"/> which specifies the file name (including the full path) for the created Text file.</param>
+      <param name="stream">A <see cref="T:System.IO.Stream"/> for output data.</param>
+      <param name="options">A <see cref="T:DevExpress.XtraPrinting.TextExportOptions"/> object that specifies the text export options. You can omit this parameter to use the current report export options.</param>
     </member>
     <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToText(System.String,DevExpress.XtraPrinting.TextExportOptions)">
       <summary>
-        <para>Exports a report to the specified file path in Text format using the specified Text-specific options.</para>
+        <para>Exports a report to the specified file in text format.</para>
       </summary>
-      <param name="path">A <see cref="T:System.String"/> which specifies the file name (including the full path) for the created Text file.</param>
-      <param name="options">A <see cref="T:DevExpress.XtraPrinting.TextExportOptions"/> object which specifies the Text export options to be applied when a report is exported.</param>
+      <param name="path">A <see cref="T:System.String"/> that is the full path to a file.</param>
+      <param name="options">A <see cref="T:DevExpress.XtraPrinting.TextExportOptions"/> object that specifies the text export options. You can omit this parameter to use the current report export options.</param>
     </member>
     <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToTextAsync(System.IO.Stream,DevExpress.XtraPrinting.TextExportOptions,System.Threading.CancellationToken)">
       <summary>
@@ -22541,14 +22321,6 @@
       </summary>
       <param name="stream"></param>
       <param name="options"></param>
-      <param name="token"></param>
-      <returns></returns>
-    </member>
-    <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToTextAsync(System.IO.Stream,System.Threading.CancellationToken)">
-      <summary>
-        <para></para>
-      </summary>
-      <param name="stream"></param>
       <param name="token"></param>
       <returns></returns>
     </member>
@@ -22561,39 +22333,19 @@
       <param name="token"></param>
       <returns></returns>
     </member>
-    <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToTextAsync(System.String,System.Threading.CancellationToken)">
-      <summary>
-        <para></para>
-      </summary>
-      <param name="path"></param>
-      <param name="token"></param>
-      <returns></returns>
-    </member>
-    <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToXls(System.IO.Stream)">
-      <summary>
-        <para>Exports a report to the specified stream in XLS format. This method exports data in WYSIWYG mode. Certain controls (e.g., a <see cref="T:DevExpress.XtraGrid.GridControl"></see>) can be exported to XLS(XLSX) format in a faster data-aware export mode, optimized for subsequent analysis of data in MS Excel. To learn how to employ data-aware export, see Export to XLS and XLSX Formats.</para>
-      </summary>
-      <param name="stream">A <see cref="T:System.IO.Stream"/> object to which the created XLS file should be sent.</param>
-    </member>
     <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToXls(System.IO.Stream,DevExpress.XtraPrinting.XlsExportOptions)">
       <summary>
-        <para>Exports a report to the specified file path in XLS format.This method exports data in WYSIWYG mode. Certain controls (e.g., a <see cref="T:DevExpress.XtraGrid.GridControl"></see>) can be exported to XLS(XLSX) format in a faster data-aware export mode, optimized for subsequent analysis of data in MS Excel. To learn how to employ data-aware export, see Export to XLS and XLSX Formats.</para>
+        <para>Exports a report to the specified stream in CSV format. This method exports data in WYSIWYG mode.</para>
       </summary>
-      <param name="stream">A <see cref="T:System.IO.Stream"/> object to which the created XLS file should be sent.</param>
-      <param name="options">A <see cref="T:DevExpress.XtraPrinting.XlsExportOptions"/> object which specifies the XLS export options to be applied when a report is exported.</param>
-    </member>
-    <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToXls(System.String)">
-      <summary>
-        <para>Exports a report to the specified file path in XLS format. This method exports data in WYSIWYG mode. Certain controls (e.g., a <see cref="T:DevExpress.XtraGrid.GridControl"></see>) can be exported to XLS(XLSX) format in a faster data-aware export mode, optimized for subsequent analysis of data in MS Excel. To learn how to employ data-aware export, see Export to XLS and XLSX Formats.</para>
-      </summary>
-      <param name="path">A <see cref="T:System.String"/> which specifies the file name (including the full path) for the created XLS file.</param>
+      <param name="stream">A <see cref="T:System.IO.Stream"/> for output data.</param>
+      <param name="options">A <see cref="T:DevExpress.XtraPrinting.XlsExportOptions"/> object that specifies the XLS export options. You can omit this parameter to use the current report export options.</param>
     </member>
     <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToXls(System.String,DevExpress.XtraPrinting.XlsExportOptions)">
       <summary>
-        <para>Exports a report to the specified file path in XLS format using the specified XLS-specific options.This method exports data in WYSIWYG mode. Certain controls (e.g., a <see cref="T:DevExpress.XtraGrid.GridControl"></see>) can be exported to XLS(XLSX) format in a faster data-aware export mode, optimized for subsequent analysis of data in MS Excel. To learn how to employ data-aware export, see Export to XLS and XLSX Formats.</para>
+        <para>Exports a report to the specified file in XLS format. This method exports data in WYSIWYG mode.</para>
       </summary>
-      <param name="path">A <see cref="T:System.String"/> which specifies the file name (including the full path) for the created XLS file.</param>
-      <param name="options">A <see cref="T:DevExpress.XtraPrinting.XlsExportOptions"/> object which specifies the XLS export options to be applied when a report is exported.</param>
+      <param name="path">A <see cref="T:System.String"/> that is the full path to a file.</param>
+      <param name="options">A <see cref="T:DevExpress.XtraPrinting.XlsExportOptions"/> object that specifies the XLS export options. You can omit this parameter to use the current report export options.</param>
     </member>
     <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToXlsAsync(System.IO.Stream,DevExpress.XtraPrinting.XlsExportOptions,System.Threading.CancellationToken)">
       <summary>
@@ -22601,14 +22353,6 @@
       </summary>
       <param name="stream"></param>
       <param name="options"></param>
-      <param name="token"></param>
-      <returns></returns>
-    </member>
-    <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToXlsAsync(System.IO.Stream,System.Threading.CancellationToken)">
-      <summary>
-        <para></para>
-      </summary>
-      <param name="stream"></param>
       <param name="token"></param>
       <returns></returns>
     </member>
@@ -22621,39 +22365,19 @@
       <param name="token"></param>
       <returns></returns>
     </member>
-    <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToXlsAsync(System.String,System.Threading.CancellationToken)">
-      <summary>
-        <para></para>
-      </summary>
-      <param name="path"></param>
-      <param name="token"></param>
-      <returns></returns>
-    </member>
-    <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToXlsx(System.IO.Stream)">
-      <summary>
-        <para>Exports a report to the specified stream in XLSX format.This method exports data in WYSIWYG mode. Certain controls (e.g., a <see cref="T:DevExpress.XtraGrid.GridControl"></see>) can be exported to XLS(XLSX) format in a faster data-aware export mode, optimized for subsequent analysis of data in MS Excel. To learn how to employ data-aware export, see Export to XLS and XLSX Formats.</para>
-      </summary>
-      <param name="stream">A <see cref="T:System.IO.Stream"/> object to which the created XLSX file should be sent.</param>
-    </member>
     <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToXlsx(System.IO.Stream,DevExpress.XtraPrinting.XlsxExportOptions)">
       <summary>
-        <para>Exports a report to the specified file path in XLSX format using the specified XLSX-specific options.This method exports data in WYSIWYG mode. Certain controls (e.g., a <see cref="T:DevExpress.XtraGrid.GridControl"></see>) can be exported to XLS(XLSX) format in a faster data-aware export mode, optimized for subsequent analysis of data in MS Excel. To learn how to employ data-aware export, see Export to XLS and XLSX Formats.</para>
+        <para>Exports a report to the specified stream in XLSX format. This method exports data in WYSIWYG mode.</para>
       </summary>
-      <param name="stream">A <see cref="T:System.IO.Stream"/> object to which the created XLSX file should be sent.</param>
-      <param name="options">A <see cref="T:DevExpress.XtraPrinting.XlsxExportOptions"/> object which specifies the XLSX export options to be applied when a report is exported.</param>
-    </member>
-    <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToXlsx(System.String)">
-      <summary>
-        <para>Exports a report to the specified file path in XLSX format.This method exports data in WYSIWYG mode. Certain controls (e.g., a <see cref="T:DevExpress.XtraGrid.GridControl"></see>) can be exported to XLS(XLSX) format in a faster data-aware export mode, optimized for subsequent analysis of data in MS Excel. To learn how to employ data-aware export, see Export to XLS and XLSX Formats.</para>
-      </summary>
-      <param name="path">A <see cref="T:System.String"/> which specifies the file name (including the full path) for the created XLSX file.</param>
+      <param name="stream">A <see cref="T:System.IO.Stream"/> for output data.</param>
+      <param name="options">A <see cref="T:DevExpress.XtraPrinting.XlsxExportOptions"/> object that specifies the XLSX export options. You can omit this parameter to use the current report export options.</param>
     </member>
     <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToXlsx(System.String,DevExpress.XtraPrinting.XlsxExportOptions)">
       <summary>
-        <para>Exports a report to the specified stream in XLSX format using the specified XLS-specific options.This method exports data in WYSIWYG mode. Certain controls (e.g., a <see cref="T:DevExpress.XtraGrid.GridControl"></see>) can be exported to XLS(XLSX) format in a faster data-aware export mode, optimized for subsequent analysis of data in MS Excel. To learn how to employ data-aware export, see Export to XLS and XLSX Formats.</para>
+        <para>Exports a report to the specified file in XLSX format. This method exports data in WYSIWYG mode.</para>
       </summary>
-      <param name="path">A <see cref="T:System.String"/> which specifies the file name (including the full path) for the created XLSX file.</param>
-      <param name="options">A <see cref="T:DevExpress.XtraPrinting.XlsxExportOptions"/> object which specifies the XLSX export options to be applied when a report is exported.</param>
+      <param name="path">A <see cref="T:System.String"/> that is the full path to a file.</param>
+      <param name="options">A <see cref="T:DevExpress.XtraPrinting.XlsxExportOptions"/> object that specifies the XLSX export options. You can omit this parameter to use the current report export options.</param>
     </member>
     <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToXlsxAsync(System.IO.Stream,DevExpress.XtraPrinting.XlsxExportOptions,System.Threading.CancellationToken)">
       <summary>
@@ -22664,28 +22388,12 @@
       <param name="token"></param>
       <returns></returns>
     </member>
-    <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToXlsxAsync(System.IO.Stream,System.Threading.CancellationToken)">
-      <summary>
-        <para></para>
-      </summary>
-      <param name="stream"></param>
-      <param name="token"></param>
-      <returns></returns>
-    </member>
     <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToXlsxAsync(System.String,DevExpress.XtraPrinting.XlsxExportOptions,System.Threading.CancellationToken)">
       <summary>
         <para></para>
       </summary>
       <param name="path"></param>
       <param name="options"></param>
-      <param name="token"></param>
-      <returns></returns>
-    </member>
-    <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToXlsxAsync(System.String,System.Threading.CancellationToken)">
-      <summary>
-        <para></para>
-      </summary>
-      <param name="path"></param>
       <param name="token"></param>
       <returns></returns>
     </member>
@@ -22810,9 +22518,9 @@
     </member>
     <member name="P:DevExpress.XtraReports.UI.XtraReport.LocalizationItems">
       <summary>
-        <para></para>
+        <para>Provides access to a collection of items that combine the property name, its value and a language name.</para>
       </summary>
-      <value></value>
+      <value>A collection of <see cref="T:DevExpress.XtraReports.Localization.LocalizationItem"/> objects that combine localized properties, their values and culture identifiers.</value>
     </member>
     <member name="P:DevExpress.XtraReports.UI.XtraReport.LockedInUserDesigner">
       <summary>
@@ -26113,6 +25821,68 @@
         <para></para>
       </summary>
       <returns></returns>
+    </member>
+    <member name="T:DevExpress.XtraReports.Wizards.Presenters.ChooseXPObjectSourceConnectionTypePageEx`1">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.XtraReports.Wizards.Presenters.ChooseXPObjectSourceConnectionTypePageEx`1.#ctor(DevExpress.DataAccess.Wizard.Views.IChooseXPObjectSourceConnectionTypePageView,DevExpress.Data.Entity.IConnectionStringsProvider)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.XtraReports.Wizards.Presenters.ChooseXPObjectSourceConnectionTypePageEx`1"/> class with specified settings.</para>
+      </summary>
+      <param name="view"></param>
+      <param name="connectionStringsProvider"></param>
+    </member>
+    <member name="P:DevExpress.XtraReports.Wizards.Presenters.ChooseXPObjectSourceConnectionTypePageEx`1.FinishEnabled">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="M:DevExpress.XtraReports.Wizards.Presenters.ChooseXPObjectSourceConnectionTypePageEx`1.GetNextPageType">
+      <summary>
+        <para></para>
+      </summary>
+      <returns></returns>
+    </member>
+    <member name="P:DevExpress.XtraReports.Wizards.Presenters.ChooseXPObjectSourceConnectionTypePageEx`1.MoveNextEnabled">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="T:DevExpress.XtraReports.Wizards.Presenters.ChooseXPObjectSourceEntityTypePageEx`1">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.XtraReports.Wizards.Presenters.ChooseXPObjectSourceEntityTypePageEx`1.#ctor(DevExpress.DataAccess.Wizard.Views.IChooseXPObjectSourceEntityTypePageView,DevExpress.DataAccess.Wizard.IWizardRunnerContext,DevExpress.Entity.ProjectModel.ISolutionTypesProvider,DevExpress.Data.Entity.IConnectionStringsProvider)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.XtraReports.Wizards.Presenters.ChooseXPObjectSourceEntityTypePageEx`1"/> class with specified settings.</para>
+      </summary>
+      <param name="view"></param>
+      <param name="context"></param>
+      <param name="solutionTypesProvider"></param>
+      <param name="connectionStringsProvider"></param>
+    </member>
+    <member name="P:DevExpress.XtraReports.Wizards.Presenters.ChooseXPObjectSourceEntityTypePageEx`1.FinishEnabled">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="M:DevExpress.XtraReports.Wizards.Presenters.ChooseXPObjectSourceEntityTypePageEx`1.GetNextPageType">
+      <summary>
+        <para></para>
+      </summary>
+      <returns></returns>
+    </member>
+    <member name="P:DevExpress.XtraReports.Wizards.Presenters.ChooseXPObjectSourceEntityTypePageEx`1.MoveNextEnabled">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
     </member>
     <member name="T:DevExpress.XtraReports.Wizards.Presenters.ConfigureCrossTabPage`1">
       <summary>

@@ -4,11 +4,6 @@
     <name>DevExpress.ExpressApp.Chart.v20.1</name>
   </assembly>
   <members>
-    <member name="N:DevExpress.ExpressApp.Chart">
-      <summary>
-        <para>Contains classes and interfaces specific to the Chart Module functionality.</para>
-      </summary>
-    </member>
     <member name="T:DevExpress.ExpressApp.Chart.ChartListEditorBase">
       <summary>
         <para>An abstract class that serves as the base class for the Charting List Editors.</para>

@@ -2761,12 +2761,6 @@
       </summary>
       <returns>true if a user clicks OK; false if a user clicks Cancel, otherwise null (Nothing in Visual Basic).</returns>
     </member>
-    <member name="P:DevExpress.XtraReports.UI.ReportPrintTool.UseAsyncDocumentCreation">
-      <summary>
-        <para>This property is obsolete (not in use anymore).</para>
-      </summary>
-      <value></value>
-    </member>
     <member name="T:DevExpress.XtraReports.UI.XtraReportPreviewExtensions">
       <summary>
         <para>Provides extension methods that enable you to show a report in a WinForms Print Preview.</para>

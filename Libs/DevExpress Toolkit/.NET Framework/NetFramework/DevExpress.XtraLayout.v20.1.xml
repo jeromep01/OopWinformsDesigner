@@ -3985,9 +3985,9 @@ is dependent on the type of control embedded in this layout item.</value>
     </member>
     <member name="P:DevExpress.XtraLayout.LayoutSerializationOptions.RestoreTextToControlDistance">
       <summary>
-        <para>Gets or sets whether values of layout items&#39; <see cref="P:DevExpress.XtraLayout.BaseLayoutItem.TextToControlDistance"/> properties are restored when restoring the control&#39;s layout from a data store.</para>
+        <para>Gets or sets whether values of the TextToControlDistance properties (<see cref="P:DevExpress.XtraLayout.BaseLayoutItem.TextToControlDistance"/> and LayoutGroup .OptionsItemText.TextToControlDistance) are restored when you load the control&#39;s layout from a data store.</para>
       </summary>
-      <value>true to restore the corresponding settings; otherwise, false.</value>
+      <value>true to restore the TextToControlDistance settings; otherwise, false.</value>
     </member>
     <member name="N:DevExpress.XtraLayout.Localization">
       <summary>

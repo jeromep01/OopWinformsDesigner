@@ -6135,11 +6135,10 @@
         <para>Provides view options for ASPxPivotGrid controls.</para>
       </summary>
     </member>
-    <member name="M:DevExpress.Web.ASPxPivotGrid.PivotGridWebOptionsView.#ctor(DevExpress.XtraPivotGrid.Data.PivotGridData,System.EventHandler,DevExpress.WebUtils.IViewBagOwner,System.String)">
+    <member name="M:DevExpress.Web.ASPxPivotGrid.PivotGridWebOptionsView.#ctor(System.EventHandler,DevExpress.WebUtils.IViewBagOwner,System.String)">
       <summary>
         <para>Initializes a new instance of the <see cref="T:DevExpress.Web.ASPxPivotGrid.PivotGridWebOptionsView"/> class with specified settings.</para>
       </summary>
-      <param name="data"></param>
       <param name="optionsChanged"></param>
       <param name="viewBagOwner"></param>
       <param name="objectPath"></param>
