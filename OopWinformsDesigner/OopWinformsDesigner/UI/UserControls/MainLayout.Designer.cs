@@ -32,10 +32,12 @@
             // 
             // MainLayout
             // 
+            this.Appearance.BackColor = System.Drawing.Color.Green;
+            this.Appearance.Options.UseBackColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Name = "MainLayout";
-            this.Size = new System.Drawing.Size(534, 152);
+            this.Size = new System.Drawing.Size(853, 431);
             this.ResumeLayout(false);
 
         }

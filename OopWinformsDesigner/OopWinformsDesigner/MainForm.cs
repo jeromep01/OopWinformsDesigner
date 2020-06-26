@@ -9,12 +9,15 @@ using System;
 
 namespace OopWinformsDesigner
 {
+    /// <summary>
+    /// Definition of the main form of this application.
+    /// </summary>
     public partial class MainForm : RibbonForm
     {
         /// <summary>
         /// Gets or sets the layout that will be used to match designer processes.
         /// </summary>
-        public PanelControl MainLayout { get; set; }
+        public PanelControl MainLayout { get; set; } = new PanelControl();
 
         /// <summary>
         /// Gets or sets the bar manager (used to create both status bar / menus).
@@ -42,9 +45,9 @@ namespace OopWinformsDesigner
 
         private void installLayout()
         {
-            MainLayout = new PanelControl().Install();
+            UIExtenders.Install(MainLayout);
 
-            Controls.Add(MainLayout);
+            //Controls.Add(MainLayout);
         }
         private void installRibbonMenu()
         {
