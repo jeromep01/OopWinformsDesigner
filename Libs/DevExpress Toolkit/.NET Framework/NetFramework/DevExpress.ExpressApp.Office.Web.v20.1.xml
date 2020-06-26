@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <assembly>
+    <name>DevExpress.ExpressApp.Office.Web.v20.1</name>
+  </assembly>
+  <members>
+    <member name="N:DevExpress.ExpressApp.Office.Web">
+      <summary>
+        <para>Contains types and interfaces providing the ASP.NET Rich Text Editor and ASP.NET Spreadsheet support in the Office Module.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.ExpressApp.Office.Web.IModelWebRichTextPropertyEditorHeightSettings">
+      <summary>
+        <para>Extends the <see cref="T:DevExpress.ExpressApp.Model.IModelColumn"/> and <see cref="T:DevExpress.ExpressApp.Model.IModelPropertyEditor"/> nodes with the property specifying the ASP.NET Rich Text Property Editor&#39;s height.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Office.Web.IModelWebRichTextPropertyEditorHeightSettings.CustomHeight">
+      <summary>
+        <para>Specifies the height of the ASPxRichTextPropertyEditor displayed on a Detail and List View.</para>
+      </summary>
+      <value>An integer value that specifies the Property Editor&#39;s height, in pixels.</value>
+    </member>
+    <member name="T:DevExpress.ExpressApp.Office.Web.IModelWebRichTextPropertyEditorSettings">
+      <summary>
+        <para>Extends the <see cref="T:DevExpress.ExpressApp.Model.IModelPropertyEditor"/> node with the property specifying the ASP.NET Rich Text Property Editor&#39;s menu behavior.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Office.Web.IModelWebRichTextPropertyEditorSettings.MenuManagerType">
+      <summary>
+        <para>Specifies the menu type used by the ASP.NET Rich Text Property Editor.</para>
+      </summary>
+      <value>An enumeration value that specifies the menu type the ASP.NET Rich Text Property Editor uses.</value>
+    </member>
+    <member name="T:DevExpress.ExpressApp.Office.Web.IModelWebSpreadsheetPropertyEditorSettings">
+      <summary>
+        <para>Extends the <see cref="T:DevExpress.ExpressApp.Model.IModelPropertyEditor"/> node with the property specifying the ASP.NET Spreadsheet Property Editor&#39;s menu behavior.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Office.Web.IModelWebSpreadsheetPropertyEditorSettings.CustomHeight">
+      <summary>
+        <para>Specifies the height of the ASPxSpreadsheetPropertyEditor displayed in a Detail View.</para>
+      </summary>
+      <value>An integer value that specifies the Property Editor&#39;s height in pixels.</value>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Office.Web.IModelWebSpreadsheetPropertyEditorSettings.MenuManagerType">
+      <summary>
+        <para>Specifies the menu type used by the ASP.NET Spreadsheet Property Editor.</para>
+      </summary>
+      <value>An enumeration value specifying the menu type used by the ASP.NET Spreadsheet Property Editor.</value>
+    </member>
+    <member name="T:DevExpress.ExpressApp.Office.Web.IWebRichTextValueStorage">
+      <summary>
+        <para>Declares members of the Rich Text editor&#39;s value storage.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Office.Web.IWebRichTextValueStorage.GetValue(DevExpress.Web.ASPxRichEdit.ASPxRichEdit)">
+      <summary>
+        <para>Returns a document the Rich Text editor displays.</para>
+      </summary>
+      <param name="control">A <see cref="T:DevExpress.Web.ASPxRichEdit.ASPxRichEdit"/> that displays the returned document.</param>
+      <returns>A document the Rich Text editor displays.</returns>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Office.Web.IWebRichTextValueStorage.SetValue(DevExpress.Web.ASPxRichEdit.ASPxRichEdit,System.Object,System.String)">
+      <summary>
+        <para>Specifies a document to be displayed in the Rich Text editor.</para>
+      </summary>
+      <param name="control">An <see cref="T:DevExpress.Web.ASPxRichEdit.ASPxRichEdit"/> control to display the specified document.</param>
+      <param name="documentValue">A document to be displayed in the Rich Text editor.</param>
+      <param name="documentID">A string that is an ID of the document to be displayed in the Rich Text editor.</param>
+    </member>
+    <member name="T:DevExpress.ExpressApp.Office.Web.IWebSpreadsheetValueStorage">
+      <summary>
+        <para>Declares members of he Spreadsheet editor&#39;s value storage.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Office.Web.IWebSpreadsheetValueStorage.GetValue(DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheet)">
+      <summary>
+        <para>Returns a document the Spreadsheet editor displays.</para>
+      </summary>
+      <param name="control">An <see cref="T:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheet"/> control that displays the returned document.</param>
+      <returns>A document the Spreadsheet editor displays.</returns>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Office.Web.IWebSpreadsheetValueStorage.SetValue(DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheet,System.Object,System.String)">
+      <summary>
+        <para>Specifies a document to be displayed in the Spreadsheet editor.</para>
+      </summary>
+      <param name="control">An <see cref="T:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheet"/> control to display the specified document.</param>
+      <param name="documentValue">A document to be displayed in the Spreadsheet editor.</param>
+      <param name="documentID">A string that is an ID of the document to be displayed in the Spreadsheet editor.</param>
+    </member>
+    <member name="T:DevExpress.ExpressApp.Office.Web.OfficeAspNetModule">
+      <summary>
+        <para>The module contained in the DevExpress.ExpressApp.Office.Web.v<span id="macro" data-macro-template="xx.x">20.1</span>.dll assembly.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Office.Web.OfficeAspNetModule.#ctor">
+      <summary>
+        <para>Creates an instance of the <see cref="T:DevExpress.ExpressApp.Office.Web.OfficeAspNetModule"/> class.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Office.Web.OfficeAspNetModule.AddModelNodeUpdaters(DevExpress.ExpressApp.Model.Core.IModelNodeUpdaterRegistrator)">
+      <summary>
+        <para>Registers node updaters in the application.</para>
+      </summary>
+      <param name="updaterRegistrator">An <see cref="T:DevExpress.ExpressApp.Model.Core.IModelNodeUpdaterRegistrator"/> object exposing the AddUpdater method used to register node updaters in the application.</param>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Office.Web.OfficeAspNetModule.ExtendModelInterfaces(DevExpress.ExpressApp.Model.ModelInterfaceExtenders)">
+      <summary>
+        <para>Extends the Application Model with the <see cref="T:DevExpress.ExpressApp.Office.Web.IModelWebRichTextPropertyEditorSettings"/> interface.</para>
+      </summary>
+      <param name="extenders">A ModelInterfaceExtenders object that is a collection of Application Model interface extenders.</param>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Office.Web.OfficeAspNetModule.GetModuleUpdaters(DevExpress.ExpressApp.IObjectSpace,System.Version)">
+      <summary>
+        <para>Returns the list of <see cref="T:DevExpress.ExpressApp.Updating.ModuleUpdater"/> updaters that handle database updates for the <see cref="T:DevExpress.ExpressApp.Office.Web.OfficeAspNetModule"/> module.</para>
+      </summary>
+      <param name="objectSpace">An <see cref="T:DevExpress.ExpressApp.IObjectSpace"/> object which represents the Object Space used to update the database.</param>
+      <param name="versionFromDB">A System.Version object that represents the current database version.</param>
+      <returns>An IEnumerable&lt;<see cref="T:DevExpress.ExpressApp.Updating.ModuleUpdater"/>&gt; list of updaters that handle database updates for the <see cref="T:DevExpress.ExpressApp.Office.Win.OfficeWindowsFormsModule"/> module.</returns>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Office.Web.OfficeAspNetModule.GetXafResourceLocalizerTypes">
+      <summary>
+        <para>Returns a collection of additional Resource Localizer types that can be used in an application that uses the <see cref="T:DevExpress.ExpressApp.Office.Web.OfficeAspNetModule"/>.</para>
+      </summary>
+      <returns>An ICollection&lt;Type&gt; collection containing the types of the Resource Localizers supplied with the <see cref="T:DevExpress.ExpressApp.Office.Web.OfficeAspNetModule"/>.</returns>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Office.Web.OfficeAspNetModule.UpdateNode(DevExpress.ExpressApp.Model.IModelColumn,DevExpress.ExpressApp.Model.IModelApplication)">
+      <summary>
+        <para>Updates the Application Model&#39;s node.</para>
+      </summary>
+      <param name="node">An <see cref="T:DevExpress.ExpressApp.Model.IModelColumn"/> object, representing the Application Model&#39;s node updated by the UpdateNode method.</param>
+      <param name="application">An <see cref="T:DevExpress.ExpressApp.Model.IModelApplication"/> providing access to the Application Model.</param>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Office.Web.OfficeAspNetModule.UpdateNode(DevExpress.ExpressApp.Model.IModelPropertyEditor,DevExpress.ExpressApp.Model.IModelApplication)">
+      <summary>
+        <para>Updates the Application Model&#39;s node.</para>
+      </summary>
+      <param name="node">An <see cref="T:DevExpress.ExpressApp.Model.IModelPropertyEditor"/> object, representing the Application Model&#39;s node updated by the UpdateNode method.</param>
+      <param name="application">An <see cref="T:DevExpress.ExpressApp.Model.IModelApplication"/> providing access to the Application Model.</param>
+    </member>
+    <member name="T:DevExpress.ExpressApp.Office.Web.WebMenuManagerType">
+      <summary>
+        <para>Contains values specifying the type of the Rich Text Property Editor&#39;s menu.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.ExpressApp.Office.Web.WebMenuManagerType.None">
+      <summary>
+        <para>The Rich Text Property Editor does not display the menu.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.ExpressApp.Office.Web.WebMenuManagerType.Ribbon">
+      <summary>
+        <para>The Rich Text Property Editor displays the menu items in the ribbon in the OneLineRibbon mode.</para>
+      </summary>
+    </member>
+  </members>
+</doc>
