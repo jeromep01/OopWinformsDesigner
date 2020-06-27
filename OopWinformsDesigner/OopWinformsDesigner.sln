@@ -471,10 +471,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OopTranslation", "OopTransl
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Analysis", "Analysis", "{13F776BB-0DED-4852-9236-E69DB492DEE5}"
 	ProjectSection(SolutionItems) = preProject
-		..\Analysis\Design UI.bmpr = ..\Analysis\Design UI.bmpr
-		..\Analysis\Ribbons.bmpr = ..\Analysis\Ribbons.bmpr
 		..\Analysis\Windows Forms Designer.docx = ..\Analysis\Windows Forms Designer.docx
 	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Toolkit", "Toolkit", "{ABA79B53-E657-4B0A-9A7D-D8D690C2F451}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -504,10 +504,11 @@ Global
 		{99DB06A5-D01E-4318-9801-7A429FD648CA} = {536BDBC3-AC4A-4A59-9E0E-BF1D01ABC474}
 		{4FB7C3E7-A75D-4142-B2A0-ED9423CFAC7D} = {536BDBC3-AC4A-4A59-9E0E-BF1D01ABC474}
 		{13F776BB-0DED-4852-9236-E69DB492DEE5} = {1CB33994-FCB6-453C-B9DF-929AFF1B38DE}
+		{ABA79B53-E657-4B0A-9A7D-D8D690C2F451} = {47F22305-3761-4EA3-ACEC-87C01AFFCB16}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {A2D15AA1-5A05-4367-9B20-BE518A2D3AB1}
-		RESX_ConfirmAddLanguageFile = True
 		RESX_AutoCreateNewLanguageFiles = True
+		RESX_ConfirmAddLanguageFile = True
+		SolutionGuid = {A2D15AA1-5A05-4367-9B20-BE518A2D3AB1}
 	EndGlobalSection
 EndGlobal

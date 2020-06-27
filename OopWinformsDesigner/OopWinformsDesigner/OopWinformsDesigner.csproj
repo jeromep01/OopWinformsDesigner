@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFrameworks>net48;netcoreapp3.0</TargetFrameworks>
+    <TargetFrameworks>net472;netcoreapp3.1</TargetFrameworks>
     <UseWindowsForms>true</UseWindowsForms>
     <Company>ITLightON</Company>
     <Description>Windows forms Designer Out Of Process (running as a blender, out of Microsoft Visual Studio).</Description>
@@ -20,135 +20,219 @@
     <ProjectReference Include="..\OopTranslation\OopTranslation.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
+  <ItemGroup Condition="'$(TargetFramework)' == 'netcoreapp3.1'">
     <Reference Include="DevExpress.BonusSkins.v20.1">
-      <HintPath>..\..\Libs\DevExpress Toolkit\DevExpress.BonusSkins.v20.1.dll</HintPath>
+      <HintPath>..\..\Libs\DevExpress Toolkit\.NET Core\NetCore\DevExpress.BonusSkins.v20.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.Data.v20.1">
-      <HintPath>..\..\Libs\DevExpress Toolkit\DevExpress.Data.v20.1.dll</HintPath>
+      <HintPath>..\..\Libs\DevExpress Toolkit\.NET Core\Standard\DevExpress.Data.v20.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.Utils.v20.1">
-      <HintPath>..\..\Libs\DevExpress Toolkit\DevExpress.Utils.v20.1.dll</HintPath>
+      <HintPath>..\..\Libs\DevExpress Toolkit\.NET Core\NetCore\DevExpress.Utils.v20.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.XtraBars.v20.1">
-      <HintPath>..\..\Libs\DevExpress Toolkit\DevExpress.XtraBars.v20.1.dll</HintPath>
+      <HintPath>..\..\Libs\DevExpress Toolkit\.NET Core\NetCore\DevExpress.XtraBars.v20.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.XtraCharts.v20.1">
-      <HintPath>..\..\Libs\DevExpress Toolkit\DevExpress.XtraCharts.v20.1.dll</HintPath>
+      <HintPath>..\..\Libs\DevExpress Toolkit\.NET Core\Standard\DevExpress.XtraCharts.v20.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.XtraCharts.v20.1.Extensions">
-      <HintPath>..\..\Libs\DevExpress Toolkit\DevExpress.XtraCharts.v20.1.Extensions.dll</HintPath>
+      <HintPath>..\..\Libs\DevExpress Toolkit\.NET Core\NetCore\DevExpress.XtraCharts.v20.1.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.XtraCharts.v20.1.UI">
-      <HintPath>..\..\Libs\DevExpress Toolkit\DevExpress.XtraCharts.v20.1.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.XtraCharts.v20.1.Web">
-      <HintPath>..\..\Libs\DevExpress Toolkit\DevExpress.XtraCharts.v20.1.Web.dll</HintPath>
+      <HintPath>..\..\Libs\DevExpress Toolkit\.NET Core\NetCore\DevExpress.XtraCharts.v20.1.UI.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.XtraCharts.v20.1.Wizard">
-      <HintPath>..\..\Libs\DevExpress Toolkit\DevExpress.XtraCharts.v20.1.Wizard.dll</HintPath>
+      <HintPath>..\..\Libs\DevExpress Toolkit\.NET Core\NetCore\DevExpress.XtraCharts.v20.1.Wizard.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.XtraDiagram.v20.1">
-      <HintPath>..\..\Libs\DevExpress Toolkit\DevExpress.XtraDiagram.v20.1.dll</HintPath>
+      <HintPath>..\..\Libs\DevExpress Toolkit\.NET Core\NetCore\DevExpress.XtraDiagram.v20.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.XtraDialogs.v20.1">
-      <HintPath>..\..\Libs\DevExpress Toolkit\DevExpress.XtraDialogs.v20.1.dll</HintPath>
+      <HintPath>..\..\Libs\DevExpress Toolkit\.NET Core\NetCore\DevExpress.XtraDialogs.v20.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.XtraEditors.v20.1">
-      <HintPath>..\..\Libs\DevExpress Toolkit\DevExpress.XtraEditors.v20.1.dll</HintPath>
+      <HintPath>..\..\Libs\DevExpress Toolkit\.NET Core\NetCore\DevExpress.XtraEditors.v20.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.XtraGantt.v20.1">
-      <HintPath>..\..\Libs\DevExpress Toolkit\DevExpress.XtraGantt.v20.1.dll</HintPath>
+      <HintPath>..\..\Libs\DevExpress Toolkit\.NET Core\NetCore\DevExpress.XtraGantt.v20.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.XtraGauges.v20.1.Core">
-      <HintPath>..\..\Libs\DevExpress Toolkit\DevExpress.XtraGauges.v20.1.Core.dll</HintPath>
+      <HintPath>..\..\Libs\DevExpress Toolkit\.NET Core\Standard\DevExpress.XtraGauges.v20.1.Core.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.XtraGauges.v20.1.Presets">
-      <HintPath>..\..\Libs\DevExpress Toolkit\DevExpress.XtraGauges.v20.1.Presets.dll</HintPath>
+      <HintPath>..\..\Libs\DevExpress Toolkit\.NET Core\NetCore\DevExpress.XtraGauges.v20.1.Presets.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.XtraGauges.v20.1.Win">
-      <HintPath>..\..\Libs\DevExpress Toolkit\DevExpress.XtraGauges.v20.1.Win.dll</HintPath>
+      <HintPath>..\..\Libs\DevExpress Toolkit\.NET Core\NetCore\DevExpress.XtraGauges.v20.1.Win.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.XtraGrid.v20.1">
-      <HintPath>..\..\Libs\DevExpress Toolkit\DevExpress.XtraGrid.v20.1.dll</HintPath>
+      <HintPath>..\..\Libs\DevExpress Toolkit\.NET Core\NetCore\DevExpress.XtraGrid.v20.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.XtraLayout.v20.1">
-      <HintPath>..\..\Libs\DevExpress Toolkit\DevExpress.XtraLayout.v20.1.dll</HintPath>
+      <HintPath>..\..\Libs\DevExpress Toolkit\.NET Core\NetCore\DevExpress.XtraLayout.v20.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.XtraMap.v20.1">
-      <HintPath>..\..\Libs\DevExpress Toolkit\DevExpress.XtraMap.v20.1.dll</HintPath>
+      <HintPath>..\..\Libs\DevExpress Toolkit\.NET Core\NetCore\DevExpress.XtraMap.v20.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.XtraNavBar.v20.1">
-      <HintPath>..\..\Libs\DevExpress Toolkit\DevExpress.XtraNavBar.v20.1.dll</HintPath>
+      <HintPath>..\..\Libs\DevExpress Toolkit\.NET Core\NetCore\DevExpress.XtraNavBar.v20.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.XtraPdfViewer.v20.1">
-      <HintPath>..\..\Libs\DevExpress Toolkit\DevExpress.XtraPdfViewer.v20.1.dll</HintPath>
+      <HintPath>..\..\Libs\DevExpress Toolkit\.NET Core\NetCore\DevExpress.XtraPdfViewer.v20.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.XtraPivotGrid.v20.1">
-      <HintPath>..\..\Libs\DevExpress Toolkit\DevExpress.XtraPivotGrid.v20.1.dll</HintPath>
+      <HintPath>..\..\Libs\DevExpress Toolkit\.NET Core\NetCore\DevExpress.XtraPivotGrid.v20.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.XtraPrinting.v20.1">
-      <HintPath>..\..\Libs\DevExpress Toolkit\DevExpress.XtraPrinting.v20.1.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.XtraReports.v20.1">
-      <HintPath>..\..\Libs\DevExpress Toolkit\DevExpress.XtraReports.v20.1.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.XtraReports.v20.1.CodeCompletion">
-      <HintPath>..\..\Libs\DevExpress Toolkit\DevExpress.XtraReports.v20.1.CodeCompletion.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.XtraReports.v20.1.Extensions">
-      <HintPath>..\..\Libs\DevExpress Toolkit\DevExpress.XtraReports.v20.1.Extensions.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.XtraReports.v20.1.Service">
-      <HintPath>..\..\Libs\DevExpress Toolkit\DevExpress.XtraReports.v20.1.Service.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.XtraReports.v20.1.Web">
-      <HintPath>..\..\Libs\DevExpress Toolkit\DevExpress.XtraReports.v20.1.Web.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.XtraReports.v20.1.Web.Azure">
-      <HintPath>..\..\Libs\DevExpress Toolkit\DevExpress.XtraReports.v20.1.Web.Azure.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.XtraReports.v20.1.Web.WebForms">
-      <HintPath>..\..\Libs\DevExpress Toolkit\DevExpress.XtraReports.v20.1.Web.WebForms.dll</HintPath>
+      <HintPath>..\..\Libs\DevExpress Toolkit\.NET Core\Standard\DevExpress.XtraPrinting.v20.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.XtraRichEdit.v20.1">
-      <HintPath>..\..\Libs\DevExpress Toolkit\DevExpress.XtraRichEdit.v20.1.dll</HintPath>
+      <HintPath>..\..\Libs\DevExpress Toolkit\.NET Core\NetCore\DevExpress.XtraRichEdit.v20.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.XtraScheduler.v20.1">
-      <HintPath>..\..\Libs\DevExpress Toolkit\DevExpress.XtraScheduler.v20.1.dll</HintPath>
+      <HintPath>..\..\Libs\DevExpress Toolkit\.NET Core\NetCore\DevExpress.XtraScheduler.v20.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.XtraScheduler.v20.1.Core">
-      <HintPath>..\..\Libs\DevExpress Toolkit\DevExpress.XtraScheduler.v20.1.Core.dll</HintPath>
+      <HintPath>..\..\Libs\DevExpress Toolkit\.NET Core\NetCore\DevExpress.XtraScheduler.v20.1.Core.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.XtraScheduler.v20.1.Extensions">
-      <HintPath>..\..\Libs\DevExpress Toolkit\DevExpress.XtraScheduler.v20.1.Extensions.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.XtraScheduler.v20.1.GoogleCalendar">
-      <HintPath>..\..\Libs\DevExpress Toolkit\DevExpress.XtraScheduler.v20.1.GoogleCalendar.dll</HintPath>
+      <HintPath>..\..\Libs\DevExpress Toolkit\.NET Core\NetCore\DevExpress.XtraScheduler.v20.1.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.XtraScheduler.v20.1.Reporting">
-      <HintPath>..\..\Libs\DevExpress Toolkit\DevExpress.XtraScheduler.v20.1.Reporting.dll</HintPath>
+      <HintPath>..\..\Libs\DevExpress Toolkit\.NET Core\NetCore\DevExpress.XtraScheduler.v20.1.Reporting.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.XtraScheduler.v20.1.Reporting.Extensions">
-      <HintPath>..\..\Libs\DevExpress Toolkit\DevExpress.XtraScheduler.v20.1.Reporting.Extensions.dll</HintPath>
+      <HintPath>..\..\Libs\DevExpress Toolkit\.NET Core\NetCore\DevExpress.XtraScheduler.v20.1.Reporting.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.XtraSpellChecker.v20.1">
-      <HintPath>..\..\Libs\DevExpress Toolkit\DevExpress.XtraSpellChecker.v20.1.dll</HintPath>
+      <HintPath>..\..\Libs\DevExpress Toolkit\.NET Core\NetCore\DevExpress.XtraSpellChecker.v20.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.XtraSpreadsheet.v20.1">
-      <HintPath>..\..\Libs\DevExpress Toolkit\DevExpress.XtraSpreadsheet.v20.1.dll</HintPath>
+      <HintPath>..\..\Libs\DevExpress Toolkit\.NET Core\NetCore\DevExpress.XtraSpreadsheet.v20.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.XtraTreeList.v20.1">
-      <HintPath>..\..\Libs\DevExpress Toolkit\DevExpress.XtraTreeList.v20.1.dll</HintPath>
+      <HintPath>..\..\Libs\DevExpress Toolkit\.NET Core\NetCore\DevExpress.XtraTreeList.v20.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.XtraTreeMap.v20.1">
-      <HintPath>..\..\Libs\DevExpress Toolkit\DevExpress.XtraTreeMap.v20.1.dll</HintPath>
+      <HintPath>..\..\Libs\DevExpress Toolkit\.NET Core\NetCore\DevExpress.XtraTreeMap.v20.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.XtraVerticalGrid.v20.1">
-      <HintPath>..\..\Libs\DevExpress Toolkit\DevExpress.XtraVerticalGrid.v20.1.dll</HintPath>
+      <HintPath>..\..\Libs\DevExpress Toolkit\.NET Core\NetCore\DevExpress.XtraVerticalGrid.v20.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.XtraWizard.v20.1">
-      <HintPath>..\..\Libs\DevExpress Toolkit\DevExpress.XtraWizard.v20.1.dll</HintPath>
+      <HintPath>..\..\Libs\DevExpress Toolkit\.NET Core\NetCore\DevExpress.XtraWizard.v20.1.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'net472'">
+    <Reference Include="DevExpress.BonusSkins.v20.1">
+      <HintPath>..\..\Libs\DevExpress Toolkit\.NET Framework\NetFramework\DevExpress.BonusSkins.v20.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v20.1">
+      <HintPath>..\..\Libs\DevExpress Toolkit\.NET Framework\NetFramework\DevExpress.Data.v20.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v20.1">
+      <HintPath>..\..\Libs\DevExpress Toolkit\.NET Framework\NetFramework\DevExpress.Utils.v20.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v20.1">
+      <HintPath>..\..\Libs\DevExpress Toolkit\.NET Framework\NetFramework\DevExpress.XtraBars.v20.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v20.1">
+      <HintPath>..\..\Libs\DevExpress Toolkit\.NET Framework\NetFramework\DevExpress.XtraCharts.v20.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v20.1.Extensions">
+      <HintPath>..\..\Libs\DevExpress Toolkit\.NET Framework\NetFramework\DevExpress.XtraCharts.v20.1.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v20.1.UI">
+      <HintPath>..\..\Libs\DevExpress Toolkit\.NET Framework\NetFramework\DevExpress.XtraCharts.v20.1.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v20.1.Wizard">
+      <HintPath>..\..\Libs\DevExpress Toolkit\.NET Framework\NetFramework\DevExpress.XtraCharts.v20.1.Wizard.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraDiagram.v20.1">
+      <HintPath>..\..\Libs\DevExpress Toolkit\.NET Framework\NetFramework\DevExpress.XtraDiagram.v20.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraDialogs.v20.1">
+      <HintPath>..\..\Libs\DevExpress Toolkit\.NET Framework\NetFramework\DevExpress.XtraDialogs.v20.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v20.1">
+      <HintPath>..\..\Libs\DevExpress Toolkit\.NET Framework\NetFramework\DevExpress.XtraEditors.v20.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraGantt.v20.1">
+      <HintPath>..\..\Libs\DevExpress Toolkit\.NET Framework\NetFramework\DevExpress.XtraGantt.v20.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v20.1.Core">
+      <HintPath>..\..\Libs\DevExpress Toolkit\.NET Framework\NetFramework\DevExpress.XtraGauges.v20.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v20.1.Presets">
+      <HintPath>..\..\Libs\DevExpress Toolkit\.NET Framework\NetFramework\DevExpress.XtraGauges.v20.1.Presets.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v20.1.Win">
+      <HintPath>..\..\Libs\DevExpress Toolkit\.NET Framework\NetFramework\DevExpress.XtraGauges.v20.1.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v20.1">
+      <HintPath>..\..\Libs\DevExpress Toolkit\.NET Framework\NetFramework\DevExpress.XtraGrid.v20.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v20.1">
+      <HintPath>..\..\Libs\DevExpress Toolkit\.NET Framework\NetFramework\DevExpress.XtraLayout.v20.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraMap.v20.1">
+      <HintPath>..\..\Libs\DevExpress Toolkit\.NET Framework\NetFramework\DevExpress.XtraMap.v20.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v20.1">
+      <HintPath>..\..\Libs\DevExpress Toolkit\.NET Framework\NetFramework\DevExpress.XtraNavBar.v20.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraPdfViewer.v20.1">
+      <HintPath>..\..\Libs\DevExpress Toolkit\.NET Framework\NetFramework\DevExpress.XtraPdfViewer.v20.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraPivotGrid.v20.1">
+      <HintPath>..\..\Libs\DevExpress Toolkit\.NET Framework\NetFramework\DevExpress.XtraPivotGrid.v20.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v20.1">
+      <HintPath>..\..\Libs\DevExpress Toolkit\.NET Framework\NetFramework\DevExpress.XtraPrinting.v20.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v20.1.Extensions">
+      <HintPath>..\..\Libs\DevExpress Toolkit\.NET Framework\NetFramework\DevExpress.XtraReports.v20.1.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v20.1.Web.WebForms">
+      <HintPath>..\..\Libs\DevExpress Toolkit\.NET Framework\NetFramework\DevExpress.XtraReports.v20.1.Web.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v20.1">
+      <HintPath>..\..\Libs\DevExpress Toolkit\.NET Framework\NetFramework\DevExpress.XtraRichEdit.v20.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v20.1">
+      <HintPath>..\..\Libs\DevExpress Toolkit\.NET Framework\NetFramework\DevExpress.XtraScheduler.v20.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v20.1.Core">
+      <HintPath>..\..\Libs\DevExpress Toolkit\.NET Framework\NetFramework\DevExpress.XtraScheduler.v20.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v20.1.Extensions">
+      <HintPath>..\..\Libs\DevExpress Toolkit\.NET Framework\NetFramework\DevExpress.XtraScheduler.v20.1.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v20.1.Reporting">
+      <HintPath>..\..\Libs\DevExpress Toolkit\.NET Framework\NetFramework\DevExpress.XtraScheduler.v20.1.Reporting.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v20.1.Reporting.Extensions">
+      <HintPath>..\..\Libs\DevExpress Toolkit\.NET Framework\NetFramework\DevExpress.XtraScheduler.v20.1.Reporting.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraSpellChecker.v20.1">
+      <HintPath>..\..\Libs\DevExpress Toolkit\.NET Framework\NetFramework\DevExpress.XtraSpellChecker.v20.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraSpreadsheet.v20.1">
+      <HintPath>..\..\Libs\DevExpress Toolkit\.NET Framework\NetFramework\DevExpress.XtraSpreadsheet.v20.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v20.1">
+      <HintPath>..\..\Libs\DevExpress Toolkit\.NET Framework\NetFramework\DevExpress.XtraTreeList.v20.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeMap.v20.1">
+      <HintPath>..\..\Libs\DevExpress Toolkit\.NET Framework\NetFramework\DevExpress.XtraTreeMap.v20.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraVerticalGrid.v20.1">
+      <HintPath>..\..\Libs\DevExpress Toolkit\.NET Framework\NetFramework\DevExpress.XtraVerticalGrid.v20.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraWizard.v20.1">
+      <HintPath>..\..\Libs\DevExpress Toolkit\.NET Framework\NetFramework\DevExpress.XtraWizard.v20.1.dll</HintPath>
     </Reference>
   </ItemGroup>
 

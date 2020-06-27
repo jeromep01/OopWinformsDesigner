@@ -5,8 +5,10 @@ using DevExpress.XtraBars.Ribbon;
 using DevExpress.XtraEditors;
 using DevExpress.XtraLayout;
 using DevExpress.XtraVerticalGrid;
+
 using OopWinformsDesigner.Session;
 using OopWinformsDesigner.UI.UserControls;
+
 using System.Drawing;
 
 namespace OopWinformsDesigner.UI
@@ -41,6 +43,7 @@ namespace OopWinformsDesigner.UI
         {
             var splitContainer = new SplitContainerControl();
 
+            splitContainer.Dock = System.Windows.Forms.DockStyle.Fill;
             splitContainer.Panel2.Controls.Add(new PropertyGridControl());
             splitContainer.Panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             mainLayout.AddControl(splitContainer);

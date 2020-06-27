@@ -1,0 +1,2132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <assembly>
+    <name>DevExpress.Web.ASPxGantt.v20.1</name>
+  </assembly>
+  <members>
+    <member name="N:DevExpress.Web.ASPxGantt">
+      <summary>
+        <para>Contains classes which implement the functionality of the ASPxGantt control.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.Web.ASPxGantt.ASPxGantt">
+      <summary>
+        <para>A Gantt control.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.ASPxGantt.#ctor">
+      <summary>
+        <para>Initializes a new instance of the object.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.ASPxGantt.ClientInstanceName">
+      <summary>
+        <para>Specifies the Gantt&#39;s client programmatic identifier.</para>
+      </summary>
+      <value>The control&#39;s client identifier.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.ASPxGantt.ClientSideEvents">
+      <summary>
+        <para>Gets an object that lists the client-side events specific to the Gantt control.</para>
+      </summary>
+      <value>An object that allows you to assign handlers to the client-side events available to the Gantt control.</value>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.ASPxGantt.CreateDefaultToolbarItems">
+      <summary>
+        <para>Creates the toolbar and populates it with default items.</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.Web.ASPxGantt.ASPxGantt.CustomJSProperties">
+      <summary>
+        <para>Enables you to supply any server data that can then be parsed on the client.</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.Web.ASPxGantt.ASPxGantt.DataUpdate">
+      <summary>
+        <para>Fires when Gantt data is updated.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.ASPxGantt.DependenciesDataMember">
+      <summary>
+        <para>Gets or sets the data source member which supplies dependencies data to the Gantt control.</para>
+      </summary>
+      <value>The dependencies data source member.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.ASPxGantt.DependenciesDataSource">
+      <summary>
+        <para>Specifies the data source from which the Gantt retrieves task dependencies.</para>
+      </summary>
+      <value>The data source object.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.ASPxGantt.DependenciesDataSourceID">
+      <summary>
+        <para>Specifies the data source ID from which the gantt retrieves task dependencies.</para>
+      </summary>
+      <value>The data source ID.</value>
+    </member>
+    <member name="E:DevExpress.Web.ASPxGantt.ASPxGantt.DependencyDeleted">
+      <summary>
+        <para>Fires when a user deletes a dependency.</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.Web.ASPxGantt.ASPxGantt.DependencyInserted">
+      <summary>
+        <para>Fires when a user inserts a dependency.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.ASPxGantt.Images">
+      <summary>
+        <para>Provides access to image settings in the control.</para>
+      </summary>
+      <value>The images settings.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.ASPxGantt.JSProperties">
+      <summary>
+        <para>Enables you to supply any server data that can then be parsed on the client.</para>
+      </summary>
+      <value>The collection of property names and their values.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.ASPxGantt.Mappings">
+      <summary>
+        <para>Provides access to the object that contains a set of gantt&#39;s properties mappings.</para>
+      </summary>
+      <value>Provides functionality for mapping properties to appropriate data fields.</value>
+    </member>
+    <member name="E:DevExpress.Web.ASPxGantt.ASPxGantt.ResourceAssignmentDeleted">
+      <summary>
+        <para>Fires when a user deletes a resource assignment.</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.Web.ASPxGantt.ASPxGantt.ResourceAssignmentInserted">
+      <summary>
+        <para>Fires when a user inserts a resource assignment.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.ASPxGantt.ResourceAssignmentsDataMember">
+      <summary>
+        <para>Gets or sets the data source member which supplies resource assignments data to the Gantt.</para>
+      </summary>
+      <value>The resource assignment data source member.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.ASPxGantt.ResourceAssignmentsDataSource">
+      <summary>
+        <para>Specifies the data source from which the Gantt retrieves resource assignments.</para>
+      </summary>
+      <value>The data source object.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.ASPxGantt.ResourceAssignmentsDataSourceID">
+      <summary>
+        <para>Specifies the data source ID from which the gantt retrieves resource assignments.</para>
+      </summary>
+      <value>Specifies the data source ID.</value>
+    </member>
+    <member name="E:DevExpress.Web.ASPxGantt.ASPxGantt.ResourceDeleted">
+      <summary>
+        <para>Fires when a user deletes a resource.</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.Web.ASPxGantt.ASPxGantt.ResourceInserted">
+      <summary>
+        <para>Fires when a user inserts a resource.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.ASPxGantt.ResourcesDataMember">
+      <summary>
+        <para>Gets or sets the data source member which supplies resource data to the gantt.</para>
+      </summary>
+      <value>The resources data source member.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.ASPxGantt.ResourcesDataSource">
+      <summary>
+        <para>Specifies the data source from which the gantt retrieves resources.</para>
+      </summary>
+      <value>The data source object.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.ASPxGantt.ResourcesDataSourceID">
+      <summary>
+        <para>Specifies the data source ID from which the gantt retrieves resources.</para>
+      </summary>
+      <value>Specifies the data source ID.</value>
+    </member>
+    <member name="E:DevExpress.Web.ASPxGantt.ASPxGantt.ResourceUpdated">
+      <summary>
+        <para>Fires when a user updates a resource.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.ASPxGantt.SettingsEditing">
+      <summary>
+        <para>Accesses the editing settings.</para>
+      </summary>
+      <value>The editing settings.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.ASPxGantt.SettingsGanttView">
+      <summary>
+        <para>Accesses the Gantt&#39;s view settings.</para>
+      </summary>
+      <value>Object that contains the Gantt&#39;s view settings.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.ASPxGantt.SettingsStripLine">
+      <summary>
+        <para>Accesses strip line settings.</para>
+      </summary>
+      <value>Strip line settings.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.ASPxGantt.SettingsTaskList">
+      <summary>
+        <para>Accesses the task list settings.</para>
+      </summary>
+      <value>Contains task list settings.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.ASPxGantt.SettingsToolbar">
+      <summary>
+        <para>Accesses the toolbar settings.</para>
+      </summary>
+      <value>The toolbar settings.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.ASPxGantt.SettingsValidation">
+      <summary>
+        <para>Accesses validation settings.</para>
+      </summary>
+      <value>The Gantt&#39;s validation settings.</value>
+    </member>
+    <member name="E:DevExpress.Web.ASPxGantt.ASPxGantt.TaskDeleted">
+      <summary>
+        <para>Fires when a user deletes a task.</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.Web.ASPxGantt.ASPxGantt.TaskInserted">
+      <summary>
+        <para>Fires when a user inserts a task.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.ASPxGantt.TasksDataMember">
+      <summary>
+        <para>Gets or sets the data source member which supplies tasks data to the gantt.</para>
+      </summary>
+      <value>The tasks data source member.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.ASPxGantt.TasksDataSource">
+      <summary>
+        <para>Specifies the data source from which the gantt retrieves tasks.</para>
+      </summary>
+      <value>The data source object.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.ASPxGantt.TasksDataSourceID">
+      <summary>
+        <para>Specifies the data source ID from which the Gantt retrieves tasks.</para>
+      </summary>
+      <value>Specifies the data source ID.</value>
+    </member>
+    <member name="E:DevExpress.Web.ASPxGantt.ASPxGantt.TaskUpdated">
+      <summary>
+        <para>Fires when a user updates a task.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.ASPxGantt.WorkTimeRules">
+      <summary>
+        <para>Provides access to the work time rules collection.</para>
+      </summary>
+      <value>A collection of work time rules.</value>
+    </member>
+    <member name="T:DevExpress.Web.ASPxGantt.ASPxGanttDataUpdateEventHandler">
+      <summary>
+        <para>A method that handles the <see cref="E:DevExpress.Web.ASPxGantt.ASPxGantt.DataUpdate"/> event.</para>
+      </summary>
+      <param name="sender">The event source.</param>
+      <param name="e">Contains data for the event.</param>
+    </member>
+    <member name="T:DevExpress.Web.ASPxGantt.Daily">
+      <summary>
+        <para>Contains settings for a daily recurrence pattern.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.Daily.#ctor">
+      <summary>
+        <para>Initializes a new instance of the object.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.Daily.Assign(DevExpress.Web.ASPxGantt.Daily)">
+      <summary>
+        <para>Copies the settings of the specified object to the current object.</para>
+      </summary>
+      <param name="source">An object whose settings are assigned to the current object.</param>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.Daily.End">
+      <summary>
+        <para>Specifies the daily recurrence&#39;s end date.</para>
+      </summary>
+      <value>The end date for the recurrence.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.Daily.Interval">
+      <summary>
+        <para>Specifies the daily recurrence&#39;s interval.</para>
+      </summary>
+      <value>An interval value.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.Daily.OccurrenceCount">
+      <summary>
+        <para>Specifies how many times the daily rule occurs.</para>
+      </summary>
+      <value>Specifies how many times the daily rule occurs.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.Daily.Start">
+      <summary>
+        <para>Specifies the daily recurrence&#39;s start date.</para>
+      </summary>
+      <value>Specifies the start date for the recurrence.</value>
+    </member>
+    <member name="T:DevExpress.Web.ASPxGantt.DailyRule">
+      <summary>
+        <para>Provides settings that allow you to specify a rule for a day.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.DailyRule.#ctor">
+      <summary>
+        <para>Initializes a new instance of the object.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.DailyRule.Recurrence">
+      <summary>
+        <para>Gets the daily rule&#39;s recurrence settings.</para>
+      </summary>
+      <value>Daily recurrence settings.</value>
+    </member>
+    <member name="T:DevExpress.Web.ASPxGantt.DayOfWeekMonthlyOccurrence">
+      <summary>
+        <para>Lists values that specify the occurrence of a day of week.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxGantt.DayOfWeekMonthlyOccurrence.First">
+      <summary>
+        <para>A rule is applied every first specified day of the week.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxGantt.DayOfWeekMonthlyOccurrence.Forth">
+      <summary>
+        <para>A rule is applied every fourth specified day of the week.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxGantt.DayOfWeekMonthlyOccurrence.Last">
+      <summary>
+        <para>A rule is applied every last specified day of the week.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxGantt.DayOfWeekMonthlyOccurrence.Second">
+      <summary>
+        <para>A rule is applied every second specified day of the week.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxGantt.DayOfWeekMonthlyOccurrence.Third">
+      <summary>
+        <para>A rule is applied every third specified day of the week.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.Web.ASPxGantt.GanttAddTaskToolbarItem">
+      <summary>
+        <para>A toolbar item that adds a new task.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.GanttAddTaskToolbarItem.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Web.ASPxGantt.GanttAddTaskToolbarItem"/> class.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.Web.ASPxGantt.GanttCheckColumn">
+      <summary>
+        <para>A column that displays Boolean values.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.GanttCheckColumn.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Web.ASPxGantt.GanttCheckColumn"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.GanttCheckColumn.PropertiesCheckEdit">
+      <summary>
+        <para>Gets the column editor&#39;s settings.</para>
+      </summary>
+      <value>The column editor&#39;s settings.</value>
+    </member>
+    <member name="T:DevExpress.Web.ASPxGantt.GanttClientSideEvents">
+      <summary>
+        <para>Contains a list of the client-side events available for the ASPxGantt.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.GanttClientSideEvents.#ctor">
+      <summary>
+        <para>Initializes a new instance of the object.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.GanttClientSideEvents.CustomCommand">
+      <summary>
+        <para>Gets or sets the name of the JavaScript function or the entire code which will handle an editor&#39;s client ASPxClientGantt.CustomCommand event.</para>
+      </summary>
+      <value>A string that represents either the name of a JavaScript function or the entire JavaScript function code used to handle an event.</value>
+    </member>
+    <member name="T:DevExpress.Web.ASPxGantt.GanttCollapseAllToolbarItem">
+      <summary>
+        <para>A toolbar item that collapses all tasks.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.GanttCollapseAllToolbarItem.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Web.ASPxGantt.GanttCollapseAllToolbarItem"/> class.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.Web.ASPxGantt.GanttColorEditColumn">
+      <summary>
+        <para>A column that displays color values.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.GanttColorEditColumn.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Web.ASPxGantt.GanttColorEditColumn"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.GanttColorEditColumn.PropertiesColorEdit">
+      <summary>
+        <para>Gets the column editor&#39;s settings.</para>
+      </summary>
+      <value>The column editor&#39;s settings.</value>
+    </member>
+    <member name="T:DevExpress.Web.ASPxGantt.GanttColumnBase">
+      <summary>
+        <para>Serves as a base class for classes that manage Gantt columns.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.GanttColumnBase.#ctor">
+      <summary>
+        <para>Initializes a new instance of the object.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.GanttColumnBase.Assign(DevExpress.Web.CollectionItem)">
+      <summary>
+        <para>Copies the settings of the specified object to the current one.</para>
+      </summary>
+      <param name="source">A <see cref="T:DevExpress.Web.CollectionItem"/> object whose settings are assigned to the current object.</param>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.GanttColumnBase.MinWidth">
+      <summary>
+        <para>Specifies the column&#39;s minimum width.</para>
+      </summary>
+      <value>The minimum width.</value>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.GanttColumnBase.ToString">
+      <summary>
+        <para>Returns a string that identifies the GanttColumnBase object.</para>
+      </summary>
+      <returns>A string value.</returns>
+    </member>
+    <member name="T:DevExpress.Web.ASPxGantt.GanttColumnCollection">
+      <summary>
+        <para>Represents the Gantt&#39;s column collection.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.GanttColumnCollection.#ctor(DevExpress.Web.Internal.IWebControlObject)">
+      <summary>
+        <para>Initializes a new instance of the object.</para>
+      </summary>
+      <param name="owner">The IWebControlObject interface.</param>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.GanttColumnCollection.Add(DevExpress.Web.ASPxGantt.GanttColumnBase)">
+      <summary>
+        <para>Adds a Gantt column to the column collection.</para>
+      </summary>
+      <param name="column">The Gantt column.</param>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.GanttColumnCollection.IndexOf(DevExpress.Web.ASPxGantt.GanttColumnBase)">
+      <summary>
+        <para>Returns the specified column&#39;s position in the collection.</para>
+      </summary>
+      <param name="column">The Gantt column.</param>
+      <returns>The column&#39;s index.</returns>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.GanttColumnCollection.Insert(System.Int32,DevExpress.Web.ASPxGantt.GanttColumnBase)">
+      <summary>
+        <para>Inserts a column into the specified position.</para>
+      </summary>
+      <param name="index">The index.</param>
+      <param name="column">The Gantt column.</param>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.GanttColumnCollection.Item(System.Int32)">
+      <summary>
+        <para>Provides indexed access to columns in the collection.</para>
+      </summary>
+      <param name="index">The zero-based column&#39;s index in the collection.</param>
+      <value>The gantt column.</value>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.GanttColumnCollection.Remove(DevExpress.Web.ASPxGantt.GanttColumnBase)">
+      <summary>
+        <para>Removes the specified Gantt column from the collection.</para>
+      </summary>
+      <param name="column">The Gantt column.</param>
+    </member>
+    <member name="T:DevExpress.Web.ASPxGantt.GanttCommandColumn">
+      <summary>
+        <para>A command column.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.GanttCommandColumn.#ctor">
+      <summary>
+        <para>Initializes a new instance of the object.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.GanttCommandColumn.Assign(DevExpress.Web.CollectionItem)">
+      <summary>
+        <para>Copies the settings of the specified object to the current one.</para>
+      </summary>
+      <param name="source">A <see cref="T:DevExpress.Web.CollectionItem"/> object whose settings are assigned to the current object.</param>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.GanttCommandColumn.DeleteButton">
+      <summary>
+        <para>Gets the Delete button&#39;s settings.</para>
+      </summary>
+      <value>The button settings.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.GanttCommandColumn.EditButton">
+      <summary>
+        <para>Gets the Edit button&#39;s settings.</para>
+      </summary>
+      <value>The button settings.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.GanttCommandColumn.NewButton">
+      <summary>
+        <para>Gets the New button&#39;s settings.</para>
+      </summary>
+      <value>The button settings.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.GanttCommandColumn.ShowNewButtonInHeader">
+      <summary>
+        <para>Specifies whether the New button is visible in the column header.</para>
+      </summary>
+      <value>true, to show the button in the header; otherwise, false.</value>
+    </member>
+    <member name="T:DevExpress.Web.ASPxGantt.GanttCustomJSPropertiesEventArgs">
+      <summary>
+        <para>Provides data for the <see cref="E:DevExpress.Web.ASPxGantt.ASPxGantt.CustomJSProperties"/> event.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.GanttCustomJSPropertiesEventArgs.#ctor">
+      <summary>
+        <para>Initializes a new instance of the object.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.GanttCustomJSPropertiesEventArgs.#ctor(System.Collections.Generic.Dictionary{System.String,System.Object})">
+      <summary>
+        <para>Initializes a new instance of the object.</para>
+      </summary>
+      <param name="properties">A collection of properties.</param>
+    </member>
+    <member name="T:DevExpress.Web.ASPxGantt.GanttCustomJSPropertiesEventHandler">
+      <summary>
+        <para>A method that handles the <see cref="E:DevExpress.Web.ASPxGantt.ASPxGantt.CustomJSProperties"/> event.</para>
+      </summary>
+      <param name="sender">The event sender.</param>
+      <param name="e">Contains data for the event.</param>
+    </member>
+    <member name="T:DevExpress.Web.ASPxGantt.GanttCustomToolbarItem">
+      <summary>
+        <para>A custom toolbar item.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.GanttCustomToolbarItem.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Web.ASPxGantt.GanttCustomToolbarItem"/> class.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.GanttCustomToolbarItem.#ctor(System.String,System.String)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Web.ASPxGantt.GanttCustomToolbarItem"/> class with specified settings.</para>
+      </summary>
+      <param name="text">The text.</param>
+      <param name="commandName">The command name.</param>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.GanttCustomToolbarItem.Assign(DevExpress.Web.CollectionItem)">
+      <summary>
+        <para>Copies the settings of the specified object to the current one.</para>
+      </summary>
+      <param name="source">An object whose settings are assigned to the current object.</param>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.GanttCustomToolbarItem.CommandName">
+      <summary>
+        <para>Specifies the command name.</para>
+      </summary>
+      <value>The command name.</value>
+    </member>
+    <member name="T:DevExpress.Web.ASPxGantt.GanttDataColumn">
+      <summary>
+        <para>A base class for classes that display data.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.GanttDataColumn.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Web.ASPxGantt.GanttDataColumn"/> class.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.GanttDataColumn.#ctor(System.String)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Web.ASPxGantt.GanttDataColumn"/> class with specified settings.</para>
+      </summary>
+      <param name="fieldName">The field name.</param>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.GanttDataColumn.AllowSort">
+      <summary>
+        <para>Specifies whether users can sort columns.</para>
+      </summary>
+      <value>One of the enumeration values.</value>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.GanttDataColumn.Assign(DevExpress.Web.CollectionItem)">
+      <summary>
+        <para>Copies the settings of the specified object to the current one.</para>
+      </summary>
+      <param name="source">An object whose settings are assigned to the current object.</param>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.GanttDataColumn.DisplayFormat">
+      <summary>
+        <para>Specifies the display format of column values.</para>
+      </summary>
+      <value>The display format.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.GanttDataColumn.FieldName">
+      <summary>
+        <para>Specifies the name of a field that provides data for a column.</para>
+      </summary>
+      <value>The field name.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.GanttDataColumn.SortIndex">
+      <summary>
+        <para>Specifies the column&#39;s indexed position among sorted columns.</para>
+      </summary>
+      <value>The column&#39;s index.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.GanttDataColumn.SortOrder">
+      <summary>
+        <para>Specifies a column&#39;s sort order.</para>
+      </summary>
+      <value>One of enumeration values.</value>
+    </member>
+    <member name="T:DevExpress.Web.ASPxGantt.GanttDataInsertValues">
+      <summary>
+        <para>Contains information about inserted values.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.GanttDataInsertValues.#ctor">
+      <summary>
+        <para>Initializes a new instance of the object.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.GanttDataInsertValues.Key">
+      <summary>
+        <para>Specifies the unique identifier for a new record.</para>
+      </summary>
+      <value>The unique identifier.</value>
+    </member>
+    <member name="T:DevExpress.Web.ASPxGantt.GanttDataUpdateEventArgs">
+      <summary>
+        <para>Provides information for the <see cref="E:DevExpress.Web.ASPxGantt.ASPxGantt.DataUpdate"/> event.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.GanttDataUpdateEventArgs.#ctor">
+      <summary>
+        <para>Initializes a new instance of the object.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.GanttDataUpdateEventArgs.DeleteDependencyValues">
+      <summary>
+        <para>Gets information about the deleted dependencies.</para>
+      </summary>
+      <value>The collection of deleted objects.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.GanttDataUpdateEventArgs.DeleteResourceAssignmentValues">
+      <summary>
+        <para>Gets information about the deleted resource assignments.</para>
+      </summary>
+      <value>The collection of deleted objects.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.GanttDataUpdateEventArgs.DeleteResourceValues">
+      <summary>
+        <para>Gets information about the deleted resources.</para>
+      </summary>
+      <value>The collection of deleted objects.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.GanttDataUpdateEventArgs.DeleteTaskValues">
+      <summary>
+        <para>Gets information about the deleted tasks.</para>
+      </summary>
+      <value>The collection of deleted objects.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.GanttDataUpdateEventArgs.Handled">
+      <summary>
+        <para>Gets or sets whether data update is handled manually, so no default processing is required.</para>
+      </summary>
+      <value>true if no default processing is required; otherwise false.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.GanttDataUpdateEventArgs.InsertDependencyValues">
+      <summary>
+        <para>Gets information about the inserted dependencies.</para>
+      </summary>
+      <value>The collection of inserted objects.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.GanttDataUpdateEventArgs.InsertResourceAssignmentValues">
+      <summary>
+        <para>Gets information about the inserted resource assignments.</para>
+      </summary>
+      <value>The collection of inserted objects.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.GanttDataUpdateEventArgs.InsertResourceValues">
+      <summary>
+        <para>Gets information about the inserted resources.</para>
+      </summary>
+      <value>The collection of inserted objects.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.GanttDataUpdateEventArgs.InsertTaskValues">
+      <summary>
+        <para>Gets information about the inserted tasks.</para>
+      </summary>
+      <value>The collection of inserted objects.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.GanttDataUpdateEventArgs.UpdateResourceValues">
+      <summary>
+        <para>Gets information about the updated resources.</para>
+      </summary>
+      <value>The collection of updated resources.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.GanttDataUpdateEventArgs.UpdateTaskValues">
+      <summary>
+        <para>Gets information about the updated tasks.</para>
+      </summary>
+      <value>The collection of updated tasks.</value>
+    </member>
+    <member name="T:DevExpress.Web.ASPxGantt.GanttDateTimeColumn">
+      <summary>
+        <para>A column that displays date and time.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.GanttDateTimeColumn.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Web.ASPxGantt.GanttDateTimeColumn"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.GanttDateTimeColumn.PropertiesDateEdit">
+      <summary>
+        <para>Gets the column editor&#39;s settings.</para>
+      </summary>
+      <value>The column editor&#39;s settings.</value>
+    </member>
+    <member name="T:DevExpress.Web.ASPxGantt.GanttDefaultToolbarItem">
+      <summary>
+        <para>Serves as a base class for classes that implements standard toolbar items.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.GanttDefaultToolbarItem.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Web.ASPxGantt.GanttDefaultToolbarItem"/> class.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.GanttDefaultToolbarItem.#ctor(System.Boolean)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Web.ASPxGantt.GanttDefaultToolbarItem"/> class with specified settings.</para>
+      </summary>
+      <param name="beginGroup">Specifies whether the item begins a group.</param>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.GanttDefaultToolbarItem.Items">
+      <summary>
+        <para>For internal use only.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.Web.ASPxGantt.GanttEditingSettings">
+      <summary>
+        <para>Provides access to editing settings.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.GanttEditingSettings.#ctor(DevExpress.Web.ASPxGantt.ASPxGantt)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Web.ASPxGantt.GanttEditingSettings"/> class with specified settings.</para>
+      </summary>
+      <param name="gantt"></param>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.GanttEditingSettings.AllowDependencyDelete">
+      <summary>
+        <para>Specifies whether users can delete dependencies.</para>
+      </summary>
+      <value>true, to allow users to delete dependencies; otherwise, false.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.GanttEditingSettings.AllowDependencyInsert">
+      <summary>
+        <para>Specifies whether users can insert dependencies.</para>
+      </summary>
+      <value>true, to allow users to insert dependencies; otherwise, false.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.GanttEditingSettings.AllowResourceDelete">
+      <summary>
+        <para>Specifies whether users can delete resources.</para>
+      </summary>
+      <value>true, to allow users to delete resources; otherwise, false.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.GanttEditingSettings.AllowResourceInsert">
+      <summary>
+        <para>Specifies whether users can insert resources.</para>
+      </summary>
+      <value>true, to allow users to insert resources; otherwise, false.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.GanttEditingSettings.AllowResourceUpdate">
+      <summary>
+        <para>Specifies whether users can update resources.</para>
+      </summary>
+      <value>true, to allow users to update resources; otherwise, false.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.GanttEditingSettings.AllowTaskDelete">
+      <summary>
+        <para>Specifies whether users can delete tasks.</para>
+      </summary>
+      <value>true, to allow users to delete tasks; otherwise, false.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.GanttEditingSettings.AllowTaskInsert">
+      <summary>
+        <para>Specifies whether users can insert tasks.</para>
+      </summary>
+      <value>true, to allow users to insert tasks; otherwise, false.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.GanttEditingSettings.AllowTaskUpdate">
+      <summary>
+        <para>Specifies whether users can update tasks.</para>
+      </summary>
+      <value>true, to allow users to update tasks; otherwise, false.</value>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.GanttEditingSettings.Assign(DevExpress.Web.ASPxGantt.GanttSettingsBase)">
+      <summary>
+        <para>Copies the settings of the specified object to the current one.</para>
+      </summary>
+      <param name="source">An object whose settings are assigned to the current object.</param>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.GanttEditingSettings.Enabled">
+      <summary>
+        <para>Specifies whether users can add, update and delete tasks, dependencies and resources in the Gantt control.</para>
+      </summary>
+      <value>true, to allow users to edit data in the control; otherwise, false.</value>
+    </member>
+    <member name="T:DevExpress.Web.ASPxGantt.GanttExpandAllToolbarItem">
+      <summary>
+        <para>A toolbar item that expands all tasks.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.GanttExpandAllToolbarItem.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Web.ASPxGantt.GanttExpandAllToolbarItem"/> class.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.Web.ASPxGantt.GanttFullScreenToolbarItem">
+      <summary>
+        <para>A toolbar item that switches the Gantt control to full screen mode.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.GanttFullScreenToolbarItem.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Web.ASPxGantt.GanttFullScreenToolbarItem"/> class.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.Web.ASPxGantt.GanttImages">
+      <summary>
+        <para>Represents image settings.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.GanttImages.#ctor(DevExpress.Web.Internal.ISkinOwner)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Web.ASPxGantt.GanttImages"/> class with specified settings.</para>
+      </summary>
+      <param name="owner"></param>
+    </member>
+    <member name="T:DevExpress.Web.ASPxGantt.GanttItemInsertedEventArgs">
+      <summary>
+        <para>Provides data for the related events.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.GanttItemInsertedEventArgs.#ctor(System.Int32,System.Exception)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Web.ASPxGantt.GanttItemInsertedEventArgs"/> class with specified settings.</para>
+      </summary>
+      <param name="affectedRecords">The number of inserted items.</param>
+      <param name="exception">The exception.</param>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.GanttItemInsertedEventArgs.#ctor(System.Int32,System.Exception,System.Collections.Specialized.OrderedDictionary)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Web.ASPxGantt.GanttItemInsertedEventArgs"/> class with specified settings.</para>
+      </summary>
+      <param name="affectedRecords">The number of inserted items.</param>
+      <param name="exception">An exception.</param>
+      <param name="values">A dictionary of inserted field name/value pairs for the items.</param>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.GanttItemInsertedEventArgs.KeyValue">
+      <summary>
+        <para>Gets the processed item&#39;s key.</para>
+      </summary>
+      <value>The key.</value>
+    </member>
+    <member name="T:DevExpress.Web.ASPxGantt.GanttItemInsertedEventHandler">
+      <summary>
+        <para>A method that handles the related events.</para>
+      </summary>
+      <param name="sender">The event sender.</param>
+      <param name="e">Contains data for the event.</param>
+    </member>
+    <member name="T:DevExpress.Web.ASPxGantt.GanttMappingInfoBase">
+      <summary>
+        <para>Serves as a base class for the classes that specify mappings.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.GanttMappingInfoBase.#ctor(DevExpress.Web.ASPxGantt.ASPxGantt)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Web.ASPxGantt.GanttMappingInfoBase"/> class with specified settings.</para>
+      </summary>
+      <param name="gantt"></param>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.GanttMappingInfoBase.Assign(DevExpress.Web.PropertiesBase)">
+      <summary>
+        <para>Copies the settings of the specified object to the current one.</para>
+      </summary>
+      <param name="source">An object whose settings are assigned to the current object.</param>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.GanttMappingInfoBase.Key">
+      <summary>
+        <para>Specifies an object&#39;s unique identifier.</para>
+      </summary>
+      <value>A unique identifier.</value>
+    </member>
+    <member name="T:DevExpress.Web.ASPxGantt.GanttMappings">
+      <summary>
+        <para>Represents a collection of mappings for the Gantt&#39;s objects (tasks, dependencies, resources) to data fields.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.GanttMappings.#ctor(DevExpress.Web.ASPxGantt.ASPxGantt)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Web.ASPxGantt.GanttMappings"/> class with specified settings.</para>
+      </summary>
+      <param name="gantt"></param>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.GanttMappings.Assign(DevExpress.Web.PropertiesBase)">
+      <summary>
+        <para>Copies the settings of the specified object to the current one.</para>
+      </summary>
+      <param name="source">An object whose settings are assigned to the current object.</param>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.GanttMappings.Dependency">
+      <summary>
+        <para>Provides access to the dependency object&#39;s mappings.</para>
+      </summary>
+      <value>Contains information on the mappings for the dependency object.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.GanttMappings.Resource">
+      <summary>
+        <para>Provides access to the resource object&#39;s mappings.</para>
+      </summary>
+      <value>Contains information on the mappings for the resource object.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.GanttMappings.ResourceAssignment">
+      <summary>
+        <para>Provides access to the resource assignment object&#39;s mappings.</para>
+      </summary>
+      <value>Contains information on the mappings for the resource assignment object.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.GanttMappings.Task">
+      <summary>
+        <para>Provides access to the task object&#39;s mappings.</para>
+      </summary>
+      <value>Contains information on the mappings for the task object.</value>
+    </member>
+    <member name="T:DevExpress.Web.ASPxGantt.GanttProgressBarColumn">
+      <summary>
+        <para>A column that displays progress.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.GanttProgressBarColumn.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Web.ASPxGantt.GanttProgressBarColumn"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.GanttProgressBarColumn.PropertiesProgressBar">
+      <summary>
+        <para>Gets the column editor&#39;s settings.</para>
+      </summary>
+      <value>The column editor&#39;s settings.</value>
+    </member>
+    <member name="T:DevExpress.Web.ASPxGantt.GanttRedoToolbarItem">
+      <summary>
+        <para>A toolbar item that repeats the undone action.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.GanttRedoToolbarItem.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Web.ASPxGantt.GanttRedoToolbarItem"/> class.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.Web.ASPxGantt.GanttRemoveTaskToolbarItem">
+      <summary>
+        <para>A toolbar item that removes a task.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.GanttRemoveTaskToolbarItem.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Web.ASPxGantt.GanttRemoveTaskToolbarItem"/> class.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.Web.ASPxGantt.GanttSettingsBase">
+      <summary>
+        <para>Serves as a base class for classes that provide Gantt settings.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.GanttSettingsBase.Assign(DevExpress.Web.ASPxGantt.GanttSettingsBase)">
+      <summary>
+        <para>Copies the settings of the specified object to the current one.</para>
+      </summary>
+      <param name="source">The settings.</param>
+    </member>
+    <member name="T:DevExpress.Web.ASPxGantt.GanttSpinEditColumn">
+      <summary>
+        <para>A column that displays a spin editor.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.GanttSpinEditColumn.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Web.ASPxGantt.GanttSpinEditColumn"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.GanttSpinEditColumn.PropertiesSpinEdit">
+      <summary>
+        <para>Gets the column editor&#39;s settings.</para>
+      </summary>
+      <value>The column editor&#39;s settings.</value>
+    </member>
+    <member name="T:DevExpress.Web.ASPxGantt.GanttStripLineSettings">
+      <summary>
+        <para>Provides access to strip line settings.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.GanttStripLineSettings.#ctor(DevExpress.Web.ASPxGantt.ASPxGantt)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Web.ASPxGantt.GanttStripLineSettings"/> class with specified settings.</para>
+      </summary>
+      <param name="gantt">The Gantt control.</param>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.GanttStripLineSettings.Assign(DevExpress.Web.ASPxGantt.GanttSettingsBase)">
+      <summary>
+        <para>Copies the settings of the specified object to the current one.</para>
+      </summary>
+      <param name="source">An object whose settings are assigned to the current object.</param>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.GanttStripLineSettings.CurrentTimeCssClass">
+      <summary>
+        <para>Specifies the CSS class that stores appearance settings to highlight the current time.</para>
+      </summary>
+      <value>The CSS class name.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.GanttStripLineSettings.CurrentTimeTitle">
+      <summary>
+        <para>Specifies the title of a strip line that highlights the current time.</para>
+      </summary>
+      <value>The title.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.GanttStripLineSettings.CurrentTimeUpdateInterval">
+      <summary>
+        <para>Specifies the time interval between the current time updates.</para>
+      </summary>
+      <value>The time interval.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.GanttStripLineSettings.ShowCurrentTime">
+      <summary>
+        <para>Specifies whether to highlight the current time in the Gantt control.</para>
+      </summary>
+      <value>true, to highlight the current time; otherwise, false.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.GanttStripLineSettings.StripLines">
+      <summary>
+        <para>Provides access to the strip line collection.</para>
+      </summary>
+      <value>The collection of strip lines.</value>
+    </member>
+    <member name="T:DevExpress.Web.ASPxGantt.GanttTaskDependencyMappingInfo">
+      <summary>
+        <para>Provides information on the dependency properties&#39; mappings to the appropriate data fields.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.GanttTaskDependencyMappingInfo.#ctor(DevExpress.Web.ASPxGantt.ASPxGantt)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Web.ASPxGantt.GanttTaskDependencyMappingInfo"/> class with specified settings.</para>
+      </summary>
+      <param name="gantt">The Gantt.</param>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.GanttTaskDependencyMappingInfo.Assign(DevExpress.Web.PropertiesBase)">
+      <summary>
+        <para>Copies the settings of the specified object to the current one.</para>
+      </summary>
+      <param name="source">An object whose settings are assigned to the current object.</param>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.GanttTaskDependencyMappingInfo.DependencyType">
+      <summary>
+        <para>Specifies the name of the data field that contains information on the dependency type.</para>
+      </summary>
+      <value>A data field name.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.GanttTaskDependencyMappingInfo.PredecessorKey">
+      <summary>
+        <para>Specifies the name of the data field that contains information on the dependency&#39;s predecessor ID.</para>
+      </summary>
+      <value>A data field name.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.GanttTaskDependencyMappingInfo.SuccessorKey">
+      <summary>
+        <para>Specifies the name of the data field that contains information on the dependency&#39;s successor ID.</para>
+      </summary>
+      <value>A data field name.</value>
+    </member>
+    <member name="T:DevExpress.Web.ASPxGantt.GanttTaskListSettings">
+      <summary>
+        <para>Accesses the task list settings.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.GanttTaskListSettings.#ctor(DevExpress.Web.ASPxGantt.ASPxGantt)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Web.ASPxGantt.GanttTaskListSettings"/> class with specified settings.</para>
+      </summary>
+      <param name="gantt">The Gantt control.</param>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.GanttTaskListSettings.AllowSort">
+      <summary>
+        <para>Specifies whether users can sort all columns.</para>
+      </summary>
+      <value>true, to sort all columns; otherwise, false.</value>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.GanttTaskListSettings.Assign(DevExpress.Web.ASPxGantt.GanttSettingsBase)">
+      <summary>
+        <para>Copies the settings of the specified object to the current one.</para>
+      </summary>
+      <param name="source">An object whose settings are assigned to the current object.</param>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.GanttTaskListSettings.ColumnMinWidth">
+      <summary>
+        <para>Specifies the columns&#39; minimum width.</para>
+      </summary>
+      <value>The columns&#39; minimum width.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.GanttTaskListSettings.Columns">
+      <summary>
+        <para>Accesses the columns in the task list.</para>
+      </summary>
+      <value>A collection of Gantt columns.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.GanttTaskListSettings.Width">
+      <summary>
+        <para>Specifies the task list&#39;s width.</para>
+      </summary>
+      <value>The task list&#39;s width.</value>
+    </member>
+    <member name="T:DevExpress.Web.ASPxGantt.GanttTaskMappingInfo">
+      <summary>
+        <para>Provides information on the task properties&#39; mappings to the appropriate data fields.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.GanttTaskMappingInfo.#ctor(DevExpress.Web.ASPxGantt.ASPxGantt)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Web.ASPxGantt.GanttTaskMappingInfo"/> class with specified settings.</para>
+      </summary>
+      <param name="gantt">The Gantt.</param>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.GanttTaskMappingInfo.Assign(DevExpress.Web.PropertiesBase)">
+      <summary>
+        <para>Copies the settings of the specified object to the current one.</para>
+      </summary>
+      <param name="source">An object whose settings are assigned to the current object.</param>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.GanttTaskMappingInfo.Color">
+      <summary>
+        <para>Specifies the name of the data field that contains information on the task&#39;s color.</para>
+      </summary>
+      <value>A data field name.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.GanttTaskMappingInfo.End">
+      <summary>
+        <para>Specifies the name of the data field that contains information on the task&#39;s end date.</para>
+      </summary>
+      <value>A data field name.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.GanttTaskMappingInfo.ParentKey">
+      <summary>
+        <para>Specifies the name of the data field that contains information on the task&#39;s parent ID.</para>
+      </summary>
+      <value>A data field name.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.GanttTaskMappingInfo.Progress">
+      <summary>
+        <para>Specifies the name of the data field that contains information on the task&#39;s progress.</para>
+      </summary>
+      <value>A data field name.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.GanttTaskMappingInfo.Start">
+      <summary>
+        <para>Specifies the name of the data field that contains information on the task&#39;s start date.</para>
+      </summary>
+      <value>A data field name.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.GanttTaskMappingInfo.Title">
+      <summary>
+        <para>Specifies the name of the data field that contains information on the task&#39;s title.</para>
+      </summary>
+      <value>A data field name.</value>
+    </member>
+    <member name="T:DevExpress.Web.ASPxGantt.GanttTaskResourceAssignmentMappingInfo">
+      <summary>
+        <para>Provides information on the resource assignments properties&#39; mappings to the appropriate data fields.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.GanttTaskResourceAssignmentMappingInfo.#ctor(DevExpress.Web.ASPxGantt.ASPxGantt)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Web.ASPxGantt.GanttTaskResourceAssignmentMappingInfo"/> class with specified settings.</para>
+      </summary>
+      <param name="gantt"></param>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.GanttTaskResourceAssignmentMappingInfo.Assign(DevExpress.Web.PropertiesBase)">
+      <summary>
+        <para>Copies the settings of the specified object to the current one.</para>
+      </summary>
+      <param name="source">An object whose settings are assigned to the current object.</param>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.GanttTaskResourceAssignmentMappingInfo.ResourceKey">
+      <summary>
+        <para>Specifies the name of the data field that contains information on the resource ID.</para>
+      </summary>
+      <value>A data field name.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.GanttTaskResourceAssignmentMappingInfo.TaskKey">
+      <summary>
+        <para>Specifies the name of the data field that contains information on the task ID.</para>
+      </summary>
+      <value>A data field name.</value>
+    </member>
+    <member name="T:DevExpress.Web.ASPxGantt.GanttTaskResourceMappingInfo">
+      <summary>
+        <para>Provides information on the resource properties&#39; mappings to the appropriate data fields.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.GanttTaskResourceMappingInfo.#ctor(DevExpress.Web.ASPxGantt.ASPxGantt)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Web.ASPxGantt.GanttTaskResourceMappingInfo"/> class with specified settings.</para>
+      </summary>
+      <param name="gantt"></param>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.GanttTaskResourceMappingInfo.Assign(DevExpress.Web.PropertiesBase)">
+      <summary>
+        <para>Copies the settings of the specified object to the current one.</para>
+      </summary>
+      <param name="source">An object whose settings are assigned to the current object.</param>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.GanttTaskResourceMappingInfo.Color">
+      <summary>
+        <para>Specifies the name of the data field that contains information on the resource color.</para>
+      </summary>
+      <value>A data field name.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.GanttTaskResourceMappingInfo.Name">
+      <summary>
+        <para>Specifies the name of the data field that contains information on the resource name.</para>
+      </summary>
+      <value>A data field name.</value>
+    </member>
+    <member name="T:DevExpress.Web.ASPxGantt.GanttTaskTitlePosition">
+      <summary>
+        <para>Lists task title position.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxGantt.GanttTaskTitlePosition.Inside">
+      <summary>
+        <para>Displays a title inside a task.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxGantt.GanttTaskTitlePosition.None">
+      <summary>
+        <para>Does not display a title.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxGantt.GanttTaskTitlePosition.Outside">
+      <summary>
+        <para>Displays a title outside a task.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.Web.ASPxGantt.GanttTextColumn">
+      <summary>
+        <para>A column that displays text.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.GanttTextColumn.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Web.ASPxGantt.GanttTextColumn"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.GanttTextColumn.PropertiesTextEdit">
+      <summary>
+        <para>Gets the column editor&#39;s settings.</para>
+      </summary>
+      <value>The column editor&#39;s settings.</value>
+    </member>
+    <member name="T:DevExpress.Web.ASPxGantt.GanttTimeEditColumn">
+      <summary>
+        <para>A column that displays time.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.GanttTimeEditColumn.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Web.ASPxGantt.GanttTimeEditColumn"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.GanttTimeEditColumn.PropertiesTimeEdit">
+      <summary>
+        <para>Gets the column editor&#39;s settings.</para>
+      </summary>
+      <value>The column editor&#39;s settings.</value>
+    </member>
+    <member name="T:DevExpress.Web.ASPxGantt.GanttToolbarAlignment">
+      <summary>
+        <para>Lists values that specify the Gantt toolbar alignment.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxGantt.GanttToolbarAlignment.Justify">
+      <summary>
+        <para>Aligns items to the left and right edges of the toolbar.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxGantt.GanttToolbarAlignment.Left">
+      <summary>
+        <para>Aligns the toolbar items to the left.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxGantt.GanttToolbarAlignment.Right">
+      <summary>
+        <para>Aligns the toolbar items to the right.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.Web.ASPxGantt.GanttToolbarItemBase">
+      <summary>
+        <para>A base class for classes that implement standard and custom toolbar items.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.GanttToolbarItemBase.Name">
+      <summary>
+        <para>Specifies a toolbar item&#39;s name.</para>
+      </summary>
+      <value>The name.</value>
+    </member>
+    <member name="T:DevExpress.Web.ASPxGantt.GanttToolbarItemCollection">
+      <summary>
+        <para>Represents the toolbar item collection.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.GanttToolbarItemCollection.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Web.ASPxGantt.GanttToolbarItemCollection"/> class.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.GanttToolbarItemCollection.AddCustomItem(System.Action{DevExpress.Web.ASPxGantt.GanttCustomToolbarItem})">
+      <summary>
+        <para>Adds a custom toolbar item.</para>
+      </summary>
+      <param name="method">A delegate method.</param>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.GanttToolbarItemCollection.CreateDefaultItems">
+      <summary>
+        <para>Creates the toolbar with standard toolbar items.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.GanttToolbarItemCollection.Item(System.Int32)">
+      <summary>
+        <para>Provides indexed access to toolbar items in the collection.</para>
+      </summary>
+      <param name="index">The item&#39;s index.</param>
+      <value>The toolbar item.</value>
+    </member>
+    <member name="T:DevExpress.Web.ASPxGantt.GanttToolbarSettings">
+      <summary>
+        <para>Contains toolbar settings.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.GanttToolbarSettings.#ctor(DevExpress.Web.ASPxGantt.ASPxGantt)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Web.ASPxGantt.GanttToolbarSettings"/> class with specified settings.</para>
+      </summary>
+      <param name="gantt">The Gantt control.</param>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.GanttToolbarSettings.Alignment">
+      <summary>
+        <para>Specifies the toolbar horizontal alignment.</para>
+      </summary>
+      <value>The alignment.</value>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.GanttToolbarSettings.Assign(DevExpress.Web.ASPxGantt.GanttSettingsBase)">
+      <summary>
+        <para>Copies the settings of the specified object to the current one.</para>
+      </summary>
+      <param name="source">An object whose settings are assigned to the current object.</param>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.GanttToolbarSettings.Items">
+      <summary>
+        <para>Provides access to the toolbar items collection.</para>
+      </summary>
+      <value>The toolbar items collection.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.GanttToolbarSettings.Visible">
+      <summary>
+        <para>Specifies the toolbar&#39;s visibility.</para>
+      </summary>
+      <value>true, to display the toolbar; otherwise, false.</value>
+    </member>
+    <member name="T:DevExpress.Web.ASPxGantt.GanttUndoToolbarItem">
+      <summary>
+        <para>A toolbar item that reverses the last action.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.GanttUndoToolbarItem.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Web.ASPxGantt.GanttUndoToolbarItem"/> class.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.Web.ASPxGantt.GanttValidationSettings">
+      <summary>
+        <para>Accesses validation settings.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.GanttValidationSettings.#ctor(DevExpress.Web.ASPxGantt.ASPxGantt)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Web.ASPxGantt.GanttValidationSettings"/> class with specified settings.</para>
+      </summary>
+      <param name="gantt">The Gantt control.</param>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.GanttValidationSettings.Assign(DevExpress.Web.ASPxGantt.GanttSettingsBase)">
+      <summary>
+        <para>Copies the settings of the specified object to the current one.</para>
+      </summary>
+      <param name="source">An object whose settings are assigned to the current object.</param>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.GanttValidationSettings.AutoUpdateParentTasks">
+      <summary>
+        <para>Enables parent-child task relationships validation.</para>
+      </summary>
+      <value>true, to validate parent-child task relationships; otherwise, false.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.GanttValidationSettings.EnableDependencyValidation">
+      <summary>
+        <para>Enables task dependencies validation.</para>
+      </summary>
+      <value>true, to validate task dependencies; otherwise, false.</value>
+    </member>
+    <member name="T:DevExpress.Web.ASPxGantt.GanttViewSettings">
+      <summary>
+        <para>Provides access to the gantt control&#39;s view options.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.GanttViewSettings.#ctor(DevExpress.Web.ASPxGantt.ASPxGantt)">
+      <summary>
+        <para>Initializes a new instance of the object.</para>
+      </summary>
+      <param name="gantt">The gantt control.</param>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.GanttViewSettings.Assign(DevExpress.Web.ASPxGantt.GanttSettingsBase)">
+      <summary>
+        <para>Copies the settings of the specified object to the current one.</para>
+      </summary>
+      <param name="source">An object whose settings are assigned to the current object.</param>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.GanttViewSettings.ShowResources">
+      <summary>
+        <para>Specifies whether to display task resources.</para>
+      </summary>
+      <value>true, to display task resources; otherwise, false.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.GanttViewSettings.TaskTitlePosition">
+      <summary>
+        <para>Specifies a task&#39;s title position.</para>
+      </summary>
+      <value>One of the enumeration values.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.GanttViewSettings.ViewType">
+      <summary>
+        <para>Specifies a view to display tasks.</para>
+      </summary>
+      <value>One of the enumeration values.</value>
+    </member>
+    <member name="T:DevExpress.Web.ASPxGantt.GanttViewType">
+      <summary>
+        <para>Lists views to display tasks.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxGantt.GanttViewType.Days">
+      <summary>
+        <para>Displays days.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxGantt.GanttViewType.Hours">
+      <summary>
+        <para>Displays hours.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxGantt.GanttViewType.Months">
+      <summary>
+        <para>Displays months.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxGantt.GanttViewType.Quarter">
+      <summary>
+        <para>Displays quarters.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxGantt.GanttViewType.SixHours">
+      <summary>
+        <para>Displays six hours.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxGantt.GanttViewType.TenMinutes">
+      <summary>
+        <para>Displays ten minutes.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxGantt.GanttViewType.Weeks">
+      <summary>
+        <para>Displays weeks.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxGantt.GanttViewType.Years">
+      <summary>
+        <para>Displays years.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.Web.ASPxGantt.GanttZoomInToolbarItem">
+      <summary>
+        <para>A toolbar item that zooms in.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.GanttZoomInToolbarItem.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Web.ASPxGantt.GanttZoomInToolbarItem"/> class.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.Web.ASPxGantt.GanttZoomOutToolbarItem">
+      <summary>
+        <para>A toolbar item that zooms out.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.GanttZoomOutToolbarItem.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Web.ASPxGantt.GanttZoomOutToolbarItem"/> class.</para>
+      </summary>
+    </member>
+    <member name="N:DevExpress.Web.ASPxGantt.Localization">
+      <summary>
+        <para>Contains classes and enumerations that implement basic functionality for localization of the <see cref="T:DevExpress.Web.ASPxGantt.ASPxGantt"/> control.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.Web.ASPxGantt.Localization.ASPxGanttLocalizer">
+      <summary>
+        <para>An object providing the means to localize the <see cref="T:DevExpress.Web.ASPxGantt.ASPxGantt"/> user interface elements at runtime.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.Localization.ASPxGanttLocalizer.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Web.ASPxGantt.Localization.ASPxGanttLocalizer"/> class.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.Localization.ASPxGanttLocalizer.CreateResXLocalizer">
+      <summary>
+        <para>Returns an object that comprises resources based on the thread&#39;s language and regional settings (culture).</para>
+      </summary>
+      <returns>An object that comprises resources.</returns>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.Localization.ASPxGanttLocalizer.GetString(DevExpress.Web.ASPxGantt.Localization.ASPxGanttStringId)">
+      <summary>
+        <para>Returns a localized string for the specified string identifier.</para>
+      </summary>
+      <param name="id">A value that identifies the string to localize.</param>
+      <returns>A string that corresponds to the specified identifier.</returns>
+    </member>
+    <member name="T:DevExpress.Web.ASPxGantt.Localization.ASPxGanttResourcesLocalizer">
+      <summary>
+        <para>An object that provides the means to localize the <see cref="T:DevExpress.Web.ASPxGantt.ASPxGantt"/>&#39;s user interface elements at runtime.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.Localization.ASPxGanttResourcesLocalizer.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Web.ASPxGantt.Localization.ASPxGanttResourcesLocalizer"/> class.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.Web.ASPxGantt.Localization.ASPxGanttStringId">
+      <summary>
+        <para>Contains values for strings that can be localized in the <see cref="T:DevExpress.Web.ASPxGantt.ASPxGantt"/>.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxGantt.Localization.ASPxGanttStringId.Add">
+      <summary>
+        <para>Contains localizable text of the corresponding UI element.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxGantt.Localization.ASPxGanttStringId.CancelButton">
+      <summary>
+        <para>Contains localizable text of the corresponding UI element.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxGantt.Localization.ASPxGanttStringId.DeleteButton">
+      <summary>
+        <para>Contains localizable text of the corresponding UI element.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxGantt.Localization.ASPxGanttStringId.DeleteDependency">
+      <summary>
+        <para>Contains localizable text of the corresponding UI element.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxGantt.Localization.ASPxGanttStringId.DeleteTask">
+      <summary>
+        <para>Contains localizable text of the corresponding UI element.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxGantt.Localization.ASPxGanttStringId.DependencyDeleteConfirmation">
+      <summary>
+        <para>Contains localizable text of the corresponding UI element.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxGantt.Localization.ASPxGanttStringId.DoNothing">
+      <summary>
+        <para>Contains localizable text of the corresponding UI element.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxGantt.Localization.ASPxGanttStringId.End">
+      <summary>
+        <para>Contains localizable text of the corresponding UI element.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxGantt.Localization.ASPxGanttStringId.KeepDependencyAndMove">
+      <summary>
+        <para>Contains localizable text of the corresponding UI element.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxGantt.Localization.ASPxGanttStringId.NewResourceName">
+      <summary>
+        <para>Contains localizable text of the corresponding UI element.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxGantt.Localization.ASPxGanttStringId.NewSubtask">
+      <summary>
+        <para>Contains localizable text of the corresponding UI element.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxGantt.Localization.ASPxGanttStringId.NewTask">
+      <summary>
+        <para>Contains localizable text of the corresponding UI element.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxGantt.Localization.ASPxGanttStringId.OkButton">
+      <summary>
+        <para>Contains localizable text of the corresponding UI element.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxGantt.Localization.ASPxGanttStringId.Progress">
+      <summary>
+        <para>Contains localizable text of the corresponding UI element.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxGantt.Localization.ASPxGanttStringId.QuarterAbbreviation">
+      <summary>
+        <para>Contains localizable text of the corresponding UI element.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxGantt.Localization.ASPxGanttStringId.ResourceManager">
+      <summary>
+        <para>Contains localizable text of the corresponding UI element.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxGantt.Localization.ASPxGanttStringId.Resources">
+      <summary>
+        <para>Contains localizable text of the corresponding UI element.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxGantt.Localization.ASPxGanttStringId.ResourcesDeleteConfirmation">
+      <summary>
+        <para>Contains localizable text of the corresponding UI element.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxGantt.Localization.ASPxGanttStringId.Start">
+      <summary>
+        <para>Contains localizable text of the corresponding UI element.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxGantt.Localization.ASPxGanttStringId.TaskCriticalLinkedWarning">
+      <summary>
+        <para>Contains localizable text of the corresponding UI element.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxGantt.Localization.ASPxGanttStringId.TaskDeleteConfirmation">
+      <summary>
+        <para>Contains localizable text of the corresponding UI element.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxGantt.Localization.ASPxGanttStringId.TaskDetails">
+      <summary>
+        <para>Contains localizable text of the corresponding UI element.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxGantt.Localization.ASPxGanttStringId.TaskLinkedWarning">
+      <summary>
+        <para>Contains localizable text of the corresponding UI element.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxGantt.Localization.ASPxGanttStringId.Title">
+      <summary>
+        <para>Contains localizable text of the corresponding UI element.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.Web.ASPxGantt.Month">
+      <summary>
+        <para>Lists 12 months of the year.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxGantt.Month.April">
+      <summary>
+        <para>Specifies April.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxGantt.Month.August">
+      <summary>
+        <para>Specifies August.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxGantt.Month.December">
+      <summary>
+        <para>Specifies December.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxGantt.Month.February">
+      <summary>
+        <para>Specifies February.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxGantt.Month.January">
+      <summary>
+        <para>Specifies January.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxGantt.Month.July">
+      <summary>
+        <para>Specifies July.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxGantt.Month.June">
+      <summary>
+        <para>Specifies June.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxGantt.Month.March">
+      <summary>
+        <para>Specifies March.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxGantt.Month.May">
+      <summary>
+        <para>Specifies May.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxGantt.Month.November">
+      <summary>
+        <para>Specifies November.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxGantt.Month.October">
+      <summary>
+        <para>Specifies October.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxGantt.Month.September">
+      <summary>
+        <para>Specifies September.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.Web.ASPxGantt.Monthly">
+      <summary>
+        <para>Contains settings for a monthly recurrence pattern.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.Monthly.#ctor">
+      <summary>
+        <para>Initializes a new instance of the object.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.Monthly.Assign(DevExpress.Web.ASPxGantt.Daily)">
+      <summary>
+        <para>Copies the settings of the specified object to the current object.</para>
+      </summary>
+      <param name="source">An object whose settings are assigned to the current object.</param>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.Monthly.CalculateByDayOfWeek">
+      <summary>
+        <para>Specifies whether the gantt calculates the rule by the day of the week.</para>
+      </summary>
+      <value>true, to calculate the rule by a day of the week; otherwise, false.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.Monthly.Day">
+      <summary>
+        <para>Specifies a day.</para>
+      </summary>
+      <value>A day.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.Monthly.DayOfWeekOccurrence">
+      <summary>
+        <para>Specifies a day of the week&#39;s occurrence.</para>
+      </summary>
+      <value>A day of the week&#39;s occurrence.</value>
+    </member>
+    <member name="T:DevExpress.Web.ASPxGantt.MonthlyRule">
+      <summary>
+        <para>Provides settings that allow you to specify a rule for a month.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.MonthlyRule.#ctor">
+      <summary>
+        <para>Initializes a new instance of the object.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.MonthlyRule.Recurrence">
+      <summary>
+        <para>Gets the monthly rule&#39;s recurrence settings.</para>
+      </summary>
+      <value>Monthly recurrence settings.</value>
+    </member>
+    <member name="T:DevExpress.Web.ASPxGantt.RuleBase">
+      <summary>
+        <para>Serves as a base class for the <see cref="T:DevExpress.Web.ASPxGantt.DailyRule"/>, <see cref="T:DevExpress.Web.ASPxGantt.WeeklyRule"/>, <see cref="T:DevExpress.Web.ASPxGantt.MonthlyRule"/> and <see cref="T:DevExpress.Web.ASPxGantt.YearlyRule"/> object.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.RuleBase.#ctor">
+      <summary>
+        <para>Initializes a new instance of the object.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.RuleBase.Assign(DevExpress.Web.CollectionItem)">
+      <summary>
+        <para>Copies the settings of the specified object to the current object.</para>
+      </summary>
+      <param name="source">An object whose settings are assigned to the current object.</param>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.RuleBase.IsWorkDay">
+      <summary>
+        <para>Specifies whether a day is a work day.</para>
+      </summary>
+      <value>true, to specify a work day; otherwise, false;</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.RuleBase.WorkTimeRanges">
+      <summary>
+        <para>Provides settings for work time ranges.</para>
+      </summary>
+      <value>A list of WorkTimeRange objects.</value>
+    </member>
+    <member name="T:DevExpress.Web.ASPxGantt.StripLine">
+      <summary>
+        <para>A strip line.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.StripLine.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Web.ASPxGantt.StripLine"/> class.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.StripLine.#ctor(System.DateTime)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Web.ASPxGantt.StripLine"/> class with specified settings.</para>
+      </summary>
+      <param name="start">The start point.</param>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.StripLine.#ctor(System.DateTime,System.Nullable{System.DateTime})">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Web.ASPxGantt.StripLine"/> class with specified settings.</para>
+      </summary>
+      <param name="start">The start point.</param>
+      <param name="end">The end point.</param>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.StripLine.#ctor(System.DateTime,System.Nullable{System.DateTime},System.String)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Web.ASPxGantt.StripLine"/> class with specified settings.</para>
+      </summary>
+      <param name="start">The start point.</param>
+      <param name="end">The end point.</param>
+      <param name="title">The title.</param>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.StripLine.#ctor(System.DateTime,System.Nullable{System.DateTime},System.String,System.String)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Web.ASPxGantt.StripLine"/> class with specified settings.</para>
+      </summary>
+      <param name="start">The start point.</param>
+      <param name="end">The end point.</param>
+      <param name="title">The title.</param>
+      <param name="cssClass">The CSS class name.</param>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.StripLine.#ctor(System.DateTime,System.String)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Web.ASPxGantt.StripLine"/> class with specified settings.</para>
+      </summary>
+      <param name="start">The start point.</param>
+      <param name="title">The title.</param>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.StripLine.#ctor(System.DateTime,System.String,System.String)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Web.ASPxGantt.StripLine"/> class with specified settings.</para>
+      </summary>
+      <param name="start">The start point.</param>
+      <param name="title">The title.</param>
+      <param name="cssClass">The CSS class name.</param>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.StripLine.Assign(DevExpress.Web.CollectionItem)">
+      <summary>
+        <para>Copies the settings of the specified object to the current one.</para>
+      </summary>
+      <param name="source">An object whose settings are assigned to the current object.</param>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.StripLine.Collection">
+      <summary>
+        <para>Gets a collection of strip lines to which the strip line belongs.</para>
+      </summary>
+      <value>The collection of strip lines.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.StripLine.CssClass">
+      <summary>
+        <para>Specifies the name of the cascading style sheet (CSS) class associated with a strip line.</para>
+      </summary>
+      <value>The name of the CSS class.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.StripLine.End">
+      <summary>
+        <para>Specifies the end point of a strip line.</para>
+      </summary>
+      <value>The end point.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.StripLine.Start">
+      <summary>
+        <para>Specifies the start point of a strip line.</para>
+      </summary>
+      <value>The start point.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.StripLine.Title">
+      <summary>
+        <para>Specifies a strip line&#39;s title.</para>
+      </summary>
+      <value>The title.</value>
+    </member>
+    <member name="T:DevExpress.Web.ASPxGantt.StripLineCollection">
+      <summary>
+        <para>A collection of strip lines.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.StripLineCollection.#ctor(DevExpress.Web.Internal.IWebControlObject)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Web.ASPxGantt.StripLineCollection"/> class with specified settings.</para>
+      </summary>
+      <param name="webControlObject">Implements the IWebControlObject interface.</param>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.StripLineCollection.Add(DevExpress.Web.ASPxGantt.StripLine)">
+      <summary>
+        <para>Adds a strip line object to the collection.</para>
+      </summary>
+      <param name="stripLine">A strip line.</param>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.StripLineCollection.AddRange(DevExpress.Web.ASPxGantt.StripLine[])">
+      <summary>
+        <para>Adds the specified range of strip lines to the collection.</para>
+      </summary>
+      <param name="stripLines">An array of strip lines.</param>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.StripLineCollection.CurrentDateTimeTitle">
+      <summary>
+        <para>Specifies a title for the strip line that highlights the current time.</para>
+      </summary>
+      <value>The title.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.StripLineCollection.CurrentDateTimeUpdateInterval">
+      <summary>
+        <para>Specifies the time interval between the current time updates.</para>
+      </summary>
+      <value>The time interval.</value>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.StripLineCollection.IndexOf(DevExpress.Web.ASPxGantt.StripLine)">
+      <summary>
+        <para>Returns the specified rule&#39;s position in the collection.</para>
+      </summary>
+      <param name="stripLine">A strip line.</param>
+      <returns>The index.</returns>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.StripLineCollection.Insert(System.Int32,DevExpress.Web.ASPxGantt.StripLine)">
+      <summary>
+        <para>Adds a strip line to the specified position in the collection.</para>
+      </summary>
+      <param name="index">The index.</param>
+      <param name="stripLine">A strip line.</param>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.StripLineCollection.Item(System.Int32)">
+      <summary>
+        <para>Provides indexed access to strip lines in the collection.</para>
+      </summary>
+      <param name="index">A strip line&#39;s index.</param>
+      <value>The strip line.</value>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.StripLineCollection.Remove(DevExpress.Web.ASPxGantt.StripLine)">
+      <summary>
+        <para>Removes the specified strip line from the collection.</para>
+      </summary>
+      <param name="stripLine">The strip line.</param>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.StripLineCollection.ShowCurrentDateTime">
+      <summary>
+        <para>Specifies whether to highlight the current time.</para>
+      </summary>
+      <value>true, to highlight the current time; otherwise, false.</value>
+    </member>
+    <member name="T:DevExpress.Web.ASPxGantt.Weekly">
+      <summary>
+        <para>Contains settings for a weekly recurrence pattern.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.Weekly.#ctor">
+      <summary>
+        <para>Initializes a new instance of the object.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.Weekly.Assign(DevExpress.Web.ASPxGantt.Daily)">
+      <summary>
+        <para>Copies the settings of the specified object to the current object.</para>
+      </summary>
+      <param name="source">An object whose settings are assigned to the current object.</param>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.Weekly.DayOfWeek">
+      <summary>
+        <para>Specifies a day of the week to which the rule is applied.</para>
+      </summary>
+      <value>A day of the week.</value>
+    </member>
+    <member name="T:DevExpress.Web.ASPxGantt.WeeklyRule">
+      <summary>
+        <para>Provides settings that allow you to specify a rule for a week.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.WeeklyRule.#ctor">
+      <summary>
+        <para>Initializes a new instance of the object.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.WeeklyRule.Recurrence">
+      <summary>
+        <para>Gets the weekly rule&#39;s recurrence settings.</para>
+      </summary>
+      <value>Weekly recurrence settings.</value>
+    </member>
+    <member name="T:DevExpress.Web.ASPxGantt.WorkTimeRange">
+      <summary>
+        <para>Provides settings for a work time range.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.WorkTimeRange.#ctor">
+      <summary>
+        <para>Initializes a new instance of the object.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.WorkTimeRange.End">
+      <summary>
+        <para>Specifies the end time for the work time range.</para>
+      </summary>
+      <value>The end time.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.WorkTimeRange.Start">
+      <summary>
+        <para>Specifies the start time for the work time range.</para>
+      </summary>
+      <value>The start time.</value>
+    </member>
+    <member name="T:DevExpress.Web.ASPxGantt.WorkTimeRulesCollection">
+      <summary>
+        <para>A collection of work time rules: <see cref="T:DevExpress.Web.ASPxGantt.DailyRule"/>, <see cref="T:DevExpress.Web.ASPxGantt.WeeklyRule"/>, <see cref="T:DevExpress.Web.ASPxGantt.MonthlyRule"/>, <see cref="T:DevExpress.Web.ASPxGantt.YearlyRule"/>.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.WorkTimeRulesCollection.#ctor(DevExpress.Web.Internal.IWebControlObject)">
+      <summary>
+        <para>Initializes a new instance of the object.</para>
+      </summary>
+      <param name="webControlObject">Implements the IWebControlObject interface.</param>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.WorkTimeRulesCollection.Add(DevExpress.Web.ASPxGantt.RuleBase)">
+      <summary>
+        <para>Adds a work time rule object to the collection.</para>
+      </summary>
+      <param name="rule">A work time rule.</param>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.WorkTimeRulesCollection.AddRange(DevExpress.Web.ASPxGantt.RuleBase[])">
+      <summary>
+        <para>Adds the specified range of work time rules to the collection.</para>
+      </summary>
+      <param name="rules">An array of rules objects.</param>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.WorkTimeRulesCollection.IndexOf(DevExpress.Web.ASPxGantt.RuleBase)">
+      <summary>
+        <para>Returns the specified rule&#39;s position in the collection.</para>
+      </summary>
+      <param name="rule">A rule object.</param>
+      <returns>Specifies the rule&#39;s position in the collection. -1 if the collection doesn&#39;t contain the specified rule.</returns>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.WorkTimeRulesCollection.Insert(System.Int32,DevExpress.Web.ASPxGantt.RuleBase)">
+      <summary>
+        <para>Adds the rule to the specified position in the collection.</para>
+      </summary>
+      <param name="index">Specifies the zero-based index at which the specified rule should be inserted. If it&#39;s negative or exceeds the number of elements, an exception is raised.</param>
+      <param name="rule">A rule object.</param>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.WorkTimeRulesCollection.Item(System.Int32)">
+      <summary>
+        <para>Provides indexed access to rules in the collection.</para>
+      </summary>
+      <param name="index">A rule&#39;s index.</param>
+      <value>A rule object.</value>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.WorkTimeRulesCollection.Remove(DevExpress.Web.ASPxGantt.RuleBase)">
+      <summary>
+        <para>Removes the specified rule from the collection.</para>
+      </summary>
+      <param name="rule">A rule object.</param>
+    </member>
+    <member name="T:DevExpress.Web.ASPxGantt.Yearly">
+      <summary>
+        <para>Contains settings for a yearly recurrence pattern.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.Yearly.#ctor">
+      <summary>
+        <para>Initializes a new instance of the object.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.Yearly.Assign(DevExpress.Web.ASPxGantt.Daily)">
+      <summary>
+        <para>Copies the settings of the specified object to the current object.</para>
+      </summary>
+      <param name="source">An object whose settings are assigned to the current object.</param>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.Yearly.Month">
+      <summary>
+        <para>Specifies a month to which the rule is applied.</para>
+      </summary>
+      <value>A month.</value>
+    </member>
+    <member name="T:DevExpress.Web.ASPxGantt.YearlyRule">
+      <summary>
+        <para>Provides settings that allow you to specify a rule for a year.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Web.ASPxGantt.YearlyRule.#ctor">
+      <summary>
+        <para>Initializes a new instance of the object.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Web.ASPxGantt.YearlyRule.Recurrence">
+      <summary>
+        <para>Gets the yearly rule&#39;s recurrence settings.</para>
+      </summary>
+      <value>Yearly recurrence settings.</value>
+    </member>
+  </members>
+</doc>

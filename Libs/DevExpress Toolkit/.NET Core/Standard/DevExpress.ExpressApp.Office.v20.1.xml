@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <assembly>
+    <name>DevExpress.ExpressApp.Office.v20.1</name>
+  </assembly>
+  <members>
+    <member name="N:DevExpress.ExpressApp.Office">
+      <summary>
+        <para>Contains platform-independent types providing the Rich Text Editor and Spreadsheet support in the Office Module.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.ExpressApp.Office.DocumentStorageFormat">
+      <summary>
+        <para>Contains values specifying the document storage format used by the Rich Text Property Editor.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.ExpressApp.Office.DocumentStorageFormat.Html">
+      <summary>
+        <para>The document is stored in the HTML format.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.ExpressApp.Office.DocumentStorageFormat.Rtf">
+      <summary>
+        <para>The document is stored in the RTF format.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.ExpressApp.Office.IModelRichTextFormatSettings">
+      <summary>
+        <para>Extends the <see cref="T:DevExpress.ExpressApp.Model.IModelMember"/> node with properties that specify the Rich Text document storage format.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Office.IModelRichTextFormatSettings.DocumentStorageFormat">
+      <summary>
+        <para>Specifies the document format that is stored in the database and used by the Rich Text Property Editor.</para>
+      </summary>
+      <value>The document format that is stored in the database and used by the Rich Text Property Editor.</value>
+    </member>
+    <member name="T:DevExpress.ExpressApp.Office.IModelSpreadsheetPropertyEditorSettings">
+      <summary>
+        <para>Extends the <see cref="T:DevExpress.ExpressApp.Model.IModelPropertyEditor"/> node with properties specifying the Spreadsheet Property Editor&#39;s Formula Bar behavior.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Office.IModelSpreadsheetPropertyEditorSettings.EnableFormulaBar">
+      <summary>
+        <para>Specifies whether the Formula Bar should be displayed.</para>
+      </summary>
+      <value>true, if the Formula Bar should be displayed; otherwise, false.</value>
+    </member>
+    <member name="T:DevExpress.ExpressApp.Office.InplaceDocumentCacheStorageBase">
+      <summary>
+        <para>Provides methods used to manage the in-place mail merge documents cache.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Office.InplaceDocumentCacheStorageBase.#ctor">
+      <summary>
+        <para>Creates an instance of the <see cref="T:DevExpress.ExpressApp.Office.InplaceDocumentCacheStorageBase"/> class.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Office.InplaceDocumentCacheStorageBase.ClearCache">
+      <summary>
+        <para>Resets the in-place documents cache.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Office.InplaceDocumentCacheStorageBase.EnsureCache(System.Type,System.Func{DevExpress.ExpressApp.IObjectSpace})">
+      <summary>
+        <para>Checks whether the in-place documents cache is initialized, and initialize it if not.</para>
+      </summary>
+      <param name="mailMergeDataType">The mail merge template type specified in the <see cref="P:DevExpress.ExpressApp.Office.Win.OfficeWindowsFormsModule.RichTextMailMergeDataType"/> property.</param>
+      <param name="createObjectSpaceHandler">The delegate used to create the <see cref="T:DevExpress.ExpressApp.IObjectSpace"/> instance.</param>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Office.InplaceDocumentCacheStorageBase.GetData(System.Type)">
+      <summary>
+        <para>Returns the in-place mail merge documents cache items associated with specified object type.</para>
+      </summary>
+      <param name="dataType">A type associated with in-place documents cache items to be returned.</param>
+      <returns>An IEnumerable&lt;MailMergeDataInfo&gt; list of in-place documents cache items associated with the specified object type.</returns>
+    </member>
+    <member name="T:DevExpress.ExpressApp.Office.OfficeModule">
+      <summary>
+        <para>The module contained in the DevExpress.ExpressApp.Office.v<span id="macro" data-macro-template="xx.x">20.1</span>.dll assembly.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Office.OfficeModule.#ctor">
+      <summary>
+        <para>Creates an instance of the <see cref="T:DevExpress.ExpressApp.Office.OfficeModule"/> class.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Office.OfficeModule.CustomizeTypesInfo(DevExpress.ExpressApp.DC.ITypesInfo)">
+      <summary>
+        <para>Customizes metadata of <see cref="T:DevExpress.ExpressApp.Office.OfficeModule"/>-specific business classes before the metadata is loaded to the Application Model&#39;s BOModel node.</para>
+      </summary>
+      <param name="typesInfo">An <see cref="T:DevExpress.ExpressApp.DC.ITypesInfo"/> object that holds metadata information on business classes to be loaded to the Application Model.</param>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Office.OfficeModule.ExtendModelInterfaces(DevExpress.ExpressApp.Model.ModelInterfaceExtenders)">
+      <summary>
+        <para>Extends the Application Model with the <see cref="T:DevExpress.ExpressApp.Office.IModelRichTextFormatSettings"/>, <see cref="T:DevExpress.ExpressApp.Office.IModelSpreadsheetPropertyEditorSettings"/>, and <see cref="T:DevExpress.ExpressApp.Model.IModelClassReportsVisibility"/> interfaces.</para>
+      </summary>
+      <param name="extenders">A ModelInterfaceExtenders object that is a collection of Application Model interface extenders.</param>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Office.OfficeModule.FindOfficeModule(DevExpress.ExpressApp.ModuleList)">
+      <summary>
+        <para>Checks whether the specified module list contains the <see cref="T:DevExpress.ExpressApp.Office.OfficeModule"/>, and returns the module if so.</para>
+      </summary>
+      <param name="modules">A ModuleList object that is a collection of modules.</param>
+      <returns>An OfficeModule object that is the Office Module.</returns>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Office.OfficeModule.GetModuleUpdaters(DevExpress.ExpressApp.IObjectSpace,System.Version)">
+      <summary>
+        <para>Returns the list of <see cref="T:DevExpress.ExpressApp.Updating.ModuleUpdater"/> updaters that handle database updates for the <see cref="T:DevExpress.ExpressApp.Office.OfficeModule"/> module.</para>
+      </summary>
+      <param name="objectSpace">An <see cref="T:DevExpress.ExpressApp.IObjectSpace"/> object which represents the Object Space used to update the database.</param>
+      <param name="versionFromDB">A System.Version object that represents the current database version.</param>
+      <returns>An IEnumerable&lt;<see cref="T:DevExpress.ExpressApp.Updating.ModuleUpdater"/>&gt; list of updaters that handle database updates for the <see cref="T:DevExpress.ExpressApp.Office.OfficeModule"/> module.</returns>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Office.OfficeModule.GetXafResourceLocalizerTypes">
+      <summary>
+        <para>Returns a collection of additional Resource Localizer types that can be used in an application that uses the <see cref="T:DevExpress.ExpressApp.Office.OfficeModule"/>.</para>
+      </summary>
+      <returns>An ICollection&lt;Type&gt; collection containing the types of the Resource Localizers supplied with the <see cref="T:DevExpress.ExpressApp.Office.OfficeModule"/>.</returns>
+    </member>
+    <member name="P:DevExpress.ExpressApp.Office.OfficeModule.RichTextMailMergeDataType">
+      <summary>
+        <para>Specifies the mail merge template data type.</para>
+      </summary>
+      <value>A <see cref="T:System.Type"/> object that is the mail merge template type.</value>
+    </member>
+    <member name="M:DevExpress.ExpressApp.Office.OfficeModule.Setup(DevExpress.ExpressApp.XafApplication)">
+      <summary>
+        <para>Sets up the <see cref="T:DevExpress.ExpressApp.Office.OfficeModule"/> after it has been added to the <see cref="P:DevExpress.ExpressApp.XafApplication.Modules"/> collection.</para>
+      </summary>
+      <param name="application">An <see cref="T:DevExpress.ExpressApp.XafApplication"/> object that provides methods and properties to manage the current application.</param>
+    </member>
+  </members>
+</doc>
