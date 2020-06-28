@@ -2,6 +2,8 @@
 using DevExpress.Skins;
 using DevExpress.UserSkins;
 
+using OopTranslation.I18n;
+
 using System;
 using System.Windows.Forms;
 
@@ -15,7 +17,7 @@ namespace OopWinformsDesigner {
 #if NETCOREAPP
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
 #endif
-
+            I18nInstaller.Install();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             BonusSkins.Register();

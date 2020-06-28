@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+		Microsoft ResX Schema
+
+		Version 1.3
+
+		The primary goals of this format is to allow a simple XML format 
+		that is mostly human readable. The generation and parsing of the 
+		various data types are done through the TypeConverter classes 
+		associated with the data types.
+
+		Example:
+
+		... ado.net/XML headers & schema ...
+		<resheader name="resmimetype">text/microsoft-resx</resheader>
+		<resheader name="version">1.3</resheader>
+		<resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+		<resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+		<data name="Name1">this is my long string</data>
+		<data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+		<data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+			[base64 mime encoded serialized .NET Framework object]
+		</data>
+		<data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+			[base64 mime encoded string representing a byte array form of the .NET Framework object]
+		</data>
+
+		There are any number of "resheader" rows that contain simple 
+		name/value pairs.
+
+		Each data row contains a name, and value. The row also contains a 
+		type or mimetype. Type corresponds to a .NET class that support 
+		text/value conversion through the TypeConverter architecture. 
+		Classes that don't support this are serialized and stored with the 
+		mimetype set.
+
+		The mimetype is used for serialized objects, and tells the 
+		ResXResourceReader how to depersist the object. This is currently not 
+		extensible. For a given mimetype the value must be set accordingly:
+
+		Note - application/x-microsoft.net.object.binary.base64 is the format 
+		that the ResXResourceWriter will generate, however the reader can 
+		read any of the formats listed below.
+
+		mimetype: application/x-microsoft.net.object.binary.base64
+		value   : The object must be serialized with 
+			: System.Serialization.Formatters.Binary.BinaryFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.soap.base64
+		value   : The object must be serialized with 
+			: System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.bytearray.base64
+		value   : The object must be serialized into a byte array 
+			: using a System.ComponentModel.TypeConverter
+			: and then encoded with base64 encoding.
+	-->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>1.3</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="NewFolderButtonText" xml:space="preserve">
+    <value>NewFolderButtonText</value>
+    <comment>NewFolderButtonText</comment>
+  </data>
+  <data name="OpenFileDialogOkButtonText" xml:space="preserve">
+    <value>OpenFileDialogOkButtonText</value>
+    <comment>OpenFileDialogOkButtonText</comment>
+  </data>
+  <data name="CancelButtonText" xml:space="preserve">
+    <value>CancelButtonText</value>
+    <comment>CancelButtonText</comment>
+  </data>
+  <data name="FileNameLabelText" xml:space="preserve">
+    <value>FileNameLabelText</value>
+    <comment>FileNameLabelText</comment>
+  </data>
+  <data name="DetailsView_NameColumnCaption" xml:space="preserve">
+    <value>DetailsView_NameColumnCaption</value>
+    <comment>DetailsView_NameColumnCaption</comment>
+  </data>
+  <data name="DetailsView_SizeColumnCaption" xml:space="preserve">
+    <value>DetailsView_SizeColumnCaption</value>
+    <comment>DetailsView_SizeColumnCaption</comment>
+  </data>
+  <data name="DetailsView_DateModifiedColumnCaption" xml:space="preserve">
+    <value>DetailsView_DateModifiedColumnCaption</value>
+    <comment>DetailsView_DateModifiedColumnCaption</comment>
+  </data>
+  <data name="DetailsView_TypeColumnCaption" xml:space="preserve">
+    <value>DetailsView_TypeColumnCaption</value>
+    <comment>DetailsView_TypeColumnCaption</comment>
+  </data>
+  <data name="ExtraLargeViewMode" xml:space="preserve">
+    <value>ExtraLargeViewMode</value>
+    <comment>ExtraLargeViewMode</comment>
+  </data>
+  <data name="LargeViewMode" xml:space="preserve">
+    <value>LargeViewMode</value>
+    <comment>LargeViewMode</comment>
+  </data>
+  <data name="MediumViewMode" xml:space="preserve">
+    <value>MediumViewMode</value>
+    <comment>MediumViewMode</comment>
+  </data>
+  <data name="SmallViewMode" xml:space="preserve">
+    <value>SmallViewMode</value>
+    <comment>SmallViewMode</comment>
+  </data>
+  <data name="ListViewMode" xml:space="preserve">
+    <value>ListViewMode</value>
+    <comment>ListViewMode</comment>
+  </data>
+  <data name="DetailsViewMode" xml:space="preserve">
+    <value>DetailsViewMode</value>
+    <comment>DetailsViewMode</comment>
+  </data>
+  <data name="TilesViewMode" xml:space="preserve">
+    <value>TilesViewMode</value>
+    <comment>TilesViewMode</comment>
+  </data>
+  <data name="ContentViewMode" xml:space="preserve">
+    <value>ContentViewMode</value>
+    <comment>ContentViewMode</comment>
+  </data>
+  <data name="ContextMenuAddNetworkPlaceCommandText" xml:space="preserve">
+    <value>ContextMenuAddNetworkPlaceCommandText</value>
+    <comment>ContextMenuAddNetworkPlaceCommandText</comment>
+  </data>
+  <data name="ContextMenuCollapseCommandText" xml:space="preserve">
+    <value>ContextMenuCollapseCommandText</value>
+    <comment>ContextMenuCollapseCommandText</comment>
+  </data>
+  <data name="ContextMenuConnectNetworkDriveCommandText" xml:space="preserve">
+    <value>ContextMenuConnectNetworkDriveCommandText</value>
+    <comment>ContextMenuConnectNetworkDriveCommandText</comment>
+  </data>
+  <data name="ContextMenuCutCommandText" xml:space="preserve">
+    <value>ContextMenuCutCommandText</value>
+    <comment>ContextMenuCutCommandText</comment>
+  </data>
+  <data name="ContextMenuCopyCommandText" xml:space="preserve">
+    <value>ContextMenuCopyCommandText</value>
+    <comment>ContextMenuCopyCommandText</comment>
+  </data>
+  <data name="ContextMenuDeleteCommandText" xml:space="preserve">
+    <value>ContextMenuDeleteCommandText</value>
+    <comment>ContextMenuDeleteCommandText</comment>
+  </data>
+  <data name="ContextMenuDisconnectNetworkDriveCommandText" xml:space="preserve">
+    <value>ContextMenuDisconnectNetworkDriveCommandText</value>
+    <comment>ContextMenuDisconnectNetworkDriveCommandText</comment>
+  </data>
+  <data name="ContextMenuDisplaySettingsCommandText" xml:space="preserve">
+    <value>ContextMenuDisplaySettingsCommandText</value>
+    <comment>ContextMenuDisplaySettingsCommandText</comment>
+  </data>
+  <data name="ContextMenuEditCommandText" xml:space="preserve">
+    <value>ContextMenuEditCommandText</value>
+    <comment>ContextMenuEditCommandText</comment>
+  </data>
+  <data name="ContextMenuEjectCommandText" xml:space="preserve">
+    <value>ContextMenuEjectCommandText</value>
+    <comment>ContextMenuEjectCommandText</comment>
+  </data>
+  <data name="ContextMenuExpandCommandText" xml:space="preserve">
+    <value>ContextMenuExpandCommandText</value>
+    <comment>ContextMenuExpandCommandText</comment>
+  </data>
+  <data name="ContextMenuExtractCommandText" xml:space="preserve">
+    <value>ContextMenuExtractCommandText</value>
+    <comment>ContextMenuExtractCommandText</comment>
+  </data>
+  <data name="ContextMenuFormatCommandText" xml:space="preserve">
+    <value>ContextMenuFormatCommandText</value>
+    <comment>ContextMenuFormatCommandText</comment>
+  </data>
+  <data name="ContextMenuLinkCommandText" xml:space="preserve">
+    <value>ContextMenuLinkCommandText</value>
+    <comment>ContextMenuLinkCommandText</comment>
+  </data>
+  <data name="ContextMenuManageCommandText" xml:space="preserve">
+    <value>ContextMenuManageCommandText</value>
+    <comment>ContextMenuManageCommandText</comment>
+  </data>
+  <data name="ContextMenuOpenAsCommandText" xml:space="preserve">
+    <value>ContextMenuOpenAsCommandText</value>
+    <comment>ContextMenuOpenAsCommandText</comment>
+  </data>
+  <data name="ContextMenuOpenCommandText" xml:space="preserve">
+    <value>ContextMenuOpenCommandText</value>
+    <comment>ContextMenuOpenCommandText</comment>
+  </data>
+</root>

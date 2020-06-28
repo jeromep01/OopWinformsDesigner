@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>netcoreapp3.1;net472</TargetFrameworks>
+    <TargetFrameworks>netcoreapp3.1;net48</TargetFrameworks>
     <Company>ITLightON</Company>
     <Product>Out-Of-Process Translation</Product>
     <Description>All translations resources files to be used i the Winforms Designer application.</Description>
@@ -14,6 +14,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="GridControl.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>GridControl.resx</DependentUpon>
+    </Compile>
     <Compile Update="Ribbon.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
@@ -26,7 +31,62 @@
     </Compile>
   </ItemGroup>
 
+  <ItemGroup Condition="'$(TargetFramework)'=='net48'">
+    <Reference Include="DevExpress.XtraBars.v20.1">
+      <HintPath>..\..\Libs\DevExpress Toolkit\.NET Framework\NetFramework\DevExpress.XtraBars.v20.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v20.1">
+      <HintPath>..\..\Libs\DevExpress Toolkit\.NET Framework\NetFramework\DevExpress.Data.v20.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v20.1">
+      <HintPath>..\..\Libs\DevExpress Toolkit\.NET Framework\NetFramework\DevExpress.XtraEditors.v20.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraDialogs.v20.1">
+      <HintPath>..\..\Libs\DevExpress Toolkit\.NET Framework\NetFramework\DevExpress.XtraDialogs.v20.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Dialogs.v20.1.Core">
+      <HintPath>..\..\Libs\DevExpress Toolkit\.NET Framework\NetFramework\DevExpress.Dialogs.v20.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraVerticalGrid.v20.1">
+      <HintPath>..\..\Libs\DevExpress Toolkit\.NET Framework\NetFramework\DevExpress.XtraVerticalGrid.v20.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v20.1">
+      <HintPath>..\..\Libs\DevExpress Toolkit\.NET Framework\NetFramework\DevExpress.XtraGrid.v20.1.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)'=='netcoreapp3.1'">
+    <Reference Include="DevExpress.XtraBars.v20.1">
+      <HintPath>..\..\Libs\DevExpress Toolkit\.NET Core\NetCore\DevExpress.XtraBars.v20.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v20.1">
+      <HintPath>..\..\Libs\DevExpress Toolkit\.NET Core\Standard\DevExpress.Data.v20.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v20.1">
+      <HintPath>..\..\Libs\DevExpress Toolkit\.NET Core\NetCore\DevExpress.XtraEditors.v20.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v20.1">
+      <HintPath>..\..\Libs\DevExpress Toolkit\.NET Core\NetCore\DevExpress.XtraGrid.v20.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraDialogs.v20.1">
+      <HintPath>..\..\Libs\DevExpress Toolkit\.NET Core\NetCore\DevExpress.XtraDialogs.v20.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Dialogs.v20.1.Core">
+      <HintPath>..\..\Libs\DevExpress Toolkit\.NET Core\NetCore\DevExpress.Dialogs.v20.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraVerticalGrid.v20.1">
+      <HintPath>..\..\Libs\DevExpress Toolkit\.NET Core\NetCore\DevExpress.XtraVerticalGrid.v20.1.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
   <ItemGroup>
+    <EmbeddedResource Update="GridControl.fr.resx">
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="GridControl.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>GridControl.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Update="Ribbon.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Ribbon.Designer.cs</LastGenOutput>
