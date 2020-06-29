@@ -36,6 +36,11 @@
             Gets or sets the message / description.
             </summary>
         </member>
+        <member name="T:OopDesigner.Interfaces.IOopDesigner">
+            <summary>
+            Definition of the interface describing all elements required to make you class available for Windows Forms Designer - Out Of Process fully compliant.
+            </summary>
+        </member>
         <member name="T:OopDesigner.Registry.UiKitRegistrator">
             <summary>
             Definition of the class that is used to parse all assemblies in the current app domain to find a class implementing the specific IUiKitRegistration assembly to

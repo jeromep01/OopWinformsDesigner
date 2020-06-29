@@ -2,6 +2,8 @@
 using DevExpress.XtraBars.Ribbon;
 using DevExpress.XtraEditors;
 
+using OopDesigner.Interfaces;
+
 using OopWinformsDesigner.Session;
 using OopWinformsDesigner.UI;
 
@@ -11,7 +13,7 @@ namespace OopWinformsDesigner {
     /// <summary>
     /// Definition of the main form of this application.
     /// </summary>
-    public partial class MainForm : RibbonForm {
+    public partial class MainForm : RibbonForm, IOopDesigner {
         /// <summary>
         /// Gets or sets the layout that will be used to match designer processes.
         /// </summary>
@@ -48,7 +50,7 @@ namespace OopWinformsDesigner {
             registerEvents();
 
 #if DEBUG
-            SessionInfo.Instance.SolutionFile = @"O:\Développements\ITLightON\Tests\ITLightON.Winforms.Tester.sln";
+            SessionInfo.Instance.SolutionFile = @"O:\Développements\OopWinformsDesigner\OopWinformsDesigner\OopWinformsDesigner.sln";
 #endif
         }
 
