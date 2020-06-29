@@ -4,6 +4,15 @@
     <TargetFrameworks>net48;netcoreapp3.1</TargetFrameworks>
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>..\..\ITLightON.snk</AssemblyOriginatorKeyFile>
+    <Product>OopDesigner</Product>
+    <Description>This tool helps you decide which components / forms are eligible within our new Visual Studio Designer Out-Of-Process.</Description>
+    <PackageId>ITLightON.OutOfProcess.WinformsDesigner</PackageId>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageReleaseNotes>Initial Release</PackageReleaseNotes>
+    <Version>1.0.0</Version>
+    <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
+    <Company>ITLightON</Company>
+    <Authors>ITLightON</Authors>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net48|AnyCPU'">
@@ -23,7 +32,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Unity.Container" Version="5.11.5" />
+    <PackageReference Include="Unity.Container" Version="5.11.8" />
   </ItemGroup>
 
   <ItemGroup>
