@@ -124,4 +124,7 @@
   <data name="SkinSelect" xml:space="preserve">
     <value>Style graphique :</value>
   </data>
+  <data name="SolutionSelected" xml:space="preserve">
+    <value>Solution ouverte : {0}</value>
+  </data>
 </root>

@@ -7,7 +7,10 @@ using DevExpress.XtraLayout;
 using DevExpress.XtraVerticalGrid;
 
 using OopWinformsDesigner.Session;
+using OopWinformsDesigner.Tags;
 using OopWinformsDesigner.UI.UserControls;
+
+using System.Linq;
 
 namespace OopWinformsDesigner.UI {
     /// <summary>
@@ -44,6 +47,19 @@ namespace OopWinformsDesigner.UI {
             mainLayout.AddControl(splitContainer);
             mainLayout.Dock = System.Windows.Forms.DockStyle.Fill;
             return mainLayout;
+        }
+
+        /// <summary>
+        /// This functions changes the bar item containing the Status information to reflect the message sent in parameter.
+        /// </summary>
+        /// <param name="statusBar">Reference to the installed status bar</param>
+        /// <param name="message">Message to display</param>
+        public static void SetStatusText(this Bar statusBar, string message) {
+            var barItem = statusBar.ItemLinks.OfType<BarStaticItemLink>().SingleOrDefault(x => x.Item.Tag != null && x.Item.Tag.ToString() == UiTags.StatusBarMessage);
+
+            if (barItem != null) {
+                barItem.Caption = message;
+            }
         }
 
         /// <summary>
@@ -105,7 +121,7 @@ namespace OopWinformsDesigner.UI {
         }
 
         /// <summary>
-        /// 
+        /// This function installs the status bar
         /// </summary>
         /// <param name="statusBar">Reference to the status bar installed</param>
         /// <returns>Self instance of the layout control but fully configured</returns>
@@ -115,7 +131,9 @@ namespace OopWinformsDesigner.UI {
                 ImageToTextAlignment = DevExpress.XtraBars.BarItemImageToTextAlignment.BeforeText,
                 Caption = OopTranslation.StatusBar.Awaiting,
                 Glyph = Properties.Resources.Message_Information,
-                PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph
+                PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph,
+                Tag = UiTags.StatusBarMessage,
+                Id = UiTags.StatusBarMessageId
             });
             var skinsComboEdit = new DevExpress.XtraEditors.Repository.RepositoryItemComboBox() {
                 TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor,

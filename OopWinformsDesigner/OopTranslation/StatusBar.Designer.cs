@@ -77,5 +77,14 @@ namespace OopTranslation {
                 return ResourceManager.GetString("SkinSelect", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à SolutionSelected.
+        /// </summary>
+        public static string SolutionSelected {
+            get {
+                return ResourceManager.GetString("SolutionSelected", resourceCulture);
+            }
+        }
     }
 }

@@ -125,4 +125,8 @@
     <value>SkinSelect</value>
     <comment>SkinSelect</comment>
   </data>
+  <data name="SolutionSelected" xml:space="preserve">
+    <value>SolutionSelected</value>
+    <comment>SolutionSelected</comment>
+  </data>
 </root>

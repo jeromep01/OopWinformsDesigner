@@ -24,6 +24,17 @@
             Gets or sets the status bar of the application.
             </summary>
         </member>
+        <member name="M:OopWinformsDesigner.MainForm.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:OopWinformsDesigner.MainForm.OnLoad(System.EventArgs)">
+            <summary>
+            Loading of the form
+            </summary>
+            <param name="e">Arguments</param>
+        </member>
         <member name="F:OopWinformsDesigner.MainForm.components">
             <summary>
              Required designer variable.
@@ -112,6 +123,21 @@
             Gets or sets the solution file loaded.
             </summary>
         </member>
+        <member name="T:OopWinformsDesigner.Tags.UiTags">
+            <summary>
+            Definition of the tags applicable to any UI element
+            </summary>
+        </member>
+        <member name="F:OopWinformsDesigner.Tags.UiTags.StatusBarMessage">
+            <summary>
+            Definition of the tag used to load back the status bar element.
+            </summary>
+        </member>
+        <member name="F:OopWinformsDesigner.Tags.UiTags.StatusBarMessageId">
+            <summary>
+            Definition of the Unique Id of the element.
+            </summary>
+        </member>
         <member name="T:OopWinformsDesigner.UI.UIExtenders">
             <summary>
             Definition of the glossary containing the references to the components to use once they are instantiated.
@@ -132,6 +158,13 @@
             <param name="mainLayout">Main layout of the flow</param>
             <returns>Self instance of the layout</returns>
         </member>
+        <member name="M:OopWinformsDesigner.UI.UIExtenders.SetStatusText(DevExpress.XtraBars.Bar,System.String)">
+            <summary>
+            This functions changes the bar item containing the Status information to reflect the message sent in parameter.
+            </summary>
+            <param name="statusBar">Reference to the installed status bar</param>
+            <param name="message">Message to display</param>
+        </member>
         <member name="M:OopWinformsDesigner.UI.UIExtenders.Install(DevExpress.XtraLayout.LayoutControl)">
             <summary>
             This function extends the installation of the layout control.
@@ -149,10 +182,26 @@
         </member>
         <member name="M:OopWinformsDesigner.UI.UIExtenders.InstallStatusBar(DevExpress.XtraBars.Bar)">
             <summary>
-            
+            This function installs the status bar
             </summary>
             <param name="statusBar">Reference to the status bar installed</param>
             <returns>Self instance of the layout control but fully configured</returns>
+        </member>
+        <member name="T:OopWinformsDesigner.UI.UserControls.MainLayout">
+            <summary>
+            Definition of the main layout used for this application
+            </summary>
+        </member>
+        <member name="M:OopWinformsDesigner.UI.UserControls.MainLayout.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:OopWinformsDesigner.UI.UserControls.MainLayout.OnLoad(System.EventArgs)">
+            <summary>
+            Loading of the control
+            </summary>
+            <param name="e">Arguments of the event</param>
         </member>
         <member name="F:OopWinformsDesigner.UI.UserControls.MainLayout.components">
             <summary> 

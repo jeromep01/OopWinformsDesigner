@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="Definition of the UML model of OopDesigner.">
+    <Position X="0.5" Y="0.5" Height="0.75" Width="1.7" />
+  </Comment>
+  <Class Name="OopDesigner.EventArguments.NotifyStatusChangeEventArgs">
+    <Position X="9" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>EventArguments\NotifyStatusChangeEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OopDesigner.Registry.UiKitRegistrator">
+    <Position X="2.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Registry\UiKitRegistrator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="OopDesigner.Enumerations.NotifyStatus">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>Enumerations\NotifyStatus.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

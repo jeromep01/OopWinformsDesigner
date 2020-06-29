@@ -11,11 +11,23 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="_ClassDiagrams\_designer.cd" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="_ClassDiagrams\_designer.cd" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Include="..\..\ITLightON.snk" Link="ITLightON.snk" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Unity.Container" Version="5.11.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Interfaces\" />
   </ItemGroup>
 
 </Project>

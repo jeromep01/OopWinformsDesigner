@@ -409,5 +409,10 @@
               Recherche une chaîne localisée semblable à SkinSelect.
             </summary>
         </member>
+        <member name="P:OopTranslation.StatusBar.SolutionSelected">
+            <summary>
+              Recherche une chaîne localisée semblable à SolutionSelected.
+            </summary>
+        </member>
     </members>
 </doc>

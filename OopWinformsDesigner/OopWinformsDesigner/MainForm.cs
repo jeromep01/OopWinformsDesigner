@@ -27,10 +27,17 @@ namespace OopWinformsDesigner {
         /// </summary>
         public new Bar StatusBar { get; set; }
 
+        /// <summary>
+        /// Constructor
+        /// </summary>
         public MainForm() {
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Loading of the form
+        /// </summary>
+        /// <param name="e">Arguments</param>
         protected override void OnLoad(EventArgs e) {
             base.OnLoad(e);
 
@@ -38,9 +45,25 @@ namespace OopWinformsDesigner {
             installRibbonMenu();
             installBarManager();
 
+            registerEvents();
+
 #if DEBUG
             SessionInfo.Instance.SolutionFile = @"O:\Développements\ITLightON\Tests\ITLightON.Winforms.Tester.sln";
 #endif
+        }
+
+        private void registerEvents() {
+            SessionInfo.Instance.NotifyStatusChanged += Instance_NotifyStatusChanged;
+        }
+
+        private void Instance_NotifyStatusChanged(object sender, OopDesigner.EventArguments.NotifyStatusChangeEventArgs e) {
+            switch (e.Status) {
+                case OopDesigner.Enumerations.NotifyStatus.SolutionOpened:
+                    UIExtenders.SetStatusText(
+                        StatusBar,
+                        string.Format(OopTranslation.StatusBar.SolutionSelected, SessionInfo.Instance.SolutionFile));
+                    break;
+            };
         }
 
         private void installLayout() {

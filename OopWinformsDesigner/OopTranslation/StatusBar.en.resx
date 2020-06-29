@@ -124,4 +124,7 @@
   <data name="SkinSelect" xml:space="preserve">
     <value>Skin:</value>
   </data>
+  <data name="SolutionSelected" xml:space="preserve">
+    <value>Opened solution: {0}</value>
+  </data>
 </root>
