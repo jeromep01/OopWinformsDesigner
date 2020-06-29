@@ -1,7 +1,10 @@
 ﻿using OopDesigner.Enumerations;
 using OopDesigner.EventArguments;
 
+using OopWinformsDesigner.Objects;
+
 using System;
+using System.Collections.Generic;
 using System.ComponentModel;
 using System.IO;
 
@@ -12,6 +15,7 @@ namespace OopWinformsDesigner.Session {
     public class SessionInfo : INotifyPropertyChanged {
         private static SessionInfo instance = null;
         private SessionInfo() {
+            Designers = new List<DesignerClassObject>();
         }
 
         /// <summary>
@@ -62,5 +66,10 @@ namespace OopWinformsDesigner.Session {
                 NotifyStatusChanged?.Invoke(this, new NotifyStatusChangeEventArgs(NotifyStatus.SolutionOpened));
             }
         }
+
+        /// <summary>
+        /// Gets or sets the list of all designer objects.
+        /// </summary>
+        public IList<DesignerClassObject> Designers { get; set; }
     }
 }

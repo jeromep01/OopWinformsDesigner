@@ -42,6 +42,11 @@ namespace OopWinformsDesigner.UI.UserControls {
 
             installDesigner();
             registerEvents();
+            addDataBindings();
+        }
+
+        private void addDataBindings() {
+            treeDesigners.DataSource = SessionInfo.Instance.Designers;
         }
 
         private void installDesigner() {
@@ -92,6 +97,13 @@ namespace OopWinformsDesigner.UI.UserControls {
                             var project = Project.FromFile(x.AbsolutePath, new Microsoft.Build.Definition.ProjectOptions {
 
                             });
+                            if (project != null) {
+                                var items = project.GetItems("Compile");
+
+                                SessionInfo.Instance.Designers.Add(new Objects.DesignerClassObject {
+                                    ProjectFilePath = x.AbsolutePath
+                                });
+                            }
                         }
 
                     });

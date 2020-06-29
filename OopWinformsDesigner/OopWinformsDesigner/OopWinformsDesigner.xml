@@ -151,6 +151,11 @@
             Gets or sets the solution file loaded.
             </summary>
         </member>
+        <member name="P:OopWinformsDesigner.Session.SessionInfo.Designers">
+            <summary>
+            Gets or sets the list of all designer objects.
+            </summary>
+        </member>
         <member name="T:OopWinformsDesigner.Tags.UiTags">
             <summary>
             Definition of the tags applicable to any UI element
