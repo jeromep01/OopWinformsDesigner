@@ -52,6 +52,16 @@
              the contents of this method with the code editor.
             </summary>
         </member>
+        <member name="T:OopWinformsDesigner.Objects.DesignerClassObject">
+            <summary>
+            Definition of the class describing a designer object
+            </summary>
+        </member>
+        <member name="P:OopWinformsDesigner.Objects.DesignerClassObject.ProjectFilePath">
+            <summary>
+            Gets or sets the path of the project containing this designer.
+            </summary>
+        </member>
         <member name="M:OopWinformsDesigner.Program.Main">
             <summary>
              The main entry point for the application.
@@ -92,6 +102,24 @@
             <summary>
               Recherche une ressource localisée de type System.Drawing.Bitmap.
             </summary>
+        </member>
+        <member name="T:OopWinformsDesigner.Services.UIService">
+            <summary>
+            Definition of the basics of our Designer Host model
+            </summary>
+        </member>
+        <member name="M:OopWinformsDesigner.Services.UIService.#ctor(OopWinformsDesigner.UI.UserControls.MainLayout)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="mainForm">Reference to the main form</param>
+        </member>
+        <member name="M:OopWinformsDesigner.Services.UIService.CanShowComponentEditor(System.Object)">
+            <summary>
+            Indicates whether a component can show an editor
+            </summary>
+            <param name="component">Reference to the component to check</param>
+            <returns>True|False</returns>
         </member>
         <member name="T:OopWinformsDesigner.Session.SessionInfo">
             <summary>

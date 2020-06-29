@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="UML description of our Designer.">
+    <Position X="0.5" Y="0.5" Height="0.75" Width="1.7" />
+  </Comment>
+  <Class Name="OopWinformsDesigner.Objects.DesignerClassObject">
+    <Position X="6.5" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>Objects\DesignerClassObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OopWinformsDesigner.Services.OopNameCreationService">
+    <Position X="0.5" Y="1.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAAAEAAAAAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\OopNameCreationService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="OopWinformsDesigner.Services.UIService">
+    <Position X="3.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAgBAAAAAAAAAgQAAEEAAAAEAAAABAAACAAAAIA=</HashCode>
+      <FileName>Services\UIService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="OopWinformsDesigner.DesignerHost">
+    <Position X="9" Y="2.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>B4IEAAQQDiQAAIFgQYSCpKEAAITCAAEAQCAAwCQAhGQ=</HashCode>
+      <FileName>DesignerHost\DesignerHost.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="OopWinformsDesigner.DesignSite">
+    <Position X="6.5" Y="3.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAIAAAAgAAAAAAAAQEAAAEQAAAAAhAAUAAQEA=</HashCode>
+      <FileName>DesignerHost\DesignSite.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="OopWinformsDesigner.SelectionService">
+    <Position X="0.5" Y="8.25" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABCAAAAAAAAAAAAAgAAAAAAQAAEAhASAASEAA=</HashCode>
+      <FileName>DesignerHost\SelectionService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
