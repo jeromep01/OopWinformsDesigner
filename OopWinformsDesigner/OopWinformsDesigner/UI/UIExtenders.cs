@@ -38,8 +38,9 @@ namespace OopWinformsDesigner.UI {
             var splitContainer = new SplitContainerControl();
 
             splitContainer.Dock = System.Windows.Forms.DockStyle.Fill;
-            splitContainer.Panel2.Controls.Add(new PropertyGridControl());
-            splitContainer.Panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            splitContainer.Panel2.Controls.Add(new PropertyGridControl() {
+                Dock = System.Windows.Forms.DockStyle.Fill
+            });
             mainLayout.AddControl(splitContainer);
             mainLayout.Dock = System.Windows.Forms.DockStyle.Fill;
             return mainLayout;

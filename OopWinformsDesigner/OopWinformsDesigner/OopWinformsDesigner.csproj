@@ -27,6 +27,9 @@
     <Reference Include="DevExpress.Data.v20.1">
       <HintPath>..\..\Libs\DevExpress Toolkit\.NET Core\Standard\DevExpress.Data.v20.1.dll</HintPath>
     </Reference>
+    <Reference Include="DevExpress.Data.Desktop.v20.1">
+      <HintPath>..\..\Libs\DevExpress Toolkit\.NET Core\NetCore\DevExpress.Data.Desktop.v20.1.dll</HintPath>
+    </Reference>
     <Reference Include="DevExpress.Utils.v20.1">
       <HintPath>..\..\Libs\DevExpress Toolkit\.NET Core\NetCore\DevExpress.Utils.v20.1.dll</HintPath>
     </Reference>
@@ -85,7 +88,7 @@
       <HintPath>..\..\Libs\DevExpress Toolkit\.NET Core\NetCore\DevExpress.XtraPivotGrid.v20.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.XtraPrinting.v20.1">
-      <HintPath>..\..\Libs\DevExpress Toolkit\.NET Core\Standard\DevExpress.XtraPrinting.v20.1.dll</HintPath>
+      <HintPath>..\..\Libs\DevExpress Toolkit\.NET Core\NetCore\DevExpress.XtraPrinting.v20.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.XtraRichEdit.v20.1">
       <HintPath>..\..\Libs\DevExpress Toolkit\.NET Core\NetCore\DevExpress.XtraRichEdit.v20.1.dll</HintPath>
@@ -131,6 +134,9 @@
     </Reference>
     <Reference Include="DevExpress.Data.v20.1">
       <HintPath>..\..\Libs\DevExpress Toolkit\.NET Framework\NetFramework\DevExpress.Data.v20.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.Desktop.v20.1">
+      <HintPath>..\..\Libs\DevExpress Toolkit\.NET Framework\NetFramework\DevExpress.Data.Desktop.v20.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.Utils.v20.1">
       <HintPath>..\..\Libs\DevExpress Toolkit\.NET Framework\NetFramework\DevExpress.Utils.v20.1.dll</HintPath>
