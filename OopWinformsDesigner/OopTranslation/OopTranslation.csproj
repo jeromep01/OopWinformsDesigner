@@ -9,6 +9,10 @@
     <AssemblyOriginatorKeyFile>..\..\..\OopWinformsDesigner\ITLightON.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|netcoreapp3.1|AnyCPU'">
+    <DocumentationFile>O:\Développements\OopWinformsDesigner\OopWinformsDesigner\OopTranslation\OopTranslation.xml</DocumentationFile>
+  </PropertyGroup>
+
   <ItemGroup>
     <None Include="..\..\..\OopWinformsDesigner\ITLightON.snk" Link="ITLightON.snk" />
   </ItemGroup>

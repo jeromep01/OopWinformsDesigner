@@ -1,0 +1,413 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>OopTranslation</name>
+    </assembly>
+    <members>
+        <member name="T:OopTranslation.I18n.Bar">
+            <summary>
+              Une classe de ressource fortement typée destinée, entre autres, à la consultation des chaînes localisées.
+            </summary>
+        </member>
+        <member name="P:OopTranslation.I18n.Bar.ResourceManager">
+            <summary>
+              Retourne l'instance ResourceManager mise en cache utilisée par cette classe.
+            </summary>
+        </member>
+        <member name="P:OopTranslation.I18n.Bar.Culture">
+            <summary>
+              Remplace la propriété CurrentUICulture du thread actuel pour toutes
+              les recherches de ressources à l'aide de cette classe de ressource fortement typée.
+            </summary>
+        </member>
+        <member name="P:OopTranslation.I18n.Bar.PopupMenuEditor">
+            <summary>
+              Recherche une chaîne localisée semblable à PopupMenuEditor.
+            </summary>
+        </member>
+        <member name="T:OopTranslation.I18n.I18nInstaller">
+            <summary>
+            Définition de l'installeur statique des traductions des éléments visuels DevExpress
+            Pour l'utiliser il suffit d'appeler I18nInstaller.Install() dans l'application principale et le tour est joué.
+            </summary>
+        </member>
+        <member name="M:OopTranslation.I18n.I18nInstaller.Install">
+            <summary>
+            Fonction d'installation des traductions des éléments visuels.
+            Cette fonction va instancier toutes les classes qu'elles soient utilisées ou non.
+            </summary>
+        </member>
+        <member name="T:OopTranslation.I18n.OopBarLocalizer">
+            <summary>
+            Définition de l'objet de localisation des informations DevExpress remises à niveau pour OOGarden.
+            </summary>>
+        </member>
+        <member name="M:OopTranslation.I18n.OopBarLocalizer.GetLocalizedString(DevExpress.XtraBars.Localization.BarString)">
+            <summary>
+            Surcharge utilisée pour traduire les informations DevExpress dans OOGarden.
+            </summary>
+            <param name="id">Id de la ressource à traduire</param>
+            <returns>Chaîne traduite par DevExpress à défaut</returns>
+        </member>
+        <member name="T:OopTranslation.I18n.OopCommonLocalizer">
+            <summary>
+            Définition de l'objet de localisation des informations DevExpress remises à niveau pour OOGarden.
+            </summary>>
+        </member>
+        <member name="M:OopTranslation.I18n.OopCommonLocalizer.GetLocalizedString(DevExpress.Data.Localization.CommonStringId)">
+            <summary>
+            Surcharge utilisée pour traduire les informations DevExpress dans OOGarden.
+            </summary>
+            <param name="id">Id de la ressource à traduire</param>
+            <returns>Chaîne traduite par DevExpress à défaut</returns>
+        </member>
+        <member name="T:OopTranslation.I18n.OopDialogsLocalizer">
+            <summary>
+            Définition de l'objet de localisation des informations DevExpress remises à niveau pour OOGarden.
+            </summary>>
+        </member>
+        <member name="M:OopTranslation.I18n.OopDialogsLocalizer.GetLocalizedString(DevExpress.Dialogs.Core.Localization.DialogsStringId)">
+            <summary>
+            Surcharge utilisée pour traduire les informations DevExpress dans OOGarden.
+            </summary>
+            <param name="id">Id de la ressource à traduire</param>
+            <returns>Chaîne traduite par DevExpress à défaut</returns>
+        </member>
+        <member name="T:OopTranslation.I18n.OopEditorsLocalizer">
+            <summary>
+            Définition de l'objet de localisation des informations DevExpress remises à niveau pour OOGarden.
+            </summary>
+        </member>
+        <member name="M:OopTranslation.I18n.OopEditorsLocalizer.GetLocalizedString(DevExpress.XtraEditors.Controls.StringId)">
+            <summary>
+            Surcharge utilisée pour traduire les informations DevExpress dans OOGarden.
+            </summary>
+            <param name="id">Id de la ressource à traduire</param>
+            <returns>Chaîne traduite par DevExpress à défaut</returns>
+        </member>
+        <member name="T:OopTranslation.I18n.OopGridLocalizer">
+            <summary>
+            Définition de l'objet de localisation des informations DevExpress remises à niveau pour OOGarden.
+            </summary>>
+        </member>
+        <member name="M:OopTranslation.I18n.OopGridLocalizer.GetLocalizedString(DevExpress.XtraGrid.Localization.GridStringId)">
+            <summary>
+            Surcharge utilisée pour traduire les informations DevExpress dans OOGarden.
+            </summary>
+            <param name="id">Id de la ressource à traduire</param>
+            <returns>Chaîne traduite par DevExpress à défaut</returns>
+        </member>
+        <member name="T:OopTranslation.I18n.OopVerticalGridLocalizer">
+            <summary>
+            Définition de l'objet de localisation des informations DevExpress remises à niveau pour OOGarden.
+            </summary>>
+        </member>
+        <member name="M:OopTranslation.I18n.OopVerticalGridLocalizer.GetLocalizedString(DevExpress.XtraVerticalGrid.Localization.VGridStringId)">
+            <summary>
+            Surcharge utilisée pour traduire les informations DevExpress dans OOGarden.
+            </summary>
+            <param name="id">Id de la ressource à traduire</param>
+            <returns>Chaîne traduite par DevExpress à défaut</returns>
+        </member>
+        <member name="T:OopTranslation.I18n.IoFileDialogs">
+            <summary>
+              Une classe de ressource fortement typée destinée, entre autres, à la consultation des chaînes localisées.
+            </summary>
+        </member>
+        <member name="P:OopTranslation.I18n.IoFileDialogs.ResourceManager">
+            <summary>
+              Retourne l'instance ResourceManager mise en cache utilisée par cette classe.
+            </summary>
+        </member>
+        <member name="P:OopTranslation.I18n.IoFileDialogs.Culture">
+            <summary>
+              Remplace la propriété CurrentUICulture du thread actuel pour toutes
+              les recherches de ressources à l'aide de cette classe de ressource fortement typée.
+            </summary>
+        </member>
+        <member name="P:OopTranslation.I18n.IoFileDialogs.CancelButtonText">
+            <summary>
+              Recherche une chaîne localisée semblable à CancelButtonText.
+            </summary>
+        </member>
+        <member name="P:OopTranslation.I18n.IoFileDialogs.ContentViewMode">
+            <summary>
+              Recherche une chaîne localisée semblable à ContentViewMode.
+            </summary>
+        </member>
+        <member name="P:OopTranslation.I18n.IoFileDialogs.ContextMenuAddNetworkPlaceCommandText">
+            <summary>
+              Recherche une chaîne localisée semblable à ContextMenuAddNetworkPlaceCommandText.
+            </summary>
+        </member>
+        <member name="P:OopTranslation.I18n.IoFileDialogs.ContextMenuCollapseCommandText">
+            <summary>
+              Recherche une chaîne localisée semblable à ContextMenuCollapseCommandText.
+            </summary>
+        </member>
+        <member name="P:OopTranslation.I18n.IoFileDialogs.ContextMenuConnectNetworkDriveCommandText">
+            <summary>
+              Recherche une chaîne localisée semblable à ContextMenuConnectNetworkDriveCommandText.
+            </summary>
+        </member>
+        <member name="P:OopTranslation.I18n.IoFileDialogs.ContextMenuCopyCommandText">
+            <summary>
+              Recherche une chaîne localisée semblable à ContextMenuCopyCommandText.
+            </summary>
+        </member>
+        <member name="P:OopTranslation.I18n.IoFileDialogs.ContextMenuCutCommandText">
+            <summary>
+              Recherche une chaîne localisée semblable à ContextMenuCutCommandText.
+            </summary>
+        </member>
+        <member name="P:OopTranslation.I18n.IoFileDialogs.ContextMenuDeleteCommandText">
+            <summary>
+              Recherche une chaîne localisée semblable à ContextMenuDeleteCommandText.
+            </summary>
+        </member>
+        <member name="P:OopTranslation.I18n.IoFileDialogs.ContextMenuDisconnectNetworkDriveCommandText">
+            <summary>
+              Recherche une chaîne localisée semblable à ContextMenuDisconnectNetworkDriveCommandText.
+            </summary>
+        </member>
+        <member name="P:OopTranslation.I18n.IoFileDialogs.ContextMenuDisplaySettingsCommandText">
+            <summary>
+              Recherche une chaîne localisée semblable à ContextMenuDisplaySettingsCommandText.
+            </summary>
+        </member>
+        <member name="P:OopTranslation.I18n.IoFileDialogs.ContextMenuEditCommandText">
+            <summary>
+              Recherche une chaîne localisée semblable à ContextMenuEditCommandText.
+            </summary>
+        </member>
+        <member name="P:OopTranslation.I18n.IoFileDialogs.ContextMenuEjectCommandText">
+            <summary>
+              Recherche une chaîne localisée semblable à ContextMenuEjectCommandText.
+            </summary>
+        </member>
+        <member name="P:OopTranslation.I18n.IoFileDialogs.ContextMenuExpandCommandText">
+            <summary>
+              Recherche une chaîne localisée semblable à ContextMenuExpandCommandText.
+            </summary>
+        </member>
+        <member name="P:OopTranslation.I18n.IoFileDialogs.ContextMenuExtractCommandText">
+            <summary>
+              Recherche une chaîne localisée semblable à ContextMenuExtractCommandText.
+            </summary>
+        </member>
+        <member name="P:OopTranslation.I18n.IoFileDialogs.ContextMenuFormatCommandText">
+            <summary>
+              Recherche une chaîne localisée semblable à ContextMenuFormatCommandText.
+            </summary>
+        </member>
+        <member name="P:OopTranslation.I18n.IoFileDialogs.ContextMenuLinkCommandText">
+            <summary>
+              Recherche une chaîne localisée semblable à ContextMenuLinkCommandText.
+            </summary>
+        </member>
+        <member name="P:OopTranslation.I18n.IoFileDialogs.ContextMenuManageCommandText">
+            <summary>
+              Recherche une chaîne localisée semblable à ContextMenuManageCommandText.
+            </summary>
+        </member>
+        <member name="P:OopTranslation.I18n.IoFileDialogs.ContextMenuOpenAsCommandText">
+            <summary>
+              Recherche une chaîne localisée semblable à ContextMenuOpenAsCommandText.
+            </summary>
+        </member>
+        <member name="P:OopTranslation.I18n.IoFileDialogs.ContextMenuOpenCommandText">
+            <summary>
+              Recherche une chaîne localisée semblable à ContextMenuOpenCommandText.
+            </summary>
+        </member>
+        <member name="P:OopTranslation.I18n.IoFileDialogs.DetailsView_DateModifiedColumnCaption">
+            <summary>
+              Recherche une chaîne localisée semblable à DetailsView_DateModifiedColumnCaption.
+            </summary>
+        </member>
+        <member name="P:OopTranslation.I18n.IoFileDialogs.DetailsView_NameColumnCaption">
+            <summary>
+              Recherche une chaîne localisée semblable à DetailsView_NameColumnCaption.
+            </summary>
+        </member>
+        <member name="P:OopTranslation.I18n.IoFileDialogs.DetailsView_SizeColumnCaption">
+            <summary>
+              Recherche une chaîne localisée semblable à DetailsView_SizeColumnCaption.
+            </summary>
+        </member>
+        <member name="P:OopTranslation.I18n.IoFileDialogs.DetailsView_TypeColumnCaption">
+            <summary>
+              Recherche une chaîne localisée semblable à DetailsView_TypeColumnCaption.
+            </summary>
+        </member>
+        <member name="P:OopTranslation.I18n.IoFileDialogs.DetailsViewMode">
+            <summary>
+              Recherche une chaîne localisée semblable à DetailsViewMode.
+            </summary>
+        </member>
+        <member name="P:OopTranslation.I18n.IoFileDialogs.ExtraLargeViewMode">
+            <summary>
+              Recherche une chaîne localisée semblable à ExtraLargeViewMode.
+            </summary>
+        </member>
+        <member name="P:OopTranslation.I18n.IoFileDialogs.FileNameLabelText">
+            <summary>
+              Recherche une chaîne localisée semblable à FileNameLabelText.
+            </summary>
+        </member>
+        <member name="P:OopTranslation.I18n.IoFileDialogs.LargeViewMode">
+            <summary>
+              Recherche une chaîne localisée semblable à LargeViewMode.
+            </summary>
+        </member>
+        <member name="P:OopTranslation.I18n.IoFileDialogs.ListViewMode">
+            <summary>
+              Recherche une chaîne localisée semblable à ListViewMode.
+            </summary>
+        </member>
+        <member name="P:OopTranslation.I18n.IoFileDialogs.MediumViewMode">
+            <summary>
+              Recherche une chaîne localisée semblable à MediumViewMode.
+            </summary>
+        </member>
+        <member name="P:OopTranslation.I18n.IoFileDialogs.NewFolderButtonText">
+            <summary>
+              Recherche une chaîne localisée semblable à NewFolderButtonText.
+            </summary>
+        </member>
+        <member name="P:OopTranslation.I18n.IoFileDialogs.OpenFileDialogOkButtonText">
+            <summary>
+              Recherche une chaîne localisée semblable à OpenFileDialogOkButtonText.
+            </summary>
+        </member>
+        <member name="P:OopTranslation.I18n.IoFileDialogs.SmallViewMode">
+            <summary>
+              Recherche une chaîne localisée semblable à SmallViewMode.
+            </summary>
+        </member>
+        <member name="P:OopTranslation.I18n.IoFileDialogs.TilesViewMode">
+            <summary>
+              Recherche une chaîne localisée semblable à TilesViewMode.
+            </summary>
+        </member>
+        <member name="T:OopTranslation.I18n.MessageBox">
+            <summary>
+              Une classe de ressource fortement typée destinée, entre autres, à la consultation des chaînes localisées.
+            </summary>
+        </member>
+        <member name="P:OopTranslation.I18n.MessageBox.ResourceManager">
+            <summary>
+              Retourne l'instance ResourceManager mise en cache utilisée par cette classe.
+            </summary>
+        </member>
+        <member name="P:OopTranslation.I18n.MessageBox.Culture">
+            <summary>
+              Remplace la propriété CurrentUICulture du thread actuel pour toutes
+              les recherches de ressources à l'aide de cette classe de ressource fortement typée.
+            </summary>
+        </member>
+        <member name="P:OopTranslation.I18n.MessageBox.NoButtonText">
+            <summary>
+              Recherche une chaîne localisée semblable à NoButtonText.
+            </summary>
+        </member>
+        <member name="P:OopTranslation.I18n.MessageBox.YesButtonText">
+            <summary>
+              Recherche une chaîne localisée semblable à YesButtonText.
+            </summary>
+        </member>
+        <member name="T:OopTranslation.GridControl">
+            <summary>
+              Une classe de ressource fortement typée destinée, entre autres, à la consultation des chaînes localisées.
+            </summary>
+        </member>
+        <member name="P:OopTranslation.GridControl.ResourceManager">
+            <summary>
+              Retourne l'instance ResourceManager mise en cache utilisée par cette classe.
+            </summary>
+        </member>
+        <member name="P:OopTranslation.GridControl.Culture">
+            <summary>
+              Remplace la propriété CurrentUICulture du thread actuel pour toutes
+              les recherches de ressources à l'aide de cette classe de ressource fortement typée.
+            </summary>
+        </member>
+        <member name="P:OopTranslation.GridControl.FindControlFindButton">
+            <summary>
+              Recherche une chaîne localisée semblable à FindControlFindButton.
+            </summary>
+        </member>
+        <member name="P:OopTranslation.GridControl.FindNullPrompt">
+            <summary>
+              Recherche une chaîne localisée semblable à FindNullPrompt.
+            </summary>
+        </member>
+        <member name="P:OopTranslation.GridControl.GridGroupPanelText">
+            <summary>
+              Recherche une chaîne localisée semblable à GridGroupPanelText.
+            </summary>
+        </member>
+        <member name="T:OopTranslation.Ribbon">
+            <summary>
+              Une classe de ressource fortement typée destinée, entre autres, à la consultation des chaînes localisées.
+            </summary>
+        </member>
+        <member name="P:OopTranslation.Ribbon.ResourceManager">
+            <summary>
+              Retourne l'instance ResourceManager mise en cache utilisée par cette classe.
+            </summary>
+        </member>
+        <member name="P:OopTranslation.Ribbon.Culture">
+            <summary>
+              Remplace la propriété CurrentUICulture du thread actuel pour toutes
+              les recherches de ressources à l'aide de cette classe de ressource fortement typée.
+            </summary>
+        </member>
+        <member name="P:OopTranslation.Ribbon.RibbonButtonLoadSolution">
+            <summary>
+              Recherche une chaîne localisée semblable à RibbonButtonLoadSolution.
+            </summary>
+        </member>
+        <member name="P:OopTranslation.Ribbon.RibbonPageSolutionsProjects">
+            <summary>
+              Recherche une chaîne localisée semblable à RibbonPageSolutionsProjects.
+            </summary>
+        </member>
+        <member name="P:OopTranslation.Ribbon.RibbonPageSolutionsProjectsGroupLoadProject">
+            <summary>
+              Recherche une chaîne localisée semblable à RibbonPageSolutionsProjectsGroupLoadProject.
+            </summary>
+        </member>
+        <member name="P:OopTranslation.Ribbon.RibbonPageSolutionsProjectsGroupLoadSolution">
+            <summary>
+              Recherche une chaîne localisée semblable à RibbonPageSolutionsProjectsGroupLoadSolution.
+            </summary>
+        </member>
+        <member name="T:OopTranslation.StatusBar">
+            <summary>
+              Une classe de ressource fortement typée destinée, entre autres, à la consultation des chaînes localisées.
+            </summary>
+        </member>
+        <member name="P:OopTranslation.StatusBar.ResourceManager">
+            <summary>
+              Retourne l'instance ResourceManager mise en cache utilisée par cette classe.
+            </summary>
+        </member>
+        <member name="P:OopTranslation.StatusBar.Culture">
+            <summary>
+              Remplace la propriété CurrentUICulture du thread actuel pour toutes
+              les recherches de ressources à l'aide de cette classe de ressource fortement typée.
+            </summary>
+        </member>
+        <member name="P:OopTranslation.StatusBar.Awaiting">
+            <summary>
+              Recherche une chaîne localisée semblable à Awaiting.
+            </summary>
+        </member>
+        <member name="P:OopTranslation.StatusBar.SkinSelect">
+            <summary>
+              Recherche une chaîne localisée semblable à SkinSelect.
+            </summary>
+        </member>
+    </members>
+</doc>

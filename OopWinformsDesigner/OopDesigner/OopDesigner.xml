@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>OopDesigner</name>
+    </assembly>
+    <members>
+        <member name="T:OopDesigner.Enumerations.NotifyStatus">
+            <summary>
+            Definition of all status available.
+            </summary>
+        </member>
+        <member name="F:OopDesigner.Enumerations.NotifyStatus.SolutionOpened">
+            <summary>
+            The solution file has been opened.
+            </summary>
+        </member>
+        <member name="T:OopDesigner.EventArguments.NotifyStatusChangeEventArgs">
+            <summary>
+            Definition of an event argument to use to change the status of any change.
+            </summary>
+        </member>
+        <member name="M:OopDesigner.EventArguments.NotifyStatusChangeEventArgs.#ctor(OopDesigner.Enumerations.NotifyStatus,System.String)">
+            <summary>
+            Constructeur
+            </summary>
+            <param name="status"><see cref="P:OopDesigner.EventArguments.NotifyStatusChangeEventArgs.Status"/></param>
+            <param name="message"><see cref="P:OopDesigner.EventArguments.NotifyStatusChangeEventArgs.Message"/></param>
+        </member>
+        <member name="P:OopDesigner.EventArguments.NotifyStatusChangeEventArgs.Status">
+            <summary>
+            Gets or sets the current status of this notification.
+            </summary>
+        </member>
+        <member name="P:OopDesigner.EventArguments.NotifyStatusChangeEventArgs.Message">
+            <summary>
+            Gets or sets the message / description.
+            </summary>
+        </member>
+        <member name="T:OopDesigner.Registry.UiKitRegistrator">
+            <summary>
+            Definition of the class that is used to parse all assemblies in the current app domain to find a class implementing the specific IUiKitRegistration assembly to
+            be embedded within this designer.
+            Caution : we use Unity to perform this registration.
+            </summary>
+            <remarks>The assemblies beginning by System are ignored.</remarks>
+        </member>
+        <member name="M:OopDesigner.Registry.UiKitRegistrator.Configure(Unity.IUnityContainer)">
+            <summary>
+            Auto registration about foreign components if required
+            </summary>
+            <param name="unityContainer">Reference to the container where to register</param>
+        </member>
+    </members>
+</doc>

@@ -8,6 +8,16 @@ namespace OopDesigner.EventArguments {
     /// </summary>
     public class NotifyStatusChangeEventArgs : EventArgs {
         /// <summary>
+        /// Constructeur
+        /// </summary>
+        /// <param name="status"><see cref="Status"/></param>
+        /// <param name="message"><see cref="Message"/></param>
+        public NotifyStatusChangeEventArgs(NotifyStatus status, string message = "") {
+            Status = status;
+            Message = message;
+        }
+
+        /// <summary>
         /// Gets or sets the current status of this notification.
         /// </summary>
         public NotifyStatus Status { get; set; }

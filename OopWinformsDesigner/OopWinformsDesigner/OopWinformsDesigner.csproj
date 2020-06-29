@@ -11,6 +11,10 @@
     <AssemblyOriginatorKeyFile>..\..\ITLightON.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net48|AnyCPU'">
+    <DocumentationFile>O:\Développements\OopWinformsDesigner\OopWinformsDesigner\OopWinformsDesigner\OopWinformsDesigner.xml</DocumentationFile>
+  </PropertyGroup>
+
   <ItemGroup>
     <Content Include="..\Assets\Designer.ico" Link="Designer.ico" />
   </ItemGroup>

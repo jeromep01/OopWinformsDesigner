@@ -6,6 +6,10 @@
     <AssemblyOriginatorKeyFile>..\..\ITLightON.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net48|AnyCPU'">
+    <DocumentationFile>O:\Développements\OopWinformsDesigner\OopWinformsDesigner\OopDesigner\OopDesigner.xml</DocumentationFile>
+  </PropertyGroup>
+
   <ItemGroup>
     <None Include="..\..\ITLightON.snk" Link="ITLightON.snk" />
   </ItemGroup>

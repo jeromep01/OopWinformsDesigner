@@ -1,4 +1,5 @@
-﻿using OopDesigner.EventArguments;
+﻿using OopDesigner.Enumerations;
+using OopDesigner.EventArguments;
 
 using System;
 using System.ComponentModel;
@@ -20,6 +21,7 @@ namespace OopWinformsDesigner.Session {
             get {
                 if (instance == null) {
                     instance = new SessionInfo();
+                    Directory.CreateDirectory(@"Database");
                 }
                 return instance;
             }
@@ -57,6 +59,7 @@ namespace OopWinformsDesigner.Session {
 
                 PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(SolutionFile)));
                 PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsSolutionOrProjectLoaded)));
+                NotifyStatusChanged?.Invoke(this, new NotifyStatusChangeEventArgs(NotifyStatus.SolutionOpened));
             }
         }
     }

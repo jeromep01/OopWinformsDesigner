@@ -1,0 +1,175 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>OopWinformsDesigner</name>
+    </assembly>
+    <members>
+        <member name="T:OopWinformsDesigner.MainForm">
+            <summary>
+            Definition of the main form of this application.
+            </summary>
+        </member>
+        <member name="P:OopWinformsDesigner.MainForm.MainLayout">
+            <summary>
+            Gets or sets the layout that will be used to match designer processes.
+            </summary>
+        </member>
+        <member name="P:OopWinformsDesigner.MainForm.BarManager">
+            <summary>
+            Gets or sets the bar manager (used to create both status bar / menus).
+            </summary>
+        </member>
+        <member name="P:OopWinformsDesigner.MainForm.StatusBar">
+            <summary>
+            Gets or sets the status bar of the application.
+            </summary>
+        </member>
+        <member name="F:OopWinformsDesigner.MainForm.components">
+            <summary>
+             Required designer variable.
+            </summary>
+        </member>
+        <member name="M:OopWinformsDesigner.MainForm.Dispose(System.Boolean)">
+            <summary>
+             Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:OopWinformsDesigner.MainForm.InitializeComponent">
+            <summary>
+             Required method for Designer support - do not modify
+             the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:OopWinformsDesigner.Program.Main">
+            <summary>
+             The main entry point for the application.
+            </summary>
+        </member>
+        <member name="T:OopWinformsDesigner.Properties.Resources">
+            <summary>
+              Une classe de ressource fortement typée destinée, entre autres, à la consultation des chaînes localisées.
+            </summary>
+        </member>
+        <member name="P:OopWinformsDesigner.Properties.Resources.ResourceManager">
+            <summary>
+              Retourne l'instance ResourceManager mise en cache utilisée par cette classe.
+            </summary>
+        </member>
+        <member name="P:OopWinformsDesigner.Properties.Resources.Culture">
+            <summary>
+              Remplace la propriété CurrentUICulture du thread actuel pour toutes
+              les recherches de ressources à l'aide de cette classe de ressource fortement typée.
+            </summary>
+        </member>
+        <member name="P:OopWinformsDesigner.Properties.Resources.Designer">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Icon semblable à (Icône).
+            </summary>
+        </member>
+        <member name="P:OopWinformsDesigner.Properties.Resources.Message_Information">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:OopWinformsDesigner.Properties.Resources.OpenSolution">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:OopWinformsDesigner.Properties.Resources.Palette">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="T:OopWinformsDesigner.Session.SessionInfo">
+            <summary>
+            Definition of the session information about the current usage of the application.
+            </summary>
+        </member>
+        <member name="P:OopWinformsDesigner.Session.SessionInfo.Instance">
+            <summary>
+            Gets the singleton instance of the current session.
+            </summary>
+        </member>
+        <member name="P:OopWinformsDesigner.Session.SessionInfo.IsSolutionOrProjectLoaded">
+            <summary>
+            Gets or sets whether the solution/project has been loaded in this session.
+            </summary>
+        </member>
+        <member name="E:OopWinformsDesigner.Session.SessionInfo.NotifyStatusChanged">
+            <summary>
+            Definition of the event where to be registered on to indicate that a state has changed.
+            </summary>
+        </member>
+        <member name="E:OopWinformsDesigner.Session.SessionInfo.PropertyChanged">
+            <summary>
+            Definition of the event indicating that a property has been changed.
+            </summary>
+        </member>
+        <member name="P:OopWinformsDesigner.Session.SessionInfo.SolutionFile">
+            <summary>
+            Gets or sets the solution file loaded.
+            </summary>
+        </member>
+        <member name="T:OopWinformsDesigner.UI.UIExtenders">
+            <summary>
+            Definition of the glossary containing the references to the components to use once they are instantiated.
+            </summary>
+        </member>
+        <member name="M:OopWinformsDesigner.UI.UIExtenders.Install(DevExpress.XtraEditors.PanelControl)">
+            <summary>
+            This function extends the installation of the layout control.
+            This is just the same thing that made the default Windows Forms Designer.
+            </summary>
+            <param name="panelControl">Reference to the layout control installed</param>
+            <returns>Self instance of the layout control but fully configured</returns>
+        </member>
+        <member name="M:OopWinformsDesigner.UI.UIExtenders.Install(OopWinformsDesigner.UI.UserControls.MainLayout)">
+            <summary>
+            This function extends the installation of the layout panel.
+            </summary>
+            <param name="mainLayout">Main layout of the flow</param>
+            <returns>Self instance of the layout</returns>
+        </member>
+        <member name="M:OopWinformsDesigner.UI.UIExtenders.Install(DevExpress.XtraLayout.LayoutControl)">
+            <summary>
+            This function extends the installation of the layout control.
+            This is just the same thing that made the default Windows Forms Designer.
+            </summary>
+            <param name="layoutControl">Reference to the layout control installed</param>
+            <returns>Self instance of the layout control but fully configured</returns>
+        </member>
+        <member name="M:OopWinformsDesigner.UI.UIExtenders.Install(DevExpress.XtraBars.Ribbon.RibbonControl)">
+            <summary>
+            This function extends the installation of the ribbon control with adding all required elements.
+            </summary>
+            <param name="ribbonControl">Reference to the ribbon control initialized</param>
+            <returns>Self instance of the ribbon control but fully configured</returns>
+        </member>
+        <member name="M:OopWinformsDesigner.UI.UIExtenders.InstallStatusBar(DevExpress.XtraBars.Bar)">
+            <summary>
+            
+            </summary>
+            <param name="statusBar">Reference to the status bar installed</param>
+            <returns>Self instance of the layout control but fully configured</returns>
+        </member>
+        <member name="F:OopWinformsDesigner.UI.UserControls.MainLayout.components">
+            <summary> 
+            Variable nécessaire au concepteur.
+            </summary>
+        </member>
+        <member name="M:OopWinformsDesigner.UI.UserControls.MainLayout.Dispose(System.Boolean)">
+            <summary> 
+            Nettoyage des ressources utilisées.
+            </summary>
+            <param name="disposing">true si les ressources managées doivent être supprimées ; sinon, false.</param>
+        </member>
+        <member name="M:OopWinformsDesigner.UI.UserControls.MainLayout.InitializeComponent">
+            <summary> 
+            Méthode requise pour la prise en charge du concepteur - ne modifiez pas 
+            le contenu de cette méthode avec l'éditeur de code.
+            </summary>
+        </member>
+    </members>
+</doc>
