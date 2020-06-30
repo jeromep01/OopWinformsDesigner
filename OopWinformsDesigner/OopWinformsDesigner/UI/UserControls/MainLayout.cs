@@ -1,6 +1,7 @@
 ﻿using DevExpress.XtraEditors;
 
 using net.r_eg.MvsSln;
+using net.r_eg.MvsSln.Extensions;
 
 using OopDesigner.EventArguments;
 using OopDesigner.Interfaces;
@@ -9,6 +10,7 @@ using OopWinformsDesigner.Services;
 using OopWinformsDesigner.Session;
 
 using System;
+using System.Collections.Generic;
 using System.ComponentModel.Design;
 using System.ComponentModel.Design.Serialization;
 using System.Linq;
@@ -42,6 +44,9 @@ namespace OopWinformsDesigner.UI.UserControls {
         protected override void OnLoad(EventArgs e) {
             base.OnLoad(e);
 
+            treeDesigners.Columns.AddField(nameof(Type.Assembly));
+            treeDesigners.Columns.AddField(nameof(Type.Namespace));
+            treeDesigners.Columns.AddField(nameof(Type.Name));
             installDesigner();
             registerEvents();
             addDataBindings();
@@ -89,7 +94,6 @@ namespace OopWinformsDesigner.UI.UserControls {
                 case OopDesigner.Enumerations.NotifyStatus.SolutionOpened:
                     // Loads the project / solution.
                     var s = new Sln(SessionInfo.Instance.SolutionFile, SlnItems.EnvWithProjects);
-
                     foreach (var prj in s.Result.ProjectItems) {
                         if (prj.EpType == net.r_eg.MvsSln.Core.ProjectType.CsSdk) {
                             // This is the new format.
@@ -103,38 +107,22 @@ namespace OopWinformsDesigner.UI.UserControls {
                             if (msBuildStartupDirectory != null && outputType != null) {
                                 var extension = GetExtensionFromOutputType(outputType.EvaluatedValue);
                                 var asmFile = string.Join(@"\", msBuildStartupDirectory.EvaluatedValue, prj.name + extension);
-                                Assembly.LoadFile(asmFile);
+                                var assembly = Assembly.LoadFile(asmFile);
+                                if (assembly != null) {
+                                    loadTypes(assembly).ForEach(type => SessionInfo.Instance.Designers.Add(type));
+                                }
                             }
                         }
                     }
-                    //var solutionFile = SolutionFile.Parse(SessionInfo.Instance.SolutionFile);
-
-                    //solutionFile.ProjectsInOrder.ForEach(x => {
-
-                    //    if (x.ProjectType == SolutionProjectType.KnownToBeMSBuildFormat) {
-                    //        var project = new Project(x.AbsolutePath);
-                    //        if (project != null) {
-                    //            // We fetch only the compiled elements and we check for the classes that implement IOopDesigner.
-                    //            var items = project.GetItems("Compile");
-
-                    //            if (items.Any()) {
-                    //                SessionInfo.Instance.Designers.Add(new Objects.DesignerClassObject {
-                    //                    ProjectFilePath = x.AbsolutePath
-                    //                });
-                    //            }
-                    //            else {
-                    //                // Loading items directly from the list of subfolder files containing the .cs suffix
-                    //                var files = Directory.EnumerateFiles(x.AbsolutePath, "*.cs", SearchOption.AllDirectories);
-                    //                foreach (var file in files) {
-
-                    //                }
-                    //            }
-                    //        }
-                    //    }
-
-                    //});
+                    // On every types added, we generate a list bindable.
                     break;
             };
+        }
+
+        private IEnumerable<Type> loadTypes(Assembly assembly) {
+            // We must exclude abstract types as the Designer must create concrete class of them !
+            return assembly.GetTypes().Where(x => x.IsPublic && !x.IsAbstract &&
+            x.GetInterfaces().Any(i => i == typeof(IOopDesigner)));
         }
 
         private object GetExtensionFromOutputType(string evaluatedValue) {
