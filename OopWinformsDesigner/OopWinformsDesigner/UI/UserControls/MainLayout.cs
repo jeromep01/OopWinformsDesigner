@@ -1,10 +1,9 @@
-﻿using DevExpress.Utils.Extensions;
-using DevExpress.XtraEditors;
+﻿using DevExpress.XtraEditors;
 
-using Microsoft.Build.Construction;
-using Microsoft.Build.Evaluation;
+using net.r_eg.MvsSln;
 
 using OopDesigner.EventArguments;
+using OopDesigner.Interfaces;
 
 using OopWinformsDesigner.Services;
 using OopWinformsDesigner.Session;
@@ -12,6 +11,8 @@ using OopWinformsDesigner.Session;
 using System;
 using System.ComponentModel.Design;
 using System.ComponentModel.Design.Serialization;
+using System.Linq;
+using System.Reflection;
 using System.Windows.Forms;
 using System.Windows.Forms.Design;
 
@@ -19,12 +20,13 @@ namespace OopWinformsDesigner.UI.UserControls {
     /// <summary>
     /// Definition of the main layout used for this application
     /// </summary>
-    public partial class MainLayout : XtraUserControl {
+    public partial class MainLayout : XtraUserControl, IOopDesigner {
         private ServiceContainer serviceContainer = null;
         private OopMenuCommandService menuService = null;
         private IDesignerHost host;
         private Form rootLayout;
         private IRootDesigner rootDesigner;
+        private ISelectionService selectionService;
 
         /// <summary>
         /// Constructor
@@ -69,11 +71,10 @@ namespace OopWinformsDesigner.UI.UserControls {
             panelDesignerHost.Controls.Add(view);
 
             // Subscribe to the selectionchanged event and activate the designer
-            ISelectionService s = (ISelectionService)serviceContainer.GetService(typeof(ISelectionService));
-            s.SelectionChanged += DesignerHost_SelectionChanged;
+            selectionService = (ISelectionService)serviceContainer.GetService(typeof(ISelectionService));
+            selectionService.SelectionChanged += DesignerHost_SelectionChanged;
             host.Activate();
         }
-
         private void DesignerHost_SelectionChanged(object sender, EventArgs e) {
             var o = sender;
 
@@ -87,28 +88,60 @@ namespace OopWinformsDesigner.UI.UserControls {
             switch (e.Status) {
                 case OopDesigner.Enumerations.NotifyStatus.SolutionOpened:
                     // Loads the project / solution.
-                    var solutionFile = SolutionFile.Parse(SessionInfo.Instance.SolutionFile);
+                    var s = new Sln(SessionInfo.Instance.SolutionFile, SlnItems.EnvWithProjects);
 
-                    solutionFile.ProjectsInOrder.ForEach(x => {
+                    foreach (var prj in s.Result.ProjectItems) {
+                        if (prj.EpType == net.r_eg.MvsSln.Core.ProjectType.CsSdk) {
+                            // This is the new format.
+                            var o = s.Result.Env.GetOrLoadProject(prj);
 
-                        if (x.ProjectType == SolutionProjectType.KnownToBeMSBuildFormat) {
-                            // Lecture du projet depuis FubuCsproj ?
+                            if (o.IsBuildEnabled) {
 
-                            var project = Project.FromFile(x.AbsolutePath, new Microsoft.Build.Definition.ProjectOptions {
-
-                            });
-                            if (project != null) {
-                                var items = project.GetItems("Compile");
-
-                                SessionInfo.Instance.Designers.Add(new Objects.DesignerClassObject {
-                                    ProjectFilePath = x.AbsolutePath
-                                });
+                            }
+                            var msBuildStartupDirectory = o.AllEvaluatedProperties.FirstOrDefault(x => x.Name == "MSBuildStartupDirectory");
+                            var outputType = o.AllEvaluatedProperties.LastOrDefault(x => x.Name == "OutputType");
+                            if (msBuildStartupDirectory != null && outputType != null) {
+                                var extension = GetExtensionFromOutputType(outputType.EvaluatedValue);
+                                var asmFile = string.Join(@"\", msBuildStartupDirectory.EvaluatedValue, prj.name + extension);
+                                Assembly.LoadFile(asmFile);
                             }
                         }
+                    }
+                    //var solutionFile = SolutionFile.Parse(SessionInfo.Instance.SolutionFile);
 
-                    });
+                    //solutionFile.ProjectsInOrder.ForEach(x => {
+
+                    //    if (x.ProjectType == SolutionProjectType.KnownToBeMSBuildFormat) {
+                    //        var project = new Project(x.AbsolutePath);
+                    //        if (project != null) {
+                    //            // We fetch only the compiled elements and we check for the classes that implement IOopDesigner.
+                    //            var items = project.GetItems("Compile");
+
+                    //            if (items.Any()) {
+                    //                SessionInfo.Instance.Designers.Add(new Objects.DesignerClassObject {
+                    //                    ProjectFilePath = x.AbsolutePath
+                    //                });
+                    //            }
+                    //            else {
+                    //                // Loading items directly from the list of subfolder files containing the .cs suffix
+                    //                var files = Directory.EnumerateFiles(x.AbsolutePath, "*.cs", SearchOption.AllDirectories);
+                    //                foreach (var file in files) {
+
+                    //                }
+                    //            }
+                    //        }
+                    //    }
+
+                    //});
                     break;
             };
+        }
+
+        private object GetExtensionFromOutputType(string evaluatedValue) {
+            if (evaluatedValue == "Library")
+                return ".dll";
+
+            return ".exe";
         }
     }
 }

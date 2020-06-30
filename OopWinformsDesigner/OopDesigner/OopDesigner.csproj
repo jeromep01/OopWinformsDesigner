@@ -7,12 +7,14 @@
     <Product>OopDesigner</Product>
     <Description>This tool helps you decide which components / forms are eligible within our new Visual Studio Designer Out-Of-Process.</Description>
     <PackageId>ITLightON.OutOfProcess.WinformsDesigner</PackageId>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageReleaseNotes>Initial Release</PackageReleaseNotes>
     <Version>1.0.0</Version>
     <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
     <Company>ITLightON</Company>
     <Authors>ITLightON</Authors>
+    <Copyright>ITLightON. All rights reserved.</Copyright>
+    <PackageTags>Visual Studio. C#. Design Tool.</PackageTags>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net48|AnyCPU'">
