@@ -53,42 +53,17 @@ namespace OopWinformsDesigner.UI.UserControls {
                 Caption = OopTranslation.OopDesigner.TreeListDesigner_TypeColumn,
                 VisibleIndex = 1
             });
+            treeDesigners.OptionsBehavior.Editable = false;
+            treeDesigners.OptionsBehavior.AutoNodeHeight = true;
+            treeDesigners.OptionsBehavior.AllowExpandOnDblClick = true;
+            treeDesigners.OptionsSelection.EnableAppearanceFocusedCell = false;
             treeDesigners.EndUpdate();
             registerEvents();
             addDataBindings();
-            // Next step is to install the designer.
-            installDesigner();
         }
 
         private void addDataBindings() {
 
-        }
-
-        private void installDesigner() {
-            serviceContainer = new ServiceContainer();
-            serviceContainer.AddService(typeof(INameCreationService), new OopNameCreationService());
-            serviceContainer.AddService(typeof(IUIService), new UIService(this));
-            host = new DesignerHost(serviceContainer);
-
-            menuService = new OopMenuCommandService();
-            serviceContainer.AddService(typeof(IMenuCommandService), menuService);
-
-            // Start the designer host off with a Form to design
-            rootLayout = (Form)host.CreateComponent(typeof(Form));
-            rootLayout.Text = "Form1";
-
-            SessionInfo.Instance.NotifySharedObjectChanges(OopDesigner.Enumerations.SharedObjectTypes.FormOrControl, rootLayout);
-
-            // Get the root designer for the form and add its design view to this form
-            rootDesigner = (IRootDesigner)host.GetDesigner(rootLayout);
-            var view = (Control)rootDesigner.GetView(ViewTechnology.WindowsForms);
-            view.Dock = DockStyle.Fill;
-            panelDesignerHost.Controls.Add(view);
-
-            // Subscribe to the selectionchanged event and activate the designer
-            selectionService = (ISelectionService)serviceContainer.GetService(typeof(ISelectionService));
-            selectionService.SelectionChanged += DesignerHost_SelectionChanged;
-            host.Activate();
         }
         private void DesignerHost_SelectionChanged(object sender, EventArgs e) {
             var o = sender;
@@ -98,14 +73,73 @@ namespace OopWinformsDesigner.UI.UserControls {
         private void registerEvents() {
             SessionInfo.Instance.NotifyStatusChanged += Instance_NotifyStatusChanged;
             SessionInfo.Instance.SharedObjectChanged += Instance_SharedObjectChanged;
+            treeDesigners.RowClick += TreeDesigners_RowClick;
+        }
+
+        private void TreeDesigners_RowClick(object sender, DevExpress.XtraTreeList.RowClickEventArgs e) {
+            if (e.Clicks > 1) {
+                // The Tag property must not be NULL, and if this is the case, we have to send it via the Notify function.
+                if (e.Node.Tag != null && isCompliant(e.Node.Tag)) {
+                    SessionInfo.Instance.NotifySharedObjectChanges(OopDesigner.Enumerations.SharedObjectTypes.FormOrControl, e.Node.Tag);
+                }
+
+                e.Handled = true;
+            }
+        }
+
+        private object instantiate(object tag) {
+            var subType = (Type)tag;
+
+            return Activator.CreateInstance(subType.Assembly.FullName, subType.FullName);
+        }
+
+        private bool isCompliant(object tag) {
+            var subType = (Type)tag;
+
+            return subType.IsSubclassOf(typeof(Form)) || subType.IsSubclassOf(typeof(UserControl));
         }
 
         private void Instance_SharedObjectChanged(object sender, SharedObjectChangeEventArgs e) {
             switch (e.ObjectType) {
                 case OopDesigner.Enumerations.SharedObjectTypes.FormOrControl:
                     propertyGridDesigner.SelectedObject = e.Object;
+
+                    if (e.Object is Type) {
+                        loadDesignerComponents(e.Object as Type);
+                    }
                     break;
             }
+        }
+
+        private void loadDesignerComponents(Type type) {
+            serviceContainer = new ServiceContainer();
+            serviceContainer.AddService(typeof(INameCreationService), new OopNameCreationService());
+            serviceContainer.AddService(typeof(IUIService), new UIService(this));
+            host = new DesignerHost(serviceContainer);
+
+            menuService = new OopMenuCommandService();
+            serviceContainer.AddService(typeof(IMenuCommandService), menuService);
+
+            var o = host.CreateComponent(type);
+
+            if (o is Form) {
+                // Start the designer host off with a Form to design
+                rootLayout = (Form)o;
+                rootLayout.Text = "Form1";
+
+                // Get the root designer for the form and add its design view to this form
+                rootDesigner = (IRootDesigner)host.GetDesigner(rootLayout);
+                var view = (Control)rootDesigner.GetView(ViewTechnology.WindowsForms);
+                view.Dock = DockStyle.Fill;
+                panelDesignerHost.Controls.Clear();
+                panelDesignerHost.Controls.Add(view);
+                rootDesigner = (IRootDesigner)host.GetDesigner((Form)o);
+            }
+
+            // Subscribe to the selectionchanged event and activate the designer
+            selectionService = (ISelectionService)serviceContainer.GetService(typeof(ISelectionService));
+            selectionService.SelectionChanged += DesignerHost_SelectionChanged;
+            host.Activate();
         }
 
         private void Instance_NotifyStatusChanged(object sender, NotifyStatusChangeEventArgs e) {
@@ -140,13 +174,15 @@ namespace OopWinformsDesigner.UI.UserControls {
         private void updateDesignersList() {
             treeDesigners.BeginUnboundLoad();
             treeDesigners.Nodes.Clear();
-            SessionInfo.Instance.Designers.GroupBy(x => x.AssemblyQualifiedName).ForEach(o => {
+            SessionInfo.Instance.Designers.GroupBy(x => x.Assembly.FullName).ForEach(o => {
                 var asmNode = treeDesigners.AppendNode(new object[] { o.Key, "" }, null);
                 if (o != null) {
                     o.ForEach(type => {
-                        treeDesigners.AppendNode(new object[] {
+                        var node = treeDesigners.AppendNode(new object[] {
                         o.Key, type.FullName
                         }, asmNode);
+
+                        node.Tag = type;
                     });
                 }
             });

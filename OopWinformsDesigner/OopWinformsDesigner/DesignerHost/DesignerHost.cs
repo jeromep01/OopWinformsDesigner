@@ -54,19 +54,23 @@ namespace OopWinformsDesigner {
         }
 
         public void AddService(System.Type serviceType, System.ComponentModel.Design.ServiceCreatorCallback callback, bool promote) {
-            parent.AddService(serviceType, callback, promote);
+            if (parent.GetService(serviceType) == null)
+                parent.AddService(serviceType, callback, promote);
         }
 
         public void AddService(System.Type serviceType, System.ComponentModel.Design.ServiceCreatorCallback callback) {
-            parent.AddService(serviceType, callback);
+            if (parent.GetService(serviceType) == null)
+                parent.AddService(serviceType, callback);
         }
 
         public void AddService(System.Type serviceType, object serviceInstance, bool promote) {
-            parent.AddService(serviceType, serviceInstance, promote);
+            if (parent.GetService(serviceType) == null)
+                parent.AddService(serviceType, serviceInstance, promote);
         }
 
         public void AddService(System.Type serviceType, object serviceInstance) {
-            parent.AddService(serviceType, serviceInstance);
+            if (parent.GetService(serviceType) == null)
+                parent.AddService(serviceType, serviceInstance);
         }
 
         public void RemoveService(System.Type serviceType, bool promote) {

@@ -5,11 +5,12 @@
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>..\..\ITLightON.snk</AssemblyOriginatorKeyFile>
     <Product>OopDesigner</Product>
-    <Description>This tool helps you decide which components / forms are eligible within our new Visual Studio Designer Out-Of-Process.</Description>
+    <Description>This tool helps you decide which components / forms are eligible within our new Visual Studio Designer Out-Of-Process.
+This package is under development, so we advise you to use with caution.</Description>
     <PackageId>ITLightON.OutOfProcess.WinformsDesigner</PackageId>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <PackageReleaseNotes>Initial Release</PackageReleaseNotes>
-    <Version>1.0.0</Version>
+    <PackageReleaseNotes>Developement release. For development usage only.</PackageReleaseNotes>
+    <Version>0.0.0.1</Version>
     <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
     <Company>ITLightON</Company>
     <Authors>ITLightON</Authors>
