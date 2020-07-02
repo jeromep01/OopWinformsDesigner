@@ -141,6 +141,11 @@
             Definition of the event where to be registered on to indicate that a state has changed.
             </summary>
         </member>
+        <member name="E:OopWinformsDesigner.Session.SessionInfo.SharedObjectChanged">
+            <summary>
+            Definition of the event where to be registered on to indicate that an object shared among many other places has changed.
+            </summary>
+        </member>
         <member name="E:OopWinformsDesigner.Session.SessionInfo.PropertyChanged">
             <summary>
             Definition of the event indicating that a property has been changed.

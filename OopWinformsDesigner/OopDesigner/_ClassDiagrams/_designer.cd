@@ -17,6 +17,13 @@
       <FileName>Registry\UiKitRegistrator.cs</FileName>
     </TypeIdentifier>
   </Class>
+  <Class Name="OopDesigner.EventArguments.SharedObjectChangeEventArgs">
+    <Position X="8.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>EventArguments\SharedObjectChangeEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
   <Interface Name="OopDesigner.Interfaces.IOopDesigner">
     <Position X="6.5" Y="2.75" Width="1.5" />
     <TypeIdentifier>
@@ -29,6 +36,13 @@
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAA=</HashCode>
       <FileName>Enumerations\NotifyStatus.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="OopDesigner.Enumerations.SharedObjectTypes">
+    <Position X="4" Y="3.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAA=</HashCode>
+      <FileName>Enumerations\SharedObjectTypes.cs</FileName>
     </TypeIdentifier>
   </Enum>
   <Font Name="Segoe UI" Size="9" />

@@ -44,6 +44,11 @@ namespace OopWinformsDesigner.Session {
         public event EventHandler<NotifyStatusChangeEventArgs> NotifyStatusChanged;
 
         /// <summary>
+        /// Definition of the event where to be registered on to indicate that an object shared among many other places has changed.
+        /// </summary>
+        public event EventHandler<SharedObjectChangeEventArgs> SharedObjectChanged;
+
+        /// <summary>
         /// Definition of the event indicating that a property has been changed.
         /// </summary>
         public event PropertyChangedEventHandler PropertyChanged;
