@@ -125,7 +125,8 @@ namespace OopWinformsDesigner.UI.UserControls {
             if (o is Form) {
                 // Start the designer host off with a Form to design
                 rootLayout = (Form)o;
-                rootLayout.Text = "Form1";
+                if (string.IsNullOrEmpty(rootLayout.Text))
+                    rootLayout.Text = "Form1";
 
                 // Get the root designer for the form and add its design view to this form
                 rootDesigner = (IRootDesigner)host.GetDesigner(rootLayout);

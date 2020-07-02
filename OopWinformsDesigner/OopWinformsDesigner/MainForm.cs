@@ -51,6 +51,7 @@ namespace OopWinformsDesigner {
 
 #if DEBUG
             SessionInfo.Instance.SolutionFile = @"O:\Développements\OopWinformsDesigner\OopWinformsDesigner\OopWinformsDesigner.sln";
+            //SessionInfo.Instance.SolutionFile = @"O:\Développements\ITLightON\Tests\ITLightON.Winforms.Tester.sln";
 #endif
         }
 

@@ -68,6 +68,16 @@
             <param name="objectType"><see cref="P:OopDesigner.EventArguments.SharedObjectChangeEventArgs.ObjectType"/></param>
             <param name="objectReference"><see cref="P:OopDesigner.EventArguments.SharedObjectChangeEventArgs.Object"/></param>
         </member>
+        <member name="T:OopDesigner.Extensions.DesignUtils">
+            <summary>
+            Definition of a class checking whether the system is in Design-time use.
+            </summary>
+        </member>
+        <member name="M:OopDesigner.Extensions.DesignUtils.IsInDesignMode">
+            <summary>
+            Indicates if the currently running environment even under Visual Studio is Design or not. Warning, does not work in Release !
+            </summary>
+        </member>
         <member name="T:OopDesigner.Interfaces.IOopDesigner">
             <summary>
             Definition of the interface describing all elements required to make you class available for Windows Forms Designer - Out Of Process fully compliant.

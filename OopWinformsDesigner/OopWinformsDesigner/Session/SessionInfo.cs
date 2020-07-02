@@ -1,5 +1,6 @@
 ﻿using OopDesigner.Enumerations;
 using OopDesigner.EventArguments;
+using OopDesigner.Extensions;
 
 using System;
 using System.Collections.Generic;
@@ -66,7 +67,9 @@ namespace OopWinformsDesigner.Session {
 
                 PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(SolutionFile)));
                 PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(IsSolutionOrProjectLoaded)));
-                NotifyStatusChanged?.Invoke(this, new NotifyStatusChangeEventArgs(NotifyStatus.SolutionOpened));
+                if (!DesignUtils.IsInDesignMode()) {
+                    NotifyStatusChanged?.Invoke(this, new NotifyStatusChangeEventArgs(NotifyStatus.SolutionOpened));
+                }
             }
         }
 
