@@ -61,6 +61,13 @@
             Gets or sets the reference of the object.
             </summary>
         </member>
+        <member name="M:OopDesigner.EventArguments.SharedObjectChangeEventArgs.#ctor(OopDesigner.Enumerations.SharedObjectTypes,System.Object)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="objectType"><see cref="P:OopDesigner.EventArguments.SharedObjectChangeEventArgs.ObjectType"/></param>
+            <param name="objectReference"><see cref="P:OopDesigner.EventArguments.SharedObjectChangeEventArgs.Object"/></param>
+        </member>
         <member name="T:OopDesigner.Interfaces.IOopDesigner">
             <summary>
             Definition of the interface describing all elements required to make you class available for Windows Forms Designer - Out Of Process fully compliant.

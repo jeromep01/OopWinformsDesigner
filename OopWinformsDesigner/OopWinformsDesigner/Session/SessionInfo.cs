@@ -71,6 +71,15 @@ namespace OopWinformsDesigner.Session {
         }
 
         /// <summary>
+        /// Definition of the function that will raise the event <see cref="SharedObjectChanged"/>.
+        /// </summary>
+        /// <param name="objectType"><see cref="SharedObjectTypes"/></param>
+        /// <param name="objectReference"><see cref="Object"/></param>
+        public void NotifySharedObjectChanges(SharedObjectTypes objectType, object objectReference) {
+            SharedObjectChanged?.Invoke(this, new SharedObjectChangeEventArgs(objectType, objectReference));
+        }
+
+        /// <summary>
         /// Gets or sets the list of all designer objects.
         /// </summary>
         public IList<Type> Designers { get; set; }

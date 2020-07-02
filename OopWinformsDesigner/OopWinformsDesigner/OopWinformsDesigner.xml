@@ -156,6 +156,13 @@
             Gets or sets the solution file loaded.
             </summary>
         </member>
+        <member name="M:OopWinformsDesigner.Session.SessionInfo.NotifySharedObjectChanges(OopDesigner.Enumerations.SharedObjectTypes,System.Object)">
+            <summary>
+            Definition of the function that will raise the event <see cref="E:OopWinformsDesigner.Session.SessionInfo.SharedObjectChanged"/>.
+            </summary>
+            <param name="objectType"><see cref="T:OopDesigner.Enumerations.SharedObjectTypes"/></param>
+            <param name="objectReference"><see cref="T:System.Object"/></param>
+        </member>
         <member name="P:OopWinformsDesigner.Session.SessionInfo.Designers">
             <summary>
             Gets or sets the list of all designer objects.
