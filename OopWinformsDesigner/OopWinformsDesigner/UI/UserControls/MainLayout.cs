@@ -44,16 +44,24 @@ namespace OopWinformsDesigner.UI.UserControls {
         protected override void OnLoad(EventArgs e) {
             base.OnLoad(e);
 
-            treeDesigners.Columns.AddField(nameof(Type.Assembly));
-            treeDesigners.Columns.AddField(nameof(Type.Namespace));
-            treeDesigners.Columns.AddField(nameof(Type.Name));
-            installDesigner();
+            treeDesigners.BeginUpdate();
+            treeDesigners.Columns.Add(new DevExpress.XtraTreeList.Columns.TreeListColumn {
+                Caption = OopTranslation.OopDesigner.TreeListDesigner_AssemblyColumn,
+                VisibleIndex = 0
+            });
+            treeDesigners.Columns.Add(new DevExpress.XtraTreeList.Columns.TreeListColumn {
+                Caption = OopTranslation.OopDesigner.TreeListDesigner_TypeColumn,
+                VisibleIndex = 1
+            });
+            treeDesigners.EndUpdate();
             registerEvents();
             addDataBindings();
+            // Next step is to install the designer.
+            installDesigner();
         }
 
         private void addDataBindings() {
-            treeDesigners.DataSource = SessionInfo.Instance.Designers;
+
         }
 
         private void installDesigner() {
@@ -68,6 +76,8 @@ namespace OopWinformsDesigner.UI.UserControls {
             // Start the designer host off with a Form to design
             rootLayout = (Form)host.CreateComponent(typeof(Form));
             rootLayout.Text = "Form1";
+
+            SessionInfo.Instance.NotifySharedObjectChanges(OopDesigner.Enumerations.SharedObjectTypes.FormOrControl, rootLayout);
 
             // Get the root designer for the form and add its design view to this form
             rootDesigner = (IRootDesigner)host.GetDesigner(rootLayout);
@@ -87,6 +97,15 @@ namespace OopWinformsDesigner.UI.UserControls {
 
         private void registerEvents() {
             SessionInfo.Instance.NotifyStatusChanged += Instance_NotifyStatusChanged;
+            SessionInfo.Instance.SharedObjectChanged += Instance_SharedObjectChanged;
+        }
+
+        private void Instance_SharedObjectChanged(object sender, SharedObjectChangeEventArgs e) {
+            switch (e.ObjectType) {
+                case OopDesigner.Enumerations.SharedObjectTypes.FormOrControl:
+                    propertyGridDesigner.SelectedObject = e.Object;
+                    break;
+            }
         }
 
         private void Instance_NotifyStatusChanged(object sender, NotifyStatusChangeEventArgs e) {
@@ -99,9 +118,6 @@ namespace OopWinformsDesigner.UI.UserControls {
                             // This is the new format.
                             var o = s.Result.Env.GetOrLoadProject(prj);
 
-                            if (o.IsBuildEnabled) {
-
-                            }
                             var msBuildStartupDirectory = o.AllEvaluatedProperties.FirstOrDefault(x => x.Name == "MSBuildStartupDirectory");
                             var outputType = o.AllEvaluatedProperties.LastOrDefault(x => x.Name == "OutputType");
                             if (msBuildStartupDirectory != null && outputType != null) {
@@ -110,13 +126,32 @@ namespace OopWinformsDesigner.UI.UserControls {
                                 var assembly = Assembly.LoadFile(asmFile);
                                 if (assembly != null) {
                                     loadTypes(assembly).ForEach(type => SessionInfo.Instance.Designers.Add(type));
+
+                                    SessionInfo.Instance.RaisePropertyChanged(nameof(SessionInfo.Designers));
                                 }
                             }
                         }
                     }
-                    // On every types added, we generate a list bindable.
+                    updateDesignersList();
                     break;
             };
+        }
+
+        private void updateDesignersList() {
+            treeDesigners.BeginUnboundLoad();
+            treeDesigners.Nodes.Clear();
+            SessionInfo.Instance.Designers.GroupBy(x => x.AssemblyQualifiedName).ForEach(o => {
+                var asmNode = treeDesigners.AppendNode(new object[] { o.Key, "" }, null);
+                if (o != null) {
+                    o.ForEach(type => {
+                        treeDesigners.AppendNode(new object[] {
+                        o.Key, type.FullName
+                        }, asmNode);
+                    });
+                }
+            });
+            treeDesigners.ExpandAll();
+            treeDesigners.EndUnboundLoad();
         }
 
         private IEnumerable<Type> loadTypes(Assembly assembly) {

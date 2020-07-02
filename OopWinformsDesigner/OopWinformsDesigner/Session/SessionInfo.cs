@@ -80,6 +80,14 @@ namespace OopWinformsDesigner.Session {
         }
 
         /// <summary>
+        /// This function indicates that a property has been changed
+        /// </summary>
+        /// <param name="propertyName">Name of the property that has chnaged</param>
+        public void RaisePropertyChanged(string propertyName) {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
+
+        /// <summary>
         /// Gets or sets the list of all designer objects.
         /// </summary>
         public IList<Type> Designers { get; set; }

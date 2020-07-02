@@ -347,6 +347,32 @@
               Recherche une chaîne localisée semblable à GridGroupPanelText.
             </summary>
         </member>
+        <member name="T:OopTranslation.OopDesigner">
+            <summary>
+              Une classe de ressource fortement typée destinée, entre autres, à la consultation des chaînes localisées.
+            </summary>
+        </member>
+        <member name="P:OopTranslation.OopDesigner.ResourceManager">
+            <summary>
+              Retourne l'instance ResourceManager mise en cache utilisée par cette classe.
+            </summary>
+        </member>
+        <member name="P:OopTranslation.OopDesigner.Culture">
+            <summary>
+              Remplace la propriété CurrentUICulture du thread actuel pour toutes
+              les recherches de ressources à l'aide de cette classe de ressource fortement typée.
+            </summary>
+        </member>
+        <member name="P:OopTranslation.OopDesigner.TreeListDesigner_AssemblyColumn">
+            <summary>
+              Recherche une chaîne localisée semblable à TreeListDesigner_AssemblyColumn.
+            </summary>
+        </member>
+        <member name="P:OopTranslation.OopDesigner.TreeListDesigner_TypeColumn">
+            <summary>
+              Recherche une chaîne localisée semblable à TreeListDesigner_TypeColumn.
+            </summary>
+        </member>
         <member name="T:OopTranslation.Ribbon">
             <summary>
               Une classe de ressource fortement typée destinée, entre autres, à la consultation des chaînes localisées.

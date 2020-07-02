@@ -23,6 +23,11 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>GridControl.resx</DependentUpon>
     </Compile>
+    <Compile Update="OopDesigner.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>OopDesigner.resx</DependentUpon>
+    </Compile>
     <Compile Update="Ribbon.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
@@ -90,6 +95,13 @@
     <EmbeddedResource Update="GridControl.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>GridControl.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="OopDesigner.fr.resx">
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="OopDesigner.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>OopDesigner.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Update="Ribbon.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>

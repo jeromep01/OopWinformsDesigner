@@ -163,6 +163,12 @@
             <param name="objectType"><see cref="T:OopDesigner.Enumerations.SharedObjectTypes"/></param>
             <param name="objectReference"><see cref="T:System.Object"/></param>
         </member>
+        <member name="M:OopWinformsDesigner.Session.SessionInfo.RaisePropertyChanged(System.String)">
+            <summary>
+            This function indicates that a property has been changed
+            </summary>
+            <param name="propertyName">Name of the property that has chnaged</param>
+        </member>
         <member name="P:OopWinformsDesigner.Session.SessionInfo.Designers">
             <summary>
             Gets or sets the list of all designer objects.

@@ -31,7 +31,7 @@
             this.sccGeneric = new DevExpress.XtraEditors.SplitContainerControl();
             this.sccPanelControl = new DevExpress.XtraEditors.SplitContainerControl();
             this.treeDesigners = new DevExpress.XtraTreeList.TreeList();
-            this.propertyGridControl1 = new DevExpress.XtraVerticalGrid.PropertyGridControl();
+            this.propertyGridDesigner = new DevExpress.XtraVerticalGrid.PropertyGridControl();
             this.sccDesignerHostAndTools = new DevExpress.XtraEditors.SplitContainerControl();
             this.panelDesignerHost = new DevExpress.XtraEditors.PanelControl();
             this.treeList2 = new DevExpress.XtraTreeList.TreeList();
@@ -40,7 +40,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.sccPanelControl)).BeginInit();
             this.sccPanelControl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.treeDesigners)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.propertyGridControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.propertyGridDesigner)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sccDesignerHostAndTools)).BeginInit();
             this.sccDesignerHostAndTools.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelDesignerHost)).BeginInit();
@@ -70,7 +70,7 @@
             this.sccPanelControl.Name = "sccPanelControl";
             this.sccPanelControl.Panel1.Controls.Add(this.treeDesigners);
             this.sccPanelControl.Panel1.Text = "Panel1";
-            this.sccPanelControl.Panel2.Controls.Add(this.propertyGridControl1);
+            this.sccPanelControl.Panel2.Controls.Add(this.propertyGridDesigner);
             this.sccPanelControl.Panel2.Text = "Panel2";
             this.sccPanelControl.Size = new System.Drawing.Size(200, 431);
             this.sccPanelControl.SplitterPosition = 189;
@@ -84,14 +84,14 @@
             this.treeDesigners.Size = new System.Drawing.Size(200, 189);
             this.treeDesigners.TabIndex = 0;
             // 
-            // propertyGridControl1
+            // propertyGridDesigner
             // 
-            this.propertyGridControl1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.propertyGridControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.propertyGridControl1.Location = new System.Drawing.Point(0, 0);
-            this.propertyGridControl1.Name = "propertyGridControl1";
-            this.propertyGridControl1.Size = new System.Drawing.Size(200, 232);
-            this.propertyGridControl1.TabIndex = 0;
+            this.propertyGridDesigner.Cursor = System.Windows.Forms.Cursors.Default;
+            this.propertyGridDesigner.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.propertyGridDesigner.Location = new System.Drawing.Point(0, 0);
+            this.propertyGridDesigner.Name = "propertyGridDesigner";
+            this.propertyGridDesigner.Size = new System.Drawing.Size(200, 232);
+            this.propertyGridDesigner.TabIndex = 0;
             // 
             // sccDesignerHostAndTools
             // 
@@ -136,7 +136,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.sccPanelControl)).EndInit();
             this.sccPanelControl.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.treeDesigners)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.propertyGridControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.propertyGridDesigner)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sccDesignerHostAndTools)).EndInit();
             this.sccDesignerHostAndTools.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.panelDesignerHost)).EndInit();
@@ -150,7 +150,7 @@
         private DevExpress.XtraEditors.SplitContainerControl sccGeneric;
         private DevExpress.XtraEditors.PanelControl panelDesignerHost;
         private DevExpress.XtraEditors.SplitContainerControl sccPanelControl;
-        private DevExpress.XtraVerticalGrid.PropertyGridControl propertyGridControl1;
+        private DevExpress.XtraVerticalGrid.PropertyGridControl propertyGridDesigner;
         private DevExpress.XtraTreeList.TreeList treeDesigners;
         private DevExpress.XtraEditors.SplitContainerControl sccDesignerHostAndTools;
         private DevExpress.XtraTreeList.TreeList treeList2;
