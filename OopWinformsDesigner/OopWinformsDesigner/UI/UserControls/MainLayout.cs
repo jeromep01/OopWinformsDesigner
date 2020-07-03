@@ -3,6 +3,8 @@
 using net.r_eg.MvsSln;
 using net.r_eg.MvsSln.Extensions;
 
+using NLog;
+
 using OopDesigner.EventArguments;
 using OopDesigner.Interfaces;
 
@@ -142,7 +144,6 @@ namespace OopWinformsDesigner.UI.UserControls {
             selectionService.SelectionChanged += DesignerHost_SelectionChanged;
             host.Activate();
         }
-
         private void Instance_NotifyStatusChanged(object sender, NotifyStatusChangeEventArgs e) {
             switch (e.Status) {
                 case OopDesigner.Enumerations.NotifyStatus.SolutionOpened:
@@ -153,11 +154,22 @@ namespace OopWinformsDesigner.UI.UserControls {
                             // This is the new format.
                             var o = s.Result.Env.GetOrLoadProject(prj);
 
-                            var msBuildStartupDirectory = o.AllEvaluatedProperties.FirstOrDefault(x => x.Name == "MSBuildStartupDirectory");
+                            o.AllEvaluatedProperties.OrderBy(p => p.Name).ForEach(prop => {
+                                LogManager.GetLogger("MainLayout").Log(LogLevel.Info,
+                                    $"{prop.Name}={prop.EvaluatedValue}");
+                            });
+                            var outputPath = o.AllEvaluatedProperties.LastOrDefault(x => x.Name == "OutputPath");
+                            var msBuildOutputDirectory = o.AllEvaluatedProperties.
+                                FirstOrDefault(x => x.Name == "MSBuildProjectDirectory");
                             var outputType = o.AllEvaluatedProperties.LastOrDefault(x => x.Name == "OutputType");
-                            if (msBuildStartupDirectory != null && outputType != null) {
-                                var extension = GetExtensionFromOutputType(outputType.EvaluatedValue);
-                                var asmFile = string.Join(@"\", msBuildStartupDirectory.EvaluatedValue, prj.name + extension);
+                            var targetFramework = o.AllEvaluatedProperties.LastOrDefault(x => x.Name == "TargetFramework");
+                            var targetFrameworks = o.AllEvaluatedProperties.LastOrDefault(x => x.Name == "TargetFrameworks");
+                            if (msBuildOutputDirectory != null && outputType != null) {
+                                var extension = GetExtensionFromOutputType(outputType.EvaluatedValue,
+                                    targetFramework != null ? targetFramework.EvaluatedValue : targetFrameworks.EvaluatedValue);
+                                var asmFile = string.Join(@"\",
+                                    string.Join(@"\", msBuildOutputDirectory.EvaluatedValue, outputPath.EvaluatedValue, targetFrameworks == null ? "" : targetFrameworks.EvaluatedValue.Split(';').First()),
+                                    prj.name + extension);
                                 var assembly = Assembly.LoadFile(asmFile);
                                 if (assembly != null) {
                                     loadTypes(assembly).ForEach(type => SessionInfo.Instance.Designers.Add(type));
@@ -192,15 +204,30 @@ namespace OopWinformsDesigner.UI.UserControls {
         }
 
         private IEnumerable<Type> loadTypes(Assembly assembly) {
-            // We must exclude abstract types as the Designer must create concrete class of them !
-            return assembly.GetTypes().Where(x => x.IsPublic && !x.IsAbstract &&
-            x.GetInterfaces().Any(i => i == typeof(IOopDesigner)));
+            IEnumerable<Type> types = new List<Type>();
+
+            try {
+                // We must exclude abstract types as the Designer must create concrete class of them !
+                var referencedAssemblies = assembly.GetReferencedAssemblies();
+                types = assembly.GetTypes().Where(x => x.IsPublic && !x.IsAbstract &&
+                 x.GetInterfaces().Any(i => i == typeof(IOopDesigner)));
+            }
+            catch (ReflectionTypeLoadException rtle) {
+                LogManager.GetCurrentClassLogger().Error(rtle.StackTrace);
+            }
+            catch (TypeLoadException tle) {
+                LogManager.GetCurrentClassLogger().Error(tle.StackTrace);
+            }
+            return types;
         }
 
-        private object GetExtensionFromOutputType(string evaluatedValue) {
-            if (evaluatedValue == "Library")
+        private object GetExtensionFromOutputType(string outputType, string targetFrameworks) {
+            if (outputType == "Library")
                 return ".dll";
 
+            if (!targetFrameworks.Contains(";") && targetFrameworks.Contains("netcoreapp")) {
+                return ".dll";
+            }
             return ".exe";
         }
     }

@@ -2,6 +2,8 @@
 using DevExpress.Skins;
 using DevExpress.UserSkins;
 
+using NLog;
+
 using OopTranslation.I18n;
 
 using System;
@@ -17,6 +19,7 @@ namespace OopWinformsDesigner {
 #if NETCOREAPP
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
 #endif
+            LogManager.GetLogger("MainLayout").Log(LogLevel.Info, $"Loading OopWinformsDesigner.");
             I18nInstaller.Install();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
