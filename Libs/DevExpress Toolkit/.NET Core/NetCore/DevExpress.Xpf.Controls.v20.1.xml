@@ -644,7 +644,7 @@
     </member>
     <member name="E:DevExpress.Xpf.Controls.BreadcrumbControl.QueryPath">
       <summary>
-        <para>Occurs when an end user enters a path into the path edit box and allows you to provide a collection of nodes that corresponds to end user request.</para>
+        <para>Occurs when an end user enters a path into the path edit box. Allows you to provide a collection of nodes that corresponds to end user request.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Xpf.Controls.BreadcrumbControl.QueryPathEvent">

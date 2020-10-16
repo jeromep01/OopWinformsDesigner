@@ -45,27 +45,27 @@
     </member>
     <member name="P:DevExpress.Xpf.Gantt.AddingNewResourceLinkEventArgs.AllocationPercentage">
       <summary>
-        <para></para>
+        <para>Gets a percentage of time the resource spends on a task.</para>
       </summary>
-      <value></value>
+      <value>A percentage of time the resource spends on a task.</value>
     </member>
     <member name="P:DevExpress.Xpf.Gantt.AddingNewResourceLinkEventArgs.NewResourceLink">
       <summary>
-        <para></para>
+        <para>Gets or sets a newly created resource link.</para>
       </summary>
-      <value></value>
+      <value>An object that is a newly created resource link.</value>
     </member>
     <member name="P:DevExpress.Xpf.Gantt.AddingNewResourceLinkEventArgs.Resource">
       <summary>
-        <para></para>
+        <para>Gets a resource for which a new link is being added.</para>
       </summary>
-      <value></value>
+      <value>A resource.</value>
     </member>
     <member name="P:DevExpress.Xpf.Gantt.AddingNewResourceLinkEventArgs.Task">
       <summary>
-        <para></para>
+        <para>Gets a task for which a new link is being added.</para>
       </summary>
-      <value></value>
+      <value>A task.</value>
     </member>
     <member name="T:DevExpress.Xpf.Gantt.BeginNewTaskDrawEventArgs">
       <summary>
@@ -286,7 +286,7 @@
     </member>
     <member name="F:DevExpress.Xpf.Gantt.GanttColumnBindingSource.ResourceLinks">
       <summary>
-        <para></para>
+        <para>Identifies the task&#39;s resource links.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Xpf.Gantt.GanttColumnBindingSource.StartDate">
@@ -781,9 +781,9 @@
     </member>
     <member name="P:DevExpress.Xpf.Gantt.GanttResourceControl.CornerRadius">
       <summary>
-        <para></para>
+        <para>Gets or sets resource corner radius.</para>
       </summary>
-      <value></value>
+      <value>A resource corner radius.</value>
     </member>
     <member name="F:DevExpress.Xpf.Gantt.GanttResourceControl.CornerRadiusProperty">
       <summary>
@@ -793,15 +793,15 @@
     </member>
     <member name="P:DevExpress.Xpf.Gantt.GanttResourceControl.Resource">
       <summary>
-        <para></para>
+        <para>Gets a resource.</para>
       </summary>
-      <value></value>
+      <value>A resource.</value>
     </member>
     <member name="P:DevExpress.Xpf.Gantt.GanttResourceControl.ResourceBackground">
       <summary>
-        <para></para>
+        <para>Gets a resource background.</para>
       </summary>
-      <value></value>
+      <value>A resource background.</value>
     </member>
     <member name="F:DevExpress.Xpf.Gantt.GanttResourceControl.ResourceBackgroundProperty">
       <summary>
@@ -811,9 +811,9 @@
     </member>
     <member name="P:DevExpress.Xpf.Gantt.GanttResourceControl.ResourceBorderBrush">
       <summary>
-        <para></para>
+        <para>Gets a resource border brush.</para>
       </summary>
-      <value></value>
+      <value>A resource border brush.</value>
     </member>
     <member name="F:DevExpress.Xpf.Gantt.GanttResourceControl.ResourceBorderBrushProperty">
       <summary>
@@ -823,9 +823,9 @@
     </member>
     <member name="P:DevExpress.Xpf.Gantt.GanttResourceControl.ResourceColor">
       <summary>
-        <para></para>
+        <para>Gets or sets a resource color.</para>
       </summary>
-      <value></value>
+      <value>A resource color.</value>
     </member>
     <member name="F:DevExpress.Xpf.Gantt.GanttResourceControl.ResourceColorProperty">
       <summary>
@@ -835,9 +835,9 @@
     </member>
     <member name="P:DevExpress.Xpf.Gantt.GanttResourceControl.ResourceForeground">
       <summary>
-        <para></para>
+        <para>Gets a resource foreground.</para>
       </summary>
-      <value></value>
+      <value>A resource foreground.</value>
     </member>
     <member name="F:DevExpress.Xpf.Gantt.GanttResourceControl.ResourceForegroundProperty">
       <summary>
@@ -847,15 +847,15 @@
     </member>
     <member name="P:DevExpress.Xpf.Gantt.GanttResourceControl.ResourceLink">
       <summary>
-        <para></para>
+        <para>Gets a resource link.</para>
       </summary>
-      <value></value>
+      <value>A resource link.</value>
     </member>
     <member name="P:DevExpress.Xpf.Gantt.GanttResourceControl.RowBackground">
       <summary>
-        <para></para>
+        <para>Gets or sets a row background.</para>
       </summary>
-      <value></value>
+      <value>A row background.</value>
     </member>
     <member name="F:DevExpress.Xpf.Gantt.GanttResourceControl.RowBackgroundProperty">
       <summary>
@@ -2705,12 +2705,12 @@
     </member>
     <member name="T:DevExpress.Xpf.Gantt.IResourceLinksSelector">
       <summary>
-        <para></para>
+        <para>Chooses resource links based on custom logic.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpf.Gantt.IResourceLinksSelector.SelectResourceLinks(System.Object)">
       <summary>
-        <para></para>
+        <para>Allows you to implement custom logic for choosing resource links.</para>
       </summary>
       <param name="item"></param>
       <returns></returns>

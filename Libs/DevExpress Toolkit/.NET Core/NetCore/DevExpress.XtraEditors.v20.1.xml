@@ -13171,6 +13171,11 @@ A specific version of the addressed image is automatically chosen based on the a
         <para>Returns &quot;Cancel pending&quot;.</para>
       </summary>
     </member>
+    <member name="F:DevExpress.XtraEditors.Controls.StringId.ProgressCopyingData">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
     <member name="F:DevExpress.XtraEditors.Controls.StringId.ProgressCreateDocument">
       <summary>
         <para>Returns &quot;Creating document&quot;.</para>
@@ -13194,6 +13199,11 @@ A specific version of the addressed image is automatically chosen based on the a
     <member name="F:DevExpress.XtraEditors.Controls.StringId.ProgressPanelDefaultDescription">
       <summary>
         <para>The <see cref="T:DevExpress.XtraWaitForm.ProgressPanel"/>&#39;s default description.Return value: Loading ...</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.XtraEditors.Controls.StringId.ProgressPastingData">
+      <summary>
+        <para></para>
       </summary>
     </member>
     <member name="F:DevExpress.XtraEditors.Controls.StringId.ProgressPrinting">
@@ -14735,7 +14745,7 @@ A specific version of the addressed image is automatically chosen based on the a
     </member>
     <member name="E:DevExpress.XtraEditors.FilterControl.QueryCustomFunctions">
       <summary>
-        <para>Allows you to add custom function based filters (for example, &#39;discount is more than 15%&#39;) to Excel-style pop-up filter menus and/or the filter editor.</para>
+        <para>Allows you to add custom-function-based filters (for example, &#39;discount is more than 15%&#39;) to Excel-style pop-up filter menus and/or the filter editor.</para>
       </summary>
     </member>
     <member name="P:DevExpress.XtraEditors.FilterControl.ReadOnly">
@@ -24606,6 +24616,12 @@ In bound mode, this method populates the item collection before returning it.</p
       </summary>
       <value>The Open File dialog&#39;s custom filter. If this property is set to an empty string, the dialog uses a default filter.</value>
     </member>
+    <member name="P:DevExpress.XtraEditors.Repository.RepositoryItemPictureEdit.OptionsEditDialog">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
     <member name="P:DevExpress.XtraEditors.Repository.RepositoryItemPictureEdit.OptionsMask">
       <summary>
         <para>Provides access to settings that enable masked mode and allow you to customize the masked mode behavior.</para>
@@ -26385,6 +26401,12 @@ The default value is <see cref="F:DevExpress.Utils.DefaultBoolean.Default"/>.</v
         <para>Gets the class name of an edit control corresponding to the current repository item.</para>
       </summary>
       <value>The editor&#39;s class name.</value>
+    </member>
+    <member name="P:DevExpress.XtraEditors.Repository.RepositoryItemTimeSpanEdit.EditValueChangedFiringMode">
+      <summary>
+        <para>Gets or sets whether the <see cref="E:DevExpress.XtraEditors.Repository.RepositoryItem.EditValueChanged"/> event fires when the value changes or after a delay.</para>
+      </summary>
+      <value>A value that specifies whether the event fires when the edit value changes or after a delay.</value>
     </member>
     <member name="M:DevExpress.XtraEditors.Repository.RepositoryItemTimeSpanEdit.GetDisplayText(DevExpress.Utils.FormatInfo,System.Object)">
       <summary>
@@ -28687,6 +28709,11 @@ A specific version of the addressed image is automatically chosen based on the a
       </summary>
       <value>An Image displayed as the <see cref="T:DevExpress.XtraEditors.TileControl"/>&#39;s background.</value>
     </member>
+    <member name="E:DevExpress.XtraEditors.TileControl.BeforeLoadLayout">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
     <member name="M:DevExpress.XtraEditors.TileControl.BeginUpdate">
       <summary>
         <para>Locks the <see cref="T:DevExpress.XtraEditors.TileControl"></see> object by preventing visual updates of the object and its elements until the EndUpdate method is called.</para>
@@ -28987,6 +29014,11 @@ This property is now obsolete. Use the <see cref="P:DevExpress.XtraEditors.TileC
         <para>Gets or sets whether this <see cref="T:DevExpress.XtraEditors.TileControl"/> operates in regular or adaptive layout mode.</para>
       </summary>
       <value>A TileControlLayoutMode enumerator value that specifies whether this <see cref="T:DevExpress.XtraEditors.TileControl"/> operates in regular or adaptive layout mode.</value>
+    </member>
+    <member name="E:DevExpress.XtraEditors.TileControl.LayoutUpgrade">
+      <summary>
+        <para></para>
+      </summary>
     </member>
     <member name="P:DevExpress.XtraEditors.TileControl.LookAndFeel">
       <summary>
@@ -33474,17 +33506,17 @@ Allows you to select a form that should be subsequently activated.</para>
     </member>
     <member name="T:DevExpress.XtraSplashScreen.ParentFormState">
       <summary>
-        <para></para>
+        <para>Enumerates values that specify whether the form under the wait form is enabled.</para>
       </summary>
     </member>
     <member name="F:DevExpress.XtraSplashScreen.ParentFormState.Locked">
       <summary>
-        <para></para>
+        <para>The form under the wait form is disabled.</para>
       </summary>
     </member>
     <member name="F:DevExpress.XtraSplashScreen.ParentFormState.Unlocked">
       <summary>
-        <para></para>
+        <para>The form under the wait form is enabled.</para>
       </summary>
     </member>
     <member name="T:DevExpress.XtraSplashScreen.ShowMode">
@@ -33690,22 +33722,22 @@ Allows you to select a form that should be subsequently activated.</para>
     </member>
     <member name="T:DevExpress.XtraSplashScreen.SplashFormStartPosition">
       <summary>
-        <para>Contains values that specify a splash form&#39;s start position.</para>
+        <para>Enumerates values that specify the screen position where a splash screen/wait indicator is displayed.</para>
       </summary>
     </member>
     <member name="F:DevExpress.XtraSplashScreen.SplashFormStartPosition.CenterScreen">
       <summary>
-        <para></para>
+        <para>A splash screen/wait form is displayed at the center of the screen.</para>
       </summary>
     </member>
     <member name="F:DevExpress.XtraSplashScreen.SplashFormStartPosition.Default">
       <summary>
-        <para>A splash form&#39;s default start position. A <see cref="T:DevExpress.XtraSplashScreen.SplashScreen"/> is displayed centered against the screen and a <see cref="T:DevExpress.XtraWaitForm.WaitForm"/> is centered against its parent form.</para>
+        <para>The position is not specified explicitly. If the main application form is not yet displayed, the splash form is shown at the center of the screen. If the main application form is already displayed, the splash form is centered relative to the active form. If the parentForm parameter of a method that shows a wait form is specified, the wait form is centered relative to the parent form.</para>
       </summary>
     </member>
     <member name="F:DevExpress.XtraSplashScreen.SplashFormStartPosition.Manual">
       <summary>
-        <para>The start position of a splash form is specified manually (via the <see cref="P:DevExpress.XtraSplashScreen.SplashScreenManager.SplashFormLocation"/> property or a parameter of the splash form display method).</para>
+        <para>To specify the position, use the <see cref="P:DevExpress.XtraSplashScreen.SplashScreenManager.SplashFormLocation"/> property or the location parameter of a method that shows the splash form.</para>
       </summary>
     </member>
     <member name="T:DevExpress.XtraSplashScreen.SplashScreen">

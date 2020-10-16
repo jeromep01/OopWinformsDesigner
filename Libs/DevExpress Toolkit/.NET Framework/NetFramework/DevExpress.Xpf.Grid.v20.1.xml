@@ -277,7 +277,7 @@
     </member>
     <member name="T:DevExpress.Xpf.Core.FilteringUI.FilterBehavior">
       <summary>
-        <para>Allows you to use the Filter Editor, Filter Panel, and Filter Elements to filter data-bound controls that do not provide a filtering UI (for example, Charts and Data Editors).</para>
+        <para>Allows you to use the Filter Editor, Filter Panel, and Filter Elements to filter data-bound controls that do not provide a filtering UI (for example, Chart, Scheduler, Data Editors).</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpf.Core.FilteringUI.FilterBehavior.#ctor">

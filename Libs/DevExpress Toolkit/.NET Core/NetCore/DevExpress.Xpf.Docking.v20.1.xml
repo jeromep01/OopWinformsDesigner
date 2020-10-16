@@ -4864,6 +4864,18 @@ This is a dependency property.</para>
         <para>Identifies the <see cref="P:DevExpress.Xpf.Docking.FloatGroup.SizeToContent"/> attached property.</para>
       </summary>
     </member>
+    <member name="P:DevExpress.Xpf.Docking.FloatGroup.WindowStyle">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="F:DevExpress.Xpf.Docking.FloatGroup.WindowStyleProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.Docking.FloatGroup.WindowStyle"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
     <member name="P:DevExpress.Xpf.Docking.FloatGroup.WindowTaskbarIcon">
       <summary>
         <para>Gets or sets an icon displayed for the current float group in the Windows Taskbar. This is an attached property.</para>

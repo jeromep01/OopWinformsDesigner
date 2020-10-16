@@ -729,11 +729,6 @@
       </summary>
       <param name="beginGroup">Specifies whether the item begins a group.</param>
     </member>
-    <member name="P:DevExpress.Web.ASPxGantt.GanttDefaultToolbarItem.Items">
-      <summary>
-        <para>For internal use only.</para>
-      </summary>
-    </member>
     <member name="T:DevExpress.Web.ASPxGantt.GanttEditingSettings">
       <summary>
         <para>Provides access to editing settings.</para>
@@ -1307,12 +1302,6 @@
         <para>A base class for classes that implement standard and custom toolbar items.</para>
       </summary>
     </member>
-    <member name="P:DevExpress.Web.ASPxGantt.GanttToolbarItemBase.Name">
-      <summary>
-        <para>Specifies a toolbar item&#39;s name.</para>
-      </summary>
-      <value>The name.</value>
-    </member>
     <member name="T:DevExpress.Web.ASPxGantt.GanttToolbarItemCollection">
       <summary>
         <para>Represents the toolbar item collection.</para>
@@ -1432,6 +1421,12 @@
       </summary>
       <param name="source">An object whose settings are assigned to the current object.</param>
     </member>
+    <member name="P:DevExpress.Web.ASPxGantt.GanttViewSettings.FirstDayOfWeek">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
     <member name="P:DevExpress.Web.ASPxGantt.GanttViewSettings.ShowResources">
       <summary>
         <para>Specifies whether to display task resources.</para>
@@ -1522,7 +1517,7 @@
     </member>
     <member name="T:DevExpress.Web.ASPxGantt.Localization.ASPxGanttLocalizer">
       <summary>
-        <para>An object providing the means to localize the <see cref="T:DevExpress.Web.ASPxGantt.ASPxGantt"/> user interface elements at runtime.</para>
+        <para>Provides a means to localize the <see cref="T:DevExpress.Web.ASPxGantt.ASPxGantt"/>&#39;s UI elements at runtime.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Web.ASPxGantt.Localization.ASPxGanttLocalizer.#ctor">
@@ -1545,7 +1540,7 @@
     </member>
     <member name="T:DevExpress.Web.ASPxGantt.Localization.ASPxGanttResourcesLocalizer">
       <summary>
-        <para>An object that provides the means to localize the <see cref="T:DevExpress.Web.ASPxGantt.ASPxGantt"/>&#39;s user interface elements at runtime.</para>
+        <para>Provides a means to localize the <see cref="T:DevExpress.Web.ASPxGantt.ASPxGantt"/>&#39;s UI elements at runtime.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Web.ASPxGantt.Localization.ASPxGanttResourcesLocalizer.#ctor">
@@ -1555,7 +1550,7 @@
     </member>
     <member name="T:DevExpress.Web.ASPxGantt.Localization.ASPxGanttStringId">
       <summary>
-        <para>Contains values for strings that can be localized in the <see cref="T:DevExpress.Web.ASPxGantt.ASPxGantt"/>.</para>
+        <para>Contains strings that can be localized for the <see cref="T:DevExpress.Web.ASPxGantt.ASPxGantt"/>. For more information, refer to the  topic.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Web.ASPxGantt.Localization.ASPxGanttStringId.Add">
@@ -1563,9 +1558,19 @@
         <para>Contains localizable text of the corresponding UI element.</para>
       </summary>
     </member>
+    <member name="F:DevExpress.Web.ASPxGantt.Localization.ASPxGanttStringId.AddNewTask">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
     <member name="F:DevExpress.Web.ASPxGantt.Localization.ASPxGanttStringId.CancelButton">
       <summary>
         <para>Contains localizable text of the corresponding UI element.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxGantt.Localization.ASPxGanttStringId.CollapseAll">
+      <summary>
+        <para></para>
       </summary>
     </member>
     <member name="F:DevExpress.Web.ASPxGantt.Localization.ASPxGanttStringId.DeleteButton">
@@ -1576,6 +1581,11 @@
     <member name="F:DevExpress.Web.ASPxGantt.Localization.ASPxGanttStringId.DeleteDependency">
       <summary>
         <para>Contains localizable text of the corresponding UI element.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxGantt.Localization.ASPxGanttStringId.DeleteSelectedTask">
+      <summary>
+        <para></para>
       </summary>
     </member>
     <member name="F:DevExpress.Web.ASPxGantt.Localization.ASPxGanttStringId.DeleteTask">
@@ -1596,6 +1606,16 @@
     <member name="F:DevExpress.Web.ASPxGantt.Localization.ASPxGanttStringId.End">
       <summary>
         <para>Contains localizable text of the corresponding UI element.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxGantt.Localization.ASPxGanttStringId.ExpandAll">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxGantt.Localization.ASPxGanttStringId.FullScreen">
+      <summary>
+        <para></para>
       </summary>
     </member>
     <member name="F:DevExpress.Web.ASPxGantt.Localization.ASPxGanttStringId.KeepDependencyAndMove">
@@ -1631,6 +1651,11 @@
     <member name="F:DevExpress.Web.ASPxGantt.Localization.ASPxGanttStringId.QuarterAbbreviation">
       <summary>
         <para>Contains localizable text of the corresponding UI element.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxGantt.Localization.ASPxGanttStringId.Redo">
+      <summary>
+        <para></para>
       </summary>
     </member>
     <member name="F:DevExpress.Web.ASPxGantt.Localization.ASPxGanttStringId.ResourceManager">
@@ -1676,6 +1701,21 @@
     <member name="F:DevExpress.Web.ASPxGantt.Localization.ASPxGanttStringId.Title">
       <summary>
         <para>Contains localizable text of the corresponding UI element.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxGantt.Localization.ASPxGanttStringId.Undo">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxGantt.Localization.ASPxGanttStringId.ZoomIn">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Web.ASPxGantt.Localization.ASPxGanttStringId.ZoomOut">
+      <summary>
+        <para></para>
       </summary>
     </member>
     <member name="T:DevExpress.Web.ASPxGantt.Month">
@@ -1881,12 +1921,6 @@
         <para>Copies the settings of the specified object to the current one.</para>
       </summary>
       <param name="source">An object whose settings are assigned to the current object.</param>
-    </member>
-    <member name="P:DevExpress.Web.ASPxGantt.StripLine.Collection">
-      <summary>
-        <para>Gets a collection of strip lines to which the strip line belongs.</para>
-      </summary>
-      <value>The collection of strip lines.</value>
     </member>
     <member name="P:DevExpress.Web.ASPxGantt.StripLine.CssClass">
       <summary>

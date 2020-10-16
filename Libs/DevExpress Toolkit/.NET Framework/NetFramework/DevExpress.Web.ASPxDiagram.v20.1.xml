@@ -420,6 +420,12 @@
         <para>Initializes a new instance of the <see cref="T:DevExpress.Web.ASPxDiagram.DiagramClientSideEvents"/> class.</para>
       </summary>
     </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.DiagramClientSideEvents.BeginSynchronization">
+      <summary>
+        <para>Specifies the name of the JavaScript function or the entire code which will handle the client <see cref="P:js-ASPxClientDiagram.BeginSynchronization"/> event.</para>
+      </summary>
+      <value>The name of a JavaScript function or the JavaScript function&#39;s code used to handle the event.</value>
+    </member>
     <member name="P:DevExpress.Web.ASPxDiagram.DiagramClientSideEvents.CustomShapeCreateTemplate">
       <summary>
         <para>Specifies the name of the JavaScript function or the entire code which will handle the client <see cref="P:js-ASPxClientDiagram.CustomShapeCreateTemplate"/> event.</para>
@@ -429,6 +435,12 @@
     <member name="P:DevExpress.Web.ASPxDiagram.DiagramClientSideEvents.DiagramChanged">
       <summary>
         <para>Specifies the name of the JavaScript function or the entire code which will handle the client <see cref="P:js-ASPxClientDiagram.DiagramChanged"/> event.</para>
+      </summary>
+      <value>The name of a JavaScript function or the JavaScript function&#39;s code used to handle the event.</value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxDiagram.DiagramClientSideEvents.EndSynchronization">
+      <summary>
+        <para>Specifies the name of the JavaScript function or the entire code which will handle the client <see cref="P:js-ASPxClientDiagram.EndSynchronization"/> event.</para>
       </summary>
       <value>The name of a JavaScript function or the JavaScript function&#39;s code used to handle the event.</value>
     </member>
@@ -1040,6 +1052,12 @@
         <para>Initializes a new <see cref="T:DevExpress.Web.ASPxDiagram.DiagramImages"/> class instance with the specified owner.</para>
       </summary>
       <param name="owner">An object that implements the ISkinOwner interface.</param>
+    </member>
+    <member name="M:DevExpress.Web.ASPxDiagram.DiagramImages.CopyFrom(DevExpress.Web.ImagesBase)">
+      <summary>
+        <para></para>
+      </summary>
+      <param name="source" />
     </member>
     <member name="P:DevExpress.Web.ASPxDiagram.DiagramImages.MenuIconSet">
       <summary>
@@ -2059,7 +2077,7 @@
     </member>
     <member name="T:DevExpress.Web.ASPxDiagram.Localization.ASPxDiagramLocalizer">
       <summary>
-        <para>An object providing a means to localize the <see cref="T:DevExpress.Web.ASPxDiagram.ASPxDiagram"/> user interface elements at runtime.</para>
+        <para>Provides a means to localize the <see cref="T:DevExpress.Web.ASPxDiagram.ASPxDiagram"/>&#39;s UI elements at runtime.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Web.ASPxDiagram.Localization.ASPxDiagramLocalizer.#ctor">
@@ -2082,7 +2100,7 @@
     </member>
     <member name="T:DevExpress.Web.ASPxDiagram.Localization.ASPxDiagramResourcesLocalizer">
       <summary>
-        <para>An object that provids a means to localize the <see cref="T:DevExpress.Web.ASPxDiagram.ASPxDiagram"/>&#39;s user interface elements at runtime.</para>
+        <para>Provides a means to localize the <see cref="T:DevExpress.Web.ASPxDiagram.ASPxDiagram"/>&#39;s UI elements at runtime.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Web.ASPxDiagram.Localization.ASPxDiagramResourcesLocalizer.#ctor">
@@ -2092,7 +2110,7 @@
     </member>
     <member name="T:DevExpress.Web.ASPxDiagram.Localization.ASPxDiagramStringId">
       <summary>
-        <para>Contains values for strings that can be localized in the <see cref="T:DevExpress.Web.ASPxDiagram.ASPxDiagram"/>.</para>
+        <para>Contains strings that can be localized for the <see cref="T:DevExpress.Web.ASPxDiagram.ASPxDiagram"/>. For more information, refer to the  topic.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Web.ASPxDiagram.Localization.ASPxDiagramStringId.AutoZoomByContent">

@@ -5632,6 +5632,11 @@ The legacy default color is shown below:</para>
         <para>Fires when you drop the appointment dragged with the mouse.</para>
       </summary>
     </member>
+    <member name="E:DevExpress.XtraScheduler.SchedulerControl.AppointmentDropComplete">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
     <member name="E:DevExpress.XtraScheduler.SchedulerControl.AppointmentFlyoutShowing">
       <summary>
         <para>Occurs before the appointment flyout is shown and allows you to substitute a flyout with another control.</para>

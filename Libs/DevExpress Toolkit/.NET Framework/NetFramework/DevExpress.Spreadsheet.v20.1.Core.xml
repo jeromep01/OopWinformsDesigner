@@ -1370,9 +1370,9 @@
     </member>
     <member name="P:DevExpress.Spreadsheet.Cell.DisplayText">
       <summary>
-        <para>Gets the string that specifies the formatted cell value as it is displayed.</para>
+        <para>Returns a cell&#39;s displayed value.</para>
       </summary>
-      <value>A <see cref="T:System.String"/> value that specifies the cell&#39;s display text.</value>
+      <value>The cell&#39;s display text.</value>
     </member>
     <member name="M:DevExpress.Spreadsheet.Cell.GetArrayFormulaRange">
       <summary>
@@ -22360,7 +22360,7 @@ The default is Clip.</value>
     </member>
     <member name="T:DevExpress.Spreadsheet.ShapeType">
       <summary>
-        <para>Lists types of graphical objects that can be placed within a worksheet.</para>
+        <para>Lists types of graphical objects a worksheet can contain.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Spreadsheet.ShapeType.Chart">
@@ -23600,8 +23600,8 @@ The default is Clip.</value>
         <para>Creates a new style based on format settings of the specified cell range.</para>
       </summary>
       <param name="name">A style name.</param>
-      <param name="range">A cell range whose top left cell provides format settings for a new style.</param>
-      <returns>The created cell style.</returns>
+      <param name="range">A cell range whose top left cell contains format settings for a new style.</param>
+      <returns>The newly created cell style.</returns>
     </member>
     <member name="M:DevExpress.Spreadsheet.StyleCollection.Contains(DevExpress.Spreadsheet.BuiltInStyleId)">
       <summary>
@@ -30029,7 +30029,7 @@ The default is Clip.</value>
     </member>
     <member name="F:DevExpress.XtraSpreadsheet.SpreadsheetPrintContent.Selection">
       <summary>
-        <para>Prints selected content of the active worksheet. If a chart sheet is active, it is printed completely.</para>
+        <para>Prints selected cells of the active worksheet. If a chart sheet is active, it is printed completely.</para>
       </summary>
     </member>
     <member name="T:DevExpress.XtraSpreadsheet.SpreadsheetPrintOptions">
@@ -30044,9 +30044,9 @@ The default is Clip.</value>
     </member>
     <member name="P:DevExpress.XtraSpreadsheet.SpreadsheetPrintOptions.PrintContent">
       <summary>
-        <para></para>
+        <para>Specifies spreadsheet content to print/display within the Print Preview.</para>
       </summary>
-      <value></value>
+      <value>An enumeration member that specifies  spreadsheet content to print.</value>
     </member>
     <member name="P:DevExpress.XtraSpreadsheet.SpreadsheetPrintOptions.RibbonPreview">
       <summary>

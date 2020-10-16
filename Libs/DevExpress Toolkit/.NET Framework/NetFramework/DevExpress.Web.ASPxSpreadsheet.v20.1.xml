@@ -25,14 +25,6 @@
       </summary>
       <value>An integer value specifying the index of an active ribbon tab.</value>
     </member>
-    <member name="M:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheet.AddImage(System.IO.Stream,System.String)">
-      <summary>
-        <para>Adds an image specified by its file name.</para>
-      </summary>
-      <param name="stream">A Stream object.</param>
-      <param name="fileName">A string value specifying the file name.</param>
-      <returns>A string value.</returns>
-    </member>
     <member name="P:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheet.AssociatedRibbonID">
       <summary>
         <para>Specifies the ID of an <see cref="T:DevExpress.Web.ASPxRibbon"/> control, used as an external toolbar.</para>
@@ -112,11 +104,6 @@
       </summary>
       <value>A string value that uniquely identifies the document.</value>
     </member>
-    <member name="E:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheet.DocumentSelectorCloudProviderRequest">
-      <summary>
-        <para>Fires when a cloud provider used in the Document Selector sends a request to a cloud service.</para>
-      </summary>
-    </member>
     <member name="E:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheet.DocumentSelectorFileUploading">
       <summary>
         <para>Fires before a file is uploaded to the Document Selector and allows you to cancel the action.</para>
@@ -158,12 +145,6 @@
         <para>Gets or sets a value specifying whether the <see cref="T:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheet"/> is used in full-screen mode.</para>
       </summary>
       <value>true to enable full-screen mode; otherwise, false.</value>
-    </member>
-    <member name="M:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheet.GetCurrentDocumentPath">
-      <summary>
-        <para>Gets the path of the currently opened document.</para>
-      </summary>
-      <returns>A string value specifying the document path.</returns>
     </member>
     <member name="M:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheet.GetImageDirectory">
       <summary>
@@ -284,12 +265,6 @@
       </summary>
       <value>A <see cref="T:DevExpress.Web.ASPxSpreadsheet.SpreadsheetRibbonContextTabCategoryCollection"/> object that is the collection of context tab categories.</value>
     </member>
-    <member name="P:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheet.RibbonKeyboardSupport">
-      <summary>
-        <para>Gets or sets a value that specifies whether keyboard navigation is available in the Spreadsheet&#39;s ribbon.</para>
-      </summary>
-      <value>true, if keyboard navigation is enabled; otherwise, false.</value>
-    </member>
     <member name="P:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheet.RibbonMode">
       <summary>
         <para>Specifies the type of the <see cref="T:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheet"/> toolbar.</para>
@@ -355,12 +330,6 @@
         <para>Provides access to settings that are related to the FileManager used within some built-in dialogs dialog.</para>
       </summary>
       <value>An <see cref="T:DevExpress.Web.ASPxSpreadsheet.SpreadsheetDocumentSelectorSettings"/> object that contains the Document Selector dialog&#39;s settings.</value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheet.SettingsForms">
-      <summary>
-        <para>Gets the settings allowing you to specify paths to dialog forms (UserControls) stored within a web site.</para>
-      </summary>
-      <value>A <see cref="T:DevExpress.Web.ASPxSpreadsheet.SpreadsheetFormsSettings"/> object containing properties which point to individual dialog forms.</value>
     </member>
     <member name="P:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheet.SettingsLoadingPanel">
       <summary>
@@ -468,6 +437,17 @@
         <para>Provides access to an object enabling you to specify a worksheet area that is visible in the Spreadsheet and allows end-user input.</para>
       </summary>
       <value>A <see cref="T:DevExpress.Web.ASPxSpreadsheet.WorksheetDisplayArea"/> object.</value>
+    </member>
+    <member name="T:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheetBehaviorOptionsBase">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheetBehaviorOptionsBase.#ctor(DevExpress.Web.IPropertiesOwner)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheetBehaviorOptionsBase"/> class with specified settings.</para>
+      </summary>
+      <param name="owner" />
     </member>
     <member name="T:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheetBehaviorSettings">
       <summary>
@@ -790,7 +770,7 @@
     </member>
     <member name="T:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetLocalizer">
       <summary>
-        <para>An object providing a means to localize the <see cref="T:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheet"/>&#39;s user interface elements at runtime.</para>
+        <para>Provides a means to localize the <see cref="T:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheet"/>&#39;s UI elements at runtime.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetLocalizer.#ctor">
@@ -813,7 +793,7 @@
     </member>
     <member name="T:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetResourcesLocalizer">
       <summary>
-        <para>An object providing a means to localize the <see cref="T:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheet"/>&#39;s user interface elements at runtime.</para>
+        <para>Provides a means to localize the <see cref="T:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheet"/>&#39;s UI elements at runtime.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetResourcesLocalizer.#ctor">
@@ -823,7 +803,7 @@
     </member>
     <member name="T:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId">
       <summary>
-        <para>Contains values corresponding to strings that can be localized for the <see cref="T:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheet"/>.</para>
+        <para>Contains strings that can be localized for the <see cref="T:DevExpress.Web.ASPxSpreadsheet.ASPxSpreadsheet"/>. For more information, refer to the  topic.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Web.ASPxSpreadsheet.Localization.ASPxSpreadsheetStringId.BorderLineStyle_Dashed">
@@ -2796,47 +2776,11 @@ This member is not in effect.</para>
       </summary>
       <param name="source">A <see cref="T:DevExpress.Web.StylesBase"/> object that represents an object which the settings will be copied from.</param>
     </member>
-    <member name="P:DevExpress.Web.ASPxSpreadsheet.SpreadsheetFormulaBarButtonSectionStyles.Item">
-      <summary>
-        <para>Gets the style settings that define the appearance of formula bar&#39;s item.</para>
-      </summary>
-      <value>A <see cref="T:DevExpress.Web.MenuItemStyle"/> object that contains the style settings.</value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxSpreadsheet.SpreadsheetFormulaBarButtonSectionStyles.Link">
-      <summary>
-        <para>Gets the style settings that define the appearance of links.</para>
-      </summary>
-      <value>A <see cref="T:DevExpress.Web.LinkStyle"/> object that contains the style settings.</value>
-    </member>
     <member name="P:DevExpress.Web.ASPxSpreadsheet.SpreadsheetFormulaBarButtonSectionStyles.MainElement">
       <summary>
         <para>Gets the style settings that define the appearance of the formula bar&#39;s main element.</para>
       </summary>
       <value>A <see cref="T:DevExpress.Web.AppearanceStyle"/> object that contains the style settings.</value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxSpreadsheet.SpreadsheetFormulaBarButtonSectionStyles.ScrollButton">
-      <summary>
-        <para>Gets the style settings that define the scroll button appearance.</para>
-      </summary>
-      <value>A <see cref="T:DevExpress.Web.MenuScrollButtonStyle"/> object that contains the style settings.</value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxSpreadsheet.SpreadsheetFormulaBarButtonSectionStyles.Style">
-      <summary>
-        <para>Gets the style settings defining the formula bar appearance.</para>
-      </summary>
-      <value>A <see cref="T:DevExpress.Web.MenuStyle"/> object containing the style settings.</value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxSpreadsheet.SpreadsheetFormulaBarButtonSectionStyles.SubMenu">
-      <summary>
-        <para>Gets the style settings that define the submenu appearance within a menu.</para>
-      </summary>
-      <value>A <see cref="T:DevExpress.Web.MenuStyle"/> object that contains the style settings.</value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxSpreadsheet.SpreadsheetFormulaBarButtonSectionStyles.SubMenuItem">
-      <summary>
-        <para>Gets the style settings for all submenu items within the current menu.</para>
-      </summary>
-      <value>A <see cref="T:DevExpress.Web.MenuItemStyle"/> object that contains the style settings.</value>
     </member>
     <member name="T:DevExpress.Web.ASPxSpreadsheet.SpreadsheetFormulaBarStyles">
       <summary>

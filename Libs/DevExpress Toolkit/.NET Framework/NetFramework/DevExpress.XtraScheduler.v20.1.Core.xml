@@ -16,10 +16,10 @@
     </member>
     <member name="M:DevExpress.XtraScheduler.AdditionalAppointmentsDragEventArgs.#ctor(System.Collections.Generic.List{DevExpress.XtraScheduler.AppointmentDragInfo},System.Collections.Generic.List{DevExpress.XtraScheduler.AppointmentDragInfo})">
       <summary>
-        <para>Initializes a new instance of the <see cref="T:DevExpress.XtraScheduler.AdditionalAppointmentsDragEventArgs"/> class with the specified settings.</para>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.XtraScheduler.AdditionalAppointmentsDragEventArgs"/> class with specified settings.</para>
       </summary>
-      <param name="primaryInfos">A List&lt;<see cref="T:DevExpress.XtraScheduler.AppointmentDragInfo"/>&gt; collection containing characteristics of the primary dragged appointments.</param>
-      <param name="additionalInfos">A List&lt;<see cref="T:DevExpress.XtraScheduler.AppointmentDragInfo"/>&gt; collection containing characteristics of the appointments which have been added to the initially dragged appointments in the <see cref="E:DevExpress.XtraScheduler.SchedulerControl.AppointmentDrag"/> event.</param>
+      <param name="primaryInfos"></param>
+      <param name="additionalInfos"></param>
     </member>
     <member name="P:DevExpress.XtraScheduler.AdditionalAppointmentsDragEventArgs.AdditionalAppointmentInfos">
       <summary>
@@ -1799,9 +1799,9 @@
     </member>
     <member name="M:DevExpress.XtraScheduler.AppointmentResourceIdCollection.#ctor(System.Boolean)">
       <summary>
-        <para>Initializes a new instance of the <see cref="T:DevExpress.XtraScheduler.AppointmentResourceIdCollection"/> class and allows to add default resource to the collection.</para>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.XtraScheduler.AppointmentResourceIdCollection"/> class and allows you to add default resources to the collection.</para>
       </summary>
-      <param name="canAddDefaultContent">true to add default resource ID (<see cref="P:DevExpress.XtraScheduler.EmptyResourceId.Id"/>); otherwise, false.</param>
+      <param name="canAddDefaultContent">true to add the default resource ID (<see cref="P:DevExpress.XtraScheduler.EmptyResourceId.Id"/>); otherwise, false.</param>
     </member>
     <member name="T:DevExpress.XtraScheduler.AppointmentSelectionChangeAction">
       <summary>
@@ -8325,6 +8325,13 @@ A <see cref="T:System.DateTime"/> object specifying the appointment start - the 
         <para>Populates the data source fields mapped to the <see cref="P:DevExpress.XtraScheduler.Appointment.OriginalOccurrenceStart"/> and <see cref="P:DevExpress.XtraScheduler.Appointment.OriginalOccurrenceEnd"/> properties.</para>
       </summary>
       <param name="storage">An <see cref="T:DevExpress.XtraScheduler.AppointmentStorageBase"/> object that is the storage containing appointments.</param>
+    </member>
+    <member name="M:DevExpress.XtraScheduler.OriginalOccurrenceDateHelper.Update(DevExpress.XtraScheduler.AppointmentStorageBase,DevExpress.XtraScheduler.Appointment)">
+      <summary>
+        <para></para>
+      </summary>
+      <param name="storage"></param>
+      <param name="appointment"></param>
     </member>
     <member name="N:DevExpress.XtraScheduler.Outlook">
       <summary>

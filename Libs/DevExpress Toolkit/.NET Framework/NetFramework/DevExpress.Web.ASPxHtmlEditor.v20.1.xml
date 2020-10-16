@@ -777,12 +777,6 @@
       </summary>
       <value>An <see cref="T:DevExpress.Web.ASPxHtmlEditor.ASPxHtmlEditorImageUploadSettings"/> object that holds options for uploading flash files.</value>
     </member>
-    <member name="P:DevExpress.Web.ASPxHtmlEditor.ASPxHtmlEditor.SettingsForms">
-      <summary>
-        <para>Gets the settings allowing you to specify paths to dialog forms (UserControls) stored within a web site.</para>
-      </summary>
-      <value>A <see cref="T:DevExpress.Web.ASPxHtmlEditor.HtmlEditorFormsSettings"/> object containing properties which point to individual dialog forms.</value>
-    </member>
     <member name="P:DevExpress.Web.ASPxHtmlEditor.ASPxHtmlEditor.SettingsHtmlEditing">
       <summary>
         <para>Provides access to settings that relate to editing the HTML markup.</para>
@@ -1470,15 +1464,9 @@
       </summary>
       <value>A <see cref="T:DevExpress.Web.ASPxHtmlEditor.HtmlEditorUploadControlFileSystemSettings"/> object containing file system settings.</value>
     </member>
-    <member name="P:DevExpress.Web.ASPxHtmlEditor.ASPxHtmlEditorUploadSettingsBase.UploadFolder">
-      <summary>
-        <para>Gets or sets the path to the folder that contains uploaded files used by the editor.</para>
-      </summary>
-      <value>A string value specifying the root path of uploaded files.</value>
-    </member>
     <member name="P:DevExpress.Web.ASPxHtmlEditor.ASPxHtmlEditorUploadSettingsBase.UploadFolderUrlPath">
       <summary>
-        <para>Gets or sets a value that specifies the relative URL path to an upload folder whose physical path is defined using the <see cref="P:DevExpress.Web.ASPxHtmlEditor.ASPxHtmlEditorUploadSettingsBase.UploadFolder"/> property.</para>
+        <para>Specifies the relative URL path to an upload folder whose physical path is defined using the <see cref="P:DevExpress.Web.ASPxHtmlEditor.HtmlEditorUploadControlFileSystemSettings.UploadFolder"/> property.</para>
       </summary>
       <value>A string value that defines the relative URL path to the specified upload folder.</value>
     </member>
@@ -1530,12 +1518,6 @@
       </summary>
       <value>An <see cref="T:System.Int64"/> value that specifies the maximum file size, in bytes.</value>
     </member>
-    <member name="P:DevExpress.Web.ASPxHtmlEditor.ASPxHtmlEditorUploadValidationSettingsBase.ShowErrors">
-      <summary>
-        <para>Gets or sets the value specifying whether the error message is displayed if the uploaded file does not pass validation.</para>
-      </summary>
-      <value>true, to show the error message; otherwise, false.</value>
-    </member>
     <member name="T:DevExpress.Web.ASPxHtmlEditor.ASPxHtmlEditorVideoUploadSettings">
       <summary>
         <para>Contains settings that relate to a control&#39;s video uploading functionality.</para>
@@ -1581,12 +1563,6 @@
       </summary>
       <param name="style">A <see cref="T:System.Web.UI.WebControls.Style"/> object that represents the object which the settings will be copied from.</param>
     </member>
-    <member name="P:DevExpress.Web.ASPxHtmlEditor.BarDockStyle.ImageSpacing">
-      <summary>
-        <para>This property is not in effect for the <see cref="T:DevExpress.Web.ASPxHtmlEditor.BarDockStyle"/> class.</para>
-      </summary>
-      <value></value>
-    </member>
     <member name="P:DevExpress.Web.ASPxHtmlEditor.BarDockStyle.IsEmpty">
       <summary>
         <para>Gets a value that indicates whether this <see cref="T:DevExpress.Web.ASPxHtmlEditor.BarDockStyle"/> object is initialized with the default values.</para>
@@ -1619,36 +1595,6 @@
       <summary>
         <para>Initializes a new <see cref="T:DevExpress.Web.ASPxHtmlEditor.CustomCssItemPreviewStyle"/> class instance with default settings.</para>
       </summary>
-    </member>
-    <member name="P:DevExpress.Web.ASPxHtmlEditor.CustomCssItemPreviewStyle.HorizontalAlign">
-      <summary>
-        <para>This property is not in effect for the <see cref="T:DevExpress.Web.ASPxHtmlEditor.CustomCssItemPreviewStyle"/> class.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxHtmlEditor.CustomCssItemPreviewStyle.HoverStyle">
-      <summary>
-        <para>This property is not in effect for the <see cref="T:DevExpress.Web.ASPxHtmlEditor.CustomCssItemPreviewStyle"/> class.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxHtmlEditor.CustomCssItemPreviewStyle.ImageSpacing">
-      <summary>
-        <para>This property is not in effect for the <see cref="T:DevExpress.Web.ASPxHtmlEditor.CustomCssItemPreviewStyle"/> class.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxHtmlEditor.CustomCssItemPreviewStyle.Spacing">
-      <summary>
-        <para>This property is not in effect for the <see cref="T:DevExpress.Web.ASPxHtmlEditor.CustomCssItemPreviewStyle"/> class.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxHtmlEditor.CustomCssItemPreviewStyle.VerticalAlign">
-      <summary>
-        <para>This property is not in effect for the <see cref="T:DevExpress.Web.ASPxHtmlEditor.CustomCssItemPreviewStyle"/> class.</para>
-      </summary>
-      <value></value>
     </member>
     <member name="T:DevExpress.Web.ASPxHtmlEditor.CustomToolbarButton">
       <summary>
@@ -5609,6 +5555,12 @@
       </summary>
       <param name="editor">An <see cref="T:DevExpress.Web.ASPxHtmlEditor.ASPxHtmlEditor"/> object that owns the created object.</param>
     </member>
+    <member name="M:DevExpress.Web.ASPxHtmlEditor.HtmlEditorDocumentStyles.Assign(DevExpress.Web.PropertiesBase)">
+      <summary>
+        <para></para>
+      </summary>
+      <param name="source" />
+    </member>
     <member name="P:DevExpress.Web.ASPxHtmlEditor.HtmlEditorDocumentStyles.BackColor">
       <summary>
         <para>Gets or sets the document&#39;s background color.</para>
@@ -5667,12 +5619,6 @@
         <para>Gets or sets the amount of space between images within a dropdown item picker.</para>
       </summary>
       <value>A <see cref="T:System.Web.UI.WebControls.Unit"/> that represents the spacing value.</value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxHtmlEditor.HtmlEditorDropDownItemPickerItemStyle.SelectedStyle">
-      <summary>
-        <para>This property is not in effect for the <see cref="T:DevExpress.Web.ASPxHtmlEditor.HtmlEditorDropDownItemPickerItemStyle"/> class.</para>
-      </summary>
-      <value></value>
     </member>
     <member name="T:DevExpress.Web.ASPxHtmlEditor.HtmlEditorDropDownItemPickerStyle">
       <summary>
@@ -5925,12 +5871,6 @@
         <para>Gets or sets the file extensions allowed for display in the ASPxHtmlEditor&#39;s file selectors.</para>
       </summary>
       <value>An array of <see cref="T:System.String"/> values that contains the file extensions allowed.</value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxHtmlEditor.HtmlEditorFileManagerCommonSettings.EnableMultiSelect">
-      <summary>
-        <para>Gets or sets a value specifying whether multiple file selection is enabled in the File Manager used within built-in dialogs.</para>
-      </summary>
-      <value>true, if multiple file selection is enabled; otherwise, false.</value>
     </member>
     <member name="P:DevExpress.Web.ASPxHtmlEditor.HtmlEditorFileManagerCommonSettings.ThumbnailFolder">
       <summary>
@@ -7258,18 +7198,6 @@
         <para>Initializes a new instance of the <see cref="T:DevExpress.Web.ASPxHtmlEditor.HtmlEditorPasteOptionsBarStyle"/> class with default settings.</para>
       </summary>
     </member>
-    <member name="P:DevExpress.Web.ASPxHtmlEditor.HtmlEditorPasteOptionsBarStyle.GutterBackgroundImage">
-      <summary>
-        <para>This property is not in effect for the <see cref="T:DevExpress.Web.ASPxHtmlEditor.HtmlEditorPasteOptionsBarStyle"/> class.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxHtmlEditor.HtmlEditorPasteOptionsBarStyle.GutterWidth">
-      <summary>
-        <para>This property is not in effect for the <see cref="T:DevExpress.Web.ASPxHtmlEditor.HtmlEditorPasteOptionsBarStyle"/> class.</para>
-      </summary>
-      <value></value>
-    </member>
     <member name="T:DevExpress.Web.ASPxHtmlEditor.HtmlEditorPasteOptionsBarStyles">
       <summary>
         <para>Contains settings that allow the appearance of paste options bar elements to be defined.</para>
@@ -7550,12 +7478,6 @@
       </summary>
       <value></value>
     </member>
-    <member name="P:DevExpress.Web.ASPxHtmlEditor.HtmlEditorRibbonStyles.FileTab">
-      <summary>
-        <para>This property is not in effect for the <see cref="T:DevExpress.Web.ASPxHtmlEditor.HtmlEditorRibbonStyles"/> class.</para>
-      </summary>
-      <value></value>
-    </member>
     <member name="P:DevExpress.Web.ASPxHtmlEditor.HtmlEditorRibbonStyles.PopupMenu">
       <summary>
         <para>Provides access to the style settings defining the appearance of popup menu elements used in a ribbon toolbar.</para>
@@ -7830,12 +7752,6 @@
         <para>Initializes a new instance of the <see cref="T:DevExpress.Web.ASPxHtmlEditor.HtmlEditorStatusBarSizeGripStyle"/> class with default settings.</para>
       </summary>
     </member>
-    <member name="P:DevExpress.Web.ASPxHtmlEditor.HtmlEditorStatusBarSizeGripStyle.BackgroundImage">
-      <summary>
-        <para>This property is not in effect for the <see cref="T:DevExpress.Web.ASPxHtmlEditor.HtmlEditorStatusBarSizeGripStyle"/> class.</para>
-      </summary>
-      <value></value>
-    </member>
     <member name="P:DevExpress.Web.ASPxHtmlEditor.HtmlEditorStatusBarSizeGripStyle.Font">
       <summary>
         <para>This property is not in effect for the <see cref="T:DevExpress.Web.ASPxHtmlEditor.HtmlEditorStatusBarSizeGripStyle"/> class.</para>
@@ -7848,12 +7764,6 @@
       </summary>
       <value></value>
     </member>
-    <member name="P:DevExpress.Web.ASPxHtmlEditor.HtmlEditorStatusBarSizeGripStyle.Height">
-      <summary>
-        <para>This property is not in effect for the <see cref="T:DevExpress.Web.ASPxHtmlEditor.HtmlEditorStatusBarSizeGripStyle"/> class.</para>
-      </summary>
-      <value></value>
-    </member>
     <member name="P:DevExpress.Web.ASPxHtmlEditor.HtmlEditorStatusBarSizeGripStyle.HorizontalAlign">
       <summary>
         <para>This property is not in effect for the <see cref="T:DevExpress.Web.ASPxHtmlEditor.HtmlEditorStatusBarSizeGripStyle"/> class.</para>
@@ -7861,12 +7771,6 @@
       <value></value>
     </member>
     <member name="P:DevExpress.Web.ASPxHtmlEditor.HtmlEditorStatusBarSizeGripStyle.VerticalAlign">
-      <summary>
-        <para>This property is not in effect for the <see cref="T:DevExpress.Web.ASPxHtmlEditor.HtmlEditorStatusBarSizeGripStyle"/> class.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxHtmlEditor.HtmlEditorStatusBarSizeGripStyle.Width">
       <summary>
         <para>This property is not in effect for the <see cref="T:DevExpress.Web.ASPxHtmlEditor.HtmlEditorStatusBarSizeGripStyle"/> class.</para>
       </summary>
@@ -7997,12 +7901,6 @@
       <summary>
         <para>Initializes a new instance of the <see cref="T:DevExpress.Web.ASPxHtmlEditor.HtmlEditorStatusBarTabStyle"/> class with default settings.</para>
       </summary>
-    </member>
-    <member name="P:DevExpress.Web.ASPxHtmlEditor.HtmlEditorStatusBarTabStyle.ImageSpacing">
-      <summary>
-        <para>This property is not in effect for the <see cref="T:DevExpress.Web.ASPxHtmlEditor.HtmlEditorStatusBarTabStyle"/> class.</para>
-      </summary>
-      <value></value>
     </member>
     <member name="T:DevExpress.Web.ASPxHtmlEditor.HtmlEditorStyles">
       <summary>
@@ -8438,14 +8336,14 @@
         <para>Initializes a new instance of the <see cref="T:DevExpress.Web.ASPxHtmlEditor.HtmlEditorToolbarItem"/> class with the specified settings.</para>
       </summary>
       <param name="text">A <see cref="T:System.String"/> value that specifies the created toolbar item&#39;s display text. Initializes the item&#39;s <see cref="P:DevExpress.Web.ASPxHtmlEditor.ToolbarItemBase.Text"/> property.</param>
-      <param name="commandName">A <see cref="T:System.String"/> value that identifies the executed command. Initializes the <see cref="P:DevExpress.Web.ASPxHtmlEditor.HtmlEditorToolbarItem.CommandName"/> property.</param>
+      <param name="commandName">A <see cref="T:System.String"/> value that identifies the executed command.</param>
     </member>
     <member name="M:DevExpress.Web.ASPxHtmlEditor.HtmlEditorToolbarItem.#ctor(System.String,System.String,System.String)">
       <summary>
         <para>Initializes a new instance of the <see cref="T:DevExpress.Web.ASPxHtmlEditor.HtmlEditorToolbarItem"/> class with the specified settings.</para>
       </summary>
       <param name="text">A <see cref="T:System.String"/> value that specifies the created toolbar item&#39;s display text. Initializes the item&#39;s <see cref="P:DevExpress.Web.ASPxHtmlEditor.ToolbarItemBase.Text"/> property.</param>
-      <param name="commandName">A <see cref="T:System.String"/> value that identifies the executed command. Initializes the <see cref="P:DevExpress.Web.ASPxHtmlEditor.HtmlEditorToolbarItem.CommandName"/> property.</param>
+      <param name="commandName">A <see cref="T:System.String"/> value that identifies the executed command.</param>
       <param name="toolTip">A <see cref="T:System.String"/> value that specifies the created toolbar item&#39;s tooltip text. Initializes the <see cref="P:DevExpress.Web.ASPxHtmlEditor.ToolbarItemBase.ToolTip"/> property.</param>
     </member>
     <member name="M:DevExpress.Web.ASPxHtmlEditor.HtmlEditorToolbarItem.#ctor(System.String,System.String,System.String,DevExpress.Web.ASPxHtmlEditor.ViewStyle)">
@@ -8453,7 +8351,7 @@
         <para>Initializes a new instance of the <see cref="T:DevExpress.Web.ASPxHtmlEditor.HtmlEditorToolbarItem"/> class with the specified settings.</para>
       </summary>
       <param name="text">A <see cref="T:System.String"/> value that specifies the created toolbar item&#39;s display text. Initializes the item&#39;s <see cref="P:DevExpress.Web.ASPxHtmlEditor.ToolbarItemBase.Text"/> property.</param>
-      <param name="commandName">A <see cref="T:System.String"/> value that identifies the executed command. Initializes the <see cref="P:DevExpress.Web.ASPxHtmlEditor.HtmlEditorToolbarItem.CommandName"/> property.</param>
+      <param name="commandName">A <see cref="T:System.String"/> value that identifies the executed command.</param>
       <param name="toolTip">A <see cref="T:System.String"/> value that specifies the created toolbar item&#39;s tooltip text. Initializes the <see cref="P:DevExpress.Web.ASPxHtmlEditor.ToolbarItemBase.ToolTip"/> property.</param>
       <param name="viewStyle">A <see cref="T:DevExpress.Web.ASPxHtmlEditor.ViewStyle"/> object specifying how a toolbar item is represented within a toolbar. Initializes the <see cref="P:DevExpress.Web.ASPxHtmlEditor.HtmlEditorToolbarItem.ViewStyle"/> property.</param>
     </member>
@@ -8474,12 +8372,6 @@
         <para>Gets or sets a value that specifies whether the current toolbar item starts a group.</para>
       </summary>
       <value>true if the current item starts a group; otherwise, false.</value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxHtmlEditor.HtmlEditorToolbarItem.CommandName">
-      <summary>
-        <para>Gets or sets the command name associated with the toolbar item.</para>
-      </summary>
-      <value>A <see cref="T:System.String"/> value that specifies the command name associated with the toolbar item.</value>
     </member>
     <member name="P:DevExpress.Web.ASPxHtmlEditor.HtmlEditorToolbarItem.ViewStyle">
       <summary>
@@ -8517,10 +8409,10 @@
     </member>
     <member name="M:DevExpress.Web.ASPxHtmlEditor.HtmlEditorToolbarItemCollection.FindByCommandName(System.String)">
       <summary>
-        <para>Returns an item object with the specified <see cref="P:DevExpress.Web.ASPxHtmlEditor.HtmlEditorToolbarItem.CommandName"/> property value.</para>
+        <para>Returns an item object with the specified CommandName property value.</para>
       </summary>
-      <param name="commandName">A <see cref="T:System.String"/> value representing the <see cref="P:DevExpress.Web.ASPxHtmlEditor.HtmlEditorToolbarItem.CommandName"/> property value of the required item.</param>
-      <returns>A <see cref="T:DevExpress.Web.ASPxHtmlEditor.HtmlEditorToolbarItem"/> object with a specific value of the <see cref="P:DevExpress.Web.ASPxHtmlEditor.HtmlEditorToolbarItem.CommandName"/> property.</returns>
+      <param name="commandName">The command name.</param>
+      <returns>An item object with a specific command name.</returns>
     </member>
     <member name="M:DevExpress.Web.ASPxHtmlEditor.HtmlEditorToolbarItemCollection.ForEach(System.Action{DevExpress.Web.ASPxHtmlEditor.HtmlEditorToolbarItem})">
       <summary>
@@ -8855,7 +8747,7 @@
     </member>
     <member name="T:DevExpress.Web.ASPxHtmlEditor.Localization.ASPxHtmlEditorLocalizer">
       <summary>
-        <para>An object providing a means to localize the <see cref="T:DevExpress.Web.ASPxHtmlEditor.ASPxHtmlEditor"/>&#39;s user interface elements at runtime.</para>
+        <para>Provides a means to localize the <see cref="T:DevExpress.Web.ASPxHtmlEditor.ASPxHtmlEditor"/>&#39;s UI elements at runtime.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Web.ASPxHtmlEditor.Localization.ASPxHtmlEditorLocalizer.#ctor">
@@ -8878,7 +8770,7 @@
     </member>
     <member name="T:DevExpress.Web.ASPxHtmlEditor.Localization.ASPxHtmlEditorResLocalizer">
       <summary>
-        <para>An object providing a means to localize the <see cref="T:DevExpress.Web.ASPxHtmlEditor.ASPxHtmlEditor"/>&#39;s user interface elements at runtime.</para>
+        <para>Provides a means to localize the <see cref="T:DevExpress.Web.ASPxHtmlEditor.ASPxHtmlEditor"/>&#39;s UI elements at runtime.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Web.ASPxHtmlEditor.Localization.ASPxHtmlEditorResLocalizer.#ctor">
@@ -8888,7 +8780,7 @@
     </member>
     <member name="T:DevExpress.Web.ASPxHtmlEditor.Localization.ASPxHtmlEditorStringId">
       <summary>
-        <para>Contains values corresponding to strings that can be localized for the <see cref="T:DevExpress.Web.ASPxHtmlEditor.ASPxHtmlEditor"/>.</para>
+        <para>Contains strings that can be localized for the <see cref="T:DevExpress.Web.ASPxHtmlEditor.ASPxHtmlEditor"/>. For more information, refer to the  topic.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Web.ASPxHtmlEditor.Localization.ASPxHtmlEditorStringId.AdvancedSearch_Find">
@@ -11174,24 +11066,6 @@
       </summary>
       <param name="owner">An object supporting the <see cref="T:DevExpress.Web.IPropertiesOwner"/> interface.</param>
     </member>
-    <member name="P:DevExpress.Web.ASPxHtmlEditor.PopOutImageSpriteProperties.SelectedCssClass">
-      <summary>
-        <para>Gets or sets the name of the cascading style sheet (CSS) class that defines a selected state image&#39;s position within a custom sprite image.</para>
-      </summary>
-      <value>A <see cref="T:System.String"/> value specifying the cascading style sheet class&#39; name.</value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxHtmlEditor.PopOutImageSpriteProperties.SelectedLeft">
-      <summary>
-        <para>Gets or sets a selected state image&#39;s horizontal offset within a sprite image specified via a control&#39;s SpriteImageUrl property.</para>
-      </summary>
-      <value>A <see cref="T:System.Web.UI.WebControls.Unit"/> structure that represents the image&#39;s horizontal offset.</value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxHtmlEditor.PopOutImageSpriteProperties.SelectedTop">
-      <summary>
-        <para>Gets or sets a selected state image&#39;s vertical offset within a sprite image, specified via a control&#39;s SpriteImageUrl property.</para>
-      </summary>
-      <value>A <see cref="T:System.Web.UI.WebControls.Unit"/> structure that represents the image&#39;s vertical offset.</value>
-    </member>
     <member name="T:DevExpress.Web.ASPxHtmlEditor.ResourcePathMode">
       <summary>
         <para>Lists the values that specify if resource paths should be changed to absolute, relative, or root relative.</para>
@@ -11453,18 +11327,6 @@
       </summary>
       <value>A <see cref="T:System.String"/> value that specifies the command name associated with the toolbar item.</value>
     </member>
-    <member name="P:DevExpress.Web.ASPxHtmlEditor.ToolbarComboBox.DropDownHeight">
-      <summary>
-        <para>This property is not in effect for the <see cref="T:DevExpress.Web.ASPxHtmlEditor.ToolbarComboBox"/> class.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxHtmlEditor.ToolbarComboBox.DropDownWidth">
-      <summary>
-        <para>This property is not in effect for the <see cref="T:DevExpress.Web.ASPxHtmlEditor.ToolbarComboBox"/> class.</para>
-      </summary>
-      <value></value>
-    </member>
     <member name="P:DevExpress.Web.ASPxHtmlEditor.ToolbarComboBox.Items">
       <summary>
         <para>Gets the collection of items displayed within the editor&#39;s dropdown window.</para>
@@ -11538,24 +11400,6 @@
       </summary>
       <value>A <see cref="T:System.Web.UI.WebControls.Unit"/> value representing the dropdown window&#39;s width.</value>
     </member>
-    <member name="P:DevExpress.Web.ASPxHtmlEditor.ToolbarComboBoxBase.Image">
-      <summary>
-        <para>This property is not in effect for the <see cref="T:DevExpress.Web.ASPxHtmlEditor.ToolbarComboBoxBase"/> class.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxHtmlEditor.ToolbarComboBoxBase.Text">
-      <summary>
-        <para>For internal use only.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxHtmlEditor.ToolbarComboBoxBase.ViewStyle">
-      <summary>
-        <para>This property is not in effect for the <see cref="T:DevExpress.Web.ASPxHtmlEditor.ToolbarComboBoxBase"/> class.</para>
-      </summary>
-      <value></value>
-    </member>
     <member name="P:DevExpress.Web.ASPxHtmlEditor.ToolbarComboBoxBase.Width">
       <summary>
         <para>Gets or sets the editor&#39;s width.</para>
@@ -11584,12 +11428,6 @@
         <para>Copies the settings from the specified <see cref="T:DevExpress.Web.PropertiesBase"/> object to the current object.</para>
       </summary>
       <param name="source">A <see cref="T:DevExpress.Web.PropertiesBase"/> object whose settings are assigned to the current object.</param>
-    </member>
-    <member name="P:DevExpress.Web.ASPxHtmlEditor.ToolbarComboBoxProperties.ClientSideEvents">
-      <summary>
-        <para>This property is not in effect for the <see cref="T:DevExpress.Web.ASPxHtmlEditor.ToolbarComboBoxProperties"/> class.</para>
-      </summary>
-      <value></value>
     </member>
     <member name="P:DevExpress.Web.ASPxHtmlEditor.ToolbarComboBoxProperties.DefaultCaption">
       <summary>
@@ -11654,78 +11492,6 @@
         <para>Copies the settings from the specified <see cref="T:DevExpress.Web.PropertiesBase"/> object to the current object.</para>
       </summary>
       <param name="source">A <see cref="T:DevExpress.Web.PropertiesBase"/> object whose settings are assigned to the current object.</param>
-    </member>
-    <member name="P:DevExpress.Web.ASPxHtmlEditor.ToolbarCustomComboBoxProperties.ClientInstanceName">
-      <summary>
-        <para>This property is not in effect for the <see cref="T:DevExpress.Web.ASPxHtmlEditor.ToolbarCustomComboBoxProperties"/> class.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxHtmlEditor.ToolbarCustomComboBoxProperties.CssFilePath">
-      <summary>
-        <para>This property is not in effect for the <see cref="T:DevExpress.Web.ASPxHtmlEditor.ToolbarCustomComboBoxProperties"/> class.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxHtmlEditor.ToolbarCustomComboBoxProperties.CssPostfix">
-      <summary>
-        <para>This property is not in effect for the <see cref="T:DevExpress.Web.ASPxHtmlEditor.ToolbarCustomComboBoxProperties"/> class.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxHtmlEditor.ToolbarCustomComboBoxProperties.DefaultCaption">
-      <summary>
-        <para>This property is not in effect for the <see cref="T:DevExpress.Web.ASPxHtmlEditor.ToolbarCustomComboBoxProperties"/> class.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxHtmlEditor.ToolbarCustomComboBoxProperties.DisplayFormatInEditMode">
-      <summary>
-        <para>This property is not in effect for the <see cref="T:DevExpress.Web.ASPxHtmlEditor.ToolbarCustomComboBoxProperties"/> class.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxHtmlEditor.ToolbarCustomComboBoxProperties.DropDownStyle">
-      <summary>
-        <para>Gets or sets a value that specifies the manner in which end users can change the edit value of the dropdown list editor.</para>
-      </summary>
-      <value>One of the <see cref="T:DevExpress.Web.DropDownStyle"/> enumeration values.</value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxHtmlEditor.ToolbarCustomComboBoxProperties.EnableClientSideAPI">
-      <summary>
-        <para>This property is not in effect for the <see cref="T:DevExpress.Web.ASPxHtmlEditor.ToolbarCustomComboBoxProperties"/> class.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxHtmlEditor.ToolbarCustomComboBoxProperties.EnableSynchronization">
-      <summary>
-        <para>This property is not in effect for the <see cref="T:DevExpress.Web.ASPxHtmlEditor.ToolbarCustomComboBoxProperties"/> class.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxHtmlEditor.ToolbarCustomComboBoxProperties.InvalidStyle">
-      <summary>
-        <para>This property is not in effect for the <see cref="T:DevExpress.Web.ASPxHtmlEditor.ToolbarCustomComboBoxProperties"/> class.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxHtmlEditor.ToolbarCustomComboBoxProperties.Items">
-      <summary>
-        <para>This property is not in effect for the <see cref="T:DevExpress.Web.ASPxHtmlEditor.ToolbarCustomComboBoxProperties"/> class.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxHtmlEditor.ToolbarCustomComboBoxProperties.RenderIFrameForPopupElements">
-      <summary>
-        <para>This property is not in effect for the <see cref="T:DevExpress.Web.ASPxHtmlEditor.ToolbarCustomComboBoxProperties"/> class.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxHtmlEditor.ToolbarCustomComboBoxProperties.ValidationSettings">
-      <summary>
-        <para>This property is not in effect for the <see cref="T:DevExpress.Web.ASPxHtmlEditor.ToolbarCustomComboBoxProperties"/> class.</para>
-      </summary>
-      <value></value>
     </member>
     <member name="P:DevExpress.Web.ASPxHtmlEditor.ToolbarCustomComboBoxProperties.ValueType">
       <summary>
@@ -11856,12 +11622,6 @@
         <para>Gets or sets the item&#39;s associated tag name.</para>
       </summary>
       <value>A string specifying the associated tag name.</value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxHtmlEditor.ToolbarCustomCssListEditItem.Value">
-      <summary>
-        <para>Returns a textual representation of the item&#39;s <see cref="P:DevExpress.Web.CollectionItem.Index"/> property. For internal use only.</para>
-      </summary>
-      <value>A <see cref="T:System.Object"/> that represents the textual representation of the item index.</value>
     </member>
     <member name="T:DevExpress.Web.ASPxHtmlEditor.ToolbarCustomCssListEditItemCollection">
       <summary>
@@ -12697,12 +12457,6 @@
         <para>Specifies the exported document format associated with the current item.</para>
       </summary>
       <value>One of the <see cref="T:DevExpress.Web.ASPxHtmlEditor.HtmlEditorExportFormat"/> enumeration values.</value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxHtmlEditor.ToolbarExportDropDownItem.Value">
-      <summary>
-        <para>Returns a textual representation of the an item&#39;s <see cref="P:DevExpress.Web.ASPxHtmlEditor.ToolbarExportDropDownItem.Format"/> property. For internal use only.</para>
-      </summary>
-      <value>A <see cref="T:System.String"/> value that specifies the textual representation of the format associated with the item.</value>
     </member>
     <member name="T:DevExpress.Web.ASPxHtmlEditor.ToolbarFindAndReplaceDialogButton">
       <summary>
@@ -14627,18 +14381,6 @@
       <summary>
         <para>Initializes a new instance of the <see cref="T:DevExpress.Web.ASPxHtmlEditor.ToolbarStyle"/> class with default settings.</para>
       </summary>
-    </member>
-    <member name="P:DevExpress.Web.ASPxHtmlEditor.ToolbarStyle.GutterBackgroundImage">
-      <summary>
-        <para>This property is not in effect for the <see cref="T:DevExpress.Web.ASPxHtmlEditor.ToolbarStyle"/> class.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxHtmlEditor.ToolbarStyle.GutterWidth">
-      <summary>
-        <para>This property is not in effect for the <see cref="T:DevExpress.Web.ASPxHtmlEditor.ToolbarStyle"/> class.</para>
-      </summary>
-      <value></value>
     </member>
     <member name="T:DevExpress.Web.ASPxHtmlEditor.ToolbarSubscriptButton">
       <summary>

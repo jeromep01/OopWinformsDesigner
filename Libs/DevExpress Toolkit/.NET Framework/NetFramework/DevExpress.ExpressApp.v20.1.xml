@@ -1654,7 +1654,7 @@
     </member>
     <member name="F:DevExpress.ExpressApp.BaseObjectSpace.CompositeKeyPropertyType">
       <summary>
-        <para></para>
+        <para>For internal use.</para>
       </summary>
       <value></value>
     </member>
@@ -1897,6 +1897,21 @@
       </summary>
       <param name="obj">The object whose Object Space this method returns.</param>
       <returns>An Object Space used to load and save the specified persistent object. null (Nothing in VB.NET) if the specified object does not belong to any Object Space.</returns>
+    </member>
+    <member name="M:DevExpress.ExpressApp.BaseObjectSpace.FirstOrDefault``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})">
+      <summary>
+        <para>Searches for the first object that matches the specified lambda expression. The generic parameter determines the object&#39;s type.</para>
+      </summary>
+      <param name="criteriaExpression">A lambda expression to search for an object.</param>
+      <returns>The first object that matches the specified lambda expression.</returns>
+    </member>
+    <member name="M:DevExpress.ExpressApp.BaseObjectSpace.FirstOrDefault``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Boolean)">
+      <summary>
+        <para>Searches for the first object that matches the specified lambda expression. The generic parameter determines the object&#39;s type. This method takes uncommitted changes into account.</para>
+      </summary>
+      <param name="criteriaExpression">A lambda expression to search for an object.</param>
+      <param name="inTransaction">true if the method takes unsaved changes into account; otherwise, false.</param>
+      <returns>The first object that matches the specified lambda expression.</returns>
     </member>
     <member name="M:DevExpress.ExpressApp.BaseObjectSpace.GetAssociatedCollectionCriteria(System.Object,DevExpress.ExpressApp.DC.IMemberInfo)">
       <summary>
@@ -2321,6 +2336,11 @@
     <member name="E:DevExpress.ExpressApp.BaseObjectSpace.ModifiedChanged">
       <summary>
         <para>Occurs when the current Object Space&#39;s <see cref="P:DevExpress.ExpressApp.BaseObjectSpace.IsModified"/> state is changed.</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.ExpressApp.BaseObjectSpace.ModifiedChanging">
+      <summary>
+        <para>Occurs before the <see cref="P:DevExpress.ExpressApp.BaseObjectSpace.IsModified"/> property is changed to true. Handle this event to cancel or force the IsModified property to change.</para>
       </summary>
     </member>
     <member name="P:DevExpress.ExpressApp.BaseObjectSpace.ModifiedObjects">
@@ -4991,6 +5011,235 @@
       <param name="customizeAction">A method to customize controls of the specified View Items.</param>
       <param name="viewItemsId">Identifiers of View Items.</param>
     </member>
+    <member name="T:DevExpress.ExpressApp.DynamicCollection">
+      <summary>
+        <para>A proxy collection that allows you to filter and sort an original collection without its change.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.DynamicCollection.#ctor(DevExpress.ExpressApp.IObjectSpace,System.Type)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.ExpressApp.DynamicCollection"/> class with specified settings.</para>
+      </summary>
+      <param name="objectSpace">An Object Space for processing the collection objects.</param>
+      <param name="objectType">A type of objects in the collection.</param>
+    </member>
+    <member name="M:DevExpress.ExpressApp.DynamicCollection.#ctor(DevExpress.ExpressApp.IObjectSpace,System.Type,DevExpress.Data.Filtering.CriteriaOperator,System.Collections.Generic.IList{DevExpress.Xpo.SortProperty},System.Boolean)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.ExpressApp.DynamicCollection"/> class with specified settings.</para>
+      </summary>
+      <param name="objectSpace">An Object Space for processing collection objects.</param>
+      <param name="objectType">A type of objects in the collection.</param>
+      <param name="criteria">The filter criteria. The collection contains only objects that match this criteria.</param>
+      <param name="sorting">A list of <see cref="T:DevExpress.Xpo.SortProperty"/> objects that specify the sort order for the collection.</param>
+      <param name="inTransaction">true if the specified criteria and sorting parameters are applied to all objects (in the database and retrieved); otherwise, false.</param>
+    </member>
+    <member name="E:DevExpress.ExpressApp.DynamicCollection.FetchObjects">
+      <summary>
+        <para>Occurs when the DynamicCollection contents are accessed for the first time, when this collection is reloaded, or its <see cref="P:DevExpress.ExpressApp.DynamicCollectionBase.Criteria"/> and <see cref="P:DevExpress.ExpressApp.DynamicCollectionBase.Sorting"/> parameters are changed. Handle this event and set the <see cref="P:DevExpress.ExpressApp.FetchObjectsEventArgs.Objects"/> argument the DynamicCollection contents.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.ExpressApp.DynamicCollectionBase">
+      <summary>
+        <para>An abstract class that serves as the base class for <see cref="T:DevExpress.ExpressApp.DynamicCollection"/>.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.DynamicCollectionBase.#ctor(DevExpress.ExpressApp.IObjectSpace,System.Type,DevExpress.Data.Filtering.CriteriaOperator,System.Collections.Generic.IList{DevExpress.Xpo.SortProperty},System.Boolean)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.ExpressApp.DynamicCollectionBase"/> class with specified settings.</para>
+      </summary>
+      <param name="objectSpace">An Object Space for processing the collection objects.</param>
+      <param name="objectType">A type of objects in the collection.</param>
+      <param name="criteria">The filter criteria. The collection contains only objects that match this criteria.</param>
+      <param name="sorting">A list of <see cref="T:DevExpress.Xpo.SortProperty"/> objects that specify the sort order for the collection.</param>
+      <param name="inTransaction">true if the specified criteria and sorting parameters are applied to all objects (in the database and retrieved); otherwise, false.</param>
+    </member>
+    <member name="M:DevExpress.ExpressApp.DynamicCollectionBase.Add(System.Object)">
+      <summary>
+        <para>Adds the specified object to the collection. This method is implemented to support the <see cref="T:System.Collections.IList"/> interface.</para>
+      </summary>
+      <param name="obj">An object to be added to the collection.</param>
+      <returns>An index of the added object. -1 if the object was not added to the collection.</returns>
+    </member>
+    <member name="P:DevExpress.ExpressApp.DynamicCollectionBase.AllowEdit">
+      <summary>
+        <para>Specifies whether the collection is read-only. This property is implemented to support the <see cref="T:System.ComponentModel.IBindingList"/> interface.</para>
+      </summary>
+      <value>false if the collection is read-only; otherwise, true.</value>
+    </member>
+    <member name="P:DevExpress.ExpressApp.DynamicCollectionBase.AllowNew">
+      <summary>
+        <para>Specifies whether new objects can be added to the collection. This property is implemented to support the <see cref="T:System.ComponentModel.IBindingList"/> interface.</para>
+      </summary>
+      <value>true if new objects can be added to the collection; otherwise, false.</value>
+    </member>
+    <member name="P:DevExpress.ExpressApp.DynamicCollectionBase.AllowRemove">
+      <summary>
+        <para>Specifies whether objects can be removed from the collection. This property is implemented to support the <see cref="T:System.ComponentModel.IBindingList"/> interface.</para>
+      </summary>
+      <value>true if objects can be removed from the collection; otherwise, false.</value>
+    </member>
+    <member name="M:DevExpress.ExpressApp.DynamicCollectionBase.Clear">
+      <summary>
+        <para>Removes all objects from the collection. This method is implemented to support the <see cref="T:System.Collections.IList"/> interface.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.DynamicCollectionBase.Contains(System.Object)">
+      <summary>
+        <para>Checks whether the collection contains the specified object. This method is implemented to support the <see cref="T:System.Collections.IList"/> interface.</para>
+      </summary>
+      <param name="obj">An object this method checks.</param>
+      <returns>true if the collection contains the specified object; otherwise, false.</returns>
+    </member>
+    <member name="M:DevExpress.ExpressApp.DynamicCollectionBase.CopyTo(System.Array,System.Int32)">
+      <summary>
+        <para>Copies the collection to the specified array. This method is implemented to support the <see cref="T:System.Collections.ICollection"/> interface.</para>
+      </summary>
+      <param name="array">A target array.</param>
+      <param name="index">The array&#39;s index that is the first position for collection objects.</param>
+    </member>
+    <member name="P:DevExpress.ExpressApp.DynamicCollectionBase.Count">
+      <summary>
+        <para>Returns the count of objects in the collection. This property is implemented to support the <see cref="T:System.Collections.ICollection"/> interface.</para>
+      </summary>
+      <value>The count of objects in the collection.</value>
+    </member>
+    <member name="P:DevExpress.ExpressApp.DynamicCollectionBase.Criteria">
+      <summary>
+        <para>Specifies criteria used to filter objects in the collection.</para>
+      </summary>
+      <value>A criteria used to filter objects in the collection.</value>
+    </member>
+    <member name="P:DevExpress.ExpressApp.DynamicCollectionBase.DeleteObjectOnRemove">
+      <summary>
+        <para>Specifies whether objects are deleted from a storage when they are removed from the collection.</para>
+      </summary>
+      <value>true if objects are deleted from a storage when they are removed from the collection; otherwise, false.</value>
+    </member>
+    <member name="P:DevExpress.ExpressApp.DynamicCollectionBase.DisplayableProperties">
+      <summary>
+        <para>For internal use.</para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="M:DevExpress.ExpressApp.DynamicCollectionBase.Dispose">
+      <summary>
+        <para>Disposes of all resources this <see cref="T:DevExpress.ExpressApp.DynamicCollectionBase"/> object uses. This method is implemented to support the <see cref="T:System.IDisposable"/> interface.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.DynamicCollectionBase.IndexOf(System.Object)">
+      <summary>
+        <para>Determines the index of the specified object in the collection. This method is implemented to support the <see cref="T:System.Collections.IList"/> interface.</para>
+      </summary>
+      <param name="obj">An object whom index this method determines.</param>
+      <returns>An index of the specified object. -1 if the collection does not contain this object.</returns>
+    </member>
+    <member name="M:DevExpress.ExpressApp.DynamicCollectionBase.Insert(System.Int32,System.Object)">
+      <summary>
+        <para>Inserts the specified object into the collection at the specified position. This method is implemented to support the <see cref="T:System.Collections.IList"/> interface.</para>
+      </summary>
+      <param name="index">An index where this method inserts the specified object.</param>
+      <param name="obj">An object to insert into the collection.</param>
+    </member>
+    <member name="P:DevExpress.ExpressApp.DynamicCollectionBase.InTransaction">
+      <summary>
+        <para>Specifies if the specified <see cref="P:DevExpress.ExpressApp.DynamicCollectionBase.Criteria"/> and <see cref="P:DevExpress.ExpressApp.DynamicCollectionBase.Sorting"/> parameters are applied to all objects (in the database and retrieved).</para>
+      </summary>
+      <value>true if the specified <see cref="P:DevExpress.ExpressApp.DynamicCollectionBase.Criteria"/> and <see cref="P:DevExpress.ExpressApp.DynamicCollectionBase.Sorting"/> parameters are applied to all objects (in the database and retrieved); otherwise, false.</value>
+    </member>
+    <member name="P:DevExpress.ExpressApp.DynamicCollectionBase.IsDisposed">
+      <summary>
+        <para>Specifies whether the collection has been disposed of. For internal use.</para>
+      </summary>
+      <value>true, if the collection has been disposed of; otherwise, false.</value>
+    </member>
+    <member name="P:DevExpress.ExpressApp.DynamicCollectionBase.IsFixedSize">
+      <summary>
+        <para>Indicates whether the collection has a fixed size. This property is implemented to support the <see cref="T:System.Collections.IList"/> interface.</para>
+      </summary>
+      <value>true if the collection has a fixed size; otherwise, false.</value>
+    </member>
+    <member name="P:DevExpress.ExpressApp.DynamicCollectionBase.IsLoaded">
+      <summary>
+        <para>Indicates whether the collection was populated with objects.</para>
+      </summary>
+      <value>true if the collection was populated with objects; otherwise, false.</value>
+    </member>
+    <member name="P:DevExpress.ExpressApp.DynamicCollectionBase.IsReadOnly">
+      <summary>
+        <para>Specifies whether the collection is read-only. This property is implemented to support the <see cref="T:System.Collections.IList"/> interface.</para>
+      </summary>
+      <value>true if the collection is read-only; otherwise, false.</value>
+    </member>
+    <member name="P:DevExpress.ExpressApp.DynamicCollectionBase.IsSynchronized">
+      <summary>
+        <para>Indicates whether access to the collection is synchronized (thread safe). This property is implemented to support the <see cref="T:System.Collections.ICollection"/> interface.</para>
+      </summary>
+      <value>true if access to the collection is synchronized (thread safe); otherwise, false.</value>
+    </member>
+    <member name="P:DevExpress.ExpressApp.DynamicCollectionBase.Item(System.Int32)">
+      <summary>
+        <para>Gets or sets an object at the specified index. This property is implemented to support the <see cref="T:System.Collections.IList"/> interface.</para>
+      </summary>
+      <param name="index">An index of the object to be returned.</param>
+      <value>An object at the specified index.</value>
+    </member>
+    <member name="E:DevExpress.ExpressApp.DynamicCollectionBase.ListChanged">
+      <summary>
+        <para>Occurs when the collection contents are changed. This event is implemented to support the <see cref="T:System.ComponentModel.IBindingList"/> interface.</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.ExpressApp.DynamicCollectionBase.Loaded">
+      <summary>
+        <para>Occurs after the collection was populated with objects.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.ExpressApp.DynamicCollectionBase.ObjectSpace">
+      <summary>
+        <para>Returns the Object Space used to manipulate the collection&#39;s objects.</para>
+      </summary>
+      <value>An Object Space used to manipulate the collection&#39;s objects.</value>
+    </member>
+    <member name="P:DevExpress.ExpressApp.DynamicCollectionBase.ObjectType">
+      <summary>
+        <para>Returns the type of objects that the <see cref="P:DevExpress.ExpressApp.FetchObjectsEventArgs.Objects"/> collection can contain.</para>
+      </summary>
+      <value>A type of objects that the <see cref="P:DevExpress.ExpressApp.FetchObjectsEventArgs.Objects"/> collection can contain.</value>
+    </member>
+    <member name="M:DevExpress.ExpressApp.DynamicCollectionBase.Reload">
+      <summary>
+        <para>Clears the collection. The <see cref="E:DevExpress.ExpressApp.DynamicCollection.FetchObjects"/> event will occur on the next access to this collection.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.DynamicCollectionBase.Remove(System.Object)">
+      <summary>
+        <para>Removes the specified object from the collection. This method is implemented to support the <see cref="T:System.Collections.IList"/> interface.</para>
+      </summary>
+      <param name="obj">An object to remove.</param>
+    </member>
+    <member name="M:DevExpress.ExpressApp.DynamicCollectionBase.RemoveAt(System.Int32)">
+      <summary>
+        <para>Removes an object from the specified index in the collection. This method is implemented to support the <see cref="T:System.Collections.IList"/> interface.</para>
+      </summary>
+      <param name="index">An index of an object to be removed from the collection.</param>
+    </member>
+    <member name="P:DevExpress.ExpressApp.DynamicCollectionBase.Sorting">
+      <summary>
+        <para>Specifies the list of <see cref="T:DevExpress.Xpo.SortProperty"/> objects that specify the sort order for the collection.</para>
+      </summary>
+      <value>A list of <see cref="T:DevExpress.Xpo.SortProperty"/> objects that specify the sort order for the collection.</value>
+    </member>
+    <member name="P:DevExpress.ExpressApp.DynamicCollectionBase.SyncRoot">
+      <summary>
+        <para>Gets an object that can be used to synchronize access to the collection. This property is implemented to support the <see cref="T:System.Collections.ICollection"/> interface.</para>
+      </summary>
+      <value>An object that can be used to synchronize access to the collection.</value>
+    </member>
+    <member name="P:DevExpress.ExpressApp.DynamicCollectionBase.TopReturnedObjectsCount">
+      <summary>
+        <para>Specifies the maximum number of objects that can be retrieved from the collection.</para>
+      </summary>
+      <value>The maximum number of objects that can be retrieved from the collection.</value>
+    </member>
     <member name="N:DevExpress.ExpressApp.Editors">
       <summary>
         <para>Contains interfaces and base classes for Property Editors used in the eXpressApp Framework to display business object properties in a UI.</para>
@@ -6675,6 +6924,63 @@
         <para>Specifies that empty space is displayed instead of UI elements affected by a conditional appearance rule, when <see cref="P:DevExpress.ExpressApp.ConditionalAppearance.AppearanceAttribute.AppearanceItemType"/> is set to ViewItem or LayoutItem. In XAF ASP.NET Web applications this mode functions like the <see cref="F:DevExpress.ExpressApp.Editors.ViewItemVisibility.Hide"/> mode.</para>
       </summary>
     </member>
+    <member name="T:DevExpress.ExpressApp.FetchObjectsEventArgs">
+      <summary>
+        <para>Provides data for the <see cref="E:DevExpress.ExpressApp.DynamicCollection.FetchObjects"/> event.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.FetchObjectsEventArgs.#ctor(System.Type,DevExpress.Data.Filtering.CriteriaOperator,System.Collections.Generic.IList{DevExpress.Xpo.SortProperty},System.Int32,System.Boolean)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.ExpressApp.FetchObjectsEventArgs"/> class with specified settings.</para>
+      </summary>
+      <param name="objectType">A type of objects in the collection.</param>
+      <param name="criteria">The filter criteria to be applied to the collection.</param>
+      <param name="sorting">A list of <see cref="T:DevExpress.Xpo.SortProperty"/> objects that specify the sort order for the collection.</param>
+      <param name="topReturnedObjects">The maximum number of objects that can be retrieved from the collection.</param>
+      <param name="inTransaction">true if the specified criteria and sorting parameters are applied to all objects (in the database and retrieved); otherwise, false.</param>
+    </member>
+    <member name="P:DevExpress.ExpressApp.FetchObjectsEventArgs.Criteria">
+      <summary>
+        <para>Specifies criteria used to filter objects in the <see cref="P:DevExpress.ExpressApp.FetchObjectsEventArgs.Objects"/> collection.</para>
+      </summary>
+      <value>A criteria used to filter objects in the <see cref="P:DevExpress.ExpressApp.FetchObjectsEventArgs.Objects"/> collection.</value>
+    </member>
+    <member name="P:DevExpress.ExpressApp.FetchObjectsEventArgs.InTransaction">
+      <summary>
+        <para>Specifies if the specified <see cref="P:DevExpress.ExpressApp.FetchObjectsEventArgs.Criteria"/> and <see cref="P:DevExpress.ExpressApp.FetchObjectsEventArgs.Sorting"/> parameters are applied to all objects (in the database and retrieved).</para>
+      </summary>
+      <value>true if the specified <see cref="P:DevExpress.ExpressApp.FetchObjectsEventArgs.Criteria"/> and <see cref="P:DevExpress.ExpressApp.FetchObjectsEventArgs.Sorting"/> parameters are applied to all objects (in the database and retrieved); otherwise, false.</value>
+    </member>
+    <member name="P:DevExpress.ExpressApp.FetchObjectsEventArgs.Objects">
+      <summary>
+        <para>Objects that is the DynamicCollection contents. You can shape (filter, sort, or trim) this collection yourself or set the <see cref="P:DevExpress.ExpressApp.FetchObjectsEventArgs.ShapeData"/> parameter to true to make the DynamicCollection do this.</para>
+      </summary>
+      <value>Objects that is the DynamicCollection contents.</value>
+    </member>
+    <member name="P:DevExpress.ExpressApp.FetchObjectsEventArgs.ObjectType">
+      <summary>
+        <para>Returns the type of objects that can be contained by the <see cref="P:DevExpress.ExpressApp.FetchObjectsEventArgs.Objects"/> collection.</para>
+      </summary>
+      <value>A type of objects that can be contained by the <see cref="P:DevExpress.ExpressApp.FetchObjectsEventArgs.Objects"/> collection.</value>
+    </member>
+    <member name="P:DevExpress.ExpressApp.FetchObjectsEventArgs.ShapeData">
+      <summary>
+        <para>Specifies whether the <see cref="T:DevExpress.ExpressApp.DynamicCollection"/> should shape (filter, sort) the <see cref="P:DevExpress.ExpressApp.FetchObjectsEventArgs.Objects"/> collection.</para>
+      </summary>
+      <value>true, if <see cref="T:DevExpress.ExpressApp.DynamicCollection"/> should shape (filter, sort) the <see cref="P:DevExpress.ExpressApp.FetchObjectsEventArgs.Objects"/> collection; otherwise, false.</value>
+    </member>
+    <member name="P:DevExpress.ExpressApp.FetchObjectsEventArgs.Sorting">
+      <summary>
+        <para>Specifies the list of <see cref="T:DevExpress.Xpo.SortProperty"/> objects that specify the sort order for the <see cref="P:DevExpress.ExpressApp.FetchObjectsEventArgs.Objects"/> collection.</para>
+      </summary>
+      <value>A list of <see cref="T:DevExpress.Xpo.SortProperty"/> objects that specify the sort order for the <see cref="P:DevExpress.ExpressApp.FetchObjectsEventArgs.Objects"/> collection.</value>
+    </member>
+    <member name="P:DevExpress.ExpressApp.FetchObjectsEventArgs.TopReturnedObjects">
+      <summary>
+        <para>Specifies the maximum number of objects <see cref="T:DevExpress.ExpressApp.DynamicCollection"/> gets from the <see cref="P:DevExpress.ExpressApp.FetchObjectsEventArgs.Objects"/> collection.</para>
+      </summary>
+      <value>The maximum number of objects <see cref="T:DevExpress.ExpressApp.DynamicCollection"/> gets from the <see cref="P:DevExpress.ExpressApp.FetchObjectsEventArgs.Objects"/> collection.</value>
+    </member>
     <member name="N:DevExpress.ExpressApp.Filtering">
       <summary>
         <para>Contains filtering-specific interfaces and classes.</para>
@@ -7427,6 +7733,21 @@
       <param name="criteria">A <see cref="T:DevExpress.Data.Filtering.CriteriaOperator"/> descendant which is the criteria for matching persistent objects.</param>
       <param name="inTransaction">true, if the filter takes unsaved changes into account; otherwise, false. Has effect in XPO only.</param>
       <returns>An object which is the first persistent object which matches the specified criteria.</returns>
+    </member>
+    <member name="M:DevExpress.ExpressApp.IObjectSpace.FirstOrDefault``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})">
+      <summary>
+        <para>Searches for the first object that matches the specified lambda expression. The generic parameter determines the object&#39;s type.</para>
+      </summary>
+      <param name="criteriaExpression">A lambda expression to search for an object.</param>
+      <returns>The first object that matches the specified lambda expression.</returns>
+    </member>
+    <member name="M:DevExpress.ExpressApp.IObjectSpace.FirstOrDefault``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Boolean)">
+      <summary>
+        <para>Searches for the first object that matches the specified lambda expression. The generic parameter determines the object&#39;s type. This method takes uncommitted changes into account.</para>
+      </summary>
+      <param name="criteriaExpression">A lambda expression to search for an object.</param>
+      <param name="inTransaction">true if the method takes unsaved changes into account; otherwise, false.</param>
+      <returns>The first object that matches the specified lambda expression.</returns>
     </member>
     <member name="M:DevExpress.ExpressApp.IObjectSpace.GetAssociatedCollectionCriteria(System.Object,DevExpress.ExpressApp.DC.IMemberInfo)">
       <summary>
@@ -12411,6 +12732,20 @@
       </summary>
       <value>true, if non-persistent Object Spaces add objects to the <see cref="P:DevExpress.ExpressApp.NonPersistentObjectSpace.ModifiedObjects"/> collection when these objects raise the <see cref="E:System.ComponentModel.INotifyPropertyChanged.PropertyChanged"/> event; otherwise, false.</value>
     </member>
+    <member name="M:DevExpress.ExpressApp.NonPersistentObjectSpace.CanApplyCriteria(System.Type)">
+      <summary>
+        <para></para>
+      </summary>
+      <param name="collectionType"></param>
+      <returns></returns>
+    </member>
+    <member name="M:DevExpress.ExpressApp.NonPersistentObjectSpace.CanApplyFilter(System.Object)">
+      <summary>
+        <para></para>
+      </summary>
+      <param name="collection"></param>
+      <returns></returns>
+    </member>
     <member name="M:DevExpress.ExpressApp.NonPersistentObjectSpace.CanInstantiate(System.Type)">
       <summary>
         <para>Indicates whether instances of a particular type can be created.</para>
@@ -12457,6 +12792,15 @@
       <summary>
         <para>Releases all resources used by an <see cref="T:DevExpress.ExpressApp.NonPersistentObjectSpace"/> object.</para>
       </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.NonPersistentObjectSpace.FindObject(System.Type,DevExpress.Data.Filtering.CriteriaOperator,System.Boolean)">
+      <summary>
+        <para></para>
+      </summary>
+      <param name="objectType"></param>
+      <param name="criteria"></param>
+      <param name="inTransaction"></param>
+      <returns></returns>
     </member>
     <member name="M:DevExpress.ExpressApp.NonPersistentObjectSpace.GetCriteria(System.Object)">
       <summary>
@@ -12599,9 +12943,9 @@
     </member>
     <member name="M:DevExpress.ExpressApp.NonPersistentObjectSpace.RemoveFromModifiedObjects(System.Object)">
       <summary>
-        <para></para>
+        <para>Removes the specified object from the list of objects to be committed.</para>
       </summary>
-      <param name="obj"></param>
+      <param name="obj">An object to be removed from the list of modified objects.</param>
     </member>
     <member name="F:DevExpress.ExpressApp.NonPersistentObjectSpace.UseKeyComparisonToDetermineIdentity">
       <summary>
@@ -12785,6 +13129,34 @@
         <para>Gets the Object Space.</para>
       </summary>
       <value>An <see cref="T:DevExpress.ExpressApp.IObjectSpace"/> objects that specifies the Object Space.</value>
+    </member>
+    <member name="T:DevExpress.ExpressApp.ObjectSpaceModificationEventArgs">
+      <summary>
+        <para>Provides data for the <see cref="E:DevExpress.ExpressApp.BaseObjectSpace.ModifiedChanging"/> event.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.ExpressApp.ObjectSpaceModificationEventArgs.#ctor(System.Boolean,DevExpress.ExpressApp.ObjectChangedEventArgs)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.ExpressApp.ObjectSpaceModificationEventArgs"/> class with the specified settings.</para>
+      </summary>
+      <param name="cancel">true if the <see cref="P:DevExpress.ExpressApp.BaseObjectSpace.IsModified"/> property change should be canceled; otherwise, false.</param>
+      <param name="args">An <see cref="T:DevExpress.ExpressApp.ObjectChangedEventArgs"/> object that contains information about a modified object.</param>
+    </member>
+    <member name="M:DevExpress.ExpressApp.ObjectSpaceModificationEventArgs.#ctor(System.Boolean,System.Object,DevExpress.ExpressApp.DC.IMemberInfo,System.Object,System.Object)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.ExpressApp.ObjectSpaceModificationEventArgs"/> class with specified settings.</para>
+      </summary>
+      <param name="cancel">true if the <see cref="P:DevExpress.ExpressApp.BaseObjectSpace.IsModified"/> property change should be canceled; otherwise, false.</param>
+      <param name="obj">The object whose property value was changed.</param>
+      <param name="memberInfo">An <see cref="T:DevExpress.ExpressApp.DC.IMemberInfo"/> object that stores information on the property whose value was changed.</param>
+      <param name="oldValue">The old value of a changed property.</param>
+      <param name="newValue">The new value of a changed property.</param>
+    </member>
+    <member name="P:DevExpress.ExpressApp.ObjectSpaceModificationEventArgs.Cancel">
+      <summary>
+        <para>Specifies whether the <see cref="P:DevExpress.ExpressApp.BaseObjectSpace.IsModified"/> property change must be canceled.</para>
+      </summary>
+      <value>true if the <see cref="P:DevExpress.ExpressApp.BaseObjectSpace.IsModified"/> property change must be canceled; otherwise, false.</value>
     </member>
     <member name="T:DevExpress.ExpressApp.ObjectView">
       <summary>

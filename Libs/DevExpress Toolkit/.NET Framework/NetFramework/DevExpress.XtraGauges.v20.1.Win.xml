@@ -422,6 +422,12 @@
       </summary>
       <value>true if the control can be printed and exported; otherwise, false.</value>
     </member>
+    <member name="P:DevExpress.XtraGauges.Win.GaugeControl.OptionsPrint">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
     <member name="M:DevExpress.XtraGauges.Win.GaugeControl.Print">
       <summary>
         <para>Prints the current gauge control.</para>
@@ -432,6 +438,17 @@
         <para>Prints the control.</para>
       </summary>
       <param name="sizeMode">A PrintSizeMode value that specifies whether the gauge control must be stretched, zoomed in the printout or printed as is.</param>
+    </member>
+    <member name="M:DevExpress.XtraGauges.Win.GaugeControl.ResetOptionsPrint">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.XtraGauges.Win.GaugeControl.ShouldSerializeOptionsPrint">
+      <summary>
+        <para></para>
+      </summary>
+      <returns></returns>
     </member>
     <member name="M:DevExpress.XtraGauges.Win.GaugeControl.ShowPrintPreview(DevExpress.XtraGauges.Core.Printing.PrintSizeMode)">
       <summary>

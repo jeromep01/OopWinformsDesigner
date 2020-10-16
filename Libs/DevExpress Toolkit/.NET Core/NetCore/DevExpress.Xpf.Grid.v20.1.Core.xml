@@ -4349,7 +4349,7 @@
       <summary>
         <para>Gets or sets a template that displays column values. This is a dependency property.</para>
       </summary>
-      <value>A <see cref="T:System.Windows.Controls.ControlTemplate"/> object that represents the template that displays column values.</value>
+      <value>A template that displays column values.</value>
     </member>
     <member name="F:DevExpress.Xpf.Grid.ColumnBase.CellDisplayTemplateProperty">
       <summary>
@@ -4373,7 +4373,7 @@
       <summary>
         <para>Gets or sets a template that displays a custom editor used to edit column values. This is a dependency property.</para>
       </summary>
-      <value>A <see cref="T:System.Windows.Controls.ControlTemplate"/> object that represents the template that displays a custom editor.</value>
+      <value>A template that displays a custom editor.</value>
     </member>
     <member name="F:DevExpress.Xpf.Grid.ColumnBase.CellEditTemplateProperty">
       <summary>
@@ -4397,7 +4397,7 @@
       <summary>
         <para>Gets or sets the style of cells displayed within this column. This is a dependency property.</para>
       </summary>
-      <value>A <see cref="T:System.Windows.Style"/> object that represents the style of cells displayed within this column.</value>
+      <value>The style of cells displayed within this column.</value>
     </member>
     <member name="F:DevExpress.Xpf.Grid.ColumnBase.CellStyleProperty">
       <summary>
@@ -6660,7 +6660,7 @@
       <summary>
         <para>Gets or sets the grid&#39;s data source. This is a dependency property.</para>
       </summary>
-      <value>An object that represents the data source from which the grid retrieves its data.</value>
+      <value>A data source from which the grid retrieves its data.</value>
     </member>
     <member name="E:DevExpress.Xpf.Grid.DataControlBase.ItemsSourceChanged">
       <summary>
@@ -6702,6 +6702,12 @@
         <para>Identifies the <see cref="P:DevExpress.Xpf.Grid.DataControlBase.MRUColumnFilterListCount"/> dependency property.</para>
       </summary>
       <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.Grid.DataControlBase.MRUFilterList">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
     </member>
     <member name="P:DevExpress.Xpf.Grid.DataControlBase.MRUFilterListCount">
       <summary>
@@ -7664,7 +7670,7 @@
       <summary>
         <para>Gets or sets a template that displays column values. This is a dependency property.</para>
       </summary>
-      <value>A <see cref="T:System.Windows.Controls.ControlTemplate"/> object that represents the template that displays column values.</value>
+      <value>A template that displays column values.</value>
     </member>
     <member name="F:DevExpress.Xpf.Grid.DataViewBase.CellDisplayTemplateProperty">
       <summary>
@@ -7688,7 +7694,7 @@
       <summary>
         <para>Gets or sets a template that displays a custom editor used to edit column values. This is a dependency property.</para>
       </summary>
-      <value>A <see cref="T:System.Windows.Controls.ControlTemplate"/> object that represents the template that displays a custom editor.</value>
+      <value>A template that displays a custom editor.</value>
     </member>
     <member name="F:DevExpress.Xpf.Grid.DataViewBase.CellEditTemplateProperty">
       <summary>
@@ -7712,7 +7718,7 @@
       <summary>
         <para>Gets or sets the style applied to data cells displayed within a View. This is a dependency property.</para>
       </summary>
-      <value>A <see cref="T:System.Windows.Style"/> object that represents the style applied to data cells.</value>
+      <value>The style applied to data cells.</value>
     </member>
     <member name="F:DevExpress.Xpf.Grid.DataViewBase.CellStyleProperty">
       <summary>

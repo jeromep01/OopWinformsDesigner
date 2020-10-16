@@ -1190,6 +1190,11 @@
       </summary>
       <value>A collection of <see cref="T:DevExpress.DataAccess.UI.Wizard.ProviderLookupItem"/> values.</value>
     </member>
+    <member name="P:DevExpress.Xpf.DataAccess.DataSourceWizard.ConnectionPropertiesPage.ProviderTypeOracle">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
     <member name="P:DevExpress.Xpf.DataAccess.DataSourceWizard.ConnectionPropertiesPage.SelectedProvider">
       <summary>
         <para>Specifies the selected data provider.</para>

@@ -435,7 +435,7 @@ This property indicates when changes to the bound editor property are propagated
     </member>
     <member name="M:DevExpress.XtraLayout.BaseLayoutItem.HideToCustomization">
       <summary>
-        <para>Hides the item.</para>
+        <para>Hides the item to the Customization Form.</para>
       </summary>
     </member>
     <member name="E:DevExpress.XtraLayout.BaseLayoutItem.Hiding">
@@ -715,9 +715,9 @@ is dependent on the type of control embedded in this layout item.</value>
     </member>
     <member name="P:DevExpress.XtraLayout.BaseLayoutItem.Visibility">
       <summary>
-        <para>Gets or sets whether the layout item is visible within the LayoutControl in regular mode (when layout customization is not performed) and in customization mode.</para>
+        <para>Allows you to hide the item from the Layout Control and Customization Form.</para>
       </summary>
-      <value>A <see cref="T:DevExpress.XtraLayout.Utils.LayoutVisibility"/> value.</value>
+      <value>A <see cref="T:DevExpress.XtraLayout.Utils.LayoutVisibility"/> value that specifies whether the item is visible in the layout and the Customization Form.</value>
     </member>
     <member name="P:DevExpress.XtraLayout.BaseLayoutItem.Visible">
       <summary>
@@ -5013,12 +5013,12 @@ is dependent on the type of control embedded in this layout item.</value>
     </member>
     <member name="F:DevExpress.XtraLayout.SizeConstraintsType.Default">
       <summary>
-        <para>Default Size Constraints are applied to the layout item and its control. The default size constraints are determined automatically depending upon the type of its control.</para>
+        <para>Default size constraints are applied to the layout item and its control. The default size constraints are determined automatically depending upon the type of its control.</para>
       </summary>
     </member>
     <member name="F:DevExpress.XtraLayout.SizeConstraintsType.SupportHorzAlignment">
       <summary>
-        <para>This mode is designed to support horizontal alignment of the controls that implement the automatic sizing feature, when they are displayed within a LayoutControl. A layout item&#39;s maximum and minimum sizes are determined automatically. To custom align a control, set its AutoSizeInLayoutControl property to true and specify the control&#39;s alignment via the <see cref="P:DevExpress.XtraLayout.LayoutControlItem.ContentHorzAlignment"/> property. See Aligning Controls Within Layout Items to learn more.</para>
+        <para>This mode is designed to support horizontal alignment of the controls that implement the automatic sizing feature, when they are displayed within a LayoutControl. A layout item&#39;s maximum and minimum sizes are determined automatically. To custom align a control, set its AutoSizeInLayoutControl property to true and specify the control&#39;s alignment via the <see cref="P:DevExpress.XtraLayout.LayoutControlItem.ContentHorzAlignment"/> property. See Size and Alignment to learn more.</para>
       </summary>
     </member>
     <member name="T:DevExpress.XtraLayout.SplitterItem">
@@ -5776,27 +5776,27 @@ is dependent on the type of control embedded in this layout item.</value>
     </member>
     <member name="T:DevExpress.XtraLayout.Utils.LayoutVisibility">
       <summary>
-        <para>Enumerates values that specify whether a layout item is visible in customization mode and regular mode (when customization is not performed).</para>
+        <para>Enumerates values that specify whether a layout item is visible in the Layout Control and the Customization Form.</para>
       </summary>
     </member>
     <member name="F:DevExpress.XtraLayout.Utils.LayoutVisibility.Always">
       <summary>
-        <para>A layout item is visible in regular mode and in customization mode.</para>
+        <para>A layout item is not collapsed. It is displayed in its original size in regular and customization modes.</para>
       </summary>
     </member>
     <member name="F:DevExpress.XtraLayout.Utils.LayoutVisibility.Never">
       <summary>
-        <para>A layout item is not visible in regular mode or customization mode.</para>
+        <para>A layout item is collapsed.</para>
       </summary>
     </member>
     <member name="F:DevExpress.XtraLayout.Utils.LayoutVisibility.OnlyInCustomization">
       <summary>
-        <para>A layout item is only visible in customization mode, and hidden in regular mode (when customization is not performed).</para>
+        <para>A layout item is visible in customization mode, and collapsed in regular mode (when customization is not performed).</para>
       </summary>
     </member>
     <member name="F:DevExpress.XtraLayout.Utils.LayoutVisibility.OnlyInRuntime">
       <summary>
-        <para>A layout item is only visible in regular mode, and hidden in customization mode.</para>
+        <para>A layout item is visible in regular mode, and collapsed in customization mode.</para>
       </summary>
     </member>
     <member name="T:DevExpress.XtraLayout.Utils.MoveType">

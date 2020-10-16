@@ -771,6 +771,15 @@
       <param name="tables">An array of tables whose structure should be saved in the data store.</param>
       <returns>A <see cref="T:DevExpress.Xpo.DB.UpdateSchemaResult"/> value that specifies the result of the update operation.</returns>
     </member>
+    <member name="M:DevExpress.Xpo.DB.AccessConnectionProviderMultiUserThreadSafe.UpdateSchemaAsync(System.Threading.CancellationToken,System.Boolean,DevExpress.Xpo.DB.DBTable[])">
+      <summary>
+        <para></para>
+      </summary>
+      <param name="cancellationToken" />
+      <param name="doNotCreateIfFirstTableNotExist" />
+      <param name="tables" />
+      <returns></returns>
+    </member>
     <member name="F:DevExpress.Xpo.DB.AccessConnectionProviderMultiUserThreadSafe.XpoProviderTypeString">
       <summary>
         <para>Gets the name of the current connection provider. This name is used internally when generating a connection string via the AccessConnectionProviderMultiUserThreadSafe.GetConnectionString method.</para>
@@ -4247,6 +4256,15 @@
       <param name="selects">An array of query statements.</param>
       <returns>Data retrieved from the data store.</returns>
     </member>
+    <member name="M:DevExpress.Xpo.IDataLayerAsync.UpdateSchemaAsync(System.Threading.CancellationToken,System.Boolean,DevExpress.Xpo.Metadata.XPClassInfo[])">
+      <summary>
+        <para></para>
+      </summary>
+      <param name="cancellationToken" />
+      <param name="doNotCreateIfFirstTableNotExist" />
+      <param name="types" />
+      <returns></returns>
+    </member>
     <member name="T:DevExpress.Xpo.IdentityMapBehavior">
       <summary>
         <para>Defines how references to instances of persistent objects are stored in a session&#39;s Identity Map.</para>
@@ -4516,6 +4534,14 @@
       <param name="cancellationToken">A CancellationToken object that delivers a cancellation notice to the running operation.</param>
       <returns>A Task that commits specified object changes.</returns>
     </member>
+    <member name="M:DevExpress.Xpo.IObjectLayerAsync.CreateObjectTypeAsync(DevExpress.Xpo.XPObjectType,System.Threading.CancellationToken)">
+      <summary>
+        <para></para>
+      </summary>
+      <param name="objectType" />
+      <param name="cancellationToken" />
+      <returns></returns>
+    </member>
     <member name="M:DevExpress.Xpo.IObjectLayerAsync.GetObjectsByKeyAsync(DevExpress.Xpo.Session,DevExpress.Xpo.ObjectsByKeyQuery[],System.Threading.CancellationToken)">
       <summary>
         <para>Retrieves object data from a session asynchronously, according to specified query parameters.</para>
@@ -4575,6 +4601,15 @@
       <param name="groupCriteria">A <see cref="T:DevExpress.Data.Filtering.CriteriaOperator"/> descendant which specifies the grouping criteria for the retrieved objects.</param>
       <param name="cancellationToken">A CancellationToken object that delivers a cancellation notice to the running operation.</param>
       <returns>A Task that returns a list of object arrays. These object arrays match specified query parameters.</returns>
+    </member>
+    <member name="M:DevExpress.Xpo.IObjectLayerAsync.UpdateSchemaAsync(System.Threading.CancellationToken,System.Boolean,DevExpress.Xpo.Metadata.XPClassInfo[])">
+      <summary>
+        <para></para>
+      </summary>
+      <param name="cancellationToken" />
+      <param name="doNotCreateIfFirstTableNotExist" />
+      <param name="types" />
+      <returns></returns>
     </member>
     <member name="T:DevExpress.Xpo.IObjectLayerEx">
       <summary>
@@ -6605,15 +6640,15 @@
     </member>
     <member name="P:DevExpress.Xpo.Metadata.XPMemberInfo.MappingFieldDBType">
       <summary>
-        <para></para>
+        <para>Gets the <see cref="P:DevExpress.Xpo.Metadata.XPMemberInfo.MappingField"/>&#39;s data type.</para>
       </summary>
-      <value></value>
+      <value>One of the enumeration values. Specifies the .NET analog of the data store column&#39;s type. Use the <see cref="P:DevExpress.Xpo.Metadata.XPMemberInfo.MappingFieldDBTypeName"/> property to get the SQL type name.</value>
     </member>
     <member name="P:DevExpress.Xpo.Metadata.XPMemberInfo.MappingFieldDBTypeName">
       <summary>
-        <para></para>
+        <para>Gets the <see cref="P:DevExpress.Xpo.Metadata.XPMemberInfo.MappingField"/>&#39;s SQL type name.</para>
       </summary>
-      <value></value>
+      <value>Specifies the</value>
     </member>
     <member name="P:DevExpress.Xpo.Metadata.XPMemberInfo.MappingFieldSize">
       <summary>
@@ -8009,6 +8044,14 @@
       </summary>
       <param name="type">An <see cref="T:DevExpress.Xpo.XPObjectType"/> object specifying a valid persistent type.</param>
     </member>
+    <member name="M:DevExpress.Xpo.SerializableObjectLayerClient.CreateObjectTypeAsync(DevExpress.Xpo.XPObjectType,System.Threading.CancellationToken)">
+      <summary>
+        <para></para>
+      </summary>
+      <param name="type" />
+      <param name="cancellationToken" />
+      <returns></returns>
+    </member>
     <member name="P:DevExpress.Xpo.SerializableObjectLayerClient.DataLayer">
       <summary>
         <para>Provides access to the current object layer&#39;s data access layer which is used to access a data store.</para>
@@ -8255,6 +8298,15 @@
       <param name="doNotCreateIfFirstTableNotExist">true if the schema should not be created when the table that corresponds to the first item in the types array doesn&#39;t exist in the data store; otherwise, false.</param>
       <param name="types">An array of <see cref="T:DevExpress.Xpo.Metadata.XPClassInfo"/> objects specifying the types of objects for which schema should be created in the data store.</param>
       <returns>An <see cref="T:DevExpress.Xpo.DB.UpdateSchemaResult"/> enumeration value which specifies the result of the update operation.</returns>
+    </member>
+    <member name="M:DevExpress.Xpo.SerializableObjectLayerClient.UpdateSchemaAsync(System.Threading.CancellationToken,System.Boolean,DevExpress.Xpo.Metadata.XPClassInfo[])">
+      <summary>
+        <para></para>
+      </summary>
+      <param name="cancellationToken" />
+      <param name="doNotCreateIfFirstTableNotExist" />
+      <param name="types" />
+      <returns></returns>
     </member>
     <member name="T:DevExpress.Xpo.ServerExceptionThrownAction">
       <summary>
@@ -8749,6 +8801,72 @@
       </summary>
       <param name="types">An array of class types for which the persistent types will be stored in the metadata information.</param>
     </member>
+    <member name="M:DevExpress.Xpo.Session.CreateObjectTypeRecordsAsync(System.Boolean,System.Threading.CancellationToken)">
+      <summary>
+        <para></para>
+      </summary>
+      <param name="createOnlyNecessary" />
+      <param name="cancellationToken" />
+      <returns></returns>
+    </member>
+    <member name="M:DevExpress.Xpo.Session.CreateObjectTypeRecordsAsync(System.Threading.CancellationToken)">
+      <summary>
+        <para></para>
+      </summary>
+      <param name="cancellationToken" />
+      <returns></returns>
+    </member>
+    <member name="M:DevExpress.Xpo.Session.CreateObjectTypeRecordsAsync(System.Threading.CancellationToken,DevExpress.Xpo.Metadata.XPClassInfo[])">
+      <summary>
+        <para></para>
+      </summary>
+      <param name="cancellationToken" />
+      <param name="types" />
+      <returns></returns>
+    </member>
+    <member name="M:DevExpress.Xpo.Session.CreateObjectTypeRecordsAsync(System.Threading.CancellationToken,System.Boolean,DevExpress.Xpo.Metadata.XPClassInfo[])">
+      <summary>
+        <para></para>
+      </summary>
+      <param name="cancellationToken" />
+      <param name="createOnlyNecessary" />
+      <param name="types" />
+      <returns></returns>
+    </member>
+    <member name="M:DevExpress.Xpo.Session.CreateObjectTypeRecordsAsync(System.Threading.CancellationToken,System.Boolean,System.Reflection.Assembly[])">
+      <summary>
+        <para></para>
+      </summary>
+      <param name="cancellationToken" />
+      <param name="createOnlyNecessary" />
+      <param name="assemblies" />
+      <returns></returns>
+    </member>
+    <member name="M:DevExpress.Xpo.Session.CreateObjectTypeRecordsAsync(System.Threading.CancellationToken,System.Boolean,System.Type[])">
+      <summary>
+        <para></para>
+      </summary>
+      <param name="cancellationToken" />
+      <param name="createOnlyNecessary" />
+      <param name="types" />
+      <returns></returns>
+    </member>
+    <member name="M:DevExpress.Xpo.Session.CreateObjectTypeRecordsAsync(System.Threading.CancellationToken,System.Reflection.Assembly[])">
+      <summary>
+        <para></para>
+      </summary>
+      <param name="cancellationToken" />
+      <param name="assemblies" />
+      <returns></returns>
+    </member>
+    <member name="M:DevExpress.Xpo.Session.CreateObjectTypeRecordsAsync(System.Threading.CancellationToken,System.Type[])">
+      <summary>
+        <para></para>
+      </summary>
+      <param name="cancellationToken" />
+      <param name="types" />
+      <returns></returns>
+    </member>
     <member name="P:DevExpress.Xpo.Session.DataLayer">
       <summary>
         <para>Gets the data access layer used by the current session to access a data store.</para>
@@ -8772,6 +8890,22 @@
         <para>Deletes the specified persistent object and its aggregated objects from persistent storage.</para>
       </summary>
       <param name="theObject">An object which represents the persistent object to delete.</param>
+    </member>
+    <member name="M:DevExpress.Xpo.Session.DeleteAsync(System.Collections.ICollection,System.Threading.CancellationToken)">
+      <summary>
+        <para></para>
+      </summary>
+      <param name="objects" />
+      <param name="cancellationToken" />
+      <returns></returns>
+    </member>
+    <member name="M:DevExpress.Xpo.Session.DeleteAsync(System.Object,System.Threading.CancellationToken)">
+      <summary>
+        <para></para>
+      </summary>
+      <param name="theObject" />
+      <param name="cancellationToken" />
+      <returns></returns>
     </member>
     <member name="P:DevExpress.Xpo.Session.Dictionary">
       <summary>
@@ -8904,349 +9038,349 @@
       <summary>
         <para>Executes the specified SQL statement and returns the number of rows affected.</para>
       </summary>
-      <param name="sql">A <see cref="T:System.String"/> value that specifies an SQL statement.</param>
+      <param name="sql">Specifies an SQL statement.</param>
       <returns>The number of rows affected by the executed SQL statement.</returns>
     </member>
     <member name="M:DevExpress.Xpo.Session.ExecuteNonQuery(System.String,DevExpress.Xpo.DB.QueryParameterCollection)">
       <summary>
-        <para></para>
+        <para>Executes the specified SQL statement and returns the number of rows affected.</para>
       </summary>
-      <param name="sql"></param>
-      <param name="parameters"></param>
-      <returns></returns>
+      <param name="sql">Specifies an SQL statement.</param>
+      <param name="parameters">Specifies query parameter values.</param>
+      <returns>The number of rows affected by the executed SQL statement.</returns>
     </member>
     <member name="M:DevExpress.Xpo.Session.ExecuteNonQuery(System.String,System.Object[])">
       <summary>
         <para>Executes the specified SQL statement and returns the number of rows affected.</para>
       </summary>
-      <param name="sql">A <see cref="T:System.String"/> value that specifies a parameterized SQL query.</param>
+      <param name="sql">Specifies an SQL statement.</param>
       <param name="parameterValues">An array of objects specifying parameters to pass to the database server along with the query.</param>
       <returns>The number of rows affected by the executed SQL statement.</returns>
     </member>
     <member name="M:DevExpress.Xpo.Session.ExecuteNonQuery(System.String,System.String[],DevExpress.Xpo.DB.QueryParameterCollection)">
       <summary>
-        <para></para>
+        <para>Executes the specified SQL statement and returns the number of rows affected.</para>
       </summary>
-      <param name="sql"></param>
-      <param name="parameterNames"></param>
-      <param name="parameters"></param>
-      <returns></returns>
+      <param name="sql">Specifies an SQL statement.</param>
+      <param name="parameterNames">Specifies parameter names.</param>
+      <param name="parameters">Specifies query parameter values.</param>
+      <returns>The number of rows affected by the executed SQL statement.</returns>
     </member>
     <member name="M:DevExpress.Xpo.Session.ExecuteNonQuery(System.String,System.String[],System.Object[])">
       <summary>
         <para>Executes the specified SQL statement and returns the number of rows affected.</para>
       </summary>
-      <param name="sql">A <see cref="T:System.String"/> value that specifies a parameterized SQL query.</param>
-      <param name="parameterNames">An array of strings specifying parameterValues parameter names.</param>
+      <param name="sql">Specifies an SQL statement.</param>
+      <param name="parameterNames">Specifies parameter names.</param>
       <param name="parameterValues">An array of objects specifying parameters to pass to the database server along with the query.</param>
       <returns>The number of rows affected by the executed SQL statement.</returns>
     </member>
     <member name="M:DevExpress.Xpo.Session.ExecuteNonQueryAsync(System.String,DevExpress.Xpo.DB.QueryParameterCollection,System.Threading.CancellationToken)">
       <summary>
-        <para></para>
+        <para>Asynchronously executes the specified SQL statement and returns the number of rows affected.</para>
       </summary>
-      <param name="sql"></param>
-      <param name="parameters"></param>
-      <param name="cancellationToken"></param>
-      <returns></returns>
+      <param name="sql">Specifies an SQL statement.</param>
+      <param name="parameters">Specifies query parameter values.</param>
+      <param name="cancellationToken">A <see cref="T:System.Threading.CancellationToken"/> object that delivers a cancellation notice to the running operation.</param>
+      <returns>A <see cref="T:System.Threading.Tasks.Task`1"/> that returns a number of affected rows.</returns>
     </member>
     <member name="M:DevExpress.Xpo.Session.ExecuteNonQueryAsync(System.String,System.Object[],System.Threading.CancellationToken)">
       <summary>
         <para>Asynchronously executes the specified SQL statement and returns the number of rows affected.</para>
       </summary>
-      <param name="sql">A <see cref="T:System.String"/> value that specifies an SQL statement.</param>
+      <param name="sql">Specifies an SQL statement.</param>
       <param name="parameterValues">An array of objects specifying parameters to pass to the database server along with the query.</param>
-      <param name="cancellationToken">A CancellationToken object that delivers a cancellation notice to the running operation.</param>
-      <returns>A Task that returns an Int32 value. This value demonstrates how many of rows the specified SQL statement affects.</returns>
+      <param name="cancellationToken">A <see cref="T:System.Threading.CancellationToken"/> object that delivers a cancellation notice to the running operation.</param>
+      <returns>A <see cref="T:System.Threading.Tasks.Task`1"/> that returns a number of affected rows.</returns>
     </member>
     <member name="M:DevExpress.Xpo.Session.ExecuteNonQueryAsync(System.String,System.Threading.CancellationToken)">
       <summary>
         <para>Asynchronously executes the specified SQL statement and returns the number of rows affected.</para>
       </summary>
-      <param name="sql">A <see cref="T:System.String"/> value that specifies an SQL statement.</param>
-      <param name="cancellationToken">A CancellationToken object that delivers a cancellation notice to the running operation.</param>
-      <returns>A Task that returns an Int32 value. This value demonstrates how many of rows the specified SQL statement affects.</returns>
+      <param name="sql">Specifies an SQL statement.</param>
+      <param name="cancellationToken">A <see cref="T:System.Threading.CancellationToken"/> object that delivers a cancellation notice to the running operation.</param>
+      <returns>A <see cref="T:System.Threading.Tasks.Task`1"/> that returns a number of affected rows.</returns>
     </member>
     <member name="M:DevExpress.Xpo.Session.ExecuteNonQueryAsync(System.Threading.CancellationToken,System.String,System.String[],DevExpress.Xpo.DB.QueryParameterCollection)">
       <summary>
-        <para></para>
+        <para>Asynchronously executes the specified SQL statement and returns the number of rows affected.</para>
       </summary>
-      <param name="cancellationToken"></param>
-      <param name="sql"></param>
-      <param name="parameterNames"></param>
-      <param name="parameters"></param>
-      <returns></returns>
+      <param name="cancellationToken">A <see cref="T:System.Threading.CancellationToken"/> object that delivers a cancellation notice to the running operation.</param>
+      <param name="sql">Specifies an SQL statement.</param>
+      <param name="parameterNames">Specifies parameter names.</param>
+      <param name="parameters">Specifies query parameter values.</param>
+      <returns>A <see cref="T:System.Threading.Tasks.Task`1"/> that returns a number of affected rows.</returns>
     </member>
     <member name="M:DevExpress.Xpo.Session.ExecuteNonQueryAsync(System.Threading.CancellationToken,System.String,System.String[],System.Object[])">
       <summary>
         <para>Asynchronously executes the specified SQL statement and returns the number of rows affected.</para>
       </summary>
-      <param name="cancellationToken">A CancellationToken object that delivers a cancellation notice to the running operation.</param>
-      <param name="sql">A <see cref="T:System.String"/> value that specifies an SQL statement.</param>
-      <param name="parameterNames">An array of strings specifying parameterValues parameter names.</param>
+      <param name="cancellationToken">A <see cref="T:System.Threading.CancellationToken"/> object that delivers a cancellation notice to the running operation.</param>
+      <param name="sql">Specifies an SQL statement.</param>
+      <param name="parameterNames">Specifies parameter names.</param>
       <param name="parameterValues">An array of objects specifying parameters to pass to the database server along with the query.</param>
-      <returns>A Task that returns an Int32 value. This value demonstrates how many of rows the specified SQL statement affects.</returns>
+      <returns>A <see cref="T:System.Threading.Tasks.Task`1"/> that returns a number of affected rows.</returns>
     </member>
     <member name="M:DevExpress.Xpo.Session.ExecuteQuery(System.String)">
       <summary>
         <para>Executes the specified SQL query and returns a result set.</para>
       </summary>
-      <param name="sql">A <see cref="T:System.String"/> value that specifies an SQL query.</param>
+      <param name="sql">Specifies an SQL statement.</param>
       <returns>A <see cref="T:DevExpress.Xpo.DB.SelectedData"/> object, specifying the query&#39;s result set.</returns>
     </member>
     <member name="M:DevExpress.Xpo.Session.ExecuteQuery(System.String,DevExpress.Xpo.DB.QueryParameterCollection)">
       <summary>
-        <para></para>
+        <para>Executes the specified SQL query and returns a result set.</para>
       </summary>
-      <param name="sql"></param>
-      <param name="parameters"></param>
-      <returns></returns>
+      <param name="sql">Specifies an SQL statement.</param>
+      <param name="parameters">Specifies query parameter values.</param>
+      <returns>A result set compatible with <see cref="T:DevExpress.Xpo.XPDataView"/></returns>
     </member>
     <member name="M:DevExpress.Xpo.Session.ExecuteQuery(System.String,System.Object[])">
       <summary>
         <para>Executes the specified SQL query and returns a result set.</para>
       </summary>
-      <param name="sql">A <see cref="T:System.String"/> value that specifies a parameterized SQL query.</param>
+      <param name="sql">Specifies an SQL statement.</param>
       <param name="parameterValues">An array of objects specifying parameters to pass to the database server along with the query.</param>
       <returns>A <see cref="T:DevExpress.Xpo.DB.SelectedData"/> object, specifying the query&#39;s result set.</returns>
     </member>
     <member name="M:DevExpress.Xpo.Session.ExecuteQuery(System.String,System.String[],DevExpress.Xpo.DB.QueryParameterCollection)">
       <summary>
-        <para></para>
+        <para>Executes the specified SQL query and returns a result set.</para>
       </summary>
-      <param name="sql"></param>
-      <param name="parameterNames"></param>
-      <param name="parameters"></param>
-      <returns></returns>
+      <param name="sql">Specifies an SQL statement.</param>
+      <param name="parameterNames">Specifies parameter names.</param>
+      <param name="parameters">Specifies query parameter values.</param>
+      <returns>A result set compatible with <see cref="T:DevExpress.Xpo.XPDataView"/></returns>
     </member>
     <member name="M:DevExpress.Xpo.Session.ExecuteQuery(System.String,System.String[],System.Object[])">
       <summary>
         <para>Executes the specified SQL query and returns a result set.</para>
       </summary>
-      <param name="sql">A <see cref="T:System.String"/> value that specifies a parameterized SQL query.</param>
-      <param name="parameterNames">An array of strings specifying parameterValues parameter names.</param>
+      <param name="sql">Specifies an SQL statement.</param>
+      <param name="parameterNames">Specifies parameter names.</param>
       <param name="parameterValues">An array of objects specifying parameters to pass to the database server along with the query.</param>
       <returns>A <see cref="T:DevExpress.Xpo.DB.SelectedData"/> object, specifying the query&#39;s result set.</returns>
     </member>
     <member name="M:DevExpress.Xpo.Session.ExecuteQueryAsync(System.String,DevExpress.Xpo.DB.QueryParameterCollection,System.Threading.CancellationToken)">
       <summary>
-        <para></para>
+        <para>Asynchronously executes the specified SQL query and returns a result set.</para>
       </summary>
-      <param name="sql"></param>
-      <param name="parameters"></param>
-      <param name="cancellationToken"></param>
-      <returns></returns>
+      <param name="sql">Specifies an SQL statement.</param>
+      <param name="parameters">Specifies query parameter values.</param>
+      <param name="cancellationToken">A <see cref="T:System.Threading.CancellationToken"/> object that delivers a cancellation notice to the running operation.</param>
+      <returns>A <see cref="T:System.Threading.Tasks.Task`1"/> that returns a result set compatible with <see cref="T:DevExpress.Xpo.XPDataView"/>.</returns>
     </member>
     <member name="M:DevExpress.Xpo.Session.ExecuteQueryAsync(System.String,System.Object[],System.Threading.CancellationToken)">
       <summary>
         <para>Asynchronously executes the specified SQL query and returns a result set.</para>
       </summary>
-      <param name="sql">A <see cref="T:System.String"/> value that specifies an SQL query.</param>
+      <param name="sql">Specifies an SQL statement.</param>
       <param name="parameterValues">An array of objects specifying parameters to pass to the database server along with the query.</param>
-      <param name="cancellationToken">A CancellationToken object that delivers a cancellation notice to the running operation.</param>
-      <returns>Data retrieved from the data store.</returns>
+      <param name="cancellationToken">A <see cref="T:System.Threading.CancellationToken"/> object that delivers a cancellation notice to the running operation.</param>
+      <returns>A <see cref="T:System.Threading.Tasks.Task`1"/> that returns a result set compatible with <see cref="T:DevExpress.Xpo.XPDataView"/>.</returns>
     </member>
     <member name="M:DevExpress.Xpo.Session.ExecuteQueryAsync(System.String,System.String[],DevExpress.Xpo.DB.QueryParameterCollection,System.Threading.CancellationToken)">
       <summary>
-        <para></para>
+        <para>Asynchronously executes the specified SQL query and returns a result set.</para>
       </summary>
-      <param name="sql"></param>
-      <param name="parameterNames"></param>
-      <param name="parameters"></param>
-      <param name="cancellationToken"></param>
-      <returns></returns>
+      <param name="sql">Specifies an SQL statement.</param>
+      <param name="parameterNames">Specifies parameter names.</param>
+      <param name="parameters">Specifies query parameter values.</param>
+      <param name="cancellationToken">A <see cref="T:System.Threading.CancellationToken"/> object that delivers a cancellation notice to the running operation.</param>
+      <returns>A <see cref="T:System.Threading.Tasks.Task`1"/> that returns a result set compatible with <see cref="T:DevExpress.Xpo.XPDataView"/>.</returns>
     </member>
     <member name="M:DevExpress.Xpo.Session.ExecuteQueryAsync(System.String,System.String[],System.Object[],System.Threading.CancellationToken)">
       <summary>
         <para>Asynchronously executes the specified SQL query and returns a result set.</para>
       </summary>
-      <param name="sql">A <see cref="T:System.String"/> value that specifies an SQL query.</param>
-      <param name="parameterNames">An array of strings specifying parameterValues parameter names.</param>
+      <param name="sql">Specifies an SQL statement.</param>
+      <param name="parameterNames">Specifies parameter names.</param>
       <param name="parameterValues">An array of objects specifying parameters to pass to the database server along with the query.</param>
-      <param name="cancellationToken">A CancellationToken object that delivers a cancellation notice to the running operation.</param>
-      <returns>Data retrieved from the data store.</returns>
+      <param name="cancellationToken">A <see cref="T:System.Threading.CancellationToken"/> object that delivers a cancellation notice to the running operation.</param>
+      <returns>A <see cref="T:System.Threading.Tasks.Task`1"/> that returns a result set compatible with <see cref="T:DevExpress.Xpo.XPDataView"/>.</returns>
     </member>
     <member name="M:DevExpress.Xpo.Session.ExecuteQueryAsync(System.String,System.Threading.CancellationToken)">
       <summary>
         <para>Asynchronously executes the specified SQL query and returns a result set.</para>
       </summary>
-      <param name="sql">A <see cref="T:System.String"/> value that specifies an SQL query.</param>
-      <param name="cancellationToken">A CancellationToken object that delivers a cancellation notice to the running operation.</param>
-      <returns>Data retrieved from the data store.</returns>
+      <param name="sql">Specifies an SQL statement.</param>
+      <param name="cancellationToken">A <see cref="T:System.Threading.CancellationToken"/> object that delivers a cancellation notice to the running operation.</param>
+      <returns>A <see cref="T:System.Threading.Tasks.Task`1"/> that returns the data retrieved from the data store.</returns>
     </member>
     <member name="M:DevExpress.Xpo.Session.ExecuteQueryWithMetadata(System.String)">
       <summary>
         <para>Executes the specified SQL query and returns its result set along with the types and names of retrieved columns.</para>
       </summary>
-      <param name="sql">A <see cref="T:System.String"/> value that specifies an SQL query.</param>
+      <param name="sql">Specifies an SQL statement.</param>
       <returns>A <see cref="T:DevExpress.Xpo.DB.SelectedData"/> object, specifying the query&#39;s result set and the types and names of retrieved columns.</returns>
     </member>
     <member name="M:DevExpress.Xpo.Session.ExecuteQueryWithMetadata(System.String,DevExpress.Xpo.DB.QueryParameterCollection)">
       <summary>
-        <para></para>
+        <para>Executes the specified SQL query and returns its result set along with the types and names of retrieved columns.</para>
       </summary>
-      <param name="sql"></param>
-      <param name="parameters"></param>
-      <returns></returns>
+      <param name="sql">Specifies an SQL statement.</param>
+      <param name="parameters">Specifies query parameter values.</param>
+      <returns>A result set compatible with <see cref="T:DevExpress.Xpo.XPDataView"/>.</returns>
     </member>
     <member name="M:DevExpress.Xpo.Session.ExecuteQueryWithMetadata(System.String,System.Object[])">
       <summary>
         <para>Executes the specified SQL query and returns its result set along with the types and names of retrieved columns.</para>
       </summary>
-      <param name="sql">A <see cref="T:System.String"/> value that specifies a parameterized SQL query.</param>
+      <param name="sql">Specifies an SQL statement.</param>
       <param name="parameterValues">An array of objects specifying parameters to pass to the database server along with the query.</param>
       <returns>A <see cref="T:DevExpress.Xpo.DB.SelectedData"/> object, specifying the query&#39;s result set and the types and names of retrieved columns.</returns>
     </member>
     <member name="M:DevExpress.Xpo.Session.ExecuteQueryWithMetadata(System.String,System.String[],DevExpress.Xpo.DB.QueryParameterCollection)">
       <summary>
-        <para></para>
+        <para>Executes the specified SQL query and returns its result set along with the types and names of retrieved columns.</para>
       </summary>
-      <param name="sql"></param>
-      <param name="parameterNames"></param>
-      <param name="parameters"></param>
-      <returns></returns>
+      <param name="sql">Specifies an SQL statement.</param>
+      <param name="parameterNames">Specifies parameter names.</param>
+      <param name="parameters">Specifies query parameter values.</param>
+      <returns>A result set compatible with <see cref="T:DevExpress.Xpo.XPDataView"/>.</returns>
     </member>
     <member name="M:DevExpress.Xpo.Session.ExecuteQueryWithMetadata(System.String,System.String[],System.Object[])">
       <summary>
         <para>Executes the specified SQL query and returns its result set along with the types and names of retrieved columns.</para>
       </summary>
-      <param name="sql">A <see cref="T:System.String"/> value that specifies a parameterized SQL query.</param>
-      <param name="parameterNames">An array of strings specifying parameterValues parameter names.</param>
+      <param name="sql">Specifies an SQL statement.</param>
+      <param name="parameterNames">Specifies parameter names.</param>
       <param name="parameterValues">An array of objects specifying parameters to pass to the database server along with the query.</param>
       <returns>A <see cref="T:DevExpress.Xpo.DB.SelectedData"/> object, specifying the query&#39;s result set and the types and names of retrieved columns.</returns>
     </member>
     <member name="M:DevExpress.Xpo.Session.ExecuteQueryWithMetadataAsync(System.String,DevExpress.Xpo.DB.QueryParameterCollection,System.Threading.CancellationToken)">
       <summary>
-        <para></para>
+        <para>Asynchronously executes the specified SQL query and returns its result set along with the types and names of retrieved columns.</para>
       </summary>
-      <param name="sql"></param>
-      <param name="parameters"></param>
-      <param name="cancellationToken"></param>
-      <returns></returns>
+      <param name="sql">Specifies an SQL statement.</param>
+      <param name="parameters">Specifies query parameter values.</param>
+      <param name="cancellationToken">A <see cref="T:System.Threading.CancellationToken"/> object that delivers a cancellation notice to the running operation.</param>
+      <returns>A <see cref="T:System.Threading.Tasks.Task`1"/> that returns a result set compatible with <see cref="T:DevExpress.Xpo.XPDataView"/>.</returns>
     </member>
     <member name="M:DevExpress.Xpo.Session.ExecuteQueryWithMetadataAsync(System.String,System.Object[],System.Threading.CancellationToken)">
       <summary>
-        <para></para>
+        <para>Asynchronously executes the specified SQL query and returns its result set along with the types and names of retrieved columns.</para>
       </summary>
-      <param name="sql"></param>
-      <param name="parameterValues"></param>
-      <param name="cancellationToken"></param>
-      <returns></returns>
+      <param name="sql">Specifies an SQL statement.</param>
+      <param name="parameterValues">An array of objects specifying parameters to pass to the database server along with the query.</param>
+      <param name="cancellationToken">A <see cref="T:System.Threading.CancellationToken"/> object that delivers a cancellation notice to the running operation.</param>
+      <returns>A <see cref="T:System.Threading.Tasks.Task`1"/> that returns a result set compatible with <see cref="T:DevExpress.Xpo.XPDataView"/>.</returns>
     </member>
     <member name="M:DevExpress.Xpo.Session.ExecuteQueryWithMetadataAsync(System.String,System.String[],DevExpress.Xpo.DB.QueryParameterCollection,System.Threading.CancellationToken)">
       <summary>
-        <para></para>
+        <para>Asynchronously executes the specified SQL query and returns its result set along with the types and names of retrieved columns.</para>
       </summary>
-      <param name="sql"></param>
-      <param name="parameterNames"></param>
-      <param name="parameters"></param>
-      <param name="cancellationToken"></param>
-      <returns></returns>
+      <param name="sql">Specifies an SQL statement.</param>
+      <param name="parameterNames">Specifies parameter names.</param>
+      <param name="parameters">Specifies query parameter values.</param>
+      <param name="cancellationToken">A <see cref="T:System.Threading.CancellationToken"/> object that delivers a cancellation notice to the running operation.</param>
+      <returns>A <see cref="T:System.Threading.Tasks.Task`1"/> that returns a result set compatible with <see cref="T:DevExpress.Xpo.XPDataView"/>.</returns>
     </member>
     <member name="M:DevExpress.Xpo.Session.ExecuteQueryWithMetadataAsync(System.String,System.String[],System.Object[],System.Threading.CancellationToken)">
       <summary>
-        <para></para>
+        <para>Asynchronously executes the specified SQL query and returns its result set along with the types and names of retrieved columns.</para>
       </summary>
-      <param name="sql"></param>
-      <param name="parameterNames"></param>
-      <param name="parameterValues"></param>
-      <param name="cancellationToken"></param>
-      <returns></returns>
+      <param name="sql">Specifies an SQL statement.</param>
+      <param name="parameterNames">Specifies parameter names.</param>
+      <param name="parameterValues">An array of objects specifying parameters to pass to the database server along with the query.</param>
+      <param name="cancellationToken">A <see cref="T:System.Threading.CancellationToken"/> object that delivers a cancellation notice to the running operation.</param>
+      <returns>A <see cref="T:System.Threading.Tasks.Task`1"/> that returns a result set compatible with <see cref="T:DevExpress.Xpo.XPDataView"/>.</returns>
     </member>
     <member name="M:DevExpress.Xpo.Session.ExecuteQueryWithMetadataAsync(System.String,System.Threading.CancellationToken)">
       <summary>
-        <para></para>
+        <para>Asynchronously executes the specified SQL query and returns its result set along with the types and names of retrieved columns.</para>
       </summary>
-      <param name="sql"></param>
-      <param name="cancellationToken"></param>
-      <returns></returns>
+      <param name="sql">Specifies an SQL statement.</param>
+      <param name="cancellationToken">A <see cref="T:System.Threading.CancellationToken"/> object that delivers a cancellation notice to the running operation.</param>
+      <returns>A <see cref="T:System.Threading.Tasks.Task`1"/> that returns a result set compatible with <see cref="T:DevExpress.Xpo.XPDataView"/>.</returns>
     </member>
     <member name="M:DevExpress.Xpo.Session.ExecuteScalar(System.String)">
       <summary>
         <para>Executes the specified SQL query and returns the first column of the first row in the result set returned by the query.</para>
       </summary>
-      <param name="sql">A <see cref="T:System.String"/> value that specifies an SQL query.</param>
+      <param name="sql">Specifies an SQL statement.</param>
       <returns>The first column of the first row in the query&#39;s result set. If the column is not found in the result set, a null reference (Nothing in Visual Basic) is returned. If the value in the database is null, DBNull.Value is returned.</returns>
     </member>
     <member name="M:DevExpress.Xpo.Session.ExecuteScalar(System.String,DevExpress.Xpo.DB.QueryParameterCollection)">
       <summary>
-        <para></para>
+        <para>Executes the specified SQL query and returns the first column of the first row in the result set returned by the query.</para>
       </summary>
-      <param name="sql"></param>
-      <param name="parameters"></param>
-      <returns></returns>
+      <param name="sql">Specifies an SQL statement.</param>
+      <param name="parameters">Specifies query parameter values.</param>
+      <returns>The first column of the first row in the query&#39;s result set. A null reference (Nothing in Visual Basic) if the result set does not contain columns. DBNull.Value if the first column does not contain a value.</returns>
     </member>
     <member name="M:DevExpress.Xpo.Session.ExecuteScalar(System.String,System.Object[])">
       <summary>
         <para>Executes the specified SQL query and returns the first column of the first row in the result set returned by the query.</para>
       </summary>
-      <param name="sql">A <see cref="T:System.String"/> value that specifies a parameterized SQL query.</param>
+      <param name="sql">Specifies an SQL statement.</param>
       <param name="parameterValues">An array of objects specifying parameters to pass to the database server along with the query.</param>
       <returns>The first column of the first row in the query&#39;s result set. If the column is not found in the result set, a null reference (Nothing in Visual Basic) is returned. If the value in the database is null, DBNull.Value is returned.</returns>
     </member>
     <member name="M:DevExpress.Xpo.Session.ExecuteScalar(System.String,System.String[],DevExpress.Xpo.DB.QueryParameterCollection)">
       <summary>
-        <para></para>
+        <para>Executes the specified SQL query and returns the first column of the first row in the result set returned by the query.</para>
       </summary>
-      <param name="sql"></param>
-      <param name="parameterNames"></param>
-      <param name="parameters"></param>
-      <returns></returns>
+      <param name="sql">Specifies an SQL statement.</param>
+      <param name="parameterNames">Specifies parameter names.</param>
+      <param name="parameters">Specifies query parameter values.</param>
+      <returns>The first column of the first row in the query&#39;s result set. A null reference (Nothing in Visual Basic) if the result set does not contain columns. DBNull.Value if the first column does not contain a value.</returns>
     </member>
     <member name="M:DevExpress.Xpo.Session.ExecuteScalar(System.String,System.String[],System.Object[])">
       <summary>
         <para>Executes the specified SQL query and returns the first column of the first row in the result set returned by the query.</para>
       </summary>
-      <param name="sql">A <see cref="T:System.String"/> value that specifies a parameterized SQL query.</param>
-      <param name="parameterNames">An array of strings specifying names of the parameterValues parameters.</param>
+      <param name="sql">Specifies an SQL statement.</param>
+      <param name="parameterNames">Specifies parameter names.</param>
       <param name="parameterValues">An array of objects specifying parameters to pass to the database server along with the query.</param>
       <returns>The first column of the first row in the query&#39;s result set. If the column is not found in the result set, a null reference (Nothing in Visual Basic) is returned. If the value in the database is null, DBNull.Value is returned.</returns>
     </member>
     <member name="M:DevExpress.Xpo.Session.ExecuteScalarAsync(System.String,DevExpress.Xpo.DB.QueryParameterCollection,System.Threading.CancellationToken)">
       <summary>
-        <para></para>
+        <para>Asynchronously executes the specified SQL query and returns the first column of the first row in the result set returned by the query.</para>
       </summary>
-      <param name="sql"></param>
-      <param name="parameters"></param>
-      <param name="cancellationToken"></param>
-      <returns></returns>
+      <param name="sql">Specifies an SQL statement.</param>
+      <param name="parameters">Specifies query parameter values.</param>
+      <param name="cancellationToken">A <see cref="T:System.Threading.CancellationToken"/> object that delivers a cancellation notice to the running operation.</param>
+      <returns>A <see cref="T:System.Threading.Tasks.Task`1"/> that returns the first column of the first row in the query&#39;s result set. A null reference (Nothing in Visual Basic) if the result set does not contain columns. DBNull.Value if the first column does not contain a value.</returns>
     </member>
     <member name="M:DevExpress.Xpo.Session.ExecuteScalarAsync(System.String,System.Object[],System.Threading.CancellationToken)">
       <summary>
         <para>Executes the specified SQL query and returns the first column of the first row in the result set returned by the query.</para>
       </summary>
-      <param name="sql">A <see cref="T:System.String"/> value that specifies a parameterized SQL query.</param>
+      <param name="sql">Specifies an SQL statement.</param>
       <param name="parameterValues">An array of objects specifying parameters to pass to the database server along with the query.</param>
-      <param name="cancellationToken">A CancellationToken object that delivers a cancellation notice to the running operation.</param>
-      <returns>The first column of the first row in the query&#39;s result set. If the column is not found in the result set, a null reference (Nothing in Visual Basic) is returned. If the value in the database is null, DBNull.Value is returned.</returns>
+      <param name="cancellationToken">A <see cref="T:System.Threading.CancellationToken"/> object that delivers a cancellation notice to the running operation.</param>
+      <returns>A <see cref="T:System.Threading.Tasks.Task`1"/> that returns the first column of the first row in the query&#39;s result set. A null reference (Nothing in Visual Basic) if the result set does not contain columns. DBNull.Value if the first column does not contain a value.</returns>
     </member>
     <member name="M:DevExpress.Xpo.Session.ExecuteScalarAsync(System.String,System.String[],DevExpress.Xpo.DB.QueryParameterCollection,System.Threading.CancellationToken)">
       <summary>
-        <para></para>
+        <para>Asynchronously executes the specified SQL query and returns the first column of the first row in the result set returned by the query.</para>
       </summary>
-      <param name="sql"></param>
-      <param name="parameterNames"></param>
-      <param name="parameters"></param>
-      <param name="cancellationToken"></param>
-      <returns></returns>
+      <param name="sql">Specifies an SQL statement.</param>
+      <param name="parameterNames">Specifies parameter names.</param>
+      <param name="parameters">Specifies query parameter values.</param>
+      <param name="cancellationToken">A <see cref="T:System.Threading.CancellationToken"/> object that delivers a cancellation notice to the running operation.</param>
+      <returns>A <see cref="T:System.Threading.Tasks.Task`1"/> that returns the first column of the first row in the query&#39;s result set. A null reference (Nothing in Visual Basic) if the result set does not contain columns. DBNull.Value if the first column does not contain a value.</returns>
     </member>
     <member name="M:DevExpress.Xpo.Session.ExecuteScalarAsync(System.String,System.String[],System.Object[],System.Threading.CancellationToken)">
       <summary>
         <para>Asynchronously executes the specified SQL query and returns the first column of the first row in the result set returned by the query.</para>
       </summary>
-      <param name="sql">A <see cref="T:System.String"/> value that specifies a parameterized SQL query.</param>
-      <param name="parameterNames">An array of strings specifying names of the parameterValues parameters.</param>
+      <param name="sql">Specifies an SQL statement.</param>
+      <param name="parameterNames">Specifies parameter names.</param>
       <param name="parameterValues">An array of objects specifying parameters to pass to the database server along with the query.</param>
-      <param name="cancellationToken">A CancellationToken object that delivers a cancellation notice to the running operation.</param>
-      <returns>The first column of the first row in the query&#39;s result set. If the column is not found in the result set, a null reference (Nothing in Visual Basic) is returned. If the value in the database is null, DBNull.Value is returned.</returns>
+      <param name="cancellationToken">A <see cref="T:System.Threading.CancellationToken"/> object that delivers a cancellation notice to the running operation.</param>
+      <returns>A <see cref="T:System.Threading.Tasks.Task`1"/> that returns the first column of the first row in the query&#39;s result set. A null reference (Nothing in Visual Basic) if the result set does not contain columns. DBNull.Value if the first column does not contain a value.</returns>
     </member>
     <member name="M:DevExpress.Xpo.Session.ExecuteScalarAsync(System.String,System.Threading.CancellationToken)">
       <summary>
         <para>Executes the specified SQL query and returns the first column of the first row in the result set returned by the query.</para>
       </summary>
-      <param name="sql">A <see cref="T:System.String"/> value that specifies a parameterized SQL query.</param>
-      <param name="cancellationToken">A CancellationToken object that delivers a cancellation notice to the running operation.</param>
-      <returns>The first column of the first row in the query&#39;s result set. If the column is not found in the result set, a null reference (Nothing in Visual Basic) is returned. If the value in the database is null, DBNull.Value is returned.</returns>
+      <param name="sql">Specifies an SQL statement.</param>
+      <param name="cancellationToken">A <see cref="T:System.Threading.CancellationToken"/> object that delivers a cancellation notice to the running operation.</param>
+      <returns>A <see cref="T:System.Threading.Tasks.Task`1"/> that returns the first column of the first row in the query&#39;s result set. A null reference (Nothing in Visual Basic) if the result set does not contain columns. DBNull.Value if the first column does not contain a value.</returns>
     </member>
     <member name="M:DevExpress.Xpo.Session.ExecuteSproc(System.String,DevExpress.Data.Filtering.OperandValue[])">
       <summary>
@@ -9258,12 +9392,12 @@
     </member>
     <member name="M:DevExpress.Xpo.Session.ExecuteSprocAsync(System.Threading.CancellationToken,System.String,DevExpress.Data.Filtering.OperandValue[])">
       <summary>
-        <para></para>
+        <para>Asynchronously executes the specified stored procedure and returns its result set.</para>
       </summary>
-      <param name="cancellationToken"></param>
-      <param name="sprocName"></param>
-      <param name="parameters"></param>
-      <returns></returns>
+      <param name="cancellationToken">A <see cref="T:System.Threading.CancellationToken"/> object that delivers a cancellation notice to the running operation.</param>
+      <param name="sprocName">A <see cref="T:System.String"/> value that specifies the stored procedure&#39;s name.</param>
+      <param name="parameters">An array of <see cref="T:DevExpress.Data.Filtering.OperandValue"/> objects specifying parameters to pass to the stored procedure.</param>
+      <returns>A <see cref="T:System.Threading.Tasks.Task`1"/> that returns a <see cref="T:DevExpress.Xpo.DB.SelectedData"/> object specifying the result set returned by the specified stored procedure.</returns>
     </member>
     <member name="M:DevExpress.Xpo.Session.ExecuteSprocParametrized(System.String,DevExpress.Xpo.DB.SprocParameter[])">
       <summary>
@@ -9275,12 +9409,12 @@
     </member>
     <member name="M:DevExpress.Xpo.Session.ExecuteSprocParametrizedAsync(System.Threading.CancellationToken,System.String,DevExpress.Xpo.DB.SprocParameter[])">
       <summary>
-        <para></para>
+        <para>Asynchronously executes the specified stored procedure with the named parameters and returns its result set.</para>
       </summary>
-      <param name="cancellationToken"></param>
-      <param name="sprocName"></param>
-      <param name="parameters"></param>
-      <returns></returns>
+      <param name="cancellationToken">A <see cref="T:System.Threading.CancellationToken"/> object that delivers a cancellation notice to the running operation.</param>
+      <param name="sprocName">A <see cref="T:System.String"/> value that specifies the stored procedure&#39;s name.</param>
+      <param name="parameters">An array of SprocParameter objects specifying parameters to pass to the stored procedure.</param>
+      <returns>A <see cref="T:System.Threading.Tasks.Task`1"/> that returns a <see cref="T:DevExpress.Xpo.DB.SelectedData"/> object specifying the result set returned by the specified stored procedure.</returns>
     </member>
     <member name="M:DevExpress.Xpo.Session.ExplicitBeginTransaction">
       <summary>
@@ -9956,18 +10090,18 @@
       </summary>
       <param name="classInfo">An <see cref="T:DevExpress.Xpo.Metadata.XPClassInfo"/> object which contains the metadata information on a non-persistent class corresponding to the query&#39;s result set. The class must be decorated with <see cref="T:DevExpress.Xpo.NonPersistentAttribute"/>.</param>
       <param name="members">An array of <see cref="T:DevExpress.Xpo.LoadDataMemberOrderItem"/> objects which provide mapping information for classInfo members and the query&#39;s result set columns.</param>
-      <param name="sql">A <see cref="T:System.String"/> value that specifies an SQL query.</param>
+      <param name="sql">Specifies an SQL statement.</param>
       <returns>A collection of non-persistent classInfo objects instantiated with data obtained via the specified SQL query.</returns>
     </member>
     <member name="M:DevExpress.Xpo.Session.GetObjectsFromQuery(DevExpress.Xpo.Metadata.XPClassInfo,DevExpress.Xpo.LoadDataMemberOrderItem[],System.String,DevExpress.Xpo.DB.QueryParameterCollection)">
       <summary>
-        <para></para>
+        <para>Executes a SQL query and returns its result set as a collection of non-persistent objects.</para>
       </summary>
-      <param name="classInfo"></param>
-      <param name="members"></param>
-      <param name="sql"></param>
-      <param name="parameters"></param>
-      <returns></returns>
+      <param name="classInfo">An <see cref="T:DevExpress.Xpo.Metadata.XPClassInfo"/> object which contains the metadata information on a non-persistent class corresponding to the query&#39;s result set. The class must be decorated with <see cref="T:DevExpress.Xpo.NonPersistentAttribute"/>.</param>
+      <param name="members">An array of <see cref="T:DevExpress.Xpo.LoadDataMemberOrderItem"/> objects which provide mapping information for classInfo members and the query&#39;s result set columns.</param>
+      <param name="sql">Specifies an SQL statement.</param>
+      <param name="parameters">Specifies query parameter values.</param>
+      <returns>A collection of non-persistent classInfo objects instantiated with data obtained via the specified SQL query.</returns>
     </member>
     <member name="M:DevExpress.Xpo.Session.GetObjectsFromQuery(DevExpress.Xpo.Metadata.XPClassInfo,DevExpress.Xpo.LoadDataMemberOrderItem[],System.String,System.Object[])">
       <summary>
@@ -9976,20 +10110,20 @@
       <param name="classInfo">An <see cref="T:DevExpress.Xpo.Metadata.XPClassInfo"/> object which contains the metadata information on a non-persistent class corresponding to the query&#39;s result set. 
 The class must be decorated with <see cref="T:DevExpress.Xpo.NonPersistentAttribute"/>.</param>
       <param name="members">An array of <see cref="T:DevExpress.Xpo.LoadDataMemberOrderItem"/> objects which provide mapping information for classInfo members and the query&#39;s result set columns.</param>
-      <param name="sql">A <see cref="T:System.String"/> value that specifies a parameterized SQL query.</param>
+      <param name="sql">Specifies an SQL statement.</param>
       <param name="parameterValues">An array of objects specifying parameters to pass to the database server along with the query.</param>
       <returns>A collection of non-persistent classInfo objects instantiated with data obtained via the specified SQL query.</returns>
     </member>
     <member name="M:DevExpress.Xpo.Session.GetObjectsFromQuery(DevExpress.Xpo.Metadata.XPClassInfo,DevExpress.Xpo.LoadDataMemberOrderItem[],System.String,System.String[],DevExpress.Xpo.DB.QueryParameterCollection)">
       <summary>
-        <para></para>
+        <para>Executes a SQL query and returns its result set as a collection of non-persistent objects.</para>
       </summary>
-      <param name="classInfo"></param>
-      <param name="members"></param>
-      <param name="sql"></param>
-      <param name="parameterNames"></param>
-      <param name="parameters"></param>
-      <returns></returns>
+      <param name="classInfo">An <see cref="T:DevExpress.Xpo.Metadata.XPClassInfo"/> object which contains the metadata information on a non-persistent class corresponding to the query&#39;s result set. The class must be decorated with <see cref="T:DevExpress.Xpo.NonPersistentAttribute"/>.</param>
+      <param name="members">An array of <see cref="T:DevExpress.Xpo.LoadDataMemberOrderItem"/> objects which provide mapping information for classInfo members and the query&#39;s result set columns.</param>
+      <param name="sql">Specifies an SQL statement.</param>
+      <param name="parameterNames">Specifies parameter names.</param>
+      <param name="parameters">Specifies query parameter values.</param>
+      <returns>A collection of non-persistent classInfo objects instantiated with data obtained via the specified SQL query.</returns>
     </member>
     <member name="M:DevExpress.Xpo.Session.GetObjectsFromQuery(DevExpress.Xpo.Metadata.XPClassInfo,DevExpress.Xpo.LoadDataMemberOrderItem[],System.String,System.String[],System.Object[])">
       <summary>
@@ -9997,8 +10131,8 @@ The class must be decorated with <see cref="T:DevExpress.Xpo.NonPersistentAttrib
       </summary>
       <param name="classInfo">An <see cref="T:DevExpress.Xpo.Metadata.XPClassInfo"/> object which contains the metadata information on a non-persistent class corresponding to the query&#39;s result set. The class must be decorated with <see cref="T:DevExpress.Xpo.NonPersistentAttribute"/>.</param>
       <param name="members">A list of <see cref="T:DevExpress.Xpo.Metadata.XPMemberInfo"/> objects representing classInfo members that are mapped to the query&#39;s result set columns. The order of list elements should correspond to the order of result set columns.</param>
-      <param name="sql">A <see cref="T:System.String"/> value that specifies a SQL query.</param>
-      <param name="parameterNames">An array of strings specifying parameterValues parameter names.</param>
+      <param name="sql">Specifies an SQL statement.</param>
+      <param name="parameterNames">Specifies parameter names.</param>
       <param name="parameterValues">An array of objects specifying parameters to pass to the database server along with the query.</param>
       <returns>A collection of non-persistent classInfo objects instantiated with data obtained via the specified SQL query.</returns>
     </member>
@@ -10007,49 +10141,49 @@ The class must be decorated with <see cref="T:DevExpress.Xpo.NonPersistentAttrib
         <para>Executes a SQL query and returns its result set as a collection of non-persistent objects.</para>
       </summary>
       <param name="classInfo">An <see cref="T:DevExpress.Xpo.Metadata.XPClassInfo"/> object which contains the metadata information on a non-persistent class corresponding to the query&#39;s result set. The class must be decorated with <see cref="T:DevExpress.Xpo.NonPersistentAttribute"/>.</param>
-      <param name="members">A list of <see cref="T:DevExpress.Xpo.Metadata.XPMemberInfo"/> objects representing classInfo members that are mapped to the query&#39;s result set columns. The order of list elements should correspond to the order of result set columns.</param>
-      <param name="sql">A <see cref="T:System.String"/> value that specifies a SQL query.</param>
+      <param name="members">Specifies object members mapped to columns in the resulting set. The order of list elements should correspond to the order of the resulting set columns.</param>
+      <param name="sql">Specifies an SQL statement.</param>
       <returns>A collection of non-persistent classInfo objects instantiated with data obtained via the specified SQL query.</returns>
     </member>
     <member name="M:DevExpress.Xpo.Session.GetObjectsFromQuery(DevExpress.Xpo.Metadata.XPClassInfo,System.Collections.Generic.List{DevExpress.Xpo.Metadata.XPMemberInfo},System.String,DevExpress.Xpo.DB.QueryParameterCollection)">
       <summary>
-        <para></para>
+        <para>Executes a SQL query and returns its result set as a collection of non-persistent objects.</para>
       </summary>
-      <param name="classInfo"></param>
-      <param name="members"></param>
-      <param name="sql"></param>
-      <param name="parameters"></param>
-      <returns></returns>
+      <param name="classInfo">Specifies object members mapped to columns in the resulting set. The order of list elements should correspond to the order of the resulting set columns.</param>
+      <param name="members">Specifies object members mapped to columns in the result set. The order of list elements should correspond to the order of result set columns.</param>
+      <param name="sql">Specifies an SQL statement.</param>
+      <param name="parameters">Specifies query parameter values.</param>
+      <returns>A collection of non-persistent classInfo objects instantiated with data obtained via the specified SQL query.</returns>
     </member>
     <member name="M:DevExpress.Xpo.Session.GetObjectsFromQuery(DevExpress.Xpo.Metadata.XPClassInfo,System.Collections.Generic.List{DevExpress.Xpo.Metadata.XPMemberInfo},System.String,System.Object[])">
       <summary>
         <para>Executes a SQL query and returns its result set as a collection of non-persistent objects.</para>
       </summary>
       <param name="classInfo">An <see cref="T:DevExpress.Xpo.Metadata.XPClassInfo"/> object which contains the metadata information on a non-persistent class corresponding to the query&#39;s result set. The class must be decorated with <see cref="T:DevExpress.Xpo.NonPersistentAttribute"/>.</param>
-      <param name="members">A list of <see cref="T:DevExpress.Xpo.Metadata.XPMemberInfo"/> objects representing classInfo members that are mapped to the query&#39;s result set columns. The order of list elements should correspond to the order of result set columns.</param>
-      <param name="sql">A <see cref="T:System.String"/> value that specifies a SQL query.</param>
+      <param name="members">Specifies object members mapped to columns in the resulting set. The order of list elements should correspond to the order of the resulting set columns.</param>
+      <param name="sql">Specifies an SQL statement.</param>
       <param name="parameterValues">An array of objects specifying parameters to pass to the database server along with the query.</param>
       <returns>A collection of non-persistent classInfo objects instantiated with data obtained via the specified SQL query.</returns>
     </member>
     <member name="M:DevExpress.Xpo.Session.GetObjectsFromQuery(DevExpress.Xpo.Metadata.XPClassInfo,System.Collections.Generic.List{DevExpress.Xpo.Metadata.XPMemberInfo},System.String,System.String[],DevExpress.Xpo.DB.QueryParameterCollection)">
       <summary>
-        <para></para>
+        <para>Executes a SQL query and returns its result set as a collection of non-persistent objects.</para>
       </summary>
-      <param name="classInfo"></param>
-      <param name="members"></param>
-      <param name="sql"></param>
-      <param name="parameterNames"></param>
-      <param name="parameters"></param>
-      <returns></returns>
+      <param name="classInfo">Specifies object members mapped to columns in the resulting set. The order of list elements should correspond to the order of the resulting set columns.</param>
+      <param name="members">Specifies object members mapped to columns in the result set. The order of list elements should correspond to the order of result set columns.</param>
+      <param name="sql">Specifies an SQL statement.</param>
+      <param name="parameterNames">Specifies parameter names.</param>
+      <param name="parameters">Specifies query parameter values.</param>
+      <returns>A collection of non-persistent classInfo objects instantiated with data obtained via the specified SQL query.</returns>
     </member>
     <member name="M:DevExpress.Xpo.Session.GetObjectsFromQuery(DevExpress.Xpo.Metadata.XPClassInfo,System.Collections.Generic.List{DevExpress.Xpo.Metadata.XPMemberInfo},System.String,System.String[],System.Object[])">
       <summary>
         <para>Executes a SQL query and returns its result set as a collection of non-persistent objects.</para>
       </summary>
       <param name="classInfo">An <see cref="T:DevExpress.Xpo.Metadata.XPClassInfo"/> object which contains the metadata information on a non-persistent class corresponding to the query&#39;s result set. The class must be decorated with <see cref="T:DevExpress.Xpo.NonPersistentAttribute"/>.</param>
-      <param name="members">A list of <see cref="T:DevExpress.Xpo.Metadata.XPMemberInfo"/> objects representing classInfo members that are mapped to the query&#39;s result set columns. The order of list elements should correspond to the order of result set columns.</param>
-      <param name="sql">A <see cref="T:System.String"/> value that specifies an SQL query.</param>
-      <param name="parameterNames">An array of strings specifying parameterValues parameter names.</param>
+      <param name="members">Specifies object members mapped to columns in the resulting set. The order of list elements should correspond to the order of the resulting set columns.</param>
+      <param name="sql">Specifies an SQL statement.</param>
+      <param name="parameterNames">Specifies parameter names.</param>
       <param name="parameterValues">An array of objects specifying parameters to pass to the database server along with the query.</param>
       <returns>A collection of non-persistent classInfo objects instantiated with data obtained via the specified SQL query.</returns>
     </member>
@@ -10058,44 +10192,44 @@ The class must be decorated with <see cref="T:DevExpress.Xpo.NonPersistentAttrib
         <para>Executes a SQL query and returns its result set as a collection of non-persistent objects.</para>
       </summary>
       <param name="classInfo">An <see cref="T:DevExpress.Xpo.Metadata.XPClassInfo"/> object which contains the metadata information on a non-persistent class corresponding to the query&#39;s result set. The class must be decorated with <see cref="T:DevExpress.Xpo.NonPersistentAttribute"/>.</param>
-      <param name="sql">A <see cref="T:System.String"/> value that specifies an SQL query.</param>
+      <param name="sql">Specifies an SQL statement.</param>
       <returns>A collection of non-persistent classInfo objects instantiated with data obtained via the specified SQL query.</returns>
     </member>
     <member name="M:DevExpress.Xpo.Session.GetObjectsFromQuery(DevExpress.Xpo.Metadata.XPClassInfo,System.String,DevExpress.Xpo.DB.QueryParameterCollection)">
       <summary>
-        <para></para>
+        <para>Executes a SQL query and returns its result set as a collection of non-persistent objects.</para>
       </summary>
-      <param name="classInfo"></param>
-      <param name="sql"></param>
-      <param name="parameters"></param>
-      <returns></returns>
+      <param name="classInfo">An <see cref="T:DevExpress.Xpo.Metadata.XPClassInfo"/> object which contains the metadata information on a non-persistent class corresponding to the query&#39;s result set. The class must be decorated with <see cref="T:DevExpress.Xpo.NonPersistentAttribute"/>.</param>
+      <param name="sql">Specifies an SQL statement.</param>
+      <param name="parameters">Specifies query parameter values.</param>
+      <returns>A collection of non-persistent classInfo objects instantiated with data obtained via the specified SQL query.</returns>
     </member>
     <member name="M:DevExpress.Xpo.Session.GetObjectsFromQuery(DevExpress.Xpo.Metadata.XPClassInfo,System.String,System.Object[])">
       <summary>
         <para>Executes a SQL query and returns its result set as a collection of non-persistent objects.</para>
       </summary>
       <param name="classInfo">An <see cref="T:DevExpress.Xpo.Metadata.XPClassInfo"/> object which contains the metadata information on a non-persistent class corresponding to the query&#39;s result set. The class must be decorated with <see cref="T:DevExpress.Xpo.NonPersistentAttribute"/>.</param>
-      <param name="sql">A <see cref="T:System.String"/> value that specifies an SQL query.</param>
+      <param name="sql">Specifies an SQL statement.</param>
       <param name="parameterValues">An array of objects specifying parameters to pass to the database server along with the query.</param>
       <returns>A collection of non-persistent classInfo objects instantiated with data obtained via the specified SQL query.</returns>
     </member>
     <member name="M:DevExpress.Xpo.Session.GetObjectsFromQuery(DevExpress.Xpo.Metadata.XPClassInfo,System.String,System.String[],DevExpress.Xpo.DB.QueryParameterCollection)">
       <summary>
-        <para></para>
+        <para>Executes a SQL query and returns its result set as a collection of non-persistent objects.</para>
       </summary>
-      <param name="classInfo"></param>
-      <param name="sql"></param>
-      <param name="parameterNames"></param>
-      <param name="parameters"></param>
-      <returns></returns>
+      <param name="classInfo">An <see cref="T:DevExpress.Xpo.Metadata.XPClassInfo"/> object which contains the metadata information on a non-persistent class corresponding to the query&#39;s result set. The class must be decorated with <see cref="T:DevExpress.Xpo.NonPersistentAttribute"/>.</param>
+      <param name="sql">Specifies an SQL statement.</param>
+      <param name="parameterNames">Specifies parameter names.</param>
+      <param name="parameters">Specifies query parameter values.</param>
+      <returns>A collection of non-persistent classInfo objects instantiated with data obtained via the specified SQL query.</returns>
     </member>
     <member name="M:DevExpress.Xpo.Session.GetObjectsFromQuery(DevExpress.Xpo.Metadata.XPClassInfo,System.String,System.String[],System.Object[])">
       <summary>
         <para>Executes a SQL query and returns its result set as a collection of non-persistent objects.</para>
       </summary>
       <param name="classInfo">An <see cref="T:DevExpress.Xpo.Metadata.XPClassInfo"/> object which contains the metadata information on a non-persistent class corresponding to the query&#39;s result set. The class must be decorated with <see cref="T:DevExpress.Xpo.NonPersistentAttribute"/>.</param>
-      <param name="sql">A <see cref="T:System.String"/> value that specifies an SQL query.</param>
-      <param name="parameterNames">An array of strings specifying parameterValues parameter names.</param>
+      <param name="sql">Specifies an SQL statement.</param>
+      <param name="parameterNames">Specifies parameter names.</param>
       <param name="parameterValues">An array of objects specifying parameters to pass to the database server along with the query.</param>
       <returns>A collection of non-persistent classInfo objects instantiated with data obtained via the specified SQL query.</returns>
     </member>
@@ -10104,133 +10238,133 @@ The class must be decorated with <see cref="T:DevExpress.Xpo.NonPersistentAttrib
         <para>Executes a SQL query and returns its result set as a collection of objects of a non-persistent type specified by the generic type parameter.</para>
       </summary>
       <param name="members">An array of <see cref="T:DevExpress.Xpo.LoadDataMemberOrderItem"/> objects which provide mapping information for object members and the query&#39;s result set columns.</param>
-      <param name="sql">A <see cref="T:System.String"/> value that specifies a SQL query.</param>
-      <returns>A collection of non-persistent objects of the specified type that are instantiated with data obtained via the specified SQL query.</returns>
+      <param name="sql">Specifies an SQL statement.</param>
+      <returns>A collection of non-persistent objects of the specified type.</returns>
     </member>
     <member name="M:DevExpress.Xpo.Session.GetObjectsFromQuery``1(DevExpress.Xpo.LoadDataMemberOrderItem[],System.String,DevExpress.Xpo.DB.QueryParameterCollection)">
       <summary>
-        <para></para>
+        <para>Executes a SQL query and returns its result set as a collection of objects of a non-persistent type specified by the generic type parameter.</para>
       </summary>
-      <param name="members"></param>
-      <param name="sql"></param>
-      <param name="parameters"></param>
-      <returns></returns>
+      <param name="members">An array of <see cref="T:DevExpress.Xpo.LoadDataMemberOrderItem"/> objects which provide mapping information for object members and the query&#39;s result set columns.</param>
+      <param name="sql">Specifies an SQL statement.</param>
+      <param name="parameters">Specifies query parameter values.</param>
+      <returns>A collection of non-persistent objects of the specified type.</returns>
     </member>
     <member name="M:DevExpress.Xpo.Session.GetObjectsFromQuery``1(DevExpress.Xpo.LoadDataMemberOrderItem[],System.String,System.Object[])">
       <summary>
         <para>Executes a SQL query and returns its result set as a collection of objects of a non-persistent type specified by the generic type parameter.</para>
       </summary>
       <param name="members">An array of <see cref="T:DevExpress.Xpo.LoadDataMemberOrderItem"/> objects which provide mapping information for object members and the query&#39;s result set columns.</param>
-      <param name="sql">A <see cref="T:System.String"/> value that specifies a parameterized SQL query.</param>
+      <param name="sql">Specifies an SQL statement.</param>
       <param name="parameterValues">An array of objects specifying parameters to pass to the database server along with the query.</param>
-      <returns>A collection of non-persistent objects of the specified type that are instantiated with data obtained via the specified SQL query.</returns>
+      <returns>A collection of non-persistent objects of the specified type.</returns>
     </member>
     <member name="M:DevExpress.Xpo.Session.GetObjectsFromQuery``1(DevExpress.Xpo.LoadDataMemberOrderItem[],System.String,System.String[],DevExpress.Xpo.DB.QueryParameterCollection)">
       <summary>
-        <para></para>
+        <para>Executes a SQL query and returns its result set as a collection of objects of a non-persistent type specified by the generic type parameter.</para>
       </summary>
-      <param name="members"></param>
-      <param name="sql"></param>
-      <param name="parameterNames"></param>
-      <param name="parameters"></param>
-      <returns></returns>
+      <param name="members">An array of <see cref="T:DevExpress.Xpo.LoadDataMemberOrderItem"/> objects which provide mapping information for object members and the query&#39;s result set columns.</param>
+      <param name="sql">Specifies an SQL statement.</param>
+      <param name="parameterNames">Specifies parameter names.</param>
+      <param name="parameters">Specifies query parameter values.</param>
+      <returns>A collection of non-persistent objects of the specified type.</returns>
     </member>
     <member name="M:DevExpress.Xpo.Session.GetObjectsFromQuery``1(DevExpress.Xpo.LoadDataMemberOrderItem[],System.String,System.String[],System.Object[])">
       <summary>
         <para>Executes a SQL query and returns its result set as a collection of objects of a non-persistent type specified by the generic type parameter.</para>
       </summary>
       <param name="members">An array of <see cref="T:DevExpress.Xpo.LoadDataMemberOrderItem"/> objects which provide mapping information for object members and the query&#39;s result set columns.</param>
-      <param name="sql">A <see cref="T:System.String"/> value that specifies a parameterized SQL query.</param>
-      <param name="parameterNames">An array of strings specifying parameterValues parameter names.</param>
+      <param name="sql">Specifies an SQL statement.</param>
+      <param name="parameterNames">Specifies parameter names.</param>
       <param name="parameterValues">An array of objects specifying parameters to pass to the database server along with the query.</param>
-      <returns>A collection of non-persistent objects of the specified type that are instantiated with data obtained via the specified SQL query.</returns>
+      <returns>A collection of non-persistent objects of the specified type.</returns>
     </member>
     <member name="M:DevExpress.Xpo.Session.GetObjectsFromQuery``1(System.Collections.Generic.List{DevExpress.Xpo.Metadata.XPMemberInfo},System.String)">
       <summary>
         <para>Executes a SQL query and returns its result set as a collection of objects of a non-persistent type specified by the generic type parameter.</para>
       </summary>
-      <param name="members">A list of <see cref="T:DevExpress.Xpo.Metadata.XPMemberInfo"/> objects representing object members that are mapped to the query&#39;s result set columns. The order of list elements should correspond to the order of result set columns.</param>
-      <param name="sql">A <see cref="T:System.String"/> value that specifies an SQL query.</param>
-      <returns>A collection of non-persistent objects of the specified type that are instantiated with data obtained via the specified SQL query.</returns>
+      <param name="members">Specifies object members mapped to columns in the resulting set. The order of list elements should correspond to the order of the resulting set columns.</param>
+      <param name="sql">Specifies an SQL statement.</param>
+      <returns>A collection of non-persistent objects of the specified type.</returns>
     </member>
     <member name="M:DevExpress.Xpo.Session.GetObjectsFromQuery``1(System.Collections.Generic.List{DevExpress.Xpo.Metadata.XPMemberInfo},System.String,DevExpress.Xpo.DB.QueryParameterCollection)">
       <summary>
-        <para></para>
+        <para>Executes a SQL query and returns its result set as a collection of objects of a non-persistent type specified by the generic type parameter.</para>
       </summary>
-      <param name="members"></param>
-      <param name="sql"></param>
-      <param name="parameters"></param>
-      <returns></returns>
+      <param name="members">Specifies object members mapped to columns in the resulting set. The order of list elements should correspond to the order of the resulting set columns.</param>
+      <param name="sql">Specifies an SQL statement.</param>
+      <param name="parameters">Specifies query parameter values.</param>
+      <returns>A collection of non-persistent objects of the specified type.</returns>
     </member>
     <member name="M:DevExpress.Xpo.Session.GetObjectsFromQuery``1(System.Collections.Generic.List{DevExpress.Xpo.Metadata.XPMemberInfo},System.String,System.Object[])">
       <summary>
         <para>Executes a SQL query and returns its result set as a collection of objects of a non-persistent type specified by the generic type parameter.</para>
       </summary>
-      <param name="members">A list of <see cref="T:DevExpress.Xpo.Metadata.XPMemberInfo"/> objects representing classInfo members that are mapped to the query&#39;s result set columns. The order of list elements should correspond to the order of result set columns.</param>
-      <param name="sql">A <see cref="T:System.String"/> value that specifies an SQL query.</param>
+      <param name="members">Specifies object members mapped to columns in the resulting set. The order of list elements should correspond to the order of the resulting set columns.</param>
+      <param name="sql">Specifies an SQL statement.</param>
       <param name="parameterValues">An array of objects specifying parameters to pass to the database server along with the query.</param>
-      <returns>A collection of non-persistent objects of the specified type that are instantiated with data obtained via the specified SQL query.</returns>
+      <returns>A collection of non-persistent objects of the specified type.</returns>
     </member>
     <member name="M:DevExpress.Xpo.Session.GetObjectsFromQuery``1(System.Collections.Generic.List{DevExpress.Xpo.Metadata.XPMemberInfo},System.String,System.String[],DevExpress.Xpo.DB.QueryParameterCollection)">
       <summary>
-        <para></para>
+        <para>Executes a SQL query and returns its result set as a collection of objects of a non-persistent type specified by the generic type parameter.</para>
       </summary>
-      <param name="members"></param>
-      <param name="sql"></param>
-      <param name="parameterNames"></param>
-      <param name="parameters"></param>
-      <returns></returns>
+      <param name="members">Specifies object members mapped to columns in the resulting set. The order of list elements should correspond to the order of the resulting set columns.</param>
+      <param name="sql">Specifies an SQL statement.</param>
+      <param name="parameterNames">Specifies parameter names.</param>
+      <param name="parameters">Specifies query parameter values.</param>
+      <returns>A collection of non-persistent objects of the specified type.</returns>
     </member>
     <member name="M:DevExpress.Xpo.Session.GetObjectsFromQuery``1(System.Collections.Generic.List{DevExpress.Xpo.Metadata.XPMemberInfo},System.String,System.String[],System.Object[])">
       <summary>
         <para>Executes a SQL query and returns its result set as a collection of objects of a non-persistent type specified by the generic type parameter.</para>
       </summary>
-      <param name="members">A list of <see cref="T:DevExpress.Xpo.Metadata.XPMemberInfo"/> objects representing object members that are mapped to the query&#39;s result set columns. The order of list elements should correspond to the order of result set columns.</param>
-      <param name="sql">A <see cref="T:System.String"/> value that specifies an SQL query.</param>
-      <param name="parameterNames">An array of strings specifying parameterValues parameter names.</param>
+      <param name="members">Specifies object members mapped to columns in the resulting set. The order of list elements should correspond to the order of the resulting set columns.</param>
+      <param name="sql">Specifies an SQL statement.</param>
+      <param name="parameterNames">Specifies parameter names.</param>
       <param name="parameterValues">An array of objects specifying parameters to pass to the database server along with the query.</param>
-      <returns>A collection of non-persistent objects of the specified type that are instantiated with data obtained via the specified SQL query.</returns>
+      <returns>A collection of non-persistent objects of the specified type.</returns>
     </member>
     <member name="M:DevExpress.Xpo.Session.GetObjectsFromQuery``1(System.String)">
       <summary>
         <para>Executes a SQL query and returns its result set as a collection of objects of a non-persistent type specified by the generic type parameter.</para>
       </summary>
-      <param name="sql">A <see cref="T:System.String"/> value that specifies a SQL query.</param>
-      <returns>A collection of non-persistent objects of the specified type that are instantiated with data obtained via the specified SQL query.</returns>
+      <param name="sql">Specifies an SQL statement.</param>
+      <returns>A collection of non-persistent objects of the specified type.</returns>
     </member>
     <member name="M:DevExpress.Xpo.Session.GetObjectsFromQuery``1(System.String,DevExpress.Xpo.DB.QueryParameterCollection)">
       <summary>
-        <para></para>
+        <para>Executes a SQL query and returns its result set as a collection of objects of a non-persistent type specified by the generic type parameter.</para>
       </summary>
-      <param name="sql"></param>
-      <param name="parameters"></param>
-      <returns></returns>
+      <param name="sql">Specifies an SQL statement.</param>
+      <param name="parameters">Specifies query parameter values.</param>
+      <returns>A collection of non-persistent objects of the specified type.</returns>
     </member>
     <member name="M:DevExpress.Xpo.Session.GetObjectsFromQuery``1(System.String,System.Object[])">
       <summary>
         <para>Executes a SQL query and returns its result set as a collection of objects of a non-persistent type specified by the generic type parameter.</para>
       </summary>
-      <param name="sql">A <see cref="T:System.String"/> value that specifies an SQL query.</param>
+      <param name="sql">Specifies an SQL statement.</param>
       <param name="parameterValues">An array of objects specifying parameters to pass to the database server along with the query.</param>
-      <returns>A collection of non-persistent objects of the specified type that are instantiated with data obtained via the specified SQL query.</returns>
+      <returns>A collection of non-persistent objects of the specified type.</returns>
     </member>
     <member name="M:DevExpress.Xpo.Session.GetObjectsFromQuery``1(System.String,System.String[],DevExpress.Xpo.DB.QueryParameterCollection)">
       <summary>
-        <para></para>
+        <para>Executes a SQL query and returns its result set as a collection of objects of a non-persistent type specified by the generic type parameter.</para>
       </summary>
-      <param name="sql"></param>
-      <param name="parameterNames"></param>
-      <param name="parameters"></param>
-      <returns></returns>
+      <param name="sql">Specifies an SQL statement.</param>
+      <param name="parameterNames">Specifies parameter names.</param>
+      <param name="parameters">Specifies query parameter values.</param>
+      <returns>A collection of non-persistent objects of the specified type.</returns>
     </member>
     <member name="M:DevExpress.Xpo.Session.GetObjectsFromQuery``1(System.String,System.String[],System.Object[])">
       <summary>
         <para>Executes a SQL query and returns its result set as a collection of objects of a non-persistent type specified by the generic type parameter.</para>
       </summary>
-      <param name="sql">A <see cref="T:System.String"/> value that specifies a SQL query.</param>
-      <param name="parameterNames">An array of strings specifying parameterValues parameter names.</param>
+      <param name="sql">Specifies an SQL statement.</param>
+      <param name="parameterNames">Specifies parameter names.</param>
       <param name="parameterValues">An array of objects specifying parameters to pass to the database server along with the query.</param>
-      <returns>A collection of non-persistent objects of the specified type that are instantiated with data obtained via the specified SQL query.</returns>
+      <returns>A collection of non-persistent objects of the specified type.</returns>
     </member>
     <member name="M:DevExpress.Xpo.Session.GetObjectsFromSproc(DevExpress.Xpo.Metadata.XPClassInfo,DevExpress.Xpo.LoadDataMemberOrderItem[],System.String,DevExpress.Data.Filtering.OperandValue[])">
       <summary>
@@ -10247,7 +10381,7 @@ The class must be decorated with <see cref="T:DevExpress.Xpo.NonPersistentAttrib
         <para>Executes a stored procedure and returns its result set as a collection of non-persistent objects.</para>
       </summary>
       <param name="classInfo">An <see cref="T:DevExpress.Xpo.Metadata.XPClassInfo"/> object which contains the metadata information on a non-persistent class corresponding to the stored procedure&#39;s result set. The class must be decorated with <see cref="T:DevExpress.Xpo.NonPersistentAttribute"/>.</param>
-      <param name="members">A list of <see cref="T:DevExpress.Xpo.Metadata.XPMemberInfo"/> objects representing classInfo members that are mapped to the stored procedure&#39;s result set columns. The order of list elements should correspond to the order of result set columns.</param>
+      <param name="members">Specifies object members mapped to columns in the resulting set. The order of list elements should correspond to the order of the resulting set columns.</param>
       <param name="sprocName">A <see cref="T:System.String"/> value that specifies the stored procedure&#39;s name.</param>
       <param name="parameters">An array of <see cref="T:DevExpress.Data.Filtering.OperandValue"/> objects representing parameters to pass to the stored procedure.</param>
       <returns>A collection of non-persistent classInfo objects instantiated with data obtained via the specified stored procedure.</returns>
@@ -10274,7 +10408,7 @@ The class must be decorated with <see cref="T:DevExpress.Xpo.NonPersistentAttrib
       <summary>
         <para>Executes a stored procedure and returns its result set as a collection of objects of a non-persistent type specified by the generic type parameter.</para>
       </summary>
-      <param name="members">A list of <see cref="T:DevExpress.Xpo.Metadata.XPMemberInfo"/> objects representing object members that are mapped to the stored procedure&#39;s result set columns. The order of list elements should correspond to the order of result set columns.</param>
+      <param name="members">Specifies object members mapped to columns in the resulting set. The order of list elements should correspond to the order of the resulting set columns.</param>
       <param name="sprocName">A <see cref="T:System.String"/> value that specifies the stored procedure&#39;s name.</param>
       <param name="parameters">An array of <see cref="T:DevExpress.Data.Filtering.OperandValue"/> objects representing parameters to pass to the stored procedure.</param>
       <returns>A collection of non-persistent objects of the specified type that are instantiated with data obtained via the specified stored procedure.</returns>
@@ -10302,7 +10436,7 @@ The class must be decorated with <see cref="T:DevExpress.Xpo.NonPersistentAttrib
         <para>Executes a stored procedure with named parameters and returns its result set as a collection of non-persistent objects.</para>
       </summary>
       <param name="classInfo">An <see cref="T:DevExpress.Xpo.Metadata.XPClassInfo"/> object which contains the metadata information on a non-persistent class corresponding to the stored procedure&#39;s result set. The class must be decorated with <see cref="T:DevExpress.Xpo.NonPersistentAttribute"/>.</param>
-      <param name="members">A list of <see cref="T:DevExpress.Xpo.Metadata.XPMemberInfo"/> objects representing classInfo members that are mapped to the stored procedure&#39;s result set columns. The order of list elements should correspond to the order of result set columns.</param>
+      <param name="members">Specifies object members mapped to columns in the resulting set. The order of list elements should correspond to the order of the resulting set columns.</param>
       <param name="sprocName">A <see cref="T:System.String"/> value that specifies the stored procedure&#39;s name.</param>
       <param name="parameters">An array of SprocParameter objects specifying parameters to pass to the stored procedure.</param>
       <returns>A collection of non-persistent classInfo objects instantiated with data obtained via the specified stored procedure.</returns>
@@ -10329,7 +10463,7 @@ The class must be decorated with <see cref="T:DevExpress.Xpo.NonPersistentAttrib
       <summary>
         <para>Executes a stored procedure with named parameters and returns its result set as a collection of objects of a non-persistent type specified by the generic type parameter.</para>
       </summary>
-      <param name="members">A list of <see cref="T:DevExpress.Xpo.Metadata.XPMemberInfo"/> objects that contains mapping information for class members and result set columns. The order of list elements should correspond to the order of result set columns.</param>
+      <param name="members">Specifies object members mapped to columns in the resulting set. The order of list elements should correspond to the order of the resulting set columns.</param>
       <param name="sprocName">A <see cref="T:System.String"/> value that specifies the stored procedure&#39;s name.</param>
       <param name="parameters">An array of SprocParameter objects specifying parameters to pass to the stored procedure.</param>
       <returns>A collection of non-persistent objects of the specified type that are instantiated with data obtained via the specified stored procedure.</returns>
@@ -10407,6 +10541,16 @@ The class must be decorated with <see cref="T:DevExpress.Xpo.NonPersistentAttrib
       <param name="condition"></param>
       <param name="selectDeleted"></param>
       <param name="callback"></param>
+      <returns></returns>
+    </member>
+    <member name="M:DevExpress.Xpo.Session.GetObjectsInTransactionAsync(DevExpress.Xpo.Metadata.XPClassInfo,DevExpress.Data.Filtering.CriteriaOperator,System.Boolean,System.Threading.CancellationToken)">
+      <summary>
+        <para></para>
+      </summary>
+      <param name="classInfo" />
+      <param name="condition" />
+      <param name="selectDeleted" />
+      <param name="cancellationToken" />
       <returns></returns>
     </member>
     <member name="M:DevExpress.Xpo.Session.GetObjectsToDelete">
@@ -10956,6 +11100,14 @@ The class must be decorated with <see cref="T:DevExpress.Xpo.NonPersistentAttrib
       </summary>
       <param name="theObject">An object which represents the persistent object to save.</param>
     </member>
+    <member name="M:DevExpress.Xpo.Session.SaveAsync(System.Object,System.Threading.CancellationToken)">
+      <summary>
+        <para></para>
+      </summary>
+      <param name="theObject" />
+      <param name="cancellationToken" />
+      <returns></returns>
+    </member>
     <member name="E:DevExpress.Xpo.Session.SchemaInit">
       <summary>
         <para>Occurs after the data schema is initialized or updated.</para>
@@ -11202,6 +11354,46 @@ The class must be decorated with <see cref="T:DevExpress.Xpo.NonPersistentAttrib
       </summary>
       <param name="types">An array of <see cref="T:System.Type"/> objects that represent the types of objects for which schema should be created in the data store.</param>
     </member>
+    <member name="M:DevExpress.Xpo.Session.UpdateSchemaAsync(System.Threading.CancellationToken)">
+      <summary>
+        <para></para>
+      </summary>
+      <param name="cancellationToken" />
+      <returns></returns>
+    </member>
+    <member name="M:DevExpress.Xpo.Session.UpdateSchemaAsync(System.Threading.CancellationToken,DevExpress.Xpo.Metadata.XPClassInfo[])">
+      <summary>
+        <para></para>
+      </summary>
+      <param name="cancellationToken" />
+      <param name="types" />
+      <returns></returns>
+    </member>
+    <member name="M:DevExpress.Xpo.Session.UpdateSchemaAsync(System.Threading.CancellationToken,System.Boolean,DevExpress.Xpo.Metadata.XPClassInfo[])">
+      <summary>
+        <para></para>
+      </summary>
+      <param name="cancellationToken" />
+      <param name="doNotCreateIfFirstTableNotExist" />
+      <param name="types" />
+      <returns></returns>
+    </member>
+    <member name="M:DevExpress.Xpo.Session.UpdateSchemaAsync(System.Threading.CancellationToken,System.Reflection.Assembly[])">
+      <summary>
+        <para></para>
+      </summary>
+      <param name="cancellationToken" />
+      <param name="assemblies" />
+      <returns></returns>
+    </member>
+    <member name="M:DevExpress.Xpo.Session.UpdateSchemaAsync(System.Threading.CancellationToken,System.Type[])">
+      <summary>
+        <para></para>
+      </summary>
+      <param name="cancellationToken" />
+      <param name="types" />
+      <returns></returns>
+    </member>
     <member name="M:DevExpress.Xpo.Session.WaitForAsyncRequestComplete(DevExpress.Xpo.Session,System.Object)">
       <summary>
         <para>This method is intended for internal use.</para>
@@ -11324,6 +11516,14 @@ The class must be decorated with <see cref="T:DevExpress.Xpo.NonPersistentAttrib
         <para>Performs object layer specific operations that are required to create an <see cref="T:DevExpress.Xpo.XPObjectType"/> record.</para>
       </summary>
       <param name="type">An <see cref="T:DevExpress.Xpo.XPObjectType"/> object specifying a valid persistent type.</param>
+    </member>
+    <member name="M:DevExpress.Xpo.SessionObjectLayer.CreateObjectTypeAsync(DevExpress.Xpo.XPObjectType,System.Threading.CancellationToken)">
+      <summary>
+        <para></para>
+      </summary>
+      <param name="type" />
+      <param name="cancellationToken" />
+      <returns></returns>
     </member>
     <member name="E:DevExpress.Xpo.SessionObjectLayer.CustomSecurityCriteriaPatcher">
       <summary>
@@ -11588,6 +11788,15 @@ The class must be decorated with <see cref="T:DevExpress.Xpo.NonPersistentAttrib
       <param name="types">An array of <see cref="T:DevExpress.Xpo.Metadata.XPClassInfo"/> objects specifying the types of objects for which schema should be created in the data store.</param>
       <returns>An <see cref="T:DevExpress.Xpo.DB.UpdateSchemaResult"/> enumeration value which specifies the result of the update operation.</returns>
     </member>
+    <member name="M:DevExpress.Xpo.SessionObjectLayer.UpdateSchemaAsync(System.Threading.CancellationToken,System.Boolean,DevExpress.Xpo.Metadata.XPClassInfo[])">
+      <summary>
+        <para></para>
+      </summary>
+      <param name="cancellationToken" />
+      <param name="doNotCreateIfFirstTableNotExist" />
+      <param name="types" />
+      <returns></returns>
+    </member>
     <member name="T:DevExpress.Xpo.SessionOperationFailEventArgs">
       <summary>
         <para>Provides data for a session&#39;s <see cref="E:DevExpress.Xpo.Session.FailedCommitTransaction"/> and <see cref="E:DevExpress.Xpo.Session.FailedFlushChanges"/> events.</para>
@@ -11697,6 +11906,15 @@ The class must be decorated with <see cref="T:DevExpress.Xpo.NonPersistentAttrib
       <param name="types">An array of <see cref="T:DevExpress.Xpo.Metadata.XPClassInfo"/> objects that specify object metadata for which the schema should be created in the data store.</param>
       <returns>A <see cref="T:DevExpress.Xpo.DB.UpdateSchemaResult"/> value that specifies the result of the update operation.</returns>
     </member>
+    <member name="M:DevExpress.Xpo.SimpleDataLayer.UpdateSchemaAsync(System.Threading.CancellationToken,System.Boolean,DevExpress.Xpo.Metadata.XPClassInfo[])">
+      <summary>
+        <para></para>
+      </summary>
+      <param name="cancellationToken"></param>
+      <param name="doNotCreate"></param>
+      <param name="types"></param>
+      <returns></returns>
+    </member>
     <member name="T:DevExpress.Xpo.SimpleObjectLayer">
       <summary>
         <para>An object access layer that saves and loads persistent objects via a data access layer associated with a data store provider (an <see cref="T:DevExpress.Xpo.DB.IDataStore"/> implementation).</para>
@@ -11770,6 +11988,14 @@ The class must be decorated with <see cref="T:DevExpress.Xpo.NonPersistentAttrib
         <para>Performs object layer specific operations that are required to create an <see cref="T:DevExpress.Xpo.XPObjectType"/> record.</para>
       </summary>
       <param name="objectType">An <see cref="T:DevExpress.Xpo.XPObjectType"/> object specifying a valid persistent type.</param>
+    </member>
+    <member name="M:DevExpress.Xpo.SimpleObjectLayer.CreateObjectTypeAsync(DevExpress.Xpo.XPObjectType,System.Threading.CancellationToken)">
+      <summary>
+        <para></para>
+      </summary>
+      <param name="objectType" />
+      <param name="cancellationToken" />
+      <returns></returns>
     </member>
     <member name="P:DevExpress.Xpo.SimpleObjectLayer.DataLayer">
       <summary>
@@ -11981,6 +12207,15 @@ The class must be decorated with <see cref="T:DevExpress.Xpo.NonPersistentAttrib
       <param name="doNotCreateIfFirstTableNotExist">true if the schema should not be created when the table that corresponds to the first item in the types array doesn&#39;t exist in the data store; otherwise, false.</param>
       <param name="types">An array of <see cref="T:DevExpress.Xpo.Metadata.XPClassInfo"/> objects specifying the types of objects for which schema should be created in the data store.</param>
       <returns>An <see cref="T:DevExpress.Xpo.DB.UpdateSchemaResult"/> enumeration value which specifies the result of the update operation.</returns>
+    </member>
+    <member name="M:DevExpress.Xpo.SimpleObjectLayer.UpdateSchemaAsync(System.Threading.CancellationToken,System.Boolean,DevExpress.Xpo.Metadata.XPClassInfo[])">
+      <summary>
+        <para></para>
+      </summary>
+      <param name="cancellationToken" />
+      <param name="doNotCreateIfFirstTableNotExist" />
+      <param name="types" />
+      <returns></returns>
     </member>
     <member name="T:DevExpress.Xpo.SizeAttribute">
       <summary>
@@ -12361,6 +12596,15 @@ The class must be decorated with <see cref="T:DevExpress.Xpo.NonPersistentAttrib
       <param name="types">An array of <see cref="T:DevExpress.Xpo.Metadata.XPClassInfo"/> objects that specify object metadata for which schema should be created in the data store.</param>
       <returns>A <see cref="T:DevExpress.Xpo.DB.UpdateSchemaResult"/> value that specifies the result of the update operation.</returns>
     </member>
+    <member name="M:DevExpress.Xpo.ThreadSafeDataLayer.UpdateSchemaAsync(System.Threading.CancellationToken,System.Boolean,DevExpress.Xpo.Metadata.XPClassInfo[])">
+      <summary>
+        <para></para>
+      </summary>
+      <param name="cancellationToken" />
+      <param name="doNotCreate" />
+      <param name="types" />
+      <returns></returns>
+    </member>
     <member name="T:DevExpress.Xpo.UnitOfWork">
       <summary>
         <para>Maintains a list of persistent objects that are affected by a transaction. Keeps track of every change to every persistent object during a transaction that can affect a data store. See Unit of Work.</para>
@@ -12637,6 +12881,14 @@ The class must be decorated with <see cref="T:DevExpress.Xpo.NonPersistentAttrib
       </summary>
       <param name="theObject">An object to remove from the collection.</param>
       <returns>true if the object has been successfully removed from the collection; otherwise, false.</returns>
+    </member>
+    <member name="M:DevExpress.Xpo.XPBaseCollection.BaseRemoveAsync(System.Object,System.Threading.CancellationToken)">
+      <summary>
+        <para></para>
+      </summary>
+      <param name="theObject" />
+      <param name="cancellationToken" />
+      <returns></returns>
     </member>
     <member name="M:DevExpress.Xpo.XPBaseCollection.BeginLoad">
       <summary>

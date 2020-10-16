@@ -3175,6 +3175,31 @@
         <para>&quot;SubBand Collection Editor&quot;</para>
       </summary>
     </member>
+    <member name="F:DevExpress.Xpf.Reports.UserDesigner.Localization.ReportDesignerStringId.BindingsEditor_ControlColumn">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Xpf.Reports.UserDesigner.Localization.ReportDesignerStringId.BindingsEditor_DestinationBindingColumn">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Xpf.Reports.UserDesigner.Localization.ReportDesignerStringId.BindingsEditor_PropertyNameColumn">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Xpf.Reports.UserDesigner.Localization.ReportDesignerStringId.BindingsEditor_SourceBindingColumn">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Xpf.Reports.UserDesigner.Localization.ReportDesignerStringId.BindingsEditor_Title">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
     <member name="F:DevExpress.Xpf.Reports.UserDesigner.Localization.ReportDesignerStringId.BringForward_Caption">
       <summary>
         <para>&quot;Bring Forward&quot;</para>
@@ -7447,6 +7472,11 @@
         <para>Returns a command that removes a report style.</para>
       </summary>
       <value>An object implementing the <see cref="T:System.Windows.Input.ICommand"/> interface that defines the command.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.Reports.UserDesigner.ReportDesignerCommands.RunBindingsEditorCommand">
+      <summary>
+        <para></para>
+      </summary>
     </member>
     <member name="P:DevExpress.Xpf.Reports.UserDesigner.ReportDesignerCommands.RunDataSourceWizardCommand">
       <summary>

@@ -646,11 +646,6 @@ The following screenshot shows the UltraFlat style applied to a button edit cont
       </summary>
       <value></value>
     </member>
-    <member name="M:DevExpress.LookAndFeel.UserLookAndFeel.DestroyDefaultLookAndFeel">
-      <summary>
-        <para>Explicitly disposes of the<see cref="T:DevExpress.LookAndFeel.UserLookAndFeel"/> object currently utilized.</para>
-      </summary>
-    </member>
     <member name="M:DevExpress.LookAndFeel.UserLookAndFeel.Dispose">
       <summary>
         <para>Releases all resources used by the current object.</para>
@@ -5285,6 +5280,14 @@ Provides storage for pens, fonts and brushes.</para>
       </summary>
       <returns>An object that specifies a series of connected lines and curves.</returns>
     </member>
+    <member name="M:DevExpress.Utils.Drawing.GraphicsCache.CreateRoundedRectangle(System.Drawing.Rectangle,DevExpress.Utils.Drawing.CornerRadius)">
+      <summary>
+        <para></para>
+      </summary>
+      <param name="rect" />
+      <param name="radius" />
+      <returns></returns>
+    </member>
     <member name="P:DevExpress.Utils.Drawing.GraphicsCache.DeviceDpi">
       <summary>
         <para>Returns the current display DPI value.</para>
@@ -5922,6 +5925,23 @@ Provides storage for pens, fonts and brushes.</para>
       <param name="color">A <see cref="T:System.Drawing.Color"/> structure that indicates the color of the Pen used to draw the rectangles.</param>
       <param name="thickness">A value indicating the width of the Pen used to draw the rectangles.</param>
     </member>
+    <member name="M:DevExpress.Utils.Drawing.GraphicsCache.DrawRoundedRectangle(System.Drawing.Color,System.Int32,System.Drawing.Rectangle,DevExpress.Utils.Drawing.CornerRadius)">
+      <summary>
+        <para></para>
+      </summary>
+      <param name="color" />
+      <param name="width" />
+      <param name="rect" />
+      <param name="radius" />
+    </member>
+    <member name="M:DevExpress.Utils.Drawing.GraphicsCache.DrawRoundedRectangle(System.Drawing.Pen,System.Drawing.Rectangle,DevExpress.Utils.Drawing.CornerRadius)">
+      <summary>
+        <para></para>
+      </summary>
+      <param name="pen" />
+      <param name="rect" />
+      <param name="radius" />
+    </member>
     <member name="M:DevExpress.Utils.Drawing.GraphicsCache.DrawString(System.String,System.Drawing.Font,System.Drawing.Brush,System.Drawing.PointF)">
       <summary>
         <para>Draws the specified text string at the specified location with the specified Brush and Font objects.</para>
@@ -6266,6 +6286,14 @@ Provides storage for pens, fonts and brushes.</para>
       </summary>
       <param name="color">A <see cref="T:System.Drawing.Color"/> structure that indicates the color of the <see cref="T:System.Drawing.Brush"/> from the current cache that determines the characteristics of the fill.</param>
       <param name="rects">Array of   <see cref="T:System.Drawing.RectangleF"/> structures that represent the rectangles to fill.</param>
+    </member>
+    <member name="M:DevExpress.Utils.Drawing.GraphicsCache.FillRoundedRectangle(System.Drawing.Color,System.Drawing.Rectangle,DevExpress.Utils.Drawing.CornerRadius)">
+      <summary>
+        <para></para>
+      </summary>
+      <param name="color" />
+      <param name="rect" />
+      <param name="radius" />
     </member>
     <member name="M:DevExpress.Utils.Drawing.GraphicsCache.GetFont(System.Drawing.Font,System.Drawing.FontStyle)">
       <summary>
@@ -15191,6 +15219,19 @@ A specific version of the addressed image is automatically chosen based on the a
         <para>Gets or sets the opacity level of the control.</para>
       </summary>
       <value>A <see cref="T:System.Single"/> value that specifies the opacity level of the control. The default is 1.</value>
+    </member>
+    <member name="T:DevExpress.XtraEditors.ScrollBarBase.PositionRestoreHelper">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.XtraEditors.ScrollBarBase.PositionRestoreHelper.ShouldRestore(System.Int32,DevExpress.XtraEditors.ViewInfo.ScrollBarViewInfo,DevExpress.XtraEditors.ScrollBarDrawMode)">
+      <summary>
+        <para></para>
+      </summary>
+      <param name="pos" />
+      <param name="viewInfo" />
+      <param name="drawMode" />
     </member>
     <member name="M:DevExpress.XtraEditors.ScrollBarBase.ProcessMouseDown(System.Windows.Forms.MouseEventArgs)">
       <summary>

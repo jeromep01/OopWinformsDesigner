@@ -127,6 +127,11 @@ This constant is used to initialize the <see cref="P:DevExpress.XtraEditors.Repo
         <para>Registers the <see cref="T:DevExpress.XtraEditors.TreeListLookUpEdit"/> control.</para>
       </summary>
     </member>
+    <member name="M:DevExpress.XtraEditors.Repository.RepositoryItemTreeListLookUpEdit.ResetEvents">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
     <member name="P:DevExpress.XtraEditors.Repository.RepositoryItemTreeListLookUpEdit.TreeList">
       <summary>
         <para>Gets or sets a <see cref="T:DevExpress.XtraTreeList.TreeList"/> associated with the current <see cref="T:DevExpress.XtraEditors.TreeListLookUpEdit"/> control.</para>
@@ -1589,6 +1594,12 @@ This constant is used to initialize the <see cref="P:DevExpress.XtraEditors.Repo
         <para>Initializes a new instance of the <see cref="T:DevExpress.XtraTreeList.Columns.TreeListOptionsColumn"/> class.</para>
       </summary>
     </member>
+    <member name="M:DevExpress.XtraTreeList.Columns.TreeListOptionsColumn.#ctor(DevExpress.XtraTreeList.Columns.TreeListColumn)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.XtraTreeList.Columns.TreeListOptionsColumn"/> class with specified settings.</para>
+      </summary>
+      <param name="column"></param>
+    </member>
     <member name="P:DevExpress.XtraTreeList.Columns.TreeListOptionsColumn.AllowEdit">
       <summary>
         <para>Gets or sets whether users can invoke editors for the column&#39;s cells.</para>
@@ -2812,6 +2823,31 @@ This constant is used to initialize the <see cref="P:DevExpress.XtraEditors.Repo
     <member name="F:DevExpress.XtraTreeList.Data.UnboundColumnType.String">
       <summary>
         <para>Indicates that the column contains string values (the <see cref="T:System.String"/> type).</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.XtraTreeList.EditFormColumnCaptionLocation">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.XtraTreeList.EditFormColumnCaptionLocation.Default">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.XtraTreeList.EditFormColumnCaptionLocation.Near">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.XtraTreeList.EditFormColumnCaptionLocation.None">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.XtraTreeList.EditFormColumnCaptionLocation.Top">
+      <summary>
+        <para></para>
       </summary>
     </member>
     <member name="T:DevExpress.XtraTreeList.EditFormHiddenEventArgs">
@@ -6569,7 +6605,7 @@ This property is obsolete. Use the <see cref="P:DevExpress.XtraTreeList.TreeList
     </member>
     <member name="E:DevExpress.XtraTreeList.TreeList.GetCustomSummaryValue">
       <summary>
-        <para>Enables you to perform custom summary value calculations.</para>
+        <para>Allows you to specify custom summary values when the control is displayed on-screen.</para>
       </summary>
     </member>
     <member name="M:DevExpress.XtraTreeList.TreeList.GetDataRecordByNode(DevExpress.XtraTreeList.Nodes.TreeListNode)">
@@ -6687,7 +6723,7 @@ This property is obsolete. Use the <see cref="P:DevExpress.XtraTreeList.TreeList
     </member>
     <member name="E:DevExpress.XtraTreeList.TreeList.GetPrintCustomSummaryValue">
       <summary>
-        <para>Permits manual calculations of summary values for the printed version of the Tree List control.</para>
+        <para>Allows you to specify custom summary values when the control is printed.</para>
       </summary>
     </member>
     <member name="E:DevExpress.XtraTreeList.TreeList.GetPrintPreviewText">
@@ -6883,9 +6919,9 @@ This property is obsolete. Use the <see cref="P:DevExpress.XtraTreeList.TreeList
     </member>
     <member name="P:DevExpress.XtraTreeList.TreeList.IndicatorWidth">
       <summary>
-        <para>Gets or sets the node indicator&#39;s width.</para>
+        <para>Gets or sets the indicator panel&#39;s width.</para>
       </summary>
-      <value>An integer value specifying the width of the node indicator in pixels.</value>
+      <value>An integer value that specifies the width of the node indicator panel in pixels.</value>
     </member>
     <member name="E:DevExpress.XtraTreeList.TreeList.InitNewRow">
       <summary>
@@ -7026,15 +7062,15 @@ This property is obsolete. Use the <see cref="P:DevExpress.XtraTreeList.TreeList
     </member>
     <member name="P:DevExpress.XtraTreeList.TreeList.IsPrinting">
       <summary>
-        <para>Gets whether the <see cref="T:DevExpress.XtraTreeList.TreeList"/> control is sending information to the print/export engine.</para>
+        <para>Gets whether the control is sending data to the print/export engine.</para>
       </summary>
-      <value>true, if the <see cref="T:DevExpress.XtraTreeList.TreeList"/> control is sending information to the print/export engine; otherwise, false.</value>
+      <value>true, if the control is sending data to the print/export engine; otherwise, false.</value>
     </member>
     <member name="P:DevExpress.XtraTreeList.TreeList.IsPrintingAvailable">
       <summary>
-        <para>Indicates whether the Tree List can be printed or exported.</para>
+        <para>Gets whether the control can be printed or exported.</para>
       </summary>
-      <value>true if the Tree List can be printed or exported; otherwise, false.</value>
+      <value>true, if the control can be printed or exported; otherwise, false.</value>
     </member>
     <member name="M:DevExpress.XtraTreeList.TreeList.IsRootNode(DevExpress.XtraTreeList.Nodes.TreeListNode)">
       <summary>
@@ -7345,9 +7381,9 @@ This property is obsolete. Use the <see cref="P:DevExpress.XtraTreeList.TreeList
     </member>
     <member name="P:DevExpress.XtraTreeList.TreeList.OptionsPrint">
       <summary>
-        <para>Provides access to the Tree List&#39;s options that affect how the control is printed and exported.</para>
+        <para>Provides access to options that specify how the control is printed and exported.</para>
       </summary>
-      <value>A <see cref="T:DevExpress.XtraTreeList.TreeListOptionsPrint"/> object which contains the print and export options.</value>
+      <value>A <see cref="T:DevExpress.XtraTreeList.TreeListOptionsPrint"/> object that contains the print and export options.</value>
     </member>
     <member name="P:DevExpress.XtraTreeList.TreeList.OptionsScrollAnnotations">
       <summary>
@@ -7430,12 +7466,12 @@ This property is obsolete. Use the <see cref="P:DevExpress.XtraTreeList.TreeList
     </member>
     <member name="M:DevExpress.XtraTreeList.TreeList.Print">
       <summary>
-        <para>Prints the Tree List control.</para>
+        <para>Prints the data displayed in the control.</para>
       </summary>
     </member>
     <member name="M:DevExpress.XtraTreeList.TreeList.PrintDialog">
       <summary>
-        <para>Displays the standard Print dialog to print the data displayed in the TreeList control.</para>
+        <para>Opens the Print dialog that allows a user to print the data displayed in the control.</para>
       </summary>
     </member>
     <member name="E:DevExpress.XtraTreeList.TreeList.PrintExportProgress">
@@ -7445,7 +7481,7 @@ This property is obsolete. Use the <see cref="P:DevExpress.XtraTreeList.TreeList
     </member>
     <member name="E:DevExpress.XtraTreeList.TreeList.QueryCustomFunctions">
       <summary>
-        <para>Allows you to add custom function based filters (for example, &#39;discount is more than 15%&#39;) to Excel-style pop-up filter menus and/or the filter editor.</para>
+        <para>Allows you to add custom-function-based filters (for example, &#39;discount is more than 15%&#39;) to Excel-style pop-up filter menus and/or the filter editor.</para>
       </summary>
     </member>
     <member name="M:DevExpress.XtraTreeList.TreeList.Refresh">
@@ -7932,12 +7968,12 @@ Or, a <see cref="P:DevExpress.Utils.OptionsLayoutBase.FullLayout"/> object, to s
     </member>
     <member name="M:DevExpress.XtraTreeList.TreeList.ShowPrintPreview">
       <summary>
-        <para>Opens the Print Preview window with a Bars UI.</para>
+        <para>Opens the Print Preview window, which displays commands in bars.</para>
       </summary>
     </member>
     <member name="M:DevExpress.XtraTreeList.TreeList.ShowRibbonPrintPreview">
       <summary>
-        <para>Displays the Print Preview window with a Ribbon UI.</para>
+        <para>Opens the Print Preview window, which displays commands in a ribbon.</para>
       </summary>
     </member>
     <member name="E:DevExpress.XtraTreeList.TreeList.ShowTreeListMenu">

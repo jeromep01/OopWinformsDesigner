@@ -1816,7 +1816,7 @@
     </member>
     <member name="F:DevExpress.DashboardWeb.WorkingMode.Designer">
       <summary>
-        <para>The Web Dashboard acts as a Dashboard Designer and allows end-users to create, edit and save dashboards. Note that in this case, you can switch to the Viewer mode on the client side.</para>
+        <para>The Web Dashboard acts as a Dashboard Designer and allows end-users to create, edit and save dashboards. Note that in this case, you can switch to Viewer mode on the client side.</para>
       </summary>
     </member>
     <member name="F:DevExpress.DashboardWeb.WorkingMode.Viewer">

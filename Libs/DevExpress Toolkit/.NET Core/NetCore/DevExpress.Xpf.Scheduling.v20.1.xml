@@ -5034,213 +5034,213 @@
     </member>
     <member name="T:DevExpress.Xpf.Scheduling.ListView">
       <summary>
-        <para></para>
+        <para>A grid that displays appointments, and allows you to group, sort, and filter them for better analysis.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpf.Scheduling.ListView.#ctor">
       <summary>
-        <para></para>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Xpf.Scheduling.ListView"/> class with the default settings.</para>
       </summary>
     </member>
     <member name="P:DevExpress.Xpf.Scheduling.ListView.ColumnStyleAllDay">
       <summary>
-        <para></para>
+        <para>Gets or sets the style of the All Day column in the List View. This is a dependency property.</para>
       </summary>
-      <value></value>
+      <value>A <see cref="T:System.Windows.Style"/> object that represents a style to be applied to the All Day column.</value>
     </member>
     <member name="F:DevExpress.Xpf.Scheduling.ListView.ColumnStyleAllDayProperty">
       <summary>
-        <para></para>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.Scheduling.ListView.ColumnStyleAllDay"/> dependency property.</para>
       </summary>
       <value>A dependency property identifier.</value>
     </member>
     <member name="P:DevExpress.Xpf.Scheduling.ListView.ColumnStyleDuration">
       <summary>
-        <para></para>
+        <para>Gets or sets the style of the Duration column in the List View. This is a dependency property.</para>
       </summary>
-      <value></value>
+      <value>A <see cref="T:System.Windows.Style"/> object that represents a style to be applied to the Duration column.</value>
     </member>
     <member name="F:DevExpress.Xpf.Scheduling.ListView.ColumnStyleDurationProperty">
       <summary>
-        <para></para>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.Scheduling.ListView.ColumnStyleDuration"/> dependency property.</para>
       </summary>
       <value>A dependency property identifier.</value>
     </member>
     <member name="P:DevExpress.Xpf.Scheduling.ListView.ColumnStyleEnd">
       <summary>
-        <para></para>
+        <para>Gets or sets the style of the End column in the List View. This is a dependency property.</para>
       </summary>
-      <value></value>
+      <value>A <see cref="T:System.Windows.Style"/> object that represents a style to be applied to the End column.</value>
     </member>
     <member name="F:DevExpress.Xpf.Scheduling.ListView.ColumnStyleEndProperty">
       <summary>
-        <para></para>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.Scheduling.ListView.ColumnStyleEnd"/> dependency property.</para>
       </summary>
       <value>A dependency property identifier.</value>
     </member>
     <member name="P:DevExpress.Xpf.Scheduling.ListView.ColumnStyleLabel">
       <summary>
-        <para></para>
+        <para>Gets or sets the style of the Label column in the List View. This is a dependency property.</para>
       </summary>
-      <value></value>
+      <value>A <see cref="T:System.Windows.Style"/> object that represents a style to be applied to the Label column.</value>
     </member>
     <member name="F:DevExpress.Xpf.Scheduling.ListView.ColumnStyleLabelProperty">
       <summary>
-        <para></para>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.Scheduling.ListView.ColumnStyleLabel"/> dependency property.</para>
       </summary>
       <value>A dependency property identifier.</value>
     </member>
     <member name="P:DevExpress.Xpf.Scheduling.ListView.ColumnStyleLocation">
       <summary>
-        <para></para>
+        <para>Gets or sets the style of the Location column in the List View. This is a dependency property.</para>
       </summary>
-      <value></value>
+      <value>A <see cref="T:System.Windows.Style"/> object that represents a style to be applied to the Location column.</value>
     </member>
     <member name="F:DevExpress.Xpf.Scheduling.ListView.ColumnStyleLocationProperty">
       <summary>
-        <para></para>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.Scheduling.ListView.ColumnStyleLocation"/> dependency property.</para>
       </summary>
       <value>A dependency property identifier.</value>
     </member>
     <member name="P:DevExpress.Xpf.Scheduling.ListView.ColumnStyleRecurrence">
       <summary>
-        <para></para>
+        <para>Gets or sets the style of the Recurrence column in the List View. This is a dependency property.</para>
       </summary>
-      <value></value>
+      <value>A <see cref="T:System.Windows.Style"/> object that represents a style to be applied to the Recurrence column.</value>
     </member>
     <member name="F:DevExpress.Xpf.Scheduling.ListView.ColumnStyleRecurrenceProperty">
       <summary>
-        <para></para>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.Scheduling.ListView.ColumnStyleRecurrence"/> dependency property.</para>
       </summary>
       <value>A dependency property identifier.</value>
     </member>
     <member name="P:DevExpress.Xpf.Scheduling.ListView.ColumnStyleReminder">
       <summary>
-        <para></para>
+        <para>Gets or sets the style of the Reminder column in the List View. This is a dependency property.</para>
       </summary>
-      <value></value>
+      <value>A <see cref="T:System.Windows.Style"/> object that represents a style to be applied to the Reminder column.</value>
     </member>
     <member name="F:DevExpress.Xpf.Scheduling.ListView.ColumnStyleReminderProperty">
       <summary>
-        <para></para>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.Scheduling.ListView.ColumnStyleReminder"/> dependency property.</para>
       </summary>
       <value>A dependency property identifier.</value>
     </member>
     <member name="P:DevExpress.Xpf.Scheduling.ListView.ColumnStyleResource">
       <summary>
-        <para></para>
+        <para>Gets or sets the style of the Resource column in the List View. This is a dependency property.</para>
       </summary>
-      <value></value>
+      <value>A <see cref="T:System.Windows.Style"/> object that represents a style to be applied to the Resource column.</value>
     </member>
     <member name="F:DevExpress.Xpf.Scheduling.ListView.ColumnStyleResourceProperty">
       <summary>
-        <para></para>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.Scheduling.ListView.ColumnStyleResource"/> dependency property.</para>
       </summary>
       <value>A dependency property identifier.</value>
     </member>
     <member name="P:DevExpress.Xpf.Scheduling.ListView.ColumnStyleStart">
       <summary>
-        <para></para>
+        <para>Gets or sets the style of the Start column in the List View. This is a dependency property.</para>
       </summary>
-      <value></value>
+      <value>A <see cref="T:System.Windows.Style"/> object that represents a style to be applied to the Start column.</value>
     </member>
     <member name="F:DevExpress.Xpf.Scheduling.ListView.ColumnStyleStartProperty">
       <summary>
-        <para></para>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.Scheduling.ListView.ColumnStyleStart"/> dependency property.</para>
       </summary>
       <value>A dependency property identifier.</value>
     </member>
     <member name="P:DevExpress.Xpf.Scheduling.ListView.ColumnStyleStatus">
       <summary>
-        <para></para>
+        <para>Gets or sets the style of the Status column in the List View. This is a dependency property.</para>
       </summary>
-      <value></value>
+      <value>A <see cref="T:System.Windows.Style"/> object that represents a style to be applied to the Status column.</value>
     </member>
     <member name="F:DevExpress.Xpf.Scheduling.ListView.ColumnStyleStatusProperty">
       <summary>
-        <para></para>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.Scheduling.ListView.ColumnStyleStatus"/> dependency property.</para>
       </summary>
       <value>A dependency property identifier.</value>
     </member>
     <member name="P:DevExpress.Xpf.Scheduling.ListView.ColumnStyleSubject">
       <summary>
-        <para></para>
+        <para>Gets or sets the style of the Subject column in the List View. This is a dependency property.</para>
       </summary>
-      <value></value>
+      <value>A <see cref="T:System.Windows.Style"/> object that represents a style to be applied to the Subject column.</value>
     </member>
     <member name="F:DevExpress.Xpf.Scheduling.ListView.ColumnStyleSubjectProperty">
       <summary>
-        <para></para>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.Scheduling.ListView.ColumnStyleSubject"/> dependency property.</para>
       </summary>
       <value>A dependency property identifier.</value>
     </member>
     <member name="P:DevExpress.Xpf.Scheduling.ListView.ColumnStyleType">
       <summary>
-        <para></para>
+        <para>Gets or sets the style of the Type column in the List View. This is a dependency property.</para>
       </summary>
-      <value></value>
+      <value>A <see cref="T:System.Windows.Style"/> object that represents a style to be applied to the Type column.</value>
     </member>
     <member name="F:DevExpress.Xpf.Scheduling.ListView.ColumnStyleTypeProperty">
       <summary>
-        <para></para>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.Scheduling.ListView.ColumnStyleType"/> dependency property.</para>
       </summary>
       <value>A dependency property identifier.</value>
     </member>
     <member name="P:DevExpress.Xpf.Scheduling.ListView.GridControlStyle">
       <summary>
-        <para></para>
+        <para>Gets or sets the style applied to the GridControl object used by the view. This is a dependency property.</para>
       </summary>
-      <value></value>
+      <value>A <see cref="T:System.Windows.Style"/> object that represents a style to be applied to the grid control used by the view.</value>
     </member>
     <member name="F:DevExpress.Xpf.Scheduling.ListView.GridControlStyleProperty">
       <summary>
-        <para></para>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.Scheduling.ListView.GridControlStyle"/> dependency property.</para>
       </summary>
       <value>A dependency property identifier.</value>
     </member>
     <member name="M:DevExpress.Xpf.Scheduling.ListView.NavigateBackward">
       <summary>
-        <para></para>
+        <para>For internal use.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpf.Scheduling.ListView.NavigateForward">
       <summary>
-        <para></para>
+        <para>For internal use.</para>
       </summary>
     </member>
     <member name="P:DevExpress.Xpf.Scheduling.ListView.ShowChangedOccurrences">
       <summary>
-        <para></para>
+        <para>Specifies whether to display changed occurrences. This is a dependency property.</para>
       </summary>
-      <value></value>
+      <value>true, to display changed occurrences; otherwise, false.</value>
     </member>
     <member name="F:DevExpress.Xpf.Scheduling.ListView.ShowChangedOccurrencesProperty">
       <summary>
-        <para></para>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.Scheduling.ListView.ShowChangedOccurrences"/> dependency property.</para>
       </summary>
       <value>A dependency property identifier.</value>
     </member>
     <member name="P:DevExpress.Xpf.Scheduling.ListView.ShowDeletedOccurrences">
       <summary>
-        <para></para>
+        <para>Specifies whether to display deleted occurrences. This is a dependency property.</para>
       </summary>
-      <value></value>
+      <value>true, to display deleted occurrences; otherwise, false.</value>
     </member>
     <member name="F:DevExpress.Xpf.Scheduling.ListView.ShowDeletedOccurrencesProperty">
       <summary>
-        <para></para>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.Scheduling.ListView.ShowDeletedOccurrences"/> dependency property.</para>
       </summary>
       <value>A dependency property identifier.</value>
     </member>
     <member name="P:DevExpress.Xpf.Scheduling.ListView.TableViewStyle">
       <summary>
-        <para></para>
+        <para>Gets or sets the style applied to the <see cref="T:DevExpress.Xpf.Grid.TableView"/> object used by the view. This is a dependency property.</para>
       </summary>
-      <value></value>
+      <value>A <see cref="T:System.Windows.Style"/> object that represents a style to be applied to the grid control used by the view.</value>
     </member>
     <member name="F:DevExpress.Xpf.Scheduling.ListView.TableViewStyleProperty">
       <summary>
-        <para></para>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.Scheduling.ListView.TableViewStyle"/> dependency property.</para>
       </summary>
       <value>A dependency property identifier.</value>
     </member>

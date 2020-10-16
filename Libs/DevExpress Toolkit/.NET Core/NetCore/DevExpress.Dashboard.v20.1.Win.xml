@@ -251,7 +251,7 @@
     </member>
     <member name="M:DevExpress.DashboardCommon.DataSourceWizard.DashboardChooseDataSourceNamePage`1.#ctor(DevExpress.DataAccess.Wizard.Views.IChooseDataSourceNamePageView,DevExpress.DataAccess.Wizard.Services.IDataSourceNameCreationService,DevExpress.DataAccess.Wizard.Services.IConnectionStorageService,DevExpress.DataAccess.Wizard.Services.IJsonConnectionStorageService,DevExpress.DataAccess.Wizard.Services.DataSourceTypes)">
       <summary>
-        <para>Initializes a new instance of the  class.</para>
+        <para>Initializes a new instance of the <strong>DevExpress.DashboardCommon.DataSourceWizard.DashboardChooseDataSourceNamePage`1.%23ctor(DevExpress.DataAccess.Wizard.Views.IChooseDataSourceNamePageView,DevExpress.DataAccess.Wizard.Services.IDataSourceNameCreationService,DevExpress.DataAccess.Wizard.Services.IConnectionStorageService,DevExpress.DataAccess.Wizard.Services.IJsonConnectionStorageService,DevExpress.DataAccess.Wizard.Services.DataSourceTypes)</strong> class.</para>
       </summary>
       <param name="view">A page view.</param>
       <param name="dataSourceNameCreator"></param>
@@ -1580,7 +1580,7 @@
     </member>
     <member name="E:DevExpress.DashboardWin.DashboardDesigner.DashboardSaved">
       <summary>
-        <para>Allows to obtain the path to the dashboard XML definition before and after the save operation.</para>
+        <para>Allows you to obtain the path to the dashboard XML definition before and after the save operation.</para>
       </summary>
     </member>
     <member name="E:DevExpress.DashboardWin.DashboardDesigner.DashboardSaving">
@@ -14638,6 +14638,11 @@ Click &#39;Yes&#39; to load data as is. If you save the current dashboard, you c
     <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.NoDataSourcesForDataFederationMessage">
       <summary>
         <para>Default value: Provide at least one data source to be used to create a federated data source.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.NoXPOClassesForXPODataSourceMessage">
+      <summary>
+        <para></para>
       </summary>
     </member>
     <member name="F:DevExpress.DashboardWin.Localization.DashboardWinStringId.NumericFormatFormatTypeAutoCaption">

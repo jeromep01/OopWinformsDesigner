@@ -3075,7 +3075,7 @@
     </member>
     <member name="T:DevExpress.XtraReports.Web.WebDocumentViewer.CachedDrillThroughContext">
       <summary>
-        <para></para>
+        <para>Provides information about drill-through navigation when an application uses a cached report source.</para>
       </summary>
     </member>
     <member name="N:DevExpress.XtraReports.Web.WebDocumentViewer.DataContracts">
@@ -3310,7 +3310,7 @@
     </member>
     <member name="M:DevExpress.XtraReports.Web.WebDocumentViewer.DefaultWebDocumentViewerContainer.UseCachedReportSourceBuilder">
       <summary>
-        <para></para>
+        <para>Forces reporting components to use the <see cref="T:DevExpress.XtraReports.Web.CachedReportSourceWeb"/> instance as the report source.</para>
       </summary>
     </member>
     <member name="M:DevExpress.XtraReports.Web.WebDocumentViewer.DefaultWebDocumentViewerContainer.UseEmptyStoragesCleaner">
@@ -3413,7 +3413,7 @@
     </member>
     <member name="T:DevExpress.XtraReports.Web.WebDocumentViewer.DrillThroughContext">
       <summary>
-        <para>Provides information about drill-through reports on the client.</para>
+        <para>Provides information about drill-through navigation.</para>
       </summary>
     </member>
     <member name="M:DevExpress.XtraReports.Web.WebDocumentViewer.DrillThroughContext.AssignEditingFieldValuesToReport">

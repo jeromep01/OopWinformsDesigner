@@ -5030,7 +5030,7 @@
       <summary>
         <para>Provides access to a collection of the Callback Panel&#39;s content controls.</para>
       </summary>
-      <value>A <see cref="T:DevExpress.Web.ContentControlCollection"/> object that is a collection of content controls.</value>
+      <value>An object that is a collection of content controls.</value>
     </member>
     <member name="P:DevExpress.Web.Bootstrap.BootstrapCallbackPanel.CssClass">
       <summary>
@@ -5617,6 +5617,11 @@
         <para></para>
       </summary>
       <value></value>
+    </member>
+    <member name="E:DevExpress.Web.Bootstrap.BootstrapCardView.HeaderFilterEditorInitialize">
+      <summary>
+        <para></para>
+      </summary>
     </member>
     <member name="E:DevExpress.Web.Bootstrap.BootstrapCardView.HeaderFilterFillItems">
       <summary>
@@ -7478,6 +7483,12 @@
         <para>Initializes a new instance of the <see cref="T:DevExpress.Web.Bootstrap.BootstrapCardViewEditingSettings"/> class.</para>
       </summary>
       <param name="grid">An <see cref="T:DevExpress.Web.ASPxCardView"/> object that owns the created object.</param>
+    </member>
+    <member name="M:DevExpress.Web.Bootstrap.BootstrapCardViewEditingSettings.Assign(DevExpress.Web.PropertiesBase)">
+      <summary>
+        <para></para>
+      </summary>
+      <param name="source" />
     </member>
     <member name="P:DevExpress.Web.Bootstrap.BootstrapCardViewEditingSettings.EditFormColumnSpan">
       <summary>
@@ -13245,6 +13256,12 @@
     <member name="P:DevExpress.Web.Bootstrap.BootstrapCheckBox.BackgroundImage">
       <summary>
         <para>This member is not in effect for this class. It is overridden only for the purpose of preventing it from appearing in Microsoft Visual Studio designer tools.</para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="P:DevExpress.Web.Bootstrap.BootstrapCheckBox.Badge">
+      <summary>
+        <para></para>
       </summary>
       <value></value>
     </member>
@@ -20420,6 +20437,12 @@
       </summary>
       <value></value>
     </member>
+    <member name="F:DevExpress.Web.Bootstrap.BootstrapEditorCssClassesBase.CalendarDayOfWeekSystemCssClass">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
     <member name="F:DevExpress.Web.Bootstrap.BootstrapEditorCssClassesBase.CalendarDayOtherMonthSystemCssClass">
       <summary>
         <para>For internal use only.</para>
@@ -23211,6 +23234,11 @@
       </summary>
       <value></value>
     </member>
+    <member name="E:DevExpress.Web.Bootstrap.BootstrapGridView.HeaderFilterEditorInitialize">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
     <member name="E:DevExpress.Web.Bootstrap.BootstrapGridView.HeaderFilterFillItems">
       <summary>
         <para>Enables you to add custom filter items which filter data by the current column to ones displayed within a filter dropdown.</para>
@@ -23324,6 +23352,12 @@
         <para>Gets the settings of the <see cref="T:DevExpress.Web.Bootstrap.BootstrapGridView"/>&#39;s command buttons.</para>
       </summary>
       <value>A <see cref="T:DevExpress.Web.Bootstrap.BootstrapGridViewCommandButtonsSettings"/> object containing the settings of the <see cref="T:DevExpress.Web.Bootstrap.BootstrapGridView"/>&#39;s command buttons.</value>
+    </member>
+    <member name="P:DevExpress.Web.Bootstrap.BootstrapGridView.SettingsContextMenu">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
     </member>
     <member name="P:DevExpress.Web.Bootstrap.BootstrapGridView.SettingsCookies">
       <summary>
@@ -25928,6 +25962,12 @@
       </summary>
       <param name="grid">An <see cref="T:DevExpress.Web.ASPxGridView"/> object that owns the created object.</param>
     </member>
+    <member name="M:DevExpress.Web.Bootstrap.BootstrapGridViewEditingSettings.Assign(DevExpress.Web.PropertiesBase)">
+      <summary>
+        <para></para>
+      </summary>
+      <param name="source" />
+    </member>
     <member name="P:DevExpress.Web.Bootstrap.BootstrapGridViewEditingSettings.BatchEditSettings">
       <summary>
         <para>Gets the Batch Edit Mode settings.</para>
@@ -26694,12 +26734,6 @@
         <para>Initializes a new instance of the <see cref="T:DevExpress.Web.Bootstrap.BootstrapGridViewSettings"/> class.</para>
       </summary>
       <param name="grid">An <see cref="T:DevExpress.Web.ASPxGridView"/> object that owns the created object.</param>
-    </member>
-    <member name="P:DevExpress.Web.Bootstrap.BootstrapGridViewSettings.AutoFilterCondition">
-      <summary>
-        <para>This member is not in effect for this class. It is overridden only for the purpose of preventing it from appearing in Microsoft Visual Studio designer tools.</para>
-      </summary>
-      <value></value>
     </member>
     <member name="P:DevExpress.Web.Bootstrap.BootstrapGridViewSettings.EnableFilterControlPopupMenuScrolling">
       <summary>
@@ -29137,7 +29171,7 @@
     </member>
     <member name="P:DevExpress.Web.Bootstrap.BootstrapLayoutGroup.ColumnCount">
       <summary>
-        <para></para>
+        <para>This member is not in effect for this class. It is overridden only for the purpose of preventing it from appearing in Microsoft Visual Studio designer tools.</para>
       </summary>
       <value></value>
     </member>
@@ -35875,6 +35909,12 @@
     <member name="P:DevExpress.Web.Bootstrap.BootstrapRadioButton.BackgroundImage">
       <summary>
         <para>This member is not in effect for this class. It is overridden only for the purpose of preventing it from appearing in Microsoft Visual Studio designer tools.</para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="P:DevExpress.Web.Bootstrap.BootstrapRadioButton.Badge">
+      <summary>
+        <para></para>
       </summary>
       <value></value>
     </member>

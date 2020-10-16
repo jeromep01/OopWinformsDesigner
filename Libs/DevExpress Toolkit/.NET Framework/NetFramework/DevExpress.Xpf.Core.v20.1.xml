@@ -27692,7 +27692,7 @@ This is a dependency property.</para>
     </member>
     <member name="T:DevExpress.Xpf.Editors.BaseEdit">
       <summary>
-        <para>Serves as the base for all editors that can be used as standalone editors and for inplace editing in container controls (e.g., within the <see cref="T:DevExpress.Xpf.Grid.GridControl"/>).</para>
+        <para>Serves as the base for all editors that can be used as standalone editors and for in-place editing in container controls (e.g., within the <see cref="T:DevExpress.Xpf.Grid.GridControl"/>).</para>
       </summary>
     </member>
     <member name="P:DevExpress.Xpf.Editors.BaseEdit.ActualBorderTemplate">
@@ -30918,9 +30918,9 @@ This is a dependency property.</para>
     </member>
     <member name="P:DevExpress.Xpf.Editors.DateNavigator.DateNavigator.CalendarView">
       <summary>
-        <para>Gets or sets the time span in the calendar (for instance, month, year). This is a dependency property.</para>
+        <para>Gets or sets the calendar view where a user can select a value. This is a dependency property.</para>
       </summary>
-      <value>A calendar view.</value>
+      <value>A calendar view (for instance, month, year).</value>
     </member>
     <member name="F:DevExpress.Xpf.Editors.DateNavigator.DateNavigator.CalendarViewProperty">
       <summary>
@@ -42335,7 +42335,7 @@ This is a dependency property.</para>
     </member>
     <member name="P:DevExpress.Xpf.Editors.Settings.BaseEditSettings.DisableExcessiveUpdatesInInplaceInactiveMode">
       <summary>
-        <para>This property supports the internal infrastructure and is not intended to be used directly from your code.</para>
+        <para>For internal use.</para>
       </summary>
       <value></value>
     </member>
@@ -42473,7 +42473,7 @@ This is a dependency property.</para>
     </member>
     <member name="P:DevExpress.Xpf.Editors.Settings.BaseEditSettings.ShouldDisableExcessiveUpdatesInInplaceInactiveMode">
       <summary>
-        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.</para>
+        <para>For internal use.</para>
       </summary>
       <value></value>
     </member>
@@ -47944,7 +47944,7 @@ This is a dependency property.</para>
     </member>
     <member name="P:DevExpress.Xpf.Editors.ValidationEventArgs.ErrorType">
       <summary>
-        <para>Gets or sets the error type.</para>
+        <para>Gets or sets the error icon type.</para>
       </summary>
       <value>One of the <see cref="T:DevExpress.XtraEditors.DXErrorProvider.ErrorType"/> enumeration values.</value>
     </member>
@@ -47956,13 +47956,13 @@ This is a dependency property.</para>
     </member>
     <member name="M:DevExpress.Xpf.Editors.ValidationEventArgs.SetError(System.Object)">
       <summary>
-        <para>Displays an error within the editor.</para>
+        <para>Marks the processed input value as invalid and displays an error within the editor.</para>
       </summary>
       <param name="errorContent">An object that specifies the error content.</param>
     </member>
     <member name="M:DevExpress.Xpf.Editors.ValidationEventArgs.SetError(System.Object,DevExpress.XtraEditors.DXErrorProvider.ErrorType)">
       <summary>
-        <para>Displays an error within the editor.</para>
+        <para>Marks the processed input value as invalid and displays an error within the editor with the specified error icon type.</para>
       </summary>
       <param name="errorContent">An object that specifies the error content.</param>
       <param name="errorType">One of the <see cref="T:DevExpress.XtraEditors.DXErrorProvider.ErrorType"/> enumeration values.</param>

@@ -1924,6 +1924,16 @@
       <param name="customizeWizard">A <see cref="T:System.Action"/> delegate of an object implementing the <see cref="T:DevExpress.DataAccess.UI.Wizard.IWizardCustomization`1"/> interface.</param>
       <returns>true, if the dialog was finished by clicking the Finish button; otherwise, false.</returns>
     </member>
+    <member name="M:DevExpress.DataAccess.UI.Sql.SqlDataSourceUIHelper.ManageQueriesRunForm``1(DevExpress.DataAccess.Sql.SqlDataSource,DevExpress.DataAccess.UI.Sql.EditQueryContext,DevExpress.DataAccess.Native.Sql.IDataConnectionParametersService,System.Action{DevExpress.DataAccess.UI.Wizard.IWizardCustomization{``0}})">
+      <summary>
+        <para></para>
+      </summary>
+      <param name="sqlDataSource"></param>
+      <param name="context"></param>
+      <param name="dataConnectionParametersService"></param>
+      <param name="customizeWizard"></param>
+      <returns></returns>
+    </member>
     <member name="M:DevExpress.DataAccess.UI.Sql.SqlDataSourceUIHelper.ManageRelations(DevExpress.DataAccess.Sql.SqlDataSource)">
       <summary>
         <para>Invokes the Master-Detail Relations Editor to specify the key data fields by which a pair of queries is related.</para>
@@ -1965,6 +1975,15 @@
       <param name="owner">An object implementing the <see cref="T:System.Windows.Forms.IWin32Window"/> interface that is the owner of the current dialog window.</param>
       <param name="dbSchemaProvider">An object implementing the IDBSchemaProvider interface.</param>
       <returns>true, if the dialog was finished by clicking the OK button; otherwise, false.</returns>
+    </member>
+    <member name="M:DevExpress.DataAccess.UI.Sql.SqlDataSourceUIHelper.OpenConnectionAsync(DevExpress.DataAccess.Sql.SqlDataSource,DevExpress.DataAccess.UI.Sql.EditQueryContext,System.Threading.CancellationTokenSource)">
+      <summary>
+        <para></para>
+      </summary>
+      <param name="sqlDataSource"></param>
+      <param name="context"></param>
+      <param name="tokenSource"></param>
+      <returns></returns>
     </member>
     <member name="M:DevExpress.DataAccess.UI.Sql.SqlDataSourceUIHelper.RebuildResultSchema(DevExpress.DataAccess.Sql.SqlDataSource)">
       <summary>

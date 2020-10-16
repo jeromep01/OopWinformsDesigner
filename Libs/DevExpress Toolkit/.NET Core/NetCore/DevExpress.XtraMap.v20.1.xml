@@ -1045,6 +1045,11 @@
         <para>Turn left.</para>
       </summary>
     </member>
+    <member name="F:DevExpress.XtraMap.BingManeuverType.TurnLeftSharp">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
     <member name="F:DevExpress.XtraMap.BingManeuverType.TurnLeftThenBearLeft">
       <summary>
         <para>Turn left then bear left.</para>
@@ -1068,6 +1073,11 @@
     <member name="F:DevExpress.XtraMap.BingManeuverType.TurnRight">
       <summary>
         <para>Turn right.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.XtraMap.BingManeuverType.TurnRightSharp">
+      <summary>
+        <para></para>
       </summary>
     </member>
     <member name="F:DevExpress.XtraMap.BingManeuverType.TurnRightThenBearLeft">
@@ -8262,7 +8272,7 @@
     </member>
     <member name="E:DevExpress.XtraMap.MapItemsLayerBase.AttributeDisplayValueEdit">
       <summary>
-        <para>Occurs every time a display value of an attribute should be edited.</para>
+        <para>Occurs for each attribute value that is used in a title or tooltip before this title or tooltip is displayed.</para>
       </summary>
     </member>
     <member name="P:DevExpress.XtraMap.MapItemsLayerBase.EnableHighlighting">
@@ -10535,6 +10545,12 @@
         <para>Gets or sets authentication information for the map web request.</para>
       </summary>
       <value>An <see cref="T:System.Net.ICredentials"/> that contains the authentication credentials associated with the request. The default is null.</value>
+    </member>
+    <member name="P:DevExpress.XtraMap.MapWebRequestEventArgs.Encoding">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
     </member>
     <member name="P:DevExpress.XtraMap.MapWebRequestEventArgs.Headers">
       <summary>
@@ -12847,7 +12863,7 @@
     </member>
     <member name="T:DevExpress.XtraMap.SvgFileDataAdapter">
       <summary>
-        <para>Data adapter that provides data from a SVG file.</para>
+        <para>A data adapter that loads data from SVG files, and displays it on vector layers.</para>
       </summary>
     </member>
     <member name="M:DevExpress.XtraMap.SvgFileDataAdapter.#ctor">

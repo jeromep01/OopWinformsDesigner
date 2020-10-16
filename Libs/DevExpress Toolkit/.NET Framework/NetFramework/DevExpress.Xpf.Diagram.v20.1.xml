@@ -6149,9 +6149,9 @@ This is a dependency property.</para>
     </member>
     <member name="P:DevExpress.Xpf.Diagram.DiagramItem.BackgroundId">
       <summary>
-        <para>This member supports the internal infrastructure, and is not intended to be used directly from your code.</para>
+        <para>Specifies the palette color to paint the item&#39;s background. This is a dependency property.</para>
       </summary>
-      <value></value>
+      <value>A DevExpress.Diagram.Core.DiagramThemeColorId enumeration value.</value>
     </member>
     <member name="F:DevExpress.Xpf.Diagram.DiagramItem.BackgroundIdProperty">
       <summary>
@@ -6443,9 +6443,9 @@ This is a dependency property.</para>
     </member>
     <member name="P:DevExpress.Xpf.Diagram.DiagramItem.ForegroundId">
       <summary>
-        <para>This member supports the internal infrastructure, and is not intended to be used directly from your code.</para>
+        <para>Specifies the palette color to paint the item&#39;s foreground. This is a dependency property.</para>
       </summary>
-      <value></value>
+      <value>A DevExpress.Diagram.Core.DiagramThemeColorId enumeration value.</value>
     </member>
     <member name="F:DevExpress.Xpf.Diagram.DiagramItem.ForegroundIdProperty">
       <summary>

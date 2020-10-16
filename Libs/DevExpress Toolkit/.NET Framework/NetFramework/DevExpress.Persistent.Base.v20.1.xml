@@ -3160,6 +3160,15 @@
       <param name="contextIDs">The set of validation contexts. Default contexts are stored in the <see cref="T:DevExpress.Persistent.Validation.DefaultContexts"/> enumeration.</param>
       <returns>The result of validation.</returns>
     </member>
+    <member name="M:DevExpress.Persistent.Validation.RuleSet.ValidateTarget(DevExpress.ExpressApp.IObjectSpace,System.Object,System.Collections.ObjectModel.ReadOnlyCollection{DevExpress.Persistent.Validation.IRule},DevExpress.Persistent.Validation.ContextIdentifiers)">
+      <summary>
+        <para></para>
+      </summary>
+      <param name="targetObjectSpace" />
+      <param name="target" />
+      <param name="rulesList" />
+      <param name="contextIDs" />
+    </member>
     <member name="E:DevExpress.Persistent.Validation.RuleSet.ValidationCompleted">
       <summary>
         <para>Occurs after validation of an entire <see cref="T:DevExpress.Persistent.Validation.RuleSet"/> is complete.</para>

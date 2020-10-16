@@ -365,7 +365,7 @@
     </member>
     <member name="P:DevExpress.DashboardCommon.CalculatedField.DataMember">
       <summary>
-        <para>Gets or sets the data member of the calculated field.</para>
+        <para>Gets or sets a data member that specifies to what query the field belongs.</para>
       </summary>
       <value>A <see cref="T:System.String"/> value that specifies the calculated field&#39;s data member.</value>
     </member>
@@ -2378,6 +2378,11 @@
         <para>A measure key used to specify measures to be colored.</para>
       </summary>
     </member>
+    <member name="M:DevExpress.DashboardCommon.ColorSchemeMeasureKey.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.DashboardCommon.ColorSchemeMeasureKey"/> class.</para>
+      </summary>
+    </member>
     <member name="M:DevExpress.DashboardCommon.ColorSchemeMeasureKey.#ctor(DevExpress.DashboardCommon.MeasureDefinition[])">
       <summary>
         <para>Initializes a new instance of the <see cref="T:DevExpress.DashboardCommon.ColorSchemeMeasureKey"/> class.</para>
@@ -2394,7 +2399,7 @@
       <summary>
         <para>Provides access to a collection of measure definitions.</para>
       </summary>
-      <value>A collection of <see cref="T:DevExpress.DashboardCommon.MeasureDefinition"/> objects.</value>
+      <value></value>
     </member>
     <member name="T:DevExpress.DashboardCommon.ComboBoxDashboardItem">
       <summary>
@@ -4632,15 +4637,15 @@
     </member>
     <member name="P:DevExpress.DashboardCommon.DashboardItemState.MasterFilterValues">
       <summary>
-        <para>Gets or sets selected master filter values.</para>
+        <para>Gets or sets selected master filter values stored in a dashboard state.</para>
       </summary>
       <value>A list of object arrays that specify selected master filter values.</value>
     </member>
     <member name="P:DevExpress.DashboardCommon.DashboardItemState.RangeFilterState">
       <summary>
-        <para>Gets or sets the state of the Range Filter dashboard item.</para>
+        <para>Gets or sets the state of the Range Filter and Date Filter dashboard items.</para>
       </summary>
-      <value>A <see cref="T:DevExpress.DashboardCommon.RangeFilterState"/> object that specifies the state of the Range Filter dashboard item.</value>
+      <value>A <see cref="T:DevExpress.DashboardCommon.RangeFilterState"/> object that specifies the state of the Range Filter and Date Filter dashboard items.</value>
     </member>
     <member name="M:DevExpress.DashboardCommon.DashboardItemState.SaveToXml">
       <summary>
@@ -6662,6 +6667,12 @@
       </summary>
       <returns>An integer value representing the hash code for the current object.</returns>
     </member>
+    <member name="M:DevExpress.DashboardCommon.DataItemDefinition.GetStringKey">
+      <summary>
+        <para></para>
+      </summary>
+      <returns></returns>
+    </member>
     <member name="M:DevExpress.DashboardCommon.DataItemDefinition.ToString">
       <summary>
         <para>Returns the string that represents the current object.</para>
@@ -8360,6 +8371,12 @@
         <para>Gets the hash code that corresponds to the value of the current <see cref="T:DevExpress.DashboardCommon.DimensionDefinition"/> object.</para>
       </summary>
       <returns>An integer value representing the hash code for the current object.</returns>
+    </member>
+    <member name="M:DevExpress.DashboardCommon.DimensionDefinition.GetStringKey">
+      <summary>
+        <para></para>
+      </summary>
+      <returns></returns>
     </member>
     <member name="P:DevExpress.DashboardCommon.DimensionDefinition.TextGroupInterval">
       <summary>
@@ -14066,6 +14083,11 @@ Returns the number of rows from the current row to the first row in the window.<
 Returns the date of the first day of the week for a given DateTime (uses culture settings).</para>
       </summary>
     </member>
+    <member name="F:DevExpress.DashboardCommon.Localization.DashboardStringId.FunctionDescriptionGetDateWeekYear2">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
     <member name="F:DevExpress.DashboardCommon.Localization.DashboardStringId.FunctionDescriptionIndex">
       <summary>
         <para>Default value: Index()
@@ -16260,6 +16282,16 @@ Returns the biased variance of the expression within the window.</para>
       <param name="dataMember">A <see cref="T:System.String"/> that specifies the data member.</param>
       <param name="summaryType">A <see cref="T:DevExpress.DashboardCommon.SummaryType"/> object that specifies the summary function type.</param>
     </member>
+    <member name="M:DevExpress.DashboardCommon.MeasureDefinition.#ctor(System.String,DevExpress.DashboardCommon.SummaryType,DevExpress.DashboardCommon.MeasureCalculation,DevExpress.DashboardCommon.MeasureCalculationWindowDefinition,System.String)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.DashboardCommon.MeasureDefinition"/> class with specified settings.</para>
+      </summary>
+      <param name="dataMember" />
+      <param name="summaryType" />
+      <param name="calculation" />
+      <param name="windowDefinition" />
+      <param name="expression" />
+    </member>
     <member name="M:DevExpress.DashboardCommon.MeasureDefinition.#ctor(System.String,DevExpress.DashboardCommon.SummaryType,System.String,DevExpress.DashboardCommon.MeasureCalculation,DevExpress.DashboardCommon.MeasureCalculationWindowDefinition,System.String)">
       <summary>
         <para>Initializes a new instance of the <see cref="T:DevExpress.DashboardCommon.MeasureDefinition"/> class with specified settings.</para>
@@ -16271,11 +16303,36 @@ Returns the biased variance of the expression within the window.</para>
       <param name="windowDefinition"></param>
       <param name="expression"></param>
     </member>
+    <member name="M:DevExpress.DashboardCommon.MeasureDefinition.#ctor(System.String,DevExpress.DashboardCommon.SummaryType,System.String,System.Collections.Generic.Dictionary{System.String,DevExpress.DashboardCommon.DataItemDefinition},DevExpress.DashboardCommon.MeasureCalculation,DevExpress.DashboardCommon.MeasureCalculationWindowDefinition,System.String)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.DashboardCommon.MeasureDefinition"/> class with specified settings.</para>
+      </summary>
+      <param name="dataMember"></param>
+      <param name="summaryType"></param>
+      <param name="filterString"></param>
+      <param name="filterDimensions"></param>
+      <param name="calculation"></param>
+      <param name="windowDefinition"></param>
+      <param name="expression"></param>
+    </member>
+    <member name="M:DevExpress.DashboardCommon.MeasureDefinition.AddDimensionDefinition(System.String,DevExpress.DashboardCommon.DimensionDefinition)">
+      <summary>
+        <para></para>
+      </summary>
+      <param name="uniqueId"></param>
+      <param name="dimension"></param>
+    </member>
     <member name="P:DevExpress.DashboardCommon.MeasureDefinition.Calculation">
       <summary>
         <para>Gets the calculation applied to the measure.</para>
       </summary>
       <value>A <see cref="T:DevExpress.DashboardCommon.MeasureCalculation"/> descendant that is the calculation applied to the measure.</value>
+    </member>
+    <member name="P:DevExpress.DashboardCommon.MeasureDefinition.Definitions">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
     </member>
     <member name="M:DevExpress.DashboardCommon.MeasureDefinition.Equals(System.Object)">
       <summary>
@@ -16301,6 +16358,12 @@ Returns the biased variance of the expression within the window.</para>
         <para>Gets the hash code that corresponds to the value of the current <see cref="T:DevExpress.DashboardCommon.MeasureDefinition"/> object.</para>
       </summary>
       <returns>An integer value representing the hash code for the current object.</returns>
+    </member>
+    <member name="M:DevExpress.DashboardCommon.MeasureDefinition.GetStringKey">
+      <summary>
+        <para></para>
+      </summary>
+      <returns></returns>
     </member>
     <member name="P:DevExpress.DashboardCommon.MeasureDefinition.SummaryType">
       <summary>

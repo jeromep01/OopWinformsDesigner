@@ -25,13 +25,6 @@
       </summary>
       <value>An integer value specifying the index of the active ribbon tab.</value>
     </member>
-    <member name="M:DevExpress.Web.ASPxRichEdit.ASPxRichEdit.AddImageToCache(System.IO.Stream)">
-      <summary>
-        <para>Adds the specified image to the cache.</para>
-      </summary>
-      <param name="stream">A stream object.</param>
-      <returns>A string value specifying the path to the image.</returns>
-    </member>
     <member name="P:DevExpress.Web.ASPxRichEdit.ASPxRichEdit.AssociatedRibbonID">
       <summary>
         <para>Specifies the ID of an <see cref="T:DevExpress.Web.ASPxRibbon"/> control, used as an external toolbar.</para>
@@ -105,11 +98,6 @@
         <para>Gets or sets the document&#39;s unique identifier.</para>
       </summary>
       <value>A string value that uniquely identifies the document.</value>
-    </member>
-    <member name="E:DevExpress.Web.ASPxRichEdit.ASPxRichEdit.DocumentSelectorCloudProviderRequest">
-      <summary>
-        <para>Fires when a cloud provider used in the Document Selector sends a request to a cloud service.</para>
-      </summary>
     </member>
     <member name="E:DevExpress.Web.ASPxRichEdit.ASPxRichEdit.DocumentSelectorFileUploading">
       <summary>
@@ -669,23 +657,11 @@
       </summary>
       <value>One of the <see cref="T:DevExpress.XtraRichEdit.DocumentCapability"/> enumeration values.</value>
     </member>
-    <member name="P:DevExpress.Web.ASPxRichEdit.ASPxRichEditBehaviorSettings.Encrypt">
-      <summary>
-        <para>Specifies whether the encryption operations are permitted.</para>
-      </summary>
-      <value>The document&#39;s capability to perform an operation.</value>
-    </member>
     <member name="P:DevExpress.Web.ASPxRichEdit.ASPxRichEditBehaviorSettings.FullScreen">
       <summary>
         <para>Specifies whether or not the Full Screen operation is permitted.</para>
       </summary>
       <value>One of the <see cref="T:DevExpress.XtraRichEdit.DocumentCapability"/> enumeration values.</value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxRichEdit.ASPxRichEditBehaviorSettings.KeepTextHighlightingOnClearFormatting">
-      <summary>
-        <para>Gets or sets whether the clear formatting command (<see cref="P:js-RichEditCommands.clearFormatting"/>) removes text highlighting.</para>
-      </summary>
-      <value>true to retain text highlighting; otherwise, false.</value>
     </member>
     <member name="P:DevExpress.Web.ASPxRichEdit.ASPxRichEditBehaviorSettings.Open">
       <summary>
@@ -750,12 +726,6 @@
         <para>Copies the settings from the specified object to the current one.</para>
       </summary>
       <param name="options">A <see cref="T:DevExpress.Web.PropertiesBase"/> object whose settings are assigned to the current object.</param>
-    </member>
-    <member name="P:DevExpress.Web.ASPxRichEdit.ASPxRichEditBookmarkSettings.CaseSensitiveNames">
-      <summary>
-        <para>Gets or sets whether creation of bookmarks with the same name but a different case is allowed.</para>
-      </summary>
-      <value>true, to allow creating bookmarks with the same name but a different case; otherwise, false.</value>
     </member>
     <member name="P:DevExpress.Web.ASPxRichEdit.ASPxRichEditBookmarkSettings.Color">
       <summary>
@@ -1111,6 +1081,12 @@
       <summary>
         <para>Initializes a new instance of the <see cref="T:DevExpress.Web.ASPxRichEdit.ASPxRichEditFontSettings"/> class.</para>
       </summary>
+    </member>
+    <member name="P:DevExpress.Web.ASPxRichEdit.ASPxRichEditFontSettings.AddDefaultFonts">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
     </member>
     <member name="P:DevExpress.Web.ASPxRichEdit.ASPxRichEditFontSettings.DefaultFolder">
       <summary>
@@ -1636,7 +1612,7 @@
     </member>
     <member name="T:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditLocalizer">
       <summary>
-        <para>An object providing a means to localize the <see cref="T:DevExpress.Web.ASPxRichEdit.ASPxRichEdit"/>&#39;s user interface elements at runtime.</para>
+        <para>Provides a means to localize the <see cref="T:DevExpress.Web.ASPxRichEdit.ASPxRichEdit"/>&#39;s UI elements at runtime.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditLocalizer.#ctor">
@@ -1659,7 +1635,7 @@
     </member>
     <member name="T:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditResourcesLocalizer">
       <summary>
-        <para>An object providing a means to localize the <see cref="T:DevExpress.Web.ASPxRichEdit.ASPxRichEdit"/>&#39;s user interface elements at runtime.</para>
+        <para>Provides a means to localize the <see cref="T:DevExpress.Web.ASPxRichEdit.ASPxRichEdit"/>&#39;s UI elements at runtime.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditResourcesLocalizer.#ctor">
@@ -1669,7 +1645,7 @@
     </member>
     <member name="T:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId">
       <summary>
-        <para>Contains values corresponding to strings that can be localized for the <see cref="T:DevExpress.Web.ASPxRichEdit.ASPxRichEdit"/>.</para>
+        <para>Contains strings that can be localized for the <see cref="T:DevExpress.Web.ASPxRichEdit.ASPxRichEdit"/>. For more information, refer to the  topic.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.After">
@@ -4428,12 +4404,6 @@
         <para>Initializes a new instance of the <see cref="T:DevExpress.Web.ASPxRichEdit.RichEditFileManagerEditingSettings"/> class with the specified owner.</para>
       </summary>
       <param name="owner">An object that implements the <see cref="T:DevExpress.Web.IPropertiesOwner"/> interface.</param>
-    </member>
-    <member name="P:DevExpress.Web.ASPxRichEdit.RichEditFileManagerEditingSettings.AllowDownload">
-      <summary>
-        <para>Indicates whether file downloading is enabled in the FileManager used within certain built-in dialogs.</para>
-      </summary>
-      <value>true, if file downloading is enabled; otherwise, false.</value>
     </member>
     <member name="T:DevExpress.Web.ASPxRichEdit.RichEditFileManagerFoldersSettings">
       <summary>

@@ -11,7 +11,7 @@
     </member>
     <member name="T:DevExpress.Xpo.HiddenAttribute">
       <summary>
-        <para>Applied to XPO persistent classes, their fields or properties. Specifies that the target class, property or field should be hidden when generating OData Service metadata.</para>
+        <para>Applied to XPO persistent classes, their fields or properties. Specifies that the target class, property or field should be hidden when generating OData v3 Service metadata.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpo.HiddenAttribute.#ctor">
@@ -31,7 +31,7 @@
     </member>
     <member name="T:DevExpress.Xpo.StreamAttribute">
       <summary>
-        <para>Applied to fields or a properties of an XPO persistent class. Specifies that the target string or byte[] property/field is a stream, when generating OData Service metadata.</para>
+        <para>Applied to fields or a properties of an XPO persistent class. Specifies that the target string or byte[] property/field is a stream, when generating OData v3 Service metadata.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpo.StreamAttribute.#ctor(System.String)">
@@ -67,7 +67,7 @@
     </member>
     <member name="T:DevExpress.Xpo.VisibleAttribute">
       <summary>
-        <para>Applied to non-persistent properties. Specifies that the target property value should be visible to  XPO Odata Service clients.</para>
+        <para>Applied to non-persistent properties. Specifies that the target property value should be visible to  XPO Odata v3 Service clients.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpo.VisibleAttribute.#ctor">

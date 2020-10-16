@@ -4168,11 +4168,11 @@ This option is not supported for the <see cref="P:DevExpress.XtraPdfViewer.PdfVi
     </member>
     <member name="M:DevExpress.XtraPdfViewer.PdfViewer.CreateTiff(System.IO.Stream,System.Collections.Generic.IEnumerable{System.Int32},System.Single)">
       <summary>
-        <para></para>
+        <para>Exports a PDF document to a TIFF image using a stream, page numbers and predefined resolution.</para>
       </summary>
-      <param name="stream"></param>
-      <param name="pageNumbers"></param>
-      <param name="imageDpi"></param>
+      <param name="stream">A stream to which a TIFF image should be written.</param>
+      <param name="pageNumbers">A list of page numbers.</param>
+      <param name="imageDpi">The image&#39;s DPI.</param>
     </member>
     <member name="M:DevExpress.XtraPdfViewer.PdfViewer.CreateTiff(System.IO.Stream,System.Int32)">
       <summary>
@@ -4191,11 +4191,11 @@ This option is not supported for the <see cref="P:DevExpress.XtraPdfViewer.PdfVi
     </member>
     <member name="M:DevExpress.XtraPdfViewer.PdfViewer.CreateTiff(System.String,System.Collections.Generic.IEnumerable{System.Int32},System.Single)">
       <summary>
-        <para></para>
+        <para>Exports a PDF document to a TIFF image using a stream, page numbers and predefined resolution.</para>
       </summary>
-      <param name="fileName"></param>
-      <param name="pageNumbers"></param>
-      <param name="imageDpi"></param>
+      <param name="fileName">The file name (including the full path) for the created Tiff image.</param>
+      <param name="pageNumbers">A list of page numbers.</param>
+      <param name="imageDpi">The image&#39;s DPI.</param>
     </member>
     <member name="M:DevExpress.XtraPdfViewer.PdfViewer.CreateTiff(System.String,System.Int32)">
       <summary>

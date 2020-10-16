@@ -295,7 +295,7 @@
     </member>
     <member name="T:DevExpress.XtraReports.Configuration.UserDesignerOptions">
       <summary>
-        <para>Provides customization settings to desktop versions of the End-User Report Deisgners.</para>
+        <para>Provides customization settings to desktop version of the End-User Report Deisgner.</para>
       </summary>
     </member>
     <member name="M:DevExpress.XtraReports.Configuration.UserDesignerOptions.#ctor">
@@ -9196,6 +9196,16 @@
       <param name="originalBounds">A <see cref="T:System.Drawing.RectangleF"/> structure specifying the initial boundaries.</param>
       <param name="reportUnit">A <see cref="T:DevExpress.XtraReports.UI.ReportUnit"/> enumeration value that specifies the system of measurement.</param>
       <returns>A <see cref="T:System.Drawing.RectangleF"/> structure specifying the resulting boundaries.</returns>
+    </member>
+    <member name="M:DevExpress.XtraReports.UI.BestSizeEstimator.GetBoundsToFitText(System.String,DevExpress.XtraPrinting.BrickStyle,System.Single,System.Single)">
+      <summary>
+        <para></para>
+      </summary>
+      <param name="text"></param>
+      <param name="style"></param>
+      <param name="maxWidth"></param>
+      <param name="dpi"></param>
+      <returns></returns>
     </member>
     <member name="M:DevExpress.XtraReports.UI.BestSizeEstimator.GetFontToFitBounds(DevExpress.XtraReports.UI.XRLabel)">
       <summary>
@@ -21820,7 +21830,7 @@
       <summary>
         <para>Applies values contained in the localized report for the specified locale.</para>
       </summary>
-      <param name="culture">A culture name. The ApplyLocalization method uses only the culture&#39;s language code, so the &#39;de&#39;, &#39;de-DE&#39;, and &#39;de-AT&#39; parameters specify the same language.</param>
+      <param name="culture">A culture name. Use a specific culture (e.g., en-US) to maintain currency, number and date format consistency.</param>
     </member>
     <member name="M:DevExpress.XtraReports.UI.XtraReport.BeginInit">
       <summary>
@@ -21882,10 +21892,10 @@
     </member>
     <member name="M:DevExpress.XtraReports.UI.XtraReport.CreateDocumentAsync(System.Threading.CancellationToken)">
       <summary>
-        <para></para>
+        <para>Asynchronously creates a document from an <see cref="T:DevExpress.XtraReports.UI.XtraReport"/> to print or display this report.</para>
       </summary>
-      <param name="token"></param>
-      <returns></returns>
+      <param name="token">A cancellation token that the task observes.</param>
+      <returns>A task that creates a report document.</returns>
     </member>
     <member name="M:DevExpress.XtraReports.UI.XtraReport.CreateLayoutViewDocument">
       <summary>
@@ -22013,197 +22023,197 @@
         <para>Exports a report to the specified stream in CSV format.</para>
       </summary>
       <param name="stream">A <see cref="T:System.IO.Stream"/> for output data.</param>
-      <param name="options">A <see cref="T:DevExpress.XtraPrinting.CsvExportOptions"/> object that specifies the CSV export options. You can omit this parameter to use the current report export options.</param>
+      <param name="options">The CSV export options. You can omit this parameter to use the current report export options.</param>
     </member>
     <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToCsv(System.String,DevExpress.XtraPrinting.CsvExportOptions)">
       <summary>
         <para>Exports a report to the specified file in CSV format.</para>
       </summary>
-      <param name="path">A <see cref="T:System.String"/> that is the full path to a file.</param>
-      <param name="options">A <see cref="T:DevExpress.XtraPrinting.CsvExportOptions"/> object that specifies the CSV export options. You can omit this parameter to use the current report export options.</param>
+      <param name="path">The path to the exported CSV file.</param>
+      <param name="options">The CSV export options. You can omit this parameter to use the current report export options.</param>
     </member>
     <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToCsvAsync(System.IO.Stream,DevExpress.XtraPrinting.CsvExportOptions,System.Threading.CancellationToken)">
       <summary>
-        <para></para>
+        <para>Asynchronously exports a report to the specified stream in CSV format.</para>
       </summary>
-      <param name="stream"></param>
-      <param name="options"></param>
-      <param name="token"></param>
-      <returns></returns>
+      <param name="stream">A <see cref="T:System.IO.Stream"/> for output data.</param>
+      <param name="options">CSV export options. You can omit this parameter to use the current report export options.</param>
+      <param name="token">A cancellation token that the task observes.</param>
+      <returns>A task that exports the report.</returns>
     </member>
     <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToCsvAsync(System.String,DevExpress.XtraPrinting.CsvExportOptions,System.Threading.CancellationToken)">
       <summary>
-        <para></para>
+        <para>Asynchronously exports a report to the specified file in CSV format.</para>
       </summary>
-      <param name="path"></param>
-      <param name="options"></param>
-      <param name="token"></param>
-      <returns></returns>
+      <param name="path">The path to the exported CSV file.</param>
+      <param name="options">The CSV export options. You can omit this parameter to use the current report export options.</param>
+      <param name="token">A cancellation token that the task observes.</param>
+      <returns>A task that exports the report.</returns>
     </member>
     <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToDocx(System.IO.Stream,DevExpress.XtraPrinting.DocxExportOptions)">
       <summary>
         <para>Exports a report to the specified stream in DOCX format.</para>
       </summary>
       <param name="stream">A <see cref="T:System.IO.Stream"/> for output data.</param>
-      <param name="options">A <see cref="T:DevExpress.XtraPrinting.DocxExportOptions"/> object that specifies the DOCX export options. You can omit this parameter to use the current report export options.</param>
+      <param name="options">The DOCX export options. You can omit this parameter to use the current report export options.</param>
     </member>
     <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToDocx(System.String,DevExpress.XtraPrinting.DocxExportOptions)">
       <summary>
         <para>Exports a report to the specified file DOCX format.</para>
       </summary>
-      <param name="path">A <see cref="T:System.String"/> value that that is the full path to a file.</param>
-      <param name="options">A <see cref="T:DevExpress.XtraPrinting.DocxExportOptions"/> object that specifies the DOCX export options. You can omit this parameter to use the current report export options.</param>
+      <param name="path">The path to the exported DOCX file.</param>
+      <param name="options">The DOCX export options. You can omit this parameter to use the current report export options.</param>
     </member>
     <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToDocxAsync(System.IO.Stream,DevExpress.XtraPrinting.DocxExportOptions,System.Threading.CancellationToken)">
       <summary>
-        <para></para>
+        <para>Asynchronously exports a report to the specified stream in DOCX format.</para>
       </summary>
-      <param name="stream"></param>
-      <param name="options"></param>
-      <param name="token"></param>
-      <returns></returns>
+      <param name="stream">A <see cref="T:System.IO.Stream"/> for output data.</param>
+      <param name="options">The DOCX export options. You can omit this parameter to use the current report export options.</param>
+      <param name="token">A cancellation token that the task observes.</param>
+      <returns>A task that exports the report.</returns>
     </member>
     <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToDocxAsync(System.String,DevExpress.XtraPrinting.DocxExportOptions,System.Threading.CancellationToken)">
       <summary>
-        <para></para>
+        <para>Asynchronously exports a report to the specified file in DOCX format.</para>
       </summary>
-      <param name="path"></param>
-      <param name="options"></param>
-      <param name="token"></param>
-      <returns></returns>
+      <param name="path">The path to the exported DOCX file.</param>
+      <param name="options">The DOCX export options. You can omit this parameter to use the current report export options.</param>
+      <param name="token">A cancellation token that the task observes.</param>
+      <returns>A task that exports the report.</returns>
     </member>
     <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToHtml(System.IO.Stream,DevExpress.XtraPrinting.HtmlExportOptions)">
       <summary>
         <para>Exports a report to the specified stream in HTML format.</para>
       </summary>
       <param name="stream">A <see cref="T:System.IO.Stream"/> for output data.</param>
-      <param name="options">A <see cref="T:DevExpress.XtraPrinting.HtmlExportOptions"/> object that specifies the HTML export options. You can omit this parameter to use the current report export options.</param>
+      <param name="options">The HTML export options. You can omit this parameter to use the current report export options.</param>
     </member>
     <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToHtml(System.String,DevExpress.XtraPrinting.HtmlExportOptions)">
       <summary>
         <para>Exports a report to the specified file in HTML format.</para>
       </summary>
-      <param name="path">A <see cref="T:System.String"/> that is the full path to a file.</param>
-      <param name="options">A <see cref="T:DevExpress.XtraPrinting.CsvExportOptions"/> object that specifies the HTML export options. You can omit this parameter to use the current report export options.</param>
+      <param name="path">The path to the exported HTML file.</param>
+      <param name="options">The HTML export options. You can omit this parameter to use the current report export options.</param>
     </member>
     <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToHtmlAsync(System.IO.Stream,DevExpress.XtraPrinting.HtmlExportOptions,System.Threading.CancellationToken)">
       <summary>
-        <para></para>
+        <para>Asynchronously exports a report to the specified stream in HTML format.</para>
       </summary>
-      <param name="stream"></param>
-      <param name="options"></param>
-      <param name="token"></param>
-      <returns></returns>
+      <param name="stream">A <see cref="T:System.IO.Stream"/> for output data.</param>
+      <param name="options">The HTML export options. You can omit this parameter to use the current report export options.</param>
+      <param name="token">A cancellation token that the task observes.</param>
+      <returns>A task that exports the report.</returns>
     </member>
     <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToHtmlAsync(System.String,DevExpress.XtraPrinting.HtmlExportOptions,System.Threading.CancellationToken)">
       <summary>
-        <para></para>
+        <para>Asynchronously exports a report to the specified file in HTML format.</para>
       </summary>
-      <param name="path"></param>
-      <param name="options"></param>
-      <param name="token"></param>
-      <returns></returns>
+      <param name="path">The path to the exported HTML file.</param>
+      <param name="options">The HTML export options. You can omit this parameter to use the current report export options.</param>
+      <param name="token">A cancellation token that the task observes.</param>
+      <returns>A task that exports the report.</returns>
     </member>
     <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToImage(System.IO.Stream,DevExpress.XtraPrinting.ImageExportOptions)">
       <summary>
         <para>Exports a report to the specified stream in Image format.</para>
       </summary>
       <param name="stream">A <see cref="T:System.IO.Stream"/> for output data.</param>
-      <param name="options">A <see cref="T:DevExpress.XtraPrinting.ImageExportOptions"/> object that specifies the Image export options. You can omit this parameter to use the current report export options.</param>
+      <param name="options">The Image export options. You can omit this parameter to use the current report export options.</param>
     </member>
     <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToImage(System.IO.Stream,System.Drawing.Imaging.ImageFormat)">
       <summary>
         <para>Exports a report to the specified stream in the specified image format.</para>
       </summary>
       <param name="stream">A <see cref="T:System.IO.Stream"/> for output data.</param>
-      <param name="format">A <see cref="T:System.Drawing.Imaging.ImageFormat"/> object that specifies the image format.</param>
+      <param name="format">The image format.</param>
     </member>
     <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToImage(System.String,DevExpress.XtraPrinting.ImageExportOptions)">
       <summary>
         <para>Exports a report to the specified file in Image format.</para>
       </summary>
-      <param name="path">A <see cref="T:System.String"/> that is the full path to a file.</param>
-      <param name="options">A <see cref="T:DevExpress.XtraPrinting.ImageExportOptions"/> object that specifies the Image export options. You can omit this parameter to use the current report export options.</param>
+      <param name="path">The path to the exported image file.</param>
+      <param name="options">The image export options. You can omit this parameter to use the current report export options.</param>
     </member>
     <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToImage(System.String,System.Drawing.Imaging.ImageFormat)">
       <summary>
         <para>Exports a report to the specified file in the specified image format.</para>
       </summary>
-      <param name="path">A <see cref="T:System.String"/> that is the full path to a file.</param>
-      <param name="format">A <see cref="T:System.Drawing.Imaging.ImageFormat"/> object that specifies the image format.</param>
+      <param name="path">The path to the exported image file.</param>
+      <param name="format">The image format.</param>
     </member>
     <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToImageAsync(System.IO.Stream,DevExpress.XtraPrinting.ImageExportOptions,System.Threading.CancellationToken)">
       <summary>
-        <para></para>
+        <para>Asynchronously exports a report to the specified stream in image format.</para>
       </summary>
-      <param name="stream"></param>
-      <param name="options"></param>
-      <param name="token"></param>
-      <returns></returns>
+      <param name="stream">A <see cref="T:System.IO.Stream"/> for output data.</param>
+      <param name="options">The image export options. You can omit this parameter to use the current report export options.</param>
+      <param name="token">A cancellation token that the task observes.</param>
+      <returns>A task that exports the report.</returns>
     </member>
     <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToImageAsync(System.String,DevExpress.XtraPrinting.ImageExportOptions,System.Threading.CancellationToken)">
       <summary>
-        <para></para>
+        <para>Asynchronously exports a report to the specified file in image format.</para>
       </summary>
-      <param name="path"></param>
-      <param name="options"></param>
-      <param name="token"></param>
-      <returns></returns>
+      <param name="path">The path to the exported image file.</param>
+      <param name="options">The image export options. You can omit this parameter to use the current report export options.</param>
+      <param name="token">A cancellation token that the task observes.</param>
+      <returns>A task that exports the report.</returns>
     </member>
     <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToMail(DevExpress.XtraPrinting.MailMessageExportOptions)">
       <summary>
-        <para>Exports a document to HTML and then inserts it into a specified e-mail.</para>
+        <para>Exports a report to HTML and inserts it into a specified e-mail message.</para>
       </summary>
-      <param name="options">A <see cref="T:DevExpress.XtraPrinting.MailMessageExportOptions"/> object.</param>
+      <param name="options">The mail message export options.</param>
       <returns>A <see cref="T:System.Net.Mail.AlternateView"/> object.</returns>
     </member>
     <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToMail(DevExpress.XtraPrinting.MailMessageExportOptions,System.String,System.String,System.String)">
       <summary>
-        <para>Exports a document to HTML and then inserts it into a specified e-mail.</para>
+        <para>Exports a report to HTML and inserts it into a specified e-mail message.</para>
       </summary>
-      <param name="options">A <see cref="T:DevExpress.XtraPrinting.MailMessageExportOptions"/> object.</param>
-      <param name="from">A <see cref="T:System.String"/> value, specifying the sender.</param>
-      <param name="to">A <see cref="T:System.String"/> value, specifying a comma-separated list of recipients.</param>
-      <param name="subject">A <see cref="T:System.String"/> value, specifying the e-mail subject.</param>
-      <returns>A <see cref="T:System.Net.Mail.MailMessage"/> object.</returns>
+      <param name="options">The mail message export options.</param>
+      <param name="from">The message sender.</param>
+      <param name="to">A comma-separated list of recipients.</param>
+      <param name="subject">The e-mail subject.</param>
+      <returns>The exported e-mail message.</returns>
     </member>
     <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToMail(System.String,System.String,System.String)">
       <summary>
-        <para>Exports a document to HTML and then inserts it into a specified e-mail.</para>
+        <para>Exports a report to HTML and inserts it into a specified e-mail message.</para>
       </summary>
-      <param name="from">A <see cref="T:System.String"/> value, specifying the sender.</param>
-      <param name="to">A <see cref="T:System.String"/> value, specifying a comma-separated list of recipients.</param>
-      <param name="subject">A <see cref="T:System.String"/> value, specifying the e-mail subject.</param>
-      <returns>A <see cref="T:System.Net.Mail.MailMessage"/> object.</returns>
+      <param name="from">The message sender.</param>
+      <param name="to">A comma-separated list of recipients.</param>
+      <param name="subject">The e-mail subject.</param>
+      <returns>The exported e-mail message.</returns>
     </member>
     <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToMailAsync(DevExpress.XtraPrinting.MailMessageExportOptions,System.String,System.String,System.String,System.Threading.CancellationToken)">
       <summary>
-        <para></para>
+        <para>Asynchronously exports a report to HTML and inserts it into a specified e-mail message.</para>
       </summary>
-      <param name="options"></param>
-      <param name="from"></param>
-      <param name="to"></param>
-      <param name="subject"></param>
-      <param name="token"></param>
-      <returns></returns>
+      <param name="options">The mail message export options.</param>
+      <param name="from">The message sender.</param>
+      <param name="to">A comma-separated list of recipients.</param>
+      <param name="subject">The e-mail subject.</param>
+      <param name="token">A cancellation token that the task observes.</param>
+      <returns>The exported e-mail message.</returns>
     </member>
     <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToMailAsync(DevExpress.XtraPrinting.MailMessageExportOptions,System.Threading.CancellationToken)">
       <summary>
-        <para></para>
+        <para>Asynchronously exports a report to HTML and inserts it into a specified e-mail message.</para>
       </summary>
-      <param name="options"></param>
-      <param name="token"></param>
-      <returns></returns>
+      <param name="options">The mail message export options.</param>
+      <param name="token">A cancellation token that the task observes.</param>
+      <returns>A task that exports the report.</returns>
     </member>
     <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToMailAsync(System.String,System.String,System.String,System.Threading.CancellationToken)">
       <summary>
-        <para></para>
+        <para>Asynchronously exports a report to HTML and inserts it into a specified e-mail message.</para>
       </summary>
-      <param name="from"></param>
-      <param name="to"></param>
-      <param name="subject"></param>
-      <param name="token"></param>
-      <returns></returns>
+      <param name="from">The message sender.</param>
+      <param name="to">A comma-separated list of recipients.</param>
+      <param name="subject">The e-mail subject.</param>
+      <param name="token">A cancellation token that the task observes.</param>
+      <returns>A task that exports the report.</returns>
     </member>
     <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToMht(System.IO.Stream,DevExpress.XtraPrinting.MhtExportOptions)">
       <summary>
@@ -22221,149 +22231,149 @@
     </member>
     <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToMhtAsync(System.IO.Stream,DevExpress.XtraPrinting.MhtExportOptions,System.Threading.CancellationToken)">
       <summary>
-        <para></para>
+        <para>Asynchronously exports a report to the specified stream in MHT format.</para>
       </summary>
-      <param name="stream"></param>
-      <param name="options"></param>
-      <param name="token"></param>
-      <returns></returns>
+      <param name="stream">A <see cref="T:System.IO.Stream"/> for output data.</param>
+      <param name="options">The MHT export options. You can omit this parameter to use the current report export options.</param>
+      <param name="token">A cancellation token that the task observes.</param>
+      <returns>A task that exports the report.</returns>
     </member>
     <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToMhtAsync(System.String,DevExpress.XtraPrinting.MhtExportOptions,System.Threading.CancellationToken)">
       <summary>
-        <para></para>
+        <para>Asynchronously exports a report to the specified file in MHT format.</para>
       </summary>
-      <param name="path"></param>
-      <param name="options"></param>
-      <param name="token"></param>
-      <returns></returns>
+      <param name="path">The path to the exported MHT file.</param>
+      <param name="options">The MHT export options. You can omit this parameter to use the current report export options.</param>
+      <param name="token">A cancellation token that the task observes.</param>
+      <returns>A task that exports the report.</returns>
     </member>
     <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToPdf(System.IO.Stream,DevExpress.XtraPrinting.PdfExportOptions)">
       <summary>
         <para>Exports a report to the specified stream in PDF format.</para>
       </summary>
       <param name="stream">A <see cref="T:System.IO.Stream"/> for output data.</param>
-      <param name="options">A <see cref="T:DevExpress.XtraPrinting.PdfExportOptions"/> object that specifies the PDF export options. You can omit this parameter to use the current report export options.</param>
+      <param name="options">The PDF export options. You can omit this parameter to use the current report export options.</param>
     </member>
     <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToPdf(System.String,DevExpress.XtraPrinting.PdfExportOptions)">
       <summary>
-        <para>EExports a report to the specified file in PDF format.</para>
+        <para>Exports a report to the specified file in PDF format.</para>
       </summary>
-      <param name="path">A <see cref="T:System.String"/> that is the full path to a file.</param>
-      <param name="options">A <see cref="T:DevExpress.XtraPrinting.PdfExportOptions"/> object that specifies the PDF export options. You can omit this parameter to use the current report export options.</param>
+      <param name="path">The path to the exported PDF file.</param>
+      <param name="options">The PDF export options. You can omit this parameter to use the current report export options.</param>
     </member>
     <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToPdfAsync(System.IO.Stream,DevExpress.XtraPrinting.PdfExportOptions,System.Threading.CancellationToken)">
       <summary>
-        <para></para>
+        <para>Asynchronously exports a report to the specified stream in PDF format.</para>
       </summary>
-      <param name="stream"></param>
-      <param name="options"></param>
-      <param name="token"></param>
-      <returns></returns>
+      <param name="stream">A <see cref="T:System.IO.Stream"/> for output data.</param>
+      <param name="options">The PDF export options. You can omit this parameter to use the current report export options.</param>
+      <param name="token">A cancellation token that the task observes.</param>
+      <returns>A task that exports the report.</returns>
     </member>
     <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToPdfAsync(System.String,DevExpress.XtraPrinting.PdfExportOptions,System.Threading.CancellationToken)">
       <summary>
-        <para></para>
+        <para>Asynchronously exports a report to the specified file in PDF format.</para>
       </summary>
-      <param name="path"></param>
-      <param name="options"></param>
-      <param name="token"></param>
-      <returns></returns>
+      <param name="path">The path to the exported PDF file.</param>
+      <param name="options">A <see cref="T:DevExpress.XtraPrinting.PdfExportOptions"/> object that specifies the PDF export options. You can omit this parameter to use the current report export options.</param>
+      <param name="token">A cancellation token that the task observes.</param>
+      <returns>A task that exports the report.</returns>
     </member>
     <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToRtf(System.IO.Stream,DevExpress.XtraPrinting.RtfExportOptions)">
       <summary>
         <para>Exports a report to the specified stream in RTF format.</para>
       </summary>
       <param name="stream">A <see cref="T:System.IO.Stream"/> for output data.</param>
-      <param name="options">A <see cref="T:DevExpress.XtraPrinting.RtfExportOptions"/> object that specifies the RTF export options. You can omit this parameter to use the current report export options.</param>
+      <param name="options">The RTF export options. You can omit this parameter to use the current report export options.</param>
     </member>
     <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToRtf(System.String,DevExpress.XtraPrinting.RtfExportOptions)">
       <summary>
         <para>Exports a report to the specified file in RTF format.</para>
       </summary>
-      <param name="path">A <see cref="T:System.String"/> that is the full path to a file.</param>
-      <param name="options">A <see cref="T:DevExpress.XtraPrinting.RtfExportOptions"/> object that specifies the RTF export options. You can omit this parameter to use the current report export options.</param>
+      <param name="path">The path to the exported PDF file.</param>
+      <param name="options">The RTF export options. You can omit this parameter to use the current report export options.</param>
     </member>
     <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToRtfAsync(System.IO.Stream,DevExpress.XtraPrinting.RtfExportOptions,System.Threading.CancellationToken)">
       <summary>
-        <para></para>
+        <para>Asynchronously exports a report to the specified stream in RTF format.</para>
       </summary>
-      <param name="stream"></param>
-      <param name="options"></param>
-      <param name="token"></param>
-      <returns></returns>
+      <param name="stream">A <see cref="T:System.IO.Stream"/> for output data.</param>
+      <param name="options">The RTF export options. You can omit this parameter to use the current report export options.</param>
+      <param name="token">A cancellation token that the task observes.</param>
+      <returns>A task that exports the report.</returns>
     </member>
     <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToRtfAsync(System.String,DevExpress.XtraPrinting.RtfExportOptions,System.Threading.CancellationToken)">
       <summary>
-        <para></para>
+        <para>Asynchronously exports a report to the specified file in RTF format.</para>
       </summary>
-      <param name="path"></param>
-      <param name="options"></param>
-      <param name="token"></param>
-      <returns></returns>
+      <param name="path">The path to the exported PDF file.</param>
+      <param name="options">The RTF export options. You can omit this parameter to use the current report export options.</param>
+      <param name="token">A cancellation token that the task observes.</param>
+      <returns>A task that exports the report.</returns>
     </member>
     <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToText(System.IO.Stream,DevExpress.XtraPrinting.TextExportOptions)">
       <summary>
         <para>Exports a report to the specified stream in text format.</para>
       </summary>
       <param name="stream">A <see cref="T:System.IO.Stream"/> for output data.</param>
-      <param name="options">A <see cref="T:DevExpress.XtraPrinting.TextExportOptions"/> object that specifies the text export options. You can omit this parameter to use the current report export options.</param>
+      <param name="options">The text export options. You can omit this parameter to use the current report export options.</param>
     </member>
     <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToText(System.String,DevExpress.XtraPrinting.TextExportOptions)">
       <summary>
         <para>Exports a report to the specified file in text format.</para>
       </summary>
       <param name="path">A <see cref="T:System.String"/> that is the full path to a file.</param>
-      <param name="options">A <see cref="T:DevExpress.XtraPrinting.TextExportOptions"/> object that specifies the text export options. You can omit this parameter to use the current report export options.</param>
+      <param name="options">The text export options. You can omit this parameter to use the current report export options.</param>
     </member>
     <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToTextAsync(System.IO.Stream,DevExpress.XtraPrinting.TextExportOptions,System.Threading.CancellationToken)">
       <summary>
-        <para></para>
+        <para>Asynchronously exports a report to the specified stream in text format.</para>
       </summary>
-      <param name="stream"></param>
-      <param name="options"></param>
-      <param name="token"></param>
-      <returns></returns>
+      <param name="stream">A <see cref="T:System.IO.Stream"/> for output data.</param>
+      <param name="options">The text export options. You can omit this parameter to use the current report export options.</param>
+      <param name="token">A cancellation token that the task observes.</param>
+      <returns>A task that exports the report.</returns>
     </member>
     <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToTextAsync(System.String,DevExpress.XtraPrinting.TextExportOptions,System.Threading.CancellationToken)">
       <summary>
-        <para></para>
+        <para>Asynchronously exports a report to the specified file in text format.</para>
       </summary>
-      <param name="path"></param>
-      <param name="options"></param>
-      <param name="token"></param>
-      <returns></returns>
+      <param name="path">The path to the exported text file.</param>
+      <param name="options">The text export options. You can omit this parameter to use the current report export options.</param>
+      <param name="token">A cancellation token that the task observes.</param>
+      <returns>A task that exports the report.</returns>
     </member>
     <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToXls(System.IO.Stream,DevExpress.XtraPrinting.XlsExportOptions)">
       <summary>
         <para>Exports a report to the specified stream in CSV format. This method exports data in WYSIWYG mode.</para>
       </summary>
       <param name="stream">A <see cref="T:System.IO.Stream"/> for output data.</param>
-      <param name="options">A <see cref="T:DevExpress.XtraPrinting.XlsExportOptions"/> object that specifies the XLS export options. You can omit this parameter to use the current report export options.</param>
+      <param name="options">The XLS export options. You can omit this parameter to use the current report export options.</param>
     </member>
     <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToXls(System.String,DevExpress.XtraPrinting.XlsExportOptions)">
       <summary>
         <para>Exports a report to the specified file in XLS format. This method exports data in WYSIWYG mode.</para>
       </summary>
       <param name="path">A <see cref="T:System.String"/> that is the full path to a file.</param>
-      <param name="options">A <see cref="T:DevExpress.XtraPrinting.XlsExportOptions"/> object that specifies the XLS export options. You can omit this parameter to use the current report export options.</param>
+      <param name="options">The XLS export options. You can omit this parameter to use the current report export options.</param>
     </member>
     <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToXlsAsync(System.IO.Stream,DevExpress.XtraPrinting.XlsExportOptions,System.Threading.CancellationToken)">
       <summary>
-        <para></para>
+        <para>Asynchronously exports a report to the specified stream in XLS format.</para>
       </summary>
-      <param name="stream"></param>
-      <param name="options"></param>
-      <param name="token"></param>
-      <returns></returns>
+      <param name="stream">A <see cref="T:System.IO.Stream"/> for output data.</param>
+      <param name="options">The XLS export options. You can omit this parameter to use the current report export options.</param>
+      <param name="token">A cancellation token that the task observes.</param>
+      <returns>A task that exports the report.</returns>
     </member>
     <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToXlsAsync(System.String,DevExpress.XtraPrinting.XlsExportOptions,System.Threading.CancellationToken)">
       <summary>
-        <para></para>
+        <para>Asynchronously exports a report to the specified file in XLS format.</para>
       </summary>
-      <param name="path"></param>
-      <param name="options"></param>
-      <param name="token"></param>
-      <returns></returns>
+      <param name="path">The path to the exported XLS file.</param>
+      <param name="options">The XLS export options. You can omit this parameter to use the current report export options.</param>
+      <param name="token">A cancellation token that the task observes.</param>
+      <returns>A task that exports the report.</returns>
     </member>
     <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToXlsx(System.IO.Stream,DevExpress.XtraPrinting.XlsxExportOptions)">
       <summary>
@@ -22381,21 +22391,21 @@
     </member>
     <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToXlsxAsync(System.IO.Stream,DevExpress.XtraPrinting.XlsxExportOptions,System.Threading.CancellationToken)">
       <summary>
-        <para></para>
+        <para>Asynchronously exports a report to the specified stream in XLSX format.</para>
       </summary>
-      <param name="stream"></param>
-      <param name="options"></param>
-      <param name="token"></param>
-      <returns></returns>
+      <param name="stream">A <see cref="T:System.IO.Stream"/> for output data.</param>
+      <param name="options">The XLSX export options. You can omit this parameter to use the current report export options.</param>
+      <param name="token">A cancellation token that the task observes.</param>
+      <returns>A task that exports the report.</returns>
     </member>
     <member name="M:DevExpress.XtraReports.UI.XtraReport.ExportToXlsxAsync(System.String,DevExpress.XtraPrinting.XlsxExportOptions,System.Threading.CancellationToken)">
       <summary>
-        <para></para>
+        <para>Asynchronously exports a report to the specified file in XLSX format.</para>
       </summary>
-      <param name="path"></param>
-      <param name="options"></param>
-      <param name="token"></param>
-      <returns></returns>
+      <param name="path">The path to the exported XLSX file.</param>
+      <param name="options">The XLSX export options. You can omit this parameter to use the current report export options.</param>
+      <param name="token">A cancellation token that the task observes.</param>
+      <returns>A task that exports the report.</returns>
     </member>
     <member name="P:DevExpress.XtraReports.UI.XtraReport.Extensions">
       <summary>
@@ -22629,17 +22639,17 @@
     </member>
     <member name="M:DevExpress.XtraReports.UI.XtraReport.Print(System.String)">
       <summary>
-        <para></para>
+        <para>Sends a report to the specified printer.</para>
       </summary>
-      <param name="printerName"></param>
+      <param name="printerName">The name of the printer that should print the report.</param>
     </member>
     <member name="M:DevExpress.XtraReports.UI.XtraReport.PrintAsync(System.String,System.Threading.CancellationToken)">
       <summary>
-        <para></para>
+        <para>Asynchronously sends a report to the specified printer.</para>
       </summary>
-      <param name="printerName"></param>
-      <param name="token"></param>
-      <returns></returns>
+      <param name="printerName">The name of the printer that should print the report. An empty string specifies the system&#39;s default printer.</param>
+      <param name="token">A cancellation token that the task observes.</param>
+      <returns>A task that sends the report to the printer.</returns>
     </member>
     <member name="P:DevExpress.XtraReports.UI.XtraReport.PrinterName">
       <summary>

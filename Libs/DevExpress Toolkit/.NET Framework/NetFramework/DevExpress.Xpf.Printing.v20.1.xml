@@ -1259,9 +1259,9 @@
     </member>
     <member name="P:DevExpress.Xpf.Printing.DocumentPreviewControl.UseAsyncDocumentCreation">
       <summary>
-        <para></para>
+        <para>Gets or sets whether the <see cref="T:DevExpress.Xpf.Printing.DocumentPreviewControl"/> should create a report document asynchronously in a separate task.</para>
       </summary>
-      <value></value>
+      <value>True or Default, to create a report document asynchronously in a separate task; otherwise, False.</value>
     </member>
     <member name="F:DevExpress.Xpf.Printing.DocumentPreviewControl.UseAsyncDocumentCreationProperty">
       <summary>

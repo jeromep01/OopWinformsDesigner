@@ -12019,15 +12019,15 @@ Also <see cref="P:DevExpress.Utils.FormatInfo.FormatString"/> is set to &quot;d&
     </member>
     <member name="F:DevExpress.Xpo.DB.ConnectionProviderSql.GlobalQueryParameterMode">
       <summary>
-        <para></para>
+        <para>Specifies how connection providers initialize command parameters. Use the <see cref="F:DevExpress.Xpo.DB.ConnectionProviderSql.QueryParameterMode"/> property to change this setting for a specific connection provider.</para>
       </summary>
-      <value></value>
+      <value>A <see cref="T:DevExpress.Xpo.DB.QueryParameterMode"/> enumeration value. Specifies how to initialize command parameters.</value>
     </member>
     <member name="F:DevExpress.Xpo.DB.ConnectionProviderSql.GlobalUseLegacyUntypedParameters">
       <summary>
-        <para></para>
+        <para>This property is now obsolete. Use <see cref="F:DevExpress.Xpo.DB.ConnectionProviderSql.GlobalQueryParameterMode"/> instead.</para>
       </summary>
-      <value></value>
+      <value>Specifies whether connection providers initialize the <see cref="P:System.Data.IDataParameter.DbType"/>, <see cref="P:System.Data.IDbDataParameter.Precision"/>, <see cref="P:System.Data.IDbDataParameter.Scale"/>, and <see cref="P:System.Data.IDbDataParameter.Size"/> properties. The default value is false.</value>
     </member>
     <member name="F:DevExpress.Xpo.DB.ConnectionProviderSql.IdentityColumnMagicName">
       <summary>
@@ -12076,9 +12076,9 @@ Also <see cref="P:DevExpress.Utils.FormatInfo.FormatString"/> is set to &quot;d&
     </member>
     <member name="F:DevExpress.Xpo.DB.ConnectionProviderSql.QueryParameterMode">
       <summary>
-        <para></para>
+        <para>Specifies how a connection provider initializes command parameters.</para>
       </summary>
-      <value></value>
+      <value>A <see cref="T:DevExpress.Xpo.DB.QueryParameterMode"/> enumeration value. Specifies how to initialize command parameters.</value>
     </member>
     <member name="E:DevExpress.Xpo.DB.ConnectionProviderSql.Reconnected">
       <summary>
@@ -12178,6 +12178,15 @@ Also <see cref="P:DevExpress.Utils.FormatInfo.FormatString"/> is set to &quot;d&
       <param name="tables"></param>
       <returns></returns>
     </member>
+    <member name="M:DevExpress.Xpo.DB.ConnectionProviderSql.UpdateSchemaAsync(System.Threading.CancellationToken,System.Boolean,DevExpress.Xpo.DB.DBTable[])">
+      <summary>
+        <para></para>
+      </summary>
+      <param name="cancellationToken" />
+      <param name="doNotCreateIfFirstTableNotExist" />
+      <param name="tables" />
+      <returns></returns>
+    </member>
     <member name="F:DevExpress.Xpo.DB.ConnectionProviderSql.UseLegacyTimeSpanSupport">
       <summary>
         <para></para>
@@ -12186,9 +12195,9 @@ Also <see cref="P:DevExpress.Utils.FormatInfo.FormatString"/> is set to &quot;d&
     </member>
     <member name="F:DevExpress.Xpo.DB.ConnectionProviderSql.UseLegacyUntypedParameters">
       <summary>
-        <para></para>
+        <para>This property is now obsolete. Use <see cref="F:DevExpress.Xpo.DB.ConnectionProviderSql.QueryParameterMode"/> instead.</para>
       </summary>
-      <value></value>
+      <value>Specifies whether a connection provider initializes the <see cref="P:System.Data.IDataParameter.DbType"/>, <see cref="P:System.Data.IDbDataParameter.Precision"/>, <see cref="P:System.Data.IDbDataParameter.Scale"/>, and <see cref="P:System.Data.IDbDataParameter.Size"/> properties. The default value is false.</value>
     </member>
     <member name="T:DevExpress.Xpo.DB.DataCacheNode">
       <summary>
@@ -13643,6 +13652,15 @@ Also <see cref="P:DevExpress.Utils.FormatInfo.FormatString"/> is set to &quot;d&
       <param name="selects">An array of statements to obtain data from the data store.</param>
       <returns>A Task that returns data retrieved from the data store.</returns>
     </member>
+    <member name="M:DevExpress.Xpo.DB.IDataStoreAsync.UpdateSchemaAsync(System.Threading.CancellationToken,System.Boolean,DevExpress.Xpo.DB.DBTable[])">
+      <summary>
+        <para></para>
+      </summary>
+      <param name="cancellationToken" />
+      <param name="doNotCreateIfFirstTableNotExist" />
+      <param name="tables" />
+      <returns></returns>
+    </member>
     <member name="T:DevExpress.Xpo.DB.InsertStatement">
       <summary>
         <para>Represents the insert statement.</para>
@@ -14091,27 +14109,27 @@ Also <see cref="P:DevExpress.Utils.FormatInfo.FormatString"/> is set to &quot;d&
     </member>
     <member name="T:DevExpress.Xpo.DB.QueryParameterMode">
       <summary>
-        <para></para>
+        <para>The enumeration describes how connection providers initialize command parameters.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Xpo.DB.QueryParameterMode.Default">
       <summary>
-        <para></para>
+        <para>When Always Encrypted is enabled, the default behavior is the same as SetTypeAndSize, otherwise, providers work in SetType mode.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Xpo.DB.QueryParameterMode.Legacy">
       <summary>
-        <para></para>
+        <para>A connection provider leaves the <see cref="P:System.Data.IDataParameter.DbType"/>, <see cref="P:System.Data.IDbDataParameter.Precision"/>, <see cref="P:System.Data.IDbDataParameter.Scale"/>, and <see cref="P:System.Data.IDbDataParameter.Size"/> properties unassigned.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Xpo.DB.QueryParameterMode.SetType">
       <summary>
-        <para></para>
+        <para>A connection provider initializes only the <see cref="P:System.Data.IDataParameter.DbType"/> property.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Xpo.DB.QueryParameterMode.SetTypeAndSize">
       <summary>
-        <para></para>
+        <para>A connection provider initializes the <see cref="P:System.Data.IDataParameter.DbType"/>, <see cref="P:System.Data.IDbDataParameter.Precision"/>, <see cref="P:System.Data.IDbDataParameter.Scale"/>, and <see cref="P:System.Data.IDbDataParameter.Size"/> properties.</para>
       </summary>
     </member>
     <member name="T:DevExpress.Xpo.DB.QuerySortingCollection">
@@ -16278,6 +16296,20 @@ Also <see cref="P:DevExpress.Utils.FormatInfo.FormatString"/> is set to &quot;d&
       </summary>
       <param name="val">A <see cref="T:System.Single"/> value.</param>
       <returns>A <see cref="T:System.Single"/> value.</returns>
+    </member>
+    <member name="M:DevExpress.XtraPrinting.GraphicsUnitConverter.DipToTwips(System.Drawing.RectangleF)">
+      <summary>
+        <para></para>
+      </summary>
+      <param name="val"></param>
+      <returns></returns>
+    </member>
+    <member name="M:DevExpress.XtraPrinting.GraphicsUnitConverter.DipToTwips(System.Single)">
+      <summary>
+        <para></para>
+      </summary>
+      <param name="val"></param>
+      <returns></returns>
     </member>
     <member name="M:DevExpress.XtraPrinting.GraphicsUnitConverter.DocToDip(System.Drawing.RectangleF)">
       <summary>

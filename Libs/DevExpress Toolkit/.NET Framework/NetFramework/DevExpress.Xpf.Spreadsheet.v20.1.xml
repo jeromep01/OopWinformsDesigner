@@ -4132,6 +4132,40 @@ This is a dependency property.</para>
         <para>Specifies that the position of the PivotTable Field List is determined by the <see cref="P:DevExpress.Xpf.Spreadsheet.SpreadsheetPivotTableFieldListOptions.StartLocation"/> property value relative to the upper-left corner of the SpreadsheetControl.</para>
       </summary>
     </member>
+    <member name="T:DevExpress.Xpf.Spreadsheet.SpreadsheetPrintOptions">
+      <summary>
+        <para>Contains print options for the Spreadsheet control.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.Spreadsheet.SpreadsheetPrintOptions.#ctor">
+      <summary>
+        <para>Initializes a new <see cref="T:DevExpress.Xpf.Spreadsheet.SpreadsheetPrintOptions"/> class instance with the default settings.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Xpf.Spreadsheet.SpreadsheetPrintOptions.PrintContent">
+      <summary>
+        <para>Specifies spreadsheet content to print/display within the Print Preview.</para>
+      </summary>
+      <value>An enumeration member that specifies  spreadsheet content to print.</value>
+    </member>
+    <member name="F:DevExpress.Xpf.Spreadsheet.SpreadsheetPrintOptions.PrintContentProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.Spreadsheet.SpreadsheetPrintOptions.PrintContent"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.Spreadsheet.SpreadsheetPrintOptions.PrintPlaceholders">
+      <summary>
+        <para>Specifies whether to print placeholders for unsupported chart types and document elements (slicers, form controls, and SmartArt graphics).</para>
+      </summary>
+      <value>true to include placeholders in the printout; otherwise, false.</value>
+    </member>
+    <member name="F:DevExpress.Xpf.Spreadsheet.SpreadsheetPrintOptions.PrintPlaceholdersProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.Spreadsheet.SpreadsheetPrintOptions.PrintPlaceholders"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
     <member name="T:DevExpress.Xpf.Spreadsheet.SpreadsheetProtectionBehaviorOptions">
       <summary>
         <para>Provides options to restrict an end-user&#39;s capability to protect or unprotect a document in the SpreadsheetControl.</para>

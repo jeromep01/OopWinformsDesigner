@@ -2152,6 +2152,12 @@ This function works only in the Optimized mode.</para>
       </summary>
       <value></value>
     </member>
+    <member name="P:DevExpress.XtraPivotGrid.Data.PivotFieldValueItem.FixedValue">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
     <member name="M:DevExpress.XtraPivotGrid.Data.PivotFieldValueItem.GetCell(System.Int32)">
       <summary>
         <para>For internal use.</para>
@@ -3118,6 +3124,12 @@ This function works only in the Optimized mode.</para>
         <para>Base class of the the Data Binding API. Specifies the source data for the PivotGrid fields in Optimized mode.</para>
       </summary>
     </member>
+    <member name="M:DevExpress.XtraPivotGrid.DataBindingBase.ToString">
+      <summary>
+        <para></para>
+      </summary>
+      <returns></returns>
+    </member>
     <member name="P:DevExpress.XtraPivotGrid.DataBindingBase.TypeNameSerializable">
       <summary>
         <para>Gets the string that is the type name used in serialization of the data binding types.</para>
@@ -3766,7 +3778,7 @@ This function works only in the Optimized mode.</para>
     </member>
     <member name="T:DevExpress.XtraPivotGrid.Localization.PivotGridLocalizer">
       <summary>
-        <para>Provides localized strings for the PivotGrid&#39;s user interface elements.</para>
+        <para>Provides a means to localize the PivotGrid&#39;s UI elements at runtime.</para>
       </summary>
     </member>
     <member name="M:DevExpress.XtraPivotGrid.Localization.PivotGridLocalizer.#ctor">
@@ -4315,6 +4327,11 @@ This function works only in the Optimized mode.</para>
       </summary>
     </member>
     <member name="F:DevExpress.XtraPivotGrid.Localization.PivotGridStringId.FunctionDescriptionGetDateWeekYear">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.XtraPivotGrid.Localization.PivotGridStringId.FunctionDescriptionGetDateWeekYear2">
       <summary>
         <para></para>
       </summary>
@@ -8042,6 +8059,12 @@ This function works only in the Optimized mode.</para>
         <para>Gets or sets whether grand totals that correspond to the current data field are visible.</para>
       </summary>
       <value>true if corresponding grand totals are visible; otherwise, false.</value>
+    </member>
+    <member name="P:DevExpress.XtraPivotGrid.PivotGridFieldOptions.ShowGroupIntervalName">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
     </member>
     <member name="P:DevExpress.XtraPivotGrid.PivotGridFieldOptions.ShowInCustomizationForm">
       <summary>

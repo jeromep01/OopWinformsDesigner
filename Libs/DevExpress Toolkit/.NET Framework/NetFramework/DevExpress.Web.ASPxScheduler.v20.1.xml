@@ -335,18 +335,6 @@
       </summary>
       <param name="owner">An <see cref="T:DevExpress.Web.ASPxScheduler.ASPxScheduler"/> object that is the owner of the created object.</param>
     </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.AgendaStylesBase.CssFilePath">
-      <summary>
-        <para>This member is not in effect for this class. It is overridden only for the purpose of preventing it from appearing in Microsoft Visual Studio designer tools.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.AgendaStylesBase.CssPostfix">
-      <summary>
-        <para>This member is not in effect for this class. It is overridden only for the purpose of preventing it from appearing in Microsoft Visual Studio designer tools.</para>
-      </summary>
-      <value></value>
-    </member>
     <member name="T:DevExpress.Web.ASPxScheduler.AgendaTodayHorizontalDateHeaderStyles">
       <summary>
         <para>Contains settings that allow you to define the appearance of the Agenda View&#39;s today date header that is horizontally oriented.</para>
@@ -457,12 +445,6 @@
       </summary>
       <param name="control">An <see cref="T:DevExpress.Web.ASPxScheduler.ASPxScheduler"/> object that specifies the ASPxScheduler control assigned to the agenda view. This value is assigned to the <see cref="P:DevExpress.Web.ASPxScheduler.SchedulerViewBase.Control"/> property.</param>
     </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.AgendaView.AgendaViewStyles">
-      <summary>
-        <para>Provides access to the AgendaViewStyles object, specifying styles applied to visual elements of the Agenda View.</para>
-      </summary>
-      <value>A <see cref="T:DevExpress.Web.ASPxScheduler.AgendaViewStyles"/> object, containing the appearance settings for elements of the Agenda View.</value>
-    </member>
     <member name="P:DevExpress.Web.ASPxScheduler.AgendaView.AllowFixedDayHeaders">
       <summary>
         <para>Gets or sets whether a day header should be fixed when scrolling in Agenda View.</para>
@@ -493,36 +475,6 @@
       </summary>
       <value>One of the <see cref="T:DevExpress.Web.ASPxScheduler.AgendaDayHeaderOrientation"/> values.</value>
     </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.AgendaView.MoreButtonHTML">
-      <summary>
-        <para>This member is not in effect for this class. It is overridden only for the purpose of preventing it from appearing in Microsoft Visual Studio designer tools.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.AgendaView.NavigationButtonAppointmentSearchInterval">
-      <summary>
-        <para>This member is not in effect for this class. It is overridden only for the purpose of preventing it from appearing in Microsoft Visual Studio designer tools.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.AgendaView.NavigationButtonVisibility">
-      <summary>
-        <para>This member is not in effect for this class. It is overridden only for the purpose of preventing it from appearing in Microsoft Visual Studio designer tools.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.AgendaView.ResourcesPerPage">
-      <summary>
-        <para>This member is not in effect for this class. It is overridden only for the purpose of preventing it from appearing in Microsoft Visual Studio designer tools.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.AgendaView.ShowMoreButtons">
-      <summary>
-        <para>This member is not in effect for this class. It is overridden only for the purpose of preventing it from appearing in Microsoft Visual Studio designer tools.</para>
-      </summary>
-      <value></value>
-    </member>
     <member name="P:DevExpress.Web.ASPxScheduler.AgendaView.Styles">
       <summary>
         <para>Provides access to the AgendaViewStyles object, containing style settings that control the appearance of the Agenda View elements.</para>
@@ -552,24 +504,6 @@
       </summary>
       <param name="scheduler">An <see cref="T:DevExpress.Web.ASPxScheduler.ASPxScheduler"/> object that is the owner of the created object.</param>
     </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.AgendaViewStyles.AlternateDateHeader">
-      <summary>
-        <para>This member is not in effect for this class. It is overridden only for the purpose of preventing it from appearing in Microsoft Visual Studio designer tools.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.AgendaViewStyles.Appointment">
-      <summary>
-        <para>This member is not in effect for this class. It is overridden only for the purpose of preventing it from appearing in Microsoft Visual Studio designer tools.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.AgendaViewStyles.AppointmentInnerBorders">
-      <summary>
-        <para>This member is not in effect for this class. It is overridden only for the purpose of preventing it from appearing in Microsoft Visual Studio designer tools.</para>
-      </summary>
-      <value></value>
-    </member>
     <member name="P:DevExpress.Web.ASPxScheduler.AgendaViewStyles.AppointmentRow">
       <summary>
         <para>Gets the style settings defining the appearance of an appointment row.</para>
@@ -581,18 +515,6 @@
         <para>This member is not in effect for this class. It is overridden only for the purpose of preventing it from appearing in Microsoft Visual Studio designer tools.</para>
       </summary>
       <param name="source"></param>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.AgendaViewStyles.DateHeader">
-      <summary>
-        <para>This member is not in effect for this class. It is overridden only for the purpose of preventing it from appearing in Microsoft Visual Studio designer tools.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.AgendaViewStyles.DayHeader">
-      <summary>
-        <para>This member is not in effect for this class. It is overridden only for the purpose of preventing it from appearing in Microsoft Visual Studio designer tools.</para>
-      </summary>
-      <value></value>
     </member>
     <member name="P:DevExpress.Web.ASPxScheduler.AgendaViewStyles.EmptyCell">
       <summary>
@@ -607,47 +529,11 @@ cell.</value>
       </summary>
       <value></value>
     </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.AgendaViewStyles.GroupSeparatorHorizontal">
-      <summary>
-        <para>This member is not in effect for this class. It is overridden only for the purpose of preventing it from appearing in Microsoft Visual Studio designer tools.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.AgendaViewStyles.GroupSeparatorVertical">
-      <summary>
-        <para>This member is not in effect for this class. It is overridden only for the purpose of preventing it from appearing in Microsoft Visual Studio designer tools.</para>
-      </summary>
-      <value></value>
-    </member>
     <member name="P:DevExpress.Web.ASPxScheduler.AgendaViewStyles.HorizontalDateHeader">
       <summary>
         <para>Gets the style settings defining the appearance of the horizontal date header.</para>
       </summary>
       <value>An <see cref="T:DevExpress.Web.ASPxScheduler.AgendaHorizontalDateHeaderStyles"/> object that contains style settings defining the appearance of the horizontal date header.</value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.AgendaViewStyles.HorizontalResourceHeader">
-      <summary>
-        <para>This member is not in effect for this class. It is overridden only for the purpose of preventing it from appearing in Microsoft Visual Studio designer tools.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.AgendaViewStyles.LeftTopCorner">
-      <summary>
-        <para>This member is not in effect for this class. It is overridden only for the purpose of preventing it from appearing in Microsoft Visual Studio designer tools.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.AgendaViewStyles.MoreButton">
-      <summary>
-        <para>This member is not in effect for this class. It is overridden only for the purpose of preventing it from appearing in Microsoft Visual Studio designer tools.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.AgendaViewStyles.RightTopCorner">
-      <summary>
-        <para>This member is not in effect for this class. It is overridden only for the purpose of preventing it from appearing in Microsoft Visual Studio designer tools.</para>
-      </summary>
-      <value></value>
     </member>
     <member name="P:DevExpress.Web.ASPxScheduler.AgendaViewStyles.ScrollAreaHeight">
       <summary>
@@ -673,12 +559,6 @@ cell.</value>
       </summary>
       <value>An <see cref="T:DevExpress.Web.ASPxScheduler.AgendaVerticalDateHeaderStyles"/> object that contains style settings defining the appearance of the date header.</value>
     </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.AgendaViewStyles.VerticalResourceHeader">
-      <summary>
-        <para>This member is not in effect for this class. It is overridden only for the purpose of preventing it from appearing in Microsoft Visual Studio designer tools.</para>
-      </summary>
-      <value></value>
-    </member>
     <member name="T:DevExpress.Web.ASPxScheduler.AgendaViewTemplates">
       <summary>
         <para>Contains the templates used to display the Agenda View elements.</para>
@@ -688,42 +568,6 @@ cell.</value>
       <summary>
         <para>Initializes a new instance of the <see cref="T:DevExpress.Web.ASPxScheduler.AgendaViewTemplates"/> class with default settings.</para>
       </summary>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.AgendaViewTemplates.DateHeaderTemplate">
-      <summary>
-        <para>This member is not in effect for this class. It is overridden only for the purpose of preventing it from appearing in Microsoft Visual Studio designer tools.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.AgendaViewTemplates.DayOfWeekHeaderTemplate">
-      <summary>
-        <para>This member is not in effect for this class. It is overridden only for the purpose of preventing it from appearing in Microsoft Visual Studio designer tools.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.AgendaViewTemplates.HorizontalAppointmentTemplate">
-      <summary>
-        <para>This member is not in effect for this class. It is overridden only for the purpose of preventing it from appearing in Microsoft Visual Studio designer tools.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.AgendaViewTemplates.HorizontalResourceHeaderTemplate">
-      <summary>
-        <para>This member is not in effect for this class. It is overridden only for the purpose of preventing it from appearing in Microsoft Visual Studio designer tools.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.AgendaViewTemplates.HorizontalSameDayAppointmentTemplate">
-      <summary>
-        <para>This member is not in effect for this class. It is overridden only for the purpose of preventing it from appearing in Microsoft Visual Studio designer tools.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.AgendaViewTemplates.VerticalResourceHeaderTemplate">
-      <summary>
-        <para>This member is not in effect for this class. It is overridden only for the purpose of preventing it from appearing in Microsoft Visual Studio designer tools.</para>
-      </summary>
-      <value></value>
     </member>
     <member name="T:DevExpress.Web.ASPxScheduler.AppointmentDatesHighlightMode">
       <summary>
@@ -1597,12 +1441,6 @@ cell.</value>
         <para>Initializes a new instance of the <see cref="T:DevExpress.Web.ASPxScheduler.ASPxAgendaViewAppointmentDisplayOptions"/> class with the default settings.</para>
       </summary>
     </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.ASPxAgendaViewAppointmentDisplayOptions.AllowMultiLineSubject">
-      <summary>
-        <para>This member is not in effect for this class. It is overridden only for the purpose of preventing it from appearing in Microsoft Visual Studio designer tools.</para>
-      </summary>
-      <value></value>
-    </member>
     <member name="P:DevExpress.Web.ASPxScheduler.ASPxAgendaViewAppointmentDisplayOptions.AppointmentHeight">
       <summary>
         <para>Gets or sets the height of a single appointment for the current View.</para>
@@ -1615,35 +1453,11 @@ cell.</value>
       </summary>
       <param name="options">A <see cref="T:DevExpress.Utils.Controls.BaseOptions"/> object whose settings are assigned to the current object.</param>
     </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.ASPxAgendaViewAppointmentDisplayOptions.AutoAdjustForeColor">
-      <summary>
-        <para>For internal use only.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.ASPxAgendaViewAppointmentDisplayOptions.ContinueArrowDisplayType">
-      <summary>
-        <para>Specifies the type of indicator used to point out that the appointment extends beyond the visible date range.</para>
-      </summary>
-      <value>One of the enumeration values.</value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.ASPxAgendaViewAppointmentDisplayOptions.EndTimeVisibility">
-      <summary>
-        <para>Specifies whether the end time should be visible for the appointment.</para>
-      </summary>
-      <value>One of the enumeration values.</value>
-    </member>
     <member name="P:DevExpress.Web.ASPxScheduler.ASPxAgendaViewAppointmentDisplayOptions.IconCellVisibility">
       <summary>
         <para>Gets or sets a value specifying whether an icon cell is visible in Agenda View.</para>
       </summary>
       <value>One of the <see cref="T:DevExpress.Web.ASPxScheduler.AgendaIconCellVisibility"/> values.</value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.ASPxAgendaViewAppointmentDisplayOptions.ResourceAreaWidth">
-      <summary>
-        <para>Specifies the width of the resource area.</para>
-      </summary>
-      <value>The width.</value>
     </member>
     <member name="P:DevExpress.Web.ASPxScheduler.ASPxAgendaViewAppointmentDisplayOptions.ResourceLocation">
       <summary>
@@ -1656,18 +1470,6 @@ cell.</value>
         <para>Gets or sets a value specifying whether the time is shown for appointments in Agenda View.</para>
       </summary>
       <value>true, to show time; otherwise, false.</value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.ASPxAgendaViewAppointmentDisplayOptions.StartTimeVisibility">
-      <summary>
-        <para>Specifies whether the start time should be visible for the appointment.</para>
-      </summary>
-      <value>One of the enumeration values.</value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.ASPxAgendaViewAppointmentDisplayOptions.SubjectAreaHeight">
-      <summary>
-        <para>This member is not in effect for this class. It is overridden only for the purpose of preventing it from appearing in Microsoft Visual Studio designer tools.</para>
-      </summary>
-      <value></value>
     </member>
     <member name="T:DevExpress.Web.ASPxScheduler.ASPxAppointmentCustomFieldMapping">
       <summary>
@@ -1775,12 +1577,6 @@ cell.</value>
       </summary>
       <value>A <see cref="T:System.String"/> value that specifies the name of the bound data field.</value>
     </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.ASPxAppointmentMappingInfo.PercentComplete">
-      <summary>
-        <para>Gets or sets the data field to which an appointment&#39;s <see cref="P:DevExpress.XtraScheduler.Appointment.PercentComplete"/> property is bound to.</para>
-      </summary>
-      <value>A <see cref="T:System.String"/> value that specifies the name of the bound data field.</value>
-    </member>
     <member name="P:DevExpress.Web.ASPxScheduler.ASPxAppointmentMappingInfo.RecurrenceInfo">
       <summary>
         <para>Gets or sets the data field to which an appointment&#39;s <see cref="P:DevExpress.XtraScheduler.Appointment.RecurrenceInfo"/> property is bound.</para>
@@ -1852,18 +1648,6 @@ cell.</value>
       </summary>
       <value>An <see cref="T:DevExpress.Web.ASPxScheduler.ASPxAppointmentCustomFieldMappingCollection"/> object, representing a collection of mappings.</value>
     </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.ASPxAppointmentStorage.DataMember">
-      <summary>
-        <para>Overrides the <see cref="P:DevExpress.XtraScheduler.PersistentObjectStorage`1.DataMember"/> property to hide it.</para>
-      </summary>
-      <value>A <see cref="T:System.String"/> value representing the data source member.</value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.ASPxAppointmentStorage.DataSource">
-      <summary>
-        <para>Overrides the <see cref="P:DevExpress.XtraScheduler.PersistentObjectStorage`1.DataSource"/> property to hide it.</para>
-      </summary>
-      <value>An <see cref="T:System.Object"/> that represents the storage&#39;s data source.</value>
-    </member>
     <member name="P:DevExpress.Web.ASPxScheduler.ASPxAppointmentStorage.Labels">
       <summary>
         <para>Gets the collection of appointment labels.</para>
@@ -1920,12 +1704,6 @@ cell.</value>
       </summary>
       <param name="options">A <see cref="T:DevExpress.Utils.Controls.BaseOptions"/> object whose settings are assigned to the current object.</param>
     </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.ASPxDayViewAppointmentDisplayOptions.AutoAdjustForeColor">
-      <summary>
-        <para>For internal use only.</para>
-      </summary>
-      <value></value>
-    </member>
     <member name="P:DevExpress.Web.ASPxScheduler.ASPxDayViewAppointmentDisplayOptions.FirstAllDayAppointmentTopIndent">
       <summary>
         <para>Gets or sets the top indent for an appointment that lasts the entire day in the Day View.</para>
@@ -1959,12 +1737,6 @@ cell.</value>
         <para>Copies the settings from the specified <see cref="T:DevExpress.Utils.Controls.BaseOptions"/> object to the current object.</para>
       </summary>
       <param name="options">A <see cref="T:DevExpress.Utils.Controls.BaseOptions"/> object whose settings are assigned to the current object.</param>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.ASPxMonthViewAppointmentDisplayOptions.AutoAdjustForeColor">
-      <summary>
-        <para>For internal use only.</para>
-      </summary>
-      <value></value>
     </member>
     <member name="P:DevExpress.Web.ASPxScheduler.ASPxMonthViewAppointmentDisplayOptions.FirstAppointmentTopIndent">
       <summary>
@@ -2054,21 +1826,9 @@ cell.</value>
       </summary>
       <value>A <see cref="T:System.String"/> value that specifies the name of the bound data field.</value>
     </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.ASPxResourceMappingInfo.Id">
-      <summary>
-        <para>Gets or sets the data field to which a resource&#39;s <see cref="P:DevExpress.XtraScheduler.IPersistentObject.Id"/> property is bound.</para>
-      </summary>
-      <value>A <see cref="T:System.String"/> value that specifies the name of the bound data field.</value>
-    </member>
     <member name="P:DevExpress.Web.ASPxScheduler.ASPxResourceMappingInfo.Image">
       <summary>
         <para>Gets or sets the data field to which a resource&#39;s <see cref="P:DevExpress.XtraScheduler.Resource.ImageBytes"/> property is bound.</para>
-      </summary>
-      <value>A <see cref="T:System.String"/> value that specifies the name of the bound data field.</value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.ASPxResourceMappingInfo.ParentId">
-      <summary>
-        <para>Gets or sets the data field that a resource&#39;s ParentId property is bound to.</para>
       </summary>
       <value>A <see cref="T:System.String"/> value that specifies the name of the bound data field.</value>
     </member>
@@ -2122,18 +1882,6 @@ cell.</value>
         <para>Provides access to the collection of  mappings of the resource&#39;s custom properties.</para>
       </summary>
       <value>A <see cref="T:DevExpress.Web.ASPxScheduler.ASPxAppointmentCustomFieldMappingCollection"/> object, representing a collection of mappings.</value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.ASPxResourceStorage.DataMember">
-      <summary>
-        <para>Overrides the <see cref="P:DevExpress.XtraScheduler.PersistentObjectStorage`1.DataMember"/> property to hide it.</para>
-      </summary>
-      <value>A <see cref="T:System.String"/> value representing the data source member.</value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.ASPxResourceStorage.DataSource">
-      <summary>
-        <para>Overrides the <see cref="P:DevExpress.XtraScheduler.PersistentObjectStorage`1.DataSource"/> property to hide it.</para>
-      </summary>
-      <value>An <see cref="T:System.Object"/> that represents the storage&#39;s data source.</value>
     </member>
     <member name="P:DevExpress.Web.ASPxScheduler.ASPxResourceStorage.Mappings">
       <summary>
@@ -2383,12 +2131,6 @@ cell.</value>
       </summary>
       <value>A <see cref="T:DevExpress.Web.ASPxScheduler.DayView"/> object representing the Day View in the scheduling area.</value>
     </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.ASPxScheduler.DisabledStyle">
-      <summary>
-        <para>Overrides the <see cref="P:DevExpress.Web.ASPxWebControl.DisabledStyle"/> property.</para>
-      </summary>
-      <value>A <see cref="T:DevExpress.Web.DisabledStyle"/> object.</value>
-    </member>
     <member name="M:DevExpress.Web.ASPxScheduler.ASPxScheduler.Dispose">
       <summary>
         <para>Enables a server control to perform final clean up before it is released from memory.</para>
@@ -2430,23 +2172,11 @@ cell.</value>
       </summary>
       <value>true, to use client-side rendering; otherwise, false.</value>
     </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.ASPxScheduler.Enabled">
-      <summary>
-        <para>Overrides the <see cref="P:DevExpress.Web.ASPxWebControl.Enabled"/> property.</para>
-      </summary>
-      <value>true if a web control is enabled; otherwise, false.</value>
-    </member>
     <member name="P:DevExpress.Web.ASPxScheduler.ASPxScheduler.EnablePagingGestures">
       <summary>
         <para>Gets or sets a value specifying whether an end-user can navigate views with a swipe gesture.</para>
       </summary>
       <value>True, if page switching by gestures is always allowed; False, if it is always prohibited; Auto - if it is allowed for touch devices only.</value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.ASPxScheduler.EncodeHtml">
-      <summary>
-        <para>This property is not in effect for the <see cref="T:DevExpress.Web.ASPxScheduler.ASPxScheduler"/> class.</para>
-      </summary>
-      <value>Always false.</value>
     </member>
     <member name="M:DevExpress.Web.ASPxScheduler.ASPxScheduler.EndInit">
       <summary>
@@ -2524,12 +2254,6 @@ cell.</value>
         <para>Gets or sets a value that specifies the type of grouping for the appointments of the <see cref="T:DevExpress.Web.ASPxScheduler.ASPxScheduler"/> control.</para>
       </summary>
       <value>A <see cref="T:DevExpress.XtraScheduler.SchedulerGroupType"/> enumeration value that specifies how appointments are grouped within the scheduler control.</value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.ASPxScheduler.Height">
-      <summary>
-        <para>Overrides the <see cref="P:DevExpress.Web.ASPxWebControl.Height"/> property to hide it.</para>
-      </summary>
-      <value>A <see cref="T:System.Web.UI.WebControls.Unit"/> object.</value>
     </member>
     <member name="E:DevExpress.Web.ASPxScheduler.ASPxScheduler.HtmlTimeCellPrepared">
       <summary>
@@ -2754,12 +2478,6 @@ cell.</value>
       </summary>
       <value>An <see cref="T:DevExpress.XtraScheduler.AppointmentBaseCollection"/> descendant which represents the collection of selected appointments.</value>
     </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.ASPxScheduler.SelectedInterval">
-      <summary>
-        <para>Gets the time interval currently selected in the scheduler&#39;s active View by an end-user.</para>
-      </summary>
-      <value>A <see cref="T:DevExpress.XtraScheduler.TimeInterval"/> object representing the selected time interval.</value>
-    </member>
     <member name="P:DevExpress.Web.ASPxScheduler.ASPxScheduler.SelectedResource">
       <summary>
         <para>Gets the resource which contains the time interval currently selected in the scheduler&#39;s active view.</para>
@@ -2807,12 +2525,6 @@ cell.</value>
         <para>Provides access to an object used for converting time between time zones.</para>
       </summary>
       <value>A <see cref="T:DevExpress.XtraScheduler.TimeZoneHelper"/> object used for time zone conversion.</value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.ASPxScheduler.ToolTip">
-      <summary>
-        <para>Gets or sets the control&#39;s tooltip text.</para>
-      </summary>
-      <value>A string value that specifies the text displayed within the tooltip.</value>
     </member>
     <member name="F:DevExpress.Web.ASPxScheduler.ASPxScheduler.ToolTipsFormNames">
       <summary>
@@ -3253,12 +2965,6 @@ cell.</value>
         <para>Fires after appointments have been loaded into the <see cref="T:DevExpress.XtraScheduler.AppointmentBaseCollection"/> collection.</para>
       </summary>
     </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.ASPxSchedulerDataWebControlBase.AppointmentDataMember">
-      <summary>
-        <para>Gets or sets the data source member which supplies appointment data to the scheduler.</para>
-      </summary>
-      <value>A <see cref="T:System.String"/> value representing the data source member.</value>
-    </member>
     <member name="P:DevExpress.Web.ASPxScheduler.ASPxSchedulerDataWebControlBase.AppointmentDataSource">
       <summary>
         <para>Gets or sets the object used as the data source to store appointments.</para>
@@ -3331,24 +3037,6 @@ cell.</value>
         <para>Fires when a round trip to the server has been initiated by a call to the client <see cref="M:js-ASPxClientScheduler.PerformCallback(parameter)"/> method.</para>
       </summary>
     </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.ASPxSchedulerDataWebControlBase.DataMember">
-      <summary>
-        <para>This property is not in effect for the <see cref="T:DevExpress.Web.ASPxScheduler.ASPxSchedulerDataWebControlBase"/> class.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.ASPxSchedulerDataWebControlBase.DataSource">
-      <summary>
-        <para>This property is not in effect for the <see cref="T:DevExpress.Web.ASPxScheduler.ASPxSchedulerDataWebControlBase"/> class.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.ASPxSchedulerDataWebControlBase.DataSourceID">
-      <summary>
-        <para>This property is not in effect for the <see cref="T:DevExpress.Web.ASPxScheduler.ASPxSchedulerDataWebControlBase"/> class.</para>
-      </summary>
-      <value></value>
-    </member>
     <member name="M:DevExpress.Web.ASPxScheduler.ASPxSchedulerDataWebControlBase.Dispose">
       <summary>
         <para>Releases all resources used by the current object.</para>
@@ -3406,12 +3094,6 @@ cell.</value>
         <para>Fires after resources have been loaded into the <see cref="T:DevExpress.XtraScheduler.ResourceBaseCollection"/> collection.</para>
       </summary>
     </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.ASPxSchedulerDataWebControlBase.ResourceDataMember">
-      <summary>
-        <para>Gets or sets the name of the list of resource data that the scheduler binds to, in instances where the data source contains more than one distinct list of data items.</para>
-      </summary>
-      <value>The name of the specific list of data that the data-bound control binds to, if more than one list is supplied by the data source control.</value>
-    </member>
     <member name="P:DevExpress.Web.ASPxScheduler.ASPxSchedulerDataWebControlBase.ResourceDataSource">
       <summary>
         <para>Gets or sets the object from which the scheduler control retrieves the resources&#39; list.</para>
@@ -3448,12 +3130,6 @@ cell.</value>
       <summary>
         <para>Occurs when new resources are inserted into the <see cref="T:DevExpress.XtraScheduler.ResourceBaseCollection"/> collection.</para>
       </summary>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.ASPxSchedulerDataWebControlBase.Services">
-      <summary>
-        <para>Provides access to services of the scheduler control.</para>
-      </summary>
-      <value>An DevExpress.Web.ASPxScheduler.Services.ASPxSchedulerServices object used to get the services.</value>
     </member>
     <member name="P:DevExpress.Web.ASPxScheduler.ASPxSchedulerDataWebControlBase.Storage">
       <summary>
@@ -3749,12 +3425,6 @@ cell.</value>
         <para>Gets or sets a value specifying whether the headers of the selected cells should be highlighted.</para>
       </summary>
       <value>true, to highlight the headers; otherwise, false.</value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.ASPxSchedulerOptionsBehavior.SelectOnRightClick">
-      <summary>
-        <para>Overrides the corresponding property of the base class, to hide it.</para>
-      </summary>
-      <value></value>
     </member>
     <member name="P:DevExpress.Web.ASPxScheduler.ASPxSchedulerOptionsBehavior.ShowDetailedErrorInfo">
       <summary>
@@ -4288,18 +3958,6 @@ cell.</value>
       </summary>
       <param name="options">A <see cref="T:DevExpress.Utils.Controls.BaseOptions"/> object whose settings are assigned to the current object.</param>
     </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.ASPxSchedulerResourceHeaderOptions.Height">
-      <summary>
-        <para>For internal use only.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.ASPxSchedulerResourceHeaderOptions.ImageSizeMode">
-      <summary>
-        <para>Specifies how an image is sized within a Resource Header.</para>
-      </summary>
-      <value>One of the <see cref="T:DevExpress.XtraScheduler.HeaderImageSizeMode"/> enumeration values.</value>
-    </member>
     <member name="P:DevExpress.Web.ASPxScheduler.ASPxSchedulerResourceHeaderOptions.ShowCaption">
       <summary>
         <para>Specifies whether or not to display Resource Header captions.</para>
@@ -4327,81 +3985,6 @@ cell.</value>
         <para>Initializes a new instance of the <see cref="T:DevExpress.Web.ASPxScheduler.ASPxSchedulerStorage"/> class.</para>
       </summary>
       <param name="control">An <see cref="T:DevExpress.Web.ASPxScheduler.ASPxSchedulerDataWebControlBase"/> object.</param>
-    </member>
-    <member name="E:DevExpress.Web.ASPxScheduler.ASPxSchedulerStorage.AppointmentChanging">
-      <summary>
-        <para>Fires when an appointment&#39;s property is about to change.</para>
-      </summary>
-    </member>
-    <member name="E:DevExpress.Web.ASPxScheduler.ASPxSchedulerStorage.AppointmentCollectionAutoReloading">
-      <summary>
-        <para>Occurs when the data source which contains appointment records is modified and appointments are set to be automatically reloaded.</para>
-      </summary>
-    </member>
-    <member name="E:DevExpress.Web.ASPxScheduler.ASPxSchedulerStorage.AppointmentCollectionCleared">
-      <summary>
-        <para>Fires after the appointment collection has been cleared.</para>
-      </summary>
-    </member>
-    <member name="E:DevExpress.Web.ASPxScheduler.ASPxSchedulerStorage.AppointmentCollectionLoaded">
-      <summary>
-        <para>Fires after appointments have been loaded into the <see cref="T:DevExpress.XtraScheduler.AppointmentBaseCollection"/> collection.</para>
-      </summary>
-    </member>
-    <member name="E:DevExpress.Web.ASPxScheduler.ASPxSchedulerStorage.AppointmentDeleting">
-      <summary>
-        <para>Allows you to cancel the deletion of an appointment.</para>
-      </summary>
-    </member>
-    <member name="E:DevExpress.Web.ASPxScheduler.ASPxSchedulerStorage.AppointmentDependenciesChanged">
-      <summary>
-        <para>This event is not in effect for this class. It is overridden only for the purpose of preventing it from appearing in Microsoft Visual Studio designer tools.</para>
-      </summary>
-    </member>
-    <member name="E:DevExpress.Web.ASPxScheduler.ASPxSchedulerStorage.AppointmentDependenciesDeleted">
-      <summary>
-        <para>This event is not in effect for this class. It is overridden only for the purpose of preventing it from appearing in Microsoft Visual Studio designer tools.</para>
-      </summary>
-    </member>
-    <member name="E:DevExpress.Web.ASPxScheduler.ASPxSchedulerStorage.AppointmentDependenciesInserted">
-      <summary>
-        <para>This event is not in effect for this class. It is overridden only for the purpose of preventing it from appearing in Microsoft Visual Studio designer tools.</para>
-      </summary>
-    </member>
-    <member name="E:DevExpress.Web.ASPxScheduler.ASPxSchedulerStorage.AppointmentDependencyChanging">
-      <summary>
-        <para>This event is not in effect for this class. It is overridden only for the purpose of preventing it from appearing in Microsoft Visual Studio designer tools.</para>
-      </summary>
-    </member>
-    <member name="E:DevExpress.Web.ASPxScheduler.ASPxSchedulerStorage.AppointmentDependencyCollectionAutoReloading">
-      <summary>
-        <para>This event is not in effect for this class. It is overridden only for the purpose of preventing it from appearing in Microsoft Visual Studio designer tools.</para>
-      </summary>
-    </member>
-    <member name="E:DevExpress.Web.ASPxScheduler.ASPxSchedulerStorage.AppointmentDependencyCollectionCleared">
-      <summary>
-        <para>This event is not in effect for this class. It is overridden only for the purpose of preventing it from appearing in Microsoft Visual Studio designer tools.</para>
-      </summary>
-    </member>
-    <member name="E:DevExpress.Web.ASPxScheduler.ASPxSchedulerStorage.AppointmentDependencyCollectionLoaded">
-      <summary>
-        <para>This event is not in effect for this class. It is overridden only for the purpose of preventing it from appearing in Microsoft Visual Studio designer tools.</para>
-      </summary>
-    </member>
-    <member name="E:DevExpress.Web.ASPxScheduler.ASPxSchedulerStorage.AppointmentDependencyDeleting">
-      <summary>
-        <para>This event is not in effect for this class. It is overridden only for the purpose of preventing it from appearing in Microsoft Visual Studio designer tools.</para>
-      </summary>
-    </member>
-    <member name="E:DevExpress.Web.ASPxScheduler.ASPxSchedulerStorage.AppointmentDependencyInserting">
-      <summary>
-        <para>This event is not in effect for this class. It is overridden only for the purpose of preventing it from appearing in Microsoft Visual Studio designer tools.</para>
-      </summary>
-    </member>
-    <member name="E:DevExpress.Web.ASPxScheduler.ASPxSchedulerStorage.AppointmentInserting">
-      <summary>
-        <para>Allows you to cancel the insertion of an appointment.</para>
-      </summary>
     </member>
     <member name="E:DevExpress.Web.ASPxScheduler.ASPxSchedulerStorage.AppointmentRowDeleted">
       <summary>
@@ -4439,44 +4022,9 @@ cell.</value>
       </summary>
       <value>An <see cref="T:DevExpress.Web.ASPxScheduler.ASPxAppointmentStorage"/> object, that represents the storage for appointment related information.</value>
     </member>
-    <member name="E:DevExpress.Web.ASPxScheduler.ASPxSchedulerStorage.AppointmentsChanged">
-      <summary>
-        <para>Fires when the appointments&#39; properties have been changed.</para>
-      </summary>
-    </member>
-    <member name="E:DevExpress.Web.ASPxScheduler.ASPxSchedulerStorage.AppointmentsDeleted">
-      <summary>
-        <para>Fires after deletion of one or several appointments.</para>
-      </summary>
-    </member>
-    <member name="E:DevExpress.Web.ASPxScheduler.ASPxSchedulerStorage.AppointmentsInserted">
-      <summary>
-        <para>Fires after one or several appointments have been added to the collection.</para>
-      </summary>
-    </member>
     <member name="M:DevExpress.Web.ASPxScheduler.ASPxSchedulerStorage.EndUpdate">
       <summary>
         <para>Unlocks the <see cref="T:DevExpress.Web.ASPxScheduler.ASPxSchedulerStorage"></see> object after a call to the BeginUpdate method and causes an immediate visual update.</para>
-      </summary>
-    </member>
-    <member name="E:DevExpress.Web.ASPxScheduler.ASPxSchedulerStorage.FetchAppointments">
-      <summary>
-        <para>Occurs before the <see cref="T:DevExpress.Web.ASPxScheduler.ASPxSchedulerStorage"/> starts retrieving the appointments for the specified time interval.</para>
-      </summary>
-    </member>
-    <member name="E:DevExpress.Web.ASPxScheduler.ASPxSchedulerStorage.FilterAppointment">
-      <summary>
-        <para>Enables specific appointments to be hidden in the Scheduler control.</para>
-      </summary>
-    </member>
-    <member name="E:DevExpress.Web.ASPxScheduler.ASPxSchedulerStorage.FilterDependency">
-      <summary>
-        <para>This event is not in effect for this class. It is overridden only for the purpose of preventing it from appearing in Microsoft Visual Studio designer tools.</para>
-      </summary>
-    </member>
-    <member name="E:DevExpress.Web.ASPxScheduler.ASPxSchedulerStorage.FilterResource">
-      <summary>
-        <para>Enables specific resources to be hidden in the Scheduler control.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Web.ASPxScheduler.ASPxSchedulerStorage.GetAppointmentId(DevExpress.XtraScheduler.Appointment)">
@@ -4493,61 +4041,11 @@ cell.</value>
       <param name="labelId">An object that is the label&#39;s identifier available by the <see cref="P:DevExpress.XtraScheduler.PersistentObject.Id"/> property of the <see cref="T:DevExpress.XtraScheduler.AppointmentLabel"/> object.</param>
       <returns>A <see cref="T:System.Drawing.Color"/> value that is the label&#39;s color.</returns>
     </member>
-    <member name="E:DevExpress.Web.ASPxScheduler.ASPxSchedulerStorage.ReminderAlert">
-      <summary>
-        <para>Occurs when a reminder is triggered.</para>
-      </summary>
-    </member>
-    <member name="E:DevExpress.Web.ASPxScheduler.ASPxSchedulerStorage.ResourceChanging">
-      <summary>
-        <para>Fires when a resource&#39;s property is about to be changed.</para>
-      </summary>
-    </member>
-    <member name="E:DevExpress.Web.ASPxScheduler.ASPxSchedulerStorage.ResourceCollectionAutoReloading">
-      <summary>
-        <para>Occurs when the data source which contains resources is modified, and the automatic reloading of resources is enabled.</para>
-      </summary>
-    </member>
-    <member name="E:DevExpress.Web.ASPxScheduler.ASPxSchedulerStorage.ResourceCollectionCleared">
-      <summary>
-        <para>Fires after the resources collection has been cleared.</para>
-      </summary>
-    </member>
-    <member name="E:DevExpress.Web.ASPxScheduler.ASPxSchedulerStorage.ResourceCollectionLoaded">
-      <summary>
-        <para>Fires after resources have been loaded into the <see cref="T:DevExpress.XtraScheduler.ResourceBaseCollection"/> collection.</para>
-      </summary>
-    </member>
-    <member name="E:DevExpress.Web.ASPxScheduler.ASPxSchedulerStorage.ResourceDeleting">
-      <summary>
-        <para>Allows the deletion of a resource to be cancelled.</para>
-      </summary>
-    </member>
-    <member name="E:DevExpress.Web.ASPxScheduler.ASPxSchedulerStorage.ResourceInserting">
-      <summary>
-        <para>Allows you to cancel the addition of a resource.</para>
-      </summary>
-    </member>
     <member name="P:DevExpress.Web.ASPxScheduler.ASPxSchedulerStorage.Resources">
       <summary>
         <para>Gets the object which manages resources for appointments.</para>
       </summary>
       <value>A <see cref="T:DevExpress.Web.ASPxScheduler.ASPxResourceStorage"/> object which manages resources for appointments.</value>
-    </member>
-    <member name="E:DevExpress.Web.ASPxScheduler.ASPxSchedulerStorage.ResourcesChanged">
-      <summary>
-        <para>Fires when the resources&#39; properties are changed.</para>
-      </summary>
-    </member>
-    <member name="E:DevExpress.Web.ASPxScheduler.ASPxSchedulerStorage.ResourcesDeleted">
-      <summary>
-        <para>Occurs when a scheduler&#39;s resource is deleted from the collection.</para>
-      </summary>
-    </member>
-    <member name="E:DevExpress.Web.ASPxScheduler.ASPxSchedulerStorage.ResourcesInserted">
-      <summary>
-        <para>Occurs when new resources are inserted into the <see cref="T:DevExpress.XtraScheduler.ResourceBaseCollection"/> collection.</para>
-      </summary>
     </member>
     <member name="M:DevExpress.Web.ASPxScheduler.ASPxSchedulerStorage.SetAppointmentId(DevExpress.XtraScheduler.Appointment,System.Object)">
       <summary>
@@ -4565,54 +4063,6 @@ cell.</value>
       <summary>
         <para>Initializes a new instance of the <see cref="T:DevExpress.Web.ASPxScheduler.ASPxSchedulerStorageControl"/> class.</para>
       </summary>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.ASPxSchedulerStorageControl.AccessKey">
-      <summary>
-        <para>This property is not in effect for the <see cref="T:DevExpress.Web.ASPxScheduler.ASPxSchedulerStorageControl"/> class.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.ASPxSchedulerStorageControl.BackColor">
-      <summary>
-        <para>This property is not in effect for the <see cref="T:DevExpress.Web.ASPxScheduler.ASPxSchedulerStorageControl"/> class.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.ASPxSchedulerStorageControl.BackgroundImage">
-      <summary>
-        <para>This property is not in effect for the <see cref="T:DevExpress.Web.ASPxScheduler.ASPxSchedulerStorageControl"/> class.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.ASPxSchedulerStorageControl.Border">
-      <summary>
-        <para>This property is not in effect for the <see cref="T:DevExpress.Web.ASPxScheduler.ASPxSchedulerStorageControl"/> class.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.ASPxSchedulerStorageControl.BorderBottom">
-      <summary>
-        <para>This property is not in effect for the <see cref="T:DevExpress.Web.ASPxScheduler.ASPxSchedulerStorageControl"/> class.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.ASPxSchedulerStorageControl.BorderLeft">
-      <summary>
-        <para>This property is not in effect for the <see cref="T:DevExpress.Web.ASPxScheduler.ASPxSchedulerStorageControl"/> class.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.ASPxSchedulerStorageControl.BorderRight">
-      <summary>
-        <para>This property is not in effect for the <see cref="T:DevExpress.Web.ASPxScheduler.ASPxSchedulerStorageControl"/> class.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.ASPxSchedulerStorageControl.BorderTop">
-      <summary>
-        <para>This property is not in effect for the <see cref="T:DevExpress.Web.ASPxScheduler.ASPxSchedulerStorageControl"/> class.</para>
-      </summary>
-      <value></value>
     </member>
     <member name="P:DevExpress.Web.ASPxScheduler.ASPxSchedulerStorageControl.ClientInstanceName">
       <summary>
@@ -4632,107 +4082,11 @@ cell.</value>
       </summary>
       <value>A string that uniquely identifies a particular time zone and corresponds to the System.TimeZoneInfo.Id property value.</value>
     </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.ASPxSchedulerStorageControl.CssClass">
-      <summary>
-        <para>This property is not in effect for the <see cref="T:DevExpress.Web.ASPxScheduler.ASPxSchedulerStorageControl"/> class.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.ASPxSchedulerStorageControl.CssFilePath">
-      <summary>
-        <para>This property is not in effect for the <see cref="T:DevExpress.Web.ASPxScheduler.ASPxSchedulerStorageControl"/> class.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.ASPxSchedulerStorageControl.CssPostfix">
-      <summary>
-        <para>This property is not in effect for the <see cref="T:DevExpress.Web.ASPxScheduler.ASPxSchedulerStorageControl"/> class.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.ASPxSchedulerStorageControl.Cursor">
-      <summary>
-        <para>This property is not in effect for the <see cref="T:DevExpress.Web.ASPxScheduler.ASPxSchedulerStorageControl"/> class.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.ASPxSchedulerStorageControl.DisabledStyle">
-      <summary>
-        <para>This property is not in effect for the <see cref="T:DevExpress.Web.ASPxScheduler.ASPxSchedulerStorageControl"/> class.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.ASPxSchedulerStorageControl.EnableTheming">
-      <summary>
-        <para>This property is not in effect for the <see cref="T:DevExpress.Web.ASPxScheduler.ASPxSchedulerStorageControl"/> class.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.ASPxSchedulerStorageControl.EncodeHtml">
-      <summary>
-        <para>This property is not in effect for the <see cref="T:DevExpress.Web.ASPxScheduler.ASPxSchedulerStorageControl"/> class.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.ASPxSchedulerStorageControl.Font">
-      <summary>
-        <para>This property is not in effect for the <see cref="T:DevExpress.Web.ASPxScheduler.ASPxSchedulerStorageControl"/> class.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.ASPxSchedulerStorageControl.ForeColor">
-      <summary>
-        <para>This property is not in effect for the <see cref="T:DevExpress.Web.ASPxScheduler.ASPxSchedulerStorageControl"/> class.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.ASPxSchedulerStorageControl.Height">
-      <summary>
-        <para>This property is not in effect for the <see cref="T:DevExpress.Web.ASPxScheduler.ASPxSchedulerStorageControl"/> class.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.ASPxSchedulerStorageControl.SkinID">
-      <summary>
-        <para>This property is not in effect for the <see cref="T:DevExpress.Web.ASPxScheduler.ASPxSchedulerStorageControl"/> class.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.ASPxSchedulerStorageControl.TabIndex">
-      <summary>
-        <para>This property is not in effect for the <see cref="T:DevExpress.Web.ASPxScheduler.ASPxSchedulerStorageControl"/> class.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.ASPxSchedulerStorageControl.Theme">
-      <summary>
-        <para>This property is not in effect for the <see cref="T:DevExpress.Web.ASPxScheduler.ASPxSchedulerStorageControl"/> class.</para>
-      </summary>
-      <value></value>
-    </member>
     <member name="P:DevExpress.Web.ASPxScheduler.ASPxSchedulerStorageControl.TimeZoneHelper">
       <summary>
         <para>Provides access to an object used for converting time between time zones.</para>
       </summary>
       <value>A <see cref="T:DevExpress.XtraScheduler.TimeZoneHelper"/> object used for time zone conversion.</value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.ASPxSchedulerStorageControl.ToolTip">
-      <summary>
-        <para>This property is not in effect for the <see cref="T:DevExpress.Web.ASPxScheduler.ASPxSchedulerStorageControl"/> class.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.ASPxSchedulerStorageControl.Visible">
-      <summary>
-        <para>This property is not in effect for the <see cref="T:DevExpress.Web.ASPxScheduler.ASPxSchedulerStorageControl"/> class.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.ASPxSchedulerStorageControl.Width">
-      <summary>
-        <para>This property is not in effect for the <see cref="T:DevExpress.Web.ASPxScheduler.ASPxSchedulerStorageControl"/> class.</para>
-      </summary>
-      <value></value>
     </member>
     <member name="P:DevExpress.Web.ASPxScheduler.ASPxSchedulerStorageControl.WorkDays">
       <summary>
@@ -4967,12 +4321,6 @@ cell.</value>
       </summary>
       <param name="options">A <see cref="T:DevExpress.Utils.Controls.BaseOptions"/> object whose settings are assigned to the current object.</param>
     </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.ASPxTimelineViewAppointmentDisplayOptions.AutoAdjustForeColor">
-      <summary>
-        <para>For internal use only.</para>
-      </summary>
-      <value></value>
-    </member>
     <member name="P:DevExpress.Web.ASPxScheduler.ASPxTimelineViewAppointmentDisplayOptions.FirstAppointmentTopIndent">
       <summary>
         <para>Gets or sets an appointment top indent in the Timeline View.</para>
@@ -5171,12 +4519,6 @@ cell.</value>
       </summary>
       <param name="options">A <see cref="T:DevExpress.Utils.Controls.BaseOptions"/> object whose settings are assigned to the current object.</param>
     </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.ASPxWeekViewAppointmentDisplayOptions.AutoAdjustForeColor">
-      <summary>
-        <para>For internal use only.</para>
-      </summary>
-      <value></value>
-    </member>
     <member name="P:DevExpress.Web.ASPxScheduler.ASPxWeekViewAppointmentDisplayOptions.FirstAppointmentTopIndent">
       <summary>
         <para>Gets or sets an appointment top indent in the Week View.</para>
@@ -5206,7 +4548,7 @@ cell.</value>
     </member>
     <member name="F:DevExpress.Web.ASPxScheduler.AutoHeightMode.None">
       <summary>
-        <para>Auto height is switched off and the height of cells can be specified by using the <see cref="P:DevExpress.Web.ASPxScheduler.TimelineView.TimelineViewStyles"/> property.</para>
+        <para>Auto height is switched off and the height of cells can be specified by using the <see cref="P:DevExpress.Web.ASPxScheduler.TimelineView.Styles"/> property.</para>
       </summary>
     </member>
     <member name="T:DevExpress.Web.ASPxScheduler.BottomLeftCornerStyle">
@@ -5225,42 +4567,6 @@ cell.</value>
       </summary>
       <param name="control"></param>
       <param name="range"></param>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.BottomLeftCornerStyle.HorizontalAlign">
-      <summary>
-        <para>For internal use only.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.BottomLeftCornerStyle.HoverStyle">
-      <summary>
-        <para>For internal use only.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.BottomLeftCornerStyle.ImageSpacing">
-      <summary>
-        <para>For internal use only.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.BottomLeftCornerStyle.Spacing">
-      <summary>
-        <para>For internal use only.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.BottomLeftCornerStyle.VerticalAlign">
-      <summary>
-        <para>For internal use only.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.BottomLeftCornerStyle.Wrap">
-      <summary>
-        <para>This property is not in effect for the <see cref="T:DevExpress.Web.ASPxScheduler.BottomLeftCornerStyle"/> class.</para>
-      </summary>
-      <value></value>
     </member>
     <member name="T:DevExpress.Web.ASPxScheduler.CellBodyStyle">
       <summary>
@@ -5807,6 +5113,39 @@ cell.</value>
       </summary>
       <value>A <see cref="T:DevExpress.XtraScheduler.WeekDays"/> enumeration, specifying the days of the week.</value>
     </member>
+    <member name="T:DevExpress.Web.ASPxScheduler.Controls.HourlyRecurrenceControl">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Web.ASPxScheduler.Controls.HourlyRecurrenceControl.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Web.ASPxScheduler.Controls.HourlyRecurrenceControl"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Web.ASPxScheduler.Controls.HourlyRecurrenceControl.ClientPeriodicity">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="P:DevExpress.Web.ASPxScheduler.Controls.HourlyRecurrenceControl.Periodicity">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="M:DevExpress.Web.ASPxScheduler.Controls.HourlyRecurrenceControl.RegisterStyleSheets">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Web.ASPxScheduler.Controls.HourlyRecurrenceControl.ValidateValues(DevExpress.XtraScheduler.UI.ValidationArgs)">
+      <summary>
+        <para></para>
+      </summary>
+      <param name="args" />
+    </member>
     <member name="T:DevExpress.Web.ASPxScheduler.Controls.MonthlyRecurrenceControl">
       <summary>
         <para>Represents a control for specifying the monthly recurrence.</para>
@@ -6115,72 +5454,6 @@ cell.</value>
       </summary>
       <value>true to emphasize with bold style the dates which contain at least one scheduled appointment; otherwise, false.</value>
     </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.DateNavigatorProperties.ClearButtonText">
-      <summary>
-        <para>This member is not in effect for this class. It is overridden only for the purpose of preventing it from appearing in Microsoft Visual Studio designer tools.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.DateNavigatorProperties.ClientInstanceName">
-      <summary>
-        <para>Gets or sets the <see cref="T:DevExpress.Web.ASPxScheduler.DateNavigatorProperties"/>&#39;s client programmatic identifier.</para>
-      </summary>
-      <value>A <see cref="T:System.String"/> value that specifies the <see cref="T:DevExpress.Web.ASPxScheduler.DateNavigatorProperties"/>&#39;s client identifier.</value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.DateNavigatorProperties.ClientSideEvents">
-      <summary>
-        <para>Gets an object that lists the client-side events specific to the <see cref="T:DevExpress.Web.ASPxScheduler.ASPxDateNavigator"/>.</para>
-      </summary>
-      <value>A <see cref="T:DevExpress.Web.CalendarClientSideEvents"/> object which allows assigning handlers to the client-side events available to the <see cref="T:DevExpress.Web.ASPxScheduler.ASPxDateNavigator"/>.</value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.DateNavigatorProperties.ConvertEmptyStringToNull">
-      <summary>
-        <para>Hides unused properties of the base class.</para>
-      </summary>
-      <value>A <see cref="T:System.String"/> value.</value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.DateNavigatorProperties.CssFilePath">
-      <summary>
-        <para>Overrides the <see cref="P:DevExpress.Web.EditPropertiesBase.CssFilePath"/> property to hide it.</para>
-      </summary>
-      <value>A <see cref="T:System.String"/> value.</value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.DateNavigatorProperties.CssPostfix">
-      <summary>
-        <para>Overrides the <see cref="P:DevExpress.Web.EditPropertiesBase.CssPostfix"/> property to hide it.</para>
-      </summary>
-      <value>A <see cref="T:System.String"/> value.</value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.DateNavigatorProperties.DisplayFormatString">
-      <summary>
-        <para>Hides unused properties of the base class.</para>
-      </summary>
-      <value>A <see cref="T:System.String"/> value.</value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.DateNavigatorProperties.EnableClientSideAPI">
-      <summary>
-        <para>Gets or sets a value that specifies whether the DateNavigator can be manipulated on the client side via code.</para>
-      </summary>
-      <value>true if the editor&#39;s client object model is fully available; false if no programmatic interface is available for the editor on the client side.</value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.DateNavigatorProperties.NullDisplayText">
-      <summary>
-        <para>Overrides property of the base class.</para>
-      </summary>
-      <value>A <see cref="T:System.String"/> value.</value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.DateNavigatorProperties.ShowClearButton">
-      <summary>
-        <para>This member is not in effect for this class. It is overridden only for the purpose of preventing it from appearing in Microsoft Visual Studio designer tools.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.DateNavigatorProperties.ValidationSettings">
-      <summary>
-        <para>Overrides property of the base class.</para>
-      </summary>
-      <value>A <see cref="T:System.String"/> value.</value>
-    </member>
     <member name="T:DevExpress.Web.ASPxScheduler.DayView">
       <summary>
         <para>Represents a Day View.</para>
@@ -6209,18 +5482,6 @@ cell.</value>
         <para>Gets or sets the number of days that are simultaneously displayed within the Day View.</para>
       </summary>
       <value>A positive integer value that specifies the number of days displayed by the View.</value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.DayView.DayViewStyles">
-      <summary>
-        <para>Provides access to the DayViewStyles object, specifying styles applied to visual elements of the Day View.</para>
-      </summary>
-      <value>A <see cref="T:DevExpress.Web.ASPxScheduler.DayViewStyles"/> object, containing appearance settings for elements of the Day View.</value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.DayView.MoreButtonHTML">
-      <summary>
-        <para>Overrides the corresponding property of the base class.</para>
-      </summary>
-      <value>A string.</value>
     </member>
     <member name="P:DevExpress.Web.ASPxScheduler.DayView.ShowAllAppointmentsAtTimeCells">
       <summary>
@@ -6393,12 +5654,6 @@ cell.</value>
       </summary>
       <param name="source">A <see cref="T:DevExpress.Web.StylesBase"/> object that is the object from which the settings will be copied.</param>
     </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.DayViewStyles.DayHeader">
-      <summary>
-        <para>This member is not in effect for this class. It is overridden only for the purpose of preventing it from appearing in Microsoft Visual Studio designer tools.</para>
-      </summary>
-      <value></value>
-    </member>
     <member name="P:DevExpress.Web.ASPxScheduler.DayViewStyles.ScrollAreaHeight">
       <summary>
         <para>Specifies the height of the scroll area.</para>
@@ -6487,12 +5742,6 @@ cell.</value>
       </summary>
       <value>An object that implements the <see cref="T:System.Web.UI.ITemplate"/> interface.</value>
     </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.DayViewTemplates.DayOfWeekHeaderTemplate">
-      <summary>
-        <para>This member is not in effect for this class. It is overridden only for the purpose of preventing it from appearing in Microsoft Visual Studio designer tools.</para>
-      </summary>
-      <value></value>
-    </member>
     <member name="P:DevExpress.Web.ASPxScheduler.DayViewTemplates.RightTopCornerTemplate">
       <summary>
         <para>This member is not in effect for this class. It is overridden only for the purpose of preventing it from appearing in Microsoft Visual Studio designer tools.</para>
@@ -6514,12 +5763,6 @@ cell.</value>
     <member name="P:DevExpress.Web.ASPxScheduler.DayViewTemplates.VerticalAppointmentTemplate">
       <summary>
         <para>Gets or sets a template for displaying the scheduler&#39;s vertical appointment.</para>
-      </summary>
-      <value>An object that implements the <see cref="T:System.Web.UI.ITemplate"/> interface.</value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.DayViewTemplates.VerticalResourceHeaderTemplate">
-      <summary>
-        <para>Gets or sets a template for displaying the scheduler&#39;s vertical Resource Headers.</para>
       </summary>
       <value>An object that implements the <see cref="T:System.Web.UI.ITemplate"/> interface.</value>
     </member>
@@ -6547,166 +5790,6 @@ cell.</value>
     <member name="M:DevExpress.Web.ASPxScheduler.Dialogs.AppointmentEditDialogViewModel.#ctor">
       <summary>
         <para>Initializes a new instance of the <see cref="T:DevExpress.Web.ASPxScheduler.Dialogs.AppointmentEditDialogViewModel"/> class.</para>
-      </summary>
-    </member>
-    <member name="T:DevExpress.Web.ASPxScheduler.Dialogs.AppointmentEditDialogViewModel`1">
-      <summary>
-        <para></para>
-      </summary>
-    </member>
-    <member name="M:DevExpress.Web.ASPxScheduler.Dialogs.AppointmentEditDialogViewModel`1.#ctor">
-      <summary>
-        <para>Initializes a new instance of the <see cref="T:DevExpress.Web.ASPxScheduler.Dialogs.AppointmentEditDialogViewModel`1"/> class.</para>
-      </summary>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.Dialogs.AppointmentEditDialogViewModel`1.AppointmentController">
-      <summary>
-        <para></para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.Dialogs.AppointmentEditDialogViewModel`1.Description">
-      <summary>
-        <para></para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.Dialogs.AppointmentEditDialogViewModel`1.EndTime">
-      <summary>
-        <para></para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.Dialogs.AppointmentEditDialogViewModel`1.ErrorMessage">
-      <summary>
-        <para></para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="M:DevExpress.Web.ASPxScheduler.Dialogs.AppointmentEditDialogViewModel`1.GetFieldValueByName``1(System.String)">
-      <summary>
-        <para></para>
-      </summary>
-      <param name="name"></param>
-      <returns></returns>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.Dialogs.AppointmentEditDialogViewModel`1.IsAllDay">
-      <summary>
-        <para></para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.Dialogs.AppointmentEditDialogViewModel`1.IsRecurring">
-      <summary>
-        <para></para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.Dialogs.AppointmentEditDialogViewModel`1.IsValid">
-      <summary>
-        <para></para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.Dialogs.AppointmentEditDialogViewModel`1.LabelKey">
-      <summary>
-        <para></para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="M:DevExpress.Web.ASPxScheduler.Dialogs.AppointmentEditDialogViewModel`1.Load(DevExpress.Web.ASPxScheduler.Internal.AppointmentFormController)">
-      <summary>
-        <para></para>
-      </summary>
-      <param name="appointmentController"></param>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.Dialogs.AppointmentEditDialogViewModel`1.Location">
-      <summary>
-        <para></para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.Dialogs.AppointmentEditDialogViewModel`1.RecurrenceViewModel">
-      <summary>
-        <para></para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.Dialogs.AppointmentEditDialogViewModel`1.Reminder">
-      <summary>
-        <para></para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.Dialogs.AppointmentEditDialogViewModel`1.ResourceIds">
-      <summary>
-        <para></para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="M:DevExpress.Web.ASPxScheduler.Dialogs.AppointmentEditDialogViewModel`1.Save(DevExpress.Web.ASPxScheduler.Internal.AppointmentFormController)">
-      <summary>
-        <para></para>
-      </summary>
-      <param name="appointmentController"></param>
-    </member>
-    <member name="M:DevExpress.Web.ASPxScheduler.Dialogs.AppointmentEditDialogViewModel`1.SetDialogElementStateConditions">
-      <summary>
-        <para></para>
-      </summary>
-    </member>
-    <member name="M:DevExpress.Web.ASPxScheduler.Dialogs.AppointmentEditDialogViewModel`1.SetFieldValueByName(System.String,System.Object)">
-      <summary>
-        <para></para>
-      </summary>
-      <param name="name"></param>
-      <param name="value"></param>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.Dialogs.AppointmentEditDialogViewModel`1.StartTime">
-      <summary>
-        <para></para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.Dialogs.AppointmentEditDialogViewModel`1.StatusKey">
-      <summary>
-        <para></para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.Dialogs.AppointmentEditDialogViewModel`1.Subject">
-      <summary>
-        <para></para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.Dialogs.AppointmentEditDialogViewModel`1.TimeZoneId">
-      <summary>
-        <para></para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="M:DevExpress.Web.ASPxScheduler.Dialogs.AppointmentEditDialogViewModel`1.TrackLoad(System.Action{DevExpress.Web.ASPxScheduler.Internal.AppointmentFormController})">
-      <summary>
-        <para></para>
-      </summary>
-      <param name="loadAction"></param>
-    </member>
-    <member name="M:DevExpress.Web.ASPxScheduler.Dialogs.AppointmentEditDialogViewModel`1.TrackSave(System.Action{DevExpress.Web.ASPxScheduler.Internal.AppointmentFormController})">
-      <summary>
-        <para></para>
-      </summary>
-      <param name="saveAction"></param>
-    </member>
-    <member name="M:DevExpress.Web.ASPxScheduler.Dialogs.AppointmentEditDialogViewModel`1.TrackValidation(System.Action)">
-      <summary>
-        <para></para>
-      </summary>
-      <param name="validationAction"></param>
-    </member>
-    <member name="M:DevExpress.Web.ASPxScheduler.Dialogs.AppointmentEditDialogViewModel`1.Validate">
-      <summary>
-        <para></para>
       </summary>
     </member>
     <member name="T:DevExpress.Web.ASPxScheduler.Dialogs.DailyRecurrenceViewModel">
@@ -7267,23 +6350,11 @@ cell.</value>
       </summary>
       <param name="source">A <see cref="T:DevExpress.Web.ASPxScheduler.SchedulerViewBase"/> object whose settings are assigned to the current object.</param>
     </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.FullWeekView.DayCount">
-      <summary>
-        <para>Gets or sets the number of days that are simultaneously displayed within the Full Week View.</para>
-      </summary>
-      <value>A positive integer value that specifies the number of days displayed by the View.</value>
-    </member>
     <member name="P:DevExpress.Web.ASPxScheduler.FullWeekView.Enabled">
       <summary>
         <para>Gets or sets if the view is enabled for the <see cref="T:DevExpress.Web.ASPxScheduler.ASPxScheduler"/> control.</para>
       </summary>
       <value>true, if the view is enabled; otherwise, false.</value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.FullWeekView.FullWeekViewStyles">
-      <summary>
-        <para>This property is intended for serialization purposes only.</para>
-      </summary>
-      <value>A <see cref="T:DevExpress.Web.ASPxScheduler.FullWeekViewStyles"/> object, containing appearance settings for elements of the Week View.</value>
     </member>
     <member name="P:DevExpress.Web.ASPxScheduler.FullWeekView.Styles">
       <summary>
@@ -7419,12 +6490,6 @@ cell.</value>
       </summary>
       <value>An <see cref="T:System.Web.UI.WebControls.Unit"/> structure specifying the header height.</value>
     </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.HeaderStyle.Wrap">
-      <summary>
-        <para>This property is not in effect for the <see cref="T:DevExpress.Web.ASPxScheduler.HeaderStyle"/> class.</para>
-      </summary>
-      <value></value>
-    </member>
     <member name="T:DevExpress.Web.ASPxScheduler.InitClientAppointmentEventArgs">
       <summary>
         <para>Provides data for the <see cref="E:DevExpress.Web.ASPxScheduler.ASPxScheduler.InitClientAppointment"/> event.</para>
@@ -7463,7 +6528,7 @@ cell.</value>
     </member>
     <member name="T:DevExpress.Web.ASPxScheduler.Localization.ASPxSchedulerLocalizer">
       <summary>
-        <para>An object providing a means to localize the <see cref="T:DevExpress.Web.ASPxScheduler.ASPxScheduler"/>&#39;s user interface elements at runtime.</para>
+        <para>Provides a means to localize the <see cref="T:DevExpress.Web.ASPxScheduler.ASPxScheduler"/>&#39;s UI elements at runtime.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Web.ASPxScheduler.Localization.ASPxSchedulerLocalizer.#ctor">
@@ -7484,9 +6549,19 @@ cell.</value>
       <param name="id">A <see cref="T:DevExpress.Web.ASPxScheduler.Localization.ASPxSchedulerStringId"/> enumeration value identifying the string to localize.</param>
       <returns>A <see cref="T:System.String"/> corresponding to the specified identifier.</returns>
     </member>
+    <member name="T:DevExpress.Web.ASPxScheduler.Localization.ASPxSchedulerResLocalizer">
+      <summary>
+        <para>Provides a means to localize the <see cref="T:DevExpress.Web.ASPxScheduler.ASPxScheduler"/>&#39;s UI elements at runtime.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Web.ASPxScheduler.Localization.ASPxSchedulerResLocalizer.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Web.ASPxScheduler.Localization.ASPxSchedulerResLocalizer"/> class.</para>
+      </summary>
+    </member>
     <member name="T:DevExpress.Web.ASPxScheduler.Localization.ASPxSchedulerStringId">
       <summary>
-        <para>Contains values corresponding to strings that can be localized for the ASPxScheduler Suite.</para>
+        <para>Contains strings that can be localized for the <see cref="T:DevExpress.Web.ASPxScheduler.ASPxScheduler"/>. For more information, refer to the  topic.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Web.ASPxScheduler.Localization.ASPxSchedulerStringId.Agenda_NoAppointmentsToDisplay">
@@ -7888,12 +6963,6 @@ Default Value: &quot;Open Item&quot;</para>
         <para>Gets or sets a value indicating if the weekend days (Saturday and Sunday) should be displayed in one column.</para>
       </summary>
       <value>true to compress weekends; otherwise, false.</value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.MonthView.MonthViewStyles">
-      <summary>
-        <para>Provides access to the MonthViewStyles object, specifying styles applied to visual elements of the Month View.</para>
-      </summary>
-      <value>A <see cref="T:DevExpress.Web.ASPxScheduler.MonthViewStyles"/> object, containing appearance settings for visual elements of the Month View.</value>
     </member>
     <member name="P:DevExpress.Web.ASPxScheduler.MonthView.ShowWeekend">
       <summary>
@@ -8856,12 +7925,6 @@ Default Value: &quot;Open Item&quot;</para>
       </summary>
       <value>A string that represents either the name of a JavaScript function or the entire JavaScript function code used to handle an event.</value>
     </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.SchedulerClientSideEvents.MouseUp">
-      <summary>
-        <para>Gets or sets a client-side handler for a client scheduler&#39;s MouseUp event.</para>
-      </summary>
-      <value>A string that represents either the name of a JavaScript function or the entire JavaScript function code used to handle an event.</value>
-    </member>
     <member name="P:DevExpress.Web.ASPxScheduler.SchedulerClientSideEvents.SelectionChanged">
       <summary>
         <para>Gets or sets a client-side handler for a client scheduler&#39;s <see cref="P:js-ASPxClientScheduler.SelectionChanged"/> event.</para>
@@ -8967,18 +8030,6 @@ Default Value: &quot;Open Item&quot;</para>
         <para>Initializes a new instance of the <see cref="T:DevExpress.Web.ASPxScheduler.SchedulerFormEditorsImages"/> class with the specified owner.</para>
       </summary>
       <param name="owner">An object that implements the ISkinOwner interface.</param>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.SchedulerFormEditorsImages.ImageFolder">
-      <summary>
-        <para>For internal use only.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.SchedulerFormEditorsImages.LoadingPanel">
-      <summary>
-        <para>Gets the settings of an image displayed within a Loading Panel.</para>
-      </summary>
-      <value>A <see cref="T:DevExpress.Web.ImageProperties"/> object that contains image settings.</value>
     </member>
     <member name="T:DevExpress.Web.ASPxScheduler.SchedulerFormEventArgs">
       <summary>
@@ -9716,12 +8767,6 @@ Default Value: &quot;Open Item&quot;</para>
       </summary>
       <value>A <see cref="T:DevExpress.Web.ASPxScheduler.TimeIndicatorDisplayOptions"/> object whose properties allow you to specify options related to displaying the Time Indicator.</value>
     </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.TimelineView.TimelineViewStyles">
-      <summary>
-        <para>Provides access to the TimelineViewStyles object, specifying styles applied to visual elements of the Timeline View.</para>
-      </summary>
-      <value>A <see cref="T:DevExpress.Web.ASPxScheduler.TimelineViewStyles"/> object, containing appearance settings for elements of the Timeline View.</value>
-    </member>
     <member name="P:DevExpress.Web.ASPxScheduler.TimelineView.Type">
       <summary>
         <para>Gets the view&#39;s type.</para>
@@ -9744,12 +8789,6 @@ Default Value: &quot;Open Item&quot;</para>
         <para>Initializes a new instance of the <see cref="T:DevExpress.Web.ASPxScheduler.TimelineViewStyles"/> class with the specified owner.</para>
       </summary>
       <param name="scheduler">An <see cref="T:DevExpress.Web.ASPxScheduler.ASPxScheduler"/> object that is the owner of the created object.</param>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.TimelineViewStyles.AlternateDateHeader">
-      <summary>
-        <para>This member is not in effect for this class. It is overridden only for the purpose of preventing it from appearing in Microsoft Visual Studio designer tools.</para>
-      </summary>
-      <value></value>
     </member>
     <member name="P:DevExpress.Web.ASPxScheduler.TimelineViewStyles.AlternateTimelineDateHeader">
       <summary>
@@ -9780,24 +8819,6 @@ Default Value: &quot;Open Item&quot;</para>
         <para>Duplicates the properties of the specified object into the current instance of the <see cref="T:DevExpress.Web.ASPxScheduler.TimelineViewStyles"/> class.</para>
       </summary>
       <param name="source">A <see cref="T:DevExpress.Web.StylesBase"/> object that is the object from which the settings will be copied.</param>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.TimelineViewStyles.DateHeader">
-      <summary>
-        <para>This member is not in effect for this class. It is overridden only for the purpose of preventing it from appearing in Microsoft Visual Studio designer tools.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.TimelineViewStyles.DayHeader">
-      <summary>
-        <para>This member is not in effect for this class. It is overridden only for the purpose of preventing it from appearing in Microsoft Visual Studio designer tools.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.TimelineViewStyles.HorizontalResourceHeader">
-      <summary>
-        <para>This member is not in effect for this class. It is overridden only for the purpose of preventing it from appearing in Microsoft Visual Studio designer tools.</para>
-      </summary>
-      <value></value>
     </member>
     <member name="P:DevExpress.Web.ASPxScheduler.TimelineViewStyles.ScrollAreaHeight">
       <summary>
@@ -10062,12 +9083,6 @@ For internal use only.</para>
       </summary>
       <value>The <see cref="F:DevExpress.XtraScheduler.SchedulerViewType.Week"/> value.</value>
     </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.WeekView.WeekViewStyles">
-      <summary>
-        <para>This property is intended for serialization purposes only.</para>
-      </summary>
-      <value>A <see cref="T:DevExpress.Web.ASPxScheduler.WeekViewStyles"/> object, containing appearance settings for elements of the Week View.</value>
-    </member>
     <member name="T:DevExpress.Web.ASPxScheduler.WeekViewStyles">
       <summary>
         <para>Contains settings that allow you to define the appearance of the Week view&#39;s visual elements.</para>
@@ -10078,12 +9093,6 @@ For internal use only.</para>
         <para>Initializes a new instance of the <see cref="T:DevExpress.Web.ASPxScheduler.WeekViewStyles"/> class.</para>
       </summary>
       <param name="scheduler">An <see cref="T:DevExpress.Web.ASPxScheduler.ASPxScheduler"/> object representing the scheduler.</param>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.WeekViewStyles.AlternateDateHeader">
-      <summary>
-        <para>This member is not in effect for this class. It is overridden only for the purpose of preventing it from appearing in Microsoft Visual Studio designer tools.</para>
-      </summary>
-      <value></value>
     </member>
     <member name="P:DevExpress.Web.ASPxScheduler.WeekViewStyles.DateCellBody">
       <summary>
@@ -10106,12 +9115,6 @@ For internal use only.</para>
     <member name="F:DevExpress.Web.ASPxScheduler.WeekViewStyles.DateCellHeaderStyleName">
       <summary>
         <para>For internal use only.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.WeekViewStyles.DateHeader">
-      <summary>
-        <para>This member is not in effect for this class. It is overridden only for the purpose of preventing it from appearing in Microsoft Visual Studio designer tools.</para>
       </summary>
       <value></value>
     </member>
@@ -10162,12 +9165,6 @@ For internal use only.</para>
       </summary>
       <param name="source">A <see cref="T:DevExpress.Web.ASPxScheduler.SchedulerViewBase"/> object whose settings are assigned to the current object.</param>
     </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.WorkWeekView.DayCount">
-      <summary>
-        <para>Gets or sets the number of days that are simultaneously displayed within the Work Week View.</para>
-      </summary>
-      <value>A positive integer value that specifies the number of days displayed by the View.</value>
-    </member>
     <member name="P:DevExpress.Web.ASPxScheduler.WorkWeekView.ShowFullWeek">
       <summary>
         <para>Gets or sets a value indicating whether this view should show all the days of the week.</para>
@@ -10185,12 +9182,6 @@ For internal use only.</para>
         <para>Gets the view&#39;s type.</para>
       </summary>
       <value>The <see cref="F:DevExpress.XtraScheduler.SchedulerViewType.WorkWeek"/> value.</value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxScheduler.WorkWeekView.WorkWeekViewStyles">
-      <summary>
-        <para>This property is intended to serialize the <see cref="P:DevExpress.Web.ASPxScheduler.WorkWeekView.Styles"/> property..</para>
-      </summary>
-      <value>A <see cref="T:DevExpress.Web.ASPxScheduler.WorkWeekViewStyles"/> object, containing style settings for visual elements of the Work Week View.</value>
     </member>
     <member name="T:DevExpress.Web.ASPxScheduler.WorkWeekViewStyles">
       <summary>

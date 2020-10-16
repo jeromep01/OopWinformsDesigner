@@ -414,6 +414,11 @@
         <para>An arc scale is displayed as a three quarter circle.</para>
       </summary>
     </member>
+    <member name="T:DevExpress.Xpf.Gauges.ArcScaleLinePresentation">
+      <summary>
+        <para>Serves as a base class for line presentations.</para>
+      </summary>
+    </member>
     <member name="T:DevExpress.Xpf.Gauges.ArcScaleMarker">
       <summary>
         <para>An arc scale marker.</para>
@@ -775,6 +780,11 @@
       </summary>
       <param name="scale">An <see cref="T:DevExpress.Xpf.Gauges.ArcScale"/> object that should be the owner of the created collection.</param>
     </member>
+    <member name="T:DevExpress.Xpf.Gauges.ArcScaleRangePresentation">
+      <summary>
+        <para>Serves as a base class for range presentations.</para>
+      </summary>
+    </member>
     <member name="T:DevExpress.Xpf.Gauges.BlinkingAnimation">
       <summary>
         <para>Contains settings to provide a blinking animation effect for the digital gauge control.</para>
@@ -1098,9 +1108,121 @@
         <para>A creeping line is shown on the symbols panel from right to left.</para>
       </summary>
     </member>
+    <member name="T:DevExpress.Xpf.Gauges.CustomArcScaleLayerPresentation">
+      <summary>
+        <para>Contains presentation settings that specify the scale layer appearance.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.Gauges.CustomArcScaleLayerPresentation.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Xpf.Gauges.CustomArcScaleLayerPresentation"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Xpf.Gauges.CustomArcScaleLayerPresentation.PresentationName">
+      <summary>
+        <para>Returns the current presentation name.</para>
+      </summary>
+      <value>The current presentation name.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.Gauges.CustomArcScaleLayerPresentation.ScaleLayerTemplate">
+      <summary>
+        <para>Gets or sets a template that configures the scale layer behavior and appearance. This is a dependency property.</para>
+      </summary>
+      <value>A control template that specifies the visual structure and behavior of the scale layer.</value>
+    </member>
+    <member name="F:DevExpress.Xpf.Gauges.CustomArcScaleLayerPresentation.ScaleLayerTemplateProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.Gauges.CustomArcScaleLayerPresentation.ScaleLayerTemplate"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="T:DevExpress.Xpf.Gauges.CustomArcScaleLinePresentation">
+      <summary>
+        <para>Contains presentation settings that specify the line appearance.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.Gauges.CustomArcScaleLinePresentation.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Xpf.Gauges.CustomArcScaleLinePresentation"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Xpf.Gauges.CustomArcScaleLinePresentation.LineTemplate">
+      <summary>
+        <para>Gets or sets a template that configures the line appearance. This is a dependency property.</para>
+      </summary>
+      <value>A control template that specifies the line appearance.</value>
+    </member>
+    <member name="F:DevExpress.Xpf.Gauges.CustomArcScaleLinePresentation.LineTemplateProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.Gauges.CustomArcScaleLinePresentation.LineTemplate"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.Gauges.CustomArcScaleLinePresentation.PresentationName">
+      <summary>
+        <para>Returns the current presentation name.</para>
+      </summary>
+      <value>The current presentation name.</value>
+    </member>
+    <member name="T:DevExpress.Xpf.Gauges.CustomArcScaleMarkerPresentation">
+      <summary>
+        <para>Contains presentation settings that specify the marker appearance.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.Gauges.CustomArcScaleMarkerPresentation.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Xpf.Gauges.CustomArcScaleMarkerPresentation"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Xpf.Gauges.CustomArcScaleMarkerPresentation.MarkerTemplate">
+      <summary>
+        <para>Gets or sets a template that configures the marker appearance. This is a dependency property.</para>
+      </summary>
+      <value>A control template that specifies the marker appearance.</value>
+    </member>
+    <member name="F:DevExpress.Xpf.Gauges.CustomArcScaleMarkerPresentation.MarkerTemplateProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.Gauges.CustomArcScaleMarkerPresentation.MarkerTemplate"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.Gauges.CustomArcScaleMarkerPresentation.PresentationName">
+      <summary>
+        <para>Returns the current presentation name.</para>
+      </summary>
+      <value>The current presentation name.</value>
+    </member>
+    <member name="T:DevExpress.Xpf.Gauges.CustomArcScaleNeedlePresentation">
+      <summary>
+        <para>Contains presentation settings that specify the needle appearance.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.Gauges.CustomArcScaleNeedlePresentation.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Xpf.Gauges.CustomArcScaleNeedlePresentation"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Xpf.Gauges.CustomArcScaleNeedlePresentation.NeedleTemplate">
+      <summary>
+        <para>Gets or sets a template that configures the needle appearance. This is a dependency property.</para>
+      </summary>
+      <value>A control template that specifies the needle visual structure.</value>
+    </member>
+    <member name="F:DevExpress.Xpf.Gauges.CustomArcScaleNeedlePresentation.NeedleTemplateProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.Gauges.CustomArcScaleNeedlePresentation.NeedleTemplate"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.Gauges.CustomArcScaleNeedlePresentation.PresentationName">
+      <summary>
+        <para>Returns the current presentation name.</para>
+      </summary>
+      <value>The current presentation name.</value>
+    </member>
     <member name="T:DevExpress.Xpf.Gauges.CustomArcScaleRangeBarPresentation">
       <summary>
-        <para>Gets or sets the current presentation that specifies the appearance of the range bar.</para>
+        <para>Contains presentation settings that specify the range bar appearance.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpf.Gauges.CustomArcScaleRangeBarPresentation.#ctor">
@@ -1112,11 +1234,11 @@
       <summary>
         <para>Returns the current presentation name.</para>
       </summary>
-      <value>The &quot;Custom Range Bar&quot; string.</value>
+      <value>The current presentation name.</value>
     </member>
     <member name="P:DevExpress.Xpf.Gauges.CustomArcScaleRangeBarPresentation.RangeBarTemplate">
       <summary>
-        <para>Gets or sets a template that configures the range bar behavior and appearance.</para>
+        <para>Gets or sets a template that configures the range bar behavior and appearance. This is a dependency property.</para>
       </summary>
       <value>A control template that specifies the visual structure and behavior of the range bar.</value>
     </member>
@@ -1125,6 +1247,558 @@
         <para>Identifies the <see cref="P:DevExpress.Xpf.Gauges.CustomArcScaleRangeBarPresentation.RangeBarTemplate"/> dependency property.</para>
       </summary>
       <value>A dependency property identifier.</value>
+    </member>
+    <member name="T:DevExpress.Xpf.Gauges.CustomArcScaleRangePresentation">
+      <summary>
+        <para>Contains presentation settings that specify the range appearance.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.Gauges.CustomArcScaleRangePresentation.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Xpf.Gauges.CustomArcScaleRangePresentation"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Xpf.Gauges.CustomArcScaleRangePresentation.PresentationName">
+      <summary>
+        <para>Returns the current presentation name.</para>
+      </summary>
+      <value>The current presentation name.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.Gauges.CustomArcScaleRangePresentation.RangeTemplate">
+      <summary>
+        <para>Gets or sets a template that configures the range appearance. This is a dependency property.</para>
+      </summary>
+      <value>A control template that specifies the range visual structure.</value>
+    </member>
+    <member name="F:DevExpress.Xpf.Gauges.CustomArcScaleRangePresentation.RangeTemplateProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.Gauges.CustomArcScaleRangePresentation.RangeTemplate"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="T:DevExpress.Xpf.Gauges.CustomCircularGaugeLayerPresentation">
+      <summary>
+        <para>Contains presentation settings that specify the circular gauge layer appearance.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.Gauges.CustomCircularGaugeLayerPresentation.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Xpf.Gauges.CustomCircularGaugeLayerPresentation"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Xpf.Gauges.CustomCircularGaugeLayerPresentation.GaugeLayerTemplate">
+      <summary>
+        <para>Gets or sets a template that configures the circular gauge layer behavior and appearance. This is a dependency property.</para>
+      </summary>
+      <value>A control template that specifies the visual structure and behavior of the circular gauge layer.</value>
+    </member>
+    <member name="F:DevExpress.Xpf.Gauges.CustomCircularGaugeLayerPresentation.GaugeLayerTemplateProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.Gauges.CustomCircularGaugeLayerPresentation.GaugeLayerTemplate"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.Gauges.CustomCircularGaugeLayerPresentation.PresentationName">
+      <summary>
+        <para>Returns the current presentation name.</para>
+      </summary>
+      <value>The current presentation name.</value>
+    </member>
+    <member name="T:DevExpress.Xpf.Gauges.CustomDigitalGaugeLayerPresentation">
+      <summary>
+        <para>Contains presentation settings that specify the digital gauge layer appearance.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.Gauges.CustomDigitalGaugeLayerPresentation.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Xpf.Gauges.CustomDigitalGaugeLayerPresentation"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Xpf.Gauges.CustomDigitalGaugeLayerPresentation.GaugeLayerTemplate">
+      <summary>
+        <para>Gets or sets a template that configures the digital gauge layer behavior and appearance. This is a dependency property.</para>
+      </summary>
+      <value>A control template that specifies the visual structure and behavior of the digital gauge layer.</value>
+    </member>
+    <member name="F:DevExpress.Xpf.Gauges.CustomDigitalGaugeLayerPresentation.GaugeLayerTemplateProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.Gauges.CustomDigitalGaugeLayerPresentation.GaugeLayerTemplate"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.Gauges.CustomDigitalGaugeLayerPresentation.PresentationName">
+      <summary>
+        <para>Returns the current presentation name.</para>
+      </summary>
+      <value>The current presentation name.</value>
+    </member>
+    <member name="T:DevExpress.Xpf.Gauges.CustomFourteenSegmentsPresentation">
+      <summary>
+        <para>Contains presentation settings that specify the symbol appearance.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.Gauges.CustomFourteenSegmentsPresentation.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Xpf.Gauges.CustomFourteenSegmentsPresentation"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Xpf.Gauges.CustomFourteenSegmentsPresentation.PresentationName">
+      <summary>
+        <para>Returns the current presentation name.</para>
+      </summary>
+      <value>The current presentation name.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.Gauges.CustomFourteenSegmentsPresentation.SymbolTemplate">
+      <summary>
+        <para>Gets or sets a template that configures the symbol appearance. This is a dependency property.</para>
+      </summary>
+      <value>A control template that specifies the symbol visual structure.</value>
+    </member>
+    <member name="F:DevExpress.Xpf.Gauges.CustomFourteenSegmentsPresentation.SymbolTemplateProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.Gauges.CustomFourteenSegmentsPresentation.SymbolTemplate"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="T:DevExpress.Xpf.Gauges.CustomLinearGaugeLayerPresentation">
+      <summary>
+        <para>Contains presentation settings that specify the linear gauge layer appearance.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.Gauges.CustomLinearGaugeLayerPresentation.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Xpf.Gauges.CustomLinearGaugeLayerPresentation"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Xpf.Gauges.CustomLinearGaugeLayerPresentation.GaugeLayerTemplate">
+      <summary>
+        <para>Gets or sets a template that configures the linear gauge layer behavior and appearance. This is a dependency property.</para>
+      </summary>
+      <value>A control template that specifies the visual structure and behavior of the linear gauge layer.</value>
+    </member>
+    <member name="F:DevExpress.Xpf.Gauges.CustomLinearGaugeLayerPresentation.GaugeLayerTemplateProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.Gauges.CustomLinearGaugeLayerPresentation.GaugeLayerTemplate"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.Gauges.CustomLinearGaugeLayerPresentation.PresentationName">
+      <summary>
+        <para>Returns the current presentation name.</para>
+      </summary>
+      <value>The current presentation name.</value>
+    </member>
+    <member name="T:DevExpress.Xpf.Gauges.CustomLinearScaleLayerPresentation">
+      <summary>
+        <para>Contains presentation settings that specify the linear scale layer appearance.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.Gauges.CustomLinearScaleLayerPresentation.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Xpf.Gauges.CustomLinearScaleLayerPresentation"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Xpf.Gauges.CustomLinearScaleLayerPresentation.PresentationName">
+      <summary>
+        <para>Returns the current presentation name.</para>
+      </summary>
+      <value>The current presentation name.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.Gauges.CustomLinearScaleLayerPresentation.ScaleLayerTemplate">
+      <summary>
+        <para>Gets or sets a template that configures the scale layer behavior and appearance. This is a dependency property.</para>
+      </summary>
+      <value>A control template that specifies the visual structure and behavior of the scale layer.</value>
+    </member>
+    <member name="F:DevExpress.Xpf.Gauges.CustomLinearScaleLayerPresentation.ScaleLayerTemplateProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.Gauges.CustomLinearScaleLayerPresentation.ScaleLayerTemplate"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="T:DevExpress.Xpf.Gauges.CustomLinearScaleLevelBarPresentation">
+      <summary>
+        <para>Contains presentation settings that specify the level bar appearance.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.Gauges.CustomLinearScaleLevelBarPresentation.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Xpf.Gauges.CustomLinearScaleLevelBarPresentation"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Xpf.Gauges.CustomLinearScaleLevelBarPresentation.LevelBarBackgroundTemplate">
+      <summary>
+        <para>Gets or sets a template that configures the level bar background appearance. This is a dependency property.</para>
+      </summary>
+      <value>A control template that specifies the level bar background appearance.</value>
+    </member>
+    <member name="F:DevExpress.Xpf.Gauges.CustomLinearScaleLevelBarPresentation.LevelBarBackgroundTemplateProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.Gauges.CustomLinearScaleLevelBarPresentation.LevelBarBackgroundTemplate"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.Gauges.CustomLinearScaleLevelBarPresentation.LevelBarForegroundTemplate">
+      <summary>
+        <para>Gets or sets a template that configures the level bar foreground appearance. This is a dependency property.</para>
+      </summary>
+      <value>A control template that specifies the level bar foreground appearance.</value>
+    </member>
+    <member name="F:DevExpress.Xpf.Gauges.CustomLinearScaleLevelBarPresentation.LevelBarForegroundTemplateProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.Gauges.CustomLinearScaleLevelBarPresentation.LevelBarForegroundTemplate"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.Gauges.CustomLinearScaleLevelBarPresentation.PresentationName">
+      <summary>
+        <para>Returns the current presentation name.</para>
+      </summary>
+      <value>The current presentation name.</value>
+    </member>
+    <member name="T:DevExpress.Xpf.Gauges.CustomLinearScaleLinePresentation">
+      <summary>
+        <para>Contains presentation settings that specify the line appearance.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.Gauges.CustomLinearScaleLinePresentation.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Xpf.Gauges.CustomLinearScaleLinePresentation"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Xpf.Gauges.CustomLinearScaleLinePresentation.LineTemplate">
+      <summary>
+        <para>Gets or sets a template that configures the scale line appearance. This is a dependency property.</para>
+      </summary>
+      <value>A control template that specifies the scale line visual structure.</value>
+    </member>
+    <member name="F:DevExpress.Xpf.Gauges.CustomLinearScaleLinePresentation.LineTemplateProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.Gauges.CustomLinearScaleLinePresentation.LineTemplate"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.Gauges.CustomLinearScaleLinePresentation.PresentationName">
+      <summary>
+        <para>Returns the current presentation name.</para>
+      </summary>
+      <value>The current presentation name.</value>
+    </member>
+    <member name="T:DevExpress.Xpf.Gauges.CustomLinearScaleMarkerPresentation">
+      <summary>
+        <para>Contains presentation settings that specify the marker appearance.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.Gauges.CustomLinearScaleMarkerPresentation.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Xpf.Gauges.CustomLinearScaleMarkerPresentation"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Xpf.Gauges.CustomLinearScaleMarkerPresentation.MarkerTemplate">
+      <summary>
+        <para>Gets or sets a template that configures the marker appearance. This is a dependency property.</para>
+      </summary>
+      <value>A control template that specifies the marker visual structure.</value>
+    </member>
+    <member name="F:DevExpress.Xpf.Gauges.CustomLinearScaleMarkerPresentation.MarkerTemplateProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.Gauges.CustomLinearScaleMarkerPresentation.MarkerTemplate"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.Gauges.CustomLinearScaleMarkerPresentation.PresentationName">
+      <summary>
+        <para>Returns the current presentation name.</para>
+      </summary>
+      <value>The current presentation name.</value>
+    </member>
+    <member name="T:DevExpress.Xpf.Gauges.CustomLinearScaleRangeBarPresentation">
+      <summary>
+        <para>Contains presentation settings that specify the range bar appearance.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.Gauges.CustomLinearScaleRangeBarPresentation.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Xpf.Gauges.CustomLinearScaleRangeBarPresentation"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Xpf.Gauges.CustomLinearScaleRangeBarPresentation.PresentationName">
+      <summary>
+        <para>Returns the current presentation name.</para>
+      </summary>
+      <value>The current presentation name.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.Gauges.CustomLinearScaleRangeBarPresentation.RangeBarTemplate">
+      <summary>
+        <para>Gets or sets a template that configures the range bar appearance. This is a dependency property.</para>
+      </summary>
+      <value>A control template that specifies the range bar visual structure.</value>
+    </member>
+    <member name="F:DevExpress.Xpf.Gauges.CustomLinearScaleRangeBarPresentation.RangeBarTemplateProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.Gauges.CustomLinearScaleRangeBarPresentation.RangeBarTemplate"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="T:DevExpress.Xpf.Gauges.CustomLinearScaleRangePresentation">
+      <summary>
+        <para>Contains presentation settings that specify the range appearance.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.Gauges.CustomLinearScaleRangePresentation.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Xpf.Gauges.CustomLinearScaleRangePresentation"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Xpf.Gauges.CustomLinearScaleRangePresentation.PresentationName">
+      <summary>
+        <para>Returns the current presentation name.</para>
+      </summary>
+      <value>The current presentation name.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.Gauges.CustomLinearScaleRangePresentation.RangeTemplate">
+      <summary>
+        <para>Gets or sets a template that configures the scale range appearance. This is a dependency property.</para>
+      </summary>
+      <value>A control template that specifies the scale range visual structure.</value>
+    </member>
+    <member name="F:DevExpress.Xpf.Gauges.CustomLinearScaleRangePresentation.RangeTemplateProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.Gauges.CustomLinearScaleRangePresentation.RangeTemplate"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="T:DevExpress.Xpf.Gauges.CustomMatrix5x8Presentation">
+      <summary>
+        <para>Contains presentation settings that specify the segment appearance.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.Gauges.CustomMatrix5x8Presentation.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Xpf.Gauges.CustomMatrix5x8Presentation"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Xpf.Gauges.CustomMatrix5x8Presentation.ActiveSegmentTemplate">
+      <summary>
+        <para>Gets or sets a template that configures the active segment appearance. This is a dependency property.</para>
+      </summary>
+      <value>A control template that specifies the visual structure of the active segment.</value>
+    </member>
+    <member name="F:DevExpress.Xpf.Gauges.CustomMatrix5x8Presentation.ActiveSegmentTemplateProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.Gauges.CustomMatrix5x8Presentation.ActiveSegmentTemplate"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.Gauges.CustomMatrix5x8Presentation.InactiveSegmentTemplate">
+      <summary>
+        <para>Gets or sets a template that configures the inactive segment appearance. This is a dependency property.</para>
+      </summary>
+      <value>A control template that specifies the visual structure of the inactive segment.</value>
+    </member>
+    <member name="F:DevExpress.Xpf.Gauges.CustomMatrix5x8Presentation.InactiveSegmentTemplateProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.Gauges.CustomMatrix5x8Presentation.InactiveSegmentTemplate"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.Gauges.CustomMatrix5x8Presentation.PresentationName">
+      <summary>
+        <para>Returns the current presentation name.</para>
+      </summary>
+      <value>The current presentation name.</value>
+    </member>
+    <member name="T:DevExpress.Xpf.Gauges.CustomMatrix8x14Presentation">
+      <summary>
+        <para>Contains presentation settings that specify the segment appearance.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.Gauges.CustomMatrix8x14Presentation.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Xpf.Gauges.CustomMatrix8x14Presentation"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Xpf.Gauges.CustomMatrix8x14Presentation.ActiveSegmentTemplate">
+      <summary>
+        <para>Gets or sets a template that configures the active segment appearance. This is a dependency property.</para>
+      </summary>
+      <value>A control template that specifies the active segment visual structure.</value>
+    </member>
+    <member name="F:DevExpress.Xpf.Gauges.CustomMatrix8x14Presentation.ActiveSegmentTemplateProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.Gauges.CustomMatrix8x14Presentation.ActiveSegmentTemplate"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.Gauges.CustomMatrix8x14Presentation.InactiveSegmentTemplate">
+      <summary>
+        <para>Gets or sets a template that configures the inactive segment appearance. This is a dependency property.</para>
+      </summary>
+      <value>A control template that specifies the inactive segment visual structure.</value>
+    </member>
+    <member name="F:DevExpress.Xpf.Gauges.CustomMatrix8x14Presentation.InactiveSegmentTemplateProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.Gauges.CustomMatrix8x14Presentation.InactiveSegmentTemplate"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.Gauges.CustomMatrix8x14Presentation.PresentationName">
+      <summary>
+        <para>Returns the current presentation name.</para>
+      </summary>
+      <value>The current presentation name.</value>
+    </member>
+    <member name="T:DevExpress.Xpf.Gauges.CustomScaleLabelPresentation">
+      <summary>
+        <para>Contains presentation settings that specify the label appearance.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.Gauges.CustomScaleLabelPresentation.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Xpf.Gauges.CustomScaleLabelPresentation"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Xpf.Gauges.CustomScaleLabelPresentation.LabelTemplate">
+      <summary>
+        <para>Gets or sets a template that configures the scale label appearance. This is a dependency property.</para>
+      </summary>
+      <value>A control template that specifies the scale label visual structure.</value>
+    </member>
+    <member name="F:DevExpress.Xpf.Gauges.CustomScaleLabelPresentation.LabelTemplateProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.Gauges.CustomScaleLabelPresentation.LabelTemplate"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.Gauges.CustomScaleLabelPresentation.PresentationName">
+      <summary>
+        <para>Returns the current presentation name.</para>
+      </summary>
+      <value>The current presentation name.</value>
+    </member>
+    <member name="T:DevExpress.Xpf.Gauges.CustomSevenSegmentsPresentation">
+      <summary>
+        <para>Contains presentation settings that specify the symbol appearance.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.Gauges.CustomSevenSegmentsPresentation.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Xpf.Gauges.CustomSevenSegmentsPresentation"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Xpf.Gauges.CustomSevenSegmentsPresentation.PresentationName">
+      <summary>
+        <para>Returns the current presentation name.</para>
+      </summary>
+      <value>The current presentation name.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.Gauges.CustomSevenSegmentsPresentation.SymbolTemplate">
+      <summary>
+        <para>Gets or sets a template that configures the symbol appearance. This is a dependency property.</para>
+      </summary>
+      <value>A control template that specifies the symbol visual structure.</value>
+    </member>
+    <member name="F:DevExpress.Xpf.Gauges.CustomSevenSegmentsPresentation.SymbolTemplateProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.Gauges.CustomSevenSegmentsPresentation.SymbolTemplate"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="T:DevExpress.Xpf.Gauges.CustomSpindleCapPresentation">
+      <summary>
+        <para>Contains presentation settings that specify the spindle cap appearance.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.Gauges.CustomSpindleCapPresentation.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Xpf.Gauges.CustomSpindleCapPresentation"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Xpf.Gauges.CustomSpindleCapPresentation.PresentationName">
+      <summary>
+        <para>Returns the current presentation name.</para>
+      </summary>
+      <value>The current presentation name.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.Gauges.CustomSpindleCapPresentation.SpindleCapTemplate">
+      <summary>
+        <para>Gets or sets a template that configures the spindle cap appearance. This is a dependency property.</para>
+      </summary>
+      <value>A control template that specifies the spindle cap visual structure.</value>
+    </member>
+    <member name="F:DevExpress.Xpf.Gauges.CustomSpindleCapPresentation.SpindleCapTemplateProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.Gauges.CustomSpindleCapPresentation.SpindleCapTemplate"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="T:DevExpress.Xpf.Gauges.CustomStatePresentation">
+      <summary>
+        <para>Contains presentation settings that specify the state appearance.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.Gauges.CustomStatePresentation.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Xpf.Gauges.CustomStatePresentation"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Xpf.Gauges.CustomStatePresentation.PresentationName">
+      <summary>
+        <para>Returns the current presentation name.</para>
+      </summary>
+      <value>The current presentation name.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.Gauges.CustomStatePresentation.StateTemplate">
+      <summary>
+        <para>Gets or sets a template that configures the state appearance. This is a dependency property.</para>
+      </summary>
+      <value>A control template that specifies the state visual structure.</value>
+    </member>
+    <member name="F:DevExpress.Xpf.Gauges.CustomStatePresentation.StateTemplateProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.Gauges.CustomStatePresentation.StateTemplate"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="T:DevExpress.Xpf.Gauges.CustomTickmarksPresentation">
+      <summary>
+        <para>Contains presentation settings that specify the tickmark appearance.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.Gauges.CustomTickmarksPresentation.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Xpf.Gauges.CustomTickmarksPresentation"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Xpf.Gauges.CustomTickmarksPresentation.MajorTickmarkTemplate">
+      <summary>
+        <para>Gets or sets a template that configures the major tickmark appearance. This is a dependency property.</para>
+      </summary>
+      <value>A control template that specifies the major tickmark visual structure.</value>
+    </member>
+    <member name="F:DevExpress.Xpf.Gauges.CustomTickmarksPresentation.MajorTickmarkTemplateProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.Gauges.CustomTickmarksPresentation.MajorTickmarkTemplate"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.Gauges.CustomTickmarksPresentation.MinorTickmarkTemplate">
+      <summary>
+        <para>Gets or sets a template that configures the minor tickmark appearance. This is a dependency property.</para>
+      </summary>
+      <value>A control template that specifies the minor tickmark visual structure.</value>
+    </member>
+    <member name="F:DevExpress.Xpf.Gauges.CustomTickmarksPresentation.MinorTickmarkTemplateProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.Gauges.CustomTickmarksPresentation.MinorTickmarkTemplate"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.Gauges.CustomTickmarksPresentation.PresentationName">
+      <summary>
+        <para>Returns the current presentation name.</para>
+      </summary>
+      <value>The current presentation name.</value>
     </member>
     <member name="T:DevExpress.Xpf.Gauges.DigitalGaugeControl">
       <summary>
@@ -3467,6 +4141,11 @@
         <para>Identifies the <see cref="P:DevExpress.Xpf.Gauges.ScaleLabelOptions.ZIndex"/> dependency property.</para>
       </summary>
       <value>A dependency property identifier.</value>
+    </member>
+    <member name="T:DevExpress.Xpf.Gauges.ScaleLabelPresentation">
+      <summary>
+        <para>Serves as a base class for label presentations.</para>
+      </summary>
     </member>
     <member name="T:DevExpress.Xpf.Gauges.ScaleLayerBase">
       <summary>

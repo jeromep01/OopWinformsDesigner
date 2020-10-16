@@ -1060,6 +1060,11 @@
         <para>Turn left.</para>
       </summary>
     </member>
+    <member name="F:DevExpress.Xpf.Map.BingManeuverType.TurnLeftSharp">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
     <member name="F:DevExpress.Xpf.Map.BingManeuverType.TurnLeftThenBearLeft">
       <summary>
         <para>Turn left then bear left.</para>
@@ -1083,6 +1088,11 @@
     <member name="F:DevExpress.Xpf.Map.BingManeuverType.TurnRight">
       <summary>
         <para>Turn right.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Xpf.Map.BingManeuverType.TurnRightSharp">
+      <summary>
+        <para></para>
       </summary>
     </member>
     <member name="F:DevExpress.Xpf.Map.BingManeuverType.TurnRightThenBearLeft">
@@ -6303,7 +6313,7 @@
     </member>
     <member name="P:DevExpress.Xpf.Map.MapDataAdapterBase.Clusterer">
       <summary>
-        <para>Gets or sets the clusterer used to clusterize map items.</para>
+        <para>Gets or sets the clusterer that aggregates map items.</para>
       </summary>
       <value>A <see cref="T:DevExpress.Xpf.Map.MapClustererBase"/> class descendant object.</value>
     </member>
@@ -6353,6 +6363,18 @@
       <summary>
         <para>The base class for all data providers.</para>
       </summary>
+    </member>
+    <member name="P:DevExpress.Xpf.Map.MapDataProviderBase.CacheOptions">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="F:DevExpress.Xpf.Map.MapDataProviderBase.CacheOptionsProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.Map.MapDataProviderBase.CacheOptions"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
     </member>
     <member name="P:DevExpress.Xpf.Map.MapDataProviderBase.RequestOptions">
       <summary>
@@ -11621,7 +11643,7 @@ This is a dependency property.</para>
     </member>
     <member name="T:DevExpress.Xpf.Map.ShapefileDataAdapter">
       <summary>
-        <para>Data adapter that provides data from a shapefile.</para>
+        <para>A data adapter that loads data from shapefiles and displays it on vector layers.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpf.Map.ShapefileDataAdapter.#ctor">
@@ -12372,7 +12394,7 @@ This is a dependency property.</para>
     </member>
     <member name="T:DevExpress.Xpf.Map.SvgFileDataAdapter">
       <summary>
-        <para>Data adapter that provides data from a SVG file.</para>
+        <para>A data adapter that loads data from SVG files, and displays it on vector layers.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpf.Map.SvgFileDataAdapter.#ctor">
@@ -13343,6 +13365,12 @@ This is a dependency property.</para>
       </summary>
       <value>A dependency property identifier.</value>
     </member>
+    <member name="M:DevExpress.Xpf.Map.WmsDataProvider.SetImageRequestDelay(System.Int32)">
+      <summary>
+        <para></para>
+      </summary>
+      <param name="delay"></param>
+    </member>
     <member name="T:DevExpress.Xpf.Map.WmsImageSource">
       <summary>
         <para>Provides the capability to specify a source for a WMS image.</para>
@@ -13360,6 +13388,12 @@ This is a dependency property.</para>
       <param name="uri">A <see cref="T:System.Uri"/> value specifying the image URI.</param>
       <param name="location">A <see cref="T:DevExpress.Xpf.Map.MapUnit"/> object specifying the location.</param>
       <param name="zoomLevel">A <see cref="T:System.Double"/> value specifying the zoom level.</param>
+    </member>
+    <member name="M:DevExpress.Xpf.Map.WmsImageSource.SetImageRequestDelay(System.Int32)">
+      <summary>
+        <para></para>
+      </summary>
+      <param name="delay"></param>
     </member>
     <member name="T:DevExpress.Xpf.Map.WmsLayer">
       <summary>

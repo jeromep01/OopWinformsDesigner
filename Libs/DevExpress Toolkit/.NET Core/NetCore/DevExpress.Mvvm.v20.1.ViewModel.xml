@@ -41,7 +41,7 @@
     </member>
     <member name="M:DevExpress.Mvvm.ViewModel.CollectionViewModelBase`4.#ctor(DevExpress.Mvvm.DataModel.IUnitOfWorkFactory{`3},System.Func{`3,DevExpress.Mvvm.DataModel.IRepository{`0,`2}},System.Func{DevExpress.Mvvm.DataModel.IRepositoryQuery{`0},System.Linq.IQueryable{`1}},System.Action{`0},System.Func{System.Boolean},System.Boolean,DevExpress.Mvvm.ViewModel.UnitOfWorkPolicy)">
       <summary>
-        <para></para>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Mvvm.ViewModel.CollectionViewModelBase`4"/> class with specified settings.</para>
       </summary>
       <param name="unitOfWorkFactory"></param>
       <param name="getRepositoryFunc"></param>

@@ -454,7 +454,7 @@
     </member>
     <member name="T:DevExpress.Mvvm.DataAnnotations.MetadataLocator">
       <summary>
-        <para>Allows to register metadata classes.</para>
+        <para>Allows you to register metadata classes.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Mvvm.DataAnnotations.MetadataLocator.AddMetadata(System.Type)">
@@ -1951,6 +1951,28 @@
         <para>Gets or sets the resource&#39;s name.</para>
       </summary>
       <value>The resource&#39;s name.</value>
+    </member>
+    <member name="T:DevExpress.Mvvm.Gantt.GanttResourceLink">
+      <summary>
+        <para>A resource dependency data object.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Mvvm.Gantt.GanttResourceLink.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Mvvm.Gantt.GanttResourceLink"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Mvvm.Gantt.GanttResourceLink.AllocationPercentage">
+      <summary>
+        <para>Gets or sets a percentage of time a resource spends on a task.</para>
+      </summary>
+      <value>A percentage of time a resource spends on a task.</value>
+    </member>
+    <member name="P:DevExpress.Mvvm.Gantt.GanttResourceLink.ResourceId">
+      <summary>
+        <para>Gets or sets a resource ID.</para>
+      </summary>
+      <value>A resource ID.</value>
     </member>
     <member name="T:DevExpress.Mvvm.Gantt.GanttTask">
       <summary>
@@ -3951,7 +3973,7 @@
     </member>
     <member name="M:DevExpress.Mvvm.ModuleInjection.ModuleManager.#ctor(DevExpress.Mvvm.IViewModelLocator,DevExpress.Mvvm.UI.IViewLocator,DevExpress.Mvvm.IStateSerializer,System.Boolean,System.Boolean,System.Boolean)">
       <summary>
-        <para></para>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Mvvm.ModuleInjection.ModuleManager"/> class with specified settings.</para>
       </summary>
       <param name="viewModelLocator"></param>
       <param name="viewLocator"></param>
@@ -3962,13 +3984,13 @@
     </member>
     <member name="M:DevExpress.Mvvm.ModuleInjection.ModuleManager.#ctor(System.Boolean)">
       <summary>
-        <para></para>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Mvvm.ModuleInjection.ModuleManager"/> class with specified settings.</para>
       </summary>
       <param name="keepViewModelsAlive"></param>
     </member>
     <member name="M:DevExpress.Mvvm.ModuleInjection.ModuleManager.#ctor(System.Boolean,System.Boolean,System.Boolean)">
       <summary>
-        <para></para>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Mvvm.ModuleInjection.ModuleManager"/> class with specified settings.</para>
       </summary>
       <param name="allowSaveRestoreLayout"></param>
       <param name="isTestingMode"></param>

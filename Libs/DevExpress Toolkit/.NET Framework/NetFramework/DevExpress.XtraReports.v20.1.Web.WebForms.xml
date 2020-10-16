@@ -405,15 +405,15 @@
         <para>Initializes a new instance of the <see cref="T:DevExpress.XtraReports.Web.ASPxReportDesigner"/> class with the default settings.</para>
       </summary>
     </member>
-    <member name="M:DevExpress.XtraReports.Web.ASPxReportDesigner.#ctor(DevExpress.XtraReports.Web.ReportDesigner.Native.Services.IReportDesignerModelGenerator,DevExpress.XtraReports.Web.Native.ClientControls.Services.IJSContentGenerator{DevExpress.XtraReports.Web.ReportDesigner.ReportDesignerModel},System.Func{DevExpress.XtraReports.Web.WebDocumentViewer.Native.Services.IStoragesCleaner},DevExpress.XtraReports.Web.Extensions.ReportStorageWebExtension,DevExpress.XtraReports.Web.Native.ClientControls.Services.ILocalizerService)">
+    <member name="M:DevExpress.XtraReports.Web.ASPxReportDesigner.#ctor(DevExpress.XtraReports.Web.ReportDesigner.Native.Services.IReportDesignerModelGenerator,DevExpress.XtraReports.Web.Native.ClientControls.Services.IJSContentGenerator{DevExpress.XtraReports.Web.ReportDesigner.ReportDesignerModel},System.Func{DevExpress.XtraReports.Web.WebDocumentViewer.Native.Services.IStoragesCleaner},DevExpress.XtraReports.Services.IReportProvider,DevExpress.XtraReports.Web.Native.ClientControls.Services.ILocalizerService)">
       <summary>
-        <para></para>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.XtraReports.Web.ASPxReportDesigner"/> class with specified settings.</para>
       </summary>
-      <param name="reportDesignerModelGenerator"></param>
-      <param name="jsContentGenerator"></param>
-      <param name="cleanerFactory"></param>
-      <param name="reportStorageWebExtension"></param>
-      <param name="localizerService"></param>
+      <param name="reportDesignerModelGenerator" />
+      <param name="jsContentGenerator" />
+      <param name="cleanerFactory" />
+      <param name="reportProvider" />
+      <param name="localizerService" />
     </member>
     <member name="M:DevExpress.XtraReports.Web.ASPxReportDesigner.#ctor(System.IServiceProvider)">
       <summary>

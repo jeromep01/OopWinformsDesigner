@@ -637,6 +637,12 @@
         <para>Initializes a new instance of the <see cref="T:DevExpress.XtraScheduler.Reporting.ReportMonthViewAppointmentDisplayOptions"/> class with the default settings.</para>
       </summary>
     </member>
+    <member name="P:DevExpress.XtraScheduler.Reporting.ReportMonthViewAppointmentDisplayOptions.ShowAppointmentStatusVertically">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
     <member name="T:DevExpress.XtraScheduler.Reporting.ReportResourceHeaderOptions">
       <summary>
         <para>Provides options used to specify how resource headers are printed in Scheduler Reporting.</para>
@@ -830,6 +836,12 @@
       <summary>
         <para>Initializes a new instance of the <see cref="T:DevExpress.XtraScheduler.Reporting.ReportWeekViewAppointmentDisplayOptions"/> class with the default settings.</para>
       </summary>
+    </member>
+    <member name="P:DevExpress.XtraScheduler.Reporting.ReportWeekViewAppointmentDisplayOptions.ShowAppointmentStatusVertically">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
     </member>
     <member name="T:DevExpress.XtraScheduler.Reporting.ResourceInfo">
       <summary>

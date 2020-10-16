@@ -2475,7 +2475,7 @@ The default is DocumentLayoutUnit.Pixel.</value>
     </member>
     <member name="E:DevExpress.XtraRichEdit.RichEditControl.TablePositioningFormShowing">
       <summary>
-        <para></para>
+        <para>Occurs before the Table Positioning dialog is invoked.</para>
       </summary>
     </member>
     <member name="E:DevExpress.XtraRichEdit.RichEditControl.TablePropertiesFormShowing">

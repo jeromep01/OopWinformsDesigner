@@ -455,6 +455,14 @@
       <param name="obj">The object whose Object Space must be determined.</param>
       <returns>An <see cref="T:DevExpress.ExpressApp.IObjectSpace"/> object which represents the Object Space used to load and save the specified persistent object. null (Nothing in VB.NET) if the specified object belongs to an XPO Session not managed by the ObjectSpace class.</returns>
     </member>
+    <member name="M:DevExpress.ExpressApp.Xpo.XPObjectSpace.FirstOrDefault``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}},System.Boolean)">
+      <summary>
+        <para>Searches for the first object that matches the specified lambda expression. The generic parameter determines the object&#39;s type. This method takes uncommitted changes into account.</para>
+      </summary>
+      <param name="criteriaExpression">A lambda expression to search for an object.</param>
+      <param name="inTransaction">true if the method takes unsaved changes into account; otherwise, false.</param>
+      <returns>The first object that matches the specified lambda expression.</returns>
+    </member>
     <member name="M:DevExpress.ExpressApp.Xpo.XPObjectSpace.GetCollectionObjectType(System.Object)">
       <summary>
         <para></para>

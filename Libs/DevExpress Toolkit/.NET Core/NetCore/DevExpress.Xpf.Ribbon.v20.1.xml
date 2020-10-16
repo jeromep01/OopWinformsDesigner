@@ -2829,7 +2829,7 @@ This is a dependency property.</para>
     </member>
     <member name="P:DevExpress.Xpf.Ribbon.RibbonControl.RibbonTitleBarVisibility">
       <summary>
-        <para>Gets or sets whether to show a bar that displays the Ribbon Quick Access Toolbar. This property is in effect if the Ribbon is not displayed within a <see cref="T:DevExpress.Xpf.Ribbon.DXRibbonWindow"/>, in the Office 2010 style.</para>
+        <para>Gets or sets whether to show a bar that displays the Ribbon Quick Access Toolbar.</para>
       </summary>
       <value>A RibbonTitleBarVisibility value that specifies the visibility of the bar displaying the Quick Access Toolbar.</value>
     </member>

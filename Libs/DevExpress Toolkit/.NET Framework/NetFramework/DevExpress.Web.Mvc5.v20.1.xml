@@ -67,12 +67,6 @@
       </summary>
       <value>An integer, specifying the day of the month.</value>
     </member>
-    <member name="P:DevExpress.Web.Mvc.AppointmentRecurrenceFormSettings.EnableHourlyRecurrence">
-      <summary>
-        <para>Gets or sets whether hourly recurrence is enabled on the form.</para>
-      </summary>
-      <value>true, to enable hourly recurrence on the form; otherwise, false.</value>
-    </member>
     <member name="P:DevExpress.Web.Mvc.AppointmentRecurrenceFormSettings.EnableScriptSupport">
       <summary>
         <para>Gets or sets whether client scripts are generated for controls located on the form.</para>
@@ -2439,12 +2433,6 @@ An empty string, if no filtering is used.</value>
       </summary>
       <value>An <see cref="T:DevExpress.Web.ASPxCardViewAfterPerformCallbackEventHandler"/> delegate method allowing you to implement custom processing.</value>
     </member>
-    <member name="P:DevExpress.Web.Mvc.CardViewSettings.BeforeColumnSorting">
-      <summary>
-        <para>Provides an opportunity to obtain the column sorting parameters and to perform some action before a column is sorted or grouped.</para>
-      </summary>
-      <value>An <see cref="T:DevExpress.Web.ASPxCardViewBeforeColumnSortingEventHandler"/> delegate method allowing you to implement custom processing.</value>
-    </member>
     <member name="P:DevExpress.Web.Mvc.CardViewSettings.BeforeColumnSortingGrouping">
       <summary>
         <para>Provides an opportunity to obtain the column sorting or grouping parameters and to perform some action before a column is sorted or grouped.</para>
@@ -2468,12 +2456,6 @@ An empty string, if no filtering is used.</value>
         <para>Provides access to the settings allowing you to customize a card layout.</para>
       </summary>
       <value>An <see cref="T:DevExpress.Web.Mvc.MVCxCardViewFormLayoutProperties"/> object that contains the card layout settings.</value>
-    </member>
-    <member name="P:DevExpress.Web.Mvc.CardViewSettings.CardValidating">
-      <summary>
-        <para>Enables you to specify whether card data is valid and whether the card can be updated.</para>
-      </summary>
-      <value>An <see cref="T:DevExpress.Web.ASPxCardViewDataValidationEventHandler"/> delegate method allowing you to implement custom processing.</value>
     </member>
     <member name="P:DevExpress.Web.Mvc.CardViewSettings.CellEditorInitialize">
       <summary>
@@ -2588,6 +2570,12 @@ An empty string, if no filtering is used.</value>
         <para>Provides access to group summary items.</para>
       </summary>
       <value>A <see cref="T:DevExpress.Web.ASPxCardViewSummaryItemCollection"/> object representing the group summary collection.</value>
+    </member>
+    <member name="P:DevExpress.Web.Mvc.CardViewSettings.HeaderFilterEditorInitialize">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
     </member>
     <member name="P:DevExpress.Web.Mvc.CardViewSettings.HeaderFilterFillItems">
       <summary>
@@ -3375,18 +3363,6 @@ An empty string, if no filtering is used.</value>
         <para>Specifies whether it&#39;s allowed to perform conversions between screen coordinates and diagram coordinates on the client-side.</para>
       </summary>
       <value>true if the coordinate conversions are allowed; otherwise, false.</value>
-    </member>
-    <member name="P:DevExpress.Web.Mvc.ChartControlSettings.Enabled">
-      <summary>
-        <para>Overrides the <see cref="P:DevExpress.Web.ASPxWebControl.Enabled"/> property to hide it.</para>
-      </summary>
-      <value>Always true.</value>
-    </member>
-    <member name="P:DevExpress.Web.Mvc.ChartControlSettings.EncodeHtml">
-      <summary>
-        <para>Overrides the <see cref="P:DevExpress.Web.ASPxWebControl.EncodeHtml"/> property to hide it.</para>
-      </summary>
-      <value>Always false.</value>
     </member>
     <member name="P:DevExpress.Web.Mvc.ChartControlSettings.FillStyle">
       <summary>
@@ -7457,12 +7433,6 @@ An empty string, if no filtering is used.</value>
       </summary>
       <value>true to make an extension initially displayed on the client; false to render the extension on the web page, but make it initially hidden on the client side.</value>
     </member>
-    <member name="P:DevExpress.Web.Mvc.FormLayoutSettings`1.ColCount">
-      <summary>
-        <para>Gets or sets the number of columns in the FormLayout.</para>
-      </summary>
-      <value>An integer that specifies the number of columns displayed within the FormLayout extension.</value>
-    </member>
     <member name="P:DevExpress.Web.Mvc.FormLayoutSettings`1.ColumnCount">
       <summary>
         <para>Specifies a number of columns the Form Layout uses to organize its content.</para>
@@ -7609,6 +7579,16 @@ An empty string, if no filtering is used.</value>
     <member name="M:DevExpress.Web.Mvc.GanttSettings.#ctor">
       <summary>
         <para>Initializes a new instance of the object.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Web.Mvc.GanttSettings.BatchUpdateRouteValues">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Web.Mvc.GanttSettings.CallbackRouteValues">
+      <summary>
+        <para></para>
       </summary>
     </member>
     <member name="P:DevExpress.Web.Mvc.GanttSettings.ClientSideEvents">
@@ -9071,7 +9051,7 @@ An empty string, if no filtering is used.</value>
       </summary>
       <param name="settings">A <see cref="T:DevExpress.Web.Mvc.GridViewSettings"/> object that contains GridView settings.</param>
       <param name="dataObject">An object representing the GridView&#39;s data source (typically, it is passed to the grid&#39;s <see cref="M:DevExpress.Web.Mvc.GridViewExtension.Bind(System.Object)"/> method).</param>
-      <returns>An object supporting the <see cref="T:DevExpress.XtraPrinting.IPrintable"/> interface that defines methods that enable GridView to be printed.</returns>
+      <returns>An interface that allows you to print GridView data.</returns>
     </member>
     <member name="M:DevExpress.Web.Mvc.GridViewExtension.ExportToCsv(DevExpress.Web.Mvc.GridViewSettings,System.Object)">
       <summary>
@@ -10722,6 +10702,12 @@ An empty string, if no filtering is used.</value>
       </summary>
       <value>An <see cref="T:DevExpress.Web.ASPxGroupSummarySortInfoCollection"/> collection which contains the information required to sort group rows by summary values.</value>
     </member>
+    <member name="P:DevExpress.Web.Mvc.GridViewSettings.HeaderFilterEditorInitialize">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
     <member name="P:DevExpress.Web.Mvc.GridViewSettings.HeaderFilterFillItems">
       <summary>
         <para>Enables you to provide custom filter items displayed within a filter dropdown.</para>
@@ -10817,12 +10803,6 @@ An empty string, if no filtering is used.</value>
         <para>Enables you to apply custom filter criteria when the filter row is in the OnClick mode.</para>
       </summary>
       <value>A <see cref="T:DevExpress.Web.ASPxGridViewOnClickRowFilterEventHandler"/> delegate method allowing you to implement custom processing.</value>
-    </member>
-    <member name="P:DevExpress.Web.Mvc.GridViewSettings.RowValidating">
-      <summary>
-        <para>Enables you to specify whether row data is valid.</para>
-      </summary>
-      <value>An <see cref="T:DevExpress.Web.Data.ASPxDataValidationEventHandler"/> delegate method allowing you to implement custom processing.</value>
     </member>
     <member name="P:DevExpress.Web.Mvc.GridViewSettings.SearchPanelEditorCreate">
       <summary>
@@ -12210,6 +12190,12 @@ An empty string, if no filtering is used.</value>
       </summary>
       <value>An <see cref="T:DevExpress.Web.ASPxHtmlEditor.ASPxHtmlEditorLoadingPanelSettings"/> object that contains the loading panel&#39;s settings.</value>
     </member>
+    <member name="P:DevExpress.Web.Mvc.HtmlEditorSettings.SettingsPlaceholders">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
     <member name="P:DevExpress.Web.Mvc.HtmlEditorSettings.SettingsResize">
       <summary>
         <para>Provides access to settings that are related to the HTMLEditor&#39;s sizing capabilities.</para>
@@ -12710,12 +12696,6 @@ An empty string, if no filtering is used.</value>
         <para>Gets or sets the layout of the ImageGallery&#39;s contents.</para>
       </summary>
       <value>One of the <see cref="T:DevExpress.Web.Layout"/> values.</value>
-    </member>
-    <member name="P:DevExpress.Web.Mvc.ImageGallerySettings.LoadingPanelStyle">
-      <summary>
-        <para>This property is not in effect for the <see cref="T:DevExpress.Web.Mvc.ImageGallerySettings"/> class.</para>
-      </summary>
-      <value></value>
     </member>
     <member name="P:DevExpress.Web.Mvc.ImageGallerySettings.NameField">
       <summary>
@@ -14644,12 +14624,6 @@ An empty string, if no filtering is used.</value>
       </summary>
       <param name="source">A <see cref="T:DevExpress.Web.Mvc.MVCxAppointmentStorage"/> object whose settings are assigned to the current object.</param>
     </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxAppointmentStorage.CommitIdToDataSource">
-      <summary>
-        <para>For internal use. Calls the method of the base class with the same name.</para>
-      </summary>
-      <value>true to pass the <see cref="P:DevExpress.XtraScheduler.IPersistentObject.Id"/> value to the mapped field in the data source; otherwise, false.</value>
-    </member>
     <member name="M:DevExpress.Web.Mvc.MVCxAppointmentStorage.CommitNewObject(DevExpress.XtraScheduler.Appointment)">
       <summary>
         <para>Overrides the method of the base class to hide it.</para>
@@ -14661,12 +14635,6 @@ An empty string, if no filtering is used.</value>
         <para>Provides access to the collection of mappings of the appointment&#39;s custom properties.</para>
       </summary>
       <value>A <see cref="T:DevExpress.Web.Mvc.MVCxAppointmentCustomFieldMappingCollection"/> object that is a collection of mappings.</value>
-    </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxAppointmentStorage.DataManager">
-      <summary>
-        <para>For internal use only.</para>
-      </summary>
-      <value>A DevExpress.XtraScheduler.Data.AppointmentDataManager object.</value>
     </member>
     <member name="P:DevExpress.Web.Mvc.MVCxAppointmentStorage.UnboundMode">
       <summary>
@@ -14749,12 +14717,6 @@ An empty string, if no filtering is used.</value>
         <para>Initializes a new instance of the <see cref="T:DevExpress.Web.Mvc.MVCxBinaryImage"/> class with default settings.</para>
       </summary>
     </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxBinaryImage.CallbackRouteValues">
-      <summary>
-        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.To set up the extension routing logic, use the <see cref="P:DevExpress.Web.Mvc.BinaryImageEditSettings.CallbackRouteValues"/> property at the extension settings level.</para>
-      </summary>
-      <value></value>
-    </member>
     <member name="P:DevExpress.Web.Mvc.MVCxBinaryImage.IsCallback">
       <summary>
         <para>Gets a value indicating whether the request is the result of a callback sent by the BinaryImage.</para>
@@ -14830,12 +14792,6 @@ An empty string, if no filtering is used.</value>
       </summary>
       <value>A <see cref="T:DevExpress.Web.EditorRootStyle"/> object that contains the style settings.</value>
     </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxBinaryImageEditProperties.StoreContentBytesInViewState">
-      <summary>
-        <para>Gets or sets a value that specifies whether the editor&#39;s content (that is an array of bytes) should be stored within its view state between postbacks.</para>
-      </summary>
-      <value>true, to maintain the editor&#39;s content bytes within a view state; otherwise, false.</value>
-    </member>
     <member name="P:DevExpress.Web.Mvc.MVCxBinaryImageEditProperties.Style">
       <summary>
         <para>This property is not in effect for the <see cref="T:DevExpress.Web.Mvc.MVCxBinaryImageEditProperties"/> class.</para>
@@ -14869,12 +14825,6 @@ An empty string, if no filtering is used.</value>
         <para>This member supports the internal infrastructure and is not intended to be used directly from your code.</para>
       </summary>
       <returns></returns>
-    </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxButton.RouteValues">
-      <summary>
-        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.To set up the extension routing logic, use the <see cref="P:DevExpress.Web.Mvc.ButtonSettings.RouteValues"/> property at the extension settings level.</para>
-      </summary>
-      <value></value>
     </member>
     <member name="P:DevExpress.Web.Mvc.MVCxButton.Styles">
       <summary>
@@ -14990,12 +14940,6 @@ An empty string, if no filtering is used.</value>
         <para>Initializes a new instance of the <see cref="T:DevExpress.Web.Mvc.MVCxCalendar"/> class with default settings.</para>
       </summary>
     </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxCalendar.CallbackRouteValues">
-      <summary>
-        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.To set up the extension routing logic, use the <see cref="P:DevExpress.Web.Mvc.CalendarSettings.CallbackRouteValues"/> property at the extension settings level.</para>
-      </summary>
-      <value></value>
-    </member>
     <member name="P:DevExpress.Web.Mvc.MVCxCalendar.IsCallback">
       <summary>
         <para>This member supports the internal infrastructure and is not intended to be used directly from your code.</para>
@@ -15099,12 +15043,6 @@ An empty string, if no filtering is used.</value>
         <para>Initializes a new instance of the <see cref="T:DevExpress.Web.Mvc.MVCxCallbackPanel"/> class with default settings.</para>
       </summary>
     </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxCallbackPanel.CallbackRouteValues">
-      <summary>
-        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.To set up the extension routing logic, use the <see cref="P:DevExpress.Web.Mvc.CallbackPanelSettings.CallbackRouteValues"/> property at the extension settings level.</para>
-      </summary>
-      <value></value>
-    </member>
     <member name="P:DevExpress.Web.Mvc.MVCxCallbackPanel.Images">
       <summary>
         <para>This member supports the internal infrastructure and is not intended to be used directly from your code.</para>
@@ -15138,12 +15076,6 @@ An empty string, if no filtering is used.</value>
       <summary>
         <para>Initializes a new instance of the <see cref="T:DevExpress.Web.Mvc.MVCxCaptcha"/> class with default settings.</para>
       </summary>
-    </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxCaptcha.CallbackRouteValues">
-      <summary>
-        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.To set up the extension routing logic, use the <see cref="P:DevExpress.Web.Mvc.CaptchaSettings.CallbackRouteValues"/> property at the extension settings level.</para>
-      </summary>
-      <value></value>
     </member>
     <member name="P:DevExpress.Web.Mvc.MVCxCaptcha.EnableCallBacks">
       <summary>
@@ -15402,12 +15334,6 @@ An empty string, if no filtering is used.</value>
       </summary>
       <param name="source">A <see cref="T:DevExpress.Web.CollectionItem"/> object whose settings are assigned to the current object.</param>
     </member>
-    <member name="M:DevExpress.Web.Mvc.MVCxCardViewColumnLayoutItem.GetNestedControl">
-      <summary>
-        <para>Returns a nested control contained within the current layout item.</para>
-      </summary>
-      <returns>An object that is the nested control within the current layout item.</returns>
-    </member>
     <member name="M:DevExpress.Web.Mvc.MVCxCardViewColumnLayoutItem.SetTemplateContent(System.Action{DevExpress.Web.CardViewDataItemTemplateContainer})">
       <summary>
         <para>Allows you to provide a template for rendering the column layout item content.</para>
@@ -15583,12 +15509,6 @@ An empty string, if no filtering is used.</value>
         <para>Gets or sets a value specifying the width of a card within the exported document.</para>
       </summary>
       <value>An integer value which specifies a card width, in pixels.</value>
-    </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxCardViewExportSettings.ExcelExportMode">
-      <summary>
-        <para>Gets or sets a value specifying the export mode when saving grid data to XLS, XLSX and CSV formats.</para>
-      </summary>
-      <value>A <see cref="T:DevExpress.Export.ExportType"/> enumeration value that specifies the export mode.</value>
     </member>
     <member name="P:DevExpress.Web.Mvc.MVCxCardViewExportSettings.ExportSelectedCardsOnly">
       <summary>
@@ -15842,12 +15762,6 @@ An empty string, if no filtering is used.</value>
       </summary>
       <value>An <see cref="T:DevExpress.Web.Mvc.MVCxCardViewLayoutItemCollection"/> object that is a collection of layout items.</value>
     </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxCardViewFormLayoutProperties.NestedControlWidth">
-      <summary>
-        <para>This property is not in effect for the <see cref="T:DevExpress.Web.Mvc.MVCxCardViewFormLayoutProperties"/> class.</para>
-      </summary>
-      <value></value>
-    </member>
     <member name="P:DevExpress.Web.Mvc.MVCxCardViewFormLayoutProperties.NestedExtensionWidth">
       <summary>
         <para>Gets or sets the width of editors contained in the form layout.</para>
@@ -15912,47 +15826,11 @@ An empty string, if no filtering is used.</value>
       <param name="columnName">A <see cref="T:System.String"/> value that identifies a column assigned to the current item. The specified string can be either: a column name, field name, or caption.</param>
       <returns>An <see cref="T:DevExpress.Web.Mvc.MVCxCardViewColumnLayoutItem"/> object that is the newly added layout item.</returns>
     </member>
-    <member name="M:DevExpress.Web.Mvc.MVCxCardViewLayoutItemCollection.AddColumnItem(DevExpress.Web.CardViewColumnLayoutItem)">
-      <summary>
-        <para>Adds the specified item to the <see cref="T:DevExpress.Web.Mvc.MVCxCardViewLayoutItemCollection"/> collection.</para>
-      </summary>
-      <param name="layoutItem">A <see cref="T:DevExpress.Web.CardViewColumnLayoutItem"/> object to add to the layout item collection.</param>
-      <returns>A <see cref="T:DevExpress.Web.CardViewColumnLayoutItem"/> object that is the newly added layout item.</returns>
-    </member>
-    <member name="M:DevExpress.Web.Mvc.MVCxCardViewLayoutItemCollection.AddColumnItem(System.String)">
-      <summary>
-        <para>Creates a new item assigned to the specified column name and adds it to the <see cref="T:DevExpress.Web.Mvc.MVCxCardViewLayoutItemCollection"/> collection.</para>
-      </summary>
-      <param name="columnName">A <see cref="T:System.String"/> value that identifies a column assigned to the current item. The specified string can be either: a column name, field name, or caption.</param>
-      <returns>A <see cref="T:DevExpress.Web.CardViewColumnLayoutItem"/> object that is the newly added layout item.</returns>
-    </member>
-    <member name="M:DevExpress.Web.Mvc.MVCxCardViewLayoutItemCollection.AddColumnItem(System.String,System.String)">
-      <summary>
-        <para>Creates a new item with the specified settings and adds it to the <see cref="T:DevExpress.Web.Mvc.MVCxCardViewLayoutItemCollection"/> collection.</para>
-      </summary>
-      <param name="columnName">A <see cref="T:System.String"/> value that identifies a column assigned to the current item. The specified string can be either: a column name, field name, or caption.</param>
-      <param name="caption">A <see cref="T:System.String"/> value specifying the item caption.</param>
-      <returns>A <see cref="T:DevExpress.Web.CardViewColumnLayoutItem"/> object that is the newly added layout item.</returns>
-    </member>
     <member name="M:DevExpress.Web.Mvc.MVCxCardViewLayoutItemCollection.AddCommandItem">
       <summary>
         <para>Creates a new command item with the default settings and adds it to the <see cref="T:DevExpress.Web.Mvc.MVCxCardViewLayoutItemCollection"/> collection.</para>
       </summary>
       <returns>A <see cref="T:DevExpress.Web.CardViewCommandLayoutItem"/> object that is the newly created command item.</returns>
-    </member>
-    <member name="M:DevExpress.Web.Mvc.MVCxCardViewLayoutItemCollection.AddCommandItem(DevExpress.Web.CardViewCommandLayoutItem)">
-      <summary>
-        <para>Adds the specified item to the <see cref="T:DevExpress.Web.Mvc.MVCxCardViewLayoutItemCollection"/> collection.</para>
-      </summary>
-      <param name="commandItem">A <see cref="T:DevExpress.Web.CardViewCommandLayoutItem"/> object to add to the layout item collection.</param>
-      <returns>A <see cref="T:DevExpress.Web.CardViewCommandLayoutItem"/> object that is the newly added command item.</returns>
-    </member>
-    <member name="M:DevExpress.Web.Mvc.MVCxCardViewLayoutItemCollection.AddCommandItem(DevExpress.Web.EditModeCommandLayoutItem)">
-      <summary>
-        <para>Adds the specified item to the <see cref="T:DevExpress.Web.Mvc.MVCxCardViewLayoutItemCollection"/> collection.</para>
-      </summary>
-      <param name="commandItem">An <see cref="T:DevExpress.Web.EditModeCommandLayoutItem"/> object to add to the layout item collection.</param>
-      <returns>An <see cref="T:DevExpress.Web.EditModeCommandLayoutItem"/> object that is the newly added command item.</returns>
     </member>
     <member name="M:DevExpress.Web.Mvc.MVCxCardViewLayoutItemCollection.AddCommandItem(System.Action{DevExpress.Web.CardViewCommandLayoutItem})">
       <summary>
@@ -15974,28 +15852,6 @@ An empty string, if no filtering is used.</value>
       <param name="method">A delegate method that accepts the created <see cref="T:DevExpress.Web.EditModeCommandLayoutItem"/> as a parameter.</param>
       <returns>An <see cref="T:DevExpress.Web.EditModeCommandLayoutItem"/> object that is the newly added command item.</returns>
     </member>
-    <member name="M:DevExpress.Web.Mvc.MVCxCardViewLayoutItemCollection.AddGroup(DevExpress.Web.CardViewLayoutGroup)">
-      <summary>
-        <para>Adds the specified group to the <see cref="T:DevExpress.Web.Mvc.MVCxCardViewLayoutItemCollection"/> collection.</para>
-      </summary>
-      <param name="layoutGroup">A <see cref="T:DevExpress.Web.CardViewLayoutGroup"/> object to add to the layout item collection.</param>
-      <returns>A <see cref="T:DevExpress.Web.CardViewLayoutGroup"/> object that is the newly added layout group.</returns>
-    </member>
-    <member name="M:DevExpress.Web.Mvc.MVCxCardViewLayoutItemCollection.AddGroup(System.String)">
-      <summary>
-        <para>Creates a new group with the specified caption and adds it to the <see cref="T:DevExpress.Web.Mvc.MVCxCardViewLayoutItemCollection"/> collection.</para>
-      </summary>
-      <param name="caption">A <see cref="T:System.String"/> value specifying the group caption.</param>
-      <returns>A <see cref="T:DevExpress.Web.CardViewLayoutGroup"/> object that is the newly added group.</returns>
-    </member>
-    <member name="M:DevExpress.Web.Mvc.MVCxCardViewLayoutItemCollection.AddGroup(System.String,System.String)">
-      <summary>
-        <para>Creates a new group with the specified settings and adds it to the <see cref="T:DevExpress.Web.Mvc.MVCxCardViewLayoutItemCollection"/> collection.</para>
-      </summary>
-      <param name="caption">A <see cref="T:System.String"/> value specifying the group caption.</param>
-      <param name="name">A <see cref="T:System.String"/> value specifying the group name.</param>
-      <returns>A <see cref="T:DevExpress.Web.CardViewLayoutGroup"/> object that is the newly added group.</returns>
-    </member>
     <member name="M:DevExpress.Web.Mvc.MVCxCardViewLayoutItemCollection.AddGroupItem">
       <summary>
         <para>Creates a new group item with the default settings and adds it to the <see cref="T:DevExpress.Web.Mvc.MVCxCardViewLayoutItemCollection"/> collection.</para>
@@ -16015,28 +15871,6 @@ An empty string, if no filtering is used.</value>
       </summary>
       <param name="caption">A <see cref="T:System.String"/> value specifying the item caption.</param>
       <returns>An <see cref="T:DevExpress.Web.Mvc.MVCxCardViewLayoutGroup"/> object that is the newly added group item.</returns>
-    </member>
-    <member name="M:DevExpress.Web.Mvc.MVCxCardViewLayoutItemCollection.AddTabbedGroup(DevExpress.Web.CardViewTabbedLayoutGroup)">
-      <summary>
-        <para>Adds the specified tabbed group to the <see cref="T:DevExpress.Web.Mvc.MVCxCardViewLayoutItemCollection"/> collection.</para>
-      </summary>
-      <param name="tabbedGroup">A <see cref="T:DevExpress.Web.CardViewTabbedLayoutGroup"/> object to add to the layout item collection.</param>
-      <returns>A <see cref="T:DevExpress.Web.CardViewTabbedLayoutGroup"/> object that is the newly added tabbed group.</returns>
-    </member>
-    <member name="M:DevExpress.Web.Mvc.MVCxCardViewLayoutItemCollection.AddTabbedGroup(System.String)">
-      <summary>
-        <para>Creates a new group with the specified caption and adds it to the <see cref="T:DevExpress.Web.Mvc.MVCxCardViewLayoutItemCollection"/> collection.</para>
-      </summary>
-      <param name="caption">A <see cref="T:System.String"/> value specifying the group caption.</param>
-      <returns>A <see cref="T:DevExpress.Web.CardViewTabbedLayoutGroup"/> object that is the newly added group.</returns>
-    </member>
-    <member name="M:DevExpress.Web.Mvc.MVCxCardViewLayoutItemCollection.AddTabbedGroup(System.String,System.String)">
-      <summary>
-        <para>Creates a new group with the specified settings and adds it to the <see cref="T:DevExpress.Web.Mvc.MVCxCardViewLayoutItemCollection"/> collection.</para>
-      </summary>
-      <param name="caption">A <see cref="T:System.String"/> value specifying the group caption.</param>
-      <param name="name">A <see cref="T:System.String"/> value specifying the group name.</param>
-      <returns>A <see cref="T:DevExpress.Web.CardViewTabbedLayoutGroup"/> object that is the newly added group.</returns>
     </member>
     <member name="M:DevExpress.Web.Mvc.MVCxCardViewLayoutItemCollection.AddTabbedGroupItem">
       <summary>
@@ -16089,12 +15923,6 @@ An empty string, if no filtering is used.</value>
       <summary>
         <para>Initializes a new instance of the <see cref="T:DevExpress.Web.Mvc.MVCxCardViewSearchPanelSettings"/> class with default settings.</para>
       </summary>
-    </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxCardViewSearchPanelSettings.CustomEditorID">
-      <summary>
-        <para>This property is not in effect for the <see cref="T:DevExpress.Web.Mvc.MVCxCardViewSearchPanelSettings"/> class.</para>
-      </summary>
-      <value></value>
     </member>
     <member name="P:DevExpress.Web.Mvc.MVCxCardViewSearchPanelSettings.CustomEditorName">
       <summary>
@@ -16287,18 +16115,6 @@ An empty string, if no filtering is used.</value>
         <para>Initializes a new instance of the <see cref="T:DevExpress.Web.Mvc.MVCxChartControl"/> class with default settings.</para>
       </summary>
     </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxChartControl.CallbackRouteValues">
-      <summary>
-        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.To set up the extension routing logic, use the <see cref="P:DevExpress.Web.Mvc.ChartControlSettings.CallbackRouteValues"/> property at the extension settings level.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxChartControl.CustomActionRouteValues">
-      <summary>
-        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.To set up the extension routing logic, use the <see cref="P:DevExpress.Web.Mvc.ChartControlSettings.CustomActionRouteValues"/> property at the extension settings level.</para>
-      </summary>
-      <value></value>
-    </member>
     <member name="P:DevExpress.Web.Mvc.MVCxChartControl.EnableCallBacks">
       <summary>
         <para>Gets or sets a value that specifies whether the callback or postback technology is used to manage round trips to the server.</para>
@@ -16316,12 +16132,6 @@ An empty string, if no filtering is used.</value>
         <para>Configures the chart diagram as a gantt diagram.</para>
       </summary>
       <param name="diagramAction">A delegate method configuring the <see cref="T:DevExpress.XtraCharts.GanttDiagram"/> object.</param>
-    </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxChartControl.IsCallback">
-      <summary>
-        <para>Gets a value indicating whether a callback sent by a DevExpress extension is currently being processed.</para>
-      </summary>
-      <value>true if a DevExpress extension callback is being processed; otherwise, false.</value>
     </member>
     <member name="M:DevExpress.Web.Mvc.MVCxChartControl.IsLoading">
       <summary>
@@ -16519,30 +16329,6 @@ An empty string, if no filtering is used.</value>
       <summary>
         <para>Contains CheckBox specific properties.</para>
       </summary>
-    </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxCheckBoxProperties.Caption">
-      <summary>
-        <para>For internal use only.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxCheckBoxProperties.CaptionCellStyle">
-      <summary>
-        <para>Gets the style settings that define the caption cell appearance.</para>
-      </summary>
-      <value>An <see cref="T:DevExpress.Web.EditorCaptionCellStyle"/> object that contains the style settings.</value>
-    </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxCheckBoxProperties.CaptionSettings">
-      <summary>
-        <para>Provides access to the editor caption settings.</para>
-      </summary>
-      <value>A <see cref="T:DevExpress.Web.EditorCaptionSettings"/> object containing the editor caption properties.</value>
-    </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxCheckBoxProperties.CaptionStyle">
-      <summary>
-        <para>Gets the style settings that define the caption appearance.</para>
-      </summary>
-      <value>An <see cref="T:DevExpress.Web.EditorCaptionStyle"/> object that contains the style settings.</value>
     </member>
     <member name="P:DevExpress.Web.Mvc.MVCxCheckBoxProperties.EncodeHtml">
       <summary>
@@ -16819,22 +16605,6 @@ An empty string, if no filtering is used.</value>
       </summary>
       <value>A <see cref="T:DevExpress.Web.Mvc.ListEditCustomFilteringMethod"/> delegate method allowing you to implement custom filtering.</value>
     </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxColumnComboBoxProperties.DataSource">
-      <summary>
-        <para>Gets or sets the object from which a data-bound editor retrieves its list of data items.</para>
-      </summary>
-      <value>An object that represents the editor&#39;s data source.</value>
-    </member>
-    <member name="E:DevExpress.Web.Mvc.MVCxColumnComboBoxProperties.ItemRequestedByValue">
-      <summary>
-        <para>This event is not in effect for this class. It is overridden only for the purpose of preventing it from appearing in Microsoft Visual Studio designer tools.</para>
-      </summary>
-    </member>
-    <member name="E:DevExpress.Web.Mvc.MVCxColumnComboBoxProperties.ItemsRequestedByFilterCondition">
-      <summary>
-        <para>This event is not in effect for this class. It is overridden only for the purpose of preventing it from appearing in Microsoft Visual Studio designer tools.</para>
-      </summary>
-    </member>
     <member name="M:DevExpress.Web.Mvc.MVCxColumnComboBoxProperties.SetItemTemplateContent(System.Action{DevExpress.Web.Mvc.MVCxListEditItemTemplateContainer})">
       <summary>
         <para>Allows you to provide a template for rendering the content of all ComboBox items.</para>
@@ -17067,12 +16837,6 @@ An empty string, if no filtering is used.</value>
       </summary>
       <value>An object containing the Controller and Action names.</value>
     </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxColumnTokenBoxProperties.DataSource">
-      <summary>
-        <para>Gets or sets the object from which a data-bound editor retrieves its list of data items.</para>
-      </summary>
-      <value>An object that represents the editor&#39;s data source.</value>
-    </member>
     <member name="M:DevExpress.Web.Mvc.MVCxColumnTokenBoxProperties.SetItemTemplateContent(System.Action{DevExpress.Web.Mvc.MVCxListEditItemTemplateContainer})">
       <summary>
         <para>Allows you to provide a template for rendering the content of all TokenBox items.</para>
@@ -17101,12 +16865,6 @@ An empty string, if no filtering is used.</value>
         <para>Initializes a new instance of the <see cref="T:DevExpress.Web.Mvc.MVCxComboBox"/> class with default settings.</para>
       </summary>
       <param name="viewContext">A <see cref="T:System.Web.Mvc.ViewContext"/> object that encapsulates information related to rendering a view.</param>
-    </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxComboBox.CallbackRouteValues">
-      <summary>
-        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.To set up the extension routing logic, use the <see cref="P:DevExpress.Web.Mvc.AutoCompleteBoxBaseSettings.CallbackRouteValues"/> property at the extension settings level.</para>
-      </summary>
-      <value></value>
     </member>
     <member name="P:DevExpress.Web.Mvc.MVCxComboBox.Columns">
       <summary>
@@ -17195,11 +16953,6 @@ An empty string, if no filtering is used.</value>
       </summary>
       <value>An <see cref="T:DevExpress.Web.Mvc.MVCxListBoxColumnCollection"/> object that is a collection of columns.</value>
     </member>
-    <member name="E:DevExpress.Web.Mvc.MVCxComboBoxProperties.CustomFiltering">
-      <summary>
-        <para>Provides the capability to implement custom filtering logic before the server-side filtering is executed.</para>
-      </summary>
-    </member>
     <member name="P:DevExpress.Web.Mvc.MVCxComboBoxProperties.EnableCallbackMode">
       <summary>
         <para>This property is not in effect for the <see cref="T:DevExpress.Web.Mvc.MVCxComboBoxProperties"/> class.</para>
@@ -17256,12 +17009,6 @@ An empty string, if no filtering is used.</value>
       <param name="dataSource">An object that is the file manager data source.</param>
       <param name="settingsDataSource">A <see cref="T:DevExpress.Web.FileManagerSettingsDataSource"/> object that contains a file manager&#39;s fieldname settings.</param>
     </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxDataSourceFileSystemProvider.DataHelper">
-      <summary>
-        <para>For internal use only.</para>
-      </summary>
-      <value></value>
-    </member>
     <member name="P:DevExpress.Web.Mvc.MVCxDataSourceFileSystemProvider.DataSource">
       <summary>
         <para>Gets or sets the object from which the <see cref="T:DevExpress.Web.Mvc.MVCxDataSourceFileSystemProvider"/> file system provider obtains the file system information.</para>
@@ -17277,18 +17024,6 @@ An empty string, if no filtering is used.</value>
       <summary>
         <para>Initializes a new instance of the <see cref="T:DevExpress.Web.Mvc.MVCxDataView"/> class with default settings.</para>
       </summary>
-    </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxDataView.CallbackRouteValues">
-      <summary>
-        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.To set up the extension routing logic, use the <see cref="P:DevExpress.Web.Mvc.DataViewSettings.CallbackRouteValues"/> property at the extension settings level.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxDataView.CustomActionRouteValues">
-      <summary>
-        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.To set up the extension routing logic, use the <see cref="P:DevExpress.Web.Mvc.DataViewSettings.CustomActionRouteValues"/> property at the extension settings level.</para>
-      </summary>
-      <value></value>
     </member>
     <member name="P:DevExpress.Web.Mvc.MVCxDataView.Images">
       <summary>
@@ -17345,12 +17080,6 @@ An empty string, if no filtering is used.</value>
       <summary>
         <para>Initializes a new instance of the <see cref="T:DevExpress.Web.Mvc.MVCxDateEdit"/> class with default settings.</para>
       </summary>
-    </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxDateEdit.CallbackRouteValues">
-      <summary>
-        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.To set up the extension routing logic, use the <see cref="P:DevExpress.Web.Mvc.DateEditSettings.CallbackRouteValues"/> property at the extension settings level.</para>
-      </summary>
-      <value></value>
     </member>
     <member name="P:DevExpress.Web.Mvc.MVCxDateEdit.IsCallback">
       <summary>
@@ -17467,12 +17196,6 @@ An empty string, if no filtering is used.</value>
         <para>Initializes a new instance of the <see cref="T:DevExpress.Web.Mvc.MVCxDateEditRangeSettings"/> class with the specified owner.</para>
       </summary>
       <param name="owner">An object that implements the <see cref="T:DevExpress.Web.IPropertiesOwner"/> interface.</param>
-    </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxDateEditRangeSettings.CalendarColumnCount">
-      <summary>
-        <para>This property is not in effect.</para>
-      </summary>
-      <value></value>
     </member>
     <member name="T:DevExpress.Web.Mvc.MVCxDateNavigator">
       <summary>
@@ -17642,12 +17365,6 @@ An empty string, if no filtering is used.</value>
         <para>Initializes a new instance of the <see cref="T:DevExpress.Web.Mvc.MVCxDockManager"/> class with default settings.</para>
       </summary>
     </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxDockManager.CallbackRouteValues">
-      <summary>
-        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.To set up the extension routing logic, use the <see cref="P:DevExpress.Web.Mvc.DockManagerSettings.CallbackRouteValues"/> property at the extension settings level.</para>
-      </summary>
-      <value></value>
-    </member>
     <member name="M:DevExpress.Web.Mvc.MVCxDockManager.FindPanelByUID(System.String)">
       <summary>
         <para>Returns a panel object with the specified <see cref="P:DevExpress.Web.Mvc.DockPanelSettings.PanelUID"/> property value.</para>
@@ -17707,12 +17424,6 @@ An empty string, if no filtering is used.</value>
         <para>Initializes a new instance of the <see cref="T:DevExpress.Web.Mvc.MVCxDockPanel"/> class with default settings.</para>
       </summary>
     </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxDockPanel.CallbackRouteValues">
-      <summary>
-        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.To set up the extension routing logic, use the <see cref="P:DevExpress.Web.Mvc.PopupControlSettingsBase.CallbackRouteValues"/> property at the extension settings level (<see cref="T:DevExpress.Web.Mvc.DockPanelSettings"/>).</para>
-      </summary>
-      <value></value>
-    </member>
     <member name="P:DevExpress.Web.Mvc.MVCxDockPanel.Images">
       <summary>
         <para>This member supports the internal infrastructure and is not intended to be used directly from your code.</para>
@@ -17769,23 +17480,11 @@ An empty string, if no filtering is used.</value>
         <para>Initializes a new instance of the <see cref="T:DevExpress.Web.Mvc.MVCxDocumentViewer"/> class with default settings.</para>
       </summary>
     </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxDocumentViewer.CallbackRouteValues">
-      <summary>
-        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.To set up the extension routing logic, use the <see cref="P:DevExpress.Web.Mvc.DocumentViewerSettings.CallbackRouteValues"/> property at the extension settings level.</para>
-      </summary>
-      <value></value>
-    </member>
     <member name="P:DevExpress.Web.Mvc.MVCxDocumentViewer.ClientSideEvents">
       <summary>
         <para>Provides access to the client-side events specific to the <see cref="T:DevExpress.Web.Mvc.MVCxDocumentViewer"/>.</para>
       </summary>
       <value>An <see cref="T:DevExpress.Web.Mvc.MVCxDocumentViewerClientSideEvents"/> object.</value>
-    </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxDocumentViewer.ExportRouteValues">
-      <summary>
-        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.To set up the extension routing logic, use the <see cref="P:DevExpress.Web.Mvc.DocumentViewerSettings.ExportRouteValues"/> property at the extension settings level.</para>
-      </summary>
-      <value></value>
     </member>
     <member name="P:DevExpress.Web.Mvc.MVCxDocumentViewer.IsCallback">
       <summary>
@@ -18017,24 +17716,6 @@ An empty string, if no filtering is used.</value>
         <para>Initializes a new instance of the <see cref="T:DevExpress.Web.Mvc.MVCxFileManager"/> class with default settings.</para>
       </summary>
     </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxFileManager.CallbackRouteValues">
-      <summary>
-        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.To set up the extension routing logic, use the <see cref="P:DevExpress.Web.Mvc.FileManagerSettings.CallbackRouteValues"/> property at the extension settings level.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxFileManager.CustomActionRouteValues">
-      <summary>
-        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.To set up the extension routing logic, use the <see cref="P:DevExpress.Web.Mvc.FileManagerSettings.CustomActionRouteValues"/> property at the extension settings level.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxFileManager.DownloadRouteValues">
-      <summary>
-        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.To set up the extension routing logic, use the <see cref="P:DevExpress.Web.Mvc.FileManagerSettings.DownloadRouteValues"/> property at the extension settings level.</para>
-      </summary>
-      <value></value>
-    </member>
     <member name="P:DevExpress.Web.Mvc.MVCxFileManager.IsCallback">
       <summary>
         <para>This member supports the internal infrastructure and is not intended to be used directly from your code.</para>
@@ -18220,12 +17901,6 @@ An empty string, if no filtering is used.</value>
       </summary>
       <param name="owner">An object that implements the <see cref="T:DevExpress.Web.IPropertiesOwner"/> interface.</param>
     </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxFileManagerSettings.RootFolder">
-      <summary>
-        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.</para>
-      </summary>
-      <value></value>
-    </member>
     <member name="T:DevExpress.Web.Mvc.MVCxFileManagerSettingsFileList">
       <summary>
         <para>Contains file list settings of the FileManager.</para>
@@ -18282,12 +17957,6 @@ An empty string, if no filtering is used.</value>
       </summary>
       <param name="owner">An object that implements the <see cref="T:DevExpress.Web.IPropertiesOwner"/> interface.</param>
     </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxFileManagerValidationSettings.AllowedFileExtensions">
-      <summary>
-        <para>This member is not in effect for this class. It is overridden only for the purpose of preventing it from appearing in Microsoft Visual Studio designer tools.</para>
-      </summary>
-      <value></value>
-    </member>
     <member name="T:DevExpress.Web.Mvc.MVCxFilterControl">
       <summary>
         <para>The object of this type represents a configured instance of the corresponding extension and is intended to be used mainly as a sender parameter when processing events on the server side.</para>
@@ -18297,12 +17966,6 @@ An empty string, if no filtering is used.</value>
       <summary>
         <para>Initializes a new instance of the <see cref="T:DevExpress.Web.Mvc.MVCxFilterControl"/> class.</para>
       </summary>
-    </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxFilterControl.CallbackRouteValues">
-      <summary>
-        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.To set up the extension routing logic, use the <see cref="P:DevExpress.Web.Mvc.MVCxFilterControlSettings.CallbackRouteValues"/> property at the extension settings level.</para>
-      </summary>
-      <value></value>
     </member>
     <member name="T:DevExpress.Web.Mvc.MVCxFilterControlColumn">
       <summary>
@@ -18344,12 +18007,6 @@ An empty string, if no filtering is used.</value>
         <para>Gets the column editor&#39;s settings.</para>
       </summary>
       <value>A <see cref="T:DevExpress.Web.EditPropertiesBase"/> descendant that contains the column editor&#39;s settings.</value>
-    </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxFilterControlColumn.PropertiesEditType">
-      <summary>
-        <para>For internal use only.</para>
-      </summary>
-      <value></value>
     </member>
     <member name="P:DevExpress.Web.Mvc.MVCxFilterControlColumn.PropertyName">
       <summary>
@@ -18811,12 +18468,6 @@ An empty string, if no filtering is used.</value>
       </summary>
       <value>A <see cref="T:DevExpress.Web.Mvc.MVCxLayoutItemCaptionSettings"/> object containing the layout item caption properties.</value>
     </member>
-    <member name="M:DevExpress.Web.Mvc.MVCxFormLayoutItem.GetNestedControl">
-      <summary>
-        <para>This property is not in effect for the <see cref="T:DevExpress.Web.Mvc.MVCxFormLayoutItem"/> class.</para>
-      </summary>
-      <returns></returns>
-    </member>
     <member name="M:DevExpress.Web.Mvc.MVCxFormLayoutItem.NestedExtension">
       <summary>
         <para>Provides access to helper methods allowing you to render individual DevExpress ASP.NET MVC editors as nested extensions within edit form layout items of grid-like controls.</para>
@@ -18869,34 +18520,12 @@ An empty string, if no filtering is used.</value>
       </summary>
       <returns>A <see cref="T:DevExpress.Web.Mvc.MVCxFormLayoutItem"/> object that is the newly added layout item.</returns>
     </member>
-    <member name="M:DevExpress.Web.Mvc.MVCxFormLayoutItemCollection.Add(DevExpress.Web.LayoutItemBase)">
-      <summary>
-        <para>Adds a specified item to the end of the collection.</para>
-      </summary>
-      <param name="item">A <see cref="T:DevExpress.Web.LayoutItemBase"/> descendant that is an item to be added.</param>
-      <returns>A <see cref="T:DevExpress.Web.LayoutItemBase"/> descendant that is an item to be added.</returns>
-    </member>
     <member name="M:DevExpress.Web.Mvc.MVCxFormLayoutItemCollection.Add(System.Action{DevExpress.Web.Mvc.MVCxFormLayoutItem})">
       <summary>
         <para>Adds a new layout item to the collection and allows you to customize this layout item in a delegate method implementation.</para>
       </summary>
       <param name="method">A delegate method that accepts the created <see cref="T:DevExpress.Web.Mvc.MVCxFormLayoutItem"/> as a parameter.</param>
       <returns>A <see cref="T:DevExpress.Web.Mvc.MVCxFormLayoutItem"/> object that is the newly added layout item.</returns>
-    </member>
-    <member name="M:DevExpress.Web.Mvc.MVCxFormLayoutItemCollection.Add``1(System.String)">
-      <summary>
-        <para>Creates a new layout item with the specified caption and adds it to the collection.</para>
-      </summary>
-      <param name="caption">A <see cref="T:System.String"/> value specifying the item caption. This value is assigned to the <see cref="P:DevExpress.Web.LayoutItemBase.Caption"/> property.</param>
-      <returns>A <see cref="T:DevExpress.Web.LayoutItemBase"/> class descendant that is an item to be added.</returns>
-    </member>
-    <member name="M:DevExpress.Web.Mvc.MVCxFormLayoutItemCollection.Add``1(System.String,System.String)">
-      <summary>
-        <para>Creates a new layout item with the specified settings and adds it to the collection.</para>
-      </summary>
-      <param name="caption">A <see cref="T:System.String"/> value specifying the item caption. This value is assigned to the <see cref="P:DevExpress.Web.LayoutItemBase.Caption"/> property.</param>
-      <param name="name">A <see cref="T:System.String"/> value specifying the item name. This value is assigned to the <see cref="P:DevExpress.Web.LayoutItemBase.Name"/> property.</param>
-      <returns>A <see cref="T:DevExpress.Web.LayoutItemBase"/> class descendant that is an item to be added.</returns>
     </member>
     <member name="M:DevExpress.Web.Mvc.MVCxFormLayoutItemCollection.AddEmptyItem">
       <summary>
@@ -19295,17 +18924,6 @@ An empty string, if no filtering is used.</value>
         <para>Initializes a new instance of the <see cref="T:DevExpress.Web.Mvc.MVCxGridView"/> class with default settings.</para>
       </summary>
     </member>
-    <member name="M:DevExpress.Web.Mvc.MVCxGridView.AddNewRow">
-      <summary>
-        <para>This method is not in effect for the <see cref="T:DevExpress.Web.Mvc.MVCxGridView"/> class.</para>
-      </summary>
-    </member>
-    <member name="M:DevExpress.Web.Mvc.MVCxGridView.DeleteRow(System.Int32)">
-      <summary>
-        <para>This method is not in effect for the <see cref="T:DevExpress.Web.Mvc.MVCxGridView"/> class.</para>
-      </summary>
-      <param name="visibleIndex"></param>
-    </member>
     <member name="M:DevExpress.Web.Mvc.MVCxGridView.GetChildDataRow(System.Int32,System.Int32)">
       <summary>
         <para>Returns a <see cref="T:System.Data.DataRow"/> object that represents the specified row contained in the specified group.</para>
@@ -19466,18 +19084,6 @@ An empty string, if no filtering is used.</value>
         <para>Initializes a new instance of the <see cref="T:DevExpress.Web.Mvc.MVCxGridViewBehaviorSettings"/> class with default settings.</para>
       </summary>
     </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxGridViewBehaviorSettings.ProcessFocusedRowChangedOnServer">
-      <summary>
-        <para>This member is not in effect for this class. It is overridden only for the purpose of preventing it from appearing in Microsoft Visual Studio designer tools.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxGridViewBehaviorSettings.ProcessSelectionChangedOnServer">
-      <summary>
-        <para>This member is not in effect for this class. It is overridden only for the purpose of preventing it from appearing in Microsoft Visual Studio designer tools.</para>
-      </summary>
-      <value></value>
-    </member>
     <member name="T:DevExpress.Web.Mvc.MVCxGridViewColumn">
       <summary>
         <para>Represents a column within the GridView.</para>
@@ -19539,18 +19145,6 @@ An empty string, if no filtering is used.</value>
         <para>Allows you to configure GridView columns of different types.</para>
       </summary>
       <returns>A <see cref="T:DevExpress.Web.Mvc.GridColumnEditorPropertiesFactory"/> object that provides methods allowing you to configure different column types.</returns>
-    </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxGridViewColumn.FilterExpression">
-      <summary>
-        <para>This member is not in effect for this class. It is overridden only for the purpose of preventing it from appearing in Microsoft Visual Studio designer tools.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxGridViewColumn.Grid">
-      <summary>
-        <para>Gets the GridView that owns the current column.</para>
-      </summary>
-      <value>An <see cref="T:DevExpress.Web.Mvc.MVCxGridView"/> object that owns the current column.</value>
     </member>
     <member name="M:DevExpress.Web.Mvc.MVCxGridViewColumn.SetDataItemTemplateContent(System.Action{DevExpress.Web.GridViewDataItemTemplateContainer})">
       <summary>
@@ -19635,12 +19229,6 @@ An empty string, if no filtering is used.</value>
         <para>Allows setting a template for displaying the content of the column&#39;s header.</para>
       </summary>
       <param name="content">A string value specifying the template content.</param>
-    </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxGridViewColumn.ShowInFilterControl">
-      <summary>
-        <para>This member is not in effect for this class. It is overridden only for the purpose of preventing it from appearing in Microsoft Visual Studio designer tools.</para>
-      </summary>
-      <value></value>
     </member>
     <member name="T:DevExpress.Web.Mvc.MVCxGridViewColumn`1">
       <summary>
@@ -19839,12 +19427,6 @@ An empty string, if no filtering is used.</value>
         <para>Copies the settings from the specified object to the current one.</para>
       </summary>
       <param name="source">A <see cref="T:DevExpress.Web.CollectionItem"/> object whose settings are assigned to the current object.</param>
-    </member>
-    <member name="M:DevExpress.Web.Mvc.MVCxGridViewColumnLayoutItem.GetNestedControl">
-      <summary>
-        <para>Returns a nested control contained within the current layout item.</para>
-      </summary>
-      <returns>An object that is the nested control within the current layout item.</returns>
     </member>
     <member name="M:DevExpress.Web.Mvc.MVCxGridViewColumnLayoutItem.SetTemplateContent(System.Action{DevExpress.Web.GridViewEditFormLayoutItemTemplateContainer})">
       <summary>
@@ -20391,12 +19973,6 @@ An empty string, if no filtering is used.</value>
       </summary>
       <value>An <see cref="T:DevExpress.Web.Mvc.MVCxGridViewLayoutItemCollection"/> object that is a collection of layout items.</value>
     </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxGridViewFormLayoutProperties.NestedControlWidth">
-      <summary>
-        <para>This property is not in effect for the <see cref="T:DevExpress.Web.Mvc.MVCxGridViewFormLayoutProperties"/> class.</para>
-      </summary>
-      <value></value>
-    </member>
     <member name="P:DevExpress.Web.Mvc.MVCxGridViewFormLayoutProperties.NestedExtensionWidth">
       <summary>
         <para>Gets or sets the width of editors contained in the form layout.</para>
@@ -20755,12 +20331,6 @@ An empty string, if no filtering is used.</value>
       </summary>
       <value>A <see cref="T:DevExpress.Web.ASPxGridViewColumnDataEventHandler"/> delegate method allowing you to implement custom processing.</value>
     </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxGridViewProperties.DataSourceForceStandardPaging">
-      <summary>
-        <para>This property is not in effect for the <see cref="T:DevExpress.Web.Mvc.MVCxGridViewProperties"/> class.</para>
-      </summary>
-      <value></value>
-    </member>
     <member name="P:DevExpress.Web.Mvc.MVCxGridViewProperties.EditFormLayoutProperties">
       <summary>
         <para>Manipulates the built-in ASPxGridView&#39;s <see cref="P:DevExpress.Web.ASPxGridView.EditFormLayoutProperties"/> property.</para>
@@ -20778,12 +20348,6 @@ An empty string, if no filtering is used.</value>
         <para>Manipulates the built-in GridView&#39;s <see cref="P:DevExpress.Web.Mvc.GridSettingsBase.EnableCallbackCompression"/> property.</para>
       </summary>
       <value>true, to enable callback compression; otherwise, false.</value>
-    </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxGridViewProperties.EnableCallBacks">
-      <summary>
-        <para>This property is not in effect for the <see cref="T:DevExpress.Web.Mvc.MVCxGridViewProperties"/> class.</para>
-      </summary>
-      <value></value>
     </member>
     <member name="P:DevExpress.Web.Mvc.MVCxGridViewProperties.EnablePagingCallbackAnimation">
       <summary>
@@ -21139,12 +20703,6 @@ An empty string, if no filtering is used.</value>
       </summary>
       <value>A <see cref="T:DevExpress.Web.ASPxGridViewCookiesSettings"/> object that contains the extension&#39;s cookie settings.</value>
     </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxGridViewProperties.SettingsCustomizationWindow">
-      <summary>
-        <para>This property is not in effect for the <see cref="T:DevExpress.Web.Mvc.MVCxGridViewProperties"/> class.</para>
-      </summary>
-      <value></value>
-    </member>
     <member name="P:DevExpress.Web.Mvc.MVCxGridViewProperties.SettingsDataSecurity">
       <summary>
         <para>Manipulates the built-in GridView&#39;s <see cref="P:DevExpress.Web.Mvc.GridViewSettings.SettingsDataSecurity"/> property.</para>
@@ -21244,12 +20802,6 @@ An empty string, if no filtering is used.</value>
       <summary>
         <para>Initializes a new instance of the <see cref="T:DevExpress.Web.Mvc.MVCxGridViewSearchPanelSettings"/> class with default settings.</para>
       </summary>
-    </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxGridViewSearchPanelSettings.CustomEditorID">
-      <summary>
-        <para>This property is not in effect for the <see cref="T:DevExpress.Web.Mvc.MVCxGridViewSearchPanelSettings"/> class.</para>
-      </summary>
-      <value></value>
     </member>
     <member name="P:DevExpress.Web.Mvc.MVCxGridViewSearchPanelSettings.CustomEditorName">
       <summary>
@@ -21500,18 +21052,6 @@ An empty string, if no filtering is used.</value>
         <para>Initializes a new instance of the <see cref="T:DevExpress.Web.Mvc.MVCxHtmlEditor"/> class with default settings.</para>
       </summary>
     </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxHtmlEditor.CallbackRouteValues">
-      <summary>
-        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.To set up the extension routing logic, use the <see cref="P:DevExpress.Web.Mvc.HtmlEditorSettings.CallbackRouteValues"/> property at the extension settings level.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxHtmlEditor.CustomDataActionRouteValues">
-      <summary>
-        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.To set up the extension routing logic, use the <see cref="P:DevExpress.Web.Mvc.HtmlEditorSettings.CustomDataActionRouteValues"/> property at the extension settings level.</para>
-      </summary>
-      <value></value>
-    </member>
     <member name="E:DevExpress.Web.Mvc.MVCxHtmlEditor.DocumentSelectorFileUploading">
       <summary>
         <para>This property is not in effect for the <see cref="T:DevExpress.Web.Mvc.MVCxHtmlEditor"/> class.</para>
@@ -21536,12 +21076,6 @@ An empty string, if no filtering is used.</value>
       <summary>
         <para>This property is not in effect for the <see cref="T:DevExpress.Web.Mvc.MVCxHtmlEditor"/> class.</para>
       </summary>
-    </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxHtmlEditor.ExportRouteValues">
-      <summary>
-        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.To set up the extension routing logic, use the <see cref="P:DevExpress.Web.Mvc.HtmlEditorSettings.ExportRouteValues"/> property at the extension settings level.</para>
-      </summary>
-      <value></value>
     </member>
     <member name="P:DevExpress.Web.Mvc.MVCxHtmlEditor.Images">
       <summary>
@@ -21585,240 +21119,6 @@ An empty string, if no filtering is used.</value>
         <para>This member supports the internal infrastructure and is not intended to be used directly from your code.</para>
       </summary>
       <returns></returns>
-    </member>
-    <member name="M:DevExpress.Web.Mvc.MVCxHtmlEditor.RaiseAudioFileSaving(DevExpress.Web.FileSavingEventArgs)">
-      <summary>
-        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.</para>
-      </summary>
-      <param name="args"></param>
-    </member>
-    <member name="M:DevExpress.Web.Mvc.MVCxHtmlEditor.RaiseAudioSelectorCustomThumbnail(DevExpress.Web.FileManagerThumbnailCreateEventArgs)">
-      <summary>
-        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.</para>
-      </summary>
-      <param name="args"></param>
-    </member>
-    <member name="M:DevExpress.Web.Mvc.MVCxHtmlEditor.RaiseAudioSelectorFileUploading(DevExpress.Web.FileManagerFileUploadEventArgs)">
-      <summary>
-        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.</para>
-      </summary>
-      <param name="args"></param>
-    </member>
-    <member name="M:DevExpress.Web.Mvc.MVCxHtmlEditor.RaiseAudioSelectorFolderCreating(DevExpress.Web.FileManagerFolderCreateEventArgs)">
-      <summary>
-        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.</para>
-      </summary>
-      <param name="args"></param>
-    </member>
-    <member name="M:DevExpress.Web.Mvc.MVCxHtmlEditor.RaiseAudioSelectorItemCopying(DevExpress.Web.FileManagerItemCopyEventArgs)">
-      <summary>
-        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.</para>
-      </summary>
-      <param name="args"></param>
-    </member>
-    <member name="M:DevExpress.Web.Mvc.MVCxHtmlEditor.RaiseAudioSelectorItemDeleting(DevExpress.Web.FileManagerItemDeleteEventArgs)">
-      <summary>
-        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.</para>
-      </summary>
-      <param name="args"></param>
-    </member>
-    <member name="M:DevExpress.Web.Mvc.MVCxHtmlEditor.RaiseAudioSelectorItemMoving(DevExpress.Web.FileManagerItemMoveEventArgs)">
-      <summary>
-        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.</para>
-      </summary>
-      <param name="args"></param>
-    </member>
-    <member name="M:DevExpress.Web.Mvc.MVCxHtmlEditor.RaiseAudioSelectorItemRenaming(DevExpress.Web.FileManagerItemRenameEventArgs)">
-      <summary>
-        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.</para>
-      </summary>
-      <param name="args"></param>
-    </member>
-    <member name="M:DevExpress.Web.Mvc.MVCxHtmlEditor.RaiseDocumentSelectorCustomThumbnail(DevExpress.Web.FileManagerThumbnailCreateEventArgs)">
-      <summary>
-        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.</para>
-      </summary>
-      <param name="args"></param>
-    </member>
-    <member name="M:DevExpress.Web.Mvc.MVCxHtmlEditor.RaiseDocumentSelectorFileUploading(DevExpress.Web.FileManagerFileUploadEventArgs)">
-      <summary>
-        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.</para>
-      </summary>
-      <param name="args"></param>
-    </member>
-    <member name="M:DevExpress.Web.Mvc.MVCxHtmlEditor.RaiseDocumentSelectorFolderCreating(DevExpress.Web.FileManagerFolderCreateEventArgs)">
-      <summary>
-        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.</para>
-      </summary>
-      <param name="args"></param>
-    </member>
-    <member name="M:DevExpress.Web.Mvc.MVCxHtmlEditor.RaiseDocumentSelectorItemCopying(DevExpress.Web.FileManagerItemCopyEventArgs)">
-      <summary>
-        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.</para>
-      </summary>
-      <param name="args"></param>
-    </member>
-    <member name="M:DevExpress.Web.Mvc.MVCxHtmlEditor.RaiseDocumentSelectorItemDeleting(DevExpress.Web.FileManagerItemDeleteEventArgs)">
-      <summary>
-        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.</para>
-      </summary>
-      <param name="args"></param>
-    </member>
-    <member name="M:DevExpress.Web.Mvc.MVCxHtmlEditor.RaiseDocumentSelectorItemMoving(DevExpress.Web.FileManagerItemMoveEventArgs)">
-      <summary>
-        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.</para>
-      </summary>
-      <param name="args"></param>
-    </member>
-    <member name="M:DevExpress.Web.Mvc.MVCxHtmlEditor.RaiseDocumentSelectorItemRenaming(DevExpress.Web.FileManagerItemRenameEventArgs)">
-      <summary>
-        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.</para>
-      </summary>
-      <param name="args"></param>
-    </member>
-    <member name="M:DevExpress.Web.Mvc.MVCxHtmlEditor.RaiseFlashFileSaving(DevExpress.Web.FileSavingEventArgs)">
-      <summary>
-        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.</para>
-      </summary>
-      <param name="args"></param>
-    </member>
-    <member name="M:DevExpress.Web.Mvc.MVCxHtmlEditor.RaiseFlashSelectorCustomThumbnail(DevExpress.Web.FileManagerThumbnailCreateEventArgs)">
-      <summary>
-        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.</para>
-      </summary>
-      <param name="args"></param>
-    </member>
-    <member name="M:DevExpress.Web.Mvc.MVCxHtmlEditor.RaiseFlashSelectorFileUploading(DevExpress.Web.FileManagerFileUploadEventArgs)">
-      <summary>
-        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.</para>
-      </summary>
-      <param name="args"></param>
-    </member>
-    <member name="M:DevExpress.Web.Mvc.MVCxHtmlEditor.RaiseFlashSelectorFolderCreating(DevExpress.Web.FileManagerFolderCreateEventArgs)">
-      <summary>
-        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.</para>
-      </summary>
-      <param name="args"></param>
-    </member>
-    <member name="M:DevExpress.Web.Mvc.MVCxHtmlEditor.RaiseFlashSelectorItemCopying(DevExpress.Web.FileManagerItemCopyEventArgs)">
-      <summary>
-        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.</para>
-      </summary>
-      <param name="args"></param>
-    </member>
-    <member name="M:DevExpress.Web.Mvc.MVCxHtmlEditor.RaiseFlashSelectorItemDeleting(DevExpress.Web.FileManagerItemDeleteEventArgs)">
-      <summary>
-        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.</para>
-      </summary>
-      <param name="args"></param>
-    </member>
-    <member name="M:DevExpress.Web.Mvc.MVCxHtmlEditor.RaiseFlashSelectorItemMoving(DevExpress.Web.FileManagerItemMoveEventArgs)">
-      <summary>
-        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.</para>
-      </summary>
-      <param name="args"></param>
-    </member>
-    <member name="M:DevExpress.Web.Mvc.MVCxHtmlEditor.RaiseFlashSelectorItemRenaming(DevExpress.Web.FileManagerItemRenameEventArgs)">
-      <summary>
-        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.</para>
-      </summary>
-      <param name="args"></param>
-    </member>
-    <member name="M:DevExpress.Web.Mvc.MVCxHtmlEditor.RaiseImageFileSaving(DevExpress.Web.FileSavingEventArgs)">
-      <summary>
-        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.</para>
-      </summary>
-      <param name="args"></param>
-    </member>
-    <member name="M:DevExpress.Web.Mvc.MVCxHtmlEditor.RaiseImageSelectorCustomThumbnail(DevExpress.Web.FileManagerThumbnailCreateEventArgs)">
-      <summary>
-        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.</para>
-      </summary>
-      <param name="args"></param>
-    </member>
-    <member name="M:DevExpress.Web.Mvc.MVCxHtmlEditor.RaiseImageSelectorFileUploading(DevExpress.Web.FileManagerFileUploadEventArgs)">
-      <summary>
-        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.</para>
-      </summary>
-      <param name="args"></param>
-    </member>
-    <member name="M:DevExpress.Web.Mvc.MVCxHtmlEditor.RaiseImageSelectorFolderCreating(DevExpress.Web.FileManagerFolderCreateEventArgs)">
-      <summary>
-        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.</para>
-      </summary>
-      <param name="args"></param>
-    </member>
-    <member name="M:DevExpress.Web.Mvc.MVCxHtmlEditor.RaiseImageSelectorItemCopying(DevExpress.Web.FileManagerItemCopyEventArgs)">
-      <summary>
-        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.</para>
-      </summary>
-      <param name="args"></param>
-    </member>
-    <member name="M:DevExpress.Web.Mvc.MVCxHtmlEditor.RaiseImageSelectorItemDeleting(DevExpress.Web.FileManagerItemDeleteEventArgs)">
-      <summary>
-        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.</para>
-      </summary>
-      <param name="args"></param>
-    </member>
-    <member name="M:DevExpress.Web.Mvc.MVCxHtmlEditor.RaiseImageSelectorItemMoving(DevExpress.Web.FileManagerItemMoveEventArgs)">
-      <summary>
-        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.</para>
-      </summary>
-      <param name="args"></param>
-    </member>
-    <member name="M:DevExpress.Web.Mvc.MVCxHtmlEditor.RaiseImageSelectorItemRenaming(DevExpress.Web.FileManagerItemRenameEventArgs)">
-      <summary>
-        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.</para>
-      </summary>
-      <param name="args"></param>
-    </member>
-    <member name="M:DevExpress.Web.Mvc.MVCxHtmlEditor.RaiseVideoFileSaving(DevExpress.Web.FileSavingEventArgs)">
-      <summary>
-        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.</para>
-      </summary>
-      <param name="args"></param>
-    </member>
-    <member name="M:DevExpress.Web.Mvc.MVCxHtmlEditor.RaiseVideoSelectorCustomThumbnail(DevExpress.Web.FileManagerThumbnailCreateEventArgs)">
-      <summary>
-        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.</para>
-      </summary>
-      <param name="args"></param>
-    </member>
-    <member name="M:DevExpress.Web.Mvc.MVCxHtmlEditor.RaiseVideoSelectorFileUploading(DevExpress.Web.FileManagerFileUploadEventArgs)">
-      <summary>
-        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.</para>
-      </summary>
-      <param name="args"></param>
-    </member>
-    <member name="M:DevExpress.Web.Mvc.MVCxHtmlEditor.RaiseVideoSelectorFolderCreating(DevExpress.Web.FileManagerFolderCreateEventArgs)">
-      <summary>
-        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.</para>
-      </summary>
-      <param name="args"></param>
-    </member>
-    <member name="M:DevExpress.Web.Mvc.MVCxHtmlEditor.RaiseVideoSelectorItemCopying(DevExpress.Web.FileManagerItemCopyEventArgs)">
-      <summary>
-        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.</para>
-      </summary>
-      <param name="args"></param>
-    </member>
-    <member name="M:DevExpress.Web.Mvc.MVCxHtmlEditor.RaiseVideoSelectorItemDeleting(DevExpress.Web.FileManagerItemDeleteEventArgs)">
-      <summary>
-        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.</para>
-      </summary>
-      <param name="args"></param>
-    </member>
-    <member name="M:DevExpress.Web.Mvc.MVCxHtmlEditor.RaiseVideoSelectorItemMoving(DevExpress.Web.FileManagerItemMoveEventArgs)">
-      <summary>
-        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.</para>
-      </summary>
-      <param name="args"></param>
-    </member>
-    <member name="M:DevExpress.Web.Mvc.MVCxHtmlEditor.RaiseVideoSelectorItemRenaming(DevExpress.Web.FileManagerItemRenameEventArgs)">
-      <summary>
-        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.</para>
-      </summary>
-      <param name="args"></param>
     </member>
     <member name="P:DevExpress.Web.Mvc.MVCxHtmlEditor.SettingsAudioSelector">
       <summary>
@@ -22079,12 +21379,6 @@ An empty string, if no filtering is used.</value>
         <para>Gets or sets the name of an action method invoking a view (user control) that defines a dialog&#39;s form.</para>
       </summary>
       <value>A string specifying the action name.</value>
-    </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxHtmlEditorCustomDialog.FormPath">
-      <summary>
-        <para>This member is not in effect for this class. It is overridden only for the purpose of preventing it from appearing in Microsoft Visual Studio designer tools. Use the <see cref="P:DevExpress.Web.Mvc.MVCxHtmlEditorCustomDialog.FormAction"/> property instead.</para>
-      </summary>
-      <value></value>
     </member>
     <member name="T:DevExpress.Web.Mvc.MVCxHtmlEditorCustomDialogs">
       <summary>
@@ -23831,18 +23125,6 @@ An empty string, if no filtering is used.</value>
       </summary>
       <param name="viewContext">A <see cref="T:System.Web.Mvc.ViewContext"/> object that encapsulates information related to rendering a view.</param>
     </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxImageGallery.CallbackRouteValues">
-      <summary>
-        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.To set up the extension routing logic, use the <see cref="P:DevExpress.Web.Mvc.ImageGallerySettings.CallbackRouteValues"/> property at the extension settings level.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxImageGallery.CustomActionRouteValues">
-      <summary>
-        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.To set up the extension routing logic, use the <see cref="P:DevExpress.Web.Mvc.ImageGallerySettings.CustomActionRouteValues"/> property at the extension settings level.</para>
-      </summary>
-      <value></value>
-    </member>
     <member name="P:DevExpress.Web.Mvc.MVCxImageGallery.IsCallback">
       <summary>
         <para>This member supports the internal infrastructure and is not intended to be used directly from your code.</para>
@@ -24063,12 +23345,6 @@ An empty string, if no filtering is used.</value>
         <para>Initializes a new instance of the <see cref="T:DevExpress.Web.Mvc.MVCxImageSlider"/> class with default settings.</para>
       </summary>
     </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxImageSlider.CallbackRouteValues">
-      <summary>
-        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.To set up the extension routing logic, use the <see cref="P:DevExpress.Web.Mvc.ImageSliderSettings.CallbackRouteValues"/> property at the extension settings level.</para>
-      </summary>
-      <value></value>
-    </member>
     <member name="M:DevExpress.Web.Mvc.MVCxImageSlider.IsLoading">
       <summary>
         <para>This member supports the internal infrastructure and is not intended to be used directly from your code.</para>
@@ -24261,12 +23537,6 @@ An empty string, if no filtering is used.</value>
         <para>Initializes a new instance of the <see cref="T:DevExpress.Web.Mvc.MVCxImageZoomNavigator"/> class with default settings.</para>
       </summary>
     </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxImageZoomNavigator.CallbackRouteValues">
-      <summary>
-        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.To set up the extension routing logic, use the <see cref="P:DevExpress.Web.Mvc.ImageZoomNavigatorSettings.CallbackRouteValues"/> property at the extension settings level.</para>
-      </summary>
-      <value></value>
-    </member>
     <member name="M:DevExpress.Web.Mvc.MVCxImageZoomNavigator.IsLoading">
       <summary>
         <para>This member supports the internal infrastructure and is not intended to be used directly from your code.</para>
@@ -24316,19 +23586,7 @@ An empty string, if no filtering is used.</value>
         <para>Initializes a new instance of the <see cref="T:DevExpress.Web.Mvc.MVCxLabelProperties"/> class with default settings.</para>
       </summary>
     </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxLabelProperties.DisplayFormatString">
-      <summary>
-        <para>This property is not in effect for the <see cref="T:DevExpress.Web.Mvc.MVCxLabelProperties"/> class.</para>
-      </summary>
-      <value></value>
-    </member>
     <member name="P:DevExpress.Web.Mvc.MVCxLabelProperties.EncodeHtml">
-      <summary>
-        <para>This property is not in effect for the <see cref="T:DevExpress.Web.Mvc.MVCxLabelProperties"/> class.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxLabelProperties.NullDisplayText">
       <summary>
         <para>This property is not in effect for the <see cref="T:DevExpress.Web.Mvc.MVCxLabelProperties"/> class.</para>
       </summary>
@@ -24377,12 +23635,6 @@ An empty string, if no filtering is used.</value>
       <summary>
         <para>Initializes a new instance of the <see cref="T:DevExpress.Web.Mvc.MVCxListBox"/> class with default settings.</para>
       </summary>
-    </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxListBox.CallbackRouteValues">
-      <summary>
-        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.To set up the extension routing logic, use the <see cref="P:DevExpress.Web.Mvc.ListBoxSettings.CallbackRouteValues"/> property at the extension settings level.</para>
-      </summary>
-      <value></value>
     </member>
     <member name="P:DevExpress.Web.Mvc.MVCxListBox.IsCallback">
       <summary>
@@ -24584,12 +23836,6 @@ An empty string, if no filtering is used.</value>
       </summary>
       <value></value>
     </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxListBoxProperties.NullDisplayText">
-      <summary>
-        <para>This property is not in effect for the <see cref="T:DevExpress.Web.Mvc.MVCxListBoxProperties"/> class.</para>
-      </summary>
-      <value></value>
-    </member>
     <member name="P:DevExpress.Web.Mvc.MVCxListBoxProperties.RootStyle">
       <summary>
         <para>Gets the style settings defining the appearance of an editor container.</para>
@@ -24754,12 +24000,6 @@ An empty string, if no filtering is used.</value>
       <summary>
         <para>Initializes a new instance of the <see cref="T:DevExpress.Web.Mvc.MVCxMenu"/> class with default settings.</para>
       </summary>
-    </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxMenu.CallbackRouteValues">
-      <summary>
-        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.To set up the extension routing logic, use the <see cref="P:DevExpress.Web.Mvc.MenuSettings.CallbackRouteValues"/> property at the extension settings level.</para>
-      </summary>
-      <value></value>
     </member>
     <member name="P:DevExpress.Web.Mvc.MVCxMenu.Images">
       <summary>
@@ -25013,12 +24253,6 @@ An empty string, if no filtering is used.</value>
       <summary>
         <para>Initializes a new instance of the <see cref="T:DevExpress.Web.Mvc.MVCxNavBar"/> class with default settings.</para>
       </summary>
-    </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxNavBar.CallbackRouteValues">
-      <summary>
-        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.To set up the extension routing logic, use the <see cref="P:DevExpress.Web.Mvc.NavBarSettings.CallbackRouteValues"/> property at the extension settings level.</para>
-      </summary>
-      <value></value>
     </member>
     <member name="P:DevExpress.Web.Mvc.MVCxNavBar.Images">
       <summary>
@@ -25492,12 +24726,6 @@ An empty string, if no filtering is used.</value>
         <para>Initializes a new instance of the <see cref="T:DevExpress.Web.Mvc.MVCxPageControl"/> class with default settings.</para>
       </summary>
     </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxPageControl.CallbackRouteValues">
-      <summary>
-        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.To set up the extension routing logic, use the <see cref="P:DevExpress.Web.Mvc.PageControlSettings.CallbackRouteValues"/> property at the extension settings level.</para>
-      </summary>
-      <value></value>
-    </member>
     <member name="P:DevExpress.Web.Mvc.MVCxPageControl.Images">
       <summary>
         <para>This member supports the internal infrastructure and is not intended to be used directly from your code.</para>
@@ -25547,18 +24775,6 @@ An empty string, if no filtering is used.</value>
       <summary>
         <para>Initializes a new instance of the <see cref="T:DevExpress.Web.Mvc.MVCxPivotGrid"/> class with default settings.</para>
       </summary>
-    </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxPivotGrid.CallbackRouteValues">
-      <summary>
-        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.To set up the extension routing logic, use the <see cref="P:DevExpress.Web.Mvc.PivotGridSettings.CallbackRouteValues"/> property at the extension settings level.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxPivotGrid.CustomActionRouteValues">
-      <summary>
-        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.To set up the extension routing logic, use the <see cref="P:DevExpress.Web.Mvc.PivotGridSettings.CustomActionRouteValues"/> property at the extension settings level.</para>
-      </summary>
-      <value></value>
     </member>
     <member name="P:DevExpress.Web.Mvc.MVCxPivotGrid.Fields">
       <summary>
@@ -25683,36 +24899,6 @@ An empty string, if no filtering is used.</value>
       <param name="fieldName">A <see cref="T:System.String"/> that identifies the name of the database field. This value is assigned to the <see cref="P:DevExpress.Web.ASPxPivotGrid.PivotGridField.FieldName"/> property.</param>
       <param name="area">A <see cref="T:DevExpress.XtraPivotGrid.PivotArea"/> value that defines the location for the <see cref="T:DevExpress.Web.Mvc.MVCxPivotGridField"/> object within the control. This value is assigned to the <see cref="P:DevExpress.XtraPivotGrid.PivotGridFieldBase.Area"/> property.</param>
     </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxPivotGridField.Data">
-      <summary>
-        <para>For internal use.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxPivotGridField.Group">
-      <summary>
-        <para>For internal use.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxPivotGridField.IsDesignTime">
-      <summary>
-        <para>For internal use.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxPivotGridField.IsLoading">
-      <summary>
-        <para>For internal use.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxPivotGridField.SelectedAtDesignTime">
-      <summary>
-        <para>For internal use.</para>
-      </summary>
-      <value></value>
-    </member>
     <member name="M:DevExpress.Web.Mvc.MVCxPivotGridField.SetHeaderTemplateContent(System.Action{DevExpress.Web.ASPxPivotGrid.PivotGridHeaderTemplateContainer})">
       <summary>
         <para>Allows setting a template for displaying the field header.</para>
@@ -25767,12 +24953,6 @@ An empty string, if no filtering is used.</value>
       <param name="area">A <see cref="T:DevExpress.XtraPivotGrid.PivotArea"/> value that identifies the area in which the new <see cref="T:DevExpress.Web.Mvc.MVCxPivotGridField"/> object will be positioned.</param>
       <returns>The <see cref="T:DevExpress.Web.Mvc.MVCxPivotGridField"/> object that has been added to the collection.</returns>
     </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxPivotGridFieldCollection.Data">
-      <summary>
-        <para>For internal use.</para>
-      </summary>
-      <value></value>
-    </member>
     <member name="T:DevExpress.Web.Mvc.MVCxPivotGridWebGroup">
       <summary>
         <para>A group of fields.</para>
@@ -25782,12 +24962,6 @@ An empty string, if no filtering is used.</value>
       <summary>
         <para>Initializes a new instance of the <see cref="T:DevExpress.Web.Mvc.MVCxPivotGridWebGroup"/> class with default settings.</para>
       </summary>
-    </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxPivotGridWebGroup.IsFilterAllowed">
-      <summary>
-        <para>For internal use.</para>
-      </summary>
-      <value></value>
     </member>
     <member name="T:DevExpress.Web.Mvc.MVCxPivotGridWebGroupCollection">
       <summary>
@@ -25959,12 +25133,6 @@ An empty string, if no filtering is used.</value>
         <para>The object of this type represents a configured instance of the corresponding extension and is intended to be used mainly as a sender parameter when processing events on the server side.</para>
       </summary>
     </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxPopupControl.CallbackRouteValues">
-      <summary>
-        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.To set up the extension routing logic, use the <see cref="P:DevExpress.Web.Mvc.PopupControlSettingsBase.CallbackRouteValues"/> property at the extension settings level (<see cref="T:DevExpress.Web.Mvc.PopupControlSettings"/>).</para>
-      </summary>
-      <value></value>
-    </member>
     <member name="P:DevExpress.Web.Mvc.MVCxPopupControl.Images">
       <summary>
         <para>This member supports the internal infrastructure and is not intended to be used directly from your code.</para>
@@ -25998,12 +25166,6 @@ An empty string, if no filtering is used.</value>
       <summary>
         <para>Initializes a new instance of the <see cref="T:DevExpress.Web.Mvc.MVCxPopupMenu"/> class with default settings.</para>
       </summary>
-    </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxPopupMenu.CallbackRouteValues">
-      <summary>
-        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.To set up the extension routing logic, use the <see cref="P:DevExpress.Web.Mvc.PopupMenuSettings.CallbackRouteValues"/> property at the extension settings level.</para>
-      </summary>
-      <value></value>
     </member>
     <member name="P:DevExpress.Web.Mvc.MVCxPopupMenu.Images">
       <summary>
@@ -26068,12 +25230,6 @@ An empty string, if no filtering is used.</value>
       <param name="name">A <see cref="T:System.String"/> value specifying the name which indentifies the created popup window. This value is assigned to the <see cref="P:DevExpress.Web.PopupWindow.Name"/> property.</param>
       <param name="headerText">A <see cref="T:System.String"/> value specifying the popup window&#39;s header text. This value is assigned to the <see cref="P:DevExpress.Web.PopupWindow.HeaderText"/> property.</param>
       <param name="footerText">A <see cref="T:System.String"/> value specifying the popup window&#39;s footer text. This value is assigned to the <see cref="P:DevExpress.Web.PopupWindow.FooterText"/> property.</param>
-    </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxPopupWindow.Controls">
-      <summary>
-        <para>This member is not in effect for this class. It is overridden only for the purpose of preventing it from appearing in Microsoft Visual Studio designer tools.</para>
-      </summary>
-      <value></value>
     </member>
     <member name="M:DevExpress.Web.Mvc.MVCxPopupWindow.SetContent(System.Action)">
       <summary>
@@ -26340,12 +25496,6 @@ An empty string, if no filtering is used.</value>
         <para>Initializes a new instance of the <see cref="T:DevExpress.Web.Mvc.MVCxQueryBuilder"/> class with default settings.</para>
       </summary>
     </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxQueryBuilder.SaveCallbackRouteValues">
-      <summary>
-        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.Use the <see cref="P:DevExpress.Web.Mvc.QueryBuilderSettings.SaveCallbackRouteValues"/> property at the extension settings level to set up the extension routing logic.</para>
-      </summary>
-      <value>An object containing the Controller and Action names.</value>
-    </member>
     <member name="T:DevExpress.Web.Mvc.MVCxQueryBuilderClientSideEvents">
       <summary>
         <para>Provides additional client-side events to an <see cref="T:DevExpress.Web.Mvc.MVCxQueryBuilder"/>.</para>
@@ -26498,42 +25648,6 @@ An empty string, if no filtering is used.</value>
         <para>Contains RadioButton specific properties.</para>
       </summary>
     </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxRadioButtonProperties.AllowGrayed">
-      <summary>
-        <para>For internal use only.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxRadioButtonProperties.AllowGrayedByClick">
-      <summary>
-        <para>For internal use only.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxRadioButtonProperties.Caption">
-      <summary>
-        <para>For internal use only.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxRadioButtonProperties.CaptionCellStyle">
-      <summary>
-        <para>Gets the style settings that define the caption cell appearance.</para>
-      </summary>
-      <value>An <see cref="T:DevExpress.Web.EditorCaptionCellStyle"/> object that contains the style settings.</value>
-    </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxRadioButtonProperties.CaptionSettings">
-      <summary>
-        <para>Provides access to the editor caption settings.</para>
-      </summary>
-      <value>A <see cref="T:DevExpress.Web.EditorCaptionSettings"/> object containing the editor caption properties.</value>
-    </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxRadioButtonProperties.CaptionStyle">
-      <summary>
-        <para>Gets the style settings that define the caption appearance.</para>
-      </summary>
-      <value>An <see cref="T:DevExpress.Web.EditorCaptionStyle"/> object that contains the style settings.</value>
-    </member>
     <member name="P:DevExpress.Web.Mvc.MVCxRadioButtonProperties.EncodeHtml">
       <summary>
         <para>This property is not in effect for the <see cref="T:DevExpress.Web.Mvc.MVCxRadioButtonProperties"/> class.</para>
@@ -26558,30 +25672,6 @@ An empty string, if no filtering is used.</value>
       </summary>
       <value>A <see cref="T:DevExpress.Web.Mvc.MVCxValidationSettings"/> object that contains validation settings.</value>
     </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxRadioButtonProperties.ValueChecked">
-      <summary>
-        <para>For internal use only.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxRadioButtonProperties.ValueGrayed">
-      <summary>
-        <para>For internal use only.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxRadioButtonProperties.ValueType">
-      <summary>
-        <para>For internal use only.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxRadioButtonProperties.ValueUnchecked">
-      <summary>
-        <para>For internal use only.</para>
-      </summary>
-      <value></value>
-    </member>
     <member name="T:DevExpress.Web.Mvc.MVCxRatingControl">
       <summary>
         <para>The object of this type represents a configured instance of the corresponding extension and is intended to be used mainly as a sender parameter when processing events on the server side.</para>
@@ -26601,12 +25691,6 @@ An empty string, if no filtering is used.</value>
       <summary>
         <para>Initializes a new instance of the <see cref="T:DevExpress.Web.Mvc.MVCxReportDesigner"/> class with default settings.</para>
       </summary>
-    </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxReportDesigner.SaveCallbackRouteValues">
-      <summary>
-        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.To set up the extension routing logic, use the <see cref="P:DevExpress.Web.Mvc.ReportDesignerSettings.SaveCallbackRouteValues"/> property at the extension settings level.</para>
-      </summary>
-      <value>An object containing the Controller and Action names.</value>
     </member>
     <member name="T:DevExpress.Web.Mvc.MVCxReportDesignerClientSideEvents">
       <summary>
@@ -26643,18 +25727,6 @@ An empty string, if no filtering is used.</value>
       <summary>
         <para>Initializes a new instance of the <see cref="T:DevExpress.Web.Mvc.MVCxReportViewer"/> class with default settings.</para>
       </summary>
-    </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxReportViewer.CallbackRouteValues">
-      <summary>
-        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.To set up the extension routing logic, use the <see cref="P:DevExpress.Web.Mvc.ReportViewerSettings.CallbackRouteValues"/> property at the extension settings level.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxReportViewer.ExportRouteValues">
-      <summary>
-        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.To set up the extension routing logic, use the <see cref="P:DevExpress.Web.Mvc.ReportViewerSettings.ExportRouteValues"/> property at the extension settings level.</para>
-      </summary>
-      <value></value>
     </member>
     <member name="P:DevExpress.Web.Mvc.MVCxReportViewer.Images">
       <summary>
@@ -26693,12 +25765,6 @@ An empty string, if no filtering is used.</value>
         <para>Copies the settings of the specified object to the current one.</para>
       </summary>
       <param name="source">A <see cref="T:DevExpress.Web.PropertiesBase"/> object whose settings are assigned to the current object.</param>
-    </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxResourceStorage.DataManager">
-      <summary>
-        <para>For internal use only.</para>
-      </summary>
-      <value>A DevExpress.XtraScheduler.Data.ResourceDataManager object.</value>
     </member>
     <member name="T:DevExpress.Web.Mvc.MVCxRibbon">
       <summary>
@@ -27092,18 +26158,6 @@ An empty string, if no filtering is used.</value>
         <para>Initializes a new instance of the <see cref="T:DevExpress.Web.Mvc.MVCxRichEdit"></see> class.</para>
       </summary>
     </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxRichEdit.CallbackRouteValues">
-      <summary>
-        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.To set up the extension routing logic, use the <see cref="P:DevExpress.Web.Mvc.RichEditSettings.CallbackRouteValues"/> property at the extension settings level.</para>
-      </summary>
-      <value>An object containing the Controller and Action names.</value>
-    </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxRichEdit.CustomActionRouteValues">
-      <summary>
-        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.To set up the extension routing logic, use the <see cref="P:DevExpress.Web.Mvc.RichEditSettings.CustomActionRouteValues"/> property at the extension settings level.</para>
-      </summary>
-      <value>An object containing the Controller and Action names.</value>
-    </member>
     <member name="P:DevExpress.Web.Mvc.MVCxRichEdit.IsCallback">
       <summary>
         <para>Gets a value indicating whether a callback sent by the RichEdit extension is currently being processed.</para>
@@ -27125,12 +26179,6 @@ An empty string, if no filtering is used.</value>
       <summary>
         <para>Initializes a new instance of the <see cref="T:DevExpress.Web.Mvc.MVCxRoundPanel"/> class with default settings.</para>
       </summary>
-    </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxRoundPanel.CallbackRouteValues">
-      <summary>
-        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.To set up the extension routing logic, use the <see cref="P:DevExpress.Web.Mvc.RoundPanelSettings.CallbackRouteValues"/> property at the extension settings level.</para>
-      </summary>
-      <value></value>
     </member>
     <member name="P:DevExpress.Web.Mvc.MVCxRoundPanel.Images">
       <summary>
@@ -27166,24 +26214,6 @@ An empty string, if no filtering is used.</value>
         <para>Initializes a new instance of the <see cref="T:DevExpress.Web.Mvc.MVCxScheduler"/> class with default settings.</para>
       </summary>
     </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxScheduler.CallbackRouteValues">
-      <summary>
-        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.To set up the extension routing logic, use the <see cref="P:DevExpress.Web.Mvc.SchedulerSettings.CallbackRouteValues"/> property at the extension settings level.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxScheduler.CustomActionRouteValues">
-      <summary>
-        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.To set up the extension routing logic, use the <see cref="P:DevExpress.Web.Mvc.SchedulerSettings.CustomActionRouteValues"/> property at the extension settings level.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxScheduler.EditAppointmentRouteValues">
-      <summary>
-        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.To set up the extension routing logic, use the <see cref="P:DevExpress.Web.Mvc.SchedulerSettings.EditAppointmentRouteValues"/> property at the extension settings level.</para>
-      </summary>
-      <value></value>
-    </member>
     <member name="P:DevExpress.Web.Mvc.MVCxScheduler.IsCallback">
       <summary>
         <para>Gets a value indicating whether a callback sent by a DevExpress extension is currently being processed.</para>
@@ -27217,13 +26247,6 @@ An empty string, if no filtering is used.</value>
       <summary>
         <para>Initializes a new instance of the <see cref="T:DevExpress.Web.Mvc.MVCxSchedulerAgendaView"/> class with default settings.</para>
       </summary>
-    </member>
-    <member name="M:DevExpress.Web.Mvc.MVCxSchedulerAgendaView.SetSelection(DevExpress.XtraScheduler.TimeInterval,DevExpress.XtraScheduler.Resource)">
-      <summary>
-        <para>Selects time cells which encompass the specified time interval.</para>
-      </summary>
-      <param name="interval">A <see cref="T:DevExpress.XtraScheduler.TimeInterval"/> object that specifies the time interval to select.</param>
-      <param name="resource">A <see cref="T:DevExpress.XtraScheduler.Resource"/> object that specifies to which resource the specified time interval belongs.</param>
     </member>
     <member name="M:DevExpress.Web.Mvc.MVCxSchedulerAgendaView.SetToolbarViewNavigatorTemplateContent(System.Action{DevExpress.Web.ASPxScheduler.ToolbarViewNavigatorTemplateContainer})">
       <summary>
@@ -27370,13 +26393,6 @@ An empty string, if no filtering is used.</value>
         <para>Allows you to provide a template for rendering the right top corner area of the scheduler.</para>
       </summary>
       <param name="content">A string value specifying the template content.</param>
-    </member>
-    <member name="M:DevExpress.Web.Mvc.MVCxSchedulerDayView.SetSelection(DevExpress.XtraScheduler.TimeInterval,DevExpress.XtraScheduler.Resource)">
-      <summary>
-        <para>Selects time cells which encompass the specified time interval.</para>
-      </summary>
-      <param name="interval">A <see cref="T:DevExpress.XtraScheduler.TimeInterval"/> object that specifies the time interval to select.</param>
-      <param name="resource">A <see cref="T:DevExpress.XtraScheduler.Resource"/> object that specifies to which resource the specified time interval belongs.</param>
     </member>
     <member name="M:DevExpress.Web.Mvc.MVCxSchedulerDayView.SetTimeCellBodyTemplateContent(System.Action{DevExpress.Web.ASPxScheduler.TimeCellBodyTemplateContainer})">
       <summary>
@@ -27802,13 +26818,6 @@ An empty string, if no filtering is used.</value>
       </summary>
       <param name="content">A string value specifying the template content.</param>
     </member>
-    <member name="M:DevExpress.Web.Mvc.MVCxSchedulerMonthView.SetSelection(DevExpress.XtraScheduler.TimeInterval,DevExpress.XtraScheduler.Resource)">
-      <summary>
-        <para>Selects time cells which encompass the specified time interval.</para>
-      </summary>
-      <param name="interval">A <see cref="T:DevExpress.XtraScheduler.TimeInterval"/> object that specifies the time interval to select.</param>
-      <param name="resource">A <see cref="T:DevExpress.XtraScheduler.Resource"/> object that specifies to which resource the specified time interval belongs.</param>
-    </member>
     <member name="M:DevExpress.Web.Mvc.MVCxSchedulerMonthView.SetToolbarViewNavigatorTemplateContent(System.Action{DevExpress.Web.ASPxScheduler.ToolbarViewNavigatorTemplateContainer})">
       <summary>
         <para>Allows you to provide a template for rendering the ViewNavigator control area in the toolbar.</para>
@@ -27873,23 +26882,11 @@ An empty string, if no filtering is used.</value>
       </summary>
       <value>An object whose properties are used to construct the RouteValueDictionary instance.</value>
     </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxSchedulerOptionsForms.AppointmentFormTemplateUrl">
-      <summary>
-        <para>Not in effect in ASP.NET MVC. Use the MVCxSchedulerOptionsForms.SetAppointmentFormTemplateContent method instead.</para>
-      </summary>
-      <value>A string that is the URL of the form template.</value>
-    </member>
     <member name="P:DevExpress.Web.Mvc.MVCxSchedulerOptionsForms.AppointmentInplaceEditorFormRouteValues">
       <summary>
         <para>Gets or sets the route values for the inplace editor form template.</para>
       </summary>
       <value>An object whose properties are used to construct the RouteValueDictionary instance.</value>
-    </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxSchedulerOptionsForms.AppointmentInplaceEditorFormTemplateUrl">
-      <summary>
-        <para>Not in effect in ASP.NET MVC. Use the MVCxSchedulerOptionsForms.SetAppointmentInplaceEditorFormTemplateContent method instead.</para>
-      </summary>
-      <value>A string that is the URL of the form template.</value>
     </member>
     <member name="M:DevExpress.Web.Mvc.MVCxSchedulerOptionsForms.Assign(DevExpress.Utils.Controls.BaseOptions)">
       <summary>
@@ -27903,18 +26900,6 @@ An empty string, if no filtering is used.</value>
       </summary>
       <value>An object whose properties are used to construct the RouteValueDictionary instance.</value>
     </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxSchedulerOptionsForms.GotoDateFormTemplateUrl">
-      <summary>
-        <para>Not in effect in ASP.NET MVC. Use the MVCxSchedulerOptionsForms.SetGotoDateFormTemplateContent method instead.</para>
-      </summary>
-      <value>A string that is the URL of the form template.</value>
-    </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxSchedulerOptionsForms.MessageBoxTemplateUrl">
-      <summary>
-        <para>Not in effect in ASP.NET MVC.</para>
-      </summary>
-      <value>A string that is the URL of the form template.</value>
-    </member>
     <member name="P:DevExpress.Web.Mvc.MVCxSchedulerOptionsForms.RecurrenceFormName">
       <summary>
         <para>Gets or sets the name of the recurrence form used in client scripts.</para>
@@ -27927,29 +26912,11 @@ An empty string, if no filtering is used.</value>
       </summary>
       <value>An object whose properties are used to construct the RouteValueDictionary instance.</value>
     </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxSchedulerOptionsForms.RecurrentAppointmentDeleteFormTemplateUrl">
-      <summary>
-        <para>Not in effect in ASP.NET MVC. Use the MVCxSchedulerOptionsForms.SetRecurrentAppointmentDeleteFormTemplateContent method instead.</para>
-      </summary>
-      <value>A string that is the URL of the form template.</value>
-    </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxSchedulerOptionsForms.RecurrentAppointmentEditFormTemplateUrl">
-      <summary>
-        <para>Not in effect in ASP.NET MVC. Use the MVCxSchedulerOptionsForms.SetRecurrentAppointmentEditFormTemplateContent method instead.</para>
-      </summary>
-      <value>A string that is the URL of the form template.</value>
-    </member>
     <member name="P:DevExpress.Web.Mvc.MVCxSchedulerOptionsForms.RemindersFormRouteValues">
       <summary>
         <para>Gets or sets the route values for the reminder form template.</para>
       </summary>
       <value>An object whose properties are used to construct the RouteValueDictionary instance.</value>
-    </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxSchedulerOptionsForms.RemindersFormTemplateUrl">
-      <summary>
-        <para>Not in effect in ASP.NET MVC. Use the MVCxSchedulerOptionsForms.SetRemindersFormTemplateContent method instead.</para>
-      </summary>
-      <value>A string that is the URL of the form template.</value>
     </member>
     <member name="M:DevExpress.Web.Mvc.MVCxSchedulerOptionsForms.SetAppointmentFormTemplateContent(System.Action{DevExpress.Web.ASPxScheduler.AppointmentFormTemplateContainer})">
       <summary>
@@ -28097,105 +27064,11 @@ An empty string, if no filtering is used.</value>
       </summary>
       <value>A <see cref="T:DevExpress.Web.Mvc.MVCxAppointmentStorage"/> object, that represents the storage for appointment related information.</value>
     </member>
-    <member name="M:DevExpress.Web.Mvc.MVCxSchedulerStorage.CreateOutlookExporter">
-      <summary>
-        <para>For internal use. Calls the method of the same name for the base class.</para>
-      </summary>
-      <returns>An <see cref="T:DevExpress.XtraScheduler.Exchange.AppointmentExporter"/> object which can export data to MS Outlook&#39;s Calendar.</returns>
-    </member>
-    <member name="M:DevExpress.Web.Mvc.MVCxSchedulerStorage.CreateOutlookExportSynchronizer">
-      <summary>
-        <para>For internal use. Calls the method of the same name for the base class.</para>
-      </summary>
-      <returns>A DevExpress.XtraScheduler.Exchange.AppointmentExportSynchronizer object which allows MS Outlook&#39;s Calendar to be synchronized with the data in storage.</returns>
-    </member>
-    <member name="M:DevExpress.Web.Mvc.MVCxSchedulerStorage.CreateOutlookImporter">
-      <summary>
-        <para>For internal use. Calls the method of the same name for the base class.</para>
-      </summary>
-      <returns>An <see cref="T:DevExpress.XtraScheduler.Exchange.AppointmentImporter"/> object which can import data from MS Outlook&#39;s Calendar.</returns>
-    </member>
-    <member name="M:DevExpress.Web.Mvc.MVCxSchedulerStorage.CreateOutlookImportSynchronizer">
-      <summary>
-        <para>For internal use. Calls the method of the same name for the base class.</para>
-      </summary>
-      <returns>An <see cref="T:DevExpress.XtraScheduler.Exchange.AppointmentImportSynchronizer"/> object which can synchronize data in the storage with data in MS Outlook&#39;s Calendar.</returns>
-    </member>
-    <member name="M:DevExpress.Web.Mvc.MVCxSchedulerStorage.ExportToICalendar(System.IO.Stream)">
-      <summary>
-        <para>For internal use. Use the SchedulerExtension.ExportToICalendar instead.</para>
-      </summary>
-      <param name="stream">A <see cref="T:System.IO.Stream"/> containing data in iCalendar format.</param>
-    </member>
-    <member name="M:DevExpress.Web.Mvc.MVCxSchedulerStorage.ExportToICalendar(System.String)">
-      <summary>
-        <para>For internal use. Use the SchedulerExtension.ExportToICalendar instead.</para>
-      </summary>
-      <param name="path">A string that is the path to a file that will contain data in iCalendar format.</param>
-    </member>
-    <member name="M:DevExpress.Web.Mvc.MVCxSchedulerStorage.ExportToOutlook">
-      <summary>
-        <para>For internal use. Calls the method of the same name for the base class.</para>
-      </summary>
-    </member>
-    <member name="M:DevExpress.Web.Mvc.MVCxSchedulerStorage.ExportToVCalendar(System.IO.Stream)">
-      <summary>
-        <para>For internal use. Use the SchedulerExtension.ExportToICalendar instead.</para>
-      </summary>
-      <param name="stream">A <see cref="T:System.IO.Stream"/>  object which specifies the stream into which the scheduler&#39;s data will be exported.</param>
-    </member>
-    <member name="M:DevExpress.Web.Mvc.MVCxSchedulerStorage.ExportToVCalendar(System.String)">
-      <summary>
-        <para>For internal use. Use the SchedulerExtension.ExportToICalendar instead.</para>
-      </summary>
-      <param name="path">A <see cref="T:System.String"/>, containing the full path (including the file name and extension) of the file to which the scheduler&#39;s data will be exported.</param>
-    </member>
-    <member name="M:DevExpress.Web.Mvc.MVCxSchedulerStorage.ImportFromICalendar(System.IO.Stream)">
-      <summary>
-        <para>For internal use. Use the <see cref="M:DevExpress.Web.Mvc.SchedulerExtension.ImportFromICalendar``1(DevExpress.Web.Mvc.SchedulerSettings,System.IO.Stream)"/> instead.</para>
-      </summary>
-      <param name="stream">A <see cref="T:System.IO.Stream"/> containing data in iCalendar format.</param>
-    </member>
-    <member name="M:DevExpress.Web.Mvc.MVCxSchedulerStorage.ImportFromICalendar(System.String)">
-      <summary>
-        <para>For internal use. Use the <see cref="M:DevExpress.Web.Mvc.SchedulerExtension.ImportFromICalendar``1(DevExpress.Web.Mvc.SchedulerSettings,System.IO.Stream)"/> instead.</para>
-      </summary>
-      <param name="path">A string that is the path to a file containing iCalendar data.</param>
-    </member>
-    <member name="M:DevExpress.Web.Mvc.MVCxSchedulerStorage.ImportFromOutlook">
-      <summary>
-        <para>For internal use. Calls the method of the same name for the base class.</para>
-      </summary>
-    </member>
-    <member name="M:DevExpress.Web.Mvc.MVCxSchedulerStorage.ImportFromVCalendar(System.IO.Stream)">
-      <summary>
-        <para>For internal use. Imports the scheduler&#39;s data from a stream whose data is in the vCalendar format.</para>
-      </summary>
-      <param name="stream">A <see cref="T:System.IO.Stream"/> object which specifies the stream that contains the data to import to the scheduler.</param>
-    </member>
-    <member name="M:DevExpress.Web.Mvc.MVCxSchedulerStorage.ImportFromVCalendar(System.String)">
-      <summary>
-        <para>For internal use. Imports data into the scheduler storage from a file in the vCalendar format.</para>
-      </summary>
-      <param name="path">A <see cref="T:System.String"/>, containing the full path of the file with vCalendar data.</param>
-    </member>
     <member name="P:DevExpress.Web.Mvc.MVCxSchedulerStorage.Resources">
       <summary>
         <para>Gets the object which manages resources for appointments.</para>
       </summary>
       <value>A <see cref="T:DevExpress.Web.Mvc.MVCxResourceStorage"/> object which stores manges resources for appointments.</value>
-    </member>
-    <member name="M:DevExpress.Web.Mvc.MVCxSchedulerStorage.SynchronizeOutlookWithStorage(System.String)">
-      <summary>
-        <para>For internal use. Calls the method of the same name for the base class.</para>
-      </summary>
-      <param name="outlookEntryIdFieldName">A  <see cref="T:System.String"/>, representing the name of the string data field which contains the GUIDs of appointments.</param>
-    </member>
-    <member name="M:DevExpress.Web.Mvc.MVCxSchedulerStorage.SynchronizeStorageWithOutlook(System.String)">
-      <summary>
-        <para>For internal use. Calls the method of the same name for the base class.</para>
-      </summary>
-      <param name="outlookEntryIdFieldName">A  <see cref="T:System.String"/>, representing the name of the string data field which contains the GUIDs of appointments.</param>
     </member>
     <member name="T:DevExpress.Web.Mvc.MVCxSchedulerStorageControl">
       <summary>
@@ -28212,18 +27085,6 @@ An empty string, if no filtering is used.</value>
         <para>Initializes a new instance of the <see cref="T:DevExpress.Web.Mvc.MVCxSchedulerStorageControl"/> class.</para>
       </summary>
       <param name="viewContext">A <see cref="T:System.Web.Mvc.ViewContext"></see> object that is the view context.</param>
-    </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxSchedulerStorageControl.CallbackRouteValues">
-      <summary>
-        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.To set up the extension routing logic, use the <see cref="P:DevExpress.Web.Mvc.SchedulerStorageControlSettings.CallbackRouteValues"/> property at the extension settings level.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxSchedulerStorageControl.EditAppointmentRouteValues">
-      <summary>
-        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.To set up the extension routing logic, use the <see cref="P:DevExpress.Web.Mvc.SchedulerStorageControlSettings.EditAppointmentRouteValues"/> property at the extension settings level.</para>
-      </summary>
-      <value></value>
     </member>
     <member name="P:DevExpress.Web.Mvc.MVCxSchedulerStorageControl.Storage">
       <summary>
@@ -28300,13 +27161,6 @@ An empty string, if no filtering is used.</value>
         <para>Allows you to provide a template for rendering the horizontal appointment that fits in one day.</para>
       </summary>
       <param name="content">A string value specifying the template content.</param>
-    </member>
-    <member name="M:DevExpress.Web.Mvc.MVCxSchedulerTimelineView.SetSelection(DevExpress.XtraScheduler.TimeInterval,DevExpress.XtraScheduler.Resource)">
-      <summary>
-        <para>Selects time cells which encompass the specified time interval.</para>
-      </summary>
-      <param name="interval">A <see cref="T:DevExpress.XtraScheduler.TimeInterval"/> object that specifies the time interval to select.</param>
-      <param name="resource">A <see cref="T:DevExpress.XtraScheduler.Resource"/> object that specifies to which resource the specified time interval belongs.</param>
     </member>
     <member name="M:DevExpress.Web.Mvc.MVCxSchedulerTimelineView.SetTimelineCellBodyTemplateContent(System.Action{DevExpress.Web.ASPxScheduler.TimelineCellBodyTemplateContainer})">
       <summary>
@@ -28525,13 +27379,6 @@ An empty string, if no filtering is used.</value>
         <para>Allows you to provide a template for rendering the horizontal appointment that fits in one day.</para>
       </summary>
       <param name="content">A string value specifying the template content.</param>
-    </member>
-    <member name="M:DevExpress.Web.Mvc.MVCxSchedulerWeekView.SetSelection(DevExpress.XtraScheduler.TimeInterval,DevExpress.XtraScheduler.Resource)">
-      <summary>
-        <para>Selects time cells which encompass the specified time interval.</para>
-      </summary>
-      <param name="interval">A <see cref="T:DevExpress.XtraScheduler.TimeInterval"/> object that specifies the time interval to select.</param>
-      <param name="resource">A <see cref="T:DevExpress.XtraScheduler.Resource"/> object that specifies to which resource the specified time interval belongs.</param>
     </member>
     <member name="M:DevExpress.Web.Mvc.MVCxSchedulerWeekView.SetToolbarViewNavigatorTemplateContent(System.Action{DevExpress.Web.ASPxScheduler.ToolbarViewNavigatorTemplateContainer})">
       <summary>
@@ -28787,12 +27634,6 @@ An empty string, if no filtering is used.</value>
         <para>Initializes a new instance of the <see cref="T:DevExpress.Web.Mvc.MVCxSpellChecker"/> class with the default settings.</para>
       </summary>
     </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxSpellChecker.CallbackRouteValues">
-      <summary>
-        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.To set up the extension routing logic, use the <see cref="P:DevExpress.Web.Mvc.SpellCheckerSettings.CallbackRouteValues"/> property at the extension settings level.</para>
-      </summary>
-      <value></value>
-    </member>
     <member name="P:DevExpress.Web.Mvc.MVCxSpellChecker.Images">
       <summary>
         <para>This member supports the internal infrastructure and is not intended to be used directly from your code.</para>
@@ -28903,23 +27744,11 @@ An empty string, if no filtering is used.</value>
       </summary>
       <value>A string specifying the action name.</value>
     </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxSpellCheckerFormsSettings.SpellCheckFormPath">
-      <summary>
-        <para>This member is not in effect for this class. It is overridden only for the purpose of preventing it from appearing in Microsoft Visual Studio designer tools. Use the <see cref="P:DevExpress.Web.Mvc.MVCxSpellCheckerFormsSettings.SpellCheckFormAction"/> property instead.</para>
-      </summary>
-      <value></value>
-    </member>
     <member name="P:DevExpress.Web.Mvc.MVCxSpellCheckerFormsSettings.SpellCheckOptionsFormAction">
       <summary>
         <para>Gets or sets the name of an action method invoking a view (user control) that defines the Spelling Options dialog&#39;s form.</para>
       </summary>
       <value>A string specifying the action name.</value>
-    </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxSpellCheckerFormsSettings.SpellCheckOptionsFormPath">
-      <summary>
-        <para>This member is not in effect for this class. It is overridden only for the purpose of preventing it from appearing in Microsoft Visual Studio designer tools. Use the <see cref="P:DevExpress.Web.Mvc.MVCxSpellCheckerFormsSettings.SpellCheckOptionsFormAction"/> property instead.</para>
-      </summary>
-      <value></value>
     </member>
     <member name="T:DevExpress.Web.Mvc.MVCxSpinEdit">
       <summary>
@@ -29074,12 +27903,6 @@ An empty string, if no filtering is used.</value>
       </summary>
       <param name="name">A <see cref="T:System.String"/> value that specifies the name of the created pane. This value is assigned to the <see cref="P:DevExpress.Web.SplitterPane.Name"/> property.</param>
     </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxSplitterPane.Controls">
-      <summary>
-        <para>This member is not in effect for this class. It is overridden only for the purpose of preventing it from appearing in Microsoft Visual Studio designer tools.</para>
-      </summary>
-      <value></value>
-    </member>
     <member name="P:DevExpress.Web.Mvc.MVCxSplitterPane.Panes">
       <summary>
         <para>Gets a collection that contains the pane of the splitter&#39;s root level.</para>
@@ -29189,18 +28012,6 @@ An empty string, if no filtering is used.</value>
       <summary>
         <para>Initializes a new instance of the <see cref="T:DevExpress.Web.Mvc.MVCxSpreadsheet"/> class with default settings.</para>
       </summary>
-    </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxSpreadsheet.CallbackRouteValues">
-      <summary>
-        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.To set up the extension routing logic, use the <see cref="P:DevExpress.Web.Mvc.SpreadsheetSettings.CallbackRouteValues"/> property at the extension settings level.</para>
-      </summary>
-      <value>An object containing the Controller and Action names.</value>
-    </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxSpreadsheet.CustomActionRouteValues">
-      <summary>
-        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.To set up the extension routing logic, use the <see cref="P:DevExpress.Web.Mvc.SpreadsheetSettings.CustomActionRouteValues"/> property at the extension settings level.</para>
-      </summary>
-      <value>An object containing the Controller and Action names.</value>
     </member>
     <member name="P:DevExpress.Web.Mvc.MVCxSpreadsheet.DownloadRouteValues">
       <summary>
@@ -29682,12 +28493,6 @@ An empty string, if no filtering is used.</value>
       <param name="name"></param>
       <param name="imageUrl"></param>
     </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxTabPage.Controls">
-      <summary>
-        <para>Gets a collection that contains child controls representing the current object&#39;s content.</para>
-      </summary>
-      <value></value>
-    </member>
     <member name="M:DevExpress.Web.Mvc.MVCxTabPage.SetActiveTabTemplateContent(System.Action{DevExpress.Web.PageControlTemplateContainer})">
       <summary>
         <para>Allows setting a template for displaying the text content of the current page&#39;s tab when it&#39;s active.</para>
@@ -30099,12 +28904,6 @@ An empty string, if no filtering is used.</value>
         <para>Initializes a new instance of the <see cref="T:DevExpress.Web.Mvc.MVCxTokenBox"/> class with default settings.</para>
       </summary>
     </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxTokenBox.CallbackRouteValues">
-      <summary>
-        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.To set up the extension routing logic, use the <see cref="P:DevExpress.Web.Mvc.AutoCompleteBoxBaseSettings.CallbackRouteValues"/> property at the extension settings level.</para>
-      </summary>
-      <value></value>
-    </member>
     <member name="P:DevExpress.Web.Mvc.MVCxTokenBox.IsCallback">
       <summary>
         <para>This member supports the internal infrastructure and is not intended to be used directly from your code.</para>
@@ -30173,11 +28972,6 @@ An empty string, if no filtering is used.</value>
         <para>Gets the style settings that define the caption appearance.</para>
       </summary>
       <value>An <see cref="T:DevExpress.Web.EditorCaptionStyle"/> object that contains the style settings.</value>
-    </member>
-    <member name="E:DevExpress.Web.Mvc.MVCxTokenBoxProperties.CustomFiltering">
-      <summary>
-        <para>Provides the capability to implement custom filtering logic before the server-side filtering is executed.</para>
-      </summary>
     </member>
     <member name="P:DevExpress.Web.Mvc.MVCxTokenBoxProperties.EnableCallbackMode">
       <summary>
@@ -30317,51 +29111,6 @@ An empty string, if no filtering is used.</value>
         <para>Initializes a new instance of the <see cref="T:DevExpress.Web.Mvc.MVCxTreeList"/> class with default settings.</para>
       </summary>
     </member>
-    <member name="M:DevExpress.Web.Mvc.MVCxTreeList.AppendNode(System.Object)">
-      <summary>
-        <para>This member is not in effect for the <see cref="T:DevExpress.Web.Mvc.MVCxTreeList"/> class.</para>
-      </summary>
-      <param name="keyObject"></param>
-      <returns></returns>
-    </member>
-    <member name="M:DevExpress.Web.Mvc.MVCxTreeList.AppendNode(System.Object,DevExpress.Web.ASPxTreeList.TreeListNode)">
-      <summary>
-        <para>This member is not in effect for the <see cref="T:DevExpress.Web.Mvc.MVCxTreeList"/> class.</para>
-      </summary>
-      <param name="keyObject"></param>
-      <param name="parentNode"></param>
-      <returns></returns>
-    </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxTreeList.CallbackRouteValues">
-      <summary>
-        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.To set up the extension routing logic, use the <see cref="P:DevExpress.Web.Mvc.TreeListSettings.CallbackRouteValues"/> property at the extension settings level.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxTreeList.CustomActionRouteValues">
-      <summary>
-        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.To set up the extension routing logic, use the <see cref="P:DevExpress.Web.Mvc.TreeListSettings.CustomActionRouteValues"/> property at the extension settings level.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxTreeList.CustomDataActionRouteValues">
-      <summary>
-        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.To set up the extension routing logic, use the <see cref="P:DevExpress.Web.Mvc.TreeListSettings.CustomDataActionRouteValues"/> property at the extension settings level.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="M:DevExpress.Web.Mvc.MVCxTreeList.DeleteNode(System.String)">
-      <summary>
-        <para>This member is not in effect for the <see cref="T:DevExpress.Web.Mvc.MVCxTreeList"/> class.</para>
-      </summary>
-      <param name="nodeKey"></param>
-    </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxTreeList.DeleteSelectedNodesRouteValues">
-      <summary>
-        <para>Defines the callback routing logic by specifying the names of a Controller and an Action which should handle callbacks related to selected node(s) deletion.</para>
-      </summary>
-      <value>An object containing the Controller and Action names.</value>
-    </member>
     <member name="P:DevExpress.Web.Mvc.MVCxTreeList.Images">
       <summary>
         <para>This member supports the internal infrastructure and is not intended to be used directly from your code.</para>
@@ -30373,13 +29122,6 @@ An empty string, if no filtering is used.</value>
         <para>Gets a value indicating whether the request is the result of a callback sent by the TreeList.</para>
       </summary>
       <value>true, if the request is the result of a callback sent by the TreeList; otherwise, false.</value>
-    </member>
-    <member name="M:DevExpress.Web.Mvc.MVCxTreeList.MoveNode(System.String,System.String)">
-      <summary>
-        <para>This member is not in effect for the <see cref="T:DevExpress.Web.Mvc.MVCxTreeList"/> class.</para>
-      </summary>
-      <param name="nodeKey"></param>
-      <param name="parentNodeKey"></param>
     </member>
     <member name="P:DevExpress.Web.Mvc.MVCxTreeList.Settings">
       <summary>
@@ -30456,12 +29198,6 @@ An empty string, if no filtering is used.</value>
       <summary>
         <para>Initializes a new instance of the <see cref="T:DevExpress.Web.Mvc.MVCxTreeListBatchUpdateValues`2"/> class.</para>
       </summary>
-    </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxTreeListBatchUpdateValues`2.Insert">
-      <summary>
-        <para>Contains a list of objects that are the tree list nodes added on the client side in batch edit mode.</para>
-      </summary>
-      <value>A <see cref="T:System.Collections.Generic.List`1"/> object that stores a list of nodes that have been added on the client side.</value>
     </member>
     <member name="P:DevExpress.Web.Mvc.MVCxTreeListBatchUpdateValues`2.InsertNodes">
       <summary>
@@ -31025,18 +29761,6 @@ An empty string, if no filtering is used.</value>
         <para>Initializes a new instance of the <see cref="T:DevExpress.Web.Mvc.MVCxTreeListSettingsBehavior"/> class with default settings.</para>
       </summary>
     </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxTreeListSettingsBehavior.ProcessFocusedNodeChangedOnServer">
-      <summary>
-        <para>Gets or sets a value that specifies whether the <see cref="P:js-ASPxClientTreeList.FocusedNodeChanged"/> event should be finally processed on the server side.</para>
-      </summary>
-      <value>true to process the event on the server side; false to completely handle it on the client side.</value>
-    </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxTreeListSettingsBehavior.ProcessSelectionChangedOnServer">
-      <summary>
-        <para>Gets or sets a value that specifies whether the <see cref="P:js-ASPxClientTreeList.SelectionChanged"/> event should be finally processed on the server side.</para>
-      </summary>
-      <value>true to process the event on the server side; false to completely handle it on the client side.</value>
-    </member>
     <member name="T:DevExpress.Web.Mvc.MVCxTreeListSettingsCookies">
       <summary>
         <para>Provides cookies settings for the TreeList.</para>
@@ -31082,12 +29806,6 @@ An empty string, if no filtering is used.</value>
         <para>Defines the callback routing logic by specifying the names of a Controller and an Action which should handle callbacks related to adding a new row.</para>
       </summary>
       <value>An object containing the Controller and Action names.</value>
-    </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxTreeListSettingsEditing.AllowNodeDragDrop">
-      <summary>
-        <para>Gets or sets whether an end-user can drag nodes and change their position within the TreeList.</para>
-      </summary>
-      <value>true to allow moving nodes; otherwise, false.</value>
     </member>
     <member name="M:DevExpress.Web.Mvc.MVCxTreeListSettingsEditing.Assign(DevExpress.Web.ASPxTreeList.TreeListSettingsBase)">
       <summary>
@@ -31211,12 +29929,6 @@ An empty string, if no filtering is used.</value>
         <para>Initializes a new instance of the <see cref="T:DevExpress.Web.Mvc.MVCxTreeListSettingsSearchPanel"/> class.</para>
       </summary>
     </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxTreeListSettingsSearchPanel.CustomEditorID">
-      <summary>
-        <para>This property is not in effect for the <see cref="T:DevExpress.Web.Mvc.MVCxTreeListSettingsSearchPanel"/> class.</para>
-      </summary>
-      <value></value>
-    </member>
     <member name="P:DevExpress.Web.Mvc.MVCxTreeListSettingsSearchPanel.CustomEditorName">
       <summary>
         <para>Specifies the name of an editor used to specify a search panel filter criterion.</para>
@@ -31242,18 +29954,6 @@ An empty string, if no filtering is used.</value>
       <summary>
         <para>Initializes a new instance of the <see cref="T:DevExpress.Web.Mvc.MVCxTreeListSettingsText"/> class with default settings.</para>
       </summary>
-    </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxTreeListSettingsText.CustomizationWindowCaption">
-      <summary>
-        <para>This property is not in effect for the <see cref="T:DevExpress.Web.Mvc.MVCxTreeListSettingsText"/> class.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxTreeListSettingsText.LoadingPanelText">
-      <summary>
-        <para>This property is not in effect for the <see cref="T:DevExpress.Web.Mvc.MVCxTreeListSettingsText"/> class.</para>
-      </summary>
-      <value></value>
     </member>
     <member name="T:DevExpress.Web.Mvc.MVCxTreeListSummaryCollection">
       <summary>
@@ -31447,12 +30147,6 @@ An empty string, if no filtering is used.</value>
       <summary>
         <para>Initializes a new instance of the <see cref="T:DevExpress.Web.Mvc.MVCxTreeView"/> class with default settings.</para>
       </summary>
-    </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxTreeView.CallbackRouteValues">
-      <summary>
-        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.To set up the extension routing logic, use the <see cref="P:DevExpress.Web.Mvc.TreeViewSettings.CallbackRouteValues"/> property at the extension settings level.</para>
-      </summary>
-      <value></value>
     </member>
     <member name="P:DevExpress.Web.Mvc.MVCxTreeView.Images">
       <summary>
@@ -31695,12 +30389,6 @@ An empty string, if no filtering is used.</value>
         <para>Initializes a new instance of the <see cref="T:DevExpress.Web.Mvc.MVCxUploadControl"/> class with default settings.</para>
       </summary>
     </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxUploadControl.CallbackRouteValues">
-      <summary>
-        <para>This member supports the internal infrastructure and is not intended to be used directly from your code.To set up the extension routing logic, use the <see cref="P:DevExpress.Web.Mvc.UploadControlSettings.CallbackRouteValues"/> property at the extension settings level.</para>
-      </summary>
-      <value></value>
-    </member>
     <member name="M:DevExpress.Web.Mvc.MVCxUploadControl.IsLoading">
       <summary>
         <para>This member supports the internal infrastructure and is not intended to be used directly from your code.</para>
@@ -31757,24 +30445,6 @@ An empty string, if no filtering is used.</value>
       <param name="owner">An IPropertiesOwner object.</param>
     </member>
     <member name="P:DevExpress.Web.Mvc.MVCxValidationSettings.ErrorDisplayMode">
-      <summary>
-        <para>This property is not in effect for the <see cref="T:DevExpress.Web.Mvc.MVCxValidationSettings"/> class.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxValidationSettings.ErrorText">
-      <summary>
-        <para>This property is not in effect for the <see cref="T:DevExpress.Web.Mvc.MVCxValidationSettings"/> class.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxValidationSettings.RegularExpression">
-      <summary>
-        <para>This property is not in effect for the <see cref="T:DevExpress.Web.Mvc.MVCxValidationSettings"/> class.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxValidationSettings.RequiredField">
       <summary>
         <para>This property is not in effect for the <see cref="T:DevExpress.Web.Mvc.MVCxValidationSettings"/> class.</para>
       </summary>
@@ -32581,12 +31251,6 @@ An empty string, if no filtering is used.</value>
       <summary>
         <para>Initializes a new instance of the <see cref="T:DevExpress.Web.Mvc.MVCxVerticalGridSearchPanelSettings"/> class with default settings.</para>
       </summary>
-    </member>
-    <member name="P:DevExpress.Web.Mvc.MVCxVerticalGridSearchPanelSettings.CustomEditorID">
-      <summary>
-        <para>This property is not in effect for the <see cref="T:DevExpress.Web.Mvc.MVCxVerticalGridSearchPanelSettings"/> class.</para>
-      </summary>
-      <value></value>
     </member>
     <member name="P:DevExpress.Web.Mvc.MVCxVerticalGridSearchPanelSettings.CustomEditorName">
       <summary>
@@ -37296,14 +35960,6 @@ An empty string, if no filtering is used.</value>
       <param name="name">A string that specified the Query Builder name.</param>
       <returns>A <see cref="T:DevExpress.Web.Mvc.QueryBuilderSaveCallbackResult"/> object.</returns>
     </member>
-    <member name="M:DevExpress.Web.Mvc.QueryBuilderExtension.GetSaveCallbackResult(System.String,System.Boolean)">
-      <summary>
-        <para>Returns the result of a callback sent to the server for saving a query.</para>
-      </summary>
-      <param name="name">A string that specified the Query Builder name.</param>
-      <param name="validateQueryByExecution">true, to validate a query on execution; otherwise, false.</param>
-      <returns>A <see cref="T:DevExpress.Web.Mvc.QueryBuilderSaveCallbackResult"/> object.</returns>
-    </member>
     <member name="T:DevExpress.Web.Mvc.QueryBuilderSaveCallbackResult">
       <summary>
         <para></para>
@@ -37372,12 +36028,6 @@ An empty string, if no filtering is used.</value>
         <para>Provides access to the settings of the Query Builder&#39;s client-side model.</para>
       </summary>
       <value>A <see cref="T:DevExpress.XtraReports.Web.QueryBuilder.QueryBuilderClientSideModelSettings"/> object.</value>
-    </member>
-    <member name="P:DevExpress.Web.Mvc.QueryBuilderSettings.Theme">
-      <summary>
-        <para>For internal use.</para>
-      </summary>
-      <value></value>
     </member>
     <member name="T:DevExpress.Web.Mvc.RadioButtonExtension">
       <summary>
@@ -37771,17 +36421,6 @@ An empty string, if no filtering is used.</value>
       <param name="menuItems">A collection of <see cref="T:DevExpress.XtraReports.Web.ClientControls.ClientControlsMenuItem"/> objects.</param>
       <returns>A <see cref="T:DevExpress.XtraReports.Web.ReportDesigner.ReportDesignerModel"/> object.</returns>
     </member>
-    <member name="M:DevExpress.Web.Mvc.ReportDesignerExtension.GetModel(DevExpress.XtraReports.UI.XtraReport,System.Collections.Generic.IDictionary{System.String,System.Object},System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IEnumerable{DevExpress.XtraReports.Web.ClientControls.ClientControlsMenuItem},DevExpress.XtraReports.Web.ReportDesigner.Native.ReportDesignerModelSettings)">
-      <summary>
-        <para>Returns the session settings of a Web Report Designer with the specified report and data sources.</para>
-      </summary>
-      <param name="report">An <see cref="T:DevExpress.XtraReports.UI.XtraReport"/> object.</param>
-      <param name="dataSources">A dictionary, listing the data sources by their names.</param>
-      <param name="subreports">A dictionary, listing the subreports by their names.</param>
-      <param name="menuItems">A collection of <see cref="T:DevExpress.XtraReports.Web.ClientControls.ClientControlsMenuItem"/> objects.</param>
-      <param name="settings">A ReportDesignerModelSettings object.</param>
-      <returns>A <see cref="T:DevExpress.XtraReports.Web.ReportDesigner.ReportDesignerModel"/> value.</returns>
-    </member>
     <member name="M:DevExpress.Web.Mvc.ReportDesignerExtension.GetModel(DevExpress.XtraReports.UI.XtraReport,System.Collections.Generic.IDictionary{System.String,System.Object},System.Collections.Generic.IEnumerable{DevExpress.XtraReports.Web.ClientControls.ClientControlsMenuItem})">
       <summary>
         <para>Returns the session settings of a Web Report Designer with the specified report, menu items and data sources.</para>
@@ -37899,23 +36538,11 @@ An empty string, if no filtering is used.</value>
       </summary>
       <value>true to dispose the report along with the Report Designer; otherwise false.</value>
     </member>
-    <member name="P:DevExpress.Web.Mvc.ReportDesignerSettings.ShouldShareReportDataSources">
-      <summary>
-        <para>Specifies whether or not report data sources should be shared.</para>
-      </summary>
-      <value>true, to share data sources; otherwise, false.</value>
-    </member>
     <member name="P:DevExpress.Web.Mvc.ReportDesignerSettings.Subreports">
       <summary>
         <para>Provides access to the subreports available in an opened report.</para>
       </summary>
       <value>A dictionary, listing the available subreports by their names.</value>
-    </member>
-    <member name="P:DevExpress.Web.Mvc.ReportDesignerSettings.Theme">
-      <summary>
-        <para>Specifies the theme that is currently applied to the <see cref="T:DevExpress.Web.Mvc.MVCxReportDesigner"/>.</para>
-      </summary>
-      <value>A <see cref="T:System.String"/> value, specifying the theme name.</value>
     </member>
     <member name="T:DevExpress.Web.Mvc.ReportToolbarExtension">
       <summary>
@@ -38581,6 +37208,13 @@ An empty string, if no filtering is used.</value>
       <param name="method">A delegate method that accepts <see cref="T:DevExpress.XtraRichEdit.CalculateDocumentVariableEventArgs"/> as a parameter.</param>
       <returns>A <see cref="T:DevExpress.Web.Mvc.RichEditCustomDocumentProcessor"/> object.</returns>
     </member>
+    <member name="M:DevExpress.Web.Mvc.RichEditCustomDocumentProcessor.CallbackRouteValues(System.Object)">
+      <summary>
+        <para></para>
+      </summary>
+      <param name="callbackRouteValues"></param>
+      <returns></returns>
+    </member>
     <member name="M:DevExpress.Web.Mvc.RichEditCustomDocumentProcessor.CustomizeMergeFields(System.Action{DevExpress.XtraRichEdit.CustomizeMergeFieldsEventArgs})">
       <summary>
         <para>Fires when the &#39;Insert Merge Field&#39; command button is clicked, and enables you to customize a drop-down field list.</para>
@@ -38601,6 +37235,13 @@ An empty string, if no filtering is used.</value>
       </summary>
       <param name="method">A delegate method that accepts <see cref="T:DevExpress.Web.Office.DocumentSavingEventArgs"/> as a parameter.</param>
       <returns>An <see cref="T:DevExpress.Web.Mvc.RichEditCustomDocumentProcessor"/> object.</returns>
+    </member>
+    <member name="M:DevExpress.Web.Mvc.RichEditCustomDocumentProcessor.SettingsDocumentSelector(System.Action{DevExpress.Web.ASPxRichEdit.RichEditDocumentSelectorSettings})">
+      <summary>
+        <para></para>
+      </summary>
+      <param name="method"></param>
+      <returns></returns>
     </member>
     <member name="M:DevExpress.Web.Mvc.RichEditCustomDocumentProcessor.SpellCheckerWordAdded(System.Action{DevExpress.XtraSpellChecker.WordAddedEventArgs})">
       <summary>
@@ -42032,12 +40673,6 @@ An empty string, if no filtering is used.</value>
       </summary>
       <value>An <see cref="T:DevExpress.Web.Mvc.MVCxSpreadsheetSettings"/> object that contains the control&#39;s options.</value>
     </member>
-    <member name="P:DevExpress.Web.Mvc.SpreadsheetSettings.SettingsDialogForm">
-      <summary>
-        <para>Provides access to settings that relate to customization of dialog form elements.</para>
-      </summary>
-      <value>A <see cref="T:DevExpress.Web.ASPxSpreadsheet.SpreadsheetDialogFormSettings"/> object that contains customization settings for form elements of built-in dialogs.</value>
-    </member>
     <member name="P:DevExpress.Web.Mvc.SpreadsheetSettings.SettingsDialogs">
       <summary>
         <para>Provides access to the built-in dialogs&#39; settings.</para>
@@ -42049,12 +40684,6 @@ An empty string, if no filtering is used.</value>
         <para>Provides access to settings that are related to the FileManager used within some built-in dialogs dialog.</para>
       </summary>
       <value>An <see cref="T:DevExpress.Web.ASPxSpreadsheet.SpreadsheetDocumentSelectorSettings"/> object that contains the Document Selector dialog&#39;s settings.</value>
-    </member>
-    <member name="P:DevExpress.Web.Mvc.SpreadsheetSettings.SettingsForms">
-      <summary>
-        <para>Provides access to settings that relate to customizable built-in dialog forms (UserControls) stored within a web site.</para>
-      </summary>
-      <value>A <see cref="T:DevExpress.Web.Mvc.MVCxSpreadsheetFormsSettings"/> object containing properties that are related to customizable built-in dialog forms.</value>
     </member>
     <member name="P:DevExpress.Web.Mvc.SpreadsheetSettings.SettingsLoadingPanel">
       <summary>
@@ -44521,6 +43150,12 @@ Passes a value that contains specific information (if any) to the client side fo
       </summary>
       <value>A <see cref="T:DevExpress.Web.FilterControlParseValueEventHandler"/> delegate method allowing you to implement custom processing.</value>
     </member>
+    <member name="P:DevExpress.Web.Mvc.TreeListSettings.HeaderFilterEditorInitialize">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
     <member name="P:DevExpress.Web.Mvc.TreeListSettings.HeaderFilterFillItems">
       <summary>
         <para>Enables you to provide custom filter items displayed within a filter dropdown.</para>
@@ -44586,12 +43221,6 @@ Passes a value that contains specific information (if any) to the client side fo
         <para>Provides access to the root nodes child collection.</para>
       </summary>
       <value>A <see cref="T:DevExpress.Web.Mvc.MVCxTreeListNodeCollection"/> object containing the collection of child nodes owned by the root node.</value>
-    </member>
-    <member name="P:DevExpress.Web.Mvc.TreeListSettings.NodeValidating">
-      <summary>
-        <para>Enables you to specify whether node data is valid, and whether the node can be updated.</para>
-      </summary>
-      <value>An <see cref="T:DevExpress.Web.ASPxTreeList.TreeListNodeValidationEventHandler"/> delegate method allowing you to implement custom processing.</value>
     </member>
     <member name="P:DevExpress.Web.Mvc.TreeListSettings.ParentFieldName">
       <summary>
@@ -44808,12 +43437,6 @@ Passes a value that contains specific information (if any) to the client side fo
         <para>Provides access to the settings of different grid popup elements.</para>
       </summary>
       <value>An <see cref="T:DevExpress.Web.ASPxTreeList.TreeListPopupControlSettings"/> object that contains the popup element settings.</value>
-    </member>
-    <member name="P:DevExpress.Web.Mvc.TreeListSettings.SettingsPopupEditForm">
-      <summary>
-        <para>Provides access to the popup edit form settings.</para>
-      </summary>
-      <value>An <see cref="T:DevExpress.Web.Mvc.MVCxTreeListSettingsPopupEditForm"/> object that contains the popup edit form&#39;s settings.</value>
     </member>
     <member name="P:DevExpress.Web.Mvc.TreeListSettings.SettingsResizing">
       <summary>
@@ -46242,34 +44865,6 @@ Passes a value that contains specific information (if any) to the client side fo
       <param name="method">A delegate method that accepts <see cref="T:DevExpress.Web.Mvc.ReportDesignerExtension"/> as a parameter.</param>
       <returns>A <see cref="T:DevExpress.Web.Mvc.ReportDesignerExtension"/> object implementing the ReportDesigner functionality.</returns>
     </member>
-    <member name="M:DevExpress.Web.Mvc.UI.ExtensionsFactory.ReportToolbar(DevExpress.Web.Mvc.ReportToolbarSettings)">
-      <summary>
-        <para>Creates a Report Toolbar.</para>
-      </summary>
-      <param name="settings">A <see cref="T:DevExpress.Web.Mvc.ReportToolbarSettings"/> object containing Report Toolbar extension settings.</param>
-      <returns>A <see cref="T:DevExpress.Web.Mvc.ReportToolbarExtension"/> object implementing the Report Toolbar functionality.</returns>
-    </member>
-    <member name="M:DevExpress.Web.Mvc.UI.ExtensionsFactory.ReportToolbar(System.Action{DevExpress.Web.Mvc.ReportToolbarSettings})">
-      <summary>
-        <para>Creates a Report Toolbar.</para>
-      </summary>
-      <param name="method">A delegate method that accepts <see cref="T:DevExpress.Web.Mvc.ReportToolbarSettings"/> as a parameter.</param>
-      <returns>A <see cref="T:DevExpress.Web.Mvc.ReportToolbarExtension"/> object implementing the Report Toolbar functionality.</returns>
-    </member>
-    <member name="M:DevExpress.Web.Mvc.UI.ExtensionsFactory.ReportViewer(DevExpress.Web.Mvc.ReportViewerSettings)">
-      <summary>
-        <para>Creates a Report Viewer.</para>
-      </summary>
-      <param name="settings">A <see cref="T:DevExpress.Web.Mvc.ReportViewerSettings"/> object containing Report Viewer extension settings.</param>
-      <returns>A <see cref="T:DevExpress.Web.Mvc.ReportViewerExtension"/> object implementing the Report Viewer functionality.</returns>
-    </member>
-    <member name="M:DevExpress.Web.Mvc.UI.ExtensionsFactory.ReportViewer(System.Action{DevExpress.Web.Mvc.ReportViewerSettings})">
-      <summary>
-        <para>Creates a Report Viewer.</para>
-      </summary>
-      <param name="method">A delegate method that accepts <see cref="T:DevExpress.Web.Mvc.ReportViewerSettings"/> as a parameter.</param>
-      <returns>A <see cref="T:DevExpress.Web.Mvc.ReportViewerExtension"/> object implementing the Report Viewer functionality.</returns>
-    </member>
     <member name="M:DevExpress.Web.Mvc.UI.ExtensionsFactory.Ribbon(DevExpress.Web.Mvc.RibbonSettings)">
       <summary>
         <para>Creates a Ribbon.</para>
@@ -47430,16 +46025,6 @@ Passes a value that contains specific information (if any) to the client side fo
     <member name="F:DevExpress.Web.Mvc.UI.ExtensionType.ReportDesigner">
       <summary>
         <para>Identifies the ReportDesigner extension.</para>
-      </summary>
-    </member>
-    <member name="F:DevExpress.Web.Mvc.UI.ExtensionType.ReportToolbar">
-      <summary>
-        <para>Identifies the ReportToolbar extension.</para>
-      </summary>
-    </member>
-    <member name="F:DevExpress.Web.Mvc.UI.ExtensionType.ReportViewer">
-      <summary>
-        <para>Identifies the ReportViewer extension.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Web.Mvc.UI.ExtensionType.Ribbon">
@@ -49489,6 +48074,12 @@ An empty string, if no filtering is used.</value>
       </summary>
       <value>An <see cref="T:DevExpress.Web.Mvc.MVCxVerticalGridFormatConditionCollection"/> object that is a collection of rules.</value>
     </member>
+    <member name="P:DevExpress.Web.Mvc.VerticalGridSettings.HeaderFilterEditorInitialize">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
     <member name="P:DevExpress.Web.Mvc.VerticalGridSettings.HeaderFilterFillItems">
       <summary>
         <para>Enables you to provide custom filter items displayed in a filter dropdown.</para>
@@ -49524,12 +48115,6 @@ An empty string, if no filtering is used.</value>
         <para>Enables you to initialize added records.</para>
       </summary>
       <value>A <see cref="T:DevExpress.Web.Data.ASPxDataInitNewRowEventHandler"/> delegate method allowing you to implement custom processing.</value>
-    </member>
-    <member name="P:DevExpress.Web.Mvc.VerticalGridSettings.RecordValidating">
-      <summary>
-        <para>Enables you to specify whether column data is valid, and whether the column can be updated.</para>
-      </summary>
-      <value>An <see cref="T:DevExpress.Web.ASPxVerticalGridDataValidationEventHandler"/> delegate method allowing you to implement custom processing.</value>
     </member>
     <member name="P:DevExpress.Web.Mvc.VerticalGridSettings.Rows">
       <summary>
@@ -49956,12 +48541,6 @@ An empty string, if no filtering is used.</value>
       <param name="menuItems">A collection of <see cref="T:DevExpress.XtraReports.Web.ClientControls.ClientControlsMenuItem"/> objects.</param>
       <returns>A <see cref="T:DevExpress.XtraReports.Web.WebDocumentViewer.WebDocumentViewerModel"/> object.</returns>
     </member>
-    <member name="P:DevExpress.Web.Mvc.WebDocumentViewerExtension.ShouldClearReportScripts">
-      <summary>
-        <para>For internal use.</para>
-      </summary>
-      <value></value>
-    </member>
     <member name="T:DevExpress.Web.Mvc.WebDocumentViewerSettings">
       <summary>
         <para>Stores settings of the <see cref="T:DevExpress.Web.Mvc.WebDocumentViewerExtension"/>.</para>
@@ -50037,12 +48616,6 @@ An empty string, if no filtering is used.</value>
         <para>Provides access to the Web Document Viewer&#39;s tab panel settings.</para>
       </summary>
       <value>An object that specifies tab panel settings.</value>
-    </member>
-    <member name="P:DevExpress.Web.Mvc.WebDocumentViewerSettings.Theme">
-      <summary>
-        <para>For internal use. Indicates the theme that is currently applied to the <see cref="T:DevExpress.Web.Mvc.MVCxWebDocumentViewer"/>.</para>
-      </summary>
-      <value>A <see cref="T:System.String"/> value, specifying the theme name.</value>
     </member>
     <member name="T:DevExpress.Web.Mvc.XtraChartsCollectionExtensions">
       <summary>

@@ -193,6 +193,12 @@
         <para>Initializes a new instance of the <see cref="T:DevExpress.Persistent.BaseImpl.EF.PermissionPolicy.PermissionPolicyRole"/> class.</para>
       </summary>
     </member>
+    <member name="P:DevExpress.Persistent.BaseImpl.EF.PermissionPolicy.PermissionPolicyRole.ActiveAdminExists">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
     <member name="M:DevExpress.Persistent.BaseImpl.EF.PermissionPolicy.PermissionPolicyRole.AddUser(System.Object)">
       <summary>
         <para></para>
@@ -300,6 +306,12 @@
       <summary>
         <para>Initializes a new instance of the <see cref="T:DevExpress.Persistent.BaseImpl.EF.PermissionPolicy.PermissionPolicyUser"/> class.</para>
       </summary>
+    </member>
+    <member name="P:DevExpress.Persistent.BaseImpl.EF.PermissionPolicy.PermissionPolicyUser.ActiveAdminExists">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
     </member>
     <member name="P:DevExpress.Persistent.BaseImpl.EF.PermissionPolicy.PermissionPolicyUser.ChangePasswordOnFirstLogon">
       <summary>

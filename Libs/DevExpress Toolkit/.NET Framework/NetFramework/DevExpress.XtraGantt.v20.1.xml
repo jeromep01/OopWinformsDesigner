@@ -330,6 +330,13 @@
       </summary>
       <value>A <see cref="T:System.DateTime"/> structure that specifies the task finish date.</value>
     </member>
+    <member name="M:DevExpress.XtraGantt.CustomDrawTaskEventArgs.GetPosition(System.DateTime)">
+      <summary>
+        <para></para>
+      </summary>
+      <param name="date"></param>
+      <returns></returns>
+    </member>
     <member name="P:DevExpress.XtraGantt.CustomDrawTaskEventArgs.Info">
       <summary>
         <para>Provides access to view information about the task.</para>
@@ -462,7 +469,7 @@
     </member>
     <member name="P:DevExpress.XtraGantt.CustomTaskProgressEventArgs.Progress">
       <summary>
-        <para>Gets or sets the task&#39;s progress.</para>
+        <para>Gets or sets the task&#39;s progress (a value from 0 to 1).</para>
       </summary>
       <value>A value the specifies the task&#39;s progress.</value>
     </member>
@@ -795,7 +802,7 @@
     </member>
     <member name="P:DevExpress.XtraGantt.GanttChartMappings.DurationFieldName">
       <summary>
-        <para>Gets or sets the data source field (of the <see cref="T:System.TimeSpan"/> type) that specifies a task&#39;s duration.</para>
+        <para>Gets or sets the data source field (of the <see cref="T:System.TimeSpan"/> type) that specifies a task&#39;s duration (only work hours).</para>
       </summary>
       <value>The data source field that specifies a task&#39;s duration.</value>
     </member>
@@ -919,7 +926,7 @@
     </member>
     <member name="E:DevExpress.XtraGantt.GanttControl.CustomTaskProgress">
       <summary>
-        <para>Allows you to specify custom task progress.</para>
+        <para>Fires when a task&#39;s progress is recalculated and allows you to specify a custom value.</para>
       </summary>
     </member>
     <member name="E:DevExpress.XtraGantt.GanttControl.CustomTaskScheduling">
@@ -1144,11 +1151,6 @@
       </summary>
       <value>An object that contains options that specify the view.</value>
     </member>
-    <member name="E:DevExpress.XtraGantt.GanttControl.PopupMenuShowing">
-      <summary>
-        <para>This event is not relevant to the control. Use <see cref="E:DevExpress.XtraGantt.GanttControl.TreeListPopupMenuShowing"/> or <see cref="E:DevExpress.XtraGantt.GanttControl.TaskPopupMenuShowing"/> instead.</para>
-      </summary>
-    </member>
     <member name="P:DevExpress.XtraGantt.GanttControl.RangeControlClient">
       <summary>
         <para></para>
@@ -1190,22 +1192,6 @@
       </summary>
       <param name="startDate">A <see cref="T:System.DateTime"/> structure that specifies the vilible range&#39;s start date.</param>
       <param name="finishDate">A <see cref="T:System.DateTime"/> structure that specifies the vilible range&#39;s finish date.</param>
-    </member>
-    <member name="M:DevExpress.XtraGantt.GanttControl.ShowPrintPreview(System.Drawing.Printing.PaperKind,System.Drawing.Printing.Margins,System.Boolean)">
-      <summary>
-        <para></para>
-      </summary>
-      <param name="paperKind"></param>
-      <param name="pageMargins"></param>
-      <param name="landscape"></param>
-    </member>
-    <member name="M:DevExpress.XtraGantt.GanttControl.ShowRibbonPrintPreview(System.Drawing.Printing.PaperKind,System.Drawing.Printing.Margins,System.Boolean)">
-      <summary>
-        <para></para>
-      </summary>
-      <param name="paperKind"></param>
-      <param name="pageMargins"></param>
-      <param name="landscape"></param>
     </member>
     <member name="P:DevExpress.XtraGantt.GanttControl.SplitterPosition">
       <summary>
@@ -1368,6 +1354,12 @@
       <summary>
         <para>Allows you to customize the default menus for column headers, summary footers, and nodes.</para>
       </summary>
+    </member>
+    <member name="M:DevExpress.XtraGantt.GanttControl.UpdateSummaryProgress(DevExpress.XtraGantt.GanttControlNode)">
+      <summary>
+        <para>Updates the progress for all summary tasks in a tree branch that starts from the specified task.</para>
+      </summary>
+      <param name="node">The summary task that is the root task in the branch that should be updated. If not specified, the method updates all the tasks in the project.</param>
     </member>
     <member name="P:DevExpress.XtraGantt.GanttControl.ViewInfo">
       <summary>
@@ -2573,6 +2565,12 @@
       </summary>
       <value>A value that specifies whether the control automatically updates tasks.</value>
     </member>
+    <member name="P:DevExpress.XtraGantt.Options.GanttControlOptionsBehavior.UpdateDependentTaskProgress">
+      <summary>
+        <para>Gets or sets whether the control updates the progress of dependent tasks (summaries and sub-tasks) when a user modifies a task&#39;s progress.</para>
+      </summary>
+      <value>true to update the progress of dependent tasks when changes are made; otherwise, false.</value>
+    </member>
     <member name="T:DevExpress.XtraGantt.Options.GanttControlOptionsCustomization">
       <summary>
         <para>Contains options that specify what users can customize in a <see cref="T:DevExpress.XtraGantt.GanttControl"/>&#39;s chart.</para>
@@ -2585,19 +2583,19 @@
     </member>
     <member name="P:DevExpress.XtraGantt.Options.GanttControlOptionsCustomization.AllowModifyDependencies">
       <summary>
-        <para>Gets or sets whether users can modify dependencies between tasks: change a predecessor or successor of a task, create new dependencies.</para>
+        <para>Gets or sets whether users can modify dependencies between tasks in the chart: change a predecessor or successor of a task, create new dependencies.</para>
       </summary>
       <value><see cref="F:DevExpress.Utils.DefaultBoolean.True"/>, if users can modify dependencies; otherwise, <see cref="F:DevExpress.Utils.DefaultBoolean.Default"/> or <see cref="F:DevExpress.Utils.DefaultBoolean.False"/>.</value>
     </member>
     <member name="P:DevExpress.XtraGantt.Options.GanttControlOptionsCustomization.AllowModifyProgress">
       <summary>
-        <para>Gets or sets whether users can modify a task&#39;s progress.</para>
+        <para>Gets or sets whether users can modify a task&#39;s progress in the chart.</para>
       </summary>
       <value><see cref="F:DevExpress.Utils.DefaultBoolean.True"/>, if users can modify a task&#39;s progress; otherwise, <see cref="F:DevExpress.Utils.DefaultBoolean.Default"/> or <see cref="F:DevExpress.Utils.DefaultBoolean.False"/>.</value>
     </member>
     <member name="P:DevExpress.XtraGantt.Options.GanttControlOptionsCustomization.AllowModifyTasks">
       <summary>
-        <para>Gets or sets whether users can modify a task&#39;s start and finish dates: resize its bounds or move it to a new time slot.</para>
+        <para>Gets or sets whether users can modify a task&#39;s start and finish dates in the chart: resize its bounds or move it to a new time slot.</para>
       </summary>
       <value><see cref="F:DevExpress.Utils.DefaultBoolean.True"/>, if users can modify a task&#39;s start and finish dates; otherwise, <see cref="F:DevExpress.Utils.DefaultBoolean.Default"/> or <see cref="F:DevExpress.Utils.DefaultBoolean.False"/>.</value>
     </member>

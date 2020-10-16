@@ -140,6 +140,51 @@ The DefaultLevelIndent field is set to -1.</para>
       </summary>
       <value>true, to display vertical lines; otherwise, false.</value>
     </member>
+    <member name="T:DevExpress.XtraVerticalGrid.EditorAlignment">
+      <summary>
+        <para>Enumerates values that specify how an editor is aligned in a grid row.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.XtraVerticalGrid.EditorAlignment.Center">
+      <summary>
+        <para>Aligns the editor at the row&#39;s center.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.XtraVerticalGrid.EditorAlignment.Default">
+      <summary>
+        <para>The alignment is not specified explicitly. Uses the <see cref="F:DevExpress.XtraVerticalGrid.EditorAlignment.Center"/> value.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.XtraVerticalGrid.EditorAlignment.Far">
+      <summary>
+        <para>Aligns the editor at the row&#39;s far edge.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.XtraVerticalGrid.EditorAlignment.Near">
+      <summary>
+        <para>Aligns the editor at the row&#39;s near edge.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.XtraVerticalGrid.EditorPosition">
+      <summary>
+        <para>Enumerates values that specify the editor position relative to the property caption.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.XtraVerticalGrid.EditorPosition.AfterCaption">
+      <summary>
+        <para>Displays the editor after the property caption.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.XtraVerticalGrid.EditorPosition.BeforeCaption">
+      <summary>
+        <para>Displays the editor before the property caption.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.XtraVerticalGrid.EditorPosition.Default">
+      <summary>
+        <para>The position is not specified explicitly. Uses the <see cref="F:DevExpress.XtraVerticalGrid.EditorPosition.AfterCaption"/> value.</para>
+      </summary>
+    </member>
     <member name="N:DevExpress.XtraVerticalGrid.Events">
       <summary>
         <para>Contains classes providing data for events raised by the vertical grid controls included in the XtraVerticalGrid Suite.</para>
@@ -1058,6 +1103,21 @@ The DefaultLevelIndent field is set to -1.</para>
     <member name="F:DevExpress.XtraVerticalGrid.FindMode.FindClick">
       <summary>
         <para>A control starts searching data on clicking the Find button or pressing ENTER.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.XtraVerticalGrid.FindPanelLocation">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.XtraVerticalGrid.FindPanelLocation.Default">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.XtraVerticalGrid.FindPanelLocation.TabPanel">
+      <summary>
+        <para></para>
       </summary>
     </member>
     <member name="T:DevExpress.XtraVerticalGrid.HitInfoTypeEnum">
@@ -2547,7 +2607,7 @@ The DefaultLevelIndent field is set to -1.</para>
     </member>
     <member name="T:DevExpress.XtraVerticalGrid.Rows.EditorRow">
       <summary>
-        <para>Represents an regular data row within the grid control.</para>
+        <para>Specifies a single-edtior data row within the vertical grid control.</para>
       </summary>
     </member>
     <member name="M:DevExpress.XtraVerticalGrid.Rows.EditorRow.#ctor">
@@ -2766,6 +2826,126 @@ The DefaultLevelIndent field is set to -1.</para>
       </summary>
       <param name="index">An integer value representing the index of the <see cref="T:DevExpress.XtraVerticalGrid.Rows.MultiEditorRowProperties"/> object in the row item collection to remove.</param>
     </member>
+    <member name="T:DevExpress.XtraVerticalGrid.Rows.PGridCustomEditorRow">
+      <summary>
+        <para>Specifies a property grid row in the Office view.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.XtraVerticalGrid.Rows.PGridCustomEditorRow.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.XtraVerticalGrid.Rows.PGridCustomEditorRow"/> class.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.XtraVerticalGrid.Rows.PGridCustomEditorRow.#ctor(DevExpress.XtraEditors.Repository.RepositoryItem)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.XtraVerticalGrid.Rows.PGridCustomEditorRow"/> class with specified settings.</para>
+      </summary>
+      <param name="baseRepository">An object that specifies a repository item of the editor used to edit values in this row. This value is assigned to the <see cref="P:DevExpress.XtraVerticalGrid.Rows.PGridCustomEditorRow.Repository"/> property.</param>
+    </member>
+    <member name="P:DevExpress.XtraVerticalGrid.Rows.PGridCustomEditorRow.EditorAlignment">
+      <summary>
+        <para>Gets or sets whether the editor is aligned at the left, right, center, or stretched.</para>
+      </summary>
+      <value>A value that specifies how the editor is aligned in the row.</value>
+    </member>
+    <member name="P:DevExpress.XtraVerticalGrid.Rows.PGridCustomEditorRow.EditorPosition">
+      <summary>
+        <para>Gets or sets whether the editor is located before or after the caption.</para>
+      </summary>
+      <value>A value that specifies whether the editor is located before or after the caption.</value>
+    </member>
+    <member name="P:DevExpress.XtraVerticalGrid.Rows.PGridCustomEditorRow.EditorSize">
+      <summary>
+        <para>Gets the editor size.</para>
+      </summary>
+      <value>A <see cref="T:System.Drawing.Size"/> structure that specifies a size.</value>
+    </member>
+    <member name="M:DevExpress.XtraVerticalGrid.Rows.PGridCustomEditorRow.GetLineCount">
+      <summary>
+        <para>Gets the number of text lines in the row.</para>
+      </summary>
+      <returns>An integer value that specifies the number of text lines in the row.</returns>
+    </member>
+    <member name="P:DevExpress.XtraVerticalGrid.Rows.PGridCustomEditorRow.Grid">
+      <summary>
+        <para>Gets the property grid that contains this row.</para>
+      </summary>
+      <value>An object that specifies a property grid.</value>
+    </member>
+    <member name="P:DevExpress.XtraVerticalGrid.Rows.PGridCustomEditorRow.HasChildren">
+      <summary>
+        <para>Gets whether this row has child rows.</para>
+      </summary>
+      <value>true, if this row has child rows; otherwise, false.</value>
+    </member>
+    <member name="P:DevExpress.XtraVerticalGrid.Rows.PGridCustomEditorRow.Indent">
+      <summary>
+        <para>Gets the value that specifies padding, line spacing, etc.</para>
+      </summary>
+      <value>An integer value that specifies padding, line spacing, etc.</value>
+    </member>
+    <member name="P:DevExpress.XtraVerticalGrid.Rows.PGridCustomEditorRow.OptionsBrick">
+      <summary>
+        <para>Contains options that specify property markers (small rectangles displayed next to property editors).</para>
+      </summary>
+      <value>An object that contains property marker options.</value>
+    </member>
+    <member name="P:DevExpress.XtraVerticalGrid.Rows.PGridCustomEditorRow.Repository">
+      <summary>
+        <para>Gets or sets the repository item of the editor used to edit values in this row.</para>
+      </summary>
+      <value>An object that specifies a repository item of the editor used to edit values in this row.</value>
+    </member>
+    <member name="M:DevExpress.XtraVerticalGrid.Rows.PGridCustomEditorRow.TryGetEditingValue(System.Object@)">
+      <summary>
+        <para>Gets the row editor&#39;s value.</para>
+      </summary>
+      <param name="editingValue">An object that specifies the edit value.</param>
+    </member>
+    <member name="T:DevExpress.XtraVerticalGrid.Rows.PGridEditorRow">
+      <summary>
+        <para>Specifies a single-editor data row within the property grid control.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.XtraVerticalGrid.Rows.PGridEditorRow.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.XtraVerticalGrid.Rows.PGridEditorRow"/> class.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.XtraVerticalGrid.Rows.PGridEditorRow.#ctor(System.String)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.XtraVerticalGrid.Rows.PGridEditorRow"/> class with specified settings.</para>
+      </summary>
+      <param name="fieldName">A string value that specifies the name of the data field bound to the row being created. This value is assigned to the <see cref="P:DevExpress.XtraVerticalGrid.Rows.RowProperties.FieldName"/> property.</param>
+    </member>
+    <member name="T:DevExpress.XtraVerticalGrid.Rows.PGridOptionsFind">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.XtraVerticalGrid.Rows.PGridOptionsFind.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.XtraVerticalGrid.Rows.PGridOptionsFind"/> class.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.XtraVerticalGrid.Rows.PGridOptionsFind.Assign(DevExpress.Utils.Controls.BaseOptions)">
+      <summary>
+        <para></para>
+      </summary>
+      <param name="options"></param>
+    </member>
+    <member name="P:DevExpress.XtraVerticalGrid.Rows.PGridOptionsFind.Location">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="P:DevExpress.XtraVerticalGrid.Rows.PGridOptionsFind.MinWidth">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
     <member name="T:DevExpress.XtraVerticalGrid.Rows.PGridOptionsMenu">
       <summary>
         <para>Contains options that affect the display of context menus in a <see cref="T:DevExpress.XtraVerticalGrid.PropertyGridControl"/>.</para>
@@ -2775,6 +2955,53 @@ The DefaultLevelIndent field is set to -1.</para>
       <summary>
         <para>Initializes a new instance of the <see cref="T:DevExpress.XtraVerticalGrid.Rows.PGridOptionsMenu"/> class.</para>
       </summary>
+    </member>
+    <member name="T:DevExpress.XtraVerticalGrid.Rows.RowBrickOptions">
+      <summary>
+        <para>Contains options that specify property markers (small rectangles displayed next to property editors).</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.XtraVerticalGrid.Rows.RowBrickOptions.#ctor(DevExpress.XtraVerticalGrid.Rows.BaseRow)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.XtraVerticalGrid.Rows.RowBrickOptions"/> class with specified settings.</para>
+      </summary>
+      <param name="row">The row that uses these options.</param>
+    </member>
+    <member name="P:DevExpress.XtraVerticalGrid.Rows.RowBrickOptions.AllowBrick">
+      <summary>
+        <para>Gets or sets whether the row displays a property marker (a small rectangle next to the property editor).</para>
+      </summary>
+      <value>true, if the row displays a property marker; otherwise, false.</value>
+    </member>
+    <member name="P:DevExpress.XtraVerticalGrid.Rows.RowBrickOptions.BackColor">
+      <summary>
+        <para>Gets the property marker background color.</para>
+      </summary>
+      <value>A structure that specifies a color.</value>
+    </member>
+    <member name="P:DevExpress.XtraVerticalGrid.Rows.RowBrickOptions.BorderColor">
+      <summary>
+        <para>Gets or sets the property marker border color.</para>
+      </summary>
+      <value>A structure that specifies a color.</value>
+    </member>
+    <member name="P:DevExpress.XtraVerticalGrid.Rows.RowBrickOptions.DefaultValueColor">
+      <summary>
+        <para>Gets or sets the property marker color when the property value is modified.</para>
+      </summary>
+      <value>A structure that specifies a color.</value>
+    </member>
+    <member name="P:DevExpress.XtraVerticalGrid.Rows.RowBrickOptions.ModifiedValueColor">
+      <summary>
+        <para>Gets or sets the property marker color when the property is set to its default value.</para>
+      </summary>
+      <value>A structure that specifies a color.</value>
+    </member>
+    <member name="P:DevExpress.XtraVerticalGrid.Rows.RowBrickOptions.ReadOnlyValueColor">
+      <summary>
+        <para>Gets or sets the property marker color when the property cannot be modified.</para>
+      </summary>
+      <value>A structure that specifies a color.</value>
     </member>
     <member name="T:DevExpress.XtraVerticalGrid.Rows.RowOperation">
       <summary>
@@ -4045,7 +4272,7 @@ This property is only in effect for the <see cref="T:DevExpress.XtraVerticalGrid
     </member>
     <member name="E:DevExpress.XtraVerticalGrid.VGridControl.QueryCustomFunctions">
       <summary>
-        <para>Allows you to add custom function based filters (for example, &#39;discount is more than 15%&#39;) to Excel-style pop-up filter menus and/or the filter editor.</para>
+        <para>Allows you to add custom-function-based filters (for example, &#39;discount is more than 15%&#39;) to Excel-style pop-up filter menus and/or the filter editor.</para>
       </summary>
     </member>
     <member name="P:DevExpress.XtraVerticalGrid.VGridControl.RecordCount">

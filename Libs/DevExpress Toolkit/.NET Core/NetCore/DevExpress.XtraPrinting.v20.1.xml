@@ -317,9 +317,9 @@
     </member>
     <member name="P:DevExpress.XtraPrinting.Control.PrintControl.UseAsyncDocumentCreation">
       <summary>
-        <para></para>
+        <para>Gets or sets whether the <see cref="T:DevExpress.XtraPrinting.Preview.DocumentViewer"/> should create a report document asynchronously in a separate task.</para>
       </summary>
-      <value></value>
+      <value>True or Default, to create a report document asynchronously in a separate task; otherwise, False.</value>
     </member>
     <member name="P:DevExpress.XtraPrinting.Control.PrintControl.VerticalScrollBarVisibility">
       <summary>

@@ -2197,9 +2197,9 @@
     </member>
     <member name="P:DevExpress.ExpressApp.Security.SecurityStrategy.EnableSecurityForActions">
       <summary>
-        <para>Specifies whether the Security System checks Action Permissions. Note that this feature is currently available as a community technology preview (CTP).</para>
+        <para>For internal use.</para>
       </summary>
-      <value>true, if the Security System checks Action Permissions; otherwise, false.</value>
+      <value></value>
     </member>
     <member name="M:DevExpress.ExpressApp.Security.SecurityStrategy.GetBusinessClasses">
       <summary>

@@ -783,6 +783,26 @@
       </summary>
       <value>A dependency property identifier.</value>
     </member>
+    <member name="T:DevExpress.Xpf.PivotGrid.DateTimeGroupIntervals">
+      <summary>
+        <para>Lists possible DateTime group interval combinations.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Xpf.PivotGrid.DateTimeGroupIntervals.DefaultIntervals">
+      <summary>
+        <para>Basic DateTime group intervals:</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Xpf.PivotGrid.DateTimeGroupIntervals.ExtendedIntervals">
+      <summary>
+        <para>Displays basic and additional DateTime group intervals. Additional group intervals are:</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Xpf.PivotGrid.DateTimeGroupIntervals.None">
+      <summary>
+        <para>Hides the DateTime group intervals.</para>
+      </summary>
+    </member>
     <member name="T:DevExpress.Xpf.PivotGrid.DefaultMenuItemNames">
       <summary>
         <para>Contains names of the context menu items.</para>
@@ -5086,6 +5106,12 @@ The field will not be sorted against the custom text generated on the client sid
       </summary>
       <value>A <see cref="T:System.Windows.Input.RoutedCommand"/> object that defines a command implementing the <see cref="T:System.Windows.Input.ICommand"/>, and is routed through the element tree.</value>
     </member>
+    <member name="P:DevExpress.Xpf.PivotGrid.PivotGridCommands.HideFilterEditor">
+      <summary>
+        <para>Hides the Filter Editor.</para>
+      </summary>
+      <value>A <see cref="T:System.Windows.Input.RoutedCommand"/> object that defines a command implementing the <see cref="T:System.Windows.Input.ICommand"/>, and is routed through the element tree.</value>
+    </member>
     <member name="P:DevExpress.Xpf.PivotGrid.PivotGridCommands.HidePrefilter">
       <summary>
         <para>Hides the Prefilter.</para>
@@ -5095,6 +5121,12 @@ The field will not be sorted against the custom text generated on the client sid
     <member name="P:DevExpress.Xpf.PivotGrid.PivotGridCommands.ReloadData">
       <summary>
         <para>Reloads data from the control&#39;s data source and recalculates summaries.</para>
+      </summary>
+      <value>A <see cref="T:System.Windows.Input.RoutedCommand"/> object that defines a command implementing the <see cref="T:System.Windows.Input.ICommand"/>, and is routed through the element tree.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.PivotGrid.PivotGridCommands.ResetFilterCriteria">
+      <summary>
+        <para>Resets the Filter Editor settings to their default values.</para>
       </summary>
       <value>A <see cref="T:System.Windows.Input.RoutedCommand"/> object that defines a command implementing the <see cref="T:System.Windows.Input.ICommand"/>, and is routed through the element tree.</value>
     </member>
@@ -5161,6 +5193,12 @@ The field will not be sorted against the custom text generated on the client sid
     <member name="P:DevExpress.Xpf.PivotGrid.PivotGridCommands.ShowFieldList">
       <summary>
         <para>Shows the Field List.</para>
+      </summary>
+      <value>A <see cref="T:System.Windows.Input.RoutedCommand"/> object that defines a command implementing the <see cref="T:System.Windows.Input.ICommand"/>, and is routed through the element tree.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.PivotGrid.PivotGridCommands.ShowFilterEditor">
+      <summary>
+        <para>Shows the Filter Editor.</para>
       </summary>
       <value>A <see cref="T:System.Windows.Input.RoutedCommand"/> object that defines a command implementing the <see cref="T:System.Windows.Input.ICommand"/>, and is routed through the element tree.</value>
     </member>
@@ -5366,6 +5404,18 @@ The field will not be sorted against the custom text generated on the client sid
       </summary>
       <value>true to display filter buttons within field headers; otherwise, false.</value>
     </member>
+    <member name="P:DevExpress.Xpf.PivotGrid.PivotGridControl.AllowFilterEditor">
+      <summary>
+        <para>Gets or sets whether users are allowed to invoke the Filter Editor.</para>
+      </summary>
+      <value>true to allow users to invoke the Filter Editor; otherwise, false.</value>
+    </member>
+    <member name="F:DevExpress.Xpf.PivotGrid.PivotGridControl.AllowFilterEditorProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.PivotGrid.PivotGridControl.AllowFilterEditor"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
     <member name="P:DevExpress.Xpf.PivotGrid.PivotGridControl.AllowFilterInFieldList">
       <summary>
         <para>Gets or sets whether filtering can be applied to fields via the Field List. This is a dependency property.</para>
@@ -5416,7 +5466,7 @@ The field will not be sorted against the custom text generated on the client sid
     </member>
     <member name="P:DevExpress.Xpf.PivotGrid.PivotGridControl.AllowPrefilter">
       <summary>
-        <para>Gets or sets whether end-users are allowed to invoke the Prefilter.</para>
+        <para>Gets or sets whether users are allowed to invoke the Prefilter.</para>
       </summary>
       <value>true to allow end-users to invoke the Prefilter; otherwise, false.</value>
     </member>
@@ -6487,6 +6537,17 @@ This is a dependency property.</para>
       </summary>
       <value>A routed event identifier.</value>
     </member>
+    <member name="E:DevExpress.Xpf.PivotGrid.PivotGridControl.CustomFilterPanelDisplayText">
+      <summary>
+        <para>Enables custom text to be displayed instead of a filter expression within the Filter Panel.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Xpf.PivotGrid.PivotGridControl.CustomFilterPanelDisplayTextEvent">
+      <summary>
+        <para>Identifies the <see cref="E:DevExpress.Xpf.PivotGrid.PivotGridControl.CustomFilterPanelDisplayText"/> routed event.</para>
+      </summary>
+      <value>A routed event identifier.</value>
+    </member>
     <member name="E:DevExpress.Xpf.PivotGrid.PivotGridControl.CustomFilterPopupItems">
       <summary>
         <para>Allows you to customize the Legacy filter drop-down list items.</para>
@@ -7272,7 +7333,7 @@ This is a dependency property.</para>
     </member>
     <member name="E:DevExpress.Xpf.PivotGrid.PivotGridControl.FieldFilterChanging">
       <summary>
-        <para>Allows you to customize the filter that is being applied or cancel filtering.</para>
+        <para>Allows you to customize or cancel the applied filter.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Xpf.PivotGrid.PivotGridControl.FieldFilterChangingEvent">
@@ -7757,6 +7818,17 @@ This is a dependency property.</para>
       </summary>
       <value>A <see cref="T:DevExpress.Data.Filtering.CriteriaOperator"/> object which is a filter criterion.</value>
     </member>
+    <member name="E:DevExpress.Xpf.PivotGrid.PivotGridControl.FilterCriteriaChanged">
+      <summary>
+        <para>Occurs when the filter expression specified by the Filter Editor is changed.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Xpf.PivotGrid.PivotGridControl.FilterCriteriaChangedEvent">
+      <summary>
+        <para>Identifies the <see cref="E:DevExpress.Xpf.PivotGrid.PivotGridControl.FilterCriteriaChanged"/> routed event.</para>
+      </summary>
+      <value>A routed event identifier.</value>
+    </member>
     <member name="F:DevExpress.Xpf.PivotGrid.PivotGridControl.FilterCriteriaProperty">
       <summary>
         <para>Identifies the <see cref="P:DevExpress.Xpf.PivotGrid.PivotGridControl.FilterCriteria"/> dependency property.</para>
@@ -7802,6 +7874,18 @@ This is a dependency property.</para>
     <member name="F:DevExpress.Xpf.PivotGrid.PivotGridControl.FilteringPanelStyleProperty">
       <summary>
         <para>Identifies the <see cref="P:DevExpress.Xpf.PivotGrid.PivotGridControl.FilteringPanelStyle"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.PivotGrid.PivotGridControl.FilterPanelText">
+      <summary>
+        <para>Gets the filter expression displayed within the Filter Panel. This is a dependency property.</para>
+      </summary>
+      <value>A <see cref="T:System.String"/> value that specifies the filter expression displayed within the filter panel.</value>
+    </member>
+    <member name="F:DevExpress.Xpf.PivotGrid.PivotGridControl.FilterPanelTextProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.PivotGrid.PivotGridControl.FilterPanelText"/> dependency property.</para>
       </summary>
       <value>A dependency property identifier.</value>
     </member>
@@ -8170,7 +8254,7 @@ This is a dependency property.</para>
     </member>
     <member name="E:DevExpress.Xpf.PivotGrid.PivotGridControl.GroupFilterChanged">
       <summary>
-        <para>Occurs after a group filter condition was changed.</para>
+        <para>Occurs after a group filter condition is changed.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Xpf.PivotGrid.PivotGridControl.GroupFilterChangedEvent">
@@ -8284,6 +8368,11 @@ This is a dependency property.</para>
         <para>Hides the Field List.</para>
       </summary>
     </member>
+    <member name="M:DevExpress.Xpf.PivotGrid.PivotGridControl.HideFilterEditor">
+      <summary>
+        <para>Hides the Filter Editor.</para>
+      </summary>
+    </member>
     <member name="M:DevExpress.Xpf.PivotGrid.PivotGridControl.HidePrefilter">
       <summary>
         <para>Hides the Prefilter.</para>
@@ -8373,6 +8462,30 @@ This is a dependency property.</para>
     <member name="F:DevExpress.Xpf.PivotGrid.PivotGridControl.IsFieldValueMenuEnabledProperty">
       <summary>
         <para>Identifies the <see cref="P:DevExpress.Xpf.PivotGrid.PivotGridControl.IsFieldValueMenuEnabled"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.PivotGrid.PivotGridControl.IsFilterEditorVisible">
+      <summary>
+        <para>Gets or sets whether or not the Filter Editor is invoked. This is a dependency property.</para>
+      </summary>
+      <value>true if the Filter Editor is visible; otherwise, false.</value>
+    </member>
+    <member name="F:DevExpress.Xpf.PivotGrid.PivotGridControl.IsFilterEditorVisibleProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.PivotGrid.PivotGridControl.IsFilterEditorVisible"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.PivotGrid.PivotGridControl.IsFilterEnabled">
+      <summary>
+        <para>Gets or sets whether or not the filter specified by the Filter Editor is enabled. This is a dependency property.</para>
+      </summary>
+      <value>true to enable the filter expression specified by the Filter Editor; otherwise, false.</value>
+    </member>
+    <member name="F:DevExpress.Xpf.PivotGrid.PivotGridControl.IsFilterEnabledProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.PivotGrid.PivotGridControl.IsFilterEnabled"/> dependency property.</para>
       </summary>
       <value>A dependency property identifier.</value>
     </member>
@@ -8553,6 +8666,12 @@ This is a dependency property.</para>
         <para>Identifies the <see cref="P:DevExpress.Xpf.PivotGrid.PivotGridControl.MergeRowFieldValues"/> dependency property.</para>
       </summary>
       <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.PivotGrid.PivotGridControl.MRUFilterList">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
     </member>
     <member name="P:DevExpress.Xpf.PivotGrid.PivotGridControl.MRUFilterListCount">
       <summary>
@@ -9277,6 +9396,11 @@ This is a dependency property.</para>
       </summary>
       <param name="filterCriteria">A <see cref="T:DevExpress.Data.Filtering.CriteriaOperator"/> object that represents the criterion that should be removed from the MRU Filter List.</param>
     </member>
+    <member name="M:DevExpress.Xpf.PivotGrid.PivotGridControl.ResetFilterCriteria">
+      <summary>
+        <para>Clears the filter criteria specified by the Filter Editor.</para>
+      </summary>
+    </member>
     <member name="M:DevExpress.Xpf.PivotGrid.PivotGridControl.ResetPrefilter">
       <summary>
         <para>Clears the filter criteria specified by the Prefilter.</para>
@@ -9813,19 +9937,24 @@ This is a dependency property.</para>
     </member>
     <member name="P:DevExpress.Xpf.PivotGrid.PivotGridControl.ShowDateTimeGroupIntervalItems">
       <summary>
-        <para></para>
+        <para>Gets or sets what combination of DateTime group intervals the popup menu displays.</para>
       </summary>
-      <value></value>
+      <value>A <see cref="T:DevExpress.Xpf.PivotGrid.DateTimeGroupIntervals"/> enumeration member that specifies a set of DateTime group intervals for display.</value>
     </member>
     <member name="F:DevExpress.Xpf.PivotGrid.PivotGridControl.ShowDateTimeGroupIntervalItemsProperty">
       <summary>
-        <para></para>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.PivotGrid.PivotGridControl.ShowDateTimeGroupIntervalItems"/> dependency property.</para>
       </summary>
-      <value></value>
+      <value>A dependency property identifier.</value>
     </member>
     <member name="M:DevExpress.Xpf.PivotGrid.PivotGridControl.ShowFieldList">
       <summary>
         <para>Invokes the Field List.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.PivotGrid.PivotGridControl.ShowFilterEditor">
+      <summary>
+        <para>Invokes the Filter Editor.</para>
       </summary>
     </member>
     <member name="P:DevExpress.Xpf.PivotGrid.PivotGridControl.ShowFilterHeaders">
@@ -9837,6 +9966,30 @@ This is a dependency property.</para>
     <member name="F:DevExpress.Xpf.PivotGrid.PivotGridControl.ShowFilterHeadersProperty">
       <summary>
         <para>Identifies the <see cref="P:DevExpress.Xpf.PivotGrid.PivotGridControl.ShowFilterHeaders"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.PivotGrid.PivotGridControl.ShowFilterPanel">
+      <summary>
+        <para>Gets whether the Filter Panel is displayed within the PivotGridControl. This is a dependency property.</para>
+      </summary>
+      <value>true if a filter panel is displayed within the PivotGridControl; otherwise, false.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.PivotGrid.PivotGridControl.ShowFilterPanelMode">
+      <summary>
+        <para>Gets or sets when the Filter Panel is displayed within the PivotGridControl. This is a dependency property.</para>
+      </summary>
+      <value>A ShowFilterPanelMode enumeration value that specifies when the Filter Panel is displayed within the PivotGridControl.</value>
+    </member>
+    <member name="F:DevExpress.Xpf.PivotGrid.PivotGridControl.ShowFilterPanelModeProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.PivotGrid.PivotGridControl.ShowFilterPanelMode"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="F:DevExpress.Xpf.PivotGrid.PivotGridControl.ShowFilterPanelProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.PivotGrid.PivotGridControl.ShowFilterPanel"/> dependency property.</para>
       </summary>
       <value>A dependency property identifier.</value>
     </member>
@@ -10738,9 +10891,9 @@ This is a dependency property.</para>
     </member>
     <member name="P:DevExpress.Xpf.PivotGrid.PivotGridField.AllowHide">
       <summary>
-        <para></para>
+        <para>Gets or sets whether an end user can hide the current field. This is a dependency property.</para>
       </summary>
-      <value></value>
+      <value>A Boolean value that specifies whether an end user can hide the current field.</value>
     </member>
     <member name="F:DevExpress.Xpf.PivotGrid.PivotGridField.AllowHideProperty">
       <summary>
@@ -11811,6 +11964,18 @@ This is a dependency property.</para>
       </summary>
       <value>A dependency property identifier.</value>
     </member>
+    <member name="P:DevExpress.Xpf.PivotGrid.PivotGridField.ShowGroupIntervalName">
+      <summary>
+        <para>Gets or sets whether the group interval&#39;s name is displayed within the data field&#39;s header. This is a dependency property.</para>
+      </summary>
+      <value>true to display the group interval&#39;s name within the data field&#39;s header; otherwise, false.</value>
+    </member>
+    <member name="F:DevExpress.Xpf.PivotGrid.PivotGridField.ShowGroupIntervalNameProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.PivotGrid.PivotGridField.ShowGroupIntervalName"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
     <member name="P:DevExpress.Xpf.PivotGrid.PivotGridField.ShowInCustomizationForm">
       <summary>
         <para>Gets or sets whether the field&#39;s header is displayed within the field list when the field is hidden. This is a dependency property.</para>
@@ -11849,7 +12014,7 @@ This is a dependency property.</para>
     </member>
     <member name="P:DevExpress.Xpf.PivotGrid.PivotGridField.ShowNewValues">
       <summary>
-        <para>Gets or sets whether field values that have appeared in the datasource after the field&#39;s filtering was configured should be shown.
+        <para>Gets or sets whether field values are shown in the datasource after field filtering is configured.
 This is a dependency property.</para>
       </summary>
       <value>true to show new field values; otherwise, false.</value>
@@ -12745,7 +12910,7 @@ This is a dependency property.</para>
     </member>
     <member name="P:DevExpress.Xpf.PivotGrid.PivotGridGroup.ShowNewValues">
       <summary>
-        <para>Gets or sets whether field values that have appeared in the datasource after the field&#39;s filtering was configured should be shown. This is a dependency property.</para>
+        <para>Gets or sets whether field values are shown in the datasource after the field filtering is configured. This is a dependency property.</para>
       </summary>
       <value>true to show new field values; otherwise, false.</value>
     </member>
@@ -14112,17 +14277,17 @@ This is a dependency property.</para>
     </member>
     <member name="T:DevExpress.Xpf.PivotGrid.SummaryFilterMode">
       <summary>
-        <para></para>
+        <para>Lists options that specify the aggregation level for summary filtering.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Xpf.PivotGrid.SummaryFilterMode.LastLevel">
       <summary>
-        <para></para>
+        <para>Apply summary filtering to cells on the last level (a level identified by the last column and row fields).</para>
       </summary>
     </member>
     <member name="F:DevExpress.Xpf.PivotGrid.SummaryFilterMode.SpecificLevel">
       <summary>
-        <para></para>
+        <para>Apply summary filtering to cells on the level identified by the <see cref="P:DevExpress.Xpf.PivotGrid.PivotGridField.SummaryFilterColumnField"/> and <see cref="P:DevExpress.Xpf.PivotGrid.PivotGridField.SummaryFilterRowField"/> property values.</para>
       </summary>
     </member>
     <member name="T:DevExpress.Xpf.PivotGrid.TopBottomRuleFormatCondition">
@@ -14224,6 +14389,11 @@ This is a dependency property.</para>
         <para>An end-user invokes the Expression Editor dialog.</para>
       </summary>
     </member>
+    <member name="F:DevExpress.Xpf.PivotGrid.UserAction.FilterEditor">
+      <summary>
+        <para>A user invokes a Filter Editor.</para>
+      </summary>
+    </member>
     <member name="F:DevExpress.Xpf.PivotGrid.UserAction.MenuOpen">
       <summary>
         <para>An end-user invokes a context menu.</para>
@@ -14236,7 +14406,7 @@ This is a dependency property.</para>
     </member>
     <member name="F:DevExpress.Xpf.PivotGrid.UserAction.Prefilter">
       <summary>
-        <para>An end-user invokes a Filter Editor.</para>
+        <para>A user invokes a Prefilter.</para>
       </summary>
     </member>
     <member name="T:DevExpress.Xpf.PivotGrid.WindowExpressionBinding">

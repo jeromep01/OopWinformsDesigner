@@ -477,6 +477,17 @@
         <para>Represents the tail annotation connector style.</para>
       </summary>
     </member>
+    <member name="T:DevExpress.XtraCharts.AnnotationImageEditingEventArgs">
+      <summary>
+        <para>Data for the <see cref="E:DevExpress.XtraCharts.ChartControl.AnnotationRepositoryChanging"/> event that occurs when the image annotation is edited.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.XtraCharts.AnnotationImageEditingEventArgs.NewImageFileName">
+      <summary>
+        <para>Gets or sets the path to a new annotation&#39;s image.</para>
+      </summary>
+      <value>A file name that includes the file path.</value>
+    </member>
     <member name="T:DevExpress.XtraCharts.AnnotationRepository">
       <summary>
         <para>Represents a collection that stores all annotations that are present in a chart control for any of its element.</para>
@@ -555,6 +566,85 @@
       </summary>
       <returns>An array of <see cref="T:DevExpress.XtraCharts.Annotation"/> objects containing the copies of the elements of the <see cref="T:DevExpress.XtraCharts.AnnotationRepository"/>.</returns>
     </member>
+    <member name="T:DevExpress.XtraCharts.AnnotationRepositoryChange">
+      <summary>
+        <para>Lists types of changes that a user can make to the annotation repository.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.XtraCharts.AnnotationRepositoryChange.Addition">
+      <summary>
+        <para>A user adds an annotation.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.XtraCharts.AnnotationRepositoryChange.Deletion">
+      <summary>
+        <para>A user deletes an annotation.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.XtraCharts.AnnotationRepositoryChange.Image">
+      <summary>
+        <para>A user changes an annotation image.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.XtraCharts.AnnotationRepositoryChange.Text">
+      <summary>
+        <para>A user edits annotation text.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.XtraCharts.AnnotationRepositoryChangedEventArgs">
+      <summary>
+        <para>Data for the <see cref="E:DevExpress.XtraCharts.ChartControl.AnnotationRepositoryChanged"/> event.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.XtraCharts.AnnotationRepositoryChangedEventArgs.Annotation">
+      <summary>
+        <para>Returns the changed annotation.</para>
+      </summary>
+      <value>The changed annotation.</value>
+    </member>
+    <member name="P:DevExpress.XtraCharts.AnnotationRepositoryChangedEventArgs.Change">
+      <summary>
+        <para>Returns the <see cref="T:DevExpress.XtraCharts.AnnotationRepositoryChange"/> value that indicates the type of change a user makes.</para>
+      </summary>
+      <value>An annotation change that a user makes.</value>
+    </member>
+    <member name="T:DevExpress.XtraCharts.AnnotationRepositoryChangedEventHandler">
+      <summary>
+        <para>A method that handles the <see cref="E:DevExpress.XtraCharts.ChartControl.AnnotationRepositoryChanged"/> event.</para>
+      </summary>
+      <param name="sender">The event source.</param>
+      <param name="e">The event data.</param>
+    </member>
+    <member name="T:DevExpress.XtraCharts.AnnotationRepositoryChangingEventArgs">
+      <summary>
+        <para>Data for the <see cref="E:DevExpress.XtraCharts.ChartControl.AnnotationRepositoryChanging"/> event.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.XtraCharts.AnnotationRepositoryChangingEventArgs.Annotation">
+      <summary>
+        <para>Returns the annotation that is being changed.</para>
+      </summary>
+      <value>The changed annotation.</value>
+    </member>
+    <member name="P:DevExpress.XtraCharts.AnnotationRepositoryChangingEventArgs.Cancel">
+      <summary>
+        <para>Indicates whether to cancel the annotation change.</para>
+      </summary>
+      <value>true, if the annotation change should be canceled; otherwise false.</value>
+    </member>
+    <member name="P:DevExpress.XtraCharts.AnnotationRepositoryChangingEventArgs.Change">
+      <summary>
+        <para>Returns the <see cref="T:DevExpress.XtraCharts.AnnotationRepositoryChange"/> value that indicates the type of change a user makes.</para>
+      </summary>
+      <value>An annotation change that a user makes.</value>
+    </member>
+    <member name="T:DevExpress.XtraCharts.AnnotationRepositoryChangingEventHandler">
+      <summary>
+        <para>A method that handles the <see cref="E:DevExpress.XtraCharts.ChartControl.AnnotationRepositoryChanging"/> event.</para>
+      </summary>
+      <param name="sender">The event source.</param>
+      <param name="e">The event data.</param>
+    </member>
     <member name="T:DevExpress.XtraCharts.AnnotationShapePosition">
       <summary>
         <para>Represents a base class for classes representing the shape position of annotations.</para>
@@ -565,6 +655,17 @@
         <para>Gets the string value used to support serialization of the annotation shape position type.</para>
       </summary>
       <value>A <see cref="T:System.String"/> value.</value>
+    </member>
+    <member name="T:DevExpress.XtraCharts.AnnotationTextEditingEventArgs">
+      <summary>
+        <para>Data for the <see cref="E:DevExpress.XtraCharts.ChartControl.AnnotationRepositoryChanging"/> event that occurs when the text annotation is edited.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.XtraCharts.AnnotationTextEditingEventArgs.NewText">
+      <summary>
+        <para>Gets or sets a new annotation&#39;s text.</para>
+      </summary>
+      <value>A new annotation&#39;s text.</value>
     </member>
     <member name="T:DevExpress.XtraCharts.AppearanceImageHelper">
       <summary>
@@ -7024,6 +7125,12 @@ If null (Nothing in Visual Basic), then a <see cref="T:System.ArgumentNullExcept
         <para>Provides data for the <see cref="E:DevExpress.XtraCharts.ChartControl.CustomizeStackedBarTotalLabel"/> event.</para>
       </summary>
     </member>
+    <member name="P:DevExpress.XtraCharts.CustomizeStackedBarTotalLabelEventArgs.Argument">
+      <summary>
+        <para>Returns a series point argument value.</para>
+      </summary>
+      <value>A series point argument value.</value>
+    </member>
     <member name="P:DevExpress.XtraCharts.CustomizeStackedBarTotalLabelEventArgs.Text">
       <summary>
         <para>Gets or sets the total label text.</para>
@@ -12559,7 +12666,7 @@ If null (Nothing in Visual Basic), then a <see cref="T:System.ArgumentNullExcept
     </member>
     <member name="T:DevExpress.XtraCharts.Localization.ChartLocalizer">
       <summary>
-        <para>A base class that provides necessary functionality for custom localizers of the ASP.NET Chart and WinForms Chart controls.</para>
+        <para>Provides a means to localize the ASP.NET Chart and WinForms Chart&#39;s UI elements at runtime.</para>
       </summary>
     </member>
     <member name="M:DevExpress.XtraCharts.Localization.ChartLocalizer.#ctor">
@@ -12601,7 +12708,7 @@ If null (Nothing in Visual Basic), then a <see cref="T:System.ArgumentNullExcept
     </member>
     <member name="T:DevExpress.XtraCharts.Localization.ChartResLocalizer">
       <summary>
-        <para>A default localizer to translate resources for ASP.NET Charts and WinForms Charts.</para>
+        <para>Provides a means to localize the ASP.NET Chart and WinForms Chart&#39;s UI elements at runtime.</para>
       </summary>
     </member>
     <member name="M:DevExpress.XtraCharts.Localization.ChartResLocalizer.#ctor">

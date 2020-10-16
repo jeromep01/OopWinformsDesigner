@@ -709,9 +709,9 @@
     </member>
     <member name="P:DevExpress.XtraBars.Bar.AutoUpdateMergedBars">
       <summary>
-        <para></para>
+        <para>Gets or sets whether items added to/removed from a child bar merged with this bar are automatically added to/removed from this bar.</para>
       </summary>
-      <value></value>
+      <value><see cref="F:DevExpress.Utils.DefaultBoolean.True"/> if items added to/removed from a child bar merged with this bar are automatically added to/removed from this bar; otherwise, <see cref="F:DevExpress.Utils.DefaultBoolean.Default"/> or <see cref="F:DevExpress.Utils.DefaultBoolean.False"/>.</value>
     </member>
     <member name="P:DevExpress.XtraBars.Bar.BackColor">
       <summary>
@@ -735,13 +735,13 @@
       <summary>
         <para>Gets or sets the horizontal indent, in pixels, between a bar item link&#39;s content and borders.</para>
       </summary>
-      <value>An integer value that specifies the horizontal indent, in pixels, between a bar item link&#39;s content and borders. -1 to use the Bar and Docking Controller&#39;s <see cref="P:DevExpress.XtraBars.BarManagerProperties.BarItemHorzIndent"/> setting.</value>
+      <value>An integer value that specifies the horizontal indent, in pixels, between a bar item link&#39;s content and borders. -1 to use the bar and dock controller&#39;s <see cref="P:DevExpress.XtraBars.BarManagerProperties.BarItemHorzIndent"/> setting.</value>
     </member>
     <member name="P:DevExpress.XtraBars.Bar.BarItemVertIndent">
       <summary>
         <para>Gets or sets the vertical indent, in pixels, between a bar item link&#39;s content and borders.</para>
       </summary>
-      <value>An integer value that specifies the vertical indent, in pixels, between a bar item link&#39;s content and borders. -1 to use the Bar and Docking Controller&#39;s <see cref="P:DevExpress.XtraBars.BarManagerProperties.BarItemVertIndent"/> setting.</value>
+      <value>An integer value that specifies the vertical indent, in pixels, between a bar item link&#39;s content and borders. -1 to use the bar and dock controller&#39;s <see cref="P:DevExpress.XtraBars.BarManagerProperties.BarItemVertIndent"/> setting.</value>
     </member>
     <member name="P:DevExpress.XtraBars.Bar.BarName">
       <summary>
@@ -5136,7 +5136,7 @@ A specific version of the addressed image is automatically chosen based on the a
     </member>
     <member name="P:DevExpress.XtraBars.BarManager.Controller">
       <summary>
-        <para>Gets or sets the Bar and Docking Controllers (Customizing Default View and Behavior Settings) that will provide default appearance and customization options for the bars  belonging to the current BarManager.</para>
+        <para>Gets or sets the bar and dock controller that will provide default appearance and customization options for the bars  belonging to the current BarManager.</para>
       </summary>
       <value>A <see cref="T:DevExpress.XtraBars.BarAndDockingController"/> object providing appearance options.</value>
     </member>
@@ -5242,7 +5242,7 @@ A specific version of the addressed image is automatically chosen based on the a
     </member>
     <member name="M:DevExpress.XtraBars.BarManager.GetController">
       <summary>
-        <para>Returns the actual Bar and Docking Controllers (Customizing Default View and Behavior Settings) specifying behavior and appearance settings for the corresponding bars.</para>
+        <para>Returns the actual bar and dock controller specifying behavior and appearance settings for the corresponding bars.</para>
       </summary>
       <returns>A <see cref="T:DevExpress.XtraBars.BarAndDockingController"/> object providing common appearance settings for bars.</returns>
     </member>
@@ -5592,7 +5592,7 @@ This option is in effect if you subscribed to the parent BarManager&#39;s <see c
     </member>
     <member name="M:DevExpress.XtraBars.BarManager.ResetStyleDefaults">
       <summary>
-        <para>This method is obsolete. Use the <see cref="M:DevExpress.XtraBars.BarAndDockingController.ResetStyleDefaults"/> method of a Bar and Docking Controllers (Customizing Default View and Behavior Settings) to restore style settings which depend on the current paint scheme.</para>
+        <para>This method is obsolete. Use the <see cref="M:DevExpress.XtraBars.BarAndDockingController.ResetStyleDefaults"/> method of a bar and dock controller to restore style settings which depend on the current paint scheme.</para>
       </summary>
     </member>
     <member name="M:DevExpress.XtraBars.BarManager.ResetUsageData">
@@ -6206,13 +6206,13 @@ This option is in effect if you subscribed to the parent BarManager&#39;s <see c
       <summary>
         <para>Returns the actual horizontal indent, in pixels, between a bar item link&#39;s content and borders.</para>
       </summary>
-      <value>An integer value that specifies the horizontal indent, in pixels, between a bar item link&#39;s content and borders. -1, if the indent depends on the Bar and Docking Controller&#39;s <see cref="P:DevExpress.XtraBars.BarAndDockingController.PaintStyle"/>.</value>
+      <value>An integer value that specifies the horizontal indent, in pixels, between a bar item link&#39;s content and borders. -1, if the indent depends on the bar and dock controller&#39;s <see cref="P:DevExpress.XtraBars.BarAndDockingController.PaintStyle"/>.</value>
     </member>
     <member name="P:DevExpress.XtraBars.BarManagerProperties.BarItemVertIndent">
       <summary>
         <para>Returns the actual vertical indent, in pixels, between a bar item link&#39;s content and borders.</para>
       </summary>
-      <value>An integer value that specifies the vertical indent, in pixels, between a bar item link&#39;s content and borders. -1, if the indent depends on the Bar and Docking Controller&#39;s <see cref="P:DevExpress.XtraBars.BarAndDockingController.PaintStyle"/>.</value>
+      <value>An integer value that specifies the vertical indent, in pixels, between a bar item link&#39;s content and borders. -1, if the indent depends on the bar and dock controller&#39;s <see cref="P:DevExpress.XtraBars.BarAndDockingController.PaintStyle"/>.</value>
     </member>
     <member name="P:DevExpress.XtraBars.BarManagerProperties.DefaultGlyphSize">
       <summary>
@@ -6459,7 +6459,7 @@ Merge-related toolbars of inactive child forms are visible in these forms, and a
     </member>
     <member name="F:DevExpress.XtraBars.BarOptionFlags.DrawDragBorder">
       <summary>
-        <para>If active, allows to move a specific bar by dragging it using the mouse.</para>
+        <para>If active, allows you to move a specific bar by dragging it using the mouse.</para>
       </summary>
     </member>
     <member name="F:DevExpress.XtraBars.BarOptionFlags.DrawSizeGrip">
@@ -6742,6 +6742,13 @@ Merge-related toolbars of inactive child forms are visible in these forms, and a
         <para>Represents a null shortcut. (The <see cref="P:DevExpress.XtraBars.BarShortcut.Key"/> and <see cref="P:DevExpress.XtraBars.BarShortcut.SecondKey"/> properties of the returned <see cref="T:DevExpress.XtraBars.BarShortcut"/> object are set to Keys.None).</para>
       </summary>
       <value></value>
+    </member>
+    <member name="M:DevExpress.XtraBars.BarShortcut.Equals(DevExpress.XtraBars.BarShortcut)">
+      <summary>
+        <para></para>
+      </summary>
+      <param name="shortcut" />
+      <returns></returns>
     </member>
     <member name="M:DevExpress.XtraBars.BarShortcut.Equals(System.Object)">
       <summary>
@@ -7744,7 +7751,7 @@ Merge-related toolbars of inactive child forms are visible in these forms, and a
     </member>
     <member name="P:DevExpress.XtraBars.Docking.DockManager.Controller">
       <summary>
-        <para>Gets or sets the BarAndDockingController that will provide the default appearance options for the dock panels belonging to the current dock manager.</para>
+        <para>Gets or sets the bar and dock controller that provides the default appearance options for the dock panels belonging to the current dock manager.</para>
       </summary>
       <value>A <see cref="T:DevExpress.XtraBars.BarAndDockingController"/> object providing appearance options.</value>
     </member>
@@ -8767,6 +8774,12 @@ Dock Panels support &quot;Press and Tap&quot; and &quot;Two-Finger Tap&quot; ges
       </summary>
       <value>A <see cref="T:DevExpress.XtraBars.Docking.DockingStyle"/> enumeration value.</value>
     </member>
+    <member name="P:DevExpress.XtraBars.Docking.DockPanel.SavedDockingContainerId">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
     <member name="P:DevExpress.XtraBars.Docking.DockPanel.SavedIndex">
       <summary>
         <para>Gets or sets the panel&#39;s index before it&#39;s made to float or is hidden.</para>
@@ -8778,6 +8791,12 @@ Dock Panels support &quot;Press and Tap&quot; and &quot;Two-Finger Tap&quot; ges
         <para>Gets or sets whether the panel was docked in a <see cref="T:DevExpress.XtraBars.Docking2010.DocumentManager"/>, before it was made floating or hidden.</para>
       </summary>
       <value>true if the panel was docked in a <see cref="T:DevExpress.XtraBars.Docking2010.DocumentManager"/>, before it was made floating or hidden; otherwise, false.</value>
+    </member>
+    <member name="P:DevExpress.XtraBars.Docking.DockPanel.SavedMdiDocumentIndex">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
     </member>
     <member name="P:DevExpress.XtraBars.Docking.DockPanel.SavedParent">
       <summary>
@@ -10334,7 +10353,7 @@ Dock Panels support &quot;Press and Tap&quot; and &quot;Two-Finger Tap&quot; ges
     </member>
     <member name="P:DevExpress.XtraBars.Docking2010.DocumentManager.BarAndDockingController">
       <summary>
-        <para>Gets or sets the BarAndDockingController that will provide default appearance options for the <see cref="T:DevExpress.XtraBars.Docking2010.DocumentManager"/>&#39;s elements.</para>
+        <para>Gets or sets the bar and dock controller that specifies default appearance settings for the <see cref="T:DevExpress.XtraBars.Docking2010.DocumentManager"/>&#39;s elements.</para>
       </summary>
       <value>A <see cref="T:DevExpress.XtraBars.BarAndDockingController"/> object providing appearance options.</value>
     </member>
@@ -10415,7 +10434,7 @@ Dock Panels support &quot;Press and Tap&quot; and &quot;Two-Finger Tap&quot; ges
     </member>
     <member name="M:DevExpress.XtraBars.Docking2010.DocumentManager.FromControl(System.Windows.Forms.Control)">
       <summary>
-        <para>Gets a <see cref="T:DevExpress.XtraBars.Docking2010.DocumentManager"/> hosted within the specific control.</para>
+        <para>Gets <see cref="T:DevExpress.XtraBars.Docking2010.DocumentManager"/> hosted within the specific control.</para>
       </summary>
       <param name="control">A Control from which a <see cref="T:DevExpress.XtraBars.Docking2010.DocumentManager"/> object is to be obtained.</param>
       <returns>A <see cref="T:DevExpress.XtraBars.Docking2010.DocumentManager"/> object hosted within the specific control.</returns>
@@ -10921,7 +10940,7 @@ Dock Panels support &quot;Press and Tap&quot; and &quot;Two-Finger Tap&quot; ges
     </member>
     <member name="E:DevExpress.XtraBars.Docking2010.Views.BaseView.CustomDocumentsHostWindow">
       <summary>
-        <para>Fired before a host container for floating documents is created, allowing you to create your own custom floating document container.</para>
+        <para>Allows you to replace the default container for floating documents. Handle this event only when the <see cref="P:DevExpress.XtraBars.Docking2010.Views.BaseView.FloatingDocumentContainer"/> property equals DocumentsHost.</para>
       </summary>
     </member>
     <member name="E:DevExpress.XtraBars.Docking2010.Views.BaseView.CustomDrawBackground">
@@ -11213,65 +11232,65 @@ Dock Panels support &quot;Press and Tap&quot; and &quot;Two-Finger Tap&quot; ges
     </member>
     <member name="M:DevExpress.XtraBars.Docking2010.Views.BaseView.RestoreLayoutFromRegistry(System.String)">
       <summary>
-        <para>Restores the current layout of documents from the specified system registry path.</para>
+        <para>Restores the layout from a specific registry key.</para>
       </summary>
-      <param name="path">A string value which specifies the system registry path. If the specified path doesn&#39;t exist, this method does nothing.</param>
+      <param name="path">The registry key that contains the layout that should be restored. If the specified path does not exist, this method has no effect.</param>
     </member>
     <member name="M:DevExpress.XtraBars.Docking2010.Views.BaseView.RestoreLayoutFromStream(System.IO.Stream)">
       <summary>
-        <para>Restores the current layout of documents from a stream.</para>
+        <para>Restores the layout from a stream that contains data in binary format.</para>
       </summary>
-      <param name="stream">A stream where a layout is stored.</param>
+      <param name="stream">The stream from which the layout should be restored.</param>
     </member>
     <member name="M:DevExpress.XtraBars.Docking2010.Views.BaseView.RestoreLayoutFromStream(System.IO.Stream,System.Boolean)">
       <summary>
-        <para>Restores the View layout from a binary or text stream.</para>
+        <para>Restores the layout from a stream that contains data in a specific format.</para>
       </summary>
-      <param name="stream">A Stream that keeps the View layout.</param>
-      <param name="binaryStream">true, to restore layout from a binary stream; otherwise, false.</param>
+      <param name="stream">The stream from which the layout should be restored.</param>
+      <param name="binaryStream">true if the stream contains data in binary format; false if the stream contains data in XML format.</param>
     </member>
     <member name="M:DevExpress.XtraBars.Docking2010.Views.BaseView.RestoreLayoutFromXml(System.IO.Stream)">
       <summary>
-        <para>Loads a View layout stored as XML data in a specific stream.</para>
+        <para>Restores the layout from a specific stream that contains data in XML format.</para>
       </summary>
-      <param name="stream">A Stream that stores a View layout.</param>
+      <param name="stream">The stream from which the layout should be restored.</param>
     </member>
     <member name="M:DevExpress.XtraBars.Docking2010.Views.BaseView.RestoreLayoutFromXml(System.String)">
       <summary>
-        <para>Restores the current layout of documents from an XML file.</para>
+        <para>Restores the layout from a specific XML file.</para>
       </summary>
-      <param name="path">An XML file where a layout is stored.</param>
+      <param name="path">The path to the XML file that contains the layout that should be restored.</param>
     </member>
     <member name="M:DevExpress.XtraBars.Docking2010.Views.BaseView.SaveLayoutToRegistry(System.String)">
       <summary>
-        <para>Saves the layout of documents to the specified system registry path.</para>
+        <para>Saves the layout in the system registry.</para>
       </summary>
-      <param name="path">The registry path to which to save the layout of documents.</param>
+      <param name="path">The registry key where the layout should be saved.</param>
     </member>
     <member name="M:DevExpress.XtraBars.Docking2010.Views.BaseView.SaveLayoutToStream(System.IO.Stream)">
       <summary>
-        <para>Saves the layout of documents to a stream.</para>
+        <para>Saves the layout in a specific stream in binary format.</para>
       </summary>
-      <param name="stream">A stream where the layout will be stored.</param>
+      <param name="stream">The stream where the layout should be saved.</param>
     </member>
     <member name="M:DevExpress.XtraBars.Docking2010.Views.BaseView.SaveLayoutToStream(System.IO.Stream,System.Boolean)">
       <summary>
-        <para>Saves the current View layout in a binary or text stream.</para>
+        <para>Saves the layout in a specific stream in binary format.</para>
       </summary>
-      <param name="stream">A Stream that should keep the current View layout.</param>
-      <param name="binaryStream">true, to save the View layout as binary data ; otherwise, false.</param>
+      <param name="stream">The stream where the layout should be saved.</param>
+      <param name="binaryStream">true to save the layout in binary format; false to save the layout in XML format.</param>
     </member>
     <member name="M:DevExpress.XtraBars.Docking2010.Views.BaseView.SaveLayoutToXml(System.IO.Stream)">
       <summary>
-        <para>Saves the current View layout as XML data to a specific stream.</para>
+        <para>Saves the layout in a specific stream in XML format.</para>
       </summary>
-      <param name="stream">A Stream where the current View layout is to be saved.</param>
+      <param name="stream">The stream where the layout should be saved.</param>
     </member>
     <member name="M:DevExpress.XtraBars.Docking2010.Views.BaseView.SaveLayoutToXml(System.String)">
       <summary>
-        <para>Saves the layout of documents to an XML file.</para>
+        <para>Saves the layout in a specific file in XML format.</para>
       </summary>
-      <param name="path">An XML file where the layout will be stored.</param>
+      <param name="path">The path to the XML file where the layout should be saved.</param>
     </member>
     <member name="E:DevExpress.XtraBars.Docking2010.Views.BaseView.ShowingDockGuides">
       <summary>
@@ -12000,17 +12019,17 @@ Dock Panels support &quot;Press and Tap&quot; and &quot;Two-Finger Tap&quot; ges
     </member>
     <member name="F:DevExpress.XtraBars.Docking2010.Views.RibbonAndBarsMergeStyle.Always">
       <summary>
-        <para>Bar and Ribbon controls in child Documents will merge to Bar and Ribbon controls in a parent application form whenever it&#39;s possible.</para>
+        <para>Bar and Ribbon controls in child Documents/NavigationPages merge to Bar and Ribbon controls in a parent application form whenever possible.</para>
       </summary>
     </member>
     <member name="F:DevExpress.XtraBars.Docking2010.Views.RibbonAndBarsMergeStyle.Default">
       <summary>
-        <para>Ribbon/Bar merging is managed by the <see cref="T:DevExpress.XtraBars.Ribbon.RibbonControl"/>s/<see cref="T:DevExpress.XtraBars.BarManager"/>s themselves, rather than the Document Manager.</para>
+        <para>Ribbon/Bar merging is managed by the <see cref="T:DevExpress.XtraBars.Ribbon.RibbonControl"/>s/<see cref="T:DevExpress.XtraBars.BarManager"/>s themselves. The Document Manager/Navigation Frame control does not affect this process.</para>
       </summary>
     </member>
     <member name="F:DevExpress.XtraBars.Docking2010.Views.RibbonAndBarsMergeStyle.WhenNotFloating">
       <summary>
-        <para>Bar and Ribbon controls in child Documents will always be merged, unless these Documents are floating.</para>
+        <para>Documents docked as tabs merge their Bar and Ribbon controls, whereas floating Documents do not. This mode is meant to be used only for Document Manager since Navigation Frame pages never float.</para>
       </summary>
     </member>
     <member name="N:DevExpress.XtraBars.Docking2010.Views.Tabbed">
@@ -17973,6 +17992,15 @@ Dock Panels support &quot;Press and Tap&quot; and &quot;Two-Finger Tap&quot; ges
       <param name="visible">true, if the separator is initially visible; otherwise, false.</param>
       <param name="visibleIndex">An Int32 value that is the display order of this separator.</param>
     </member>
+    <member name="M:DevExpress.XtraBars.Docking2010.WindowsUISeparator.#ctor(System.Drawing.Image,System.Boolean,System.Int32,System.Boolean)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.XtraBars.Docking2010.WindowsUISeparator"/> class with specified settings.</para>
+      </summary>
+      <param name="image"></param>
+      <param name="visible"></param>
+      <param name="visibleIndex"></param>
+      <param name="isLeft"></param>
+    </member>
     <member name="P:DevExpress.XtraBars.Docking2010.WindowsUISeparator.IsLeft">
       <summary>
         <para>Gets or sets whether or not this separator is aligned to the left border of its parent container.</para>
@@ -19426,6 +19454,12 @@ The Default value is equivalent to ScrollUp.</value>
       </summary>
       <param name="handler">An action to perform against each visible element.</param>
     </member>
+    <member name="P:DevExpress.XtraBars.Navigation.AccordionControl.ForeColor">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
     <member name="M:DevExpress.XtraBars.Navigation.AccordionControl.GetBackColor">
       <summary>
         <para>Gets the color, currently assigned to the control&#39;s Appearance.ControlAppearance.BackColor property.</para>
@@ -20821,6 +20855,45 @@ See Navigation Frame and Tab Pane.</para>
         <para>Allows you to dynamically assign content to each <see cref="T:DevExpress.XtraBars.Navigation.NavigationPage"/> in this <see cref="T:DevExpress.XtraBars.Navigation.NavigationFrame"/> or <see cref="T:DevExpress.XtraBars.Navigation.NavigationPane"/>.</para>
       </summary>
     </member>
+    <member name="M:DevExpress.XtraBars.Navigation.NavigationFrame.ReleaseDeferredLoadControl(DevExpress.XtraBars.Navigation.INavigationPage)">
+      <summary>
+        <para></para>
+      </summary>
+      <param name="page" />
+    </member>
+    <member name="M:DevExpress.XtraBars.Navigation.NavigationFrame.ReleaseDeferredLoadControl(DevExpress.XtraBars.Navigation.INavigationPage,System.Boolean)">
+      <summary>
+        <para></para>
+      </summary>
+      <param name="page" />
+      <param name="keepControl" />
+    </member>
+    <member name="M:DevExpress.XtraBars.Navigation.NavigationFrame.ReleaseDeferredLoadControl(DevExpress.XtraBars.Navigation.INavigationPage,System.Boolean,System.Boolean)">
+      <summary>
+        <para></para>
+      </summary>
+      <param name="page" />
+      <param name="keepControl" />
+      <param name="disposeControl" />
+    </member>
+    <member name="M:DevExpress.XtraBars.Navigation.NavigationFrame.ReleaseDeferredLoadControls">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.XtraBars.Navigation.NavigationFrame.ReleaseDeferredLoadControls(System.Boolean)">
+      <summary>
+        <para></para>
+      </summary>
+      <param name="keepControls" />
+    </member>
+    <member name="M:DevExpress.XtraBars.Navigation.NavigationFrame.ReleaseDeferredLoadControls(System.Boolean,System.Boolean)">
+      <summary>
+        <para></para>
+      </summary>
+      <param name="keepControls" />
+      <param name="disposeControls" />
+    </member>
     <member name="M:DevExpress.XtraBars.Navigation.NavigationFrame.ResetBackColor">
       <summary>
         <para>Returns this frame its default back color.</para>
@@ -21526,7 +21599,7 @@ Supports animation effects when navigating through pages.  See Navigation Pane.<
     </member>
     <member name="P:DevExpress.XtraBars.Navigation.OfficeNavigationBar.NavigationClient">
       <summary>
-        <para>Assign a <see cref="T:DevExpress.XtraNavBar.NavBarControl"/> or <see cref="T:DevExpress.XtraBars.Navigation.AccordionControl"/> to this property to automatically fill this <see cref="T:DevExpress.XtraBars.Navigation.OfficeNavigationBar"/> with items that match NavigationClient&#39;s groups. If the <see cref="P:DevExpress.XtraBars.Navigation.OfficeNavigationBar.AllowItemSelection"/> property is enabled, <see cref="T:DevExpress.XtraBars.Navigation.OfficeNavigationBar"/> item selection forces the NavigationClient to select a corresponding group.</para>
+        <para>Assign a <see cref="T:DevExpress.XtraNavBar.NavBarControl"/>, <see cref="T:DevExpress.XtraBars.Navigation.AccordionControl"/> or <see cref="T:DevExpress.XtraBars.Navigation.NavigationFrame"/> to this property to automatically fill this <see cref="T:DevExpress.XtraBars.Navigation.OfficeNavigationBar"/> with items that match NavigationClient&#39;s items. If the <see cref="P:DevExpress.XtraBars.Navigation.OfficeNavigationBar.AllowItemSelection"/> property is enabled, <see cref="T:DevExpress.XtraBars.Navigation.OfficeNavigationBar"/> item selection forces the associated Accordion/NavBarControl to select a corresponding group.</para>
       </summary>
       <value>A control that implements the INavigationBarClient interface which serves as an item source for this <see cref="T:DevExpress.XtraBars.Navigation.OfficeNavigationBar"/>.</value>
     </member>
@@ -24062,9 +24135,9 @@ See Navigation Frame and Tab Pane.</para>
     </member>
     <member name="M:DevExpress.XtraBars.Ribbon.BackstageViewControl.GetController">
       <summary>
-        <para>Returns the Bar and Docking Controllers (Customizing Default View and Behavior Settings) that provides look and feel options for the <see cref="T:DevExpress.XtraBars.Ribbon.BackstageViewControl"/>.</para>
+        <para>Returns the bar and dock controller that specifies look and feel settings for the <see cref="T:DevExpress.XtraBars.Ribbon.BackstageViewControl"/>.</para>
       </summary>
-      <returns>A <see cref="T:DevExpress.XtraBars.BarAndDockingController"/> object that provides look and feel  options for the <see cref="T:DevExpress.XtraBars.Ribbon.BackstageViewControl"/></returns>
+      <returns>A <see cref="T:DevExpress.XtraBars.BarAndDockingController"/> object that specifies look and feel settings for the <see cref="T:DevExpress.XtraBars.Ribbon.BackstageViewControl"/></returns>
     </member>
     <member name="M:DevExpress.XtraBars.Ribbon.BackstageViewControl.GetDesignTimeManager">
       <summary>
@@ -25927,9 +26000,9 @@ The width of items is specified by the Width attribute of the <see cref="P:DevEx
     </member>
     <member name="P:DevExpress.XtraBars.Ribbon.GalleryControl.Controller">
       <summary>
-        <para>Gets or sets the Bar and Docking Controllers (Customizing Default View and Behavior Settings) that provides default look and feel options for the <see cref="T:DevExpress.XtraBars.Ribbon.GalleryControl"/>.</para>
+        <para>Gets or sets the bar and dock controller that specifies default look and feel settings for the <see cref="T:DevExpress.XtraBars.Ribbon.GalleryControl"/>.</para>
       </summary>
-      <value>A <see cref="T:DevExpress.XtraBars.BarAndDockingController"/> object that provides default look and feel options for the <see cref="T:DevExpress.XtraBars.Ribbon.GalleryControl"/>.</value>
+      <value>A <see cref="T:DevExpress.XtraBars.BarAndDockingController"/> object that specifies default look and feel settings for the <see cref="T:DevExpress.XtraBars.Ribbon.GalleryControl"/>.</value>
     </member>
     <member name="P:DevExpress.XtraBars.Ribbon.GalleryControl.DesignGalleryGroupIndex">
       <summary>
@@ -25968,7 +26041,7 @@ The width of items is specified by the Width attribute of the <see cref="P:DevEx
     </member>
     <member name="M:DevExpress.XtraBars.Ribbon.GalleryControl.GetController">
       <summary>
-        <para>Returns the Bar and Docking Controllers (Customizing Default View and Behavior Settings) that provides look and feel options for the <see cref="T:DevExpress.XtraBars.Ribbon.GalleryControl"/>.</para>
+        <para>Returns the bar and dock controller that provides look and feel options for the <see cref="T:DevExpress.XtraBars.Ribbon.GalleryControl"/>.</para>
       </summary>
       <returns>A <see cref="T:DevExpress.XtraBars.BarAndDockingController"/> object that provides look and feel  options for the <see cref="T:DevExpress.XtraBars.Ribbon.GalleryControl"/></returns>
     </member>
@@ -28209,9 +28282,9 @@ This option is in effect when a custom control is embedded into the gallery grou
     </member>
     <member name="P:DevExpress.XtraBars.Ribbon.RibbonControl.AutoUpdateMergedRibbons">
       <summary>
-        <para></para>
+        <para>Gets or sets whether items added to/removed from a child ribbon merged with this ribbon are automatically added to/removed from this ribbon.</para>
       </summary>
-      <value></value>
+      <value><see cref="F:DevExpress.Utils.DefaultBoolean.True"/> if items added to/removed from a child ribbon merged with this ribbon are automatically added to/removed from this ribbon; otherwise, <see cref="F:DevExpress.Utils.DefaultBoolean.Default"/> or <see cref="F:DevExpress.Utils.DefaultBoolean.False"/>.</value>
     </member>
     <member name="P:DevExpress.XtraBars.Ribbon.RibbonControl.BackgroundImage">
       <summary>
@@ -28312,9 +28385,9 @@ This option is in effect when a custom control is embedded into the gallery grou
     </member>
     <member name="P:DevExpress.XtraBars.Ribbon.RibbonControl.Controller">
       <summary>
-        <para>Gets or sets the Bar and Docking Controllers (Customizing Default View and Behavior Settings) that provides default appearance options for the Ribbon Control.</para>
+        <para>Gets or sets the bar and dock controller that specifies default appearance settings for the Ribbon Control.</para>
       </summary>
-      <value>A <see cref="T:DevExpress.XtraBars.BarAndDockingController"/> object that provides default appearance options for the Ribbon Control.</value>
+      <value>A <see cref="T:DevExpress.XtraBars.BarAndDockingController"/> object that specifies default appearance settings for the Ribbon Control.</value>
     </member>
     <member name="E:DevExpress.XtraBars.Ribbon.RibbonControl.CustomDrawItem">
       <summary>
@@ -28424,9 +28497,9 @@ This option is in effect when a custom control is embedded into the gallery grou
     </member>
     <member name="M:DevExpress.XtraBars.Ribbon.RibbonControl.GetController">
       <summary>
-        <para>Returns the Bar and Docking Controllers (Customizing Default View and Behavior Settings) that provides default appearance options for the Ribbon Control.</para>
+        <para>Returns the bar and dock controller that specifies default appearance settings for the Ribbon Control.</para>
       </summary>
-      <returns>A <see cref="T:DevExpress.XtraBars.BarAndDockingController"/> object that provides default appearance options for the Ribbon Control.</returns>
+      <returns>A <see cref="T:DevExpress.XtraBars.BarAndDockingController"/> object that specifies default appearance settings for the Ribbon Control.</returns>
     </member>
     <member name="M:DevExpress.XtraBars.Ribbon.RibbonControl.GetDesignTimeManager">
       <summary>
@@ -28567,6 +28640,12 @@ This option is in effect when a custom control is embedded into the gallery grou
       <summary>
         <para>Fires when a layout is restored from a storage (a stream, xml file, or system registry).</para>
       </summary>
+    </member>
+    <member name="P:DevExpress.XtraBars.Ribbon.RibbonControl.LayoutVersion">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
     </member>
     <member name="P:DevExpress.XtraBars.Ribbon.RibbonControl.Manager">
       <summary>
@@ -29604,6 +29683,13 @@ This option is in effect when a custom control is embedded into the gallery grou
         <para>Gets the <see cref="T:DevExpress.XtraBars.Ribbon.RibbonMiniToolbarOpacityOptions"/> object with its properties set to default values.</para>
       </summary>
       <value>A <see cref="T:DevExpress.XtraBars.Ribbon.RibbonMiniToolbarOpacityOptions"/> object with its properties set to default values.</value>
+    </member>
+    <member name="M:DevExpress.XtraBars.Ribbon.RibbonMiniToolbarOpacityOptions.Equals(DevExpress.XtraBars.Ribbon.RibbonMiniToolbarOpacityOptions)">
+      <summary>
+        <para></para>
+      </summary>
+      <param name="options" />
+      <returns></returns>
     </member>
     <member name="M:DevExpress.XtraBars.Ribbon.RibbonMiniToolbarOpacityOptions.Equals(System.Object)">
       <summary>
@@ -30804,9 +30890,9 @@ A specific version of the addressed image is automatically chosen based on the a
     </member>
     <member name="P:DevExpress.XtraBars.Ribbon.RibbonStatusBar.AutoUpdateMergedBars">
       <summary>
-        <para></para>
+        <para>Gets or sets whether items added to/removed from a child bar merged with this bar are automatically added to/removed from this bar.</para>
       </summary>
-      <value></value>
+      <value><see cref="F:DevExpress.Utils.DefaultBoolean.True"/> if items added to/removed from a child bar merged with this bar are automatically added to/removed from this bar; otherwise, <see cref="F:DevExpress.Utils.DefaultBoolean.Default"/> or <see cref="F:DevExpress.Utils.DefaultBoolean.False"/>.</value>
     </member>
     <member name="M:DevExpress.XtraBars.Ribbon.RibbonStatusBar.BeginUpdate">
       <summary>
@@ -35070,7 +35156,7 @@ This image is shown when the notification has the Generic template applied.</par
     </member>
     <member name="P:DevExpress.XtraTabbedMdi.XtraTabbedMdiManager.Controller">
       <summary>
-        <para>Gets or sets the BarAndDockingController that controls the appearance settings of the <see cref="T:DevExpress.XtraTabbedMdi.XtraTabbedMdiManager"/> component.</para>
+        <para>Gets or sets the bar and dock controller that controls the appearance settings of the <see cref="T:DevExpress.XtraTabbedMdi.XtraTabbedMdiManager"/> component.</para>
       </summary>
       <value>A <see cref="T:DevExpress.XtraBars.BarAndDockingController"/> object which controls the appearance settings of the <see cref="T:DevExpress.XtraTabbedMdi.XtraTabbedMdiManager"/> component.</value>
     </member>

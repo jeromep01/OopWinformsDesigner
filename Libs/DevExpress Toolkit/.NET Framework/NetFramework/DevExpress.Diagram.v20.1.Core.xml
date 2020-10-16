@@ -2245,6 +2245,44 @@
         <para>The diagram is exported in PNG format.</para>
       </summary>
     </member>
+    <member name="T:DevExpress.Diagram.Core.DiagramFontEffects">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Diagram.Core.DiagramFontEffects.#ctor(System.Boolean,System.Boolean,System.Boolean,System.Boolean)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Diagram.Core.DiagramFontEffects"/> class with specified settings.</para>
+      </summary>
+      <param name="isFontBold" />
+      <param name="isFontItalic" />
+      <param name="isFontUnderline" />
+      <param name="isFontStrikethrough" />
+    </member>
+    <member name="F:DevExpress.Diagram.Core.DiagramFontEffects.IsFontBold">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="F:DevExpress.Diagram.Core.DiagramFontEffects.IsFontItalic">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="F:DevExpress.Diagram.Core.DiagramFontEffects.IsFontStrikethrough">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="F:DevExpress.Diagram.Core.DiagramFontEffects.IsFontUnderline">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
     <member name="T:DevExpress.Diagram.Core.DiagramItemTypeRegistrator">
       <summary>
         <para>Provides methods used to create serializable custom diagram item types.</para>
@@ -3781,6 +3819,21 @@
       <param name="getIsQuick">A function that returns whether to display the shape within the Quick Shapes category of the toolbox.</param>
       <param name="getUseBackgroundAsForeground">A function that returns whether to paint the shape with the background color.</param>
     </member>
+    <member name="M:DevExpress.Diagram.Core.ShapeDescription.Create(System.String,DevExpress.Diagram.Core.Localization.DiagramControlStringId,System.Func{System.Windows.Size},DevExpress.Diagram.Core.ShapeGetter,DevExpress.Diagram.Core.ShapeConnectionPointsGetter,DevExpress.Diagram.Core.EditorBoundsGetter,DevExpress.Diagram.Core.DiagramItemStyleId,System.Boolean,System.Boolean)">
+      <summary>
+        <para></para>
+      </summary>
+      <param name="id"></param>
+      <param name="stringId"></param>
+      <param name="getDefaultSize"></param>
+      <param name="getShape"></param>
+      <param name="getConnectionPoints"></param>
+      <param name="getEditorBounds"></param>
+      <param name="styleId"></param>
+      <param name="isQuick"></param>
+      <param name="useBackgroundAsForeground"></param>
+      <returns></returns>
+    </member>
     <member name="M:DevExpress.Diagram.Core.ShapeDescription.CreateSvgShape(System.String,System.String,System.IO.Stream,System.Boolean,System.Func{System.Windows.Size,System.Collections.Generic.IEnumerable{System.Windows.Point}},System.String,System.String)">
       <summary>
         <para>Creates a diagram shape from a stream that contains an SVG image.</para>
@@ -4230,6 +4283,38 @@
       </summary>
       <value>A read-only collection of theme colors represented by System.Drawing.Color objects.</value>
     </member>
+    <member name="T:DevExpress.Diagram.Core.Themes.DiagramEffect">
+      <summary>
+        <para>Provides access to effects that you can use to customize the appearance of diagram items.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Diagram.Core.Themes.DiagramEffect.#ctor(DevExpress.Diagram.Core.Themes.DiagramItemLineSettings,System.Func{DevExpress.Diagram.Core.Themes.EffectContext,DevExpress.Diagram.Core.Themes.DiagramItemBrush},DevExpress.Diagram.Core.DiagramFontEffects)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Diagram.Core.Themes.DiagramEffect"/> class with specified settings.</para>
+      </summary>
+      <param name="lineSettings">An object that provides access to the effects applied to the item&#39;s outline.</param>
+      <param name="getItemBrush">A function that specifies the brush used to paint the item.</param>
+      <param name="fontEffects">An object that provides access to the font effects.</param>
+    </member>
+    <member name="P:DevExpress.Diagram.Core.Themes.DiagramEffect.FontEffects">
+      <summary>
+        <para>Provides access to the font effects.</para>
+      </summary>
+      <value>A DevExpress.Diagram.Core.DiagramFontEffects object that provides access to the font effects.</value>
+    </member>
+    <member name="M:DevExpress.Diagram.Core.Themes.DiagramEffect.GetItemBrush(DevExpress.Diagram.Core.Themes.EffectContext)">
+      <summary>
+        <para>Specifies the brush used to paint the diagram item.</para>
+      </summary>
+      <param name="context">A palette&#39;s color identifier.</param>
+      <returns>A DevExpress.Diagram.Core.Themes.DiagramItemBrush that paints the diagram item.</returns>
+    </member>
+    <member name="P:DevExpress.Diagram.Core.Themes.DiagramEffect.LineSettings">
+      <summary>
+        <para>Provides access to the effects applied to the item&#39;s outline.</para>
+      </summary>
+      <value>A DevExpress.Diagram.Core.Themes.DiagramItemLineSettings object that provides access to the outline options.</value>
+    </member>
     <member name="T:DevExpress.Diagram.Core.Themes.DiagramEffectCollection">
       <summary>
         <para>Represents a collection of styles that can be applied to diagram items.</para>
@@ -4260,6 +4345,61 @@
         <para>Provides access to the collection of effects that can be applied to shapes and are displayed in the &quot;Variant Styles&quot; ribbon group.</para>
       </summary>
       <value>A read-only collection of effects.</value>
+    </member>
+    <member name="T:DevExpress.Diagram.Core.Themes.DiagramItemBrush">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Diagram.Core.Themes.DiagramItemBrush.#ctor(System.Drawing.Color,System.Drawing.Color,System.Drawing.Color)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Diagram.Core.Themes.DiagramItemBrush"/> class with specified settings.</para>
+      </summary>
+      <param name="foreground" />
+      <param name="background" />
+      <param name="stroke" />
+    </member>
+    <member name="P:DevExpress.Diagram.Core.Themes.DiagramItemBrush.Background">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="P:DevExpress.Diagram.Core.Themes.DiagramItemBrush.Foreground">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="P:DevExpress.Diagram.Core.Themes.DiagramItemBrush.Stroke">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="T:DevExpress.Diagram.Core.Themes.DiagramItemLineSettings">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Diagram.Core.Themes.DiagramItemLineSettings.#ctor(System.Double,DevExpress.Diagram.Core.DiagramDoubleCollection)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Diagram.Core.Themes.DiagramItemLineSettings"/> class with specified settings.</para>
+      </summary>
+      <param name="strokeThickness" />
+      <param name="strokeDashArray" />
+    </member>
+    <member name="P:DevExpress.Diagram.Core.Themes.DiagramItemLineSettings.StrokeDashArray">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="P:DevExpress.Diagram.Core.Themes.DiagramItemLineSettings.StrokeThickness">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
     </member>
     <member name="T:DevExpress.Diagram.Core.Themes.DiagramItemStyle">
       <summary>
@@ -4298,6 +4438,73 @@
       </summary>
       <param name="brush">A DevExpress.Diagram.Core.Themes.DiagramItemBrush object.</param>
       <returns>A <see cref="T:DevExpress.Diagram.Core.Themes.DiagramItemStyle"/> class instance that uses the specified brush.</returns>
+    </member>
+    <member name="T:DevExpress.Diagram.Core.Themes.EffectContext">
+      <summary>
+        <para>Provides palette data for the  method.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Diagram.Core.Themes.EffectContext.#ctor(DevExpress.Diagram.Core.Themes.DiagramColorPalette,System.Drawing.Color,System.Drawing.Color)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Diagram.Core.Themes.EffectContext"/> class with specified settings.</para>
+      </summary>
+      <param name="palette">A color palette used to paint the diagram item.</param>
+      <param name="accent">The base accent color.</param>
+      <param name="light">The Light color.</param>
+    </member>
+    <member name="P:DevExpress.Diagram.Core.Themes.EffectContext.Accent">
+      <summary>
+        <para>The base accent color.</para>
+      </summary>
+      <value>A System.Drawing.Color that represents the base accent color.</value>
+    </member>
+    <member name="P:DevExpress.Diagram.Core.Themes.EffectContext.Accent1">
+      <summary>
+        <para>An additional accent color.</para>
+      </summary>
+      <value>A System.Drawing.Color that represents an additional accent color.</value>
+    </member>
+    <member name="P:DevExpress.Diagram.Core.Themes.EffectContext.Accent2">
+      <summary>
+        <para>An additional accent color.</para>
+      </summary>
+      <value>A System.Drawing.Color that represents an additional accent color.</value>
+    </member>
+    <member name="P:DevExpress.Diagram.Core.Themes.EffectContext.Accent3">
+      <summary>
+        <para>An additional accent color.</para>
+      </summary>
+      <value>A System.Drawing.Color that represents an additional accent color.</value>
+    </member>
+    <member name="P:DevExpress.Diagram.Core.Themes.EffectContext.Accent4">
+      <summary>
+        <para>An additional accent color.</para>
+      </summary>
+      <value>A System.Drawing.Color that represents an additional accent color.</value>
+    </member>
+    <member name="P:DevExpress.Diagram.Core.Themes.EffectContext.Accent5">
+      <summary>
+        <para>An additional accent color.</para>
+      </summary>
+      <value>A System.Drawing.Color that represents an additional accent color.</value>
+    </member>
+    <member name="P:DevExpress.Diagram.Core.Themes.EffectContext.Accent6">
+      <summary>
+        <para>An additional accent color.</para>
+      </summary>
+      <value>A System.Drawing.Color that represents an additional accent color.</value>
+    </member>
+    <member name="P:DevExpress.Diagram.Core.Themes.EffectContext.Dark">
+      <summary>
+        <para>The Dark color.</para>
+      </summary>
+      <value>A System.Drawing.Color that represents the Dark color.</value>
+    </member>
+    <member name="P:DevExpress.Diagram.Core.Themes.EffectContext.Light">
+      <summary>
+        <para>The Light color.</para>
+      </summary>
+      <value>A System.Drawing.Color that represents the Light color.</value>
     </member>
     <member name="T:DevExpress.Diagram.Core.ToolboxVisibility">
       <summary>

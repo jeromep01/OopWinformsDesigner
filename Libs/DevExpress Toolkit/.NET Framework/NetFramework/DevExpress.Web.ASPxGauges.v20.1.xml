@@ -44,12 +44,6 @@
       </summary>
       <value>true if gauges are automatically aligned within the ASPxGaugeControl without overlapping; false, if gauges can be freely arranged within the ASPxGaugeControl.</value>
     </member>
-    <member name="P:DevExpress.Web.ASPxGauges.ASPxGaugeControl.BackgroundImage">
-      <summary>
-        <para>Overrides the base class property to hide it.</para>
-      </summary>
-      <value></value>
-    </member>
     <member name="M:DevExpress.Web.ASPxGauges.ASPxGaugeControl.BeginInit">
       <summary>
         <para>Starts the runtime initialization of a component.</para>
@@ -65,36 +59,6 @@
         <para>Gets or sets a value indicating the mode in which the control&#39;s images are stored on the server.</para>
       </summary>
       <value>A <see cref="T:DevExpress.Web.BinaryStorageMode"/> enumeration value indicating the storage mode.</value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxGauges.ASPxGaugeControl.Border">
-      <summary>
-        <para>Overrides the base class property to hide it.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxGauges.ASPxGaugeControl.BorderBottom">
-      <summary>
-        <para>Overrides the base class property to hide it.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxGauges.ASPxGaugeControl.BorderLeft">
-      <summary>
-        <para>Overrides the base class property to hide it.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxGauges.ASPxGaugeControl.BorderRight">
-      <summary>
-        <para>Overrides the base class property to hide it.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxGauges.ASPxGaugeControl.BorderTop">
-      <summary>
-        <para>Overrides the base class property to hide it.</para>
-      </summary>
-      <value></value>
     </member>
     <member name="M:DevExpress.Web.ASPxGauges.ASPxGaugeControl.CancelUpdate">
       <summary>
@@ -119,30 +83,6 @@
       </summary>
       <value>A <see cref="T:DevExpress.XtraGauges.Core.Base.ColorScheme"/> object that stores color scheme appearance settings.</value>
     </member>
-    <member name="P:DevExpress.Web.ASPxGauges.ASPxGaugeControl.CssClass">
-      <summary>
-        <para>Overrides the base class property to hide it.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxGauges.ASPxGaugeControl.CssFilePath">
-      <summary>
-        <para>Overrides the base class property to hide it.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxGauges.ASPxGaugeControl.CssPostfix">
-      <summary>
-        <para>Overrides the base class property to hide it.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxGauges.ASPxGaugeControl.Cursor">
-      <summary>
-        <para>Overrides the base class property to hide it.</para>
-      </summary>
-      <value></value>
-    </member>
     <member name="E:DevExpress.Web.ASPxGauges.ASPxGaugeControl.CustomCallback">
       <summary>
         <para>Fires when a round trip to the server has been initiated by a call to the client <see cref="M:js-ASPxClientGaugeControl.PerformCallback(parameter)"/> method.</para>
@@ -164,12 +104,6 @@
         <para>Gets or sets the location to the ASPxGaugeControl&#39;s detailed description.</para>
       </summary>
       <value>The URL for the file that contains a detailed description for the ASPxGaugeControl.</value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxGauges.ASPxGaugeControl.DisabledStyle">
-      <summary>
-        <para>Overrides the base class property to hide it.</para>
-      </summary>
-      <value></value>
     </member>
     <member name="M:DevExpress.Web.ASPxGauges.ASPxGaugeControl.Dispose">
       <summary>
@@ -193,18 +127,6 @@
         <para>Gets or sets a value that specifies whether the ASPxGaugeControl can be manipulated on the client-side via code.</para>
       </summary>
       <value>true if the control&#39;s client object model is fully available; false if no programmatic interface is available for the control on the client side.</value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxGauges.ASPxGaugeControl.EnableTheming">
-      <summary>
-        <para>Overrides the base class property to hide it.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxGauges.ASPxGaugeControl.EncodeHtml">
-      <summary>
-        <para>Overrides the base class property to hide it.</para>
-      </summary>
-      <value></value>
     </member>
     <member name="M:DevExpress.Web.ASPxGauges.ASPxGaugeControl.EndInit">
       <summary>
@@ -319,18 +241,6 @@
         <para>Exports the ASPxGaugeControl to the specified file in XLS format.</para>
       </summary>
       <param name="filePath">A <see cref="T:System.String"/> that specifies the path to the file, to which the ASPxGaugeControl is exported.</param>
-    </member>
-    <member name="P:DevExpress.Web.ASPxGauges.ASPxGaugeControl.Font">
-      <summary>
-        <para>Overrides the base class property to hide it.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxGauges.ASPxGaugeControl.ForeColor">
-      <summary>
-        <para>Overrides the base class property to hide it.</para>
-      </summary>
-      <value></value>
     </member>
     <member name="P:DevExpress.Web.ASPxGauges.ASPxGaugeControl.Gauges">
       <summary>
@@ -527,24 +437,6 @@
         <para>Gets or sets whether an image can be displayed within the Loading Panel.</para>
       </summary>
       <value>true if an image is allowed to be displayed within the loading panel; otherwise, false.</value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxGauges.ASPxGaugeControl.SizeEx">
-      <summary>
-        <para>Gets or sets the ASPxGaugeControl&#39;s size.</para>
-      </summary>
-      <value>The <see cref="T:System.Drawing.Size"/> structure.</value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxGauges.ASPxGaugeControl.SkinID">
-      <summary>
-        <para>Overrides the base class property to hide it.</para>
-      </summary>
-      <value></value>
-    </member>
-    <member name="P:DevExpress.Web.ASPxGauges.ASPxGaugeControl.TabIndex">
-      <summary>
-        <para>Overrides the base class property to hide it.</para>
-      </summary>
-      <value></value>
     </member>
     <member name="P:DevExpress.Web.ASPxGauges.ASPxGaugeControl.Value">
       <summary>

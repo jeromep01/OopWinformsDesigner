@@ -245,6 +245,12 @@
       </summary>
       <param name="container">An IContainer descendant that owns this <see cref="T:DevExpress.XtraEditors.XtraSaveFileDialog"/>.</param>
     </member>
+    <member name="P:DevExpress.XtraEditors.XtraSaveFileDialog.CheckWritePermission">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
     <member name="P:DevExpress.XtraEditors.XtraSaveFileDialog.CreatePrompt">
       <summary>
         <para>Gets or sets whether or not this <see cref="T:DevExpress.XtraEditors.XtraSaveFileDialog"/> should ask users for the permission to create a file if the specified file does not yet exist.</para>

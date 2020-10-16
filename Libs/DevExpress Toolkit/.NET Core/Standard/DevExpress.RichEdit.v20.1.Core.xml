@@ -3151,17 +3151,22 @@
         <para>A collection of shapes in a drawing canvas.</para>
       </summary>
     </member>
+    <member name="M:DevExpress.XtraRichEdit.API.Native.CanvasShapeCollection.Clear">
+      <summary>
+        <para>Removes all shapes from the canvas.</para>
+      </summary>
+    </member>
     <member name="M:DevExpress.XtraRichEdit.API.Native.CanvasShapeCollection.Remove(DevExpress.XtraRichEdit.API.Native.NestedShape)">
       <summary>
-        <para></para>
+        <para>Removes the specified shape from the canvas.</para>
       </summary>
-      <param name="shape"></param>
+      <param name="shape">A shape to remove.</param>
     </member>
     <member name="M:DevExpress.XtraRichEdit.API.Native.CanvasShapeCollection.RemoveAt(System.Int32)">
       <summary>
-        <para></para>
+        <para>Removes a shape with the specified index from the canvas.</para>
       </summary>
-      <param name="index"></param>
+      <param name="index">A zero-based index of the shape to remove.</param>
     </member>
     <member name="T:DevExpress.XtraRichEdit.API.Native.Capture">
       <summary>
@@ -4037,7 +4042,7 @@
     </member>
     <member name="T:DevExpress.XtraRichEdit.API.Native.ConnectorFormat">
       <summary>
-        <para></para>
+        <para>Contains connector settings.</para>
       </summary>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.ConnectorFormat.ConnectorType">
@@ -4048,15 +4053,15 @@
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.ConnectorFormat.EndPoint">
       <summary>
-        <para></para>
+        <para>Provides access to an object that stores information about a connector&#39;s end point.</para>
       </summary>
-      <value></value>
+      <value>An object that contains end point settings.</value>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.ConnectorFormat.StartPoint">
       <summary>
-        <para></para>
+        <para>Provides access to an object that stores information about a connector&#39;s start point.</para>
       </summary>
-      <value></value>
+      <value>An object that contains start point settings.</value>
     </member>
     <member name="T:DevExpress.XtraRichEdit.API.Native.ConnectorType">
       <summary>
@@ -5670,12 +5675,36 @@
         <para>Contains core properties of the document.</para>
       </summary>
     </member>
+    <member name="P:DevExpress.XtraRichEdit.API.Native.DocumentProperties.Application">
+      <summary>
+        <para>Specifies an application used to modify the document.</para>
+      </summary>
+      <value>The application name. The default is &quot;DevExpress Office File API v<span id="macro" data-macro-template="xx.x.x">20.1.4</span>&quot;.</value>
+    </member>
+    <member name="P:DevExpress.XtraRichEdit.API.Native.DocumentProperties.AppVersion">
+      <summary>
+        <para>Gets or sets the version of an application used to modify the document.</para>
+      </summary>
+      <value>The application version. The default is <span id="macro" data-macro-template="xx.x.x">20.1.4</span></value>
+    </member>
+    <member name="P:DevExpress.XtraRichEdit.API.Native.DocumentProperties.Author">
+      <summary>
+        <para>Gets or sets the name of the document&#39;s author.</para>
+      </summary>
+      <value>The author&#39;s name.</value>
+    </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.DocumentProperties.Category">
       <summary>
         <para>Gets or sets metadata used for categorization of the document content, e.g. Resume, Letter, Financial Forecast, Proposal, Technical
 Presentation, and so on.</para>
       </summary>
       <value>A string of text that specifies the category name.</value>
+    </member>
+    <member name="P:DevExpress.XtraRichEdit.API.Native.DocumentProperties.Company">
+      <summary>
+        <para>Gets or sets the name of the company associated with the document.</para>
+      </summary>
+      <value>The company name.</value>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.DocumentProperties.ContentStatus">
       <summary>
@@ -5739,6 +5768,12 @@ context.</para>
       </summary>
       <value>A <see cref="T:System.DateTime"/> value that is the moment when a document was last printed.</value>
     </member>
+    <member name="P:DevExpress.XtraRichEdit.API.Native.DocumentProperties.Manager">
+      <summary>
+        <para>Gets or sets a manager of the document&#39;s author.</para>
+      </summary>
+      <value>The manager&#39;s name.</value>
+    </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.DocumentProperties.Modified">
       <summary>
         <para>Gets or sets the date and time a document was last saved.</para>
@@ -5756,6 +5791,12 @@ context.</para>
         <para>Gets or sets metadata recognized as the document&#39;s topic of the content.</para>
       </summary>
       <value>A string of text.</value>
+    </member>
+    <member name="P:DevExpress.XtraRichEdit.API.Native.DocumentProperties.Template">
+      <summary>
+        <para>Gets or sets the name of a template attached to the document.</para>
+      </summary>
+      <value>The template name.</value>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.DocumentProperties.Title">
       <summary>
@@ -6295,27 +6336,27 @@ context.</para>
     </member>
     <member name="M:DevExpress.XtraRichEdit.API.Native.DrawingObject.AddHyperlink">
       <summary>
-        <para></para>
+        <para>Adds a hyperlink to a shape.</para>
       </summary>
-      <returns></returns>
+      <returns>A hyperlink attached to the drawing object.</returns>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.DrawingObject.AltText">
       <summary>
-        <para></para>
+        <para>Gets or sets the alternative text for a shape.</para>
       </summary>
-      <value></value>
+      <value>The descriptive text associated with a shape.</value>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.DrawingObject.CanvasItems">
       <summary>
-        <para></para>
+        <para>Provides access to the collection of shapes in a drawing canvas.</para>
       </summary>
-      <value></value>
+      <value>The collection of canvas items.</value>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.DrawingObject.ConnectorFormat">
       <summary>
-        <para></para>
+        <para>Provides access to connector settings.</para>
       </summary>
-      <value></value>
+      <value>An object that stores connector settings.</value>
     </member>
     <member name="M:DevExpress.XtraRichEdit.API.Native.DrawingObject.DeleteHyperlink">
       <summary>
@@ -6324,9 +6365,9 @@ context.</para>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.DrawingObject.Description">
       <summary>
-        <para></para>
+        <para>Gets or sets the alternative description for a shape.</para>
       </summary>
-      <value></value>
+      <value>The detailed explanation of shape content.</value>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.DrawingObject.Fill">
       <summary>
@@ -6336,9 +6377,9 @@ context.</para>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.DrawingObject.GroupItems">
       <summary>
-        <para></para>
+        <para>Provides access to the collection of shapes in a group.</para>
       </summary>
-      <value></value>
+      <value>The collection of group items.</value>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.DrawingObject.Height">
       <summary>
@@ -6348,9 +6389,9 @@ context.</para>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.DrawingObject.Hyperlink">
       <summary>
-        <para></para>
+        <para>Returns a hyperlink associated with a shape.</para>
       </summary>
-      <value></value>
+      <value>A hyperlink attached to the drawing object.</value>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.DrawingObject.Id">
       <summary>
@@ -6360,9 +6401,9 @@ context.</para>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.DrawingObject.Line">
       <summary>
-        <para></para>
+        <para>Allows you to format a shape outline.</para>
       </summary>
-      <value></value>
+      <value>An object that contains line format settings.</value>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.DrawingObject.LockAspectRatio">
       <summary>
@@ -6378,9 +6419,9 @@ context.</para>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.DrawingObject.Offset">
       <summary>
-        <para></para>
+        <para>Gets or sets the absolute position of a shape on the page.</para>
       </summary>
-      <value></value>
+      <value>An object that specifies the horizontal and vertical offsets in measurement units defined by the <see cref="P:DevExpress.XtraRichEdit.API.Native.Document.Unit"/> property.</value>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.DrawingObject.OriginalSize">
       <summary>
@@ -6390,9 +6431,9 @@ context.</para>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.DrawingObject.PictureFormat">
       <summary>
-        <para></para>
+        <para>Provides access to picture settings.</para>
       </summary>
-      <value></value>
+      <value>An object that contains picture settings.</value>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.DrawingObject.RotationAngle">
       <summary>
@@ -6414,9 +6455,9 @@ context.</para>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.DrawingObject.ShapeFormat">
       <summary>
-        <para></para>
+        <para>Provides access to shape properties.</para>
       </summary>
-      <value></value>
+      <value>An object that contains shape properties.</value>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.DrawingObject.Size">
       <summary>
@@ -6426,7 +6467,7 @@ context.</para>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.DrawingObject.Title">
       <summary>
-        <para>Gets or sets the alternative text title for a shape.</para>
+        <para>Gets or sets the alternative title for a shape.</para>
       </summary>
       <value>The descriptive title for a shape.</value>
     </member>
@@ -6881,6 +6922,12 @@ Supported in Microsoft Word 2007 and higher.</para>
       </summary>
       <value>The angle in degrees (from 0&#176; to 360&#176;).</value>
     </member>
+    <member name="P:DevExpress.XtraRichEdit.API.Native.GradientFill.FillRect">
+      <summary>
+        <para>Specifies the gradient fill direction.</para>
+      </summary>
+      <value>An object that specifies offsets (in percentage) from the fill rectangle edges to the center shade rectangle.</value>
+    </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.GradientFill.GradientStops">
       <summary>
         <para>Provides access to the collection of gradient stops.</para>
@@ -6898,6 +6945,12 @@ Supported in Microsoft Word 2007 and higher.</para>
         <para>Specifies whether to rotate the gradient fill with the shape.</para>
       </summary>
       <value>true to rotate the gradient with the shape; otherwise, false.</value>
+    </member>
+    <member name="P:DevExpress.XtraRichEdit.API.Native.GradientFill.TileRect">
+      <summary>
+        <para>Specifies the rectangular region to which a gradient is applied. This region is tiled to fill the shape.</para>
+      </summary>
+      <value>An object that specifies offsets (in percentage) from the edges of a shape&#39;s bounding box to the tile rectangle. A positive percentage specifies an inset, and a negative percentage defines an outset.</value>
     </member>
     <member name="T:DevExpress.XtraRichEdit.API.Native.GradientStop">
       <summary>
@@ -7007,14 +7060,14 @@ Supported in Microsoft Word 2007 and higher.</para>
     </member>
     <member name="T:DevExpress.XtraRichEdit.API.Native.GroupShapeCollection">
       <summary>
-        <para>A collection of grouped shapes.</para>
+        <para>A collection of shapes in a group.</para>
       </summary>
     </member>
     <member name="M:DevExpress.XtraRichEdit.API.Native.GroupShapeCollection.Ungroup">
       <summary>
-        <para></para>
+        <para>Splits a group into individual shapes.</para>
       </summary>
-      <returns></returns>
+      <returns>A collection of shapes retrieved from the group.</returns>
     </member>
     <member name="T:DevExpress.XtraRichEdit.API.Native.HeaderFooterType">
       <summary>
@@ -8042,9 +8095,9 @@ Supported in Microsoft Word 2007 and higher.</para>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.NestedShape.Parent">
       <summary>
-        <para></para>
+        <para>Returns the group or canvas to which this shape belongs.</para>
       </summary>
-      <value></value>
+      <value>The parent shape.</value>
     </member>
     <member name="T:DevExpress.XtraRichEdit.API.Native.NestedShapeCollection">
       <summary>
@@ -8053,57 +8106,57 @@ Supported in Microsoft Word 2007 and higher.</para>
     </member>
     <member name="M:DevExpress.XtraRichEdit.API.Native.NestedShapeCollection.AddGroup">
       <summary>
-        <para></para>
+        <para>Adds a nested group to an existing shape group or a drawing canvas.</para>
       </summary>
-      <returns></returns>
+      <returns>The nested group.</returns>
     </member>
     <member name="M:DevExpress.XtraRichEdit.API.Native.NestedShapeCollection.AddLine(System.Drawing.PointF,System.Drawing.PointF)">
       <summary>
-        <para></para>
+        <para>Adds a line to a shape group or a drawing canvas.</para>
       </summary>
-      <param name="start"></param>
-      <param name="end"></param>
-      <returns></returns>
+      <param name="start">An object that specifies x- and y-coordinates of the start point relative to the top left corner of the parent object. The <see cref="P:DevExpress.XtraRichEdit.API.Native.Document.Unit"/> property defines the measurement units.</param>
+      <param name="end">An object that specifies x- and y-coordinates of the end point relative to the top left corner of the parent object. The <see cref="P:DevExpress.XtraRichEdit.API.Native.Document.Unit"/> property defines the measurement units.</param>
+      <returns>The shape in the group or drawing canvas.</returns>
     </member>
     <member name="M:DevExpress.XtraRichEdit.API.Native.NestedShapeCollection.AddPicture(DevExpress.XtraRichEdit.API.Native.DocumentImageSource,System.Drawing.PointF)">
       <summary>
-        <para></para>
+        <para>Adds a picture to a shape group or a drawing canvas.</para>
       </summary>
-      <param name="imageSource"></param>
-      <param name="location"></param>
-      <returns></returns>
+      <param name="imageSource">An object that specifies the image source.</param>
+      <param name="location">An object that defines the picture&#39;s location (relative to the top left corner of the parent object). The <see cref="P:DevExpress.XtraRichEdit.API.Native.Document.Unit"/> property specifies the measurement units.</param>
+      <returns>The picture in the group or drawing canvas.</returns>
     </member>
     <member name="M:DevExpress.XtraRichEdit.API.Native.NestedShapeCollection.AddPicture(DevExpress.XtraRichEdit.API.Native.DocumentImageSource,System.Drawing.RectangleF)">
       <summary>
-        <para></para>
+        <para>Adds a picture to a shape group or a drawing canvas.</para>
       </summary>
-      <param name="imageSource"></param>
-      <param name="bounds"></param>
-      <returns></returns>
+      <param name="imageSource">An object that specifies the image source.</param>
+      <param name="bounds">An object that defines the picture&#39;s size and location (relative to the top left corner of the parent object). The <see cref="P:DevExpress.XtraRichEdit.API.Native.Document.Unit"/> property specifies the measurement units.</param>
+      <returns>The picture in the group or drawing canvas.</returns>
     </member>
     <member name="M:DevExpress.XtraRichEdit.API.Native.NestedShapeCollection.AddPicture(System.Drawing.Image,System.Drawing.PointF)">
       <summary>
-        <para></para>
+        <para>Adds a picture to a shape group or a drawing canvas.</para>
       </summary>
-      <param name="image"></param>
-      <param name="location"></param>
-      <returns></returns>
+      <param name="image">The image to insert.</param>
+      <param name="location">An object that defines the picture&#39;s location (relative to the top left corner of the parent object). The <see cref="P:DevExpress.XtraRichEdit.API.Native.Document.Unit"/> property specifies the measurement units.</param>
+      <returns>The picture in the group or drawing canvas.</returns>
     </member>
     <member name="M:DevExpress.XtraRichEdit.API.Native.NestedShapeCollection.AddPicture(System.Drawing.Image,System.Drawing.RectangleF)">
       <summary>
-        <para></para>
+        <para>Adds a picture to a shape group or a drawing canvas.</para>
       </summary>
-      <param name="image"></param>
-      <param name="bounds"></param>
-      <returns></returns>
+      <param name="image">The image to insert.</param>
+      <param name="bounds">An object that defines the picture&#39;s size and location (relative to the top left corner of the parent object). The <see cref="P:DevExpress.XtraRichEdit.API.Native.Document.Unit"/> property specifies the measurement units.</param>
+      <returns>The picture in the group or drawing canvas.</returns>
     </member>
     <member name="M:DevExpress.XtraRichEdit.API.Native.NestedShapeCollection.AddShape(DevExpress.XtraRichEdit.API.Native.ShapeGeometryPreset,System.Drawing.RectangleF)">
       <summary>
-        <para></para>
+        <para>Adds a shape to a group or a drawing canvas.</para>
       </summary>
-      <param name="preset"></param>
-      <param name="bounds"></param>
-      <returns></returns>
+      <param name="preset">An enumeration member that specifies the shape&#39;s geometry.</param>
+      <param name="bounds">An object that defines the shape&#39;s size and location (relative to the top left corner of the parent object). The <see cref="P:DevExpress.XtraRichEdit.API.Native.Document.Unit"/> property specifies the measurement units.</param>
+      <returns>The shape in the group or drawing canvas.</returns>
     </member>
     <member name="T:DevExpress.XtraRichEdit.API.Native.Note">
       <summary>
@@ -9764,7 +9817,7 @@ Example: I, II, III</para>
       <summary>
         <para>Specifies the portion of the shape to fill with a picture.</para>
       </summary>
-      <value>An object that specifies offsets from the shape&#39;s edges. Valid values are from -1000 (-100 000%) to 1000 (100 000%).</value>
+      <value>An object that specifies offsets from the shape&#39;s edges. Valid values range from -1000 (-100 000%) to 1000 (100 000%).</value>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.PictureFill.OffsetX">
       <summary>
@@ -9828,26 +9881,26 @@ Example: I, II, III</para>
     </member>
     <member name="T:DevExpress.XtraRichEdit.API.Native.PictureFormat">
       <summary>
-        <para></para>
+        <para>Contains picture settings.</para>
       </summary>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.PictureFormat.ConnectionSiteCount">
       <summary>
-        <para></para>
+        <para>Returns the number of connection sites on a picture.</para>
       </summary>
-      <value></value>
+      <value>The connection site number.</value>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.PictureFormat.Picture">
       <summary>
-        <para></para>
+        <para>Returns the source image that this drawing object contains.</para>
       </summary>
-      <value></value>
+      <value>An object that stores information on original image format, size, and resolution.</value>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.PictureFormat.PictureUri">
       <summary>
-        <para></para>
+        <para>Gets or sets the picture&#39;s URI.</para>
       </summary>
-      <value></value>
+      <value>A URI used to load the picture. An empty string, if the picture has no URI.</value>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.PictureFormat.Preset">
       <summary>
@@ -9857,21 +9910,21 @@ Example: I, II, III</para>
     </member>
     <member name="M:DevExpress.XtraRichEdit.API.Native.PictureFormat.SetPicture(DevExpress.XtraRichEdit.API.Native.DocumentImageSource)">
       <summary>
-        <para></para>
+        <para>Allows you to replace the current picture.</para>
       </summary>
-      <param name="imageSource"></param>
+      <param name="imageSource">An object that specifies the image source.</param>
     </member>
     <member name="M:DevExpress.XtraRichEdit.API.Native.PictureFormat.SetPicture(System.Drawing.Image)">
       <summary>
-        <para></para>
+        <para>Allows you to replace the current picture.</para>
       </summary>
-      <param name="image"></param>
+      <param name="image">The image to insert.</param>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.PictureFormat.SourceRect">
       <summary>
-        <para></para>
+        <para>Specifies the part of the picture to display in the document.</para>
       </summary>
-      <value></value>
+      <value>An object that specifies offsets from the picture&#39;s edges.</value>
     </member>
     <member name="T:DevExpress.XtraRichEdit.API.Native.RangePermission">
       <summary>
@@ -11737,9 +11790,9 @@ Example: I, II, III</para>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.Shape.HorizontalAlignment">
       <summary>
-        <para>Gets or sets how the shape is positioned horizontally.</para>
+        <para>Specifies how a shape is aligned horizontally.</para>
       </summary>
-      <value>A <see cref="T:DevExpress.XtraRichEdit.API.Native.ShapeHorizontalAlignment"/> enumeration member that specifies the shape&#39;s horizontal position.</value>
+      <value>An enumeration member that specifies the shape&#39;s horizontal alignment.</value>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.Shape.LockAnchor">
       <summary>
@@ -11749,69 +11802,69 @@ Example: I, II, III</para>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.Shape.MarginBottom">
       <summary>
-        <para>Gets or sets the distance between the document text and the bottom border of the shape.</para>
+        <para>Gets or sets the distance between the document text and the bottom edge of the shape.</para>
       </summary>
-      <value>A <see cref="T:System.Single"/> value that is the distance in current measure units.</value>
+      <value>The distance in measurement units specified by the <see cref="P:DevExpress.XtraRichEdit.API.Native.Document.Unit"/> property.</value>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.Shape.MarginLeft">
       <summary>
-        <para>Gets or sets the distance between the document text and the left border of the shape.</para>
+        <para>Gets or sets the distance between the document text and the left edge of the shape.</para>
       </summary>
-      <value>A <see cref="T:System.Single"/> value that is the distance in in current measure units.</value>
+      <value>The distance in measurement units specified by the <see cref="P:DevExpress.XtraRichEdit.API.Native.Document.Unit"/> property.</value>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.Shape.MarginRight">
       <summary>
-        <para>Gets or sets the distance between the document text and the right border of the shape.</para>
+        <para>Gets or sets the distance between the document text and the right edge of the shape.</para>
       </summary>
-      <value>A <see cref="T:System.Single"/> value that is the distance in in current measure units.</value>
+      <value>The distance in measurement units specified by the <see cref="P:DevExpress.XtraRichEdit.API.Native.Document.Unit"/> property.</value>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.Shape.MarginTop">
       <summary>
-        <para>Gets or sets the distance between the document text and the top border of the shape.</para>
+        <para>Gets or sets the distance between the document text and the top edge of the shape.</para>
       </summary>
-      <value>A <see cref="T:System.Single"/> value that is the distance in in current measure units.</value>
+      <value>The distance in measurement units specified by the <see cref="P:DevExpress.XtraRichEdit.API.Native.Document.Unit"/> property.</value>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.Shape.OffsetRelative">
       <summary>
-        <para></para>
+        <para>Gets or sets the relative position of a shape on the page.</para>
       </summary>
-      <value></value>
+      <value>An object that defines the horizontal and vertical offsets (in percentage) relative to the specified elements. Valid values range from -10 (-1000%) to 10 (1000%).</value>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.Shape.OffsetX">
       <summary>
-        <para></para>
+        <para>Specifies the horizontal absolute position of a shape relative to an element defined by the <see cref="P:DevExpress.XtraRichEdit.API.Native.Shape.RelativeHorizontalPosition"/> property.</para>
       </summary>
-      <value></value>
+      <value>The horizontal offset in measurement units specified by the <see cref="P:DevExpress.XtraRichEdit.API.Native.Document.Unit"/> property.</value>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.Shape.OffsetXRelative">
       <summary>
-        <para></para>
+        <para>Specifies the horizontal position of a shape relative to an element defined by the <see cref="P:DevExpress.XtraRichEdit.API.Native.Shape.RelativeHorizontalPosition"/> property.</para>
       </summary>
-      <value></value>
+      <value>The offset (in percentage) relative to the specified element. Valid values range from -10 (-1000%) to 10 (1000%).</value>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.Shape.OffsetY">
       <summary>
-        <para></para>
+        <para>Specifies the vertical absolute position of a shape relative to an element defined by the <see cref="P:DevExpress.XtraRichEdit.API.Native.Shape.RelativeVerticalPosition"/> property.</para>
       </summary>
-      <value></value>
+      <value>The vertical offset in measurement units specified by the <see cref="P:DevExpress.XtraRichEdit.API.Native.Document.Unit"/> property.</value>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.Shape.OffsetYRelative">
       <summary>
-        <para></para>
+        <para>Specifies the vertical position of a shape relative to an element defined by the <see cref="P:DevExpress.XtraRichEdit.API.Native.Shape.RelativeVerticalPosition"/> property.</para>
       </summary>
-      <value></value>
+      <value>The offset (in percentage) relative to the specified element. Valid values range from -10 (-1000%) to 10 (1000%).</value>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.Shape.Picture">
       <summary>
-        <para>Gets a picture residing in the floating object.</para>
+        <para>Use the <see cref="P:DevExpress.XtraRichEdit.API.Native.PictureFormat.Picture"/> property instead.</para>
       </summary>
-      <value>An <see cref="T:DevExpress.Office.Utils.OfficeImage"/> object that is the image in a shape object that is the floating picture; if a shape object is a text box, null (Nothing in Visual Basic) is returned.</value>
+      <value></value>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.Shape.PictureUri">
       <summary>
-        <para>Gets or sets the URI of a picture represented by a floating object.</para>
+        <para>Use the <see cref="P:DevExpress.XtraRichEdit.API.Native.PictureFormat.PictureUri"/> property instead.</para>
       </summary>
-      <value>A string that is the URI of the picture. A floating picture can have no URI or the shape can actually be a text box. In this case, an empty string is returned.</value>
+      <value></value>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.Shape.Range">
       <summary>
@@ -11821,57 +11874,57 @@ Example: I, II, III</para>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.Shape.RelativeHorizontalPosition">
       <summary>
-        <para>Gets or sets an item to what the horizontal position of a shape is relative.</para>
+        <para>Gets or sets the element to which the shape&#39;s horizontal position is relative.</para>
       </summary>
-      <value>A <see cref="T:DevExpress.XtraRichEdit.API.Native.ShapeRelativeHorizontalPosition"/> enumeration member.</value>
+      <value>Defines the element relative to which the shape is positioned horizontally.</value>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.Shape.RelativeHorizontalSize">
       <summary>
-        <para>Gets or sets an element relative to which the shape width is calculated.</para>
+        <para>Gets or sets the element relative to which the shape width is calculated.</para>
       </summary>
-      <value>An enumeration member that specifies an element to which the shape width is relative.</value>
+      <value>An enumeration member that specifies the element to which the shape width is relative.</value>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.Shape.RelativeVerticalPosition">
       <summary>
-        <para>Gets or sets an item to what the vertical position of a shape is relative.</para>
+        <para>Gets or sets the element to which the shape&#39;s vertical position is relative.</para>
       </summary>
-      <value>A <see cref="T:DevExpress.XtraRichEdit.API.Native.ShapeRelativeVerticalPosition"/> enumeration member.</value>
+      <value>Defines the element relative to which the shape is positioned vertically.</value>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.Shape.RelativeVerticalSize">
       <summary>
-        <para>Gets or sets an element relative to which the shape height is calculated.</para>
+        <para>Gets or sets the element relative to which the shape height is calculated.</para>
       </summary>
-      <value>An enumeration member that specifies an element to which the shape height is relative.</value>
+      <value>An enumeration member that specifies the element to which the shape height is relative.</value>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.Shape.SizeRelative">
       <summary>
         <para>Gets or sets the shape&#39;s relative size.</para>
       </summary>
-      <value>Specifies values that define the ratio of the shape width and height to the width and height of the given elements. Valid values are from 0 (0%) to 10 (1000%).</value>
+      <value>Specifies values that define the ratio of the shape width and height to the width and height of the given elements. Valid values range from 0 (0%) to 10 (1000%).</value>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.Shape.TextBox">
       <summary>
-        <para>Provides access to text box content.</para>
+        <para>Use the <see cref="P:DevExpress.XtraRichEdit.API.Native.ShapeFormat.TextBox"/> property instead.</para>
       </summary>
-      <value>A <see cref="T:DevExpress.XtraRichEdit.API.Native.SubDocument"/> interface that exposes the content of a text box.</value>
+      <value></value>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.Shape.TextWrapping">
       <summary>
-        <para>Gets or sets how the shape is surrounded by the text.</para>
+        <para>Specifies how a shape is surrounded by text.</para>
       </summary>
-      <value>A <see cref="T:DevExpress.XtraRichEdit.API.Native.TextWrappingType"/> enumeration member.</value>
+      <value>An enumeration member that specifies how the text wraps around the shape.</value>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.Shape.TextWrappingSide">
       <summary>
-        <para>Specifies how text should wrap around the shape&#39;s sides.</para>
+        <para>Specifies how the text wraps around the shape&#39;s edges.</para>
       </summary>
-      <value>One of the <see cref="T:DevExpress.XtraRichEdit.API.Native.TextWrappingSide"/> enumeration values indicating the wrap side.</value>
+      <value>An enumeration value that specifies the text wrapping side.</value>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.Shape.VerticalAlignment">
       <summary>
-        <para>Gets or sets how the shape is positioned vertically.</para>
+        <para>Specifies how a shape is aligned vertically.</para>
       </summary>
-      <value>&#39;A <see cref="T:DevExpress.XtraRichEdit.API.Native.ShapeHorizontalAlignment"/> enumeration member that specifies the shape&#39;s vertical position.</value>
+      <value>An enumeration member that specifies the shape&#39;s vertical alignment.</value>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.Shape.WidthRelative">
       <summary>
@@ -11881,50 +11934,55 @@ Example: I, II, III</para>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.Shape.ZOrder">
       <summary>
-        <para>Gets or sets the position of the shape in the z-order.</para>
+        <para>Gets or sets the shape&#39;s position in the z-order.</para>
       </summary>
-      <value>An integer that represents a shape position in the z-order.</value>
+      <value>An integer that specifies the shape&#39;s position in the z-order.</value>
     </member>
     <member name="T:DevExpress.XtraRichEdit.API.Native.ShapeCollection">
       <summary>
         <para>A collection of Shape objects.</para>
       </summary>
     </member>
+    <member name="M:DevExpress.XtraRichEdit.API.Native.ShapeCollection.Clear">
+      <summary>
+        <para>Removes all shapes from the collection.</para>
+      </summary>
+    </member>
     <member name="M:DevExpress.XtraRichEdit.API.Native.ShapeCollection.Flatten">
       <summary>
-        <para></para>
+        <para>Converts a shape collection into a flattened collection that contains all drawing objects in the document, including items of shape groups and canvases.</para>
       </summary>
-      <returns></returns>
+      <returns>A flattened collection of drawing objects in the document.</returns>
     </member>
     <member name="M:DevExpress.XtraRichEdit.API.Native.ShapeCollection.InsertCanvas(DevExpress.XtraRichEdit.API.Native.DocumentPosition)">
       <summary>
-        <para></para>
+        <para>Inserts a drawing canvas in the document.</para>
       </summary>
-      <param name="pos"></param>
-      <returns></returns>
+      <param name="pos">The position of the canvas anchor.</param>
+      <returns>The canvas embedded in the document.</returns>
     </member>
     <member name="M:DevExpress.XtraRichEdit.API.Native.ShapeCollection.InsertCanvas(DevExpress.XtraRichEdit.API.Native.DocumentPosition,System.Drawing.RectangleF)">
       <summary>
-        <para></para>
+        <para>Inserts a drawing canvas at the specified position in the document.</para>
       </summary>
-      <param name="pos"></param>
-      <param name="bounds"></param>
-      <returns></returns>
+      <param name="pos">The position of the canvas anchor.</param>
+      <param name="bounds">An object that specifies the canvas size and location (relative to the top and left edges of the page). The <see cref="P:DevExpress.XtraRichEdit.API.Native.Document.Unit"/> property defines the measurement units.</param>
+      <returns>The canvas embedded in the document.</returns>
     </member>
     <member name="M:DevExpress.XtraRichEdit.API.Native.ShapeCollection.InsertCanvas(DevExpress.XtraRichEdit.API.Native.DocumentPosition,System.Drawing.SizeF)">
       <summary>
-        <para></para>
+        <para>Inserts a drawing canvas of specified size in the document.</para>
       </summary>
-      <param name="pos"></param>
-      <param name="size"></param>
-      <returns></returns>
+      <param name="pos">The position of the canvas anchor.</param>
+      <param name="size">An object that specifies the canvas width and height. The <see cref="P:DevExpress.XtraRichEdit.API.Native.Document.Unit"/> property defines the measurement units.</param>
+      <returns>The canvas embedded in the document.</returns>
     </member>
     <member name="M:DevExpress.XtraRichEdit.API.Native.ShapeCollection.InsertGroup(DevExpress.XtraRichEdit.API.Native.DocumentPosition)">
       <summary>
-        <para></para>
+        <para>Inserts a shape group in the document.</para>
       </summary>
-      <param name="pos"></param>
-      <returns></returns>
+      <param name="pos">The position of the group&#39;s anchor.</param>
+      <returns>The group embedded in the document.</returns>
     </member>
     <member name="M:DevExpress.XtraRichEdit.API.Native.ShapeCollection.InsertLine(DevExpress.XtraRichEdit.API.Native.DocumentPosition,System.Drawing.PointF,System.Drawing.PointF)">
       <summary>
@@ -12022,7 +12080,7 @@ Example: I, II, III</para>
     </member>
     <member name="T:DevExpress.XtraRichEdit.API.Native.ShapeConnectionPoint">
       <summary>
-        <para></para>
+        <para>Contains information about connection points.</para>
       </summary>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.ShapeConnectionPoint.Connected">
@@ -12137,20 +12195,20 @@ Example: I, II, III</para>
     </member>
     <member name="T:DevExpress.XtraRichEdit.API.Native.ShapeFormat">
       <summary>
-        <para></para>
+        <para>Contains shape properties.</para>
       </summary>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.ShapeFormat.ConnectionSiteCount">
       <summary>
-        <para></para>
+        <para>Returns the number of connection sites on a shape.</para>
       </summary>
-      <value></value>
+      <value>The number of shape connection sites.</value>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.ShapeFormat.HasText">
       <summary>
-        <para></para>
+        <para>Indicates whether a shape contains text.</para>
       </summary>
-      <value></value>
+      <value>true if the shape has text; otherwise, false.</value>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.ShapeFormat.Preset">
       <summary>
@@ -12160,9 +12218,9 @@ Example: I, II, III</para>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.ShapeFormat.TextBox">
       <summary>
-        <para></para>
+        <para>Provides access to text box content and its settings.</para>
       </summary>
-      <value></value>
+      <value>An object that defines text box content and its settings.</value>
     </member>
     <member name="T:DevExpress.XtraRichEdit.API.Native.ShapeGeometryPreset">
       <summary>
@@ -13061,37 +13119,37 @@ Example: I, II, III</para>
     </member>
     <member name="T:DevExpress.XtraRichEdit.API.Native.ShapeHorizontalAlignment">
       <summary>
-        <para>Specifies the horizontal alignment of a shape.</para>
+        <para>Lists values that specify the horizontal alignment for a shape.</para>
       </summary>
     </member>
     <member name="F:DevExpress.XtraRichEdit.API.Native.ShapeHorizontalAlignment.Center">
       <summary>
-        <para>The shape is centered relative to its <see cref="P:DevExpress.XtraRichEdit.API.Native.Shape.RelativeHorizontalPosition"/>.</para>
+        <para>The shape is centered relative to the element defined by the <see cref="P:DevExpress.XtraRichEdit.API.Native.Shape.RelativeHorizontalPosition"/> property.</para>
       </summary>
     </member>
     <member name="F:DevExpress.XtraRichEdit.API.Native.ShapeHorizontalAlignment.Inside">
       <summary>
-        <para>Not in use.</para>
+        <para>The shape is left-aligned relative to the element defined by the <see cref="P:DevExpress.XtraRichEdit.API.Native.Shape.RelativeHorizontalPosition"/> property on odd pages, and right-aligned on even pages.The Rich Text Editor left-aligns the shape relative to the given element for both odd and even pages.</para>
       </summary>
     </member>
     <member name="F:DevExpress.XtraRichEdit.API.Native.ShapeHorizontalAlignment.Left">
       <summary>
-        <para>The shape is left-aligned relative to its <see cref="P:DevExpress.XtraRichEdit.API.Native.Shape.RelativeHorizontalPosition"/>.</para>
+        <para>The shape is left-aligned relative to the element defined by the <see cref="P:DevExpress.XtraRichEdit.API.Native.Shape.RelativeHorizontalPosition"/> property.</para>
       </summary>
     </member>
     <member name="F:DevExpress.XtraRichEdit.API.Native.ShapeHorizontalAlignment.None">
       <summary>
-        <para>The shape is positioned explicitly via the <see cref="P:DevExpress.XtraRichEdit.API.Native.DrawingObject.Offset"/> property relative to its <see cref="P:DevExpress.XtraRichEdit.API.Native.Shape.RelativeHorizontalPosition"/>.</para>
+        <para>The <see cref="P:DevExpress.XtraRichEdit.API.Native.Shape.OffsetX"/> property specifies the shape&#39;s position relative to the element defined by the <see cref="P:DevExpress.XtraRichEdit.API.Native.Shape.RelativeHorizontalPosition"/> property.</para>
       </summary>
     </member>
     <member name="F:DevExpress.XtraRichEdit.API.Native.ShapeHorizontalAlignment.Outside">
       <summary>
-        <para>Not in use.</para>
+        <para>The shape is right-aligned relative to the element defined by the <see cref="P:DevExpress.XtraRichEdit.API.Native.Shape.RelativeHorizontalPosition"/> property on odd pages, and left-aligned on even pages.The Rich Text Editor right-aligns the shape relative to the given element for both odd and even pages.</para>
       </summary>
     </member>
     <member name="F:DevExpress.XtraRichEdit.API.Native.ShapeHorizontalAlignment.Right">
       <summary>
-        <para>The shape is right-aligned relative to its <see cref="P:DevExpress.XtraRichEdit.API.Native.Shape.RelativeHorizontalPosition"/>.</para>
+        <para>The shape is right-aligned relative to the element defined by the <see cref="P:DevExpress.XtraRichEdit.API.Native.Shape.RelativeHorizontalPosition"/> property.</para>
       </summary>
     </member>
     <member name="T:DevExpress.XtraRichEdit.API.Native.ShapeLine">
@@ -13185,47 +13243,47 @@ Example: I, II, III</para>
     </member>
     <member name="T:DevExpress.XtraRichEdit.API.Native.ShapeRelativeHorizontalPosition">
       <summary>
-        <para>Specifies to what the horizontal position of a shape is relative.</para>
+        <para>Lists elements to which the horizontal position of a shape is relative.</para>
       </summary>
     </member>
     <member name="F:DevExpress.XtraRichEdit.API.Native.ShapeRelativeHorizontalPosition.Character">
       <summary>
-        <para>Relative to character.</para>
+        <para>The shape&#39;s position is relative to the character that contains the shape&#39;s anchor.</para>
       </summary>
     </member>
     <member name="F:DevExpress.XtraRichEdit.API.Native.ShapeRelativeHorizontalPosition.Column">
       <summary>
-        <para>Relative to column.</para>
+        <para>The shape&#39;s position is relative to the column that contains the anchoring paragraph.</para>
       </summary>
     </member>
     <member name="F:DevExpress.XtraRichEdit.API.Native.ShapeRelativeHorizontalPosition.InsideMargin">
       <summary>
-        <para>Not in use.</para>
+        <para>The shape&#39;s position is relative to the inside margin (i.e., the left margin for odd pages, and the right margin for even pages).The Rich Text Editor positions the shape relative to the left margin for both odd and even pages.</para>
       </summary>
     </member>
     <member name="F:DevExpress.XtraRichEdit.API.Native.ShapeRelativeHorizontalPosition.LeftMargin">
       <summary>
-        <para>Relative to left margin.</para>
+        <para>The shape&#39;s position is relative to the left margin.</para>
       </summary>
     </member>
     <member name="F:DevExpress.XtraRichEdit.API.Native.ShapeRelativeHorizontalPosition.Margin">
       <summary>
-        <para>Relative to margin.</para>
+        <para>The shape&#39;s position is relative to page margins.</para>
       </summary>
     </member>
     <member name="F:DevExpress.XtraRichEdit.API.Native.ShapeRelativeHorizontalPosition.OutsideMargin">
       <summary>
-        <para>Not in use.</para>
+        <para>The shape&#39;s position is relative to the outside margin (i.e., the right margin for odd pages, and the left margin for even pages).The Rich Text Editor positions the shape relative to the right margin for both odd and even pages.</para>
       </summary>
     </member>
     <member name="F:DevExpress.XtraRichEdit.API.Native.ShapeRelativeHorizontalPosition.Page">
       <summary>
-        <para>Relative to page.</para>
+        <para>The shape&#39;s position is relative to the page.</para>
       </summary>
     </member>
     <member name="F:DevExpress.XtraRichEdit.API.Native.ShapeRelativeHorizontalPosition.RightMargin">
       <summary>
-        <para>Relative to right margin.</para>
+        <para>The shape&#39;s position is relative to the right margin.</para>
       </summary>
     </member>
     <member name="T:DevExpress.XtraRichEdit.API.Native.ShapeRelativeHorizontalSize">
@@ -13265,47 +13323,47 @@ Example: I, II, III</para>
     </member>
     <member name="T:DevExpress.XtraRichEdit.API.Native.ShapeRelativeVerticalPosition">
       <summary>
-        <para>Specifies to what the vertical position of a shape is relative.</para>
+        <para>Lists elements to which the vertical position of a shape is relative.</para>
       </summary>
     </member>
     <member name="F:DevExpress.XtraRichEdit.API.Native.ShapeRelativeVerticalPosition.BottomMargin">
       <summary>
-        <para>Relative to bottom margin.</para>
+        <para>The shape&#39;s position is relative to the bottom margin.</para>
       </summary>
     </member>
     <member name="F:DevExpress.XtraRichEdit.API.Native.ShapeRelativeVerticalPosition.InsideMargin">
       <summary>
-        <para>Not in use.</para>
+        <para>The shape&#39;s position is relative to the inside margin (i.e., the top margin for odd pages, and the bottom margin for even pages).The Rich Text Editor positions the shape relative to the top margin for both odd and even pages.</para>
       </summary>
     </member>
     <member name="F:DevExpress.XtraRichEdit.API.Native.ShapeRelativeVerticalPosition.Line">
       <summary>
-        <para>Relative to line.</para>
+        <para>The shape&#39;s position is relative to the line that contains the shape&#39;s anchor.</para>
       </summary>
     </member>
     <member name="F:DevExpress.XtraRichEdit.API.Native.ShapeRelativeVerticalPosition.Margin">
       <summary>
-        <para>Relative to margin.</para>
+        <para>The shape&#39;s position is relative to page margins.</para>
       </summary>
     </member>
     <member name="F:DevExpress.XtraRichEdit.API.Native.ShapeRelativeVerticalPosition.OutsideMargin">
       <summary>
-        <para>Not in use.</para>
+        <para>The shape&#39;s position is relative to the outside margin (i.e., the bottom margin for odd pages, and the top margin for even pages).The Rich Text Editor positions the shape relative to the bottom margin for both odd and even pages.</para>
       </summary>
     </member>
     <member name="F:DevExpress.XtraRichEdit.API.Native.ShapeRelativeVerticalPosition.Page">
       <summary>
-        <para>Not in use.</para>
+        <para>The shape&#39;s position is relative to the page.</para>
       </summary>
     </member>
     <member name="F:DevExpress.XtraRichEdit.API.Native.ShapeRelativeVerticalPosition.Paragraph">
       <summary>
-        <para>Not in use.</para>
+        <para>The shape&#39;s position is relative to the paragraph that contains the shape&#39;s anchor.</para>
       </summary>
     </member>
     <member name="F:DevExpress.XtraRichEdit.API.Native.ShapeRelativeVerticalPosition.TopMargin">
       <summary>
-        <para>Relative to top margin.</para>
+        <para>The shape&#39;s position is relative to the top margin.</para>
       </summary>
     </member>
     <member name="T:DevExpress.XtraRichEdit.API.Native.ShapeRelativeVerticalSize">
@@ -13343,39 +13401,69 @@ Example: I, II, III</para>
         <para>The shape height is relative to the top margin size.</para>
       </summary>
     </member>
+    <member name="T:DevExpress.XtraRichEdit.API.Native.ShapeType">
+      <summary>
+        <para>Lists graphical objects a document can contain.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.XtraRichEdit.API.Native.ShapeType.Canvas">
+      <summary>
+        <para>A drawing canvas.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.XtraRichEdit.API.Native.ShapeType.Connector">
+      <summary>
+        <para>A connector between two shapes.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.XtraRichEdit.API.Native.ShapeType.Group">
+      <summary>
+        <para>A shape group.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.XtraRichEdit.API.Native.ShapeType.Picture">
+      <summary>
+        <para>A picture.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.XtraRichEdit.API.Native.ShapeType.Shape">
+      <summary>
+        <para>A shape.</para>
+      </summary>
+    </member>
     <member name="T:DevExpress.XtraRichEdit.API.Native.ShapeVerticalAlignment">
       <summary>
-        <para>Specifies the type of vertical alignment to apply.</para>
+        <para>Lists values that specify the vertical alignment for a shape.</para>
       </summary>
     </member>
     <member name="F:DevExpress.XtraRichEdit.API.Native.ShapeVerticalAlignment.Bottom">
       <summary>
-        <para>The shape is aligned to the bottom relative to its <see cref="P:DevExpress.XtraRichEdit.API.Native.Shape.RelativeVerticalPosition"/>.</para>
+        <para>The shape is aligned to the bottom of the element defined by the <see cref="P:DevExpress.XtraRichEdit.API.Native.Shape.RelativeVerticalPosition"/> property.</para>
       </summary>
     </member>
     <member name="F:DevExpress.XtraRichEdit.API.Native.ShapeVerticalAlignment.Center">
       <summary>
-        <para>The shape is centered relative to its <see cref="P:DevExpress.XtraRichEdit.API.Native.Shape.RelativeVerticalPosition"/>.</para>
+        <para>The shape is centered relative to the element defined by the <see cref="P:DevExpress.XtraRichEdit.API.Native.Shape.RelativeVerticalPosition"/> property.</para>
       </summary>
     </member>
     <member name="F:DevExpress.XtraRichEdit.API.Native.ShapeVerticalAlignment.Inside">
       <summary>
-        <para>Not in use.</para>
+        <para>The shape is aligned to the top of the element defined by the <see cref="P:DevExpress.XtraRichEdit.API.Native.Shape.RelativeVerticalPosition"/> property on odd pages, and is aligned to the bottom of the specified element on even pages.The Rich Text Editor aligns the shape to the top of the specified element for both odd and even pages.</para>
       </summary>
     </member>
     <member name="F:DevExpress.XtraRichEdit.API.Native.ShapeVerticalAlignment.None">
       <summary>
-        <para>The exact position is specified by the <see cref="P:DevExpress.XtraRichEdit.API.Native.DrawingObject.Offset"/> property.</para>
+        <para>The <see cref="P:DevExpress.XtraRichEdit.API.Native.Shape.OffsetY"/> property specifies the shape&#39;s position relative to the element defined by the <see cref="P:DevExpress.XtraRichEdit.API.Native.Shape.RelativeVerticalPosition"/> property.</para>
       </summary>
     </member>
     <member name="F:DevExpress.XtraRichEdit.API.Native.ShapeVerticalAlignment.Outside">
       <summary>
-        <para>Not in use.</para>
+        <para>The shape is aligned to the bottom of the element defined by the <see cref="P:DevExpress.XtraRichEdit.API.Native.Shape.RelativeVerticalPosition"/> property on odd pages, and is aligned to the top of the specified element on even pages.The Rich Text Editor aligns the shape to the bottom of the specified element for both odd and even pages.</para>
       </summary>
     </member>
     <member name="F:DevExpress.XtraRichEdit.API.Native.ShapeVerticalAlignment.Top">
       <summary>
-        <para>The shape is top aligned relative to its <see cref="P:DevExpress.XtraRichEdit.API.Native.Shape.RelativeVerticalPosition"/>.</para>
+        <para>The shape is aligned to the top of the element defined by the <see cref="P:DevExpress.XtraRichEdit.API.Native.Shape.RelativeVerticalPosition"/> property.</para>
       </summary>
     </member>
     <member name="T:DevExpress.XtraRichEdit.API.Native.SolidFill">
@@ -16128,44 +16216,44 @@ Example: I, II, III</para>
     </member>
     <member name="T:DevExpress.XtraRichEdit.API.Native.TextBox">
       <summary>
-        <para>A text box.</para>
+        <para>Defines text box content and its settings.</para>
       </summary>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.TextBox.Document">
       <summary>
-        <para>Provides access to content of the text box.</para>
+        <para>Provides access to text box content.</para>
       </summary>
-      <value>A <see cref="T:DevExpress.XtraRichEdit.API.Native.SubDocument"/> interface exposing the text box content.</value>
+      <value>An object that exposes text box content.</value>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.TextBox.HeightRule">
       <summary>
-        <para>Gets or sets the rule for determining the height of the text box.</para>
+        <para>Gets or sets the rule that determines the text box height.</para>
       </summary>
-      <value>A <see cref="T:DevExpress.XtraRichEdit.API.Native.TextBoxSizeRule"/> enumeration member specifying how the text box size is determined.</value>
+      <value>An enumeration member that specifies how to determine the text box height.</value>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.TextBox.MarginBottom">
       <summary>
-        <para>Gets or sets the distance between the bottom of the text and the bottom edge of the shape that contains the text.</para>
+        <para>Gets or sets the distance between the bottom of the text and the bottom edge of the text box.</para>
       </summary>
-      <value>A <see cref="T:System.Single"/> value that specifies the distance in current measure units.</value>
+      <value>The distance in measurement units specified by the <see cref="P:DevExpress.XtraRichEdit.API.Native.Document.Unit"/> property.</value>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.TextBox.MarginLeft">
       <summary>
-        <para>Gets or sets the distance between the left edge of the text and the left edge of the shape that contains the text.</para>
+        <para>Gets or sets the distance between the left edge of the text and the left side of the text box.</para>
       </summary>
-      <value>A <see cref="T:System.Single"/> value that specifies the distance in current measure units.</value>
+      <value>The distance in measurement units specified by the <see cref="P:DevExpress.XtraRichEdit.API.Native.Document.Unit"/> property.</value>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.TextBox.MarginRight">
       <summary>
-        <para>Gets or sets the distance between the right edge of the text and the right edge of the shape that contains the text.</para>
+        <para>Gets or sets the distance between the right edge of the text and the right side of the text box.</para>
       </summary>
-      <value>A <see cref="T:System.Single"/> value that specifies the distance in current measure units.</value>
+      <value>The distance in measurement units specified by the <see cref="P:DevExpress.XtraRichEdit.API.Native.Document.Unit"/> property.</value>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.TextBox.MarginTop">
       <summary>
-        <para>Gets or sets the distance between the top of the text and the top edge of the shape that contains the text.</para>
+        <para>Gets or sets the distance between the top of the text and the top edge of the text box.</para>
       </summary>
-      <value>A <see cref="T:System.Single"/> value that specifies the distance in current measure units.</value>
+      <value>The distance in measurement units specified by the <see cref="P:DevExpress.XtraRichEdit.API.Native.Document.Unit"/> property.</value>
     </member>
     <member name="P:DevExpress.XtraRichEdit.API.Native.TextBox.ResizeShapeToFitText">
       <summary>
@@ -16187,7 +16275,7 @@ Example: I, II, III</para>
     </member>
     <member name="T:DevExpress.XtraRichEdit.API.Native.TextBoxSizeRule">
       <summary>
-        <para>Specifies interpretation of the rule used to determine the height of a text box.</para>
+        <para>Specifies the rule that determines the text box height.</para>
       </summary>
     </member>
     <member name="F:DevExpress.XtraRichEdit.API.Native.TextBoxSizeRule.Auto">
@@ -16202,12 +16290,12 @@ Example: I, II, III</para>
     </member>
     <member name="T:DevExpress.XtraRichEdit.API.Native.TextWrappingSide">
       <summary>
-        <para>Lists values used to specify how the text should wrap around the shape&#39;s sides.</para>
+        <para>Lists values that specify how the text wraps around the shape&#39;s sides.</para>
       </summary>
     </member>
     <member name="F:DevExpress.XtraRichEdit.API.Native.TextWrappingSide.Both">
       <summary>
-        <para>The text is wrapped around both the shape&#39;s sides.</para>
+        <para>The text is wrapped around the shape&#39;s left and right sides.</para>
       </summary>
     </member>
     <member name="F:DevExpress.XtraRichEdit.API.Native.TextWrappingSide.Largest">
@@ -16227,7 +16315,7 @@ Example: I, II, III</para>
     </member>
     <member name="T:DevExpress.XtraRichEdit.API.Native.TextWrappingType">
       <summary>
-        <para>Lists values that specify how the shape is surrounded by the text.</para>
+        <para>Lists values that specify how a shape is surrounded by text.</para>
       </summary>
     </member>
     <member name="F:DevExpress.XtraRichEdit.API.Native.TextWrappingType.BehindText">
@@ -16242,7 +16330,7 @@ Example: I, II, III</para>
     </member>
     <member name="F:DevExpress.XtraRichEdit.API.Native.TextWrappingType.InLineWithText">
       <summary>
-        <para>The text is placed in line with text.</para>
+        <para>The shape is placed in line with text.</para>
       </summary>
     </member>
     <member name="F:DevExpress.XtraRichEdit.API.Native.TextWrappingType.Square">
@@ -32421,6 +32509,16 @@ Example: I, II, III</para>
         <para>All document properties (built-in and custom).</para>
       </summary>
     </member>
+    <member name="F:DevExpress.XtraRichEdit.Export.DocumentPropertyNames.Application">
+      <summary>
+        <para>The <see cref="P:DevExpress.XtraRichEdit.API.Native.DocumentProperties.Application"/> property.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.XtraRichEdit.Export.DocumentPropertyNames.AppVersion">
+      <summary>
+        <para>The <see cref="P:DevExpress.XtraRichEdit.API.Native.DocumentProperties.AppVersion"/> property.</para>
+      </summary>
+    </member>
     <member name="F:DevExpress.XtraRichEdit.Export.DocumentPropertyNames.BuiltinProperties">
       <summary>
         <para>Built-in (core) properties contained in the <see cref="T:DevExpress.XtraRichEdit.API.Native.DocumentProperties"/> class.</para>
@@ -32429,6 +32527,11 @@ Example: I, II, III</para>
     <member name="F:DevExpress.XtraRichEdit.Export.DocumentPropertyNames.Category">
       <summary>
         <para>The <see cref="P:DevExpress.XtraRichEdit.API.Native.DocumentProperties.Category"/> property.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.XtraRichEdit.Export.DocumentPropertyNames.Company">
+      <summary>
+        <para>The <see cref="P:DevExpress.XtraRichEdit.API.Native.DocumentProperties.Company"/> property.</para>
       </summary>
     </member>
     <member name="F:DevExpress.XtraRichEdit.Export.DocumentPropertyNames.ContentStatus">
@@ -32486,6 +32589,11 @@ Example: I, II, III</para>
         <para>The <see cref="P:DevExpress.XtraRichEdit.API.Native.DocumentProperties.LastPrinted"/> property.</para>
       </summary>
     </member>
+    <member name="F:DevExpress.XtraRichEdit.Export.DocumentPropertyNames.Manager">
+      <summary>
+        <para>The <see cref="P:DevExpress.XtraRichEdit.API.Native.DocumentProperties.Manager"/> property.</para>
+      </summary>
+    </member>
     <member name="F:DevExpress.XtraRichEdit.Export.DocumentPropertyNames.Modified">
       <summary>
         <para>The <see cref="P:DevExpress.XtraRichEdit.API.Native.DocumentProperties.Modified"/> property.</para>
@@ -32504,6 +32612,11 @@ Example: I, II, III</para>
     <member name="F:DevExpress.XtraRichEdit.Export.DocumentPropertyNames.Subject">
       <summary>
         <para>The <see cref="P:DevExpress.XtraRichEdit.API.Native.DocumentProperties.Subject"/> property.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.XtraRichEdit.Export.DocumentPropertyNames.Template">
+      <summary>
+        <para>The <see cref="P:DevExpress.XtraRichEdit.API.Native.DocumentProperties.Template"/> property.</para>
       </summary>
     </member>
     <member name="F:DevExpress.XtraRichEdit.Export.DocumentPropertyNames.Title">

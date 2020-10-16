@@ -203,7 +203,7 @@
     </member>
     <member name="T:DevExpress.Xpf.Charts.Annotation">
       <summary>
-        <para>An additional note which can be anchored to chart, panes or series point.</para>
+        <para>An additional note that can be anchored to a chart, pane, or series point.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpf.Charts.Annotation.#ctor">
@@ -357,6 +357,18 @@
     <member name="F:DevExpress.Xpf.Charts.Annotation.RuntimeAnchoringProperty">
       <summary>
         <para>Identifies the <see cref="P:DevExpress.Xpf.Charts.Annotation.RuntimeAnchoring"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.Xpf.Charts.Annotation.RuntimeDeletion">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
+    <member name="F:DevExpress.Xpf.Charts.Annotation.RuntimeDeletionProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.Xpf.Charts.Annotation.RuntimeDeletion"/> dependency property.</para>
       </summary>
       <value>A dependency property identifier.</value>
     </member>
@@ -780,7 +792,7 @@
       <summary>
         <para>Gets or sets the size of series point markers.</para>
       </summary>
-      <value>An integer value which specifies the height and width of the plot area of a marker(s), in pixels.</value>
+      <value>The marker height and width in pixels. The default value is 10.</value>
     </member>
     <member name="F:DevExpress.Xpf.Charts.AreaSeries2D.MarkerSizeProperty">
       <summary>
@@ -1204,7 +1216,7 @@
     </member>
     <member name="T:DevExpress.Xpf.Charts.ArrowsStock2DModel">
       <summary>
-        <para>The Arrows 2D Stock pre-defined model.</para>
+        <para>The Arrows 2D Stock model.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpf.Charts.ArrowsStock2DModel.#ctor">
@@ -3851,7 +3863,7 @@ The default value is <see cref="F:System.String.Empty"/>.</value>
     </member>
     <member name="T:DevExpress.Xpf.Charts.Bar3DBoxPointModel">
       <summary>
-        <para>The Box model of the bars.</para>
+        <para>The Box 3D bar model.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpf.Charts.Bar3DBoxPointModel.#ctor">
@@ -3896,7 +3908,7 @@ The default value is <see cref="F:System.String.Empty"/>.</value>
     </member>
     <member name="T:DevExpress.Xpf.Charts.Bar3DOctagonPointModel">
       <summary>
-        <para>The Octagon model of the bars.</para>
+        <para>The Octagon 3D bar model.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpf.Charts.Bar3DOctagonPointModel.#ctor">
@@ -3923,7 +3935,7 @@ The default value is <see cref="F:System.String.Empty"/>.</value>
     </member>
     <member name="T:DevExpress.Xpf.Charts.Bar3DPyramidPointModel">
       <summary>
-        <para>The Pyramid model of the bars.</para>
+        <para>The Pyramid 3D bar model.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpf.Charts.Bar3DPyramidPointModel.#ctor">
@@ -4478,7 +4490,7 @@ The default value is <see cref="F:System.String.Empty"/>.</value>
     </member>
     <member name="T:DevExpress.Xpf.Charts.BorderCandleStick2DModel">
       <summary>
-        <para>Represents the Border Candle Stick pre-defined model.</para>
+        <para>The Border Candle Stick model.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpf.Charts.BorderCandleStick2DModel.#ctor">
@@ -4494,7 +4506,7 @@ The default value is <see cref="F:System.String.Empty"/>.</value>
     </member>
     <member name="T:DevExpress.Xpf.Charts.BorderlessFlatPie2DModel">
       <summary>
-        <para>Represents the flat 2D Pie pre-defined model without a border.</para>
+        <para>The flat 2D Pie model without a border.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpf.Charts.BorderlessFlatPie2DModel.#ctor">
@@ -4510,7 +4522,7 @@ The default value is <see cref="F:System.String.Empty"/>.</value>
     </member>
     <member name="T:DevExpress.Xpf.Charts.BorderlessGradientBar2DModel">
       <summary>
-        <para>Represents the gradient 2D Bar pre-defined model without a border.</para>
+        <para>The gradient Bar model without a border.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpf.Charts.BorderlessGradientBar2DModel.#ctor">
@@ -4526,7 +4538,7 @@ The default value is <see cref="F:System.String.Empty"/>.</value>
     </member>
     <member name="T:DevExpress.Xpf.Charts.BorderlessGradientWaterfall2DModel">
       <summary>
-        <para>Represents the gradient waterfall bar model without a border.</para>
+        <para>The gradient waterfall bar model without a border.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpf.Charts.BorderlessGradientWaterfall2DModel.#ctor">
@@ -4542,7 +4554,7 @@ The default value is <see cref="F:System.String.Empty"/>.</value>
     </member>
     <member name="T:DevExpress.Xpf.Charts.BorderlessSimpleBar2DModel">
       <summary>
-        <para>Represents the basic 2D Bar pre-defined model without a border.</para>
+        <para>The basic 2D Bar model without a border.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpf.Charts.BorderlessSimpleBar2DModel.#ctor">
@@ -4558,7 +4570,7 @@ The default value is <see cref="F:System.String.Empty"/>.</value>
     </member>
     <member name="T:DevExpress.Xpf.Charts.BorderlessSimpleMarker2DModel">
       <summary>
-        <para>Represents the basic pre-defined model without a border.</para>
+        <para>The basic marker model without a border.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpf.Charts.BorderlessSimpleMarker2DModel.#ctor">
@@ -4574,7 +4586,7 @@ The default value is <see cref="F:System.String.Empty"/>.</value>
     </member>
     <member name="T:DevExpress.Xpf.Charts.BorderlessSimpleWaterfall2DModel">
       <summary>
-        <para>Represents the basic waterfall bar model without a border.</para>
+        <para>The basic waterfall bar model without a border.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpf.Charts.BorderlessSimpleWaterfall2DModel.#ctor">
@@ -4590,7 +4602,7 @@ The default value is <see cref="F:System.String.Empty"/>.</value>
     </member>
     <member name="T:DevExpress.Xpf.Charts.BoxBar3DModel">
       <summary>
-        <para>Represents the Box 3D Bar pre-defined model.</para>
+        <para>The Box 3D Bar model.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpf.Charts.BoxBar3DModel.#ctor">
@@ -5810,7 +5822,7 @@ This value should be greater than 0.</value>
     </member>
     <member name="T:DevExpress.Xpf.Charts.CapsuleMarker3DModel">
       <summary>
-        <para>Represents the Capsule 3D point marker pre-defined model.</para>
+        <para>The Capsule 3D marker model.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpf.Charts.CapsuleMarker3DModel.#ctor">
@@ -5904,7 +5916,7 @@ This value should be greater than 0.</value>
       <summary>
         <para>Gets or sets the aspect ratio of the chart axes.</para>
       </summary>
-      <value>The axis length ratios.</value>
+      <value>The axis length ratios. The default value is Size3D(1,1,1).</value>
     </member>
     <member name="F:DevExpress.Xpf.Charts.Chart3DControl.AspectRatioProperty">
       <summary>
@@ -9449,7 +9461,7 @@ This value should be greater than 0.</value>
     </member>
     <member name="T:DevExpress.Xpf.Charts.CircleMarker2DModel">
       <summary>
-        <para>Represents the Circle 2D point marker pre-defined model.</para>
+        <para>The Circle 2D point marker model.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpf.Charts.CircleMarker2DModel.#ctor">
@@ -9465,7 +9477,7 @@ This value should be greater than 0.</value>
     </member>
     <member name="T:DevExpress.Xpf.Charts.CirclePie3DModel">
       <summary>
-        <para>Represents the Circle 3D Pie pre-defined model.</para>
+        <para>The Circle 3D Pie model.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpf.Charts.CirclePie3DModel.#ctor">
@@ -10816,7 +10828,7 @@ This value should be greater than 0.</value>
       <summary>
         <para>Gets or sets the size of circular series point markers.</para>
       </summary>
-      <value>An integer value which specifies the height and width of the plot area of a marker(s), in pixels.</value>
+      <value>The marker height and width in pixels. The default value is 10.</value>
     </member>
     <member name="F:DevExpress.Xpf.Charts.CircularSeries2D.MarkerSizeProperty">
       <summary>
@@ -11164,7 +11176,7 @@ This value should be greater than 0.</value>
     </member>
     <member name="T:DevExpress.Xpf.Charts.ConeBar3DModel">
       <summary>
-        <para>Represents the Cone 3D Bar pre-defined model.</para>
+        <para>The Cone 3D Bar model.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpf.Charts.ConeBar3DModel.#ctor">
@@ -11180,7 +11192,7 @@ This value should be greater than 0.</value>
     </member>
     <member name="T:DevExpress.Xpf.Charts.ConeMarker3DModel">
       <summary>
-        <para>Represents the Cone 3D point marker pre-defined model.</para>
+        <para>The Cone 3D marker model.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpf.Charts.ConeMarker3DModel.#ctor">
@@ -13023,7 +13035,7 @@ This value should be greater than 0.</value>
     </member>
     <member name="T:DevExpress.Xpf.Charts.CrossMarker2DModel">
       <summary>
-        <para>Represents the Cross 2D point marker pre-defined model.</para>
+        <para>The Cross marker model.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpf.Charts.CrossMarker2DModel.#ctor">
@@ -13039,7 +13051,7 @@ This value should be greater than 0.</value>
     </member>
     <member name="T:DevExpress.Xpf.Charts.CubeMarker3DModel">
       <summary>
-        <para>Represents the Cube 3D point marker pre-defined model.</para>
+        <para>The Cube 3D marker model.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpf.Charts.CubeMarker3DModel.#ctor">
@@ -13055,7 +13067,7 @@ This value should be greater than 0.</value>
     </member>
     <member name="T:DevExpress.Xpf.Charts.CupidPie2DModel">
       <summary>
-        <para>Represents the Cupid 2D Pie pre-defined model.</para>
+        <para>The Cupid 2D Pie model.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpf.Charts.CupidPie2DModel.#ctor">
@@ -13257,7 +13269,7 @@ This value should be greater than 0.</value>
     </member>
     <member name="T:DevExpress.Xpf.Charts.CustomBar2DModel">
       <summary>
-        <para>Represents the custom 2D Bar model.</para>
+        <para>The custom 2D Bar model.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpf.Charts.CustomBar2DModel.#ctor">
@@ -13321,7 +13333,7 @@ This value should be greater than 0.</value>
     </member>
     <member name="T:DevExpress.Xpf.Charts.CustomBar3DModel">
       <summary>
-        <para>Represents the custom 3D Bar model.</para>
+        <para>The custom 3D Bar model.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpf.Charts.CustomBar3DModel.#ctor">
@@ -13371,7 +13383,7 @@ This value should be greater than 0.</value>
     </member>
     <member name="T:DevExpress.Xpf.Charts.CustomCandleStick2DModel">
       <summary>
-        <para>Represents the custom Candle Stick model.</para>
+        <para>The custom Candle Stick model.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpf.Charts.CustomCandleStick2DModel.#ctor">
@@ -13717,7 +13729,7 @@ This value should be greater than 0.</value>
     </member>
     <member name="T:DevExpress.Xpf.Charts.CustomMarker2DModel">
       <summary>
-        <para>Represents the custom 2D point marker model.</para>
+        <para>The custom 2D point marker model.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpf.Charts.CustomMarker2DModel.#ctor">
@@ -13831,7 +13843,7 @@ This value should be greater than 0.</value>
     </member>
     <member name="T:DevExpress.Xpf.Charts.CustomPie2DModel">
       <summary>
-        <para>Represents the custom 2D Pie model.</para>
+        <para>The custom 2D Pie model.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpf.Charts.CustomPie2DModel.#ctor">
@@ -13859,7 +13871,7 @@ This value should be greater than 0.</value>
     </member>
     <member name="T:DevExpress.Xpf.Charts.CustomPie3DModel">
       <summary>
-        <para>Represents the custom 3D Pie model.</para>
+        <para>The custom 3D Pie model.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpf.Charts.CustomPie3DModel.#ctor">
@@ -13927,7 +13939,7 @@ This value should be greater than 0.</value>
     </member>
     <member name="T:DevExpress.Xpf.Charts.CustomStock2DModel">
       <summary>
-        <para>Represents the custom Stock model.</para>
+        <para>The custom Stock model.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpf.Charts.CustomStock2DModel.#ctor">
@@ -13991,7 +14003,7 @@ This value should be greater than 0.</value>
     </member>
     <member name="T:DevExpress.Xpf.Charts.CylinderBar3DModel">
       <summary>
-        <para>Represents the Cylinder 3D Bar pre-defined model.</para>
+        <para>The Cylinder 3D Bar model.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpf.Charts.CylinderBar3DModel.#ctor">
@@ -14007,7 +14019,7 @@ This value should be greater than 0.</value>
     </member>
     <member name="T:DevExpress.Xpf.Charts.CylinderMarker3DModel">
       <summary>
-        <para>Represents the Cylinder 3D point marker pre-defined model.</para>
+        <para>The Cylinder 3D marker model.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpf.Charts.CylinderMarker3DModel.#ctor">
@@ -15321,6 +15333,22 @@ This value should be greater than 0.</value>
         <para>Initializes a new instance of the <see cref="T:DevExpress.Xpf.Charts.DiagramLightingCollection"/> class with default settings.</para>
       </summary>
     </member>
+    <member name="T:DevExpress.Xpf.Charts.DiamondMarker2DModel">
+      <summary>
+        <para>The Diamond marker model.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.Charts.DiamondMarker2DModel.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Xpf.Charts.DiamondMarker2DModel"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Xpf.Charts.DiamondMarker2DModel.ModelName">
+      <summary>
+        <para>Returns the &quot;Diamond&quot; string.</para>
+      </summary>
+      <value>The &quot;Diamond&quot; string.</value>
+    </member>
     <member name="T:DevExpress.Xpf.Charts.DockCorner">
       <summary>
         <para>Lists the values used to specify a corner to dock an element within a chart.</para>
@@ -15348,7 +15376,7 @@ This value should be greater than 0.</value>
     </member>
     <member name="T:DevExpress.Xpf.Charts.DollarMarker2DModel">
       <summary>
-        <para>Represents the Dollar 2D point marker pre-defined model.</para>
+        <para>The Dollar marker model.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpf.Charts.DollarMarker2DModel.#ctor">
@@ -15434,7 +15462,7 @@ This value should be greater than 0.</value>
     </member>
     <member name="T:DevExpress.Xpf.Charts.DropsStock2DModel">
       <summary>
-        <para>Represents the Drops 2D Stock pre-defined model.</para>
+        <para>The Drops 2D Stock model.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpf.Charts.DropsStock2DModel.#ctor">
@@ -16145,7 +16173,7 @@ This value should be greater than 0.</value>
     </member>
     <member name="T:DevExpress.Xpf.Charts.FlatBar2DModel">
       <summary>
-        <para>Represents the flat 2D Bar pre-defined model.</para>
+        <para>The flat Bar model.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpf.Charts.FlatBar2DModel.#ctor">
@@ -16161,7 +16189,7 @@ This value should be greater than 0.</value>
     </member>
     <member name="T:DevExpress.Xpf.Charts.FlatCandleStick2DModel">
       <summary>
-        <para>Represents the Flat Candle Stick pre-defined model.</para>
+        <para>The Flat Candle Stick model.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpf.Charts.FlatCandleStick2DModel.#ctor">
@@ -16177,7 +16205,7 @@ This value should be greater than 0.</value>
     </member>
     <member name="T:DevExpress.Xpf.Charts.FlatGlassBar2DModel">
       <summary>
-        <para>Represents the flat glass 2D Bar pre-defined model.</para>
+        <para>The flat glass Bar model.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpf.Charts.FlatGlassBar2DModel.#ctor">
@@ -16193,7 +16221,7 @@ This value should be greater than 0.</value>
     </member>
     <member name="T:DevExpress.Xpf.Charts.FlatPie2DModel">
       <summary>
-        <para>Represents the Flat 2D Pie pre-defined model.</para>
+        <para>The Flat 2D Pie model.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpf.Charts.FlatPie2DModel.#ctor">
@@ -16209,7 +16237,7 @@ This value should be greater than 0.</value>
     </member>
     <member name="T:DevExpress.Xpf.Charts.FlatStock2DModel">
       <summary>
-        <para>Represents the Flat 2D Stock pre-defined model.</para>
+        <para>The Flat 2D Stock model.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpf.Charts.FlatStock2DModel.#ctor">
@@ -16672,7 +16700,7 @@ This value should be greater than 0.</value>
     </member>
     <member name="T:DevExpress.Xpf.Charts.GlarePie2DModel">
       <summary>
-        <para>Represents the Glare 2D Pie pre-defined model.</para>
+        <para>The Glare 2D Pie model.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpf.Charts.GlarePie2DModel.#ctor">
@@ -16688,7 +16716,7 @@ This value should be greater than 0.</value>
     </member>
     <member name="T:DevExpress.Xpf.Charts.GlassCandleStick2DModel">
       <summary>
-        <para>Represents the Glass Candle Stick pre-defined model.</para>
+        <para>The Glass Candle Stick model.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpf.Charts.GlassCandleStick2DModel.#ctor">
@@ -16704,7 +16732,7 @@ This value should be greater than 0.</value>
     </member>
     <member name="T:DevExpress.Xpf.Charts.GlassCylinderBar2DModel">
       <summary>
-        <para>Represents the glass cylinder 2D Bar pre-defined model.</para>
+        <para>The glass cylinder Bar model.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpf.Charts.GlassCylinderBar2DModel.#ctor">
@@ -16720,7 +16748,7 @@ This value should be greater than 0.</value>
     </member>
     <member name="T:DevExpress.Xpf.Charts.GlassPie2DModel">
       <summary>
-        <para>Represents the Glass 2D Pie pre-defined model.</para>
+        <para>The Glass 2D Pie model.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpf.Charts.GlassPie2DModel.#ctor">
@@ -16736,7 +16764,7 @@ This value should be greater than 0.</value>
     </member>
     <member name="T:DevExpress.Xpf.Charts.GlossyPie2DModel">
       <summary>
-        <para>Represents the Glossy 2D Pie pre-defined model.</para>
+        <para>The Glossy 2D Pie model.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpf.Charts.GlossyPie2DModel.#ctor">
@@ -16752,7 +16780,7 @@ This value should be greater than 0.</value>
     </member>
     <member name="T:DevExpress.Xpf.Charts.GradientBar2DModel">
       <summary>
-        <para>Represents the gradient 2D Bar pre-defined model.</para>
+        <para>The gradient Bar model.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpf.Charts.GradientBar2DModel.#ctor">
@@ -16790,7 +16818,7 @@ This value should be greater than 0.</value>
     </member>
     <member name="T:DevExpress.Xpf.Charts.GradientWaterfall2DModel">
       <summary>
-        <para>Represents the gradient waterfall bar model.</para>
+        <para>The gradient waterfall bar model.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpf.Charts.GradientWaterfall2DModel.#ctor">
@@ -17013,7 +17041,7 @@ This value should be greater than 0.</value>
     </member>
     <member name="T:DevExpress.Xpf.Charts.HexagonBar3DModel">
       <summary>
-        <para>Represents the Hexagon 3D Bar pre-defined model.</para>
+        <para>The Hexagon 3D Bar model.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpf.Charts.HexagonBar3DModel.#ctor">
@@ -17029,7 +17057,7 @@ This value should be greater than 0.</value>
     </member>
     <member name="T:DevExpress.Xpf.Charts.HexagonMarker3DModel">
       <summary>
-        <para>Represents the Hexagon 3D point marker pre-defined model.</para>
+        <para>The Hexagon 3D marker model.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpf.Charts.HexagonMarker3DModel.#ctor">
@@ -17045,7 +17073,7 @@ This value should be greater than 0.</value>
     </member>
     <member name="T:DevExpress.Xpf.Charts.HexagonPie3DModel">
       <summary>
-        <para>Represents the Hexagon 3D Pie pre-defined model.</para>
+        <para>The Hexagon 3D Pie model.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpf.Charts.HexagonPie3DModel.#ctor">
@@ -18173,6 +18201,22 @@ This value should be greater than 0.</value>
       <param name="wholeMin">The whole range&#39;s minimum value.</param>
       <param name="wholeMax">The whole range&#39;s maximum value.</param>
       <returns>The calculated measurement unit.</returns>
+    </member>
+    <member name="T:DevExpress.Xpf.Charts.InvertedTriangleMarker2DModel">
+      <summary>
+        <para>The Inverted Triangle marker model.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.Charts.InvertedTriangleMarker2DModel.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Xpf.Charts.InvertedTriangleMarker2DModel"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Xpf.Charts.InvertedTriangleMarker2DModel.ModelName">
+      <summary>
+        <para>Returns the &quot;Inverted Triangle&quot; string.</para>
+      </summary>
+      <value>The &quot;Inverted Triangle&quot; string.</value>
     </member>
     <member name="T:DevExpress.Xpf.Charts.ISupportMarker2D">
       <summary>
@@ -19320,7 +19364,7 @@ This value should be greater than 0.</value>
       <summary>
         <para>Gets or sets the size of series point markers.</para>
       </summary>
-      <value>An integer value which specifies the height and width of the plot area of a marker(s), in pixels.</value>
+      <value>The marker height and width in pixels. The default value is 10.</value>
     </member>
     <member name="F:DevExpress.Xpf.Charts.LineSeries2D.MarkerSizeProperty">
       <summary>
@@ -20828,7 +20872,7 @@ This value should be greater than 0.</value>
     </member>
     <member name="T:DevExpress.Xpf.Charts.Marker3DCubePointModel">
       <summary>
-        <para>The Cube model of the point markers.</para>
+        <para>The Cube Chart3D marker model.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpf.Charts.Marker3DCubePointModel.#ctor">
@@ -20928,7 +20972,7 @@ This value should be greater than 0.</value>
     </member>
     <member name="T:DevExpress.Xpf.Charts.Marker3DSpherePointModel">
       <summary>
-        <para>The Sphere model of the point markers.</para>
+        <para>The Sphere Chart3D marker model.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpf.Charts.Marker3DSpherePointModel.#ctor">
@@ -21388,7 +21432,7 @@ This value should be greater than 0.</value>
     </member>
     <member name="T:DevExpress.Xpf.Charts.NavigationOptions">
       <summary>
-        <para>Provides settings that specify the ways in which zooming and scrolling can be performed.</para>
+        <para>Zoom and scroll settings for the <see cref="T:DevExpress.Xpf.Charts.XYDiagram2D"/>.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpf.Charts.NavigationOptions.#ctor">
@@ -21398,7 +21442,7 @@ This value should be greater than 0.</value>
     </member>
     <member name="P:DevExpress.Xpf.Charts.NavigationOptions.AxisXMaxZoomPercent">
       <summary>
-        <para>Gets or sets the maximum zoom value as a percentage for the X-axis.</para>
+        <para>Gets or sets the maximum zoom factor as a percentage for the X-axis.</para>
       </summary>
       <value>A <see cref="T:System.Double"/> value.</value>
     </member>
@@ -21410,7 +21454,7 @@ This value should be greater than 0.</value>
     </member>
     <member name="P:DevExpress.Xpf.Charts.NavigationOptions.AxisYMaxZoomPercent">
       <summary>
-        <para>Gets or sets the maximum zoom value as a percentage for the Y-axis.</para>
+        <para>Gets or sets the Y-axis&#39;s maximum zoom factor as a percentage.</para>
       </summary>
       <value>A <see cref="T:System.Double"/> value.</value>
     </member>
@@ -21422,7 +21466,7 @@ This value should be greater than 0.</value>
     </member>
     <member name="P:DevExpress.Xpf.Charts.NavigationOptions.UseScrollBars">
       <summary>
-        <para>Gets or sets a value indicating whether scroll bars should be processed by the chart to scroll and zoom its contents.</para>
+        <para>Specifies whether a user can use scroll bars to scroll the chart.</para>
       </summary>
       <value>true to allow using the scroll bars; otherwise, false.</value>
     </member>
@@ -21454,7 +21498,7 @@ This value should be greater than 0.</value>
     </member>
     <member name="P:DevExpress.Xpf.Charts.NavigationOptionsBase.UseKeyboard">
       <summary>
-        <para>Specifies whether navigation can be performed using the keyboard.</para>
+        <para>Specifies whether a user can use keyboard shortcuts to zoom and scroll the chart.</para>
       </summary>
       <value>true to allow using the keyboard; otherwise, false.</value>
     </member>
@@ -21466,7 +21510,7 @@ This value should be greater than 0.</value>
     </member>
     <member name="P:DevExpress.Xpf.Charts.NavigationOptionsBase.UseMouse">
       <summary>
-        <para>Specifies whether scrolling can be performed using the mouse.</para>
+        <para>Specifies whether a user can use a mouse to zoom and scroll the chart.</para>
       </summary>
       <value>true to allow using the mouse; otherwise, false.</value>
     </member>
@@ -21478,7 +21522,7 @@ This value should be greater than 0.</value>
     </member>
     <member name="P:DevExpress.Xpf.Charts.NavigationOptionsBase.UseTouchDevice">
       <summary>
-        <para>Specifies whether navigation can be performed using the touch device.</para>
+        <para>Specifies whether a user can use touch gestures to zoom and scroll the chart on touch devices.</para>
       </summary>
       <value>true to allow using the touch device; otherwise, false.</value>
     </member>
@@ -21802,7 +21846,7 @@ This value should be greater than 0.</value>
     </member>
     <member name="T:DevExpress.Xpf.Charts.OutsetBar2DModel">
       <summary>
-        <para>Represents the outset 2D Bar pre-defined model.</para>
+        <para>The outset Bar model.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpf.Charts.OutsetBar2DModel.#ctor">
@@ -21815,6 +21859,22 @@ This value should be greater than 0.</value>
         <para>Gets the name of the <see cref="T:DevExpress.Xpf.Charts.OutsetBar2DModel"/>.</para>
       </summary>
       <value>Always &quot;Outset Bar&quot;.</value>
+    </member>
+    <member name="T:DevExpress.Xpf.Charts.OutsetWaterfall2DModel">
+      <summary>
+        <para>The outset waterfall bar model.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.Charts.OutsetWaterfall2DModel.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Xpf.Charts.OutsetWaterfall2DModel"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Xpf.Charts.OutsetWaterfall2DModel.ModelName">
+      <summary>
+        <para>Returns the &quot;Outset Waterfall&quot; string.</para>
+      </summary>
+      <value>The &quot;Outset Waterfall&quot; string.</value>
     </member>
     <member name="T:DevExpress.Xpf.Charts.Palette">
       <summary>
@@ -21934,7 +21994,7 @@ This value should be greater than 0.</value>
     </member>
     <member name="P:DevExpress.Xpf.Charts.Pane.AxisXScrollBarOptions">
       <summary>
-        <para>Provides access to the settings that define the appearance of a pane scroll bar displayed for the X-Axis.</para>
+        <para>Settings that define the appearance of a pane scroll bar displayed for the X-Axis.</para>
       </summary>
       <value>A <see cref="T:DevExpress.Xpf.Charts.ScrollBarOptions"/> object containing the appearance settings of the pane scroll bar.</value>
     </member>
@@ -21958,7 +22018,7 @@ This value should be greater than 0.</value>
     </member>
     <member name="P:DevExpress.Xpf.Charts.Pane.AxisYScrollBarOptions">
       <summary>
-        <para>Provides access to the settings that define the appearance of a pane scroll bar displayed for the Y-Axis.</para>
+        <para>Settings that define the appearance of a pane scroll bar displayed for the Y-Axis.</para>
       </summary>
       <value>A <see cref="T:DevExpress.Xpf.Charts.ScrollBarOptions"/> object containing the appearance settings of the scroll bar.</value>
     </member>
@@ -22172,7 +22232,7 @@ This value should be greater than 0.</value>
     </member>
     <member name="P:DevExpress.Xpf.Charts.Pane.EnableAxisXNavigation">
       <summary>
-        <para>Specifies whether scrolling and zooming is allowed for the X-Axis of the pane.</para>
+        <para>Specifies whether scroll and zoom operations are allowed for the X-Axis of the pane.</para>
       </summary>
       <value>Null - the EnableAxisXNavigation property value is obtained from the parent&#39;s <see cref="P:DevExpress.Xpf.Charts.XYDiagram2D.EnableAxisXNavigation"/> property; True to allow scrolling and zooming; False - scrolling and zooming are not allowed.</value>
     </member>
@@ -22184,7 +22244,7 @@ This value should be greater than 0.</value>
     </member>
     <member name="P:DevExpress.Xpf.Charts.Pane.EnableAxisYNavigation">
       <summary>
-        <para>Specifies whether scrolling and zooming is allowed for the Y-Axis of the pane.</para>
+        <para>Specifies whether scroll and zoom operations are allowed for the Y-Axis of the pane.</para>
       </summary>
       <value>Null - the EnableAxisYNavigation property value is obtained from the parent&#39;s <see cref="P:DevExpress.Xpf.Charts.XYDiagram2D.EnableAxisYNavigation"/> property; True to allow scrolling and zooming; False - scrolling and zooming are not allowed.</value>
     </member>
@@ -22727,9 +22787,25 @@ This value should be greater than 0.</value>
       </summary>
       <value>Always Pastel Kit.</value>
     </member>
+    <member name="T:DevExpress.Xpf.Charts.PentagonMarker2DModel">
+      <summary>
+        <para>The Pentagon marker model.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.Charts.PentagonMarker2DModel.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Xpf.Charts.PentagonMarker2DModel"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Xpf.Charts.PentagonMarker2DModel.ModelName">
+      <summary>
+        <para>Returns the &quot;Pentagon&quot; string.</para>
+      </summary>
+      <value>The &quot;Pentagon&quot; string.</value>
+    </member>
     <member name="T:DevExpress.Xpf.Charts.PentagonPie3DModel">
       <summary>
-        <para>Represents the Pentagon 3D Pie pre-defined model.</para>
+        <para>The Pentagon 3D Pie model.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpf.Charts.PentagonPie3DModel.#ctor">
@@ -23656,6 +23732,22 @@ This value should be greater than 0.</value>
       </summary>
       <value>A dependency property identifier.</value>
     </member>
+    <member name="T:DevExpress.Xpf.Charts.PlusMarker2DModel">
+      <summary>
+        <para>The Plus marker model.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.Charts.PlusMarker2DModel.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Xpf.Charts.PlusMarker2DModel"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Xpf.Charts.PlusMarker2DModel.ModelName">
+      <summary>
+        <para>Returns the &quot;Plus&quot; string.</para>
+      </summary>
+      <value>The &quot;Plus&quot; string.</value>
+    </member>
     <member name="T:DevExpress.Xpf.Charts.Point3DModelBase">
       <summary>
         <para>The base 3D point marker.</para>
@@ -23681,7 +23773,7 @@ This value should be greater than 0.</value>
       <summary>
         <para>Gets or sets the size of data point markers.</para>
       </summary>
-      <value>The size of markers.</value>
+      <value>The marker size in pixels. The default value is 15.</value>
     </member>
     <member name="F:DevExpress.Xpf.Charts.Point3DSeriesView.MarkerSizeProperty">
       <summary>
@@ -23877,7 +23969,7 @@ This value should be greater than 0.</value>
       <summary>
         <para>Gets or sets the size of series point markers.</para>
       </summary>
-      <value>An integer value which specifies the height and width of the plot area of a marker(s), in pixels.</value>
+      <value>The marker height and width in pixels. The default value is 10.</value>
     </member>
     <member name="F:DevExpress.Xpf.Charts.PointSeries2D.MarkerSizeProperty">
       <summary>
@@ -23949,7 +24041,7 @@ This value should be greater than 0.</value>
       <summary>
         <para>Gets or sets the size of series point markers.</para>
       </summary>
-      <value>A <see cref="T:System.Double"/> value which specifies the height and width of the plot area of a marker(s), in pixels.</value>
+      <value>A <see cref="T:System.Double"/> value which specifies the marker height and width in value axis measurement units. The default value is 0.6.</value>
     </member>
     <member name="F:DevExpress.Xpf.Charts.PointSeries3D.MarkerSizeProperty">
       <summary>
@@ -24198,7 +24290,7 @@ This value should be greater than 0.</value>
     </member>
     <member name="T:DevExpress.Xpf.Charts.PolygonMarker2DModel">
       <summary>
-        <para>Represents the Polygon 2D point marker pre-defined model.</para>
+        <para>The Polygon marker model.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpf.Charts.PolygonMarker2DModel.#ctor">
@@ -24373,7 +24465,7 @@ This value should be greater than 0.</value>
     </member>
     <member name="T:DevExpress.Xpf.Charts.PyramidBar3DModel">
       <summary>
-        <para>Represents the Pyramid 3D Bar pre-defined model.</para>
+        <para>The Pyramid 3D Bar model.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpf.Charts.PyramidBar3DModel.#ctor">
@@ -24389,7 +24481,7 @@ This value should be greater than 0.</value>
     </member>
     <member name="T:DevExpress.Xpf.Charts.PyramidMarker3DModel">
       <summary>
-        <para>Represents the Pyramid 3D point marker pre-defined model.</para>
+        <para>The Pyramid 3D marker model.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpf.Charts.PyramidMarker3DModel.#ctor">
@@ -24503,7 +24595,7 @@ This value should be greater than 0.</value>
     </member>
     <member name="T:DevExpress.Xpf.Charts.Quasi3DBar2DModel">
       <summary>
-        <para>Represents the quasi-three-dimensional 2D Bar pre-defined model.</para>
+        <para>The quasi three-dimensional 2D Bar model.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpf.Charts.Quasi3DBar2DModel.#ctor">
@@ -26755,7 +26847,7 @@ This value should be greater than 0.</value>
     </member>
     <member name="T:DevExpress.Xpf.Charts.RectanglePie3DModel">
       <summary>
-        <para>Represents the Rectangle 3D Pie pre-defined model.</para>
+        <para>The Rectangle 3D Pie model.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpf.Charts.RectanglePie3DModel.#ctor">
@@ -27018,7 +27110,7 @@ This value should be greater than 0.</value>
     </member>
     <member name="T:DevExpress.Xpf.Charts.RingMarker2DModel">
       <summary>
-        <para>Represents the Ring 2D point marker pre-defined model.</para>
+        <para>The Ring marker model.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpf.Charts.RingMarker2DModel.#ctor">
@@ -27034,7 +27126,7 @@ This value should be greater than 0.</value>
     </member>
     <member name="T:DevExpress.Xpf.Charts.RoundedCubeMarker3DModel">
       <summary>
-        <para>Represents the Rounded Cube 3D point marker pre-defined model.</para>
+        <para>The Rounded Cube 3D marker model.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpf.Charts.RoundedCubeMarker3DModel.#ctor">
@@ -27047,6 +27139,22 @@ This value should be greater than 0.</value>
         <para>Gets the name of the <see cref="T:DevExpress.Xpf.Charts.RoundedCubeMarker3DModel"/>.</para>
       </summary>
       <value>Always &quot;Rounded Cube&quot;.</value>
+    </member>
+    <member name="T:DevExpress.Xpf.Charts.RoundedRectanglePie3DModel">
+      <summary>
+        <para>A rounded rectangle 3D Pie model.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.Charts.RoundedRectanglePie3DModel.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Xpf.Charts.RoundedRectanglePie3DModel"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Xpf.Charts.RoundedRectanglePie3DModel.ModelName">
+      <summary>
+        <para>Returns the &quot;Rounded Rectangle&quot; string.</para>
+      </summary>
+      <value>The &quot;Rounded Rectangle&quot; string.</value>
     </member>
     <member name="T:DevExpress.Xpf.Charts.ScaleBreak">
       <summary>
@@ -27506,7 +27614,7 @@ This value should be greater than 0.</value>
     </member>
     <member name="T:DevExpress.Xpf.Charts.SemiCirclePie3DModel">
       <summary>
-        <para>Represents the Semi Circle 3D Pie pre-defined model.</para>
+        <para>The Semi Circle 3D Pie model.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpf.Charts.SemiCirclePie3DModel.#ctor">
@@ -27522,7 +27630,7 @@ This value should be greater than 0.</value>
     </member>
     <member name="T:DevExpress.Xpf.Charts.SemiHexagonPie3DModel">
       <summary>
-        <para>Represents the Semi Hexagon 3D Pie pre-defined model.</para>
+        <para>The Semi-Hexagonal 3D Pie model.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpf.Charts.SemiHexagonPie3DModel.#ctor">
@@ -27538,7 +27646,7 @@ This value should be greater than 0.</value>
     </member>
     <member name="T:DevExpress.Xpf.Charts.SemiPentagonPie3DModel">
       <summary>
-        <para>Represents the Semi Pentagon 3D Pie pre-defined model.</para>
+        <para>The Semi-Pentagonal 3D Pie model.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpf.Charts.SemiPentagonPie3DModel.#ctor">
@@ -27554,7 +27662,7 @@ This value should be greater than 0.</value>
     </member>
     <member name="T:DevExpress.Xpf.Charts.SemiRectanglePie3DModel">
       <summary>
-        <para>Represents the Semi Rectangle 3D Pie pre-defined model.</para>
+        <para>The Semi-Rectangular 3D Pie model.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpf.Charts.SemiRectanglePie3DModel.#ctor">
@@ -27570,7 +27678,7 @@ This value should be greater than 0.</value>
     </member>
     <member name="T:DevExpress.Xpf.Charts.SemiRoundedRectanglePie3DModel">
       <summary>
-        <para>Represents the Semi Rounded Rectangle 3D Pie pre-defined model.</para>
+        <para>The Semi Rounded Rectangle 3D Pie model.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpf.Charts.SemiRoundedRectanglePie3DModel.#ctor">
@@ -27851,7 +27959,7 @@ This value should be greater than 0.</value>
     </member>
     <member name="P:DevExpress.Xpf.Charts.Series.FilterString">
       <summary>
-        <para>Gets or sets the current filter expression. This is a dependency property.</para>
+        <para>Gets or sets the series&#39;s filter expression. This is a dependency property.</para>
       </summary>
       <value>The current filter expression.</value>
     </member>
@@ -30272,7 +30380,7 @@ This is a dependency property.</para>
     </member>
     <member name="T:DevExpress.Xpf.Charts.SimpleBar2DModel">
       <summary>
-        <para>Represents the basic 2D Bar pre-defined model.</para>
+        <para>The basic Bar model.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpf.Charts.SimpleBar2DModel.#ctor">
@@ -30304,7 +30412,7 @@ This is a dependency property.</para>
     </member>
     <member name="T:DevExpress.Xpf.Charts.SimpleCandleStick2DModel">
       <summary>
-        <para>Represents the Simple Candle Stick pre-defined model.</para>
+        <para>The Simple Candle Stick model.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpf.Charts.SimpleCandleStick2DModel.#ctor">
@@ -30424,6 +30532,22 @@ This is a dependency property.</para>
       </summary>
       <value>A dependency property identifier.</value>
     </member>
+    <member name="T:DevExpress.Xpf.Charts.SimpleMarker2DModel">
+      <summary>
+        <para>The Simple marker model.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Xpf.Charts.SimpleMarker2DModel.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Xpf.Charts.SimpleMarker2DModel"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Xpf.Charts.SimpleMarker2DModel.ModelName">
+      <summary>
+        <para>Returns the &quot;Simple Marker&quot; string.</para>
+      </summary>
+      <value>The &quot;Simple Marker&quot; string.</value>
+    </member>
     <member name="T:DevExpress.Xpf.Charts.SimpleMovingAverage">
       <summary>
         <para>Represents a Simple Moving Average indicator.</para>
@@ -30436,7 +30560,7 @@ This is a dependency property.</para>
     </member>
     <member name="T:DevExpress.Xpf.Charts.SimplePie2DModel">
       <summary>
-        <para>Represents the Simple 2D Pie pre-defined model.</para>
+        <para>The Simple 2D Pie model.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpf.Charts.SimplePie2DModel.#ctor">
@@ -30452,7 +30576,7 @@ This is a dependency property.</para>
     </member>
     <member name="T:DevExpress.Xpf.Charts.SimpleWaterfall2DModel">
       <summary>
-        <para>Represents the basic waterfall bar model with a border.</para>
+        <para>The basic waterfall bar model with a border.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpf.Charts.SimpleWaterfall2DModel.#ctor">
@@ -30546,7 +30670,7 @@ This is a dependency property.</para>
     </member>
     <member name="T:DevExpress.Xpf.Charts.SphereMarker3DModel">
       <summary>
-        <para>Represents the Sphere 3D point marker pre-defined model.</para>
+        <para>The Sphere 3D marker model.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpf.Charts.SphereMarker3DModel.#ctor">
@@ -30650,7 +30774,7 @@ This is a dependency property.</para>
     </member>
     <member name="T:DevExpress.Xpf.Charts.SquareMarker2DModel">
       <summary>
-        <para>Represents the Square 2D point marker pre-defined model.</para>
+        <para>The Square marker model.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpf.Charts.SquareMarker2DModel.#ctor">
@@ -30813,7 +30937,7 @@ This is a dependency property.</para>
     </member>
     <member name="T:DevExpress.Xpf.Charts.StarMarker2DModel">
       <summary>
-        <para>Represents the Star 2D point marker pre-defined model.</para>
+        <para>The Star marker model.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpf.Charts.StarMarker2DModel.#ctor">
@@ -30829,7 +30953,7 @@ This is a dependency property.</para>
     </member>
     <member name="T:DevExpress.Xpf.Charts.StarMarker3DModel">
       <summary>
-        <para>Represents the Star 3D point marker pre-defined model.</para>
+        <para>The Star 3D marker model.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpf.Charts.StarMarker3DModel.#ctor">
@@ -30845,7 +30969,7 @@ This is a dependency property.</para>
     </member>
     <member name="T:DevExpress.Xpf.Charts.SteelColumnBar2DModel">
       <summary>
-        <para>Represents the steel-column 2D Bar pre-defined model.</para>
+        <para>The steel column Bar model.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpf.Charts.SteelColumnBar2DModel.#ctor">
@@ -31679,7 +31803,7 @@ This is a dependency property.</para>
       <summary>
         <para>Gets or sets the size of data point markers.</para>
       </summary>
-      <value>The size of markers.</value>
+      <value>The marker size in pixels. The default value is 15.</value>
     </member>
     <member name="F:DevExpress.Xpf.Charts.SurfaceSeriesView.MarkerSizeProperty">
       <summary>
@@ -31836,7 +31960,7 @@ This is a dependency property.</para>
     </member>
     <member name="T:DevExpress.Xpf.Charts.ThinCandleStick2DModel">
       <summary>
-        <para>Represents the Thin Candle Stick pre-defined model.</para>
+        <para>The Thin Candle Stick model.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpf.Charts.ThinCandleStick2DModel.#ctor">
@@ -31852,7 +31976,7 @@ This is a dependency property.</para>
     </member>
     <member name="T:DevExpress.Xpf.Charts.ThinStock2DModel">
       <summary>
-        <para>Represents the Thin 2D Stock pre-defined model.</para>
+        <para>The Thin 2D Stock model.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpf.Charts.ThinStock2DModel.#ctor">
@@ -32494,7 +32618,7 @@ This is a dependency property.</para>
     </member>
     <member name="T:DevExpress.Xpf.Charts.TransparentBar2DModel">
       <summary>
-        <para>Represents the transparent 2D Bar pre-defined model.</para>
+        <para>The transparent Bar model.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpf.Charts.TransparentBar2DModel.#ctor">
@@ -32510,7 +32634,7 @@ This is a dependency property.</para>
     </member>
     <member name="T:DevExpress.Xpf.Charts.TransparentWaterfall2DModel">
       <summary>
-        <para>Represents the transparent waterfall bar model.</para>
+        <para>The transparent waterfall bar model.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpf.Charts.TransparentWaterfall2DModel.#ctor">
@@ -32618,7 +32742,7 @@ This is a dependency property.</para>
     </member>
     <member name="T:DevExpress.Xpf.Charts.TriangleMarker2DModel">
       <summary>
-        <para>Represents the Triangle 2D point marker pre-defined model.</para>
+        <para>The Triangle marker model.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpf.Charts.TriangleMarker2DModel.#ctor">
@@ -33805,7 +33929,7 @@ This is a dependency property.</para>
     </member>
     <member name="M:DevExpress.Xpf.Charts.XYDiagram2D.CanZoomIn">
       <summary>
-        <para>Checks whether it is possible to zoom in.</para>
+        <para>Checks whether it is possible to zoom in to a diagram.</para>
       </summary>
       <returns>true if it is allowed to zoom in; otherwise, false.</returns>
     </member>
@@ -33817,7 +33941,7 @@ This is a dependency property.</para>
     </member>
     <member name="M:DevExpress.Xpf.Charts.XYDiagram2D.CanZoomOut">
       <summary>
-        <para>Checks whether it is possible to zoom out.</para>
+        <para>Checks whether it is possible to zoom out of a diagram.</para>
       </summary>
       <returns>true if it is allowed to zoom out; otherwise, false.</returns>
     </member>
@@ -34272,7 +34396,7 @@ This is a dependency property.</para>
     </member>
     <member name="P:DevExpress.Xpf.Charts.XYDiagram2D.EnableAxisXNavigation">
       <summary>
-        <para>Specifies whether scrolling and zooming is allowed for the X-Axis of the XY-Diagram 2D.</para>
+        <para>Specifies whether scroll and zoom operations are allowed for the X-Axis of the XY-Diagram 2D.</para>
       </summary>
       <value>true to allow scrolling and zooming; otherwise, false.</value>
     </member>
@@ -34284,7 +34408,7 @@ This is a dependency property.</para>
     </member>
     <member name="P:DevExpress.Xpf.Charts.XYDiagram2D.EnableAxisYNavigation">
       <summary>
-        <para>Specifies whether scrolling and zooming is allowed for the Y-Axis of the XY-Diagram 2D.</para>
+        <para>Specifies whether scroll and zoom operations are allowed for the Y-Axis of the XY-Diagram 2D.</para>
       </summary>
       <value>true to allow scrolling and zooming; otherwise, false.</value>
     </member>
@@ -34384,9 +34508,9 @@ This is a dependency property.</para>
     </member>
     <member name="P:DevExpress.Xpf.Charts.XYDiagram2D.NavigationOptions">
       <summary>
-        <para>Provides access to the options specifying the ways in which zooming and scrolling can be performed for this <see cref="T:DevExpress.Xpf.Charts.XYDiagram2D"/>.</para>
+        <para>Zoom and scroll settings for the <see cref="T:DevExpress.Xpf.Charts.XYDiagram2D"/>.</para>
       </summary>
-      <value>A <see cref="T:DevExpress.Xpf.Charts.NavigationOptions"/> object containing zooming and scrolling options.</value>
+      <value>A <see cref="T:DevExpress.Xpf.Charts.NavigationOptions"/> object that contains zoom and scroll options.</value>
     </member>
     <member name="F:DevExpress.Xpf.Charts.XYDiagram2D.NavigationOptionsProperty">
       <summary>
@@ -34527,14 +34651,14 @@ This is a dependency property.</para>
     </member>
     <member name="E:DevExpress.Xpf.Charts.XYDiagram2D.Scroll">
       <summary>
-        <para>Occurs after an <see cref="T:DevExpress.Xpf.Charts.XYDiagram2D"/> has been scrolled.</para>
+        <para>Occurs after an <see cref="T:DevExpress.Xpf.Charts.XYDiagram2D"/> is scrolled.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Xpf.Charts.XYDiagram2D.ScrollAxisXTo(System.Double)">
       <summary>
         <para>Scrolls the X-axis to the specified position.</para>
       </summary>
-      <param name="xPosition">A <see cref="T:System.Double"/> value specifying the position to scroll to.</param>
+      <param name="xPosition">A <see cref="T:System.Double"/> value that specifies the position to which to scroll.</param>
     </member>
     <member name="P:DevExpress.Xpf.Charts.XYDiagram2D.ScrollAxisXToCommand">
       <summary>
@@ -34546,7 +34670,7 @@ This is a dependency property.</para>
       <summary>
         <para>Scrolls the Y-axis to the specified position.</para>
       </summary>
-      <param name="yPosition">A <see cref="T:System.Double"/> value specifying the position to scroll to.</param>
+      <param name="yPosition">A <see cref="T:System.Double"/> value that specifies the position to which to scroll.</param>
     </member>
     <member name="P:DevExpress.Xpf.Charts.XYDiagram2D.ScrollAxisYToCommand">
       <summary>
@@ -34721,7 +34845,7 @@ This is a dependency property.</para>
     </member>
     <member name="M:DevExpress.Xpf.Charts.XYDiagram2D.SetAxisXZoomRatio(System.Double)">
       <summary>
-        <para>Change the current zoom value for the X-axis to the specified zoom ratio.</para>
+        <para>Changes the current zoom value for the X-axis to the specified zoom ratio.</para>
       </summary>
       <param name="ratio">A <see cref="T:System.Double"/> value that specifies a new zoom ratio. It should be greater than 0 and less than or equal to 1.</param>
     </member>
@@ -34745,7 +34869,7 @@ This is a dependency property.</para>
     </member>
     <member name="M:DevExpress.Xpf.Charts.XYDiagram2D.SetAxisYZoomRatio(System.Double)">
       <summary>
-        <para>Change the current zoom value for the Y-axis to the specified zoom ratio.</para>
+        <para>Changes the current zoom value for the Y-axis to the specified zoom ratio.</para>
       </summary>
       <param name="ratio">A <see cref="T:System.Double"/> value that specifies a new zoom ratio. It should be greater than 0 and less than or equal to 1.</param>
     </member>
@@ -34864,9 +34988,9 @@ This is a dependency property.</para>
     </member>
     <member name="M:DevExpress.Xpf.Charts.XYDiagram2D.ZoomIn(System.Nullable{System.Windows.Point})">
       <summary>
-        <para>Zooms a diagram in.</para>
+        <para>Zooms in to a diagram.</para>
       </summary>
-      <param name="zoomLocation">A <see cref="T:System.Windows.Point"/> object specifying a new zoom location.</param>
+      <param name="zoomLocation">A <see cref="T:System.Windows.Point"/> object that specifies a new zoom location.</param>
     </member>
     <member name="P:DevExpress.Xpf.Charts.XYDiagram2D.ZoomInCommand">
       <summary>
@@ -34888,9 +35012,9 @@ This is a dependency property.</para>
     </member>
     <member name="M:DevExpress.Xpf.Charts.XYDiagram2D.ZoomOut(System.Nullable{System.Windows.Point})">
       <summary>
-        <para>Zooms a diagram out.</para>
+        <para>Zooms out of a diagram.</para>
       </summary>
-      <param name="zoomLocation">A <see cref="T:System.Windows.Point"/> object specifying a new zoom location.</param>
+      <param name="zoomLocation">A <see cref="T:System.Windows.Point"/> object that specifies a new zoom location.</param>
     </member>
     <member name="P:DevExpress.Xpf.Charts.XYDiagram2D.ZoomOutCommand">
       <summary>

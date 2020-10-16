@@ -2087,11 +2087,11 @@
     </member>
     <member name="M:DevExpress.Xpf.PdfViewer.PdfViewerControl.ConvertPixelToDocumentPosition(System.Windows.Point,System.Boolean)">
       <summary>
-        <para></para>
+        <para>Returns the page number and page coordinates corresponding to a point.</para>
       </summary>
-      <param name="point"></param>
-      <param name="inPageBounds"></param>
-      <returns></returns>
+      <param name="point">A <see cref="T:System.Drawing.Point"/> object.</param>
+      <param name="inPageBounds">true - if the point is outside page bounds, the method returns the point coordinates that belong to the closest page in a document; false - if the point is outside page bounds, this method returns null.</param>
+      <returns>A <see cref="T:DevExpress.Pdf.PdfDocumentPosition"/> object.</returns>
     </member>
     <member name="P:DevExpress.Xpf.PdfViewer.PdfViewerControl.CopyCommand">
       <summary>
@@ -2116,11 +2116,11 @@
     </member>
     <member name="M:DevExpress.Xpf.PdfViewer.PdfViewerControl.CreateTiff(System.IO.Stream,System.Collections.Generic.IEnumerable{System.Int32},System.Single)">
       <summary>
-        <para></para>
+        <para>Exports a PDF document to a TIFF image using a stream, page numbers and predefined resolution.</para>
       </summary>
-      <param name="stream"></param>
-      <param name="pageNumbers"></param>
-      <param name="imageDpi"></param>
+      <param name="stream">A stream to which a TIFF image should be written.</param>
+      <param name="pageNumbers">A list of page numbers.</param>
+      <param name="imageDpi">The image&#39;s DPI.</param>
     </member>
     <member name="M:DevExpress.Xpf.PdfViewer.PdfViewerControl.CreateTiff(System.IO.Stream,System.Int32)">
       <summary>
@@ -2139,11 +2139,11 @@
     </member>
     <member name="M:DevExpress.Xpf.PdfViewer.PdfViewerControl.CreateTiff(System.String,System.Collections.Generic.IEnumerable{System.Int32},System.Single)">
       <summary>
-        <para></para>
+        <para>Exports a PDF document to a TIFF image using a file, page numbers and predefined resolution.</para>
       </summary>
-      <param name="fileName"></param>
-      <param name="pageNumbers"></param>
-      <param name="imageDpi"></param>
+      <param name="fileName">The file name (including the full path) for the created Tiff image.</param>
+      <param name="pageNumbers">A list of page numbers.</param>
+      <param name="imageDpi">The image&#39;s DPI.</param>
     </member>
     <member name="M:DevExpress.Xpf.PdfViewer.PdfViewerControl.CreateTiff(System.String,System.Int32)">
       <summary>
@@ -2317,10 +2317,10 @@
     </member>
     <member name="M:DevExpress.Xpf.PdfViewer.PdfViewerControl.GetPageSize(System.Int32)">
       <summary>
-        <para></para>
+        <para>Returns the size (in inches) of the specified document page.</para>
       </summary>
-      <param name="pageNumber"></param>
-      <returns></returns>
+      <param name="pageNumber">The document page index.</param>
+      <returns>The page width and height in inches.</returns>
     </member>
     <member name="M:DevExpress.Xpf.PdfViewer.PdfViewerControl.GetSelectionContent">
       <summary>
@@ -3760,7 +3760,7 @@
     </member>
     <member name="F:DevExpress.Xpf.PdfViewer.PdfViewerStringId.MessageNoPrintersAreInstalled">
       <summary>
-        <para></para>
+        <para>&quot;No printers are installed.&quot;</para>
       </summary>
     </member>
     <member name="F:DevExpress.Xpf.PdfViewer.PdfViewerStringId.MessageSaveAsError">

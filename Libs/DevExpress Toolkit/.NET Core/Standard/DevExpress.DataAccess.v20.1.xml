@@ -662,11 +662,25 @@
       <param name="userName">A <see cref="T:System.String"/> that specifies the user name used to authenticate to the Oracle server. This value is assigned to the <see cref="P:DevExpress.DataAccess.ConnectionParameters.OracleConnectionParameters.UserName"/> property.</param>
       <param name="password">A <see cref="T:System.String"/> that specifies the password used to authenticate to the Oracle server. This value is assigned to the <see cref="P:DevExpress.DataAccess.ConnectionParameters.OracleConnectionParameters.Password"/> property.</param>
     </member>
+    <member name="M:DevExpress.DataAccess.ConnectionParameters.OracleConnectionParameters.#ctor(System.String,System.String,System.String,DevExpress.DataAccess.ConnectionParameters.OracleProviderType)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.DataAccess.ConnectionParameters.OracleConnectionParameters"/> class with specified settings.</para>
+      </summary>
+      <param name="serverName" />
+      <param name="userName" />
+      <param name="password" />
+      <param name="providerType" />
+    </member>
     <member name="P:DevExpress.DataAccess.ConnectionParameters.OracleConnectionParameters.Password">
       <summary>
         <para>Gets or sets the password used to authenticate to an Oracle server.</para>
       </summary>
       <value>A <see cref="T:System.String"/> that specifies the password used to authenticate to an Oracle server.</value>
+    </member>
+    <member name="P:DevExpress.DataAccess.ConnectionParameters.OracleConnectionParameters.ProviderType">
+      <summary>
+        <para></para>
+      </summary>
     </member>
     <member name="P:DevExpress.DataAccess.ConnectionParameters.OracleConnectionParameters.ServerName">
       <summary>
@@ -3822,6 +3836,12 @@
       </summary>
       <param name="theOperand">An <see cref="T:DevExpress.Data.Filtering.AggregateOperand"/> object.</param>
     </member>
+    <member name="M:DevExpress.DataAccess.ExpressionEditor.CriteriaOperatorValidator.Visit(DevExpress.Data.Filtering.BinaryOperator)">
+      <summary>
+        <para></para>
+      </summary>
+      <param name="theOperator"></param>
+    </member>
     <member name="M:DevExpress.DataAccess.ExpressionEditor.CriteriaOperatorValidator.Visit(DevExpress.Data.Filtering.FunctionOperator)">
       <summary>
         <para>Enables custom processing of the specified <see cref="T:DevExpress.Data.Filtering.FunctionOperator"/>.</para>
@@ -4131,10 +4151,10 @@
     </member>
     <member name="M:DevExpress.DataAccess.Json.JsonDataSource.LoadSchema(System.Type)">
       <summary>
-        <para></para>
+        <para>Creates the data source schema from the provided type.</para>
       </summary>
-      <param name="type"></param>
-      <returns></returns>
+      <param name="type">The type used to create the schema.</param>
+      <returns>The created data source schema.</returns>
     </member>
     <member name="P:DevExpress.DataAccess.Json.JsonDataSource.RootElement">
       <summary>
@@ -5256,6 +5276,11 @@
     <member name="F:DevExpress.DataAccess.Localization.DataAccessStringId.IncompleteRelationValidationException">
       <summary>
         <para>Default value: &quot;The specified relation is incomplete: &quot;{0}&quot;.&quot;</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.DataAccess.Localization.DataAccessStringId.IntegerDivisionValidationMessage">
+      <summary>
+        <para></para>
       </summary>
     </member>
     <member name="F:DevExpress.DataAccess.Localization.DataAccessStringId.InvalidExpressionStringValidationException">
@@ -9650,7 +9675,7 @@
     </member>
     <member name="M:DevExpress.DataAccess.Sql.SqlDataConnection.CreateDataConnectionParameters">
       <summary>
-        <para>Creates a container storing the data connection parameters.</para>
+        <para>Creates an object that contains data connection parameters.</para>
       </summary>
       <returns>A <see cref="T:DevExpress.DataAccess.ConnectionParameters.DataConnectionParametersBase"/> descendant, specifying the connection parameters corresponding to the appropriate data provider.</returns>
     </member>
@@ -9759,7 +9784,7 @@
       <summary>
         <para>Specifies the name of a data connection in the App.config file.</para>
       </summary>
-      <value>A <see cref="T:System.String"/> value, specifying the data connection name in the App.config file.</value>
+      <value>A <see cref="T:System.String"/> value that specifies the data connection name in the App.config file.</value>
     </member>
     <member name="P:DevExpress.DataAccess.Sql.SqlDataSource.ConnectionOptions">
       <summary>
@@ -9771,7 +9796,7 @@
       <summary>
         <para>Specifies the data connection settings of the <see cref="T:DevExpress.DataAccess.Sql.SqlDataSource"/>.</para>
       </summary>
-      <value>A <see cref="T:DevExpress.DataAccess.ConnectionParameters.DataConnectionParametersBase"/> descendant, specifying the connection parameters of the <see cref="T:DevExpress.DataAccess.Sql.SqlDataSource"/>.</value>
+      <value>A <see cref="T:DevExpress.DataAccess.ConnectionParameters.DataConnectionParametersBase"/> descendant that specifies the connection parameters of the <see cref="T:DevExpress.DataAccess.Sql.SqlDataSource"/>.</value>
     </member>
     <member name="E:DevExpress.DataAccess.Sql.SqlDataSource.CustomizeFilterExpression">
       <summary>
@@ -11131,6 +11156,16 @@
     <member name="F:DevExpress.DataAccess.UI.Localization.DataAccessUIStringId.ConnectionProperties_KeyFileName">
       <summary>
         <para>Default value: &quot;Key file name:&quot;</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.DataAccess.UI.Localization.DataAccessUIStringId.ConnectionProperties_OracleProviderTypeODP">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.DataAccess.UI.Localization.DataAccessUIStringId.ConnectionProperties_OracleProviderTypeODPManaged">
+      <summary>
+        <para></para>
       </summary>
     </member>
     <member name="F:DevExpress.DataAccess.UI.Localization.DataAccessUIStringId.ConnectionProperties_Password">
@@ -12843,6 +12878,11 @@
         <para>For internal use.</para>
       </summary>
     </member>
+    <member name="F:DevExpress.DataAccess.UI.Wizard.ConnectionParameterEdits.ProviderTypeOracle">
+      <summary>
+        <para></para>
+      </summary>
+    </member>
     <member name="F:DevExpress.DataAccess.UI.Wizard.ConnectionParameterEdits.ServerName">
       <summary>
         <para>For internal use.</para>
@@ -13153,11 +13193,6 @@
         <para>Identifies the MySQL data provider.</para>
       </summary>
     </member>
-    <member name="F:DevExpress.DataAccess.UI.Wizard.SqlDataProviders.NetCoreAll">
-      <summary>
-        <para></para>
-      </summary>
-    </member>
     <member name="F:DevExpress.DataAccess.UI.Wizard.SqlDataProviders.None">
       <summary>
         <para>No data providers are displayed in the Data Source wizard.</para>
@@ -13398,7 +13433,7 @@
     </member>
     <member name="T:DevExpress.DataAccess.Web.IDataSourceWizardJsonConnectionStorage">
       <summary>
-        <para></para>
+        <para>Defines a connection storage that receives, stores, and provides JSON connection strings on demand.</para>
       </summary>
     </member>
     <member name="T:DevExpress.DataAccess.Web.IJsonDataConnectionProviderFactory">
@@ -15660,15 +15695,15 @@
     </member>
     <member name="M:DevExpress.DataAccess.Wizard.Presenters.ConfigureQueryPage`1.#ctor(DevExpress.DataAccess.Wizard.Views.IConfigureQueryPageView,DevExpress.DataAccess.Wizard.IWizardRunnerContext,DevExpress.DataAccess.Wizard.SqlWizardOptions,DevExpress.DataAccess.Sql.IDBSchemaProviderEx,DevExpress.DataAccess.Sql.IResultSchemaProvider,DevExpress.DataAccess.Wizard.Services.IParameterService,DevExpress.DataAccess.Wizard.Services.ICustomQueryValidator)">
       <summary>
-        <para>Initializes a new instance of the <see cref="T:DevExpress.DataAccess.Wizard.Presenters.ConfigureQueryPage`1"/> class with the specified settings.</para>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.DataAccess.Wizard.Presenters.ConfigureQueryPage`1"/> class with specified settings.</para>
       </summary>
-      <param name="view">An object implementing the <see cref="T:DevExpress.DataAccess.Wizard.Views.IConfigureQueryPageView"/> interface.</param>
-      <param name="context">An object implementing the <see cref="T:DevExpress.DataAccess.Wizard.IWizardRunnerContext"/> interface.</param>
-      <param name="options">One or more <see cref="T:DevExpress.DataAccess.Wizard.SqlWizardOptions"/> enumeration values.</param>
-      <param name="dbSchemaProviderEx">An object implementing the <see cref="T:DevExpress.DataAccess.Sql.IDBSchemaProviderEx"/> interface.</param>
-      <param name="resultSchemaProvider">An object implementing the <see cref="T:DevExpress.DataAccess.Sql.IResultSchemaProvider"/> interface.</param>
-      <param name="parameterService">An object implementing the <see cref="T:DevExpress.DataAccess.Wizard.Services.IParameterService"/> interface.</param>
-      <param name="customQueryValidator">An object implementing the <see cref="T:DevExpress.DataAccess.Wizard.Services.ICustomQueryValidator"/> interface.</param>
+      <param name="view"></param>
+      <param name="context"></param>
+      <param name="options"></param>
+      <param name="dbSchemaProviderEx"></param>
+      <param name="resultSchemaProvider"></param>
+      <param name="parameterService"></param>
+      <param name="customQueryValidator"></param>
     </member>
     <member name="M:DevExpress.DataAccess.Wizard.Presenters.ConfigureQueryPage`1.#ctor(DevExpress.DataAccess.Wizard.Views.IConfigureQueryPageView,DevExpress.DataAccess.Wizard.IWizardRunnerContext,DevExpress.DataAccess.Wizard.SqlWizardOptions,DevExpress.DataAccess.Sql.IDBSchemaProviderEx,DevExpress.DataAccess.Wizard.Services.IParameterService,DevExpress.DataAccess.Wizard.Services.ICustomQueryValidator)">
       <summary>

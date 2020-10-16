@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>net48;netcoreapp3.1</TargetFrameworks>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>..\..\ITLightON.snk</AssemblyOriginatorKeyFile>
     <Product>OopDesigner</Product>
@@ -16,10 +16,6 @@ This package is under development, so we advise you to use with caution.</Descri
     <Authors>ITLightON</Authors>
     <Copyright>ITLightON. All rights reserved.</Copyright>
     <PackageTags>Visual Studio. C#. Design Tool.</PackageTags>
-  </PropertyGroup>
-
-  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net48|AnyCPU'">
-    <DocumentationFile>O:\Développements\OopWinformsDesigner\OopWinformsDesigner\OopDesigner\OopDesigner.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>

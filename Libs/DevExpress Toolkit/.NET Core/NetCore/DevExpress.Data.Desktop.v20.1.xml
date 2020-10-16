@@ -162,6 +162,12 @@
       </summary>
       <value>An <see cref="T:System.Int32"/> value that specifies the default value of the video property.</value>
     </member>
+    <member name="P:DevExpress.Data.Camera.DeviceVideoProperty.IsActive">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
+    </member>
     <member name="P:DevExpress.Data.Camera.DeviceVideoProperty.Max">
       <summary>
         <para>Gets the maximum value of the video property.</para>
@@ -646,6 +652,12 @@
       <summary>
         <para>Provides access to compatibility settings.</para>
       </summary>
+    </member>
+    <member name="P:DevExpress.Xpf.Core.CompatibilitySettings.AllowEditTextExpressionInFormatRule">
+      <summary>
+        <para></para>
+      </summary>
+      <value></value>
     </member>
     <member name="P:DevExpress.Xpf.Core.CompatibilitySettings.AllowEditValueBindingInInplaceEditors">
       <summary>

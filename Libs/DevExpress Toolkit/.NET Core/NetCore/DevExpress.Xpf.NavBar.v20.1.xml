@@ -2165,27 +2165,27 @@ This is a dependency property.</para>
     </member>
     <member name="F:DevExpress.Xpf.NavBar.NavBarStringId.GroupIsAlreadyAddedToAnotherNavBarException">
       <summary>
-        <para>The text of the exception that occurs when an attempt is made to add a group object belonging to one NavBarControl to another NavBarControl.Default value: &quot;The group is already added to another NavBar.&quot;</para>
+        <para>The text of the exception that occurs when an attempt is made to add a group object belonging to one NavBarControl to another NavBarControl.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Xpf.NavBar.NavBarStringId.ItemIsAlreadyAddedToAnotherGroupException">
       <summary>
-        <para>The text of the exception that occurs when an attempt is made to add an item object belonging to one group to another group.Default value: &quot;The item is already added to another group.&quot;</para>
+        <para>The text of the exception that occurs when an attempt is made to add an item object belonging to one group to another group.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Xpf.NavBar.NavBarStringId.NavPaneMenuAddRemoveButtons">
       <summary>
-        <para>The text of the Navigation Pane Customization Menu&#39;s menu item that invokes a submenu, allowing the visibility of group headers to be changed.Default value: &quot;&#0095;Add or Remove Buttons&quot;</para>
+        <para>The text of the Navigation Pane Customization Menu&#39;s menu item that invokes a submenu, allowing the visibility of group headers to be changed.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Xpf.NavBar.NavBarStringId.NavPaneMenuShowFewerButtons">
       <summary>
-        <para>The text of the Navigation Pane Customization Menu&#39;s menu item that allows fewer group headers to be displayed within the Navigation Pane.Default value: &quot;Show &#0095;Fewer Buttons&quot;</para>
+        <para>The text of the Navigation Pane Customization Menu&#39;s menu item that allows fewer group headers to be displayed within the Navigation Pane.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Xpf.NavBar.NavBarStringId.NavPaneMenuShowMoreButtons">
       <summary>
-        <para>The text of the Navigation Pane Customization Menu&#39;s menu item that allows more group headers to be displayed within the Navigation Pane.Default value: &quot;Show &#0095;More Buttons&quot;</para>
+        <para>The text of the Navigation Pane Customization Menu&#39;s menu item that allows more group headers to be displayed within the Navigation Pane.</para>
       </summary>
     </member>
     <member name="T:DevExpress.Xpf.NavBar.NavBarViewBase">
