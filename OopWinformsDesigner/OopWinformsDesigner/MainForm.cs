@@ -9,11 +9,13 @@ using OopWinformsDesigner.UI;
 
 using System;
 
-namespace OopWinformsDesigner {
+namespace OopWinformsDesigner
+{
     /// <summary>
     /// Definition of the main form of this application.
     /// </summary>
-    public partial class MainForm : RibbonForm, IOopDesigner {
+    public partial class MainForm : RibbonForm, IOopDesigner
+    {
         /// <summary>
         /// Gets or sets the layout that will be used to match designer processes.
         /// </summary>
@@ -32,7 +34,8 @@ namespace OopWinformsDesigner {
         /// <summary>
         /// Constructor
         /// </summary>
-        public MainForm() {
+        public MainForm()
+        {
             InitializeComponent();
         }
 
@@ -40,7 +43,8 @@ namespace OopWinformsDesigner {
         /// Loading of the form
         /// </summary>
         /// <param name="e">Arguments</param>
-        protected override void OnLoad(EventArgs e) {
+        protected override void OnLoad(EventArgs e)
+        {
             base.OnLoad(e);
 
             installLayout();
@@ -50,17 +54,19 @@ namespace OopWinformsDesigner {
             registerEvents();
 
 #if DEBUG
-            //SessionInfo.Instance.SolutionFile = @"O:\Développements\OopWinformsDesigner\OopWinformsDesigner\OopWinformsDesigner.sln";
-            SessionInfo.Instance.SolutionFile = @"O:\Développements\ITLightON\Tests\ITLightON.Winforms.Tester.sln";
+            SessionInfo.Instance.SolutionFile = @"D:\ProjetsGit\Oogarden\OOGardenMvc.sln";
 #endif
         }
 
-        private void registerEvents() {
+        private void registerEvents()
+        {
             SessionInfo.Instance.NotifyStatusChanged += Instance_NotifyStatusChanged;
         }
 
-        private void Instance_NotifyStatusChanged(object sender, OopDesigner.EventArguments.NotifyStatusChangeEventArgs e) {
-            switch (e.Status) {
+        private void Instance_NotifyStatusChanged(object sender, OopDesigner.EventArguments.NotifyStatusChangeEventArgs e)
+        {
+            switch (e.Status)
+            {
                 case OopDesigner.Enumerations.NotifyStatus.SolutionOpened:
                     UIExtenders.SetStatusText(
                         StatusBar,
@@ -69,24 +75,28 @@ namespace OopWinformsDesigner {
             };
         }
 
-        private void installLayout() {
+        private void installLayout()
+        {
             UIExtenders.Install(MainLayout);
 
             Controls.Add(MainLayout);
         }
-        private void installRibbonMenu() {
+        private void installRibbonMenu()
+        {
             Ribbon = new DevExpress.XtraBars.Ribbon.RibbonControl().Install();
             var ribbonManager = new DevExpress.XtraBars.Ribbon.RibbonBarManager(Ribbon);
 
             Ribbon.ShowPageHeadersInFormCaption = DevExpress.Utils.DefaultBoolean.True;
             Controls.Add(Ribbon);
         }
-        private void installBarManager() {
+        private void installBarManager()
+        {
             BarManager = new DevExpress.XtraBars.BarManager(this.components);
 
             BarManager.Form = this;
             BarManager.BeginUpdate();
-            StatusBar = new DevExpress.XtraBars.Bar() {
+            StatusBar = new DevExpress.XtraBars.Bar()
+            {
                 BarName = "StatusBar",
                 Manager = BarManager,
                 DockStyle = DevExpress.XtraBars.BarDockStyle.Bottom,

@@ -4,6 +4,7 @@ using net.r_eg.MvsSln;
 using net.r_eg.MvsSln.Extensions;
 
 using NLog;
+using NLog.Fluent;
 
 using OopDesigner.EventArguments;
 using OopDesigner.Interfaces;
@@ -20,11 +21,13 @@ using System.Reflection;
 using System.Windows.Forms;
 using System.Windows.Forms.Design;
 
-namespace OopWinformsDesigner.UI.UserControls {
+namespace OopWinformsDesigner.UI.UserControls
+{
     /// <summary>
     /// Definition of the main layout used for this application
     /// </summary>
-    public partial class MainLayout : XtraUserControl, IOopDesigner {
+    public partial class MainLayout : XtraUserControl, IOopDesigner
+    {
         private ServiceContainer serviceContainer = null;
         private OopMenuCommandService menuService = null;
         private IDesignerHost host;
@@ -35,7 +38,8 @@ namespace OopWinformsDesigner.UI.UserControls {
         /// <summary>
         /// Constructor
         /// </summary>
-        public MainLayout() {
+        public MainLayout()
+        {
             InitializeComponent();
         }
 
@@ -43,15 +47,18 @@ namespace OopWinformsDesigner.UI.UserControls {
         /// Loading of the control
         /// </summary>
         /// <param name="e">Arguments of the event</param>
-        protected override void OnLoad(EventArgs e) {
+        protected override void OnLoad(EventArgs e)
+        {
             base.OnLoad(e);
 
             treeDesigners.BeginUpdate();
-            treeDesigners.Columns.Add(new DevExpress.XtraTreeList.Columns.TreeListColumn {
+            treeDesigners.Columns.Add(new DevExpress.XtraTreeList.Columns.TreeListColumn
+            {
                 Caption = OopTranslation.OopDesigner.TreeListDesigner_AssemblyColumn,
                 VisibleIndex = 0
             });
-            treeDesigners.Columns.Add(new DevExpress.XtraTreeList.Columns.TreeListColumn {
+            treeDesigners.Columns.Add(new DevExpress.XtraTreeList.Columns.TreeListColumn
+            {
                 Caption = OopTranslation.OopDesigner.TreeListDesigner_TypeColumn,
                 VisibleIndex = 1
             });
@@ -64,24 +71,30 @@ namespace OopWinformsDesigner.UI.UserControls {
             addDataBindings();
         }
 
-        private void addDataBindings() {
+        private void addDataBindings()
+        {
 
         }
-        private void DesignerHost_SelectionChanged(object sender, EventArgs e) {
+        private void DesignerHost_SelectionChanged(object sender, EventArgs e)
+        {
             var o = sender;
 
         }
 
-        private void registerEvents() {
+        private void registerEvents()
+        {
             SessionInfo.Instance.NotifyStatusChanged += Instance_NotifyStatusChanged;
             SessionInfo.Instance.SharedObjectChanged += Instance_SharedObjectChanged;
             treeDesigners.RowClick += TreeDesigners_RowClick;
         }
 
-        private void TreeDesigners_RowClick(object sender, DevExpress.XtraTreeList.RowClickEventArgs e) {
-            if (e.Clicks > 1) {
+        private void TreeDesigners_RowClick(object sender, DevExpress.XtraTreeList.RowClickEventArgs e)
+        {
+            if (e.Clicks > 1)
+            {
                 // The Tag property must not be NULL, and if this is the case, we have to send it via the Notify function.
-                if (e.Node.Tag != null && isCompliant(e.Node.Tag)) {
+                if (e.Node.Tag != null && isCompliant(e.Node.Tag))
+                {
                     SessionInfo.Instance.NotifySharedObjectChanges(OopDesigner.Enumerations.SharedObjectTypes.FormOrControl, e.Node.Tag);
                 }
 
@@ -89,31 +102,37 @@ namespace OopWinformsDesigner.UI.UserControls {
             }
         }
 
-        private object instantiate(object tag) {
+        private object instantiate(object tag)
+        {
             var subType = (Type)tag;
 
             return Activator.CreateInstance(subType.Assembly.FullName, subType.FullName);
         }
 
-        private bool isCompliant(object tag) {
+        private bool isCompliant(object tag)
+        {
             var subType = (Type)tag;
 
             return subType.IsSubclassOf(typeof(Form)) || subType.IsSubclassOf(typeof(UserControl));
         }
 
-        private void Instance_SharedObjectChanged(object sender, SharedObjectChangeEventArgs e) {
-            switch (e.ObjectType) {
+        private void Instance_SharedObjectChanged(object sender, SharedObjectChangeEventArgs e)
+        {
+            switch (e.ObjectType)
+            {
                 case OopDesigner.Enumerations.SharedObjectTypes.FormOrControl:
                     propertyGridDesigner.SelectedObject = e.Object;
 
-                    if (e.Object is Type) {
+                    if (e.Object is Type)
+                    {
                         loadDesignerComponents(e.Object as Type);
                     }
                     break;
             }
         }
 
-        private void loadDesignerComponents(Type type) {
+        private void loadDesignerComponents(Type type)
+        {
             serviceContainer = new ServiceContainer();
             serviceContainer.AddService(typeof(INameCreationService), new OopNameCreationService());
             serviceContainer.AddService(typeof(IUIService), new UIService(this));
@@ -124,7 +143,8 @@ namespace OopWinformsDesigner.UI.UserControls {
 
             var o = host.CreateComponent(type);
 
-            if (o is Form) {
+            if (o is Form)
+            {
                 // Start the designer host off with a Form to design
                 rootLayout = (Form)o;
                 if (string.IsNullOrEmpty(rootLayout.Text))
@@ -144,53 +164,71 @@ namespace OopWinformsDesigner.UI.UserControls {
             selectionService.SelectionChanged += DesignerHost_SelectionChanged;
             host.Activate();
         }
-        private void Instance_NotifyStatusChanged(object sender, NotifyStatusChangeEventArgs e) {
-            switch (e.Status) {
+        private void Instance_NotifyStatusChanged(object sender, NotifyStatusChangeEventArgs e)
+        {
+            switch (e.Status)
+            {
                 case OopDesigner.Enumerations.NotifyStatus.SolutionOpened:
-                    // Loads the project / solution.
-                    var s = new Sln(SessionInfo.Instance.SolutionFile, SlnItems.EnvWithProjects);
-                    foreach (var prj in s.Result.ProjectItems) {
-                        if (prj.EpType == net.r_eg.MvsSln.Core.ProjectType.CsSdk) {
-                            // This is the new format.
-                            var o = s.Result.Env.GetOrLoadProject(prj);
+                    try
+                    {
+                        // Loads the project / solution.
+                        var s = new Sln(SessionInfo.Instance.SolutionFile, SlnItems.EnvWithProjects);
+                        foreach (var prj in s.Result.ProjectItems)
+                        {
+                            if (prj.EpType == net.r_eg.MvsSln.Core.ProjectType.CsSdk)
+                            {
+                                // This is the new format.
+                                var o = s.Result.Env.GetOrLoadProject(prj);
 
-                            o.AllEvaluatedProperties.OrderBy(p => p.Name).ForEach(prop => {
-                                LogManager.GetLogger("MainLayout").Log(LogLevel.Info,
-                                    $"{prop.Name}={prop.EvaluatedValue}");
-                            });
-                            var outputPath = o.AllEvaluatedProperties.LastOrDefault(x => x.Name == "OutputPath");
-                            var msBuildOutputDirectory = o.AllEvaluatedProperties.
-                                FirstOrDefault(x => x.Name == "MSBuildProjectDirectory");
-                            var outputType = o.AllEvaluatedProperties.LastOrDefault(x => x.Name == "OutputType");
-                            var targetFramework = o.AllEvaluatedProperties.LastOrDefault(x => x.Name == "TargetFramework");
-                            var targetFrameworks = o.AllEvaluatedProperties.LastOrDefault(x => x.Name == "TargetFrameworks");
-                            if (msBuildOutputDirectory != null && outputType != null) {
-                                var extension = GetExtensionFromOutputType(outputType.EvaluatedValue,
-                                    targetFramework != null ? targetFramework.EvaluatedValue : targetFrameworks.EvaluatedValue);
-                                var asmFile = string.Join(@"\",
-                                    string.Join(@"\", msBuildOutputDirectory.EvaluatedValue, outputPath.EvaluatedValue, targetFrameworks == null ? "" : targetFrameworks.EvaluatedValue.Split(';').First()),
-                                    prj.name + extension);
-                                var assembly = Assembly.LoadFile(asmFile);
-                                if (assembly != null) {
-                                    loadTypes(assembly).ForEach(type => SessionInfo.Instance.Designers.Add(type));
+                                o.AllEvaluatedProperties.OrderBy(p => p.Name).ForEach(prop =>
+                                {
+                                    LogManager.GetLogger("MainLayout").Log(LogLevel.Info,
+                                        $"{prop.Name}={prop.EvaluatedValue}");
+                                });
+                                var outputPath = o.AllEvaluatedProperties.LastOrDefault(x => x.Name == "OutputPath");
+                                var msBuildOutputDirectory = o.AllEvaluatedProperties.
+                                    FirstOrDefault(x => x.Name == "MSBuildProjectDirectory");
+                                var outputType = o.AllEvaluatedProperties.LastOrDefault(x => x.Name == "OutputType");
+                                var targetFramework = o.AllEvaluatedProperties.LastOrDefault(x => x.Name == "TargetFramework");
+                                var targetFrameworks = o.AllEvaluatedProperties.LastOrDefault(x => x.Name == "TargetFrameworks");
+                                if (msBuildOutputDirectory != null && outputType != null)
+                                {
+                                    var extension = GetExtensionFromOutputType(outputType.EvaluatedValue,
+                                        targetFramework != null ? targetFramework.EvaluatedValue : targetFrameworks.EvaluatedValue);
+                                    var asmFile = string.Join(@"\",
+                                        string.Join(@"\", msBuildOutputDirectory.EvaluatedValue, outputPath.EvaluatedValue, targetFrameworks == null ? "" : targetFrameworks.EvaluatedValue.Split(';').First()),
+                                        prj.name + extension);
+                                    var assembly = Assembly.LoadFile(asmFile);
+                                    if (assembly != null)
+                                    {
+                                        loadTypes(assembly).ForEach(type => SessionInfo.Instance.Designers.Add(type));
 
-                                    SessionInfo.Instance.RaisePropertyChanged(nameof(SessionInfo.Designers));
+                                        SessionInfo.Instance.RaisePropertyChanged(nameof(SessionInfo.Designers));
+                                    }
                                 }
                             }
                         }
+                        updateDesignersList();
                     }
-                    updateDesignersList();
+                    catch (Exception ex)
+                    {
+                        Log.Error(ex.Message);
+                    }
                     break;
             };
         }
 
-        private void updateDesignersList() {
+        private void updateDesignersList()
+        {
             treeDesigners.BeginUnboundLoad();
             treeDesigners.Nodes.Clear();
-            SessionInfo.Instance.Designers.GroupBy(x => x.Assembly.FullName).ForEach(o => {
+            SessionInfo.Instance.Designers.GroupBy(x => x.Assembly.FullName).ForEach(o =>
+            {
                 var asmNode = treeDesigners.AppendNode(new object[] { o.Key, "" }, null);
-                if (o != null) {
-                    o.ForEach(type => {
+                if (o != null)
+                {
+                    o.ForEach(type =>
+                    {
                         var node = treeDesigners.AppendNode(new object[] {
                         o.Key, type.FullName
                         }, asmNode);
@@ -203,29 +241,35 @@ namespace OopWinformsDesigner.UI.UserControls {
             treeDesigners.EndUnboundLoad();
         }
 
-        private IEnumerable<Type> loadTypes(Assembly assembly) {
+        private IEnumerable<Type> loadTypes(Assembly assembly)
+        {
             IEnumerable<Type> types = new List<Type>();
 
-            try {
+            try
+            {
                 // We must exclude abstract types as the Designer must create concrete class of them !
                 var referencedAssemblies = assembly.GetReferencedAssemblies();
                 types = assembly.GetTypes().Where(x => x.IsPublic && !x.IsAbstract &&
                  x.GetInterfaces().Any(i => i == typeof(IOopDesigner)));
             }
-            catch (ReflectionTypeLoadException rtle) {
+            catch (ReflectionTypeLoadException rtle)
+            {
                 LogManager.GetCurrentClassLogger().Error(rtle.StackTrace);
             }
-            catch (TypeLoadException tle) {
+            catch (TypeLoadException tle)
+            {
                 LogManager.GetCurrentClassLogger().Error(tle.StackTrace);
             }
             return types;
         }
 
-        private object GetExtensionFromOutputType(string outputType, string targetFrameworks) {
+        private object GetExtensionFromOutputType(string outputType, string targetFrameworks)
+        {
             if (outputType == "Library")
                 return ".dll";
 
-            if (!targetFrameworks.Contains(";") && targetFrameworks.Contains("netcoreapp")) {
+            if (!targetFrameworks.Contains(";") && targetFrameworks.Contains("netcoreapp"))
+            {
                 return ".dll";
             }
             return ".exe";
